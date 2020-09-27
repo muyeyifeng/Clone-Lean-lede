@@ -1,0 +1,101 @@
+#
+# This is free software, lisence use MIT.
+# 
+
+name: OpenWrt-CI-Clone-Lean-lede
+
+on:
+  push:
+     paths:
+       - '**.yml'
+  schedule:
+    - cron: 0 21 * * *
+
+env:
+  GITHUB_EMAIL: muyeyifeng@gmail.com	#email
+  GITHUB_USER: muyeyifeng
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+          fetch-depth: 1000000
+
+      - name: Debug
+        run: |
+          echo ${{ github.event_name }}
+          if( ${{ github.event_name == 'push' }} );then
+            echo "git add -f ."
+          fi
+
+      - name: Clone source code
+        run: |
+          git clone  https://github.com/coolsnowwolf/lede
+          rm -rf lede/.git
+          rm -rf lede/.github
+
+      - name: Clone this source
+        run: |
+          echo "${{ secrets.GHB_KEY }}" >github.pem
+          eval `ssh-agent`
+          chmod 600 github.pem
+          ssh-add github.pem
+          mkdir -p ~/.ssh/
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          #ssh -T git@github.com
+          git clone git@github.com:muyeyifeng/Clone-Lean-lede.git
+          cd Clone-Lean-lede
+          ls | xargs -i rm -rf {}
+          ls
+          cd ../
+          mv lede/* Clone-Lean-lede/
+
+      - name: Push this source
+        run: |
+          echo "${{ secrets.GHB_KEY }}" >github.pem
+          eval `ssh-agent`
+          chmod 600 github.pem
+          ssh-add github.pem
+          mkdir -p ~/.ssh/
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          #ssh -T git@github.com
+          cd Clone-Lean-lede
+          ls
+          echo "============ git config ============"
+          git config --global user.email ${GITHUB_EMAIL}
+          git config --global user.name ${GITHUB_USER}
+          echo "============ git commit ============"
+          if( ${{ github.event_name == 'push' }} );then
+            git add -f .
+            git commit --no-verify -m "Clone lean github source" 
+          else
+            git add .
+            git commit -m "Clone lean github source" 
+          fi
+          echo "============ git push ============"
+          git push
+
+      - name: Download feeds
+        run: |
+          mkdir tmp
+          cd Clone-Lean-lede
+          sed -i 's/""//' feeds.conf.default
+          echo "src-git lienol https://github.com/Lienol/openwrt-package" >> feeds.conf.default
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
+          cd ../
+          tar -czvf Clone-Lean-lede.tar Clone-Lean-lede
+          mv Clone-Lean-lede.tar tmp/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: Lede-Sources-With-Feeds
+          path: ./tmp
