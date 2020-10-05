@@ -23,9 +23,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
-          ref: master
+          ref: main
           fetch-depth: 1000000
 
       - name: Debug
@@ -95,7 +95,7 @@ jobs:
           mv Clone-Lean-lede.tar tmp/
 
       - name: Upload artifact
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@main
         with:
           name: Lede-Sources-With-Feeds
           path: ./tmp
