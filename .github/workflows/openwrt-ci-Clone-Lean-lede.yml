@@ -8,10 +8,13 @@ on:
   push:
      paths:
        - '**.yml'
+    paths-ignore:
+      - "md5"
   schedule:
     - cron: 0 21 * * *
 
 env:
+  action_state: run
   GITHUB_EMAIL: muyeyifeng@gmail.com	#email
   GITHUB_USER: muyeyifeng
 
@@ -38,10 +41,30 @@ jobs:
       - name: Clone source code
         run: |
           git clone  https://github.com/coolsnowwolf/lede
+
+      - name: Show Last md5
+        run:  |
+          cat md5 | tail -n 1 |awk '{print $1}'
+
+      - name: Check Lastest
+        run:  |
+          cd lede
+          git log -1 --format=%cd
+          echo "$(git log -1 --format=%cd)" |md5sum
+          echo -n "$(git log -1 --format=%cd)" |md5sum > tmpmd5
+          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" ]];
+              then  echo "action_state=cancel" >> $GITHUB_ENV ;
+          fi
+          echo -n "$(git log -1 --format=%cd)" |md5sum >> ../md5 && mv ../md5 ./
+
+      - name: Clone source code
+        if: env.action_state == 'run'
+        run: |
           rm -rf lede/.git
           rm -rf lede/.github
 
       - name: Clone this source
+        if: env.action_state == 'run'
         run: |
           echo "${{ secrets.GHB_KEY }}" >github.pem
           eval `ssh-agent`
@@ -58,6 +81,7 @@ jobs:
           mv lede/* Clone-Lean-lede/
 
       - name: Push this source
+        if: env.action_state == 'run'
         run: |
           echo "${{ secrets.GHB_KEY }}" >github.pem
           eval `ssh-agent`
@@ -83,6 +107,7 @@ jobs:
           git push
 
       - name: Download feeds
+        if: env.action_state == 'run'
         run: |
           mkdir tmp
           cd Clone-Lean-lede
@@ -95,6 +120,7 @@ jobs:
           mv Clone-Lean-lede.tar tmp/
 
       - name: Upload artifact
+        if: env.action_state == 'run'
         uses: actions/upload-artifact@main
         with:
           name: Lede-Sources-With-Feeds
