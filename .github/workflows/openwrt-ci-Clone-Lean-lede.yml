@@ -52,7 +52,7 @@ jobs:
           git log -1 --format=%cd
           echo "$(git log -1 --format=%cd)" |md5sum
           echo -n "$(git log -1 --format=%cd)" |md5sum > tmpmd5
-          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" -a ${{ github.event_name }} != 'push' ]];
+          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" && '${{ github.event_name }}' != 'push' ]];
               then  echo "action_state=cancel" >> $GITHUB_ENV ;
           fi
           echo -n "$(git log -1 --format=%cd)" |md5sum >> ../md5 && mv ../md5 ./
