@@ -1,0 +1,32 @@
+Source-Makefile: target/linux/rb532/Makefile
+Target: rb532
+Target-Board: rb532
+Target-Name: Mikrotik RouterBoard 532
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: gpio minor nand pci squashfs targz
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 4.14.195
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall wpad-basic-wolfssl kmod-ath5k kmod-input-rb532 e2fsprogs mkf2fs nand-utils iwinfo
+Target-Profile: DEVICE_nand
+Target-Profile-Name: MikroTik RouterBOARD 532
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rb532
+
+
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD 532
+
+
+
+@@
+
+

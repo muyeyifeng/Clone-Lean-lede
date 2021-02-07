@@ -1,0 +1,74 @@
+Source-Makefile: target/linux/zynq/Makefile
+Target: zynq
+Target-Board: zynq
+Target-Name: Xilinx Zynq 7000 SoCs
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a9_neon
+Target-Features: arm_v7 boot-part display dt fpu gpio pci rootfs-part rtc squashfs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a9+neon
+Linux-Version: 5.4.92
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware image for Zynq 7000 SoC devices.
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall uboot-envtools mkf2fs e2fsprogs kmod-usb-storage kmod-fs-msdos 
+Target-Profile: DEVICE_avnet_zynq-zed
+Target-Profile-Name: Avnet ZedBoard
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
+
+
+Target-Profile-Description:
+Build firmware images for Avnet ZedBoard
+
+
+
+@@
+
+Target-Profile: DEVICE_digilent_zynq-zybo
+Target-Profile-Name: Digilent Zybo
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
+
+
+Target-Profile-Description:
+Build firmware images for Digilent Zybo
+
+
+
+@@
+
+Target-Profile: DEVICE_digilent_zynq-zybo-z7
+Target-Profile-Name: Digilent Zybo Z7
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
+
+
+Target-Profile-Description:
+Build firmware images for Digilent Zybo Z7
+
+
+
+@@
+
+Target-Profile: DEVICE_xlnx_zynq-zc702
+Target-Profile-Name: Xilinx ZC702
+Target-Profile-Packages: kmod-can kmod-can-xilinx-can 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
+
+
+Target-Profile-Description:
+Build firmware images for Xilinx ZC702
+
+
+
+@@
+
+

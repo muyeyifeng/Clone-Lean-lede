@@ -1,0 +1,738 @@
+Source-Makefile: feeds/passwall/brook/Makefile
+
+Package: brook
+Version: 20210101-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Brook is a cross-platform proxy software
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Brook is a cross-platform proxy software
+https://github.com/txthinking/brook
+
+@@
+
+
+Source-Makefile: feeds/passwall/chinadns-ng/Makefile
+
+Package: chinadns-ng
+Version: 1.0-beta.23-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: ChinaDNS next generation, refactoring with epoll and ipset
+Maintainer: pexcn <i@pexcn.me>
+Source: chinadns-ng-1.0-beta.23-748a043dd7fb7ec71efbb7306f9dd21db5ce560f.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: ChinaDNS next generation, refactoring with epoll and ipset.
+https://github.com/zfl9/chinadns-ng
+pexcn <i@pexcn.me>
+@@
+
+
+Source-Makefile: feeds/passwall/dns2socks/Makefile
+
+Package: dns2socks
+Submenu: IP Addresses and Names
+Version: 2.1-20200218
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The utility to resolve DNS requests via a SOCKS5 tunnel.
+Maintainer: ghostmaker
+Source: SourceCode.zip
+License: BSD-3-Clause
+Type: ipkg
+Description:   This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
+http://dns2socks.sourceforge.net/
+ghostmaker
+@@
+
+
+Source-Makefile: feeds/passwall/ipt2socks/Makefile
+
+Package: ipt2socks
+Version: 1.1.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
+Maintainer: 
+Source: ipt2socks-1.1.3-384dab4bae5ed9402e07ec1950e502c05812bc26.tar.gz
+Type: ipkg
+Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+https://github.com/zfl9/ipt2socks
+
+@@
+
+
+Source-Makefile: feeds/passwall/kcptun/Makefile
+Build-Depends: golang/host
+
+Package: kcptun-client
+Submenu: Web Servers/Proxies
+Version: 20210103-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple UDP Tunnel Based On KCP (client)
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: kcptun-20210103.tar.gz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:   A Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+
+  This package contains the kcptun client.
+https://github.com/xtaci/kcptun
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+Package: kcptun-server
+Submenu: Web Servers/Proxies
+Version: 20210103-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple UDP Tunnel Based On KCP (server)
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: kcptun-20210103.tar.gz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:   A Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+
+  This package contains the kcptun server.
+https://github.com/xtaci/kcptun
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+
+Source-Makefile: feeds/passwall/luci-app-passwall/Makefile
+
+Package: luci-app-passwall
+Submenu: 3. Applications
+Version: 4-13
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks +pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_simple-obfs:simple-obfs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI
+Repository: base
+Title: LuCI support for PassWall
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for PassWall
+
+@@
+Config:
+menu "Configuration"
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks
+	bool "Include Shadowsocks"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server
+	bool "Include Shadowsocks Server"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR
+	bool "Include ShadowsocksR"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server
+	bool "Include ShadowsocksR Server"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Xray
+	bool "Include Xray"
+	default y if i386||x86_64||arm||aarch64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus
+	bool "Include Trojan_Plus"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO
+	bool "Include Trojan_GO"
+	default y if i386||x86_64||arm||aarch64
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Brook
+	bool "Include Brook"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy
+	bool "Include NaiveProxy"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_kcptun
+	bool "Include kcptun"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_haproxy
+	bool "Include haproxy"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG
+	bool "Include ChinaDNS-NG"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_dns2socks
+	bool "Include dns2socks"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin
+	bool "Include v2ray-plugin (Shadowsocks plugin)"
+	default y if i386||x86_64||arm||aarch64
+
+config PACKAGE_luci-app-passwall_INCLUDE_simple-obfs
+	bool "Include simple-obfs (Shadowsocks plugin)"
+	default y if i386||x86_64||arm||aarch64
+
+endmenu
+@@
+
+
+Source-Makefile: feeds/passwall/microsocks/Makefile
+
+Package: microsocks
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: microsocks for OpenWRT
+Maintainer: lean
+Source: microsocks.1.0.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	microsocks is a Tiny Proxy in C.
+lean
+@@
+
+
+Source-Makefile: feeds/passwall/naiveproxy/Makefile
+Build-Depends: ncurses/host ninja/host python3/host
+
+Package: naiveproxy
+Submenu: Web Servers/Proxies
+Version: 88.0.4324.96-1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libnss
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Make a fortune quietly
+Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
+Source: naiveproxy-88.0.4324.96-1.tar.gz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+	censorship resistance and low detectability. Reusing Chrome's stack also
+	ensures best practices in performance and security.
+https://github.com/klzgrad/naiveproxy
+CN_SZTL <cnsztl@project-openwrt.eu.org>
+@@
+Config:
+	depends on !(arc||armeb||mips||mips64||powerpc)
+@@
+
+
+Source-Makefile: feeds/passwall/openssl1.1/Makefile
+
+Package: libopenssl1.1
+Menu: 1
+Submenu: SSL
+Version: 1.1.1g-1
+ABIVersion: 1.1.1g
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Open source SSL toolkit (libraries)
+Maintainer: 
+Source: openssl-1.1.1g.tar.gz
+License: OpenSSL
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 
+This package contains the OpenSSL shared libraries, needed by other programs.
+http://www.openssl.org/
+
+@@
+
+
+Source-Makefile: feeds/passwall/pdnsd-alt/Makefile
+
+Package: pdnsd-alt
+Submenu: Web Servers/Proxies
+Version: 1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Proxy DNS Server
+Maintainer: 
+Source: pdnsd-1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d.tar.gz
+Type: ipkg
+Description:   pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+  contents are written to hard disk on exit) that is designed to cope with
+  unreachable or down DNS servers (for example in dial-in networking).
+
+  pdnsd can be used with applications that do dns lookups, eg on startup, and
+  can't be configured to change that behaviour, to prevent the often
+  minute-long hangs (or even crashes) that result from stalled dns queries.
+
+@@
+
+
+Source-Makefile: feeds/passwall/shadowsocksr-libev/Makefile
+
+Package: shadowsocksr-libev
+Version: 2.5.6-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-d63ff863800a5645aca4309d5dd5962bd1e95543.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-alt
+Version: 2.5.6-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-d63ff863800a5645aca4309d5dd5962bd1e95543.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-server
+Version: 2.5.6-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-d63ff863800a5645aca4309d5dd5962bd1e95543.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-d63ff863800a5645aca4309d5dd5962bd1e95543.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+
+Source-Makefile: feeds/passwall/simple-obfs/Makefile
+Build-Depends: libev
+
+Package: simple-obfs
+Version: 0.0.5-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+https://github.com/shadowsocks/simple-obfs
+Jian Chang <aa65535@live.com>
+@@
+
+Package: simple-obfs-server
+Version: 0.0.5-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+https://github.com/shadowsocks/simple-obfs
+Jian Chang <aa65535@live.com>
+@@
+Config:
+menu "Simple-obfs Compile Configuration"
+	depends on PACKAGE_simple-obfs || PACKAGE_simple-obfs-server
+	config SIMPLE_OBFS_STATIC_LINK
+		bool "enable static link libraries."
+		default n
+endmenu
+@@
+
+
+Source-Makefile: feeds/passwall/ssocks/Makefile
+
+Package: ssocks
+Version: 0.0.14-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: sSocks Relay
+Maintainer: 
+Source: ssocks-0.0.14.tar.gz
+Type: ipkg
+Description: sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool and a socks5 relay.
+https://github.com/tostercx/ssocks
+
+@@
+
+Package: ssocksd
+Version: 0.0.14-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: sSocks Server
+Maintainer: 
+Source: ssocks-0.0.14.tar.gz
+Type: ipkg
+Description: sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool and a socks5 relay.
+https://github.com/tostercx/ssocks
+
+@@
+
+
+Source-Makefile: feeds/passwall/tcping/Makefile
+
+Package: tcping
+Version: 0.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: tcping measures the latency of a tcp-connection
+Maintainer: 
+Source: tcping-0.3-db9101834732dac9aaa59dbb7fb9c74612dbf723.tar.gz
+Type: ipkg
+Description: tcping measures the latency of a tcp-connection
+https://github.com/jlyo/tcping
+
+@@
+
+
+Source-Makefile: feeds/passwall/trojan/Makefile
+Build-Depends: openssl
+
+Package: trojan
+Version: 1.16.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options +boost-date_time
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An unidentifiable mechanism that helps you bypass GFW
+Maintainer: GreaterFire
+Source: trojan-1.16.0.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description: An unidentifiable mechanism that helps you bypass GFW
+https://github.com/trojan-gfw/trojan
+GreaterFire
+@@
+
+
+Source-Makefile: feeds/passwall/trojan-go/Makefile
+Build-Depends: golang/host
+
+Package: trojan-go
+Submenu: Web Servers/Proxies
+Version: 0.8.2-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+Maintainer: 
+Source: trojan-go-0.8.2.tar.gz
+Type: ipkg
+Description: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+https://github.com/p4gefau1t/trojan-go
+
+@@
+Config:
+
+menu "Configuration"
+	depends on PACKAGE_trojan-go
+
+config TROJAN_GO_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config TROJAN_GO_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+
+endmenu
+
+@@
+
+
+Source-Makefile: feeds/passwall/trojan-plus/Makefile
+Build-Depends: openssl
+
+Package: trojan-plus
+Version: 10.0.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+Maintainer: Trojan-Plus-Group
+Source: trojan-plus-10.0.3.tar.xz
+License: GPL-3.0
+Type: ipkg
+Description: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+https://github.com/Trojan-Plus-Group/trojan-plus
+Trojan-Plus-Group
+@@
+
+
+Source-Makefile: feeds/passwall/v2ray/Makefile
+Build-Depends: golang/host
+
+Package: v2ray
+Submenu: Project V
+Version: 4.34.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: v2ray-core-4.34.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Project V is a set of network tools that help you to build your own computer network.
+It secures your network connections and thus protects your privacy.
+
+  This package contains v2ray, v2ctl, geoip.dat and geosite.dat.
+https://www.v2fly.org
+Xingwang Liao <kuoruan@gmail.com>
+@@
+Config:
+menu "V2Ray Configuration"
+	depends on PACKAGE_v2ray
+
+config V2RAY_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config V2RAY_EXCLUDE_V2CTL
+	bool "Exclude V2Ctl"
+	default y
+
+config V2RAY_EXCLUDE_ASSETS
+	bool "Exclude geoip.dat & geosite.dat"
+	default y
+
+config V2RAY_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+endmenu
+@@
+
+
+Source-Makefile: feeds/passwall/v2ray-plugin/Makefile
+Build-Depends: golang/host
+
+Package: v2ray-plugin
+Submenu: Project V
+Version: 1.8.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: SIP003 plugin for shadowsocks, based on v2ray
+Maintainer: madeye <max.c.lv@gmail.com>
+Source: v2ray-plugin-1.8.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	Yet another SIP003 plugin for shadowsocks, based on v2ray
+https://github.com/shadowsocks/v2ray-plugin
+madeye <max.c.lv@gmail.com>
+@@
+Config:
+config v2ray-plugin_INCLUDE_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default y
+
+@@
+
+
+Source-Makefile: feeds/passwall/xray-core/Makefile
+Build-Depends: golang/host
+
+Package: xray-core
+Version: 1.2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: v2ray-core
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions
+Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
+Source: xray-core-1.2.4.tar.gz
+License: MPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+  It secures your network connections and thus protects your privacy.
+https://xtls.github.io
+Tianling Shen <cnsztl@project-openwrt.eu.org>
+@@
+
+Package: xray-geodata
+Version: 1.2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions (geodata files)
+Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
+Source: xray-core-1.2.4.tar.gz
+License: MPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+  It secures your network connections and thus protects your privacy.
+
+  This includes GEO datas used for xray-core.
+https://xtls.github.io
+Tianling Shen <cnsztl@project-openwrt.eu.org>
+@@
+
+

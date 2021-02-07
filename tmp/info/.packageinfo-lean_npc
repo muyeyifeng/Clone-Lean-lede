@@ -1,0 +1,22 @@
+Source-Makefile: package/lean/npc/Makefile
+
+Package: npc
+Version: 0.26.9-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: NPC Client
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: npc is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet
+https://github.com/ehang-io/nps/releases
+
+@@
+
+

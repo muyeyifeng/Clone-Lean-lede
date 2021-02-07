@@ -1,0 +1,21 @@
+Source-Makefile: package/network/config/netifd/Makefile
+
+Package: netifd
+Version: 2020-09-08-d7b614a86b815da711b5fecb10687297a70d859e-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +libnl-tiny +libubus +ubus +ubusd +jshn +libubox
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Repository: base
+Title: OpenWrt Network Interface Configuration Daemon
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: netifd-2020-09-08-d7b614a86b815da711b5fecb10687297a70d859e.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: OpenWrt Network Interface Configuration Daemon
+Felix Fietkau <nbd@nbd.name>
+@@
+
+

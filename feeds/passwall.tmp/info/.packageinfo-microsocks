@@ -1,0 +1,22 @@
+Source-Makefile: feeds/passwall/microsocks/Makefile
+
+Package: microsocks
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: microsocks for OpenWRT
+Maintainer: lean
+Source: microsocks.1.0.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	microsocks is a Tiny Proxy in C.
+lean
+@@
+
+

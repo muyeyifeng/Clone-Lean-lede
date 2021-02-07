@@ -1,0 +1,18 @@
+Source-Makefile: target/linux/octeontx/Makefile
+Target: octeontx
+Target-Board: octeontx
+Target-Name: Octeon-TX
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_generic
+Target-Features: dt fpu gpio pci pcie rtc targz usb virtio
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=generic
+CPU-Type: generic
+Linux-Version: 5.4.92
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build images for Octeon-TX CN80XX/CN81XX based boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+

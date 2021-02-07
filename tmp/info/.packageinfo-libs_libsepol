@@ -1,0 +1,23 @@
+Source-Makefile: package/libs/libsepol/Makefile
+Build-Types: host
+
+Package: libsepol
+Version: 3.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: SELinux binary policy manipulation library
+Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
+Source: libsepol-3.1.tar.gz
+Type: ipkg
+Description: 	Libsepol is the binary policy manipulation library. It doesn't
+	depend upon or use any of the other SELinux components.
+http://selinuxproject.org/page/Main_Page
+Thomas Petazzoni <thomas.petazzoni@bootlin.com>
+@@
+
+

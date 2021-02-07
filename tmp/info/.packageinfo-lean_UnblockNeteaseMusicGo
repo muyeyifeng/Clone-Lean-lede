@@ -1,0 +1,29 @@
+Source-Makefile: package/lean/UnblockNeteaseMusicGo/Makefile
+Build-Depends: golang/host
+
+Package: UnblockNeteaseMusicGo
+Submenu: NeteaseMusic
+Version: 0.2.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Revive Netease Cloud Music (Golang)
+Maintainer: Silvan <cnsilvan@gmail.com>
+Source: UnblockNeteaseMusicGo-0.2.7-935a28125fc7eafaa8273a77352e6262b18efd5e.tar.gz
+Type: ipkg
+Description: Revive Netease Cloud Music (Golang)
+https://github.com/cnsilvan/UnblockNeteaseMusic
+Silvan <cnsilvan@gmail.com>
+@@
+Config:
+config UnblockNeteaseMusicGo_INCLUDE_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default y
+
+@@
+
+

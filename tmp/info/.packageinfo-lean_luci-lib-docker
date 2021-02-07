@@ -1,0 +1,22 @@
+Source-Makefile: package/lean/luci-lib-docker/Makefile
+
+Package: luci-lib-docker
+Submenu: 6. Libraries
+Version: v0.3.0-beta
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-json
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Docker Engine API for LuCI
+Maintainer: lisaac <https://github.com/lisaac/luci-lib-docker>
+Source: luci-lib-docker-v0.3.0.tar.gz
+License: AGPL-3.0
+Type: ipkg
+Description: 	Docker Engine API for LuCI
+lisaac <https://github.com/lisaac/luci-lib-docker>
+@@
+
+
