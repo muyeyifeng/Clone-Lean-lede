@@ -35,7 +35,6 @@ jobs:
           if( ${{ github.event_name == 'push' }} );then
             echo "git add -f ."
           fi
-          rm -rf ./*
 
       - name: Clone source code
         run: |
@@ -75,6 +74,7 @@ jobs:
           if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" && '${{ github.event_name }}' != 'push' ]];
               then  echo "action_state=cancel" >> $GITHUB_ENV ;
           fi
+          rm -rf tmpmd5
           echo -n "$(git log -1 --format=%cd)" |md5sum >> ../md5 && mv ../md5 ./
 
       - name: Clone source code
