@@ -6,8 +6,11 @@ name: OpenWrt-CI-Clone-Lean-lede
 
 on:
   push:
-     paths:
-       - '**.yml'
+    branches: 
+      - main
+    paths-ignore:
+      - "*.md"
+      - "md5"
   schedule:
     - cron: 0 21 * * *
 
@@ -41,6 +44,26 @@ jobs:
         run: |
           git clone https://github.com/coolsnowwolf/lede
           git clone https://github.com/muyeyifeng/Actions-Build-Lede-Public
+
+      - name: Space cleanup
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
+        run: |
+          docker rmi `docker images -q`
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+          sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
+          sudo -E apt-get update
+          sudo -E apt-get upgrade -y
+          #==================================
+          #用readme中指令安装需要的软件
+          echo "$(cat ./lede/README.md |grep 'sudo apt-get' | sed -n 2p)"
+          $(cat ./lede/README.md |grep "sudo apt-get" | sed -n 2p)
+          sudo -E apt-get -y install tree
+          sudo -E apt-get -y autoremove --purge
+          sudo -E apt-get -y upgrade
+          sudo -E apt-get clean
+          df -h
 
       - name: Show Last md5
         run:  |
