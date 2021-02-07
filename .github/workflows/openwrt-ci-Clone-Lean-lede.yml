@@ -6,11 +6,8 @@ name: OpenWrt-CI-Clone-Lean-lede
 
 on:
   push:
-    branches: 
-      - main
-    paths-ignore:
-      - "*.md"
-      - "md5"
+     paths:
+       - '**.yml'
   schedule:
     - cron: 0 21 * * *
 
