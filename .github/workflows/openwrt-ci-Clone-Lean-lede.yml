@@ -143,6 +143,7 @@ jobs:
       - name: Tar Artifact
         if: env.action_state == 'run'
         run: |
+          mkdir tmp
           tar -czvf Clone-Lean-lede.tar Clone-Lean-lede
           mv Clone-Lean-lede.tar tmp/
 
@@ -150,5 +151,5 @@ jobs:
         if: env.action_state == 'run'
         uses: actions/upload-artifact@main
         with:
-          name: Lede-Sources-With-Feeds
+          name: Lede-Sources-With-Feeds-And-DL
           path: ./tmp
