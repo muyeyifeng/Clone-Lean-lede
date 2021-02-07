@@ -109,7 +109,8 @@ jobs:
           cd Clone-Lean-lede
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          ls *.defconfig | xargs -t -I % sh -c 'cp % defconfig; cat defconfig > .config; make defconfig; make download -j8; find dl -size -1024c -exec rm -f {} \; find dl -size +100M -exec rm -f {} \;'
+          ls *.defconfig | xargs -t -I % sh -c 'cp % defconfig; cat defconfig > .config; make defconfig; make download -j8; find dl -size -1024c -exec rm -f {} \;'
+          find dl -size +100M -exec rm -f {} \;
           rm -rf *.defconfig defconfig .config
           make defconfig 
 
