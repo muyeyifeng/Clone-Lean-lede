@@ -35,10 +35,12 @@ jobs:
           if( ${{ github.event_name == 'push' }} );then
             echo "git add -f ."
           fi
+          rm -rf ./*
 
       - name: Clone source code
         run: |
-          git clone  https://github.com/coolsnowwolf/lede
+          git clone https://github.com/coolsnowwolf/lede
+          git clone https://github.com/muyeyifeng/Actions-Build-Lede-Public
 
       - name: Show Last md5
         run:  |
@@ -50,7 +52,7 @@ jobs:
           git log -1 --format=%cd
           echo "$(git log -1 --format=%cd)" |md5sum
           echo -n "$(git log -1 --format=%cd)" |md5sum > tmpmd5
-          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" ]];
+          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" -a github.event_name != 'push' ]];
               then  echo "action_state=cancel" >> $GITHUB_ENV ;
           fi
           echo -n "$(git log -1 --format=%cd)" |md5sum >> ../md5 && mv ../md5 ./
@@ -77,6 +79,19 @@ jobs:
           ls
           cd ../
           mv lede/* Clone-Lean-lede/
+          mv Actions-Build-Lede-Public/*.defconfig Clone-Lean-lede/
+          mv Clone-Lean-lede/feeds.conf.default Clone-Lean-lede/feeds.conf.default.bak
+          mv Actions-Build-Lede-Public/feeds.conf.default Clone-Lean-lede/
+
+      - name: Make Download
+        if: env.action_state == 'run'
+        run: |
+          cd Clone-Lean-lede
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
+          ls *.defconfig | xargs -t -I % sh -c 'cp % defconfig; cat defconfig > .config; make defconfig; make download -j8; find dl -size -1024c -exec rm -f {} \;'
+          rm -rf *.defconfig defconfig .config
+          make defconfig 
 
       - name: Push this source
         if: env.action_state == 'run'
@@ -104,16 +119,9 @@ jobs:
           echo "============ git push ============"
           git push
 
-      - name: Download feeds
+      - name: Tar Artifact
         if: env.action_state == 'run'
         run: |
-          mkdir tmp
-          cd Clone-Lean-lede
-          sed -i 's/""//' feeds.conf.default
-          echo "src-git lienol https://github.com/Lienol/openwrt-package" >> feeds.conf.default
-          ./scripts/feeds update -a
-          ./scripts/feeds install -a
-          cd ../
           tar -czvf Clone-Lean-lede.tar Clone-Lean-lede
           mv Clone-Lean-lede.tar tmp/
 
