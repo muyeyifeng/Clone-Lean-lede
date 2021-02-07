@@ -44,7 +44,6 @@ jobs:
       - name: Space cleanup
         env:
           DEBIAN_FRONTEND: noninteractive
-        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         run: |
           docker rmi `docker images -q`
           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
@@ -71,20 +70,20 @@ jobs:
           git log -1 --format=%cd
           echo "$(git log -1 --format=%cd)" |md5sum
           echo -n "$(git log -1 --format=%cd)" |md5sum > tmpmd5
-          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" && '${{ github.event_name }}' != 'push' ]];
+          if [[ "$(cat ../md5 | tail -n 1 |awk '{print $1}')" == "$(cat tmpmd5| tail -n 1 |awk '{print $1}')" ]];
               then  echo "action_state=cancel" >> $GITHUB_ENV ;
           fi
           rm -rf tmpmd5
           echo -n "$(git log -1 --format=%cd)" |md5sum >> ../md5 && mv ../md5 ./
 
       - name: Clone source code
-        if: env.action_state == 'run'
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         run: |
           rm -rf lede/.git
           rm -rf lede/.github
 
       - name: Clone this source
-        if: env.action_state == 'run'
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         run: |
           echo "${{ secrets.GHB_KEY }}" >github.pem
           eval `ssh-agent`
@@ -104,7 +103,7 @@ jobs:
           mv Actions-Build-Lede-Public/feeds.conf.default Clone-Lean-lede/
 
       - name: Make Download
-        if: env.action_state == 'run'
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         run: |
           cd Clone-Lean-lede
           ./scripts/feeds update -a
@@ -141,15 +140,15 @@ jobs:
           git push
 
       - name: Tar Artifact
-        if: env.action_state == 'run'
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         run: |
-          mkdir tmp
+          mkdir tmptar
           tar -czvf Clone-Lean-lede.tar Clone-Lean-lede
-          mv Clone-Lean-lede.tar tmp/
+          mv Clone-Lean-lede.tar tmptar/
 
       - name: Upload artifact
-        if: env.action_state == 'run'
+        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
         uses: actions/upload-artifact@main
         with:
           name: Lede-Sources-With-Feeds-And-DL
-          path: ./tmp
+          path: ./tmptar
