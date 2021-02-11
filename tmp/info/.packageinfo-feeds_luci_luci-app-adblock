@@ -19,8 +19,8 @@ Description: LuCI support for Adblock
 
 @@
 
-Package: luci-i18n-adblock-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-adblock-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adblock
 Conflicts: 
@@ -29,12 +29,31 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-adblock - ja translation
+Title: luci-app-adblock - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-adblock - 日本語 (Japanese)
+Description:     Translation for luci-app-adblock - Русский (Russian)
+
+@@
+
+Package: luci-i18n-adblock-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adblock
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-adblock - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-adblock - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -95,8 +114,8 @@ Description:     Translation for luci-app-adblock - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-adblock-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-adblock-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adblock
 Conflicts: 
@@ -105,31 +124,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-adblock - ru translation
+Title: luci-app-adblock - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-adblock - Русский (Russian)
-
-@@
-
-Package: luci-i18n-adblock-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adblock
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-adblock - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-adblock - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-adblock - 日本語 (Japanese)
 
 @@
 

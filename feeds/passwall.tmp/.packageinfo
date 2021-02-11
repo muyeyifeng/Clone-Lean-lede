@@ -141,7 +141,7 @@ Source-Makefile: feeds/passwall/luci-app-passwall/Makefile
 Package: luci-app-passwall
 Submenu: 3. Applications
 Version: 4-14
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks +pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_simple-obfs:simple-obfs
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks +pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-geodata +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_simple-obfs:simple-obfs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -692,7 +692,7 @@ Source-Makefile: feeds/passwall/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.2.4-1
+Version: 1.2.4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -708,12 +708,35 @@ LicenseFiles: LICENSE
 Type: ipkg
 Description:     Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
   It secures your network connections and thus protects your privacy.
-https://xtls.github.io
+https://xray.sh
+Tianling Shen <cnsztl@project-openwrt.eu.org>
+@@
+
+Package: xray-example
+Version: 1.2.4-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions (example configs)
+Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
+Source: xray-core-1.2.4.tar.gz
+License: MPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+  It secures your network connections and thus protects your privacy.
+
+  This includes example configuration files for xray-core.
+https://xray.sh
 Tianling Shen <cnsztl@project-openwrt.eu.org>
 @@
 
 Package: xray-geodata
-Version: 1.2.4-1
+Version: 1.2.4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -731,7 +754,7 @@ Description:     Xray, Penetrates Everything. Also the best v2ray-core, with XTL
   It secures your network connections and thus protects your privacy.
 
   This includes GEO datas used for xray-core.
-https://xtls.github.io
+https://xray.sh
 Tianling Shen <cnsztl@project-openwrt.eu.org>
 @@
 

@@ -15102,6 +15102,26 @@ Description:   Kernel support for the Lantiq/Falcon I2C controller
 
 @@
 
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+@@
+
 Package: kmod-pcmcia-bcm63xx
 Submenu: PCMCIA support
 Version: <LINUX_VERSION>-
@@ -15137,25 +15157,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_USB_BCM63XX_UDC
 Description:   Kernel support for the USB gadget (device) controller on the BCM63xx SoC
-
-@@
-
-Package: kmod-leds-reset
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ath79
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: reset controller LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_RESET=m
-Description:  Kernel module for LEDs on reset lines
 
 @@
 
@@ -15368,6 +15369,44 @@ Description:   This package contains the SPI driver for the Vitesse VSC7385 ethe
 
 @@
 
+Package: kmod-ata-rb532-cf
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 @BROKEN +kmod-ata-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 Compact Flash support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
+Description:   RB532 Compact Flash support.
+
+@@
+
+Package: kmod-input-rb532
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 +kmod-input-polldev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 button device support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
+Description:   Kernel module for RB532 button
+
+@@
+
 Package: kmod-bgmac
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -15384,6 +15423,45 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
 Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
+
+@@
+
+Package: kmod-ata-oxnas-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends:  +kmod-ata-core @TARGET_oxnas
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: oxnas Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_OXNAS
+Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+
+@@
+
+Package: kmod-usb2-oxnas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OX820 EHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_EHCI_OXNAS
+Description:  This driver provides USB Device Controller support for the
+ EHCI USB host built-in to the OX820 SoC.
 
 @@
 
@@ -15424,202 +15502,6 @@ Type: ipkg
 Kernel-Config: CONFIG_PHY_BCM_NS_USB3
 Description:   Support for Broadcom USB 3.0 PHY connected to the USB controller on Northstar
   family.
-
-@@
-
-Package: kmod-linkstation-poweroff
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mvebu
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Buffalo LinkStation power off driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_POWER_RESET=y CONFIG_POWER_RESET_LINKSTATION CONFIG_POWER_RESET_QNAP=n
-Description:   This driver supports turning off some Buffalo LinkStations by
-  setting an output pin at the ethernet PHY to the correct state.
-  It also makes the device compatible with the WoL function.
-  Say Y here if you have a Buffalo LinkStation LS421D/E.
-
-@@
-
-Package: kmod-ahci-qoriq
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core +kmod-ata-ahci-platform @TARGET_layerscape
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Freescale QorIQ AHCI SATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AHCI_QORIQ
-Description:  This option enables support for the Freescale QorIQ AHCI SoC's
- onboard AHCI SATA.
-
-@@
-
-Package: kmod-ppfe
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_layerscape
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Freescale PPFE Driver support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_FSL_PPFE=y CONFIG_FSL_PPFE_UTIL_DISABLED=y
-Description:  Kernel modules for Freescale PPFE Driver support.
-
-@@
-
-Package: kmod-ata-ahci-mtk
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core  @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Mediatek AHCI Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AHCI_MTK
-Description:  Mediatek AHCI Serial ATA host controllers
-
-@@
-
-Package: kmod-btmtkuart
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek_mt7622 +kmod-bluetooth +mt7622bt-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HCI UART driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BT_MTKUART
-Description: MediaTek HCI UART driver
-
-@@
-
-Package: kmod-sdhci-mtk
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek_mt7622 +kmod-sdhci
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Mediatek SDHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MMC_MTK 
-Description: Mediatek SDHCI driver
-
-@@
-
-Package: kmod-crypto-hw-mtk
-Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek's Crypto Engine module
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_HW=y CONFIG_CRYPTO_AES=y CONFIG_CRYPTO_AEAD=y CONFIG_CRYPTO_SHA1=y CONFIG_CRYPTO_SHA256=y CONFIG_CRYPTO_SHA512=y CONFIG_CRYPTO_HMAC=y CONFIG_CRYPTO_DEV_MEDIATEK
-Description:   MediaTek's EIP97 Cryptographic Engine driver.
-
-@@
-
-Package: kmod-sound-cs5535audio
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CS5535/CS5536 Audio Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_CS5535AUDIO
-Description:  Support for the integrated AC97 sound device on motherboards
- with AMD CS5535/CS5536 chipsets.
-
-@@
-
-Package: kmod-sp5100-tco
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SP5100 Watchdog Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SP5100_TCO
-Description:  Kernel module for the SP5100_TCO hardware watchdog.
-
-@@
-
-Package: kmod-pcengines-apuv2
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PC Engines APUv2/3 front button and LEDs driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PCENGINES_APU2
-Description:   This driver provides support for the front button and LEDs on
-  PC Engines APUv2/APUv3 board.
 
 @@
 
@@ -15737,214 +15619,137 @@ Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
 
 @@
 
-Package: kmod-rtc-sunxi
-Submenu: Other modules
+Package: kmod-leds-reset
+Submenu: LED modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi
+Depends: @TARGET_ath79
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Sunxi SoC built-in RTC support
+Title: reset controller LED support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_RTC_DRV_SUNXI CONFIG_RTC_CLASS=y
-Description:  Support for the AllWinner sunXi SoC's onboard RTC
+Kernel-Config: CONFIG_LEDS_RESET=m
+Description:  Kernel module for LEDs on reset lines
 
 @@
 
-Package: kmod-sunxi-ir
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-input-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Sunxi SoC built-in IR support (A20)
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MEDIA_SUPPORT=y CONFIG_MEDIA_RC_SUPPORT=y CONFIG_RC_DEVICES=y CONFIG_IR_SUNXI
-Description:  Support for the AllWinner sunXi SoC's onboard IR (A20)
-
-@@
-
-Package: kmod-ata-sunxi
+Package: kmod-ahci-qoriq
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-ata-ahci-platform +kmod-scsi-core
+Depends:  +kmod-ata-core +kmod-ata-ahci-platform @TARGET_layerscape
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: AllWinner sunXi AHCI SATA support
+Title: Freescale QorIQ AHCI SATA support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_AHCI_SUNXI
-Description:  SATA support for the AllWinner sunXi SoC's onboard AHCI SATA
+Kernel-Config: CONFIG_AHCI_QORIQ
+Description:  This option enables support for the Freescale QorIQ AHCI SoC's
+ onboard AHCI SATA.
 
 @@
 
-Package: kmod-sun4i-emac
+Package: kmod-ppfe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-of-mdio +kmod-libphy
+Depends: @TARGET_layerscape
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: AllWinner EMAC Ethernet support
+Title: Freescale PPFE Driver support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SUN4I_EMAC
-Description: AllWinner EMAC Ethernet support
+Kernel-Config: CONFIG_FSL_PPFE=y CONFIG_FSL_PPFE_UTIL_DISABLED=y
+Description:  Kernel modules for Freescale PPFE Driver support.
 
 @@
 
-Package: kmod-sound-soc-sunxi
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: AllWinner built-in SoC sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_SUN4I_CODEC
-Description:   Kernel support for AllWinner built-in SoC audio
-
-@@
-
-Package: kmod-sound-soc-sunxi-spdif
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-sound-soc-spdif kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Allwinner A10 SPDIF Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_SUN4I_SPDIF
-Description:   Kernel support for Allwinner A10 SPDIF Support
-
-@@
-
-Package: kmod-ata-oxnas-sata
+Package: kmod-ata-ahci-mtk
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_oxnas
+Depends:  +kmod-ata-core  @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623)
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: oxnas Serial ATA support
+Title: Mediatek AHCI Serial ATA support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SATA_OXNAS
-Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+Kernel-Config: CONFIG_AHCI_MTK
+Description:  Mediatek AHCI Serial ATA host controllers
 
 @@
 
-Package: kmod-usb2-oxnas
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OX820 EHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_EHCI_OXNAS
-Description:  This driver provides USB Device Controller support for the
- EHCI USB host built-in to the OX820 SoC.
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
-
-@@
-
-Package: kmod-ata-rb532-cf
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 @BROKEN +kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 Compact Flash support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
-Description:   RB532 Compact Flash support.
-
-@@
-
-Package: kmod-input-rb532
+Package: kmod-btmtkuart
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 +kmod-input-polldev
+Depends: @TARGET_mediatek_mt7622 +kmod-bluetooth +mt7622bt-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: RB532 button device support
+Title: MediaTek HCI UART driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
-Description:   Kernel module for RB532 button
+Kernel-Config: CONFIG_BT_MTKUART
+Description: MediaTek HCI UART driver
+
+@@
+
+Package: kmod-sdhci-mtk
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mediatek_mt7622 +kmod-sdhci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Mediatek SDHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MMC_MTK 
+Description: Mediatek SDHCI driver
+
+@@
+
+Package: kmod-crypto-hw-mtk
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mediatek 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek's Crypto Engine module
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_HW=y CONFIG_CRYPTO_AES=y CONFIG_CRYPTO_AEAD=y CONFIG_CRYPTO_SHA1=y CONFIG_CRYPTO_SHA256=y CONFIG_CRYPTO_SHA512=y CONFIG_CRYPTO_HMAC=y CONFIG_CRYPTO_DEV_MEDIATEK
+Description:   MediaTek's EIP97 Cryptographic Engine driver.
 
 @@
 
@@ -16921,6 +16726,201 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_I2C_BCM2835
 Description:   This package contains the Broadcom 2835 I2C master controller driver
+
+@@
+
+Package: kmod-rtc-sunxi
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Sunxi SoC built-in RTC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_RTC_DRV_SUNXI CONFIG_RTC_CLASS=y
+Description:  Support for the AllWinner sunXi SoC's onboard RTC
+
+@@
+
+Package: kmod-sunxi-ir
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Sunxi SoC built-in IR support (A20)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MEDIA_SUPPORT=y CONFIG_MEDIA_RC_SUPPORT=y CONFIG_RC_DEVICES=y CONFIG_IR_SUNXI
+Description:  Support for the AllWinner sunXi SoC's onboard IR (A20)
+
+@@
+
+Package: kmod-ata-sunxi
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-ata-ahci-platform +kmod-scsi-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner sunXi AHCI SATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AHCI_SUNXI
+Description:  SATA support for the AllWinner sunXi SoC's onboard AHCI SATA
+
+@@
+
+Package: kmod-sun4i-emac
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-of-mdio +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner EMAC Ethernet support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SUN4I_EMAC
+Description: AllWinner EMAC Ethernet support
+
+@@
+
+Package: kmod-sound-soc-sunxi
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner built-in SoC sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_SUN4I_CODEC
+Description:   Kernel support for AllWinner built-in SoC audio
+
+@@
+
+Package: kmod-sound-soc-sunxi-spdif
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-sound-soc-spdif kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Allwinner A10 SPDIF Support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_SUN4I_SPDIF
+Description:   Kernel support for Allwinner A10 SPDIF Support
+
+@@
+
+Package: kmod-sound-cs5535audio
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: CS5535/CS5536 Audio Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_CS5535AUDIO
+Description:  Support for the integrated AC97 sound device on motherboards
+ with AMD CS5535/CS5536 chipsets.
+
+@@
+
+Package: kmod-sp5100-tco
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SP5100 Watchdog Support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SP5100_TCO
+Description:  Kernel module for the SP5100_TCO hardware watchdog.
+
+@@
+
+Package: kmod-pcengines-apuv2
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PC Engines APUv2/3 front button and LEDs driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCENGINES_APU2
+Description:   This driver provides support for the front button and LEDs on
+  PC Engines APUv2/APUv3 board.
+
+@@
+
+Package: kmod-linkstation-poweroff
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mvebu
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Buffalo LinkStation power off driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_POWER_RESET=y CONFIG_POWER_RESET_LINKSTATION CONFIG_POWER_RESET_QNAP=n
+Description:   This driver supports turning off some Buffalo LinkStations by
+  setting an output pin at the ethernet PHY to the correct state.
+  It also makes the device compatible with the WoL function.
+  Say Y here if you have a Buffalo LinkStation LS421D/E.
 
 @@
 
