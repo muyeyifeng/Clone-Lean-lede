@@ -16083,6 +16083,25 @@ Description:   This package contains support for Allo Boss DAC
 
 @@
 
+Package: kmod-sound-soc-allo-boss2-dac
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: kmod-sound-soc-bcm2835-i2s +kmod-i2c-bcm2835 +kmod-regmap-i2c kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Support for Allo Boss2 DAC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_AUDIO_GRAPH_CARD CONFIG_SND_BCM2708_SOC_ALLO_BOSS2_DAC
+Description:   This package contains support for Allo Boss2 DAC
+
+@@
+
 Package: kmod-sound-soc-allo-digione
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
@@ -16612,6 +16631,25 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SND_BCM2708_SOC_JUSTBOOM_DIGI CONFIG_SND_SOC_WM8804
 Description:   This package contains support for JustBoom Digi
+
+@@
+
+Package: kmod-sound-soc-pifi-40-amp
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: kmod-sound-soc-bcm2835-i2s kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Support for PiFi-40 amp
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_BCM2708_SOC_PIFI_40 CONFIG_SND_PIFI_40 CONFIG_SND_SOC_TAS571X
+Description:   This package contains support for PiFi-40 amp
 
 @@
 
