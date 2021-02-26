@@ -2,7 +2,7 @@ Source-Makefile: feeds/telephony/libs/dahdi-linux/Makefile
 
 Package: kmod-dahdi
 Submenu: Voice over IP
-Version: <LINUX_VERSION>+3.1.0-4
+Version: <LINUX_VERSION>+3.1.0-5
 Depends: @USB_SUPPORT +kmod-lib-crc-ccitt
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +22,7 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 
 Package: kmod-dahdi-echocan-oslec
 Submenu: Voice over IP
-Version: <LINUX_VERSION>+3.1.0-4
+Version: <LINUX_VERSION>+3.1.0-5
 Depends: kmod-dahdi +kmod-echo
 Conflicts: 
 Menu-Depends: 
@@ -42,7 +42,7 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 
 Package: kmod-dahdi-dummy
 Submenu: Voice over IP
-Version: <LINUX_VERSION>+3.1.0-4
+Version: <LINUX_VERSION>+3.1.0-5
 Depends: kmod-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -63,7 +63,7 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 
 Package: kmod-dahdi-hfcs
 Submenu: Voice over IP
-Version: <LINUX_VERSION>+3.1.0-4
+Version: <LINUX_VERSION>+3.1.0-5
 Depends: @PCI_SUPPORT kmod-dahdi
 Conflicts: 
 Menu-Depends: 
