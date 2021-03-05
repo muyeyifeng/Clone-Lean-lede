@@ -2431,7 +2431,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.15.7-1
+Version: 1.16-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2441,7 +2441,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.15.7.src.tar.gz
+Source: go1.16.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2467,7 +2467,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.15.7-1
+Version: 1.16-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2477,7 +2477,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.15.7.src.tar.gz
+Source: go1.16.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2499,7 +2499,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.15.7-1
+Version: 1.16-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2509,7 +2509,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.15.7.src.tar.gz
+Source: go1.16.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56406,7 +56406,7 @@ Config:
 Source-Makefile: feeds/packages/net/acme/Makefile
 
 Package: acme
-Version: 2.8.6-3
+Version: 2.8.7-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -56416,7 +56416,7 @@ Category: Network
 Repository: base
 Title: ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.6.tar.gz
+Source: acme-2.8.7.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -56426,7 +56426,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 2.8.6-3
+Version: 2.8.7-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -56436,7 +56436,7 @@ Category: Network
 Repository: base
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.6.tar.gz
+Source: acme-2.8.7.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -61510,7 +61510,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.2.8-1
+Version: 2.2.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -61521,7 +61521,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.8.tar.gz
+Source: haproxy-2.2.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61534,7 +61534,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.2.8-1
+Version: 2.2.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -61545,7 +61545,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.8.tar.gz
+Source: haproxy-2.2.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61556,7 +61556,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.2.8-1
+Version: 2.2.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -61567,7 +61567,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.8.tar.gz
+Source: haproxy-2.2.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -65637,51 +65637,23 @@ Rosy Song <rosysong@rosinson.com>
 
 Source-Makefile: feeds/packages/net/nginx/Makefile
 
-Package: nginx
-Submenu: Web Servers/Proxies
-Version: 1.19.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +NGINX_SSL:libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c +!NGINX_SSL:nginx-util +NGINX_SSL&&NGINX_PCRE:nginx-ssl-util +NGINX_SSL&&NGINX_NOPCRE:nginx-ssl-util-nopcre
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: no-ssl
-Section: net
-Category: Network
-Repository: base
-Title: Nginx web server
-Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.0.tar.gz
-License: 2-clause BSD-like license
-Type: ipkg
-Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu)
-http://nginx.org/
-Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-@@
-Config:
-  source "feeds/packages/net/nginx/Config.in"
-config NGINX_NOPCRE
-	bool
-	default y if !NGINX_PCRE
-	default n if NGINX_PCRE
-@@
-
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.19.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +NGINX_SSL:libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c +libopenssl +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre
-Conflicts: 
+Version: 1.19.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +NGINX_PCRE:libpcre +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c
+Conflicts: nginx-all-module
 Menu-Depends: 
-Provides: nginx
+Provides: 
 Build-Variant: ssl
 Section: net
 Category: Network
 Repository: base
 Title: Nginx web server with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.0.tar.gz
+Source: nginx-1.19.6.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
-Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu) This variant is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
 http://nginx.org/
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
@@ -65691,28 +65663,28 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.19.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libopenssl +zlib +liblua +libpthread +libxml2 +libubus +libblobmsg-json +libjson-c +nginx-ssl-util
+Version: 1.19.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +liblua +libxml2 +libubus +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
-Provides: nginx nginx-ssl
+Provides:  nginx-ssl
 Build-Variant: all-module
 Section: net
 Category: Network
 Repository: base
 Title: Nginx web server with ALL module selected
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.0.tar.gz
+Source: nginx-1.19.6.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
-Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu) This variant is compiled with ALL module selected.
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with ALL module selected.
 http://nginx.org/
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.19.0-1
+Version: 1.19.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi +uwsgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -65722,7 +65694,7 @@ Category: Network
 Repository: base
 Title: Support file for Nginx
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.0.tar.gz
+Source: nginx-1.19.6.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  Support file for LuCI in nginx. Include custom nginx configuration, autostart script for uwsgi.
@@ -65730,52 +65702,50 @@ http://nginx.org/
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: nginx-mod-luci-ssl
-Submenu: Web Servers/Proxies
-Version: 1.19.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi +uwsgi-luci-support +nginx-ssl
+Package: nginx
+Version: 1.19.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Section: net
-Category: Network
+Section: opt
+Category: Extra packages
 Repository: base
-Title: Support file for Nginx with HTTPS support
+Title: Dummy package for transition when upgrading.
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.0.tar.gz
+Source: nginx-1.19.6.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
-Description:  This also include redirect from http to https and cert autogeneration.
-http://nginx.org/
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev.
+Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
+@@
+
+Package: nginx-mod-luci-ssl
+Version: 1.19.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-mod-luci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Dummy package for transition when upgrading.
+Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
+Source: nginx-1.19.6.tar.gz
+License: 2-clause BSD-like license
+Type: ipkg
+Description: Dummy package for transition when upgrading.
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 
 Source-Makefile: feeds/packages/net/nginx-util/Makefile
 
-Package: nginx-util
-Submenu: Web Servers/Proxies
-Version: 1.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libubus +libubox +libpthread
-Conflicts: nginx-ssl-util-nopcre nginx-ssl-util
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Nginx configurator
-Maintainer: Peter Stadler <peter.stadler@student.uibk.ac.at>
-Source: 
-Type: ipkg
-Description:   Utility that builds dynamically LAN listen directives for Nginx.
-Peter Stadler <peter.stadler@student.uibk.ac.at>
-@@
-
 Package: nginx-ssl-util
 Submenu: Web Servers/Proxies
-Version: 1.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libubus +libubox +libpthread +libopenssl +libpcre
-Conflicts: nginx-util, nginx-ssl-util-nopcre,
+Version: 1.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuci +libubus +libubox +libpthread +libopenssl +nginx-util +libpcre
+Conflicts: nginx-ssl-util-nopcre,
 Menu-Depends: 
 Provides: 
 Section: net
@@ -65785,15 +65755,17 @@ Title: Nginx configurator including SSL (using PCRE)
 Maintainer: Peter Stadler <peter.stadler@student.uibk.ac.at>
 Source: 
 Type: ipkg
-Description:   Utility that builds dynamically LAN listen directives for Nginx. Furthermore, it manages SSL directives for its server parts and can create corresponding (self-signed) certificates. It uses the PCRE library for performance.
+Description:   Utility that builds dynamically LAN listen directives for Nginx.
+  Furthermore, it manages SSL directives for its server parts and can create
+  corresponding (self-signed) certificates. It uses the PCRE library for performance.
 Peter Stadler <peter.stadler@student.uibk.ac.at>
 @@
 
 Package: nginx-ssl-util-nopcre
 Submenu: Web Servers/Proxies
-Version: 1.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libubus +libubox +libpthread +libopenssl
-Conflicts: nginx-util, nginx-ssl-util
+Version: 1.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuci +libubus +libubox +libpthread +libopenssl +nginx-util
+Conflicts: nginx-ssl-util
 Menu-Depends: 
 Provides: 
 Section: net
@@ -65803,7 +65775,26 @@ Title: Nginx configurator including SSL (using <regex>)
 Maintainer: Peter Stadler <peter.stadler@student.uibk.ac.at>
 Source: 
 Type: ipkg
-Description:   Utility that builds dynamically LAN listen directives for Nginx. Furthermore, it manages SSL directives for its server parts and can create corresponding (self-signed) certificates. It uses the standard regex library of C++.
+Description:   Utility that builds dynamically LAN listen directives for Nginx.
+  Furthermore, it manages SSL directives for its server parts and can create
+  corresponding (self-signed) certificates. It uses the standard regex library of C++.
+Peter Stadler <peter.stadler@student.uibk.ac.at>
+@@
+
+Package: nginx-util
+Version: 1.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libubus +libubox +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Dummy package for removing nginx-util when upgrading.
+Maintainer: Peter Stadler <peter.stadler@student.uibk.ac.at>
+Source: 
+Type: ipkg
+Description: Dummy package for removing nginx-util when upgrading.
 Peter Stadler <peter.stadler@student.uibk.ac.at>
 @@
 
@@ -74428,7 +74419,7 @@ Michael Heimpold <mhei@heimpold.de>
 Source-Makefile: feeds/packages/net/uacme/Makefile
 
 Package: uacme
-Version: 1.2.1-2
+Version: 1.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +LIBCURL_WOLFSSL:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -74438,7 +74429,7 @@ Category: Network
 Repository: base
 Title: lightweight client for ACMEv2
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: uacme-1.2.1.tar.gz
+Source: uacme-1.6.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -76831,7 +76822,7 @@ Source-Makefile: feeds/packages/net/zerotier/Makefile
 
 Package: zerotier
 Submenu: VPN
-Version: 1.6.2-2
+Version: 1.6.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp
 Conflicts: 
 Menu-Depends: 
@@ -76841,7 +76832,7 @@ Category: Network
 Repository: base
 Title: Create flat virtual Ethernet networks of almost unlimited size
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: zerotier-1.6.2.tar.gz
+Source: zerotier-1.6.4.tar.gz
 License: BSL 1.1
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -81995,7 +81986,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.2.13-1
+Version: 1.2.13-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) @(aarch64||arm||x86_64) +btrfs-progs +runc +CONTAINERD_SECCOMP:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -84494,7 +84485,7 @@ Build-Depends: golang/host
 
 Package: docker-ce
 Menu: 1
-Version: 19.03.12-2
+Version: 19.03.12-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) @(aarch64||arm||x86_64) +btrfs-progs +ca-certificates +cgroupfs-mount +containerd +libdevmapper +libnetwork +tini +DOCKER_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -86504,7 +86495,7 @@ Source-Makefile: feeds/packages/utils/libnetwork/Makefile
 Build-Depends: golang/host
 
 Package: libnetwork
-Version: 2020-06-17-026aabaa659832804b01754aaadd2c0f420c68b6-1
+Version: 2020-06-17-026aabaa659832804b01754aaadd2c0f420c68b6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) @(aarch64||arm||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -94124,7 +94115,7 @@ Build-Depends: golang/host
 
 Package: runc
 Menu: 1
-Version: 1.0.0-rc10-1
+Version: 1.0.0-rc10-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) @(aarch64||arm||x86_64) +RUNC_SECCOMP:libseccomp
 Conflicts: 
 Menu-Depends: 
