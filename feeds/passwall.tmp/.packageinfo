@@ -250,7 +250,7 @@ Build-Depends: ncurses/host ninja/host python3/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 88.0.4324.96-1-1
+Version: 89.0.4389.72-1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libnss
 Conflicts: 
 Menu-Depends: 
@@ -259,8 +259,8 @@ Section: net
 Category: Network
 Repository: base
 Title: Make a fortune quietly
-Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
-Source: naiveproxy-88.0.4324.96-1.tar.gz
+Maintainer: CN_SZTL <cnsztl@immortalwrt.org>
+Source: naiveproxy-89.0.4389.72-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -268,7 +268,7 @@ Description: 	NaïveProxy uses Chrome's network stack to camouflage traffic with
 	censorship resistance and low detectability. Reusing Chrome's stack also
 	ensures best practices in performance and security.
 https://github.com/klzgrad/naiveproxy
-CN_SZTL <cnsztl@project-openwrt.eu.org>
+CN_SZTL <cnsztl@immortalwrt.org>
 @@
 Config:
 	depends on !(arc||armeb||mips||mips64||powerpc)
