@@ -2,7 +2,7 @@ Source-Makefile: package/libs/mbedtls/Makefile
 
 Package: libmbedtls
 Submenu: SSL
-Version: 2.16.7-1
+Version: 2.16.9-1
 ABIVersion: 12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: Embedded SSL (library)
 Maintainer: 
-Source: mbedtls-2.16.7.tar.gz
+Source: mbedtls-2.16.9.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: gpl-2.0.txt
 Type: ipkg
@@ -35,10 +35,46 @@ config LIBMBEDTLS_DEBUG_C
 	 by around 60 KiB (for an ARMv5 platform).
 
 	 Usually, you don't need this, so don't select this if you're unsure.
+
+config LIBMBEDTLS_HAVE_ARMV8CE_AES
+	depends on PACKAGE_libmbedtls
+	bool
+	default y
+	prompt "Enable use of the ARMv8 Crypto Extensions"
+	depends on aarch64 && !TARGET_bcm27xx && !TARGET_bcm4908
+	help
+	 Use of the ARMv8 Crypto Extensions greatly increase performance
+	 (up to 4x faster on AES-GCM while 10x faster on raw AES).
+
+	 Related instructions should be included in all modern Aarch64
+	 devices, except some wastes like Broadcom.
+	 If you don't sure, say Y here.
+
+config LIBMBEDTLS_HAVE_SSE2
+	depends on PACKAGE_libmbedtls
+	bool
+	default y if !TARGET_x86_legacy && !TARGET_x86_geode
+	prompt "Enable use of x86 SSE2 instructions"
+	depends on x86_64 || i386
+	help
+	 Use of SSE2 instructions greatly increase performance (up to
+	 3x faster) with a minimum (~0.2%, or 23KB) increase in package
+	 size, but it will bring no benefit if your hardware does not
+	 support them, such as Geode GX and LX.  In this case you may
+	 save 23KB by saying yes here.  AMD Geode NX, and Intel
+	 Pentium 4 and above support SSE2.
+
+config LIBMBEDTLS_HKDF_C
+	depends on PACKAGE_libmbedtls
+	bool "Enable the HKDF algorithm (RFC 5869)"
+	default n
+	help
+	 This option adds support for the Hashed Message Authentication Code
+	 (HMAC)-based key derivation function (HKDF).
 @@
 
 Package: mbedtls-util
-Version: 2.16.7-1
+Version: 2.16.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +84,7 @@ Category: Utilities
 Repository: base
 Title: Embedded SSL (utilities)
 Maintainer: 
-Source: mbedtls-2.16.7.tar.gz
+Source: mbedtls-2.16.9.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: gpl-2.0.txt
 Type: ipkg

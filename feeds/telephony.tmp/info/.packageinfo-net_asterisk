@@ -5,8 +5,8 @@ Build-Types: host
 Package: asterisk
 Menu: 1
 Submenu: Telephony
-Version: 18.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +jansson +libcap +libedit +libopenssl +libsqlite3 +libuuid +libxml2 +zlib
+Version: 18.1.1-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +jansson +libcap +libedit +libopenssl +libsqlite3 +libuuid +libxml2 +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ Config:
 
 Package: asterisk-sounds
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -64,7 +64,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-adsiprog
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-adsiprog:asterisk-res-adsi
 Conflicts: 
 Menu-Depends: 
@@ -85,7 +85,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-agent-pool
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -106,7 +106,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-alarmreceiver
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -127,7 +127,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-amd
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -148,7 +148,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-attended-transfer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -169,7 +169,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-audiosocket
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-audiosocket:asterisk-res-audiosocket
 Conflicts: 
 Menu-Depends: 
@@ -190,7 +190,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-authenticate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -211,7 +211,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-blind-transfer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -232,7 +232,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-bridgeaddchan
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -253,7 +253,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-bridgewait
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-bridgewait:asterisk-bridge-holding
 Conflicts: 
 Menu-Depends: 
@@ -274,7 +274,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-celgenuserevent
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -295,7 +295,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-chanisavail
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -316,7 +316,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-channelredirect
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -337,7 +337,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-chanspy
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -358,7 +358,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-confbridge
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-confbridge:asterisk-bridge-builtin-features +PACKAGE_asterisk-app-confbridge:asterisk-bridge-simple +PACKAGE_asterisk-app-confbridge:asterisk-bridge-softmix
 Conflicts: 
 Menu-Depends: 
@@ -379,7 +379,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-controlplayback
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -400,7 +400,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-dahdiras
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-dahdiras:asterisk-chan-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -421,7 +421,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-dictate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -442,7 +442,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-directed-pickup
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -463,7 +463,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-directory
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -484,7 +484,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-disa
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -505,7 +505,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-dumpchan
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -526,7 +526,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-exec
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -547,7 +547,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-externalivr
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -568,7 +568,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-festival
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -589,7 +589,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-flash
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-flash:asterisk-chan-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -610,7 +610,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-followme
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -631,7 +631,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-getcpeid
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -652,7 +652,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-ices
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -673,7 +673,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-image
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -694,7 +694,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-ivrdemo
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -715,7 +715,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-milliwatt
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -736,7 +736,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-minivm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -757,7 +757,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-mixmonitor
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -778,7 +778,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-morsecode
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -799,7 +799,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-mp3
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-mp3:mpg123
 Conflicts: 
 Menu-Depends: 
@@ -820,7 +820,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-originate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -841,7 +841,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-page
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-page:asterisk-app-confbridge
 Conflicts: 
 Menu-Depends: 
@@ -862,7 +862,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-playtones
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -883,7 +883,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-privacy
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -904,7 +904,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-queue
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -925,7 +925,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-read
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -946,7 +946,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-readexten
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -967,7 +967,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-record
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -988,7 +988,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-saycounted
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1009,7 +1009,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-sayunixtime
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1030,7 +1030,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-senddtmf
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1051,7 +1051,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-sendtext
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1072,7 +1072,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-skel
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1093,7 +1093,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-sms
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1114,7 +1114,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-softhangup
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1135,7 +1135,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-speech
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-speech:asterisk-res-speech
 Conflicts: 
 Menu-Depends: 
@@ -1156,7 +1156,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-stack
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-stack:asterisk-res-agi
 Conflicts: 
 Menu-Depends: 
@@ -1177,7 +1177,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-stasis
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-stasis:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -1198,7 +1198,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-statsd
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-statsd:asterisk-res-statsd
 Conflicts: 
 Menu-Depends: 
@@ -1219,7 +1219,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-stream-echo
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1240,7 +1240,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-system
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1261,7 +1261,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-talkdetect
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1282,7 +1282,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-test
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1303,7 +1303,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-transfer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1324,7 +1324,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-url
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1345,7 +1345,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-userevent
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1366,7 +1366,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-verbose
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1387,7 +1387,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-voicemail
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1408,7 +1408,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-voicemail-imap
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-voicemail-imap:uw-imap
 Conflicts: 
 Menu-Depends: 
@@ -1429,7 +1429,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-voicemail-odbc
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-voicemail-odbc:unixodbc
 Conflicts: 
 Menu-Depends: 
@@ -1450,7 +1450,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-waitforring
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1471,7 +1471,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-waitforsilence
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1492,7 +1492,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-waituntil
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1513,7 +1513,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-while
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1534,7 +1534,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-app-zapateller
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1555,7 +1555,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-builtin-features
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1576,7 +1576,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-builtin-interval-features
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1597,7 +1597,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-holding
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1618,7 +1618,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-native-rtp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1639,7 +1639,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-simple
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1660,7 +1660,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-bridge-softmix
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1681,7 +1681,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cdr
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1702,7 +1702,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cdr-csv
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1723,7 +1723,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cdr-sqlite3
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -1744,7 +1744,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cel-custom
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1765,7 +1765,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cel-manager
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1786,7 +1786,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-cel-sqlite3-custom
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1807,7 +1807,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-alsa
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -1828,7 +1828,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-audiosocket
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-audiosocket:asterisk-res-audiosocket
 Conflicts: 
 Menu-Depends: 
@@ -1849,7 +1849,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-bridge-media
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1870,7 +1870,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-console
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-console:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -1891,7 +1891,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-dahdi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-dahdi:dahdi-tools-libtonezone +PACKAGE_asterisk-chan-dahdi:kmod-dahdi +PACKAGE_asterisk-chan-dahdi:libpri @!aarch64
 Conflicts: 
 Menu-Depends: 
@@ -1912,7 +1912,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-iax2
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1933,7 +1933,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-mgcp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -1954,7 +1954,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-mobile
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-mobile:bluez-libs
 Conflicts: 
 Menu-Depends: 
@@ -1975,7 +1975,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-motif
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-motif:asterisk-res-xmpp
 Conflicts: 
 Menu-Depends: 
@@ -1996,7 +1996,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-ooh323
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2017,7 +2017,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-oss
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2038,7 +2038,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-rtp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-rtp:asterisk-res-rtp-multicast
 Conflicts: 
 Menu-Depends: 
@@ -2059,7 +2059,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-sip
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-chan-sip:asterisk-app-confbridge
 Conflicts: 
 Menu-Depends: 
@@ -2080,7 +2080,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-skinny
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2101,7 +2101,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-chan-unistim
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2122,7 +2122,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-a-mu
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2143,7 +2143,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-adpcm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2164,7 +2164,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-alaw
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2185,7 +2185,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-dahdi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-codec-dahdi:asterisk-chan-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -2206,7 +2206,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-g722
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2227,7 +2227,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-g726
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2248,7 +2248,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-gsm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2269,7 +2269,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-ilbc
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2290,7 +2290,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-lpc10
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2311,7 +2311,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-resample
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2332,7 +2332,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-speex
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk @!SOFT_FLOAT +PACKAGE_asterisk-codec-speex:libspeex +PACKAGE_asterisk-codec-speex:libspeexdsp
 Conflicts: 
 Menu-Depends: 
@@ -2353,7 +2353,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-codec-ulaw
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2374,7 +2374,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-curl
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -2395,7 +2395,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-g719
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2416,7 +2416,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-g723
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2437,7 +2437,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-g726
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2458,7 +2458,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-g729
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2479,7 +2479,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-gsm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2500,7 +2500,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-h263
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2521,7 +2521,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-h264
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2542,7 +2542,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-ilbc
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2563,7 +2563,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-mp3
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -2584,7 +2584,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-ogg-speex
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk @!SOFT_FLOAT +PACKAGE_asterisk-format-ogg-speex:libogg +PACKAGE_asterisk-format-ogg-speex:libspeex
 Conflicts: 
 Menu-Depends: 
@@ -2605,7 +2605,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-ogg-vorbis
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-format-ogg-vorbis:libvorbis
 Conflicts: 
 Menu-Depends: 
@@ -2626,7 +2626,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-pcm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2647,7 +2647,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-siren14
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2668,7 +2668,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-siren7
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2689,7 +2689,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-sln
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2710,7 +2710,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-vox
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2731,7 +2731,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-wav
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2752,7 +2752,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-wav-gsm
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2773,7 +2773,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-aes
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2794,7 +2794,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-base64
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2815,7 +2815,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-blacklist
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2836,7 +2836,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-callcompletion
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2857,7 +2857,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-channel
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2878,7 +2878,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-config
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2899,7 +2899,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-cut
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2920,7 +2920,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-db
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2941,7 +2941,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-devstate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2962,7 +2962,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-dialgroup
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -2983,7 +2983,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-dialplan
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3004,7 +3004,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-enum
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3025,7 +3025,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-env
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3046,7 +3046,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-extstate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3067,7 +3067,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-frame-trace
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3088,7 +3088,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-global
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3109,7 +3109,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-groupcount
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3130,7 +3130,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-hangupcause
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3151,7 +3151,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-holdintercept
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3172,7 +3172,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-iconv
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -3193,7 +3193,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-jitterbuffer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3214,7 +3214,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-lock
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3235,7 +3235,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-math
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3256,7 +3256,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-md5
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3277,7 +3277,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-module
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3298,7 +3298,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-periodic-hook
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-func-periodic-hook:asterisk-app-chanspy +PACKAGE_asterisk-func-periodic-hook:asterisk-func-cut +PACKAGE_asterisk-func-periodic-hook:asterisk-func-groupcount +PACKAGE_asterisk-func-periodic-hook:asterisk-func-uri
 Conflicts: 
 Menu-Depends: 
@@ -3319,7 +3319,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-pitchshift
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3340,7 +3340,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-presencestate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3361,7 +3361,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-rand
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3382,7 +3382,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-realtime
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3403,7 +3403,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-sha1
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3424,7 +3424,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-shell
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3445,7 +3445,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-sorcery
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3466,7 +3466,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-speex
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk @!SOFT_FLOAT +PACKAGE_asterisk-func-speex:libspeex +PACKAGE_asterisk-func-speex:libspeexdsp
 Conflicts: 
 Menu-Depends: 
@@ -3487,7 +3487,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-sprintf
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3508,7 +3508,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-srv
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3529,7 +3529,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-sysinfo
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3550,7 +3550,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-talkdetect
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3571,7 +3571,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-uri
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3592,7 +3592,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-version
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3613,7 +3613,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-vmcount
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3634,7 +3634,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-func-volume
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3655,7 +3655,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-odbc
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-odbc:libpthread +PACKAGE_asterisk-odbc:libc +PACKAGE_asterisk-odbc:unixodbc
 Conflicts: 
 Menu-Depends: 
@@ -3676,7 +3676,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-ael
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-pbx-ael:asterisk-res-ael-share
 Conflicts: 
 Menu-Depends: 
@@ -3697,7 +3697,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-dundi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3718,7 +3718,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-loopback
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3739,7 +3739,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-lua
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-pbx-lua:liblua
 Conflicts: 
 Menu-Depends: 
@@ -3760,7 +3760,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-realtime
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3781,7 +3781,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pbx-spool
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3802,7 +3802,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pgsql
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -3823,7 +3823,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-pjsip
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-pjsip:asterisk-res-http-websocket +PACKAGE_asterisk-pjsip:asterisk-res-pjproject +PACKAGE_asterisk-pjsip:asterisk-res-sorcery +PACKAGE_asterisk-pjsip:libpjsip +PACKAGE_asterisk-pjsip:libpjmedia +PACKAGE_asterisk-pjsip:libpjnath +PACKAGE_asterisk-pjsip:libpjsip-simple +PACKAGE_asterisk-pjsip:libpjsip-ua +PACKAGE_asterisk-pjsip:libpjsua +PACKAGE_asterisk-pjsip:libpjsua2
 Conflicts: 
 Menu-Depends: 
@@ -3844,7 +3844,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-adsi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3865,7 +3865,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ael-share
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -3886,7 +3886,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-agi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-agi:asterisk-res-speech
 Conflicts: 
 Menu-Depends: 
@@ -3907,7 +3907,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari:asterisk-res-http-websocket
 Conflicts: 
 Menu-Depends: 
@@ -3928,7 +3928,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-applications
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-applications:asterisk-res-ari +PACKAGE_asterisk-res-ari-applications:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-applications:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -3949,7 +3949,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-asterisk
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-asterisk:asterisk-res-ari +PACKAGE_asterisk-res-ari-asterisk:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-asterisk:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -3970,7 +3970,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-bridges
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-bridges:asterisk-res-ari +PACKAGE_asterisk-res-ari-bridges:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-bridges:asterisk-res-stasis-playback
 Conflicts: 
 Menu-Depends: 
@@ -3991,7 +3991,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-channels
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-channels:asterisk-res-ari +PACKAGE_asterisk-res-ari-channels:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-channels:asterisk-res-stasis-answer +PACKAGE_asterisk-res-ari-channels:asterisk-res-stasis-playback +PACKAGE_asterisk-res-ari-channels:asterisk-res-stasis-snoop
 Conflicts: 
 Menu-Depends: 
@@ -4012,7 +4012,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-device-states
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-device-states:asterisk-res-ari +PACKAGE_asterisk-res-ari-device-states:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-device-states:asterisk-res-stasis-device-state
 Conflicts: 
 Menu-Depends: 
@@ -4033,7 +4033,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-endpoints
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-endpoints:asterisk-res-ari +PACKAGE_asterisk-res-ari-endpoints:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-endpoints:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -4054,7 +4054,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-events
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-events:asterisk-res-ari +PACKAGE_asterisk-res-ari-events:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-events:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -4075,7 +4075,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-mailboxes
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-mailboxes:asterisk-res-ari +PACKAGE_asterisk-res-ari-mailboxes:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-mailboxes:asterisk-res-stasis-mailbox
 Conflicts: 
 Menu-Depends: 
@@ -4096,7 +4096,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-model
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4117,7 +4117,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-playbacks
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-playbacks:asterisk-res-ari +PACKAGE_asterisk-res-ari-playbacks:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-playbacks:asterisk-res-stasis-playback
 Conflicts: 
 Menu-Depends: 
@@ -4138,7 +4138,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-recordings
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-recordings:asterisk-res-ari +PACKAGE_asterisk-res-ari-recordings:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-recordings:asterisk-res-stasis-recording
 Conflicts: 
 Menu-Depends: 
@@ -4159,7 +4159,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-ari-sounds
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-ari-sounds:asterisk-res-ari +PACKAGE_asterisk-res-ari-sounds:asterisk-res-ari-model +PACKAGE_asterisk-res-ari-sounds:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -4180,7 +4180,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-audiosocket
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4201,7 +4201,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-calendar
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4222,7 +4222,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-calendar-caldav
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-calendar-caldav:asterisk-res-calendar +PACKAGE_asterisk-res-calendar-caldav:libical +PACKAGE_asterisk-res-calendar-caldav:libneon
 Conflicts: 
 Menu-Depends: 
@@ -4243,7 +4243,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-calendar-ews
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-calendar-ews:asterisk-res-calendar +PACKAGE_asterisk-res-calendar-ews:libneon
 Conflicts: 
 Menu-Depends: 
@@ -4264,7 +4264,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-calendar-exchange
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-calendar-exchange:asterisk-res-calendar +PACKAGE_asterisk-res-calendar-exchange:libical +PACKAGE_asterisk-res-calendar-exchange:libiksemel +PACKAGE_asterisk-res-calendar-exchange:libneon
 Conflicts: 
 Menu-Depends: 
@@ -4285,7 +4285,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-calendar-icalendar
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-calendar-icalendar:asterisk-res-calendar +PACKAGE_asterisk-res-calendar-icalendar:libical +PACKAGE_asterisk-res-calendar-icalendar:libneon
 Conflicts: 
 Menu-Depends: 
@@ -4306,7 +4306,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-chan-stats
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-chan-stats:asterisk-res-statsd
 Conflicts: 
 Menu-Depends: 
@@ -4327,7 +4327,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-clialiases
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4348,7 +4348,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-clioriginate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4369,7 +4369,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-config-ldap
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-config-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -4390,7 +4390,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-config-mysql
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-config-mysql:libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -4411,7 +4411,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-config-sqlite3
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4432,7 +4432,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-convert
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4453,7 +4453,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-endpoint-stats
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-endpoint-stats:asterisk-res-statsd
 Conflicts: 
 Menu-Depends: 
@@ -4474,7 +4474,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-hep
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4495,7 +4495,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-hep-pjsip
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-hep-pjsip:asterisk-res-hep +PACKAGE_asterisk-res-hep-pjsip:asterisk-pjsip
 Conflicts: 
 Menu-Depends: 
@@ -4516,7 +4516,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-hep-rtcp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-hep-rtcp:asterisk-res-hep
 Conflicts: 
 Menu-Depends: 
@@ -4537,7 +4537,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-fax-spandsp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-fax-spandsp:asterisk-res-fax +PACKAGE_asterisk-res-fax-spandsp:libspandsp +PACKAGE_asterisk-res-fax-spandsp:libtiff
 Conflicts: 
 Menu-Depends: 
@@ -4558,7 +4558,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-fax
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4579,7 +4579,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-celt
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4600,7 +4600,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-g729
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4621,7 +4621,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-h263
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4642,7 +4642,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-h264
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4663,7 +4663,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-ilbc
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4684,7 +4684,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-opus
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4705,7 +4705,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-silk
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4726,7 +4726,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-siren14
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4747,7 +4747,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-siren7
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4768,7 +4768,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-format-attr-vp8
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4789,7 +4789,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-http-media-cache
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-http-media-cache:asterisk-curl
 Conflicts: 
 Menu-Depends: 
@@ -4810,7 +4810,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-http-websocket
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4831,7 +4831,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-limit
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4852,7 +4852,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-manager-devicestate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4873,7 +4873,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-manager-presencestate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4894,7 +4894,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-monitor
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4915,7 +4915,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-musiconhold
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4936,7 +4936,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-mutestream
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4957,7 +4957,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-mwi-devstate
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -4979,7 +4979,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-mwi-external
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5000,7 +5000,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-mwi-external-ami
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-mwi-external-ami:asterisk-res-mwi-external
 Conflicts: 
 Menu-Depends: 
@@ -5021,7 +5021,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-parking
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-parking:asterisk-bridge-holding
 Conflicts: 
 Menu-Depends: 
@@ -5042,7 +5042,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-phoneprov
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5063,7 +5063,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-pjsip-phoneprov
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-pjsip-phoneprov:asterisk-pjsip +PACKAGE_asterisk-res-pjsip-phoneprov:asterisk-res-phoneprov
 Conflicts: 
 Menu-Depends: 
@@ -5084,7 +5084,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-pjsip-stir-shaken
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-pjsip-stir-shaken:asterisk-pjsip +PACKAGE_asterisk-res-pjsip-stir-shaken:asterisk-res-stir-shaken
 Conflicts: 
 Menu-Depends: 
@@ -5105,7 +5105,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-pjproject
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-pjproject:libpj +PACKAGE_asterisk-res-pjproject:libpjlib-util +PACKAGE_asterisk-res-pjproject:libpjmedia +PACKAGE_asterisk-res-pjproject:libpjmedia +PACKAGE_asterisk-res-pjproject:libpjnath +PACKAGE_asterisk-res-pjproject:libpjsip-simple +PACKAGE_asterisk-res-pjproject:libpjsip-ua +PACKAGE_asterisk-res-pjproject:libpjsip +PACKAGE_asterisk-res-pjproject:libpjsua +PACKAGE_asterisk-res-pjproject:libpjsua2 +PACKAGE_asterisk-res-pjproject:libsrtp2
 Conflicts: 
 Menu-Depends: 
@@ -5126,7 +5126,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-pktccops
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5147,7 +5147,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-prometheus
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-prometheus:libpjsip +PACKAGE_asterisk-res-prometheus:libpjmedia +PACKAGE_asterisk-res-prometheus:libpjnath +PACKAGE_asterisk-res-prometheus:libpjsip-simple +PACKAGE_asterisk-res-prometheus:libpjsip-ua +PACKAGE_asterisk-res-prometheus:libpjsua +PACKAGE_asterisk-res-prometheus:libpjsua2
 Conflicts: 
 Menu-Depends: 
@@ -5168,7 +5168,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-realtime
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5189,7 +5189,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-remb-modifier
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5210,7 +5210,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-resolver-unbound
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-resolver-unbound:libunbound
 Conflicts: 
 Menu-Depends: 
@@ -5231,7 +5231,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-rtp-asterisk
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-rtp-asterisk:libpjsip +PACKAGE_asterisk-res-rtp-asterisk:libpjmedia +PACKAGE_asterisk-res-rtp-asterisk:libpjnath +PACKAGE_asterisk-res-rtp-asterisk:libpjsip-simple +PACKAGE_asterisk-res-rtp-asterisk:libpjsip-ua +PACKAGE_asterisk-res-rtp-asterisk:libpjsua +PACKAGE_asterisk-res-rtp-asterisk:libpjsua2
 Conflicts: 
 Menu-Depends: 
@@ -5252,7 +5252,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-rtp-multicast
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5273,7 +5273,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-security-log
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5294,7 +5294,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-smdi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5315,7 +5315,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-snmp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-snmp:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -5336,7 +5336,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-sorcery
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5358,7 +5358,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-sorcery-memory-cache
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5379,7 +5379,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-speech
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5400,7 +5400,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-srtp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-srtp:libsrtp2
 Conflicts: 
 Menu-Depends: 
@@ -5421,7 +5421,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5442,7 +5442,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-answer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-answer:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -5463,7 +5463,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-device-state
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-device-state:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -5484,7 +5484,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-mailbox
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-mailbox:asterisk-res-stasis +PACKAGE_asterisk-res-stasis-mailbox:asterisk-res-mwi-external
 Conflicts: 
 Menu-Depends: 
@@ -5505,7 +5505,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-playback
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-playback:asterisk-res-stasis-recording
 Conflicts: 
 Menu-Depends: 
@@ -5526,7 +5526,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-recording
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-recording:asterisk-res-stasis
 Conflicts: 
 Menu-Depends: 
@@ -5547,7 +5547,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stasis-snoop
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stasis-snoop:asterisk-res-stasis-recording
 Conflicts: 
 Menu-Depends: 
@@ -5568,7 +5568,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-statsd
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5589,7 +5589,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stir-shaken
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-stir-shaken:asterisk-curl
 Conflicts: 
 Menu-Depends: 
@@ -5610,7 +5610,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-stun-monitor
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5631,7 +5631,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-timing-dahdi
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-timing-dahdi:asterisk-chan-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -5652,7 +5652,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-timing-pthread
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5673,7 +5673,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-res-xmpp
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-res-xmpp:libiksemel +PACKAGE_asterisk-res-xmpp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -5694,7 +5694,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-aelparse
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-util-aelparse:asterisk-pbx-ael
 Conflicts: 
 Menu-Depends: 
@@ -5715,7 +5715,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-astcanary
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5736,7 +5736,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-astdb2sqlite3
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5757,7 +5757,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-astdb2bdb
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5778,7 +5778,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-check-expr
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5799,7 +5799,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-check-expr2
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5820,7 +5820,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-conf2ael
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-util-conf2ael:asterisk-pbx-ael
 Conflicts: 
 Menu-Depends: 
@@ -5841,7 +5841,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-muted
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5862,7 +5862,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-smsq
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-util-smsq:libpopt
 Conflicts: 
 Menu-Depends: 
@@ -5883,7 +5883,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-stereorize
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
@@ -5904,7 +5904,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-util-streamplayer
 Submenu: Telephony
-Version: 18.1.1-4
+Version: 18.1.1-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
 Conflicts: 
 Menu-Depends: 
