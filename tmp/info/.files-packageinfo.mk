@@ -381,6 +381,7 @@ $(eval $(call PackageDir,feeds_darkmatter_luci-theme-darkmatter,feeds/darkmatter
 $(eval $(call PackageDir,feeds_freifunk_luci-theme-freifunk-generic,feeds/freifunk/luci-theme-freifunk-generic,))
 $(eval $(call PackageDir,feeds_helloworld_luci-app-ssr-plus,feeds/helloworld/luci-app-ssr-plus,))
 $(eval $(call PackageDir,feeds_helloworld_naiveproxy,feeds/helloworld/naiveproxy,))
+$(eval $(call PackageDir,feeds_helloworld_shadowsocks-rust,feeds/helloworld/shadowsocks-rust,))
 $(eval $(call PackageDir,feeds_helloworld_tcping,feeds/helloworld/tcping,))
 $(eval $(call PackageDir,feeds_helloworld_xray-core,feeds/helloworld/xray-core,))
 $(eval $(call PackageDir,feeds_helloworld_xray-plugin,feeds/helloworld/xray-plugin,))

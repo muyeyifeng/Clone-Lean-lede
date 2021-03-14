@@ -1,0 +1,107 @@
+Source-Makefile: package/feeds/helloworld/shadowsocks-rust/Makefile
+
+Package: shadowsocks-rust-sslocal
+Submenu: Web Servers/Proxies
+Version: 1.9.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: helloworld
+Title: shadowsocks-rust sslocal
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: dummy
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-rust sslocal
+https://github.com/shadowsocks/shadowsocks-rust
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    config SHADOWSOCKS_RUST_sslocal_COMPRESS_UPX
+      bool "Compress sslocal with UPX"
+      default y
+@@
+
+Package: shadowsocks-rust-ssmanager
+Submenu: Web Servers/Proxies
+Version: 1.9.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: helloworld
+Title: shadowsocks-rust ssmanager
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: dummy
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-rust ssmanager
+https://github.com/shadowsocks/shadowsocks-rust
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    config SHADOWSOCKS_RUST_ssmanager_COMPRESS_UPX
+      bool "Compress ssmanager with UPX"
+      default y
+@@
+
+Package: shadowsocks-rust-ssserver
+Submenu: Web Servers/Proxies
+Version: 1.9.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: helloworld
+Title: shadowsocks-rust ssserver
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: dummy
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-rust ssserver
+https://github.com/shadowsocks/shadowsocks-rust
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    config SHADOWSOCKS_RUST_ssserver_COMPRESS_UPX
+      bool "Compress ssserver with UPX"
+      default y
+@@
+
+Package: shadowsocks-rust-ssurl
+Submenu: Web Servers/Proxies
+Version: 1.9.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: helloworld
+Title: shadowsocks-rust ssurl
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: dummy
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-rust ssurl
+https://github.com/shadowsocks/shadowsocks-rust
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    config SHADOWSOCKS_RUST_ssurl_COMPRESS_UPX
+      bool "Compress ssurl with UPX"
+      default y
+@@
+
+
