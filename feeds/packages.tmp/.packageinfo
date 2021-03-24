@@ -479,7 +479,7 @@ Build-Depends: sudo/host
 Build-Types: host
 
 Package: sudo
-Version: 1.9.5p2-1
+Version: 1.9.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -489,7 +489,7 @@ Category: Administration
 Repository: base
 Title: Delegate authority to run commands
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: sudo-1.9.5p2.tar.gz
+Source: sudo-1.9.6p1.tar.gz
 License: ISC
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -2431,7 +2431,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.16-1
+Version: 1.16.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2441,7 +2441,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.src.tar.gz
+Source: go1.16.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2467,7 +2467,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.16-1
+Version: 1.16.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2477,7 +2477,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.src.tar.gz
+Source: go1.16.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2499,7 +2499,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.16-1
+Version: 1.16.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2509,7 +2509,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.src.tar.gz
+Source: go1.16.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -15762,100 +15762,6 @@ Config:
     depends on PACKAGE_python3-pydoc
 @@
 
-Package: python3-logging
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 logging module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.8 logging module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-logging-src
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 logging module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.8 logging module
-
-    This package contains the Python source files for python3-logging.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-logging
-@@
-
-Package: python3-decimal
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 decimal module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.8 decimal module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-decimal-src
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 decimal module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.8 decimal module
-
-    This package contains the Python source files for python3-decimal.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-decimal
-@@
-
 Package: python3-multiprocessing
 Submenu: Python
 Version: 3.8.3-2
@@ -16138,6 +16044,53 @@ Config:
     depends on PACKAGE_python3-gdbm
 @@
 
+Package: python3-xml
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 xml libs
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.8 xml libs
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-xml-src
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 xml libs (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.8 xml libs
+
+    This package contains the Python source files for python3-xml.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-xml
+@@
+
 Package: python3-sqlite3
 Submenu: Python
 Version: 3.8.3-2
@@ -16185,28 +16138,28 @@ Config:
     depends on PACKAGE_python3-sqlite3
 @@
 
-Package: python3-xml
+Package: python3-logging
 Submenu: Python
 Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 xml libs
+Title: Python 3.8 logging module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.8 xml libs
+Description: Python 3.8 logging module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-xml-src
+Package: python3-logging-src
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -16216,20 +16169,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 xml libs (sources)
+Title: Python 3.8 logging module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.8 xml libs
+Description:     	Python 3.8 logging module
 
-    This package contains the Python source files for python3-xml.
+    This package contains the Python source files for python3-logging.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-xml
+    depends on PACKAGE_python3-logging
 @@
 
 Package: python3-distutils
@@ -16608,6 +16561,53 @@ Config:
     depends on PACKAGE_python3-codecs
 @@
 
+Package: python3-asyncio
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 asyncio module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.8 asyncio module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-asyncio-src
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 asyncio module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.8 asyncio module
+
+    This package contains the Python source files for python3-asyncio.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-asyncio
+@@
+
 Package: python3-lzma
 Submenu: Python
 Version: 3.8.3-2
@@ -16655,7 +16655,7 @@ Config:
     depends on PACKAGE_python3-lzma
 @@
 
-Package: python3-asyncio
+Package: python3-decimal
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
@@ -16665,18 +16665,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 asyncio module
+Title: Python 3.8 decimal module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.8 asyncio module
+Description: Python 3.8 decimal module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-asyncio-src
+Package: python3-decimal-src
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -16686,20 +16686,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 asyncio module (sources)
+Title: Python 3.8 decimal module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.8 asyncio module
+Description:     	Python 3.8 decimal module
 
-    This package contains the Python source files for python3-asyncio.
+    This package contains the Python source files for python3-decimal.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-asyncio
+    depends on PACKAGE_python3-decimal
 @@
 
 Package: python3-base
@@ -16753,7 +16753,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-lzma +python3-asyncio
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-multiprocessing +python3-urllib +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-asyncio +python3-lzma +python3-decimal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -61510,7 +61510,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.2.10-1
+Version: 2.2.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -61521,7 +61521,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.10.tar.gz
+Source: haproxy-2.2.11.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61534,7 +61534,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.2.10-1
+Version: 2.2.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -61545,7 +61545,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.10.tar.gz
+Source: haproxy-2.2.11.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61556,7 +61556,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.2.10-1
+Version: 2.2.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -61567,7 +61567,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.2.10.tar.gz
+Source: haproxy-2.2.11.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -90902,7 +90902,7 @@ Source-Makefile: feeds/packages/utils/open-vm-tools/Makefile
 Build-Depends: glib2/host
 
 Package: open-vm-tools
-Version: 11.1.0-2
+Version: 11.2.5-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +glib2 +libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
@@ -90912,7 +90912,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools
 Maintainer: Yuhei OKAWA <tochiro.srchack@gmail.com>
-Source: open-vm-tools-11.1.0-16036546.tar.gz
+Source: open-vm-tools-11.2.5-17337674.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -90922,7 +90922,7 @@ Yuhei OKAWA <tochiro.srchack@gmail.com>
 @@
 
 Package: open-vm-tools-fuse
-Version: 11.1.0-2
+Version: 11.2.5-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse
 Conflicts: 
 Menu-Depends: 
@@ -90932,7 +90932,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools-fuse
 Maintainer: Kagurazaka Kotori <kagurazakakotori@gmail.com>
-Source: open-vm-tools-11.1.0-16036546.tar.gz
+Source: open-vm-tools-11.2.5-17337674.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
