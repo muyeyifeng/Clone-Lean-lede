@@ -95,4 +95,28 @@ http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
+Build-Depends: arm-trusted-firmware-rockchip
+
+Package: u-boot-orangepi-r1-plus-rk3328
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus)
+Version: 2021.01-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: orangepi-r1-plus-rk3328
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Orange Pi R1 Plus
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2021.01.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Orange Pi R1 Plus
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
 
