@@ -1,28 +1,51 @@
 Source-Makefile: package/feeds/packages/iputils/Makefile
-Build-Depends: sysfsutils
+Build-Depends: meson/host
 
-Package: iputils-arping
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysfs
+Package: iputils-ping
+Version: 20190709-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-crypto-md5
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: packages
-Title: iputils - arping
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
+Title: iputils-ping
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Source: iputils-20190709.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
-Description:   Program arping from iputils.
-  Sends ARP REQUEST to a neighbour host.
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
+Description:   Send ICMP_ECHOREQUEST packets to IP hosts and report on replies
+https://github.com/iputils/iputils
+Noah Meyerhans <frodo@morgul.net>
+@@
+Config:
+	source "feeds/packages/net/iputils/Config_ping.in"
+@@
+
+Package: iputils-arping
+Version: 20190709-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: iputils-arping
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Source: iputils-20190709.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Send ARP REQUEST packets to a neighbor host
+https://github.com/iputils/iputils
+Noah Meyerhans <frodo@morgul.net>
 @@
 
 Package: iputils-clockdiff
-Version: 20101006-1
+Version: 20190709-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -30,59 +53,19 @@ Provides:
 Section: net
 Category: Network
 Repository: packages
-Title: iputils - clockdiff
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
+Title: iputils-clockdiff
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Source: iputils-20190709.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
-Description:   Program clockdiff from iputils.
-  Measures clock difference between hosts.
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: iputils-ping
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: iputils - ping
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
-Type: ipkg
-Description:   Program ping from iputils.
-  Sends ICMP ECHO_REQUEST to network hosts (IPv4).
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: iputils-tftpd
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: iputils - tftpd
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
-Type: ipkg
-Description:   Program tftpd from iputils
-  Trivial File Transfer Protocol server.
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
+Description:   Measure the clock difference between two hosts
+https://github.com/iputils/iputils
+Noah Meyerhans <frodo@morgul.net>
 @@
 
 Package: iputils-tracepath
-Version: 20101006-1
+Version: 20190709-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -90,75 +73,38 @@ Provides:
 Section: net
 Category: Network
 Repository: packages
-Title: iputils - tracepath
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
+Title: iputils-tracepath
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Source: iputils-20190709.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
-Description:   Program tracepath from iputils.
-  Traces path to a network host discovering MTU along this path (IPv4).
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
+Description:   trace network path to a host, discovering PMTU
+https://github.com/iputils/iputils
+Noah Meyerhans <frodo@morgul.net>
+@@
+Config:
+	source "feeds/packages/net/iputils/Config_tracepath.in"
 @@
 
-Package: iputils-ping6
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +USE_GLIBC:libopenssl
+Package: iputils-tftpd
+Version: 20190709-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: packages
-Title: iputils - ping6
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
+Title: iputils-tftpd
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Source: iputils-20190709.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
-Description:   Program ping6 from iputils.
-  Sends ICMP ECHO_REQUEST to network hosts (IPv6).
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: iputils-tracepath6
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: iputils - tracepath6
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
-Type: ipkg
-Description:   Program tracepath6 from iputils.
-  Traces path to a network host discovering MTU along this path (IPv6).
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: iputils-traceroute6
-Version: 20101006-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: iputils - traceroute6
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: iputils-s20101006.tar.bz2
-License: GPL-2.0+
-Type: ipkg
-Description:   Program traceroute6 from iputils.
-  Traces path to a network host (IPv6).
-http://www.skbuff.net/iputils
-Jo-Philipp Wich <jo@mein.io>
+Description:   Trivial File Transfer Protocol server
+https://github.com/iputils/iputils
+Noah Meyerhans <frodo@morgul.net>
 @@
 
 

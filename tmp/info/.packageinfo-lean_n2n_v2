@@ -2,7 +2,7 @@ Source-Makefile: package/lean/n2n_v2/Makefile
 
 Package: n2n-edge
 Submenu: VPN
-Version: 2.8.0_git-99e56e9f3c34c49eeb297971d41150b433489120-3
+Version: 2.8.1_git-99e56e9f3c34c49eeb297971d41150b433489120-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +resolveip +libopenssl +libcap +libzstd
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: N2N Peer-to-peer VPN client (edge node)
 Maintainer: Emanuele Faranda <faranda@ntop.org>
-Source: n2n-2.8.0_git-99e56e9f3c34c49eeb297971d41150b433489120.tar.gz
+Source: n2n-2.8.1_git-99e56e9f3c34c49eeb297971d41150b433489120.tar.gz
 License: GPL3
 Type: ipkg
 Description: The client node for the N2N infrastructure
@@ -22,7 +22,7 @@ Emanuele Faranda <faranda@ntop.org>
 
 Package: n2n-supernode
 Submenu: VPN
-Version: 2.8.0_git-99e56e9f3c34c49eeb297971d41150b433489120-3
+Version: 2.8.1_git-99e56e9f3c34c49eeb297971d41150b433489120-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Network
 Repository: base
 Title: N2N Peer-to-peer VPN server (supernode)
 Maintainer: Emanuele Faranda <faranda@ntop.org>
-Source: n2n-2.8.0_git-99e56e9f3c34c49eeb297971d41150b433489120.tar.gz
+Source: n2n-2.8.1_git-99e56e9f3c34c49eeb297971d41150b433489120.tar.gz
 License: GPL3
 Type: ipkg
 Description: The supernode for the N2N infrastructure

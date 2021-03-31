@@ -140,7 +140,7 @@ Source-Makefile: feeds/passwall/luci-app-passwall/Makefile
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4-18
+Version: 4-19
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks +pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-geodata +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_simple-obfs:simple-obfs
 Conflicts: 
 Menu-Depends: 
@@ -701,7 +701,7 @@ Build-Depends: golang/host
 
 Package: v2ray-plugin
 Submenu: Project V
-Version: 4.36.0-1
+Version: 4.36.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -711,7 +711,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-4.36.0.tar.gz
+Source: v2ray-plugin-4.36.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -731,7 +731,7 @@ Source-Makefile: feeds/passwall/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.4.0-1
+Version: 1.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -741,7 +741,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: 
-Source: xray-core-1.4.0.tar.gz
+Source: xray-core-1.4.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -765,7 +765,7 @@ endmenu
 @@
 
 Package: xray-example
-Version: 1.4.0-1
+Version: 1.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -775,7 +775,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: 
-Source: xray-core-1.4.0.tar.gz
+Source: xray-core-1.4.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -788,7 +788,7 @@ https://xtls.github.io
 @@
 
 Package: xray-geodata
-Version: 1.4.0-1
+Version: 1.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -798,7 +798,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: 
-Source: xray-core-1.4.0.tar.gz
+Source: xray-core-1.4.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
