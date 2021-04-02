@@ -239,7 +239,7 @@ Source-Makefile: feeds/helloworld/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.4.1-1
+Version: 1.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -249,7 +249,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
-Source: xray-core-1.4.1.tar.gz
+Source: xray-core-1.4.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -273,7 +273,7 @@ endmenu
 @@
 
 Package: xray-geodata
-Version: 1.4.1-1
+Version: 1.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -283,7 +283,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
-Source: xray-core-1.4.1.tar.gz
+Source: xray-core-1.4.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -300,7 +300,7 @@ Source-Makefile: feeds/helloworld/xray-plugin/Makefile
 Build-Depends: golang/host
 
 Package: xray-plugin
-Version: 1.4.0-1
+Version: 1.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -310,7 +310,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
-Source: xray-plugin-1.4.0.tar.gz
+Source: xray-plugin-1.4.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
