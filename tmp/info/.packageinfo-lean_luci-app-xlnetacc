@@ -2,8 +2,8 @@ Source-Makefile: package/lean/luci-app-xlnetacc/Makefile
 
 Package: luci-app-xlnetacc
 Submenu: 3. Applications
-Version: 1.0.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +wget +openssl-util
+Version: 1.0.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +curl +openssl-util +luci-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 
