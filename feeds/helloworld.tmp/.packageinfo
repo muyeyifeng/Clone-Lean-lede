@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
-Version: 183-9
+Version: 183-10
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +shadowsocksr-libev-alt +ipset +ip-full +iptables-mod-tproxy +dnsmasq-full +coreutils +coreutils-base64 +pdnsd-alt +wget-ssl +lua +libuci-lua +microsocks +dns2socks +shadowsocksr-libev-ssr-local +tcping +resolveip +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server
 Conflicts: 
 Menu-Depends: 
@@ -60,7 +60,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server
 
 Package: luci-i18n-ssr-plus-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 183-9
+Version: 183-10
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -79,7 +79,7 @@ Description:     Translation for luci-app-ssr-plus -
 
 Package: luci-i18n-ssr-plus-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 183-9
+Version: 183-10
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -131,7 +131,7 @@ Source-Makefile: feeds/helloworld/shadowsocks-rust/Makefile
 
 Package: shadowsocks-rust-sslocal
 Submenu: Web Servers/Proxies
-Version: 1.9.2-2
+Version: 1.10.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -152,7 +152,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssmanager
 Submenu: Web Servers/Proxies
-Version: 1.9.2-2
+Version: 1.10.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +173,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssserver
 Submenu: Web Servers/Proxies
-Version: 1.9.2-2
+Version: 1.10.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -194,7 +194,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssurl
 Submenu: Web Servers/Proxies
-Version: 1.9.2-2
+Version: 1.10.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
