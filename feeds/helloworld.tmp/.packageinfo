@@ -131,7 +131,7 @@ Source-Makefile: feeds/helloworld/shadowsocks-rust/Makefile
 
 Package: shadowsocks-rust-sslocal
 Submenu: Web Servers/Proxies
-Version: 1.10.5-1
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -152,7 +152,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssmanager
 Submenu: Web Servers/Proxies
-Version: 1.10.5-1
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +173,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssserver
 Submenu: Web Servers/Proxies
-Version: 1.10.5-1
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -194,7 +194,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssurl
 Submenu: Web Servers/Proxies
-Version: 1.10.5-1
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -231,6 +231,37 @@ Source: tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz
 Type: ipkg
 Description: tcping measures the latency of a tcp-connection
 https://github.com/Mattraks/tcping
+
+@@
+
+
+Source-Makefile: feeds/helloworld/v2ray-plugin/Makefile
+Build-Depends: golang/host
+
+Package: v2ray-plugin
+Submenu: Project V
+Version: 4.38.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: SIP003 plugin for shadowsocks, based on v2ray
+Maintainer: madeye <max.c.lv@gmail.com>
+Source: v2ray-plugin-4.38.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	Yet another SIP003 plugin for shadowsocks, based on v2ray
+https://github.com/teddysun/v2ray-plugin
+madeye <max.c.lv@gmail.com>
+@@
+Config:
+config v2ray-plugin_INCLUDE_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default y
 
 @@
 
