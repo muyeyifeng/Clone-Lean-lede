@@ -1,5 +1,6 @@
 Source-Makefile: feeds/packages/libs/libinput/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libinput
 Version: 1.15.5-1

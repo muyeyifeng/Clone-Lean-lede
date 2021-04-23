@@ -1,5 +1,6 @@
 Source-Makefile: package/feeds/packages/json-glib/Makefile
-Build-Depends: glib2/host meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: glib2/host meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: json-glib
 Version: 1.4.4-1

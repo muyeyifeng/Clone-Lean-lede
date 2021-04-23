@@ -47,8 +47,8 @@ Config:
 	   tristate "English (en)"
 	   default n 
 
-     config LUCI_LANG_el
-	   tristate "Greek (el)"
+     config LUCI_LANG_pl
+	   tristate "Polish (pl)"
 	   default n 
 
      config LUCI_LANG_uk
@@ -79,10 +79,6 @@ Config:
 	   tristate "Malay (ms)"
 	   default n 
 
-     config LUCI_LANG_pl
-	   tristate "Polish (pl)"
-	   default n 
-
      config LUCI_LANG_zh-cn
 	   tristate "Simplified Chinese (zh-cn)"
 	   default y 
@@ -109,6 +105,10 @@ Config:
 
      config LUCI_LANG_ru
 	   tristate "Russian (ru)"
+	   default n 
+
+     config LUCI_LANG_el
+	   tristate "Greek (el)"
 	   default n 
 
      config LUCI_LANG_ca
@@ -233,8 +233,8 @@ Description:     Translation for luci-base - English
 
 @@
 
-Package: luci-i18n-base-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-base-pl
+Default: LUCI_LANG_pl||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -243,13 +243,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-base - el translation
+Title: luci-base - pl translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - Ελληνικά (Greek)
+Description:     Translation for luci-base - Polski (Polish)
 
 @@
 
@@ -393,26 +393,6 @@ Description:     Translation for luci-base - Bahasa Melayu (Malay)
 
 @@
 
-Package: luci-i18n-base-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-base - pl translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - Polski (Polish)
-
-@@
-
 Package: luci-i18n-base-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
@@ -550,6 +530,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Русский (Russian)
+
+@@
+
+Package: luci-i18n-base-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-base - el translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - Ελληνικά (Greek)
 
 @@
 

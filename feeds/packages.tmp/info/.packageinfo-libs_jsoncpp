@@ -1,5 +1,6 @@
 Source-Makefile: feeds/packages/libs/jsoncpp/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: jsoncpp
 Version: 1.9.2-2

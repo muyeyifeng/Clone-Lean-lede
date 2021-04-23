@@ -1080,11 +1080,12 @@ Config:
 
 
 Source-Makefile: feeds/packages/devel/ninja/Makefile
-Build-Depends: ninja/host
+Build-Depends: ninja/host ninja/host
+Build-Depends/host: ninja/host
 Build-Types: host
 
 Package: ninja
-Version: 1.10.0-1
+Version: 1.10.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -1094,7 +1095,7 @@ Category: Development
 Repository: base
 Title: ninja
 Maintainer: Andre Heider <a.heider@gmail.com>
-Source: ninja-1.10.0.tar.gz
+Source: ninja-1.10.2.tar.gz
 License: Apache-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -1157,7 +1158,8 @@ Heinrich Schuchardt <xypron.glpk@gmx.de>
 
 
 Source-Makefile: feeds/packages/devel/pkgconf/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libpkgconf
 Version: 1.7.3-1
@@ -15762,7 +15764,7 @@ Config:
     depends on PACKAGE_python3-pydoc
 @@
 
-Package: python3-logging
+Package: python3-decimal
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
@@ -15772,18 +15774,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 logging module
+Title: Python 3.8 decimal module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.8 logging module
+Description: Python 3.8 decimal module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-logging-src
+Package: python3-decimal-src
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -15793,20 +15795,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 logging module (sources)
+Title: Python 3.8 decimal module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.8 logging module
+Description:     	Python 3.8 decimal module
 
-    This package contains the Python source files for python3-logging.
+    This package contains the Python source files for python3-decimal.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-logging
+    depends on PACKAGE_python3-decimal
 @@
 
 Package: python3-multiprocessing
@@ -16091,53 +16093,6 @@ Config:
     depends on PACKAGE_python3-gdbm
 @@
 
-Package: python3-sqlite3
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libsqlite3
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 sqlite3 module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.8 sqlite3 module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-sqlite3-src
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 sqlite3 module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.8 sqlite3 module
-
-    This package contains the Python source files for python3-sqlite3.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-sqlite3
-@@
-
 Package: python3-xml
 Submenu: Python
 Version: 3.8.3-2
@@ -16185,28 +16140,28 @@ Config:
     depends on PACKAGE_python3-xml
 @@
 
-Package: python3-distutils
+Package: python3-sqlite3
 Submenu: Python
 Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 distutils module
+Title: Python 3.8 sqlite3 module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.8 distutils module
+Description: Python 3.8 sqlite3 module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-distutils-src
+Package: python3-sqlite3-src
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -16216,20 +16171,67 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 distutils module (sources)
+Title: Python 3.8 sqlite3 module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.8 distutils module
+Description:     	Python 3.8 sqlite3 module
 
-    This package contains the Python source files for python3-distutils.
+    This package contains the Python source files for python3-sqlite3.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-distutils
+    depends on PACKAGE_python3-sqlite3
+@@
+
+Package: python3-logging
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 logging module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.8 logging module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-logging-src
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 logging module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.8 logging module
+
+    This package contains the Python source files for python3-logging.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-logging
 @@
 
 Package: python3-email
@@ -16277,6 +16279,53 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-email
+@@
+
+Package: python3-distutils
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 distutils module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.8 distutils module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-distutils-src
+Submenu: Python
+Version: 3.8.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.8 distutils module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.8.3.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.8 distutils module
+
+    This package contains the Python source files for python3-distutils.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-distutils
 @@
 
 Package: python3-openssl
@@ -16561,53 +16610,6 @@ Config:
     depends on PACKAGE_python3-dbm
 @@
 
-Package: python3-asyncio
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 asyncio module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.8 asyncio module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-asyncio-src
-Submenu: Python
-Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.8 asyncio module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.8.3.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.8 asyncio module
-
-    This package contains the Python source files for python3-asyncio.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-asyncio
-@@
-
 Package: python3-lzma
 Submenu: Python
 Version: 3.8.3-2
@@ -16655,7 +16657,7 @@ Config:
     depends on PACKAGE_python3-lzma
 @@
 
-Package: python3-decimal
+Package: python3-asyncio
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
@@ -16665,18 +16667,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 decimal module
+Title: Python 3.8 asyncio module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.8 decimal module
+Description: Python 3.8 asyncio module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-decimal-src
+Package: python3-asyncio-src
 Submenu: Python
 Version: 3.8.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -16686,20 +16688,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.8 decimal module (sources)
+Title: Python 3.8 asyncio module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.8.3.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.8 decimal module
+Description:     	Python 3.8 asyncio module
 
-    This package contains the Python source files for python3-decimal.
+    This package contains the Python source files for python3-asyncio.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-decimal
+    depends on PACKAGE_python3-asyncio
 @@
 
 Package: python3-base
@@ -16753,7 +16755,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.8.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-multiprocessing +python3-codecs +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-decimal +python3-multiprocessing +python3-codecs +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-email +python3-distutils +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23127,7 +23129,8 @@ Tibor Dudlák <tibor.dudlak@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/json-glib/Makefile
-Build-Depends: glib2/host meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: glib2/host meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: json-glib
 Version: 1.4.4-1
@@ -23153,7 +23156,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 
 Source-Makefile: feeds/packages/libs/jsoncpp/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: jsoncpp
 Version: 1.9.2-2
@@ -23579,6 +23583,32 @@ Lucian CRISTIAN <lucian.cristian@gmail.com>
 @@
 
 
+Source-Makefile: feeds/packages/libs/libcbor/Makefile
+Build-Depends: ninja/host
+Build-Depends/host: ninja/host
+
+Package: libcbor
+Version: 0.8.0-1
+ABIVersion: 0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libcbor
+Maintainer: Linos Giannopoulos <linosgian00+openwrt@gmail.com>
+Source: libcbor-0.8.0.tar.gz
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:  libcbor is a C library for parsing and generating CBOR, the general-purpose schema-less binary data format.
+https://github.com/PJK/libcbor
+Linos Giannopoulos <linosgian00+openwrt@gmail.com>
+@@
+
+
 Source-Makefile: feeds/packages/libs/libcgroup/Makefile
 
 Package: libcgroup
@@ -23971,7 +24001,8 @@ Luka Perkov <luka@openwrt.org>
 
 
 Source-Makefile: feeds/packages/libs/libdrm/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libdrm
 Version: 2.4.101-1
@@ -24112,7 +24143,8 @@ Karl Palsson <karlp@tweak.net.au>
 
 
 Source-Makefile: feeds/packages/libs/libevdev/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libevdev
 Version: 1.9.0-2
@@ -24809,6 +24841,34 @@ Peter Wagner <tripolar@gmx.at>
 @@
 
 
+Source-Makefile: feeds/packages/libs/libfido2/Makefile
+Build-Depends: ninja/host
+Build-Depends/host: ninja/host
+
+Package: libfido2
+Version: 1.6.0-1
+ABIVersion: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcbor +libopenssl +libudev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: FIDO2 Library
+Maintainer: Linos Giannopoulos <linosgian00+openwrt@gmail.com>
+Source: libfido2-1.6.0.tar.gz
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:  libfido2 provides library functionality and command-line tools to communicate with a FIDO device over USB, and to verify attestation and assertion signatures.
+
+ libfido2 supports the FIDO U2F (CTAP 1) and FIDO 2.0 (CTAP 2) protocols.
+https://github.com/Yubico/libfido2
+Linos Giannopoulos <linosgian00+openwrt@gmail.com>
+@@
+
+
 Source-Makefile: feeds/packages/libs/libfmt/Makefile
 
 Package: libfmt
@@ -24939,7 +24999,8 @@ http://www.intra2net.com/en/developer/libftdi/
 
 
 Source-Makefile: feeds/packages/libs/libfuse3/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libfuse3
 Submenu: Filesystem
@@ -26865,7 +26926,8 @@ Rosen Penev <rosenp@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/libinput/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libinput
 Version: 1.15.5-1
@@ -27397,7 +27459,8 @@ Michael Heimpold <mhei@heimpold.de>
 
 
 Source-Makefile: feeds/packages/libs/libmpdclient/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libmpdclient
 Version: 2.18-1
@@ -28643,7 +28706,8 @@ endmenu
 
 
 Source-Makefile: feeds/packages/libs/libsoup/Makefile
-Build-Depends: meson/host glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: meson/host glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: libsoup
 Version: 2.70.0-1
@@ -47648,7 +47712,8 @@ Eduardo Abinader <eduardoabinader@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/p11-kit/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: p11-kit
 Version: 0.23.20-2
@@ -47740,7 +47805,8 @@ Shane Peelar <lookatyouhacker@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/pixman/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: pixman
 Version: 0.40.0-1
@@ -49009,7 +49075,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/spice-protocol/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: spice-protocol
 Version: 0.14.2-1
@@ -50733,7 +50800,8 @@ Val Kulkov <val.kulkov@gmail.com>
 
 
 Source-Makefile: feeds/packages/multimedia/grilo/Makefile
-Build-Depends: vala/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: vala/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: grilo
 Version: 0.3.12-2
@@ -50757,7 +50825,8 @@ W. Michael Petullo <mike@flyn.org>
 
 
 Source-Makefile: feeds/packages/multimedia/grilo-plugins/Makefile
-Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: grilo-plugins
 Menu: 1
@@ -50942,7 +51011,8 @@ W. Michael Petullo <mike@flyn.org>
 
 
 Source-Makefile: feeds/packages/multimedia/gst1-libav/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: gst1-libav
 Version: 1.17.1-1
@@ -50969,7 +51039,8 @@ Config:
 
 
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-bad/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: libgst1adaptivedemux
 Version: 1.17.1-1
@@ -52880,7 +52951,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-base/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: libgst1allocators
 Version: 1.17.1-1
@@ -53959,7 +54031,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-good/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: gst1-mod-alaw
 Version: 1.17.1-1
@@ -55453,7 +55526,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-ugly/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: gst1-mod-asf
 Version: 1.17.1-1
@@ -55566,7 +55640,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/multimedia/gstreamer1/Makefile
-Build-Depends: meson/host glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: meson/host glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: libgst1check
 Version: 1.17.1-1
@@ -61948,7 +62023,8 @@ https://infrastructure.fedoraproject.org/infra/hosted-content/iptraf-ng/
 
 
 Source-Makefile: feeds/packages/net/iputils/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: iputils-ping
 Version: 20190709-1
@@ -67905,10 +67981,11 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 
 Source-Makefile: feeds/packages/net/openssh/Makefile
+Build-Depends: OPENSSH_LIBFIDO2:libfido2
 
 Package: openssh-client
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -67919,7 +67996,7 @@ Category: Network
 Repository: base
 Title: OpenSSH client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -67930,7 +68007,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-moduli
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -67941,7 +68018,7 @@ Category: Network
 Repository: base
 Title: OpenSSH moduli file
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -67952,7 +68029,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-client-utils
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +openssh-client +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -67963,7 +68040,7 @@ Category: Network
 Repository: base
 Title: OpenSSH client utilities
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -67974,7 +68051,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-keygen
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -67985,7 +68062,7 @@ Category: Network
 Repository: base
 Title: OpenSSH keygen
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -67996,8 +68073,8 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-server
 Submenu: SSH
-Version: 8.3p1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +openssh-keygen
+Version: 8.6p1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +openssh-keygen +OPENSSH_LIBFIDO2:libfido2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -68008,7 +68085,7 @@ Repository: base
 Title: OpenSSH server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -68016,10 +68093,13 @@ Description: OpenSSH server.
 http://www.openssh.com/
 Peter Wagner <tripolar@gmx.at>
 @@
+Config:
+	source "feeds/packages/net/openssh/Config.in"
+@@
 
 Package: openssh-server-pam
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +libpthread +openssh-keygen +libpam
 Conflicts: 
 Menu-Depends: 
@@ -68031,7 +68111,7 @@ Repository: base
 Title: OpenSSH server (with PAM support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -68042,7 +68122,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-client
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -68053,7 +68133,7 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -68064,7 +68144,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-server
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -68075,7 +68155,7 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP server
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -68086,7 +68166,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-avahi-service
 Submenu: SSH
-Version: 8.3p1-1
+Version: 8.6p1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +openssh-sftp-server +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -68097,7 +68177,7 @@ Category: Network
 Repository: base
 Title: OpenSSH (SFTP Avahi service)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-8.3p1.tar.gz
+Source: openssh-8.6p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -78293,7 +78373,8 @@ Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/sound/mpc/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: mpc
 Version: 0.33-1
@@ -78320,7 +78401,8 @@ Ted Hess <thess@kitschensync.net>
 
 
 Source-Makefile: feeds/packages/sound/mpd/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: mpd-full
 Version: 0.21.24-1
@@ -78569,7 +78651,8 @@ http://www.portaudio.com/
 
 
 Source-Makefile: feeds/packages/sound/pulseaudio/Makefile
-Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: pulseaudio-daemon
 Version: 13.0-4
@@ -101870,7 +101953,8 @@ Vadim A. Misbakh-Soloviov <openwrt-zsh@mva.name>
 
 
 Source-Makefile: feeds/packages/utils/zstd/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libzstd
 Menu: 1

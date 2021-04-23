@@ -114,8 +114,8 @@ Description:     Translation for luci-app-olsr - English
 
 @@
 
-Package: luci-i18n-olsr-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-olsr-pl
+Default: LUCI_LANG_pl||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-olsr
 Conflicts: 
@@ -124,12 +124,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-olsr - el translation
+Title: luci-app-olsr - pl translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-olsr - Ελληνικά (Greek)
+Description:     Translation for luci-app-olsr - Polski (Polish)
 
 @@
 
@@ -266,25 +266,6 @@ Description:     Translation for luci-app-olsr - Bahasa Melayu (Malay)
 
 @@
 
-Package: luci-i18n-olsr-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-olsr
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-olsr - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-olsr - Polski (Polish)
-
-@@
-
 Package: luci-i18n-olsr-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
@@ -396,6 +377,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-olsr - Русский (Russian)
+
+@@
+
+Package: luci-i18n-olsr-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-olsr
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-olsr - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-olsr - Ελληνικά (Greek)
 
 @@
 

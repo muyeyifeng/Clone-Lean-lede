@@ -1,9 +1,10 @@
 Source-Makefile: feeds/packages/devel/ninja/Makefile
-Build-Depends: ninja/host
+Build-Depends: ninja/host ninja/host
+Build-Depends/host: ninja/host
 Build-Types: host
 
 Package: ninja
-Version: 1.10.0-1
+Version: 1.10.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +14,7 @@ Category: Development
 Repository: base
 Title: ninja
 Maintainer: Andre Heider <a.heider@gmail.com>
-Source: ninja-1.10.0.tar.gz
+Source: ninja-1.10.2.tar.gz
 License: Apache-2.0
 LicenseFiles: COPYING
 Type: ipkg

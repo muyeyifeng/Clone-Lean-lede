@@ -114,8 +114,8 @@ Description:     Translation for luci-app-samba - English
 
 @@
 
-Package: luci-i18n-samba-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-samba-pl
+Default: LUCI_LANG_pl||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba
 Conflicts: 
@@ -124,12 +124,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-samba - el translation
+Title: luci-app-samba - pl translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba - Ελληνικά (Greek)
+Description:     Translation for luci-app-samba - Polski (Polish)
 
 @@
 
@@ -266,25 +266,6 @@ Description:     Translation for luci-app-samba - Bahasa Melayu (Malay)
 
 @@
 
-Package: luci-i18n-samba-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-samba - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-samba - Polski (Polish)
-
-@@
-
 Package: luci-i18n-samba-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
@@ -396,6 +377,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-samba - Русский (Russian)
+
+@@
+
+Package: luci-i18n-samba-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-samba - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba - Ελληνικά (Greek)
 
 @@
 

@@ -1,5 +1,6 @@
 Source-Makefile: package/feeds/packages/p11-kit/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: p11-kit
 Version: 0.23.20-2

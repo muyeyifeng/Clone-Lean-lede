@@ -114,8 +114,8 @@ Description:     Translation for luci-app-ahcp - English
 
 @@
 
-Package: luci-i18n-ahcp-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-ahcp-pl
+Default: LUCI_LANG_pl||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -124,12 +124,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-ahcp - el translation
+Title: luci-app-ahcp - pl translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - Ελληνικά (Greek)
+Description:     Translation for luci-app-ahcp - Polski (Polish)
 
 @@
 
@@ -266,25 +266,6 @@ Description:     Translation for luci-app-ahcp - Bahasa Melayu (Malay)
 
 @@
 
-Package: luci-i18n-ahcp-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-ahcp - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ahcp - Polski (Polish)
-
-@@
-
 Package: luci-i18n-ahcp-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
@@ -396,6 +377,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ahcp - Русский (Russian)
+
+@@
+
+Package: luci-i18n-ahcp-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ahcp - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ahcp - Ελληνικά (Greek)
 
 @@
 

@@ -1,5 +1,6 @@
 Source-Makefile: feeds/packages/net/iputils/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: iputils-ping
 Version: 20190709-1

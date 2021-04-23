@@ -1,5 +1,6 @@
 Source-Makefile: feeds/packages/sound/mpc/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: mpc
 Version: 0.33-1

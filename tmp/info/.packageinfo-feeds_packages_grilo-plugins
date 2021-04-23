@@ -1,5 +1,6 @@
 Source-Makefile: package/feeds/packages/grilo-plugins/Makefile
-Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: grilo-plugins
 Menu: 1

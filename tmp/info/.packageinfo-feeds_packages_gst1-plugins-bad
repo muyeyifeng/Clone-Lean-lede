@@ -1,5 +1,6 @@
 Source-Makefile: package/feeds/packages/gst1-plugins-bad/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
+Build-Depends/host: ninja/host
 
 Package: libgst1adaptivedemux
 Version: 1.17.1-1

@@ -1,5 +1,6 @@
 Source-Makefile: feeds/packages/devel/pkgconf/Makefile
-Build-Depends: meson/host
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: libpkgconf
 Version: 1.7.3-1
