@@ -74276,22 +74276,22 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 
 Source-Makefile: feeds/packages/net/transmission/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
-Package: transmission-daemon-openssl
+Package: transmission-daemon
 Submenu: BitTorrent
-Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Version: 3.00-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_WOLFSSL:libmbedtls +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: openssl
 Section: net
 Category: Network
 Repository: base
-Title: BitTorrent client (with OpenSSL)
+Title: BitTorrent client
 Maintainer: Rosen Penev <rosenp@gmail.com>
 Require-User: transmission=224:transmission=224
-Source: transmission-2.94.tar.xz
+Source: transmission-3.00.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -74303,20 +74303,19 @@ https://www.transmissionbt.com
 Rosen Penev <rosenp@gmail.com>
 @@
 
-Package: transmission-cli-openssl
+Package: transmission-cli
 Submenu: BitTorrent
-Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Version: 3.00-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_WOLFSSL:libmbedtls +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: openssl
 Section: net
 Category: Network
 Repository: base
-Title: BitTorrent client (with OpenSSL)
+Title: BitTorrent client (utilities)
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: transmission-2.94.tar.xz
+Source: transmission-3.00.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -74325,20 +74324,19 @@ https://www.transmissionbt.com
 Rosen Penev <rosenp@gmail.com>
 @@
 
-Package: transmission-remote-openssl
+Package: transmission-remote
 Submenu: BitTorrent
-Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Version: 3.00-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_WOLFSSL:libmbedtls +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: openssl
 Section: net
 Category: Network
 Repository: base
-Title: BitTorrent client (with OpenSSL)
+Title: BitTorrent client (remote)
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: transmission-2.94.tar.xz
+Source: transmission-3.00.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -74349,8 +74347,8 @@ Rosen Penev <rosenp@gmail.com>
 
 Package: transmission-web
 Submenu: BitTorrent
-Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +transmission-daemon-openssl
+Version: 3.00-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +transmission-daemon
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -74359,7 +74357,7 @@ Category: Network
 Repository: base
 Title: BitTorrent client (webinterface)
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: transmission-2.94.tar.xz
+Source: transmission-3.00.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -74374,7 +74372,7 @@ Source-Makefile: feeds/packages/net/transmission-web-control/Makefile
 Package: transmission-web-control
 Submenu: BitTorrent
 Version: 2019-07-24-c27e3ba9f08148f79fb4121d8a1f5906640ff8d6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +transmission-daemon-openssl
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +transmission-daemon
 Conflicts: transmission-web
 Menu-Depends: 
 Provides: 
