@@ -33,7 +33,7 @@ Repository: base
 Title: ChinaDNS next generation, refactoring with epoll and ipset
 Maintainer: pexcn <i@pexcn.me>
 Source: chinadns-ng-1.0-beta.24.tar.xz
-License: GPLv3
+License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
 Description: ChinaDNS next generation, refactoring with epoll and ipset.
@@ -140,8 +140,8 @@ Source-Makefile: feeds/passwall/luci-app-passwall/Makefile
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4-20
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks +pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust:shadowsocks-rust-sslocal +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-geodata +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_Haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_Dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_V2ray-plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_Simple-obfs:simple-obfs
+Version: 4-21
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls +iptables-mod-tproxy +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +curl +ca-certificates +resolveip +unzip +dnsmasq-full +tcping +libuci-lua +ipt2socks +microsocks
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -161,67 +161,91 @@ menu "Configuration"
 config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks
 	bool "Include Shadowsocks"
 	default y
+	select PACKAGE_shadowsocks-libev-ss-redir
+	select PACKAGE_shadowsocks-libev-ss-local
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server
 	bool "Include Shadowsocks Server"
 	default y
+	select PACKAGE_shadowsocks-libev-ss-server
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust
 	bool "Include Shadowsocks Rust (AEAD ciphers only)"
 	depends on aarch64||arm||i386||mips||mipsel||x86_64
 	default n
+	select PACKAGE_shadowsocks-rust-sslocal
 	
 config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR
 	bool "Include ShadowsocksR"
 	default y
+	select PACKAGE_shadowsocksr-libev-alt
+	select PACKAGE_shadowsocksr-libev-ssr-local
 
 config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server
 	bool "Include ShadowsocksR Server"
 	default y
+	select PACKAGE_shadowsocksr-libev-server
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Xray
 	bool "Include Xray"
 	default y if i386||x86_64||arm||aarch64
+	select PACKAGE_xray-core
+	select PACKAGE_xray-geodata
 
 config PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus
 	bool "Include Trojan_Plus"
 	default y
+	select PACKAGE_trojan-plus
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO
 	bool "Include Trojan_GO"
 	default n
+	select PACKAGE_trojan-go
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Brook
 	bool "Include Brook"
 	default n
+	select PACKAGE_brook
 	
 config PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy
 	bool "Include NaiveProxy"
 	default n
+	select PACKAGE_naiveproxy
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Kcptun
 	bool "Include Kcptun"
 	default n
+	select PACKAGE_kcptun-client
 
 config PACKAGE_luci-app-passwall_INCLUDE_Haproxy
 	bool "Include Haproxy"
 	default y
+	select PACKAGE_haproxy
 	
 config PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG
 	bool "Include ChinaDNS-NG"
 	default n
+	select PACKAGE_chinadns-ng
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Dns2socks
 	bool "Include Dns2socks"
 	default y
+	select PACKAGE_dns2socks
 	
 config PACKAGE_luci-app-passwall_INCLUDE_V2ray-plugin
 	bool "Include V2ray-plugin (Shadowsocks plugin)"
 	default y if i386||x86_64||arm||aarch64
+	select PACKAGE_v2ray-plugin
 
 config PACKAGE_luci-app-passwall_INCLUDE_Simple-obfs
 	bool "Include Simple-obfs (Shadowsocks plugin)"
 	default y if i386||x86_64||arm||aarch64
+	select PACKAGE_simple-obfs
+	
+config PACKAGE_luci-app-passwall_INCLUDE_PDNSD
+	bool "Include PDNSD"
+	default y
+	select PACKAGE_pdnsd-alt
 
 endmenu
 @@
@@ -255,7 +279,7 @@ Build-Depends: ncurses/host ninja/host python3/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 89.0.4389.72-1-2
+Version: 90.0.4430.85-4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libnss
 Conflicts: 
 Menu-Depends: 
@@ -265,7 +289,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: CN_SZTL <cnsztl@immortalwrt.org>
-Source: naiveproxy-89.0.4389.72-1.tar.gz
+Source: naiveproxy-90.0.4430.85-4.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -397,7 +421,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 Source-Makefile: feeds/passwall/shadowsocksr-libev/Makefile
 
 Package: shadowsocksr-libev
-Version: 2.5.6-5
+Version: 2.5.6-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -417,7 +441,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 @@
 
 Package: shadowsocksr-libev-alt
-Version: 2.5.6-5
+Version: 2.5.6-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -437,7 +461,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 @@
 
 Package: shadowsocksr-libev-server
-Version: 2.5.6-5
+Version: 2.5.6-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -457,7 +481,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 @@
 
 Package: shadowsocksr-libev-ssr-local
-Version: 2.5.6-5
+Version: 2.5.6-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -492,8 +516,8 @@ Repository: base
 Title: Simple-obfs
 Maintainer: Jian Chang <aa65535@live.com>
 Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
-License: GPLv3
-LicenseFiles: LICENSE
+License: GPL-3.0-or-later
+LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 https://github.com/shadowsocks/simple-obfs
@@ -512,8 +536,8 @@ Repository: base
 Title: Simple-obfs
 Maintainer: Jian Chang <aa65535@live.com>
 Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
-License: GPLv3
-LicenseFiles: LICENSE
+License: GPL-3.0-or-later
+LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 https://github.com/shadowsocks/simple-obfs
@@ -582,6 +606,8 @@ Repository: base
 Title: tcping measures the latency of a tcp-connection
 Maintainer: 
 Source: tcping-0.3-db9101834732dac9aaa59dbb7fb9c74612dbf723.tar.gz
+License: GPL-2.0-only
+LicenseFiles: license.txt
 Type: ipkg
 Description: tcping measures the latency of a tcp-connection
 https://github.com/jlyo/tcping

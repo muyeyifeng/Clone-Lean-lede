@@ -275,11 +275,36 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-linksys_ea8300
+Package: ipq-wifi-hiwifi_c526a
 Submenu: ath10k Board-Specific Overrides
 Version: 1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for HiWiFi C526A
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The HiWiFi C526A requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the HiWiFi C526A.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-linksys_ea8300
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-hiwifi_c526a
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -304,7 +329,7 @@ Package: ipq-wifi-mobipromo_cm520-79f
 Submenu: ath10k Board-Specific Overrides
 Version: 1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-linksys_ea8300
+Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -329,7 +354,7 @@ Package: ipq-wifi-p2w_r619ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-linksys_ea8300 ipq-wifi-mobipromo_cm520-79f
+Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-mobipromo_cm520-79f
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -354,7 +379,7 @@ Package: ipq-wifi-qxwlan_e2600ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-linksys_ea8300 ipq-wifi-mobipromo_cm520-79f ipq-wifi-p2w_r619ac
+Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-dlink_dap2610 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-mobipromo_cm520-79f ipq-wifi-p2w_r619ac
 Menu-Depends: 
 Provides: 
 Section: firmware
