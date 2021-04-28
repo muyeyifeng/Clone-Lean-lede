@@ -20,5 +20,14 @@ Description: BaiduPCS-Web is a web controller for BaiduPCS-Go
 https://github.com/Erope/BaiduPCS-Go
 
 @@
+Config:
+config BAIDUPCS_WEB_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config BAIDUPCS_WEB_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+@@
 
 
