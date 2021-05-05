@@ -382,6 +382,7 @@ $(eval $(call PackageDir,feeds_helloworld_luci-app-ssr-plus,feeds/helloworld/luc
 $(eval $(call PackageDir,feeds_helloworld_naiveproxy,feeds/helloworld/naiveproxy,))
 $(eval $(call PackageDir,feeds_helloworld_shadowsocks-rust,feeds/helloworld/shadowsocks-rust,))
 $(eval $(call PackageDir,feeds_helloworld_tcping,feeds/helloworld/tcping,))
+$(eval $(call PackageDir,feeds_helloworld_v2ray-core,feeds/helloworld/v2ray-core,))
 $(eval $(call PackageDir,feeds_helloworld_v2ray-plugin,feeds/helloworld/v2ray-plugin,))
 $(eval $(call PackageDir,feeds_helloworld_xray-core,feeds/helloworld/xray-core,))
 $(eval $(call PackageDir,feeds_helloworld_xray-plugin,feeds/helloworld/xray-plugin,))

@@ -1,0 +1,120 @@
+Source-Makefile: feeds/passwall/v2ray-core/Makefile
+Build-Depends: golang/host
+
+Package: v2ray-core
+Version: 4.38.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-4.38.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+menu "v2ray-core Configuration"
+	depends on PACKAGE_v2ray-core
+
+config V2RAY_CORE_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config V2RAY_CORE_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+endmenu
+@@
+
+Package: v2ray-ctl
+Version: 4.38.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-4.38.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+
+  This includes configuration tool for v2ray-core.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+menu "v2ray-ctl Configuration"
+	depends on PACKAGE_v2ray-ctl
+
+config V2RAY_CTL_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config V2RAY_CTL_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+endmenu
+@@
+
+Package: v2ray-extra
+Version: 4.38.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions (extra resources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-4.38.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+
+  This includes extra resources for v2ray-core.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: v2ray-geodata
+Version: 4.38.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions (geodata files)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-4.38.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+
+  This includes GEO datas used for v2ray-core.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
