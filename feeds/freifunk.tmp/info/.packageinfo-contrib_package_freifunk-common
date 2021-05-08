@@ -2,7 +2,7 @@ Source-Makefile: feeds/freifunk/contrib/package/freifunk-common/Makefile
 
 Package: freifunk-common
 Submenu: 9. Freifunk
-Version: 9
+Version: 10
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uci
 Conflicts: 
 Menu-Depends: 
@@ -20,7 +20,7 @@ Description:   Common files and scripts that are needed to run free wireless mes
 
 Package: freifunk-common-olsr
 Submenu: 9. Freifunk
-Version: 9
+Version: 10
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freifunk-common +olsrd +micrond +libuci-lua
 Conflicts: 
 Menu-Depends: 
