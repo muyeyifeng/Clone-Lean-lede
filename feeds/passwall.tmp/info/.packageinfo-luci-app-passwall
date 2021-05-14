@@ -40,13 +40,13 @@ config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust
 config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR
 	bool "Include ShadowsocksR"
 	default y
-	select PACKAGE_shadowsocksr-libev-alt
 	select PACKAGE_shadowsocksr-libev-ssr-local
+	select PACKAGE_shadowsocksr-libev-ssr-redir
 
 config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server
 	bool "Include ShadowsocksR Server"
 	default y
-	select PACKAGE_shadowsocksr-libev-server
+	select PACKAGE_shadowsocksr-libev-ssr-server
 	
 config PACKAGE_luci-app-passwall_INCLUDE_Xray
 	bool "Include Xray"
