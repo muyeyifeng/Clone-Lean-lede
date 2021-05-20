@@ -15140,139 +15140,6 @@ Description:  Kernel module for LEDs on reset lines
 
 @@
 
-Package: kmod-pwm-mediatek-ramips
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628 PWM
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
-Description:   Kernel modules for MediaTek Pulse Width Modulator
-
-@@
-
-Package: kmod-sdhci-mt7620
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 SDCI
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
-Description: MT7620 SDCI
-
-@@
-
-Package: kmod-i2c-ralink
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_RALINK
-Description:  Kernel modules for enable ralink i2c controller.
-
-@@
-
-Package: kmod-i2c-mt7628
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628/88 I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_MT7621
-Description:  Kernel modules for enable mt7621 i2c controller.
-
-@@
-
-Package: kmod-dma-ralink
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink GDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
-Description:  Kernel modules for enable ralink dma engine.
-
-@@
-
-Package: kmod-hsdma-mtk
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips @TARGET_ramips_mt7621
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HSDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
-Description:  Kernel modules for enable MediaTek hsdma engine.
-
-@@
-
-Package: kmod-sound-mt7620
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 PCM/I2S Alsa Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
-Description:  Alsa modules for ralink i2s controller.
-
-@@
-
 Package: kmod-leds-nu801
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -15349,63 +15216,6 @@ Description:   This package contains the SPI driver for the Vitesse VSC7385 ethe
 
 @@
 
-Package: kmod-ata-rb532-cf
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 @BROKEN +kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 Compact Flash support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
-Description:   RB532 Compact Flash support.
-
-@@
-
-Package: kmod-input-rb532
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 +kmod-input-polldev
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 button device support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
-Description:   Kernel module for RB532 button
-
-@@
-
-Package: kmod-bgmac
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm47xx @!TARGET_bcm47xx_legacy
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom bgmac driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
-Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
-
-@@
-
 Package: kmod-ata-oxnas-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -15442,6 +15252,25 @@ Type: ipkg
 Kernel-Config: CONFIG_USB_EHCI_OXNAS
 Description:  This driver provides USB Device Controller support for the
  EHCI USB host built-in to the OX820 SoC.
+
+@@
+
+Package: kmod-bgmac
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_bcm47xx @!TARGET_bcm47xx_legacy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom bgmac driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
+Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
 
 @@
 
@@ -16728,62 +16557,136 @@ Description:   This package contains the Broadcom 2835 I2C master controller dri
 
 @@
 
-Package: kmod-sound-cs5535audio
+Package: kmod-pwm-mediatek-ramips
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628 PWM
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
+Description:   Kernel modules for MediaTek Pulse Width Modulator
+
+@@
+
+Package: kmod-sdhci-mt7620
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 SDCI
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
+Description: MT7620 SDCI
+
+@@
+
+Package: kmod-i2c-ralink
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_RALINK
+Description:  Kernel modules for enable ralink i2c controller.
+
+@@
+
+Package: kmod-i2c-mt7628
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628/88 I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_MT7621
+Description:  Kernel modules for enable mt7621 i2c controller.
+
+@@
+
+Package: kmod-dma-ralink
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink GDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
+Description:  Kernel modules for enable ralink dma engine.
+
+@@
+
+Package: kmod-hsdma-mtk
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek HSDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
+Description:  Kernel modules for enable MediaTek hsdma engine.
+
+@@
+
+Package: kmod-sound-mt7620
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
+Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: CS5535/CS5536 Audio Controller
+Title: MT7620 PCM/I2S Alsa Driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SND_CS5535AUDIO
-Description:  Support for the integrated AC97 sound device on motherboards
- with AMD CS5535/CS5536 chipsets.
-
-@@
-
-Package: kmod-sp5100-tco
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SP5100 Watchdog Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SP5100_TCO
-Description:  Kernel module for the SP5100_TCO hardware watchdog.
-
-@@
-
-Package: kmod-pcengines-apuv2
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PC Engines APUv2/3 front button and LEDs driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PCENGINES_APU2
-Description:   This driver provides support for the front button and LEDs on
-  PC Engines APUv2/APUv3 board.
+Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
+Description:  Alsa modules for ralink i2s controller.
 
 @@
 
@@ -16940,6 +16843,65 @@ Description:  This driver provides support for the integrated DesignWare
 
 @@
 
+Package: kmod-sound-cs5535audio
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: CS5535/CS5536 Audio Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_CS5535AUDIO
+Description:  Support for the integrated AC97 sound device on motherboards
+ with AMD CS5535/CS5536 chipsets.
+
+@@
+
+Package: kmod-sp5100-tco
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SP5100 Watchdog Support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SP5100_TCO
+Description:  Kernel module for the SP5100_TCO hardware watchdog.
+
+@@
+
+Package: kmod-pcengines-apuv2
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PC Engines APUv2/3 front button and LEDs driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCENGINES_APU2
+Description:   This driver provides support for the front button and LEDs on
+  PC Engines APUv2/APUv3 board.
+
+@@
+
 Package: kmod-linkstation-poweroff
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -16959,6 +16921,44 @@ Description:   This driver supports turning off some Buffalo LinkStations by
   setting an output pin at the ethernet PHY to the correct state.
   It also makes the device compatible with the WoL function.
   Say Y here if you have a Buffalo LinkStation LS421D/E.
+
+@@
+
+Package: kmod-ata-rb532-cf
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 @BROKEN +kmod-ata-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 Compact Flash support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
+Description:   RB532 Compact Flash support.
+
+@@
+
+Package: kmod-input-rb532
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 +kmod-input-polldev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 button device support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
+Description:   Kernel module for RB532 button
 
 @@
 
