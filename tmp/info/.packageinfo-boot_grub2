@@ -3,7 +3,7 @@ Build-Depends: grub2/host
 Build-Types: host
 
 Package: grub2
-Version: 2.04-3
+Version: 2.06~rc1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Section: boot
 Category: Boot Loaders
 Title: GRand Unified Bootloader (pc)
 Maintainer: 
-Source: grub-2.04.tar.xz
+Source: grub-2.06~rc1.tar.xz
 Type: ipkg
 Description: GRand Unified Bootloader (pc)
 http://www.gnu.org/software/grub/
@@ -21,7 +21,7 @@ http://www.gnu.org/software/grub/
 @@
 
 Package: grub2-efi
-Version: 2.04-3
+Version: 2.06~rc1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Section: boot
 Category: Boot Loaders
 Title: GRand Unified Bootloader (efi)
 Maintainer: 
-Source: grub-2.04.tar.xz
+Source: grub-2.06~rc1.tar.xz
 Type: ipkg
 Description: GRand Unified Bootloader (efi)
 http://www.gnu.org/software/grub/
@@ -40,7 +40,7 @@ http://www.gnu.org/software/grub/
 
 Package: grub2-editenv
 Submenu: Boot Loaders
-Version: 2.04-3
+Version: 2.06~rc1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Section: utils
 Category: Utilities
 Title: Grub2 Environment editor
 Maintainer: 
-Source: grub-2.04.tar.xz
+Source: grub-2.06~rc1.tar.xz
 Type: ipkg
 Description: 	Edit grub2 environment files.
 http://www.gnu.org/software/grub/
