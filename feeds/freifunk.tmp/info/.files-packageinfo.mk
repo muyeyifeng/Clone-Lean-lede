@@ -2,6 +2,7 @@ $(eval $(call PackageDir,applications_luci-app-freifunk-diagnostics,applications
 $(eval $(call PackageDir,applications_luci-app-freifunk-policyrouting,applications/luci-app-freifunk-policyrouting,))
 $(eval $(call PackageDir,applications_luci-app-freifunk-widgets,applications/luci-app-freifunk-widgets,))
 $(eval $(call PackageDir,applications_luci-app-meshwizard,applications/luci-app-meshwizard,))
+$(eval $(call PackageDir,applications_luci-app-owm,applications/luci-app-owm,))
 $(eval $(call PackageDir,contrib_package_community-profiles,contrib/package/community-profiles,))
 $(eval $(call PackageDir,contrib_package_freifunk-common,contrib/package/freifunk-common,))
 $(eval $(call PackageDir,contrib_package_freifunk-firewall,contrib/package/freifunk-firewall,))
