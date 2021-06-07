@@ -2433,7 +2433,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.16.4-1
+Version: 1.16.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2443,7 +2443,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.4.src.tar.gz
+Source: go1.16.5.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2469,7 +2469,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.16.4-1
+Version: 1.16.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2479,7 +2479,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.4.src.tar.gz
+Source: go1.16.5.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2501,7 +2501,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.16.4-1
+Version: 1.16.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2511,7 +2511,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.4.src.tar.gz
+Source: go1.16.5.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -49654,7 +49654,7 @@ Source-Makefile: feeds/packages/libs/xr_usb_serial_common/Makefile
 
 Package: kmod-usb-serial-xr_usb_serial_common
 Submenu: USB Support
-Version: <LINUX_VERSION>+1a-1
+Version: <LINUX_VERSION>+2017-08-01-b8dad8cf15de160afbd9989f880dc74b921a857b-2
 Depends:  kmod-usb-serial
 Conflicts: 
 Menu-Depends: 
@@ -49663,8 +49663,9 @@ Section: kernel
 Category: Kernel modules
 Title: Support for Exar USB to RS-485/RS-422
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: usb-serial-xr_usb_serial_common-1a-8c21f4afdfd6acd77b6adad59a4dabe5cbf2b947.tar.xz
-License: GPLv2
+Source: usb-serial-xr_usb_serial_common-2017-08-01-b8dad8cf15de160afbd9989f880dc74b921a857b.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: LICENSE
 Type: ipkg
 Description: Support for Exar USB to RS-485/RS-422
 https://www.exar.com/content/document.ashx?id=21651
@@ -74633,7 +74634,7 @@ http://www.cs.columbia.edu/~lennox/udptunnel/
 Source-Makefile: feeds/packages/net/udpxy/Makefile
 
 Package: udpxy
-Version: 1.0-24.1-1
+Version: 1.0-25.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -74643,7 +74644,7 @@ Category: Network
 Repository: base
 Title: Convert UDP IPTV streams into HTTP streams
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: udpxy-1.0-24.1.tar.gz
+Source: udpxy-1.0-25.1.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: chipmunk/gpl.txt
 Type: ipkg
