@@ -1,21 +1,35 @@
 Source-Makefile: feeds/passwall/brook/Makefile
+Build-Depends: golang/host
 
 Package: brook
+Submenu: Web Servers/Proxies
 Version: 20210601-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: Brook is a cross-platform proxy software
-Maintainer: 
-Source: 
+Title: A cross-platform proxy software
+Maintainer: CN_SZTL <cnsztl@immortalwrt.org>
+Source: brook-20210601.tar.gz
+License: GPL-3.0
+LicenseFiles: LICENSE
 Type: ipkg
-Description:   Brook is a cross-platform proxy software
+Description: 	Brook is a cross-platform strong encryption and not detectable proxy.
+	Zero-Configuration.
 https://github.com/txthinking/brook
+CN_SZTL <cnsztl@immortalwrt.org>
+@@
+Config:
+	config BROOK_COMPRESS_GOPROXY
+		bool "Compiling with GOPROXY proxy"
+		default n
 
+	config BROOK_COMPRESS_UPX
+		bool "Compress executable files with UPX"
+		default y
 @@
 
 
@@ -141,7 +155,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4-24
+Version: 4-25
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +coreutils-nohup +curl +dnsmasq-full +ipset +ip-full +ipt2socks +iptables-mod-tproxy +libuci-lua +lua +luci-lib-jsonc +microsocks +tcping +resolveip +unzip +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_Dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_Haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_PDNSD:pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-geodata
 Conflicts: 
 Menu-Depends: 
@@ -234,7 +248,7 @@ endmenu
 
 Package: luci-i18n-passwall-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 4-24
+Version: 4-25
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
@@ -253,7 +267,7 @@ Description:     Translation for luci-app-passwall -
 
 Package: luci-i18n-passwall-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 4-24
+Version: 4-25
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
