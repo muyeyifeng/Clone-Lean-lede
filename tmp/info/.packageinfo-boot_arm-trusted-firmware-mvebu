@@ -1,242 +1,155 @@
 Source-Makefile: package/boot/arm-trusted-firmware-mvebu/Makefile
 
-Package: arm-trusted-firmware-mvebu-espressobin-512mb
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+Package: trusted-firmware-a-espressobin-512mb
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-512mb
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin (512MB)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin (512MB)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin (512MB)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin (512MB)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-1gb-1cs
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+
+Package: trusted-firmware-a-espressobin-v3-v5-1gb-1cs
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-v3-v5-1gb-1cs
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 1CS)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB 1CS)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 1CS)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB 1CS)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-1gb-1cs-emmc
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin-emmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: espressobin-v3-v5-1gb-1cs-emmc
-Section: boot
-Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 1CS, eMMC)
-Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 1CS, eMMC)
-Vladimir Vid <vladimir.vid@sartura.hr>
-@@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-1gb-2cs
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+Package: trusted-firmware-a-espressobin-v3-v5-1gb-2cs
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-v3-v5-1gb-2cs
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB, 2CS)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB, 2CS)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB, 2CS)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB, 2CS)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-1gb-2cs-emmc
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin-emmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: espressobin-v3-v5-1gb-2cs-emmc
-Section: boot
-Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 2CS, eMMC)
-Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (1GB 2CS, eMMC)
-Vladimir Vid <vladimir.vid@sartura.hr>
-@@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-2gb
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+Package: trusted-firmware-a-espressobin-v3-v5-2gb
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-v3-v5-2gb
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (2GB)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (2GB)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (2GB)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (2GB)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v3-v5-2gb-emmc
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin-emmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: espressobin-v3-v5-2gb-emmc
-Section: boot
-Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (2GB, eMMC)
-Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V3-V5 (2GB, eMMC)
-Vladimir Vid <vladimir.vid@sartura.hr>
-@@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v7-1gb
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+Package: trusted-firmware-a-espressobin-v7-1gb
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7 || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-v7-1gb
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V7 (1GB)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin V7 (1GB)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V7 (1GB)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin V7 (1GB)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v7-1gb-emmc
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: espressobin-v7-1gb-emmc
-Section: boot
-Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V7 (1GB, eMMC)
-Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V7 (1GB, eMMC)
-Vladimir Vid <vladimir.vid@sartura.hr>
-@@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v7-2gb
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
+Package: trusted-firmware-a-espressobin-v7-2gb
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7 || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: espressobin-v7-2gb
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V7 (2GB)
+Title: Trusted-Firmware-A for Marvell ESPRESSObin V7 (2GB)
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V7 (2GB)
+Type: bin
+Description: Trusted-Firmware-A for Marvell ESPRESSObin V7 (2GB)
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 
-Package: arm-trusted-firmware-mvebu-espressobin-v7-2gb-emmc
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-espressobin
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: espressobin-v7-2gb-emmc
-Section: boot
-Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Marvell ESPRESSObin V7 (2GB, eMMC)
-Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Marvell ESPRESSObin V7 (2GB, eMMC)
-Vladimir Vid <vladimir.vid@sartura.hr>
-@@
 
-Package: arm-trusted-firmware-mvebu-udpu
-Version: 2.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +u-boot-uDPU
+Package: trusted-firmware-a-udpu
+Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_methode_udpu || TARGET_DEVICE_mvebu_cortexa53_DEVICE_methode_udpu)
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-uDPU @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: udpu
 Section: boot
 Category: Boot Loaders
-Repository: base
-Title: ARM Trusted Firmware for Methode uDPU
+Title: Trusted-Firmware-A for Methode uDPU
 Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
-Source: trusted-firmware-a-2.3.tar.gz
+Source: trusted-firmware-a-2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
-Type: ipkg
-Description: ARM Trusted Firmware for Methode uDPU
+Type: bin
+Description: Trusted-Firmware-A for Methode uDPU
+https://www.trustedfirmware.org/projects/tf-a/
 Vladimir Vid <vladimir.vid@sartura.hr>
 @@
 

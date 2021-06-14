@@ -3,7 +3,7 @@ Source-Makefile: package/kernel/lantiq/ltq-deu/Makefile
 Package: kmod-ltq-deu-danube
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-1
-Depends: @TARGET_lantiq_xway +kmod-crypto-manager
+Depends: @TARGET_lantiq_xway +kmod-crypto-manager @LINUX_5_4
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ John Crispin <john@phrozen.org>
 Package: kmod-ltq-deu-ar9
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-1
-Depends: @TARGET_lantiq_xway +kmod-crypto-manager
+Depends: @TARGET_lantiq_xway +kmod-crypto-manager @LINUX_5_4
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ John Crispin <john@phrozen.org>
 Package: kmod-ltq-deu-vr9
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-1
-Depends: @TARGET_lantiq_xrx200 +kmod-crypto-manager
+Depends: @TARGET_lantiq_xrx200 +kmod-crypto-manager @LINUX_5_4
 Conflicts: 
 Menu-Depends: 
 Provides: 

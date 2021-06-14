@@ -2,8 +2,7 @@ Source-Makefile: package/utils/lua/Makefile
 Build-Types: host
 
 Package: liblua
-Version: 5.1.5-7
-ABIVersion: 5.1.5
+Version: 5.1.5-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -27,7 +26,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: lua
 Submenu: Lua
-Version: 5.1.5-7
+Version: 5.1.5-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua
 Conflicts: 
 Menu-Depends: 
@@ -51,7 +50,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: luac
 Submenu: Lua
-Version: 5.1.5-7
+Version: 5.1.5-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua
 Conflicts: 
 Menu-Depends: 
@@ -75,7 +74,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: lua-examples
 Submenu: Lua
-Version: 5.1.5-7
+Version: 5.1.5-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lua
 Conflicts: 
 Menu-Depends: 

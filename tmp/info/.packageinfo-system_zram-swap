@@ -1,7 +1,7 @@
 Source-Makefile: package/system/zram-swap/Makefile
 
 Package: zram-swap
-Version: 1.1-8
+Version: 8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +@BUSYBOX_CONFIG_FEATURE_SWAPON_DISCARD +@BUSYBOX_CONFIG_FEATURE_SWAPON_PRI +@BUSYBOX_CONFIG_MKSWAP +@BUSYBOX_CONFIG_SWAPOFF +@BUSYBOX_CONFIG_SWAPON +kmod-zram
 Conflicts: 
 Menu-Depends: 

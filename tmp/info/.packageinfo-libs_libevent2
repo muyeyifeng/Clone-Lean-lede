@@ -1,8 +1,7 @@
 Source-Makefile: package/libs/libevent2/Makefile
 
 Package: libevent2
-Version: 2.1.11-2
-ABIVersion: 7
+Version: 2.1.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Event notification library (version 2.1)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libevent-2.1.11-stable.tar.gz
+Source: libevent-2.1.12-stable.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -33,8 +32,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libevent2-core
-Version: 2.1.11-2
-ABIVersion: 7
+Version: 2.1.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -44,7 +42,7 @@ Category: Libraries
 Repository: base
 Title: Event notification core library (version 2.1)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libevent-2.1.11-stable.tar.gz
+Source: libevent-2.1.12-stable.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -65,8 +63,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libevent2-extra
-Version: 2.1.11-2
-ABIVersion: 7
+Version: 2.1.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2-core
 Conflicts: 
 Menu-Depends: 
@@ -76,7 +73,7 @@ Category: Libraries
 Repository: base
 Title: Event notification extra library (version 2.1)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libevent-2.1.11-stable.tar.gz
+Source: libevent-2.1.12-stable.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -97,8 +94,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libevent2-openssl
-Version: 2.1.11-2
-ABIVersion: 7
+Version: 2.1.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libevent2-core
 Conflicts: 
 Menu-Depends: 
@@ -108,7 +104,7 @@ Category: Libraries
 Repository: base
 Title: Event notification OpenSSL library (version 2.1)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libevent-2.1.11-stable.tar.gz
+Source: libevent-2.1.12-stable.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -129,8 +125,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libevent2-pthreads
-Version: 2.1.11-2
-ABIVersion: 7
+Version: 2.1.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libevent2-core
 Conflicts: 
 Menu-Depends: 
@@ -140,7 +135,7 @@ Category: Libraries
 Repository: base
 Title: Event notification Pthreads library (version 2.1)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libevent-2.1.11-stable.tar.gz
+Source: libevent-2.1.12-stable.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

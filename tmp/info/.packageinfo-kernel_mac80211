@@ -2,7 +2,7 @@ Source-Makefile: package/kernel/mac80211/Makefile
 
 Package: kmod-adm8211
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-mac80211 +kmod-eeprom-93cx6
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: ADMTek 8211 support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: ADMTek 8211 support
 https://wireless.wiki.kernel.org/
@@ -20,7 +20,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-airo
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +@DRIVER_WEXT_SUPPORT +kmod-cfg80211 @TARGET_x86 @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Section: kernel
 Category: Kernel modules
 Title: Cisco Aironet driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel support for Cisco Aironet cards
 https://wireless.wiki.kernel.org/
@@ -38,7 +38,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-hermes
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT||PCMCIA_SUPPORT +kmod-cfg80211 +@DRIVER_WEXT_SUPPORT +kmod-crypto-michael-mic
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,7 @@ Section: kernel
 Category: Kernel modules
 Title: Hermes 802.11b chipset support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel support for Hermes 802.11b chipsets
 https://wireless.wiki.kernel.org/
@@ -56,7 +56,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-hermes-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-hermes
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intersil Prism 2.5 PCI support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Intersil Prism 2.5 PCI support
 https://wireless.wiki.kernel.org/
@@ -74,7 +74,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-hermes-pcmcia
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCMCIA_SUPPORT +kmod-hermes +kmod-pcmcia-core
 Conflicts: 
 Menu-Depends: 
@@ -83,7 +83,7 @@ Section: kernel
 Category: Kernel modules
 Title: Hermes based PCMCIA adaptors
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Hermes based PCMCIA adaptors
 https://wireless.wiki.kernel.org/
@@ -92,7 +92,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-hermes-plx
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-hermes
 Conflicts: 
 Menu-Depends: 
@@ -101,7 +101,7 @@ Section: kernel
 Category: Kernel modules
 Title: PLX9052 based PCI adaptor
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Hermes in PLX9052 based PCI adaptors
 https://wireless.wiki.kernel.org/
@@ -110,7 +110,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-lib80211
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: +kmod-cfg80211 +kmod-crypto-hash +kmod-crypto-ccm
 Conflicts: 
 Menu-Depends: 
@@ -119,7 +119,7 @@ Section: kernel
 Category: Kernel modules
 Title: 802.11 Networking stack
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for 802.11 Networking stack
  Includes:
@@ -133,8 +133,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mac80211-hwsim
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -142,7 +142,7 @@ Section: kernel
 Category: Kernel modules
 Title: mac80211 HW simulation device
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: mac80211 HW simulation device
 https://wireless.wiki.kernel.org/
@@ -151,8 +151,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mt7601u
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT @USB_SUPPORT +kmod-usb-core +mt7601u-firmware
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  +kmod-mac80211 +@DRIVER_11N_SUPPORT @USB_SUPPORT +kmod-usb-core +mt7601u-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -160,7 +160,7 @@ Section: kernel
 Category: Kernel modules
 Title: MT7601U-based USB dongles Wireless Driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: MT7601U-based USB dongles Wireless Driver
 https://wireless.wiki.kernel.org/
@@ -169,8 +169,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-p54-common
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +kmod-lib-crc-ccitt +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +kmod-lib-crc-ccitt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -178,7 +178,7 @@ Section: kernel
 Category: Kernel modules
 Title: Prism54 Drivers (COMMON)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Prism54 Drivers (COMMON)
 https://wireless.wiki.kernel.org/
@@ -187,7 +187,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-p54-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-p54-common +p54-pci-firmware
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +196,7 @@ Section: kernel
 Category: Kernel modules
 Title: Prism54 Drivers (PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Prism54 Drivers (PCI)
 https://wireless.wiki.kernel.org/
@@ -205,7 +205,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-p54-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-usb-core +kmod-p54-common +p54-usb-firmware
 Conflicts: 
 Menu-Depends: 
@@ -214,7 +214,7 @@ Section: kernel
 Category: Kernel modules
 Title: Prism54 Drivers (USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Prism54 Drivers (USB)
 https://wireless.wiki.kernel.org/
@@ -223,7 +223,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rsi91x
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mac80211 +rs9113-firmware +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -232,7 +232,7 @@ Section: kernel
 Category: Kernel modules
 Title: Redpine Signals Inc 91x WLAN driver support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Redpine Signals Inc 91x WLAN driver support
 https://wireless.wiki.kernel.org/
@@ -241,7 +241,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rsi91x-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211 +kmod-rsi91x +rs9113-firmware
 Conflicts: 
 Menu-Depends: 
@@ -250,7 +250,7 @@ Section: kernel
 Category: Kernel modules
 Title: Redpine Signals USB bus support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Redpine Signals USB bus support
 https://wireless.wiki.kernel.org/
@@ -259,7 +259,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rsi91x-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mac80211 +kmod-mmc +kmod-rsi91x +rs9113-firmware
 Conflicts: 
 Menu-Depends: 
@@ -268,7 +268,7 @@ Section: kernel
 Category: Kernel modules
 Title: Redpine Signals SDIO bus support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Redpine Signals SDIO bus support
 https://wireless.wiki.kernel.org/
@@ -277,7 +277,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wlcore
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -286,7 +286,7 @@ Section: kernel
 Category: Kernel modules
 Title: TI common driver part
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  This module contains some common parts needed by TI Wireless drivers.
 https://wireless.wiki.kernel.org/
@@ -295,7 +295,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wl12xx
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-wlcore +wl12xx-firmware
 Conflicts: 
 Menu-Depends: 
@@ -304,7 +304,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for TI WL12xx
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for TI WL12xx
 https://wireless.wiki.kernel.org/en/users/drivers/wl12xx
@@ -313,7 +313,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wl18xx
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-wlcore +wl18xx-firmware
 Conflicts: 
 Menu-Depends: 
@@ -322,7 +322,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for TI WL18xx
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for TI WL18xx
 https://wireless.wiki.kernel.org/en/users/drivers/wl18xx
@@ -331,8 +331,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-zd1211rw
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211 +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -340,7 +340,7 @@ Section: kernel
 Category: Kernel modules
 Title: Zydas ZD1211 support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Zydas ZD1211 support
 https://wireless.wiki.kernel.org/
@@ -350,8 +350,8 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-ath
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ar71xx||TARGET_ath79||TARGET_ath25 +kmod-mac80211
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79||TARGET_ath25 +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -359,7 +359,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros common driver part
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  This module contains some common parts needed by Atheros Wireless drivers.
 https://wireless.wiki.kernel.org/
@@ -417,8 +417,8 @@ Config:
 
 Package: kmod-ath5k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @(PCI_SUPPORT||TARGET_ath25) +kmod-ath +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @(PCI_SUPPORT||TARGET_ath25) +kmod-ath
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -426,7 +426,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 5xxx wireless cards support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  This module adds support for wireless adapters based on
  Atheros 5xxx chipset.
@@ -436,7 +436,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-ath +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -445,7 +445,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros FullMAC wireless devices (common code for ath6kl_sdio and ath6kl_usb)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Atheros FullMAC wireless devices (common code for ath6kl_sdio and ath6kl_usb)
@@ -455,7 +455,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mmc +kmod-ath6kl
 Conflicts: 
 Menu-Depends: 
@@ -464,7 +464,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11n SDIO wireless cards support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on
 Atheros IEEE 802.11n AR6003 and AR6004 family of chipsets.
@@ -474,7 +474,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-usb-core +kmod-ath6kl
 Conflicts: 
 Menu-Depends: 
@@ -483,7 +483,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11n USB wireless cards support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on the
 Atheros IEEE 802.11n AR6004 chipset.
@@ -493,8 +493,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath9k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @PCI_SUPPORT||TARGET_ar71xx||TARGET_ath79 +kmod-ath9k-common
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @PCI_SUPPORT||TARGET_ath79 +kmod-ath9k-common
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -502,7 +502,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11n PCI wireless cards support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on
 Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
@@ -528,15 +528,15 @@ Config:
 
 	config ATH9K_UBNTHSR
 		bool "Support for Ubiquiti UniFi Outdoor+ access point"
-		depends on PACKAGE_kmod-ath9k && (TARGET_ar71xx_generic||TARGET_ath79)
+		depends on PACKAGE_kmod-ath9k && TARGET_ath79
 		default y
 
 @@
 
 Package: kmod-ath9k-common
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ar71xx||TARGET_ath79 +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79 +kmod-ath +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -544,7 +544,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
@@ -554,7 +554,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath9k-htc
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-ath9k-common +kmod-usb-core +ath9k-htc-firmware
 Conflicts: 
 Menu-Depends: 
@@ -563,7 +563,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11n USB device support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on
 Atheros USB AR9271 and AR7010 family of chipsets.
@@ -573,8 +573,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath10k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @PCI_SUPPORT +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @PCI_SUPPORT +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -582,7 +582,7 @@ Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11ac wireless cards support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on
 Atheros IEEE 802.11ac family of chipsets. For now only
@@ -606,7 +606,7 @@ Config:
 
 Package: kmod-ath11k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @TARGET_ipq807x +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11AX_SUPPORT +@DRIVER_11W_SUPPORT +kmod-crypto-michael-mic
 Conflicts: 
 Menu-Depends: 
@@ -615,7 +615,7 @@ Section: kernel
 Category: Kernel modules
 Title: Qualcomm 802.11ax wireless chipset support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: This module adds support for Qualcomm Technologies 802.11ax family of
 chipsets.
@@ -623,28 +623,10 @@ https://wireless.wiki.kernel.org/en/users/drivers/ath11k
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: kmod-ar5523
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Driver for Atheros AR5523 USB sticks
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
-Type: ipkg
-Description: Driver for Atheros AR5523 USB sticks
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-carl9170
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT +carl9170-firmware
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core +@DRIVER_11N_SUPPORT +carl9170-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -652,7 +634,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for Atheros AR9170 USB sticks
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Driver for Atheros AR9170 USB sticks
 https://wireless.wiki.kernel.org/
@@ -661,7 +643,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-owl-loader
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-ath9k
 Conflicts: 
 Menu-Depends: 
@@ -670,7 +652,7 @@ Section: kernel
 Category: Kernel modules
 Title: Owl loader for initializing Atheros PCI(e) Wifi chips
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:   Kernel module that helps to initialize certain Qualcomm
   Atheros' PCI(e) Wifi chips, which have the init data
@@ -682,9 +664,27 @@ https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: kmod-ar5523
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Driver for Atheros AR5523 USB sticks
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: backports-5.10.42-1.tar.xz
+Type: ipkg
+Description: Driver for Atheros AR5523 USB sticks
+https://wireless.wiki.kernel.org/
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: kmod-wil6210
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-mac80211 +wil6210-firmware
 Conflicts: 
 Menu-Depends: 
@@ -693,7 +693,7 @@ Section: kernel
 Category: Kernel modules
 Title: QCA/Wilocity 60g WiFi card wil6210 support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: QCA/Wilocity 60g WiFi card wil6210 support
 https://wireless.wiki.kernel.org/
@@ -703,8 +703,8 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-b43
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @PCI_SUPPORT +@DRIVER_11W_SUPPORT +kmod-mac80211 +kmod-lib-cordic  
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @PCI_SUPPORT +kmod-mac80211 +kmod-lib-cordic  
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -712,7 +712,7 @@ Section: kernel
 Category: Kernel modules
 Title: Broadcom 43xx wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Kernel-Config: CONFIG_HW_RANDOM=y
 Description: Kernel module for Broadcom 43xx wireless support (mac80211 stack) new
@@ -815,7 +815,7 @@ config PACKAGE_B43_USE_BCMA
 		default "16,28,29,30" if TARGET_bcm47xx_mips74k
 		default "5,6,7,8,9,10,11,13,15,16,28,29,30"
 		help
-		  This is a comma seperated list of core revision numbers.
+		  This is a comma separated list of core revision numbers.
 
 		  Example (keep files for rev5 only):
 		    5
@@ -830,7 +830,7 @@ config PACKAGE_B43_USE_BCMA
 		default "N,HT" if TARGET_bcm47xx_mips74k
 		default "G,N,LP,HT"
 		help
-		  This is a comma seperated list of PHY types:
+		  This is a comma separated list of PHY types:
 		    A  => A-PHY
 		    AG => Dual A-PHY G-PHY
 		    G  => G-PHY
@@ -946,8 +946,8 @@ config PACKAGE_B43_USE_BCMA
 Package: kmod-b43legacy
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  +kmod-mac80211 +!(TARGET_bcm47xx||TARGET_bcm63xx):kmod-ssb @!TARGET_bcm47xx_mips74k +b43legacy-firmware +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  +kmod-mac80211 +!(TARGET_bcm47xx||TARGET_bcm63xx):kmod-ssb @!TARGET_bcm47xx_mips74k +b43legacy-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -955,7 +955,7 @@ Section: kernel
 Category: Kernel modules
 Title: Broadcom 43xx-legacy wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Kernel-Config: CONFIG_HW_RANDOM=y
 Description: Kernel module for Broadcom 43xx-legacy wireless support (mac80211 stack) new
@@ -966,7 +966,7 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-brcmsmac
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mac80211 +@DRIVER_11N_SUPPORT +!TARGET_bcm47xx:kmod-bcma +kmod-lib-cordic +kmod-lib-crc8 +kmod-brcmutil +!BRCMSMAC_USE_FW_FROM_WL:brcmsmac-firmware
 Conflicts: 
 Menu-Depends: 
@@ -975,7 +975,7 @@ Section: kernel
 Category: Kernel modules
 Title: Broadcom IEEE802.11n PCIe SoftMAC WLAN driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel module for Broadcom IEEE802.11n PCIe Wireless cards
 https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
@@ -1000,8 +1000,8 @@ Config:
 
 Package: kmod-brcmfmac
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @USB_SUPPORT +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @USB_SUPPORT +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1009,7 +1009,7 @@ Section: kernel
 Category: Kernel modules
 Title: Broadcom IEEE802.11n USB FullMAC WLAN driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel module for Broadcom IEEE802.11n USB Wireless cards
 https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
@@ -1021,6 +1021,7 @@ Config:
 	config BRCMFMAC_SDIO
 		bool "Enable SDIO bus interface support"
 		default y if TARGET_bcm27xx
+		default y if TARGET_rockchip
 		default y if TARGET_sunxi
 		default n
 		help
@@ -1052,7 +1053,7 @@ Config:
 Package: kmod-brcmutil
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT||USB_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -1061,7 +1062,7 @@ Section: kernel
 Category: Kernel modules
 Title: Broadcom IEEE802.11n common driver parts
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  This module contains some common parts needed by Broadcom Wireless drivers brcmsmac and brcmfmac.
 https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
@@ -1080,7 +1081,7 @@ Config:
 
 Package: kmod-iwl-legacy
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: +kmod-mac80211 @PCI_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -1089,7 +1090,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel legacy Wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  iwl-legacy kernel module for legacy Intel wireless support
 https://wireless.wiki.kernel.org/
@@ -1098,7 +1099,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-iwl3945
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: +kmod-mac80211 +kmod-iwl-legacy +iwl3945-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1107,7 +1108,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel iwl3945 Wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  iwl3945 kernel module for Intel 3945 support
 https://wireless.wiki.kernel.org/
@@ -1116,7 +1117,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-iwl4965
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: +kmod-mac80211 +kmod-iwl-legacy +@DRIVER_11N_SUPPORT +iwl4965-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1125,7 +1126,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel iwl4965 Wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  iwl4965 kernel module for Intel 4965 support
 https://wireless.wiki.kernel.org/
@@ -1135,8 +1136,8 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-iwlwifi
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends: +kmod-mac80211 @PCI_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends: +kmod-mac80211 @PCI_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1144,7 +1145,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel AGN Wireless support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  iwlwifi kernel module for
  Intel Wireless WiFi Link 6250AGN Adapter
@@ -1207,7 +1208,7 @@ Config:
 
 Package: kmod-libipw
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-crypto-michael-mic +kmod-crypto-ecb +kmod-lib80211 +kmod-cfg80211 +@DRIVER_WEXT_SUPPORT @!BIG_ENDIAN
 Conflicts: 
 Menu-Depends: 
@@ -1216,7 +1217,7 @@ Section: kernel
 Category: Kernel modules
 Title: libipw for ipw2100 and ipw2200
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Hardware independent IEEE 802.11 networking stack for ipw2100 and ipw2200.
 https://wireless.wiki.kernel.org/
@@ -1225,7 +1226,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ipw2100
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-libipw
 Conflicts: 
 Menu-Depends: 
@@ -1234,7 +1235,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel IPW2100 driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel support for Intel IPW2100
  Includes:
@@ -1245,7 +1246,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ipw2200
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends: @PCI_SUPPORT +kmod-libipw
 Conflicts: 
 Menu-Depends: 
@@ -1254,7 +1255,7 @@ Section: kernel
 Category: Kernel modules
 Title: Intel IPW2200 driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel support for Intel IPW2200
  Includes:
@@ -1265,7 +1266,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-libertas-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-cfg80211 +kmod-lib80211 +kmod-mmc +@DRIVER_WEXT_SUPPORT @!TARGET_uml +libertas-sdio-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1274,7 +1275,7 @@ Section: kernel
 Category: Kernel modules
 Title: Marvell 88W8686 Wireless Driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Marvell 88W8686 Wireless Driver
 https://wireless.wiki.kernel.org/
@@ -1283,7 +1284,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-libertas-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-cfg80211 +kmod-usb-core +kmod-lib80211 +@DRIVER_WEXT_SUPPORT +libertas-usb-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1292,7 +1293,7 @@ Section: kernel
 Category: Kernel modules
 Title: Marvell 88W8015 Wireless Driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Marvell 88W8015 Wireless Driver
 https://wireless.wiki.kernel.org/
@@ -1301,7 +1302,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-libertas-spi
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-cfg80211 +kmod-lib80211 +@DRIVER_WEXT_SUPPORT @!TARGET_uml +libertas-spi-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1310,7 +1311,7 @@ Section: kernel
 Category: Kernel modules
 Title: Marvell 88W8686 SPI Wireless Driver
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Kernel-Config: CONFIG_SPI=y CONFIG_SPI_MASTER=y
 Description: Marvell 88W8686 SPI Wireless Driver
@@ -1320,7 +1321,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mwl8k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +mwl8k-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1329,7 +1330,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for Marvell TOPDOG 802.11 Wireless cards
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Marvell TOPDOG 802.11 Wireless cards
 https://wireless.wiki.kernel.org/en/users/drivers/mwl8k
@@ -1338,7 +1339,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mwifiex-pcie
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-pcie-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1347,7 +1348,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for Marvell 802.11n/802.11ac PCIe Wireless cards
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Marvell 802.11n/802.11ac PCIe Wireless cards
 https://wireless.wiki.kernel.org/en/users/drivers/mwifiex
@@ -1356,7 +1357,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mwifiex-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-sdio-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1365,7 +1366,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for Marvell 802.11n/802.11ac SDIO Wireless cards
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  Kernel modules for Marvell 802.11n/802.11ac SDIO Wireless cards
 https://wireless.wiki.kernel.org/en/users/drivers/mwifiex
@@ -1375,7 +1376,7 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-rt2x00-lib
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
@@ -1384,7 +1385,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (LIB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (LIB)
 https://wireless.wiki.kernel.org/
@@ -1411,7 +1412,7 @@ Config:
 
 Package: kmod-rt2x00-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rt2x00-mmio +kmod-rt2x00-lib
 Conflicts: 
 Menu-Depends: 
@@ -1420,7 +1421,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Ralink Drivers for RT2x00 cards (PCI)
@@ -1430,7 +1431,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2x00-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-rt2x00-lib +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
@@ -1439,7 +1440,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Ralink Drivers for RT2x00 cards (USB)
@@ -1449,7 +1450,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2x00-mmio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @(PCI_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib
 Conflicts: 
 Menu-Depends: 
@@ -1458,7 +1459,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (MMIO)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Ralink Drivers for RT2x00 cards (MMIO)
@@ -1468,7 +1469,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2400-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6
 Conflicts: 
 Menu-Depends: 
@@ -1477,7 +1478,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2400 PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2400 PCI)
 https://wireless.wiki.kernel.org/
@@ -1486,7 +1487,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2500-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6
 Conflicts: 
 Menu-Depends: 
@@ -1495,7 +1496,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2500 PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2500 PCI)
 https://wireless.wiki.kernel.org/
@@ -1504,7 +1505,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2500-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-rt2x00-usb
 Conflicts: 
 Menu-Depends: 
@@ -1513,7 +1514,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2500 USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2500 USB)
 https://wireless.wiki.kernel.org/
@@ -1522,8 +1523,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-lib
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib +kmod-lib-crc-ccitt +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib +kmod-lib-crc-ccitt +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1531,7 +1532,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (rt2800 LIB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Ralink Drivers for RT2x00 cards (rt2800 LIB)
@@ -1541,7 +1542,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-mmio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rt2800-lib +kmod-rt2x00-mmio
 Conflicts: 
 Menu-Depends: 
@@ -1550,7 +1551,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx MMIO)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx MMIO)
@@ -1560,7 +1561,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-rt2800-lib +kmod-rt2800-mmio +kmod-eeprom-93cx6 +rt2800-pci-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1569,7 +1570,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2860 PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2860 PCI)
 https://wireless.wiki.kernel.org/
@@ -1578,7 +1579,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-soc
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @(TARGET_ramips_rt288x||TARGET_ramips_rt305x||TARGET_ramips_rt3883||TARGET_ramips_mt7620) +kmod-rt2800-mmio +kmod-rt2800-lib
 Conflicts: 
 Menu-Depends: 
@@ -1587,7 +1588,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx SoC)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx SoC)
 https://wireless.wiki.kernel.org/
@@ -1596,7 +1597,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-rt2x00-usb +kmod-rt2800-lib +kmod-lib-crc-ccitt +rt2800-usb-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1605,7 +1606,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2870 USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2870 USB)
 https://wireless.wiki.kernel.org/
@@ -1614,7 +1615,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt61-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6 +kmod-lib-crc-itu-t +rt61-pci-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1623,7 +1624,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT2x61 PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT2x61 PCI)
 https://wireless.wiki.kernel.org/
@@ -1632,7 +1633,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt73-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-rt2x00-usb +kmod-lib-crc-itu-t +rt73-usb-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1641,7 +1642,7 @@ Section: kernel
 Category: Kernel modules
 Title: Ralink Drivers for RT2x00 cards (RT73 USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Ralink Drivers for RT2x00 cards (RT73 USB)
 https://wireless.wiki.kernel.org/
@@ -1650,7 +1651,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8180
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-eeprom-93cx6 +kmod-mac80211 @PCI_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -1659,7 +1660,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek Drivers for RTL818x devices (RTL8180 PCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek Drivers for RTL818x devices (RTL8180 PCI)
 https://wireless.wiki.kernel.org/en/users/drivers/rtl8187
@@ -1668,7 +1669,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8187
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-eeprom-93cx6 +kmod-mac80211 @USB_SUPPORT +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
@@ -1677,7 +1678,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek Drivers for RTL818x devices (RTL8187 USB)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek Drivers for RTL818x devices (RTL8187 USB)
 https://wireless.wiki.kernel.org/en/users/drivers/rtl8187
@@ -1686,8 +1687,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtlwifi
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1695,7 +1696,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek common driver part
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Realtek common driver part
@@ -1713,7 +1714,7 @@ Config:
 
 Package: kmod-rtlwifi-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @PCI_SUPPORT +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
@@ -1722,7 +1723,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek common driver part (PCI support)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Realtek common driver part (PCI support)
@@ -1732,7 +1733,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtlwifi-btcoexist
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
@@ -1741,7 +1742,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek BT coexist support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Realtek BT coexist support
@@ -1751,7 +1752,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtlwifi-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-usb-core +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
@@ -1760,7 +1761,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek common driver part (USB support)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Realtek common driver part (USB support)
@@ -1770,7 +1771,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192c-common
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
@@ -1779,7 +1780,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8192CE/RTL8192CU common support module
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Hidden: 1
 Description: Realtek RTL8192CE/RTL8192CU common support module
@@ -1789,7 +1790,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192ce
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi-pci +kmod-rtl8192c-common +rtl8192ce-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1798,7 +1799,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8192CE/RTL8188CE support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8192CE/RTL8188CE support
 https://wireless.wiki.kernel.org/
@@ -1807,7 +1808,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192se
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi-pci +rtl8192se-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1816,7 +1817,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8192SE/RTL8191SE support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8192SE/RTL8191SE support
 https://wireless.wiki.kernel.org/
@@ -1825,7 +1826,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192de
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi-pci +rtl8192de-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1834,7 +1835,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8192DE/RTL8188DE support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8192DE/RTL8188DE support
 https://wireless.wiki.kernel.org/
@@ -1843,7 +1844,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192cu
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi-usb +kmod-rtl8192c-common +rtl8192cu-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1852,7 +1853,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8192CU/RTL8188CU support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8192CU/RTL8188CU support
 https://wireless.wiki.kernel.org/
@@ -1861,7 +1862,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8723bs
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-mmc +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
@@ -1870,7 +1871,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8723BS SDIO Wireless LAN NIC driver (staging)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:  This option enables support for RTL8723BS SDIO drivers, such as the wifi found
  on the 1st gen Intel Compute Stick, the CHIP and many other Intel Atom and ARM
@@ -1881,7 +1882,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8821ae
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-rtlwifi-btcoexist +kmod-rtlwifi-pci +rtl8821ae-firmware
 Conflicts: 
 Menu-Depends: 
@@ -1890,7 +1891,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8821AE support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8821AE support
 https://wireless.wiki.kernel.org/
@@ -1899,7 +1900,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8xxxu
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
@@ -1908,7 +1909,7 @@ Section: kernel
 Category: Kernel modules
 Title: alternative Realtek RTL8XXXU support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description:   This is an alternative driver for various Realtek RTL8XXX
   parts written to utilize the Linux mac80211 stack.
@@ -1937,8 +1938,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtw88
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-Depends:  @(PCI_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11W_SUPPORT
+Version: <LINUX_VERSION>+5.10.42-1-1
+Depends:  @(PCI_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1946,7 +1947,7 @@ Section: kernel
 Category: Kernel modules
 Title: Realtek RTL8822BE/RTL8822CE/RTL8723DE
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: Realtek RTL8822BE/RTL8822CE/RTL8723DE
 https://wireless.wiki.kernel.org/
@@ -1955,8 +1956,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-cfg80211
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-ABIVersion: 5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +iw +wireless-regdb
 Conflicts: 
 Menu-Depends: 
@@ -1965,7 +1965,7 @@ Section: kernel
 Category: Kernel modules
 Title: cfg80211 - wireless configuration API
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Description: cfg80211 is the Linux wireless LAN (802.11) configuration API.
 https://wireless.wiki.kernel.org/
@@ -1987,8 +1987,7 @@ Config:
 Package: kmod-mac80211
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.8.18-1-3
-ABIVersion: 5.8.18-1-3
+Version: <LINUX_VERSION>+5.10.42-1-1
 Depends:  +kmod-cfg80211 +hostapd-common
 Conflicts: 
 Menu-Depends: 
@@ -1997,7 +1996,7 @@ Section: kernel
 Category: Kernel modules
 Title: Linux 802.11 Wireless Networking Stack
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.8.18-1.tar.xz
+Source: backports-5.10.42-1.tar.xz
 Type: ipkg
 Kernel-Config: CONFIG_AVERAGE=y
 Description: Generic IEEE 802.11 Networking Stack (mac80211)

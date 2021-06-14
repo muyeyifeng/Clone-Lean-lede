@@ -1,8 +1,7 @@
 Source-Makefile: package/libs/libusb/Makefile
 
 Package: libusb-1.0
-Version: 1.0.22-2
-ABIVersion: 0
+Version: 1.0.24-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +11,9 @@ Category: Libraries
 Repository: base
 Title: A library for accessing Linux USB devices
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: libusb-1.0.22.tar.bz2
-License: LGPL-2.1
+Source: libusb-1.0.24.tar.bz2
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description:   libusb is a C library that gives applications easy access to USB devices on
   many different operating systems.

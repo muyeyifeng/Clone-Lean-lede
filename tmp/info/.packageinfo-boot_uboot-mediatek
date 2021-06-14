@@ -1,55 +1,154 @@
 Source-Makefile: package/boot/uboot-mediatek/Makefile
+Build-Depends: arm-trusted-firmware-tools/host
 Build-Types: host
 
-Package: u-boot-mt7629
-Default: y
-Version: 2020.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7629
+Package: u-boot-mt7622_bananapi_bpi-r64-emmc
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-emmc-2ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: mt7629
+Build-Variant: mt7622_bananapi_bpi-r64-emmc
 Section: boot
 Category: Boot Loaders
-Title: U-Boot for MT7629
+Title: U-Boot for BananaPi R64 (eMMC)
 Maintainer: 
-Source: u-boot-2020.10.tar.bz2
+Source: u-boot-2021.04.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
-Description: U-Boot for MT7629
+Description: U-Boot for BananaPi R64 (eMMC)
 http://www.denx.de/wiki/U-Boot
 
 @@
 
+Build-Depends: arm-trusted-firmware-tools/host
 Build-Types: host
 
-Package: u-boot-mt7622
-Default: y
-Version: 2020.10
+Package: u-boot-mt7622_bananapi_bpi-r64-sdmmc
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-sdmmc-2ddr @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622_bananapi_bpi-r64-sdmmc
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for BananaPi R64 (SDMMC)
+Maintainer: 
+Source: u-boot-2021.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for BananaPi R64 (SDMMC)
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7622_bananapi_bpi-r64-snand
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-snand-2ddr @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622_bananapi_bpi-r64-snand
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for BananaPi R64 (SNAND)
+Maintainer: 
+Source: u-boot-2021.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for BananaPi R64 (SNAND)
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7622_linksys_e8450
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_linksys_e8450-ubi || TARGET_DEVICE_mediatek_mt7622_DEVICE_linksys_e8450-ubi)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-snand-1ddr @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622_linksys_e8450
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Linksys E8450
+Maintainer: 
+Source: u-boot-2021.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for Linksys E8450
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7622_rfb1
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1 || TARGET_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1-ubi || TARGET_DEVICE_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1 || TARGET_DEVICE_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1-ubi)
+Version: 2021.04
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: mt7622
+Build-Variant: mt7622_rfb1
 Section: boot
 Category: Boot Loaders
-Title: U-Boot for MT7622
+Title: U-Boot for MT7622 Reference Board 1
 Maintainer: 
-Source: u-boot-2020.10.tar.bz2
+Source: u-boot-2021.04.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
-Description: U-Boot for MT7622
+Description: U-Boot for MT7622 Reference Board 1
 http://www.denx.de/wiki/U-Boot
 
 @@
 
+Build-Depends: arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7622_ubnt_unifi-6-lr
+Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-ubootmod || TARGET_DEVICE_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-ubootmod)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-nor-2ddr @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622_ubnt_unifi-6-lr
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Ubiquiti UniFi 6 LR
+Maintainer: 
+Source: u-boot-2021.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for Ubiquiti UniFi 6 LR
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7623n_bpir2
-Default: y
-Version: 2020.10
+Default: y if (TARGET_mediatek_mt7623_Default || TARGET_mediatek_mt7623_DEVICE_bpi_bananapi-r2 || TARGET_DEVICE_mediatek_mt7623_DEVICE_bpi_bananapi-r2)
+Version: 2021.04
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7623
 Conflicts: 
 Menu-Depends: 
@@ -59,7 +158,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Banana Pi R2 (mt7623)
 Maintainer: 
-Source: u-boot-2020.10.tar.bz2
+Source: u-boot-2021.04.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -68,11 +167,12 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
+Build-Depends: arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7623a_unielec_u7623
-Default: y
-Version: 2020.10
+Default: y if (TARGET_mediatek_mt7623_Default || TARGET_mediatek_mt7623_DEVICE_unielec_u7623-emmc || TARGET_mediatek_mt7623_DEVICE_unielec_u7623-02-emmc-512m-legacy || TARGET_DEVICE_mediatek_mt7623_DEVICE_unielec_u7623-emmc || TARGET_DEVICE_mediatek_mt7623_DEVICE_unielec_u7623-02-emmc-512m-legacy)
+Version: 2021.04
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7623
 Conflicts: 
 Menu-Depends: 
@@ -82,11 +182,35 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for UniElec U7623 (mt7623)
 Maintainer: 
-Source: u-boot-2020.10.tar.bz2
+Source: u-boot-2021.04.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
 Description: U-Boot for UniElec U7623 (mt7623)
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7629_rfb
+Default: y if (TARGET_mediatek_mt7629_Default || TARGET_mediatek_mt7629_DEVICE_mediatek_mt7629-rfb || TARGET_DEVICE_mediatek_mt7629_DEVICE_mediatek_mt7629-rfb)
+Version: 2021.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7629
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7629_rfb
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for MT7629 Reference Board
+Maintainer: 
+Source: u-boot-2021.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for MT7629 Reference Board
 http://www.denx.de/wiki/U-Boot
 
 @@

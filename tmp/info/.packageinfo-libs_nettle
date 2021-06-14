@@ -1,8 +1,7 @@
 Source-Makefile: package/libs/nettle/Makefile
 
 Package: libnettle
-Version: 3.5.1-2
-ABIVersion: 7
+Version: 3.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +!LIBNETTLE_MINI:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +11,8 @@ Category: Libraries
 Repository: base
 Title: GNU crypto library
 Maintainer: 
-Source: nettle-3.5.1.tar.gz
-License: GPL-2.0+
+Source: nettle-3.6.tar.gz
+License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description: GNU crypto library

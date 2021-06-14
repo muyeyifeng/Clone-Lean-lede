@@ -1,17 +1,16 @@
 Source-Makefile: package/network/services/dropbear/Makefile
 
 Package: dropbear
-Version: 2020.80-1
+Version: 2020.81-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DROPBEAR_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Base system
-Repository: base
 Title: Small SSH2 client/server
 Maintainer: 
-Source: dropbear-2020.80.tar.bz2
+Source: dropbear-2020.81.tar.bz2
 License: MIT
 LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
 Type: ipkg
@@ -24,17 +23,16 @@ Config:
 @@
 
 Package: dropbearconvert
-Version: 2020.80-1
+Version: 2020.81-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DROPBEAR_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: utils
 Category: Utilities
-Repository: base
 Title: Utility for converting SSH keys
 Maintainer: 
-Source: dropbear-2020.80.tar.bz2
+Source: dropbear-2020.81.tar.bz2
 License: MIT
 LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
 Type: ipkg

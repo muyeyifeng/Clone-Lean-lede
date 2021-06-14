@@ -1,0 +1,23 @@
+Source-Makefile: package/boot/grub2/grub2-efi/Makefile
+Build-Depends: grub2-efi/host
+Build-Types: host
+
+Package: grub2-efi
+Version: 2.06~rc1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86||TARGET_x86_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: GRand Unified Bootloader (with EFI support)
+Maintainer: 
+Source: grub-2.06~rc1.tar.xz
+Type: ipkg
+Hidden: 1
+Description: GRand Unified Bootloader (with EFI support)
+http://www.gnu.org/software/grub/
+
+@@
+
+

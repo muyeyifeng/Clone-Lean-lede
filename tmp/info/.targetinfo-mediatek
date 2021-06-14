@@ -4,65 +4,56 @@ Target-Board: mediatek
 Target-Name: MediaTek Ralink ARM
 Target-Arch: arm
 Target-Arch-Packages: arm_xscale
-Target-Features: fpu nand ramdisk squashfs
+Target-Features: dt-overlay fpu nand separate_ramdisk squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
 Linux-Version: 5.4.124
-Linux-Testing-Version: 5.4.124
+Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
 Target: mediatek/mt7622
 Target-Board: mediatek
 Target-Name: MT7622
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
+Target-Features: dt dt-overlay fpu gpio nand pci pcie rtc separate_ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.124
-Linux-Testing-Version: 5.4.124
+Linux-Version: 5.10.43
+Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for MediaTek MT7622 ARM based boards.
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod kmod-mt7615e kmod-mt7615-firmware wpad-basic-wolfssl dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
-Target-Profile: Default
-Target-Profile-Name: Default Profile (minimum package set)
-Target-Profile-Packages:  iwinfo
-Target-Profile-Description:
-	Default package set compatible with most boards.
-@@
-
-Target-Profile: DEVICE_bpi_bananapi-r64
-Target-Profile-Name: Bpi Banana Pi R64
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-mt7615e kmod-mt7615-firmware wpad-basic-wolfssl blockdev uboot-envtools dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_bananapi_bpi-r64
+Target-Profile-Name: Bananapi BPi-R64
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 e2fsprogs mkf2fs f2fsck 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bananapi,bpi-r64
 
-
 Target-Profile-Description:
-Build firmware images for Bpi Banana Pi R64
+Build firmware images for Bananapi BPi-R64
 
 
 
 @@
 
-Target-Profile: DEVICE_bpi_bananapi-r64-rootdisk
-Target-Profile-Name: Bpi Banana Pi R64 (rootdisk)
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile: DEVICE_buffalo_wsr-2533dhp2
+Target-Profile-Name: Buffalo WSR-2533DHP2
+Target-Profile-Packages: swconfig 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: bananapi,bpi-r64
-
+Target-Profile-SupportedDevices: buffalo,wsr-2533dhp2
 
 Target-Profile-Description:
-Build firmware images for Bpi Banana Pi R64 (rootdisk)
+Build firmware images for Buffalo WSR-2533DHP2
 
 
 
@@ -70,10 +61,9 @@ Build firmware images for Bpi Banana Pi R64 (rootdisk)
 
 Target-Profile: DEVICE_elecom_wrc-2533gent
 Target-Profile-Name: Elecom WRC-2533GENT
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-mt7615e kmod-mt7615-firmware kmod-btmtkuart swconfig 
+Target-Profile-Packages: kmod-btmtkuart kmod-usb3 swconfig 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: elecom,wrc-2533gent
-
 
 Target-Profile-Description:
 Build firmware images for Elecom WRC-2533GENT
@@ -82,12 +72,67 @@ Build firmware images for Elecom WRC-2533GENT
 
 @@
 
+Target-Profile: DEVICE_linksys_e8450
+Target-Profile-Name: Belkin RT3200 (Linksys E8450)
+Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450
+Alternative device titles:
+- Belkin RT3200
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450
+Target-Profile-Name: Linksys E8450
+Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450
+Alternative device titles:
+- Belkin RT3200
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450-ubi
+Target-Profile-Name: Belkin RT3200 UBI (Linksys E8450 UBI)
+Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450-ubi
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450 UBI
+Alternative device titles:
+- Belkin RT3200 UBI
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450-ubi
+Target-Profile-Name: Linksys E8450 UBI
+Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450-ubi
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450 UBI
+Alternative device titles:
+- Belkin RT3200 UBI
+
+
+@@
+
 Target-Profile: DEVICE_mediatek_mt7622-rfb1
 Target-Profile-Name: MediaTek MTK7622 rfb1 AP
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7622-rfb1
-
 
 Target-Profile-Description:
 Build firmware images for MediaTek MTK7622 rfb1 AP
@@ -96,15 +141,40 @@ Build firmware images for MediaTek MTK7622 rfb1 AP
 
 @@
 
-Target-Profile: DEVICE_mediatek_mt7622-ubi
-Target-Profile-Name: MediaTek MTK7622 AP (UBI)
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile: DEVICE_mediatek_mt7622-rfb1-ubi
+Target-Profile-Name: MediaTek MTK7622 rfb1 AP (UBI)
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: mediatek,mt7622-ubi
-
+Target-Profile-SupportedDevices: mediatek,mt7622-rfb1-ubi
 
 Target-Profile-Description:
-Build firmware images for MediaTek MTK7622 AP (UBI)
+Build firmware images for MediaTek MTK7622 rfb1 AP (UBI)
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr
+Target-Profile-Name: Ubiquiti UniFi 6 LR
+Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-ubootmod
+Target-Profile-Name: Ubiquiti UniFi 6 LR U-Boot mod
+Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-ubootmod
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR U-Boot mod
 
 
 
@@ -115,31 +185,23 @@ Target-Board: mediatek
 Target-Name: MT7623
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
-Target-Features: arm_v7 dt ext4 fpu gpio nand pci pcie ramdisk rtc squashfs usb
+Target-Features: arm_v7 dt dt-overlay ext4 fpu gpio nand pci pcie rtc separate_ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
 Linux-Version: 5.4.124
-Linux-Testing-Version: 5.4.124
+Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for MediaTek mt7623 ARM based boards.
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
-Target-Profile: Default
-Target-Profile-Name: Default Profile (minimum package set)
-Target-Profile-Packages:  
-Target-Profile-Description:
-	Default package set compatible with most boards.
-@@
-
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_bpi_bananapi-r2
 Target-Profile-Name: Bpi Banana Pi R2
 Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bananapi,bpi-r2
-
 
 Target-Profile-Description:
 Build firmware images for Bpi Banana Pi R2
@@ -154,7 +216,6 @@ Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 
-
 Target-Profile-Description:
 Build firmware images for UniElec U7623 eMMC
 
@@ -168,7 +229,6 @@ Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 
-
 Target-Profile-Description:
 Build firmware images for UniElec U7623-02 eMMC/512MiB RAM (legacy image)
 
@@ -181,31 +241,23 @@ Target-Board: mediatek
 Target-Name: MT7629
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7
-Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
 Linux-Version: 5.4.124
-Linux-Testing-Version: 5.4.124
+Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for MediaTek mt7629 ARM based boards.
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
-Target-Profile: Default
-Target-Profile-Name: Default Profile (minimum package set)
-Target-Profile-Packages:  
-Target-Profile-Description:
-	Default package set compatible with most boards.
-@@
-
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_mediatek_mt7629-rfb
 Target-Profile-Name: MediaTek MT7629 rfb AP
 Target-Profile-Packages: swconfig 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7629-rfb
-
 
 Target-Profile-Description:
 Build firmware images for MediaTek MT7629 rfb AP

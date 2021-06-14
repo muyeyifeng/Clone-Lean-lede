@@ -1,17 +1,17 @@
 Source-Makefile: package/kernel/exfat/Makefile
 
-Package: kmod-fs-exfat
+Package: kmod-fs-exfat0
 Submenu: Filesystems
-Version: <LINUX_VERSION>+5.10.1-1
+Version: <LINUX_VERSION>+5.11.1-1
 Depends: +kmod-nls-base
-Conflicts: 
+Conflicts: kmod-fs-exfat
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
 Title: exFAT kernel module
 Maintainer: 
-Source: exfat-5.10.1.tar.gz
+Source: exfat-5.11.1.tar.gz
 License: GPL-2.0-only
 Type: ipkg
 Description: exFAT kernel module

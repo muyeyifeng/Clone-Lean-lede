@@ -3,8 +3,8 @@ Build-Depends: libffi/host
 
 Package: python3-cryptography
 Submenu: Python
-Version: 2.9.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +python3 +python3-cffi +python3-six
+Version: 3.3.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +python3-light +python3-email +python3-openssl +python3-urllib +python3-cffi +python3-six
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: base
 Title: Cryptographic recipes and primitives
 Maintainer: Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: cryptography-2.9.2.tar.gz
+Source: cryptography-3.3.2.tar.gz
 License: Apache-2.0 BSD-3-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
 Type: ipkg
@@ -26,7 +26,7 @@ Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 
 Package: python3-cryptography-src
 Submenu: Python
-Version: 2.9.2-2
+Version: 3.3.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: Cryptographic recipes and primitives (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: cryptography-2.9.2.tar.gz
+Source: cryptography-3.3.2.tar.gz
 License: Apache-2.0 BSD-3-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
 Type: ipkg

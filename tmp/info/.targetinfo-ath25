@@ -14,7 +14,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Atheros SoC boards
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall wpad-basic-wolfssl kmod-ath5k swconfig kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall wpad-mini kmod-ath5k swconfig kmod-gpio-button-hotplug iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -24,84 +24,52 @@ Target-Profile-Description:
 @@
 
 Target-Profile: DEVICE_generic
-Target-Profile-Name: Atheros Generic AR2xxx board
+Target-Profile-Name: Generic Images
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: 
-
+Target-Profile-SupportedDevices: generic
 
 Target-Profile-Description:
-Build firmware images for Atheros Generic AR2xxx board
+Build firmware images for Generic Images
 
 
 
 @@
 
-Target-Profile: DEVICE_ubnt_picostation-2
-Target-Profile-Name: Ubiquiti Picostation 2 (XS2-8)
+Target-Profile: DEVICE_ubnt2-pico2
+Target-Profile-Name: Ubiquiti XS2-8
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: 
-
+Target-Profile-SupportedDevices: ubnt2-pico2
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti Picostation 2 (XS2-8)
+Build firmware images for Ubiquiti XS2-8
 
 
 
 @@
 
-Target-Profile: DEVICE_ubnt_nanostation-2
-Target-Profile-Name: Ubiquiti Nanostation 2 (XS2)
+Target-Profile: DEVICE_ubnt2
+Target-Profile-Name: Ubiquiti XS2
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: 
+Target-Profile-SupportedDevices: ubnt2
 
-Target-Profile-Default: n
 Target-Profile-Description:
-Build firmware images for Ubiquiti Nanostation 2 (XS2)
+Build firmware images for Ubiquiti XS2
 
 
 
 @@
 
-Target-Profile: DEVICE_ubnt_nanostation-5
-Target-Profile-Name: Ubiquiti Nanostation 5 (XS5)
+Target-Profile: DEVICE_ubnt5
+Target-Profile-Name: Ubiquiti XS5
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: 
-
-Target-Profile-Default: n
-Target-Profile-Description:
-Build firmware images for Ubiquiti Nanostation 5 (XS5)
-
-
-
-@@
-
-Target-Profile: DEVICE_compex_np25g
-Target-Profile-Name: Compex NP25G
-Target-Profile-Packages:  
-Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: 
-Target-Profile-Broken: y
+Target-Profile-SupportedDevices: ubnt5
 
 Target-Profile-Description:
-Build firmware images for Compex NP25G
-
-
-
-@@
-
-Target-Profile: DEVICE_compex_wpe53g
-Target-Profile-Name: Compex WPE53G
-Target-Profile-Packages:  
-Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: 
-Target-Profile-Broken: y
-
-Target-Profile-Description:
-Build firmware images for Compex WPE53G
+Build firmware images for Ubiquiti XS5
 
 
 

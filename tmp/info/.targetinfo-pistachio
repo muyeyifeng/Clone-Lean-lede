@@ -14,7 +14,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-webadmin luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-gpio-button-hotplug uboot-envtools 
+Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-gpio-button-hotplug uboot-envtools 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -27,8 +27,7 @@ Target-Profile: DEVICE_img_creator-ci40
 Target-Profile-Name: Imagination Technologies Marduk board (Imagination Technologies Creator Ci40 (VL-62899))
 Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: 
-
+Target-Profile-SupportedDevices: img,creator-ci40
 
 Target-Profile-Description:
 Build firmware images for Imagination Technologies Creator Ci40 (VL-62899)
@@ -42,8 +41,7 @@ Target-Profile: DEVICE_img_creator-ci40
 Target-Profile-Name: Imagination Technologies Creator Ci40 (VL-62899)
 Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: 
-
+Target-Profile-SupportedDevices: img,creator-ci40
 
 Target-Profile-Description:
 Build firmware images for Imagination Technologies Creator Ci40 (VL-62899)

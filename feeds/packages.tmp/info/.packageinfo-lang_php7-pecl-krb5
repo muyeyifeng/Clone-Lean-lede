@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/php7-pecl-krb5/Makefile
 Build-Depends: php7 !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: php7-pecl-krb5
-Submenu: PHP
-Version: 1.1.3-1
+Submenu: PHP7
+Version: 1.1.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: base
 Title: Bindings for the Kerberos library
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: krb5-1.1.3.tgz
+Source: krb5-1.1.4.tgz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

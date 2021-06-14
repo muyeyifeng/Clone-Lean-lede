@@ -5,8 +5,8 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v12.18.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR) @!arc @!armeb @!powerpc +libstdcpp +libopenssl +zlib +libnghttp2 +libuv +libhttp-parser +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
+Version: v14.17.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @HAS_FPU @(i386||x86_64||arm||aarch64||mipsel) +libstdcpp +libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,8 +14,8 @@ Section: lang
 Category: Languages
 Repository: packages
 Title: Node.js is a platform built on Chrome's JavaScript runtime
-Maintainer: John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v12.18.4.tar.xz
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
+Source: node-v14.17.0.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -28,7 +28,7 @@ Description:   Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript
       3. Requires libatomic package. (If necessary, install the 32-bit library at the same time.)
      ex) sudo apt-get install gcc-multilib g++-multilib
 https://nodejs.org/
-John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
+Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
 @@
 Config:
 	if PACKAGE_node
@@ -42,11 +42,10 @@ Config:
 			bool "Disable"
 
 		config NODEJS_ICU_SMALL
-			depends on !BIG_ENDIAN
 			bool "small-icu"
 
 		config NODEJS_ICU_SYSTEM
-			depends on ARCH_64BIT&&!BIG_ENDIAN
+			depends on ARCH_64BIT
 			bool "system-icu"
 	endchoice
 	endif
@@ -54,7 +53,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v12.18.4-1
+Version: v14.17.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
 Conflicts: 
 Menu-Depends: 
@@ -63,14 +62,14 @@ Section: lang
 Category: Languages
 Repository: packages
 Title: NPM stands for Node Package Manager
-Maintainer: John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v12.18.4.tar.xz
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
+Source: node-v14.17.0.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: 	NPM is the package manager for NodeJS
 https://www.npmjs.com/
-John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
+Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
 @@
 
 

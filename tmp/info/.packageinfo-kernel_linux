@@ -271,7 +271,7 @@ Description: DAX: direct access to differentiated memory
 Package: kmod-dm
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-dax
+Depends: +kmod-crypto-manager +kmod-dax +KERNEL_KEYS:kmod-keys-encrypted
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -585,10 +585,29 @@ Description: Kernel support for SCSI generic
 
 @@
 
+Package: kmod-cdrom
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel library module for CD / DVD drives
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CDROM
+Hidden: 1
+Description: Kernel library module for CD / DVD drives
+
+@@
+
 Package: kmod-scsi-cdrom
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-scsi-core
+Depends: +kmod-scsi-core +kmod-cdrom
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1036,7 +1055,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_ARC4
+Kernel-Config: CONFIG_CRYPTO_ARC4 CONFIG_CRYPTO_USER_API_ENABLE_OBSOLETE=y
 Description: ARC4 cipher CryptoAPI module
 
 @@
@@ -1425,7 +1444,7 @@ Description: HMAC digest CryptoAPI module
 Package: kmod-crypto-hw-ccp
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-authenc +kmod-crypto-hash +kmod-crypto-manager +kmod-random-core +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-crypto-rsa 
+Depends: @TARGET_x86 +kmod-crypto-authenc +kmod-crypto-hash +kmod-crypto-manager +kmod-crypto-rsa +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-random-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1444,7 +1463,7 @@ Description: AMD Cryptographic Coprocessor
 Package: kmod-crypto-hw-geode
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: @TARGET_x86_geode +kmod-crypto-manager 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1501,7 +1520,7 @@ Description: VIA PadLock ACE with AES/SHA hw crypto module
 Package: kmod-crypto-hw-safexcel
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @!LINUX_4_14 @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha256 +kmod-crypto-sha512 
+Depends: @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha256 +kmod-crypto-sha512 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1528,7 +1547,7 @@ https://extranet.marvell.com.
 Package: kmod-crypto-hw-talitos
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-crypto-hash +kmod-random-core +kmod-crypto-authenc +kmod-crypto-des 
+Depends: @(TARGET_mpc85xx||TARGET_layerscape) +kmod-crypto-manager +kmod-crypto-hash +kmod-random-core +kmod-crypto-authenc +kmod-crypto-des 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1559,15 +1578,123 @@ Source:
 License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_CRYPTO_KPP
-Hidden: 1
 Description: Key-agreement Protocol Primitives
 
+@@
+
+Package: kmod-crypto-lib-blake2s
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: BLAKE2s hash function library
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_BLAKE2S
+Hidden: 1
+Description: BLAKE2s hash function library
+
+@@
+Config:
+  imply PACKAGE_kmod-crypto-hash
+@@
+
+Package: kmod-crypto-lib-chacha20
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ChaCha library interface
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_CHACHA
+Hidden: 1
+Description: ChaCha library interface
+
+@@
+
+Package: kmod-crypto-lib-chacha20poly1305
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  +kmod-crypto-lib-chacha20 +kmod-crypto-lib-poly1305
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ChaCha20-Poly1305 AEAD support (8-byte nonce library version)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_CHACHA20POLY1305
+Hidden: 1
+Description: ChaCha20-Poly1305 AEAD support (8-byte nonce library version)
+
+@@
+
+Package: kmod-crypto-lib-curve25519
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  +PACKAGE_kmod-crypto-kpp:kmod-crypto-kpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Curve25519 scalar multiplication library
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_CURVE25519
+Hidden: 1
+Description: Curve25519 scalar multiplication library
+
+@@
+Config:
+  imply PACKAGE_kmod-crypto-kpp
+@@
+
+Package: kmod-crypto-lib-poly1305
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Poly1305 library interface
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_POLY1305
+Hidden: 1
+Description: Poly1305 library interface
+
+@@
+Config:
+  imply PACKAGE_kmod-crypto-hash
 @@
 
 Package: kmod-crypto-manager
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-aead +kmod-crypto-hash +kmod-crypto-pcompress 
+Depends: +kmod-crypto-aead +kmod-crypto-hash 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1654,7 +1781,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_CAMELLIA_X86_64 CONFIG_CRYPTO_BLOWFISH_X86_64 CONFIG_CRYPTO_TWOFISH_X86_64 CONFIG_CRYPTO_TWOFISH_X86_64_3WAY CONFIG_CRYPTO_SERPENT_SSE2_X86_64 CONFIG_CRYPTO_CAMELLIA_AESNI_AVX_X86_64 CONFIG_CRYPTO_CAST5_AVX_X86_64 CONFIG_CRYPTO_CAST6_AVX_X86_64 CONFIG_CRYPTO_TWOFISH_AVX_X86_64 CONFIG_CRYPTO_SERPENT_AVX_X86_64 CONFIG_CRYPTO_CAMELLIA_AESNI_AVX2_X86_64 CONFIG_CRYPTO_SERPENT_AVX2_X86_64 CONFIG_CRYPTO_SERPENT_SSE2_586 CONFIG_CRYPTO_ANUBIS CONFIG_CRYPTO_BLOWFISH CONFIG_CRYPTO_CAMELLIA CONFIG_CRYPTO_CAST5 CONFIG_CRYPTO_CAST6 CONFIG_CRYPTO_FCRYPT CONFIG_CRYPTO_KHAZAD CONFIG_CRYPTO_SERPENT CONFIG_CRYPTO_TEA CONFIG_CRYPTO_TGR192 CONFIG_CRYPTO_TWOFISH CONFIG_CRYPTO_TWOFISH_COMMON CONFIG_CRYPTO_TWOFISH_586 CONFIG_CRYPTO_WP512
+Kernel-Config: CONFIG_CRYPTO_USER_API_ENABLE_OBSOLETE=y CONFIG_CRYPTO_CAMELLIA_X86_64 CONFIG_CRYPTO_BLOWFISH_X86_64 CONFIG_CRYPTO_TWOFISH_X86_64 CONFIG_CRYPTO_TWOFISH_X86_64_3WAY CONFIG_CRYPTO_SERPENT_SSE2_X86_64 CONFIG_CRYPTO_CAMELLIA_AESNI_AVX_X86_64 CONFIG_CRYPTO_CAST5_AVX_X86_64 CONFIG_CRYPTO_CAST6_AVX_X86_64 CONFIG_CRYPTO_TWOFISH_AVX_X86_64 CONFIG_CRYPTO_SERPENT_AVX_X86_64 CONFIG_CRYPTO_CAMELLIA_AESNI_AVX2_X86_64 CONFIG_CRYPTO_SERPENT_AVX2_X86_64 CONFIG_CRYPTO_SERPENT_SSE2_586 CONFIG_CRYPTO_ANUBIS CONFIG_CRYPTO_BLOWFISH CONFIG_CRYPTO_CAMELLIA CONFIG_CRYPTO_CAST5 CONFIG_CRYPTO_CAST6 CONFIG_CRYPTO_FCRYPT CONFIG_CRYPTO_KHAZAD CONFIG_CRYPTO_SERPENT CONFIG_CRYPTO_TEA CONFIG_CRYPTO_TGR192 CONFIG_CRYPTO_TWOFISH CONFIG_CRYPTO_TWOFISH_COMMON CONFIG_CRYPTO_TWOFISH_586 CONFIG_CRYPTO_WP512
 Description: Other CryptoAPI modules
 
 @@
@@ -1694,25 +1821,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_CRYPTO_PCBC
 Description: Propagating Cipher Block Chaining CryptoAPI module
-
-@@
-
-Package: kmod-crypto-pcompress
-Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>-
-Depends:  
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CryptoAPI Partial (de)compression operations
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_PCOMP=y CONFIG_CRYPTO_PCOMP2
-Description: CryptoAPI Partial (de)compression operations
 
 @@
 
@@ -1885,25 +1993,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_CRYPTO_USER CONFIG_CRYPTO_USER_API CONFIG_CRYPTO_USER_API_AEAD CONFIG_CRYPTO_USER_API_HASH CONFIG_CRYPTO_USER_API_RNG CONFIG_CRYPTO_USER_API_SKCIPHER
 Description: CryptoAPI userspace interface
-
-@@
-
-Package: kmod-crypto-wq
-Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>-
-Depends:  
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CryptoAPI work queue handling
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_WORKQUEUE
-Description: CryptoAPI work queue handling
 
 @@
 
@@ -2082,7 +2171,7 @@ Description:  Kernel module for BTRFS support
 Package: kmod-fs-cifs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base  +kmod-crypto-arc4 +kmod-crypto-hmac +kmod-crypto-md5 +kmod-crypto-md4 +kmod-crypto-des +kmod-crypto-ecb +kmod-crypto-sha256
+Depends:  +kmod-nls-base  +kmod-crypto-md4 +kmod-crypto-md5 +kmod-crypto-sha256 +kmod-crypto-sha512 +kmod-crypto-cmac +kmod-crypto-hmac +kmod-crypto-arc4 +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-ecb +kmod-crypto-des
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2093,7 +2182,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_CIFS CONFIG_CIFS_XATTR=y CONFIG_CIFS_DFS_UPCALL=n CONFIG_CIFS_UPCALL=n CONFIG_CIFS_SMB311=n
+Kernel-Config: CONFIG_CIFS CONFIG_CIFS_DFS_UPCALL=n CONFIG_CIFS_UPCALL=n
 Description:  Kernel module for CIFS support
 
 @@
@@ -2155,6 +2244,25 @@ Description:   Kernel module to support efivarfs file system mountpoint.
 
 @@
 
+Package: kmod-fs-exfat
+Submenu: Filesystems
+Version: <LINUX_VERSION>-
+Depends: +kmod-nls-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: exFAT filesystem support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_EXFAT_FS CONFIG_EXFAT_DEFAULT_IOCHARSET="utf8"
+Description:  Kernel module for exFAT filesystem support
+
+@@
+
 Package: kmod-fs-exportfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
@@ -2196,7 +2304,7 @@ Description:  Kernel module for EXT4 filesystem support
 Package: kmod-fs-f2fs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-crc32 +LINUX_5_4:kmod-nls-base
+Depends: +kmod-crypto-hash +kmod-crypto-crc32 +kmod-nls-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2207,7 +2315,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_F2FS_FS CONFIG_F2FS_STAT_FS=y CONFIG_F2FS_FS_XATTR=y CONFIG_F2FS_FS_POSIX_ACL=n CONFIG_F2FS_FS_SECURITY=n CONFIG_F2FS_CHECK_FS=n
+Kernel-Config: CONFIG_F2FS_FS
 Description:  Kernel module for F2FS filesystem support
 
 @@
@@ -2234,7 +2342,7 @@ Description: General filesystem local cache manager
 Package: kmod-fs-hfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-cdrom +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2253,7 +2361,7 @@ Description:  Kernel module for HFS filesystem support
 Package: kmod-fs-hfsplus
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base +kmod-nls-utf8
+Depends: +kmod-cdrom +kmod-nls-base +kmod-nls-utf8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2272,7 +2380,7 @@ Description:  Kernel module for HFS+ filesystem support
 Package: kmod-fs-isofs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: +kmod-lib-zlib-inflate +kmod-nls-base 
+Depends: +kmod-lib-zlib-inflate +kmod-cdrom +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2491,7 +2599,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_REISERFS_FS CONFIG_REISERFS_FS_XATTR=y
+Kernel-Config: CONFIG_REISERFS_FS
 Description:  Kernel module for ReiserFS support
 
 @@
@@ -2518,7 +2626,7 @@ Description:  Kernel module for SquashFS 4.0 support
 Package: kmod-fs-udf
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: +kmod-lib-crc-itu-t +kmod-nls-base 
+Depends: +kmod-lib-crc-itu-t +kmod-cdrom +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3361,6 +3469,45 @@ Description:  Kernel modules for I2C PCF 8584 interfaces
 
 @@
 
+Package: kmod-i2c-designware-core
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core +!LINUX_5_4:kmod-regmap-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Synopsys DesignWare I2C core
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_DESIGNWARE_CORE
+Hidden: y
+Description: Synopsys DesignWare I2C core
+
+@@
+
+Package: kmod-i2c-designware-pci
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-designware-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Synopsys DesignWare PCI
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_DESIGNWARE_PCI
+Description:  Support for Synopsys DesignWare I2C controller. Only master mode is supported.
+
+@@
+
 Package: kmod-i2c-gpio
 Submenu: I2C support
 Version: <LINUX_VERSION>-
@@ -3748,7 +3895,7 @@ Description:  support for DHT11 and DHT22 digitial humidity and temperature sens
 Package: kmod-iio-bme680
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: @!LINUX_4_14 +kmod-iio-core +kmod-regmap-core
+Depends: +kmod-iio-core +kmod-regmap-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4046,7 +4193,7 @@ Description:  Support for the ST LSM6DSx and related IMU MEMS SPI sensors.
 Package: kmod-iio-sps30
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: @!LINUX_4_14 +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer +kmod-lib-crc8
+Depends: +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer +kmod-lib-crc8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4493,7 +4640,7 @@ Description:  Kernel module that allows LEDs to blink based on system load
 
 @@
 
-Package: kmod-ledtrig-heartbeat
+Package: kmod-ledtrig-audio
 Submenu: LED modules
 Version: <LINUX_VERSION>-
 Depends: 
@@ -4502,13 +4649,14 @@ Menu-Depends:
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: LED Heartbeat Trigger
+Title: LED Audio Mute Trigger
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_LEDS_TRIGGER_HEARTBEAT
-Description:  Kernel module that allows LEDs to blink like heart beat
+Kernel-Config: CONFIG_LEDS_TRIGGER_AUDIO
+Description:  Kernel module that allows LEDs to be controlled by audio drivers
+ to follow audio mute and mic-mute changes.
 
 @@
 
@@ -4528,64 +4676,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_LEDS_TRIGGER_GPIO
 Description:  Kernel module that allows LEDs to be controlled by gpio events
-
-@@
-
-Package: kmod-ledtrig-netdev
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: LED NETDEV Trigger
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_TRIGGER_NETDEV
-Description:  Kernel module to drive LEDs based on network activity
-
-@@
-
-Package: kmod-ledtrig-default-on
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: LED Default ON Trigger
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_TRIGGER_DEFAULT_ON
-Description:  Kernel module that allows LEDs to be initialised in the ON state
-
-@@
-
-Package: kmod-ledtrig-timer
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: LED Timer Trigger
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_TRIGGER_TIMER
-Description:  Kernel module that allows LEDs to be controlled by a programmable timer
- via sysfs
 
 @@
 
@@ -4628,6 +4718,25 @@ Description:  Kernel module that allows LEDs to be triggered by sporadic events 
 
 @@
 
+Package: kmod-leds-apu
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: @GPIO_SUPPORT @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PC Engines APU1 LED support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LEDS_APU
+Description:   Driver for the PC Engines APU1 LEDs.
+
+@@
+
 Package: kmod-leds-pca963x
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -4663,6 +4772,45 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_LEDS_PWM
 Description:  This option enables support for pwm driven LEDs
+
+@@
+
+Package: kmod-leds-uleds
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Userspace LEDs
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LEDS_USER
+Description:  This option enables support for userspace LEDs.
+
+@@
+
+Package: kmod-input-leds
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Input device LED support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INPUT_LEDS
+Description:  Provides support for LEDs on input devices- for example,
+ keyboard num/caps/scroll lock.
 
 @@
 
@@ -4803,7 +4951,7 @@ Description:  Kernel module for LZO compression/decompression support
 Package: kmod-lib-zstd
 Submenu: Libraries
 Version: <LINUX_VERSION>-
-Depends: 
+Depends: +kmod-crypto-acompress
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4814,8 +4962,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_ZSTD_COMPRESS CONFIG_ZSTD_DECOMPRESS CONFIG_XXHASH
-Hidden: 1
+Kernel-Config: CONFIG_CRYPTO_ZSTD CONFIG_ZSTD_COMPRESS CONFIG_ZSTD_DECOMPRESS CONFIG_XXHASH
 Description:  Kernel module for ZSTD compression/decompression support
 
 @@
@@ -5132,7 +5279,7 @@ Description:  PHY library
 Package: kmod-phylink
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: 
+Depends: +kmod-libphy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5167,10 +5314,30 @@ Description:   MII library
 
 @@
 
+Package: kmod-mdio-devres
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @LINUX_5_10 +kmod-libphy PACKAGE_kmod-of-mdio:kmod-of-mdio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Supports MDIO device registration
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MDIO_DEVRES
+Hidden: 1
+Description:  Supports MDIO device registration
+
+@@
+
 Package: kmod-mdio-gpio
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy @GPIO_SUPPORT +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_samsung||TARGET_tegra):kmod-of-mdio
+Depends: +kmod-libphy @GPIO_SUPPORT +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_tegra):kmod-of-mdio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5341,25 +5508,6 @@ Description:   Broadcom bcm53xx switch MDIO support
 
 @@
 
-Package: kmod-switch-mvsw61xx
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: +kmod-swconfig
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell 88E61xx switch support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MVSW61XX_PHY
-Description:  Marvell 88E61xx switch support
-
-@@
-
 Package: kmod-switch-ip17xx
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -5401,7 +5549,7 @@ Description:  Realtek RTL8306S switch support
 Package: kmod-switch-rtl8366-smi
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @GPIO_SUPPORT +kmod-swconfig +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_samsung||TARGET_tegra):kmod-of-mdio
+Depends: @GPIO_SUPPORT +kmod-swconfig +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_tegra):kmod-of-mdio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5655,7 +5803,7 @@ Description:  Kernel module for RealTek RTL-8139C+ PCI Fast Ethernet adapters
 Package: kmod-r8169
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +!LINUX_4_14:kmod-phy-realtek
+Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +kmod-phy-realtek +LINUX_5_10:kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5788,7 +5936,7 @@ Description:  Kernel modules for Intel(R) 82576 Virtual Function Ethernet adapte
 Package: kmod-ixgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +LINUX_5_4:kmod-libphy
+Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy +LINUX_5_10:kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5826,7 +5974,7 @@ Description:  Kernel modules for Intel(R) 82599 Virtual Function Ethernet adapte
 Package: kmod-i40e
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +LINUX_5_4:kmod-libphy
+Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6028,6 +6176,26 @@ Description:  A kernel module which allows one to create virtual interfaces that
 
 @@
 
+Package: kmod-ipvlan
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: IP-VLAN support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IPVLAN
+Description:  A kernel module which allows one to create virtual interfaces that
+ map packets to or from specific IP addresses to a particular interface
+
+@@
+
 Package: kmod-tulip
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -6148,7 +6316,7 @@ Description:  Kernel driver for Nvidia Ethernet support
 Package: kmod-of-mdio
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy
+Depends: +kmod-libphy @!TARGET_x86
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6316,41 +6484,23 @@ Description:   Supports Mellanox Connect-IB/ConnectX-4 series and later cards
 
 @@
 
-Package: kmod-sfp
+Package: kmod-qlcnic
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-hwmon-core +kmod-phylink
+Depends: @PCI_SUPPORT +kmod-hwmon-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: SFP cage support
+Title: QLogic QLE8240 and QLE8242 device support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SFP CONFIG_MDIO_I2C
-Description:  Kernel module to support SFP cages
-
-@@
-
-Package: kmod-igc
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel(R) Ethernet Controller I225 Series support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_IGC
-Description:   Kernel modules for Intel(R) Ethernet Controller I225 Series
+Kernel-Config: CONFIG_QLCNIC CONFIG_QLCNIC_HWMON=y
+Description:   This driver supports QLogic QLE8240 and QLE8242 Converged Ethernet
+  devices.
 
 @@
 
@@ -6390,6 +6540,63 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SFC_FALCON CONFIG_SFC_FALCON_MTD=y
 Description:   Solarflare SFC4000 support
+
+@@
+
+Package: kmod-sfp
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core +kmod-hwmon-core +kmod-phylink +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SFP cage support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SFP CONFIG_MDIO_I2C
+Description:  Kernel module to support SFP cages
+
+@@
+
+Package: kmod-igc
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-ptp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Controller I225 Series support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IGC
+Description:   Kernel modules for Intel(R) Ethernet Controller I225 Series
+
+@@
+
+Package: kmod-jme
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-mii
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: JMicron(R) PCI-Express Gigabit Ethernet support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_JME
+Description:   Supports JMicron(R) PCI-Express Gigabit Ethernet adapters
 
 @@
 
@@ -6510,7 +6717,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NETFILTER=y CONFIG_NETFILTER_ADVANCED=y CONFIG_NF_CONNTRACK_MARK=y CONFIG_NF_CONNTRACK_ZONES=y CONFIG_NF_CONNTRACK CONFIG_NF_CONNTRACK_RTCACHE CONFIG_NF_DEFRAG_IPV4 CONFIG_NF_CONNTRACK_IPV4 CONFIG_NF_DEFRAG_IPV6
+Kernel-Config: CONFIG_NETFILTER=y CONFIG_NETFILTER_ADVANCED=y CONFIG_NF_CONNTRACK_MARK=y CONFIG_NF_CONNTRACK_ZONES=y CONFIG_NF_CONNTRACK CONFIG_NF_DEFRAG_IPV4 CONFIG_NF_DEFRAG_IPV6
 Description: Netfilter connection tracking
 
 @@
@@ -6529,7 +6736,6 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_DEFRAG_IPV6 CONFIG_NF_CONNTRACK_IPV6
 Description: Netfilter IPv6 connection tracking
 
 @@
@@ -6548,7 +6754,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_NAT CONFIG_NF_NAT_REDIRECT CONFIG_NF_NAT_IPV4 CONFIG_NF_NAT_MASQUERADE_IPV4
+Kernel-Config: CONFIG_NF_NAT
 Description: Netfilter NAT
 
 @@
@@ -6567,7 +6773,6 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_NAT_IPV6 CONFIG_NF_NAT_MASQUERADE_IPV6
 Description: Netfilter IPV6-NAT
 
 @@
@@ -6717,7 +6922,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NETFILTER_XT_MATCH_DSCP CONFIG_NETFILTER_XT_TARGET_DSCP CONFIG_NETFILTER_XT_MATCH_LENGTH CONFIG_NETFILTER_XT_MATCH_STATISTIC CONFIG_NETFILTER_XT_MATCH_TCPMSS CONFIG_NETFILTER_XT_TARGET_CLASSIFY CONFIG_IP_NF_MATCH_DSCP CONFIG_IP_NF_TARGET_ECN CONFIG_NETFILTER_XT_MATCH_ECN CONFIG_NETFILTER_XT_MATCH_HL CONFIG_NETFILTER_XT_TARGET_HL
+Kernel-Config: CONFIG_NETFILTER_XT_MATCH_DSCP CONFIG_NETFILTER_XT_TARGET_DSCP CONFIG_NETFILTER_XT_MATCH_LENGTH CONFIG_NETFILTER_XT_MATCH_STATISTIC CONFIG_NETFILTER_XT_MATCH_TCPMSS CONFIG_NETFILTER_XT_TARGET_CLASSIFY CONFIG_IP_NF_TARGET_ECN CONFIG_NETFILTER_XT_MATCH_ECN CONFIG_NETFILTER_XT_MATCH_HL CONFIG_NETFILTER_XT_TARGET_HL
 Description:  Netfilter (IPv4) modules for matching/changing IP packet options
  Includes:
  - CLASSIFY
@@ -6779,7 +6984,7 @@ Description: IPset netfilter modules
 Package: kmod-nf-ipvs
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: @IPV6 +kmod-lib-crc32c +kmod-ipt-conntrack +kmod-nf-conntrack +LINUX_4_14:kmod-nf-conntrack6 +kmod-ipt-core +kmod-ipt-conntrack
+Depends: @IPV6 +kmod-lib-crc32c +kmod-ipt-conntrack +kmod-nf-conntrack +kmod-ipt-core +kmod-ipt-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6852,7 +7057,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NETFILTER_XT_NAT CONFIG_IP_NF_NAT CONFIG_IP_NF_TARGET_MASQUERADE CONFIG_IP_NF_TARGET_REDIRECT
+Kernel-Config: CONFIG_NETFILTER_XT_NAT CONFIG_IP_NF_NAT CONFIG_NETFILTER_XT_TARGET_MASQUERADE CONFIG_NETFILTER_XT_TARGET_REDIRECT
 Description:  Netfilter (IPv4) kernel modules for basic NAT targets
  Includes:
  - MASQUERADE
@@ -6875,6 +7080,97 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_IP_NF_RAW
 Description: Netfilter IPv4 raw table support
+
+@@
+
+Package: kmod-ipt-imq
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends:  +kmod-ipt-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intermediate Queueing support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IMQ CONFIG_IMQ_BEHAVIOR_BA=y CONFIG_IMQ_NUM_DEVS=2 CONFIG_NETFILTER_XT_TARGET_IMQ
+Description:  Kernel support for Intermediate Queueing devices
+
+@@
+
+Package: kmod-ipt-bandwidth
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: @!LINUX_5_4 kmod-ipt-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: bandwidth
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: bandwidth
+
+@@
+
+Package: kmod-ipt-timerange
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: @!LINUX_5_4 kmod-ipt-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: timerange
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: timerange
+
+@@
+
+Package: kmod-ipt-webmon
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: @!LINUX_5_4 kmod-ipt-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: webmon
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: webmon
+
+@@
+
+Package: kmod-ipt-weburl
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: @!LINUX_5_4 kmod-ipt-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: weburl
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: weburl
 
 @@
 
@@ -6911,7 +7207,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_IP6_NF_NAT CONFIG_IP6_NF_TARGET_MASQUERADE CONFIG_IP6_NF_TARGET_NPT
+Kernel-Config: CONFIG_IP6_NF_NAT CONFIG_IP6_NF_TARGET_NPT
 Description:  Netfilter (IPv6) kernel modules for NAT targets
 
 @@
@@ -6962,7 +7258,7 @@ Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
 Package: kmod-nf-nathelper-extra
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: +kmod-nf-nat +kmod-lib-textsearch +kmod-ipt-raw +!LINUX_4_14:kmod-asn1-decoder
+Depends: +kmod-nf-nat +kmod-lib-textsearch +kmod-ipt-raw +kmod-asn1-decoder
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6973,7 +7269,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_CONNTRACK_BROADCAST CONFIG_NF_CONNTRACK_AMANDA CONFIG_NF_NAT_AMANDA CONFIG_NF_CT_PROTO_GRE CONFIG_NF_NAT_PROTO_GRE CONFIG_NF_CONNTRACK_H323 CONFIG_NF_NAT_H323 CONFIG_NF_CONNTRACK_PPTP CONFIG_NF_NAT_PPTP CONFIG_NF_CONNTRACK_SIP CONFIG_NF_NAT_SIP CONFIG_NF_CONNTRACK_SNMP CONFIG_NF_NAT_SNMP_BASIC CONFIG_NF_CONNTRACK_TFTP CONFIG_NF_NAT_TFTP CONFIG_NF_CONNTRACK_IRC CONFIG_NF_NAT_IRC
+Kernel-Config: CONFIG_NF_CONNTRACK_BROADCAST CONFIG_NF_CONNTRACK_AMANDA CONFIG_NF_NAT_AMANDA CONFIG_NF_CONNTRACK_H323 CONFIG_NF_NAT_H323 CONFIG_NF_CONNTRACK_PPTP CONFIG_NF_NAT_PPTP CONFIG_NF_CONNTRACK_SIP CONFIG_NF_NAT_SIP CONFIG_NF_CONNTRACK_SNMP CONFIG_NF_NAT_SNMP_BASIC CONFIG_NF_CONNTRACK_TFTP CONFIG_NF_NAT_TFTP CONFIG_NF_CONNTRACK_IRC CONFIG_NF_NAT_IRC
 Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - amanda
@@ -7261,7 +7557,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NETFILTER_XT_MATCH_ADDRTYPE CONFIG_NETFILTER_XT_MATCH_OWNER CONFIG_NETFILTER_XT_MATCH_PKTTYPE CONFIG_NETFILTER_XT_MATCH_QUOTA
+Kernel-Config: CONFIG_NETFILTER_XT_MATCH_ADDRTYPE CONFIG_NETFILTER_XT_MATCH_OWNER CONFIG_NETFILTER_XT_MATCH_PKTTYPE CONFIG_NETFILTER_XT_MATCH_QUOTA CONFIG_NETFILTER_XT_MATCH_CGROUP
 Description:  Other Netfilter (IPv4) kernel modules
  Includes:
  - addrtype
@@ -7304,7 +7600,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_IP6_NF_FILTER CONFIG_IP6_NF_MANGLE CONFIG_IP6_NF_QUEUE CONFIG_NF_LOG_IPV6 CONFIG_IP6_NF_TARGET_LOG CONFIG_IP6_NF_TARGET_REJECT
+Kernel-Config: CONFIG_IP6_NF_FILTER CONFIG_IP6_NF_MANGLE CONFIG_NF_LOG_IPV6 CONFIG_IP6_NF_TARGET_REJECT
 Description:  Netfilter IPv6 firewalling support
 
 @@
@@ -7522,7 +7818,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_CT_NETLINK CONFIG_NF_CONNTRACK_EVENTS=y
+Kernel-Config: CONFIG_NF_CT_NETLINK CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NETFILTER_NETLINK_GLUE_CT=y
 Description:  Kernel modules support for a netlink-based connection tracking
  userspace interface
 
@@ -7569,7 +7865,7 @@ Description:  Kernel modules support for the Netfilter rpfilter match
 Package: kmod-nft-core
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: +kmod-nfnetlink +kmod-nf-reject +IPV6:kmod-nf-reject6 +IPV6:kmod-nf-conntrack6 +LINUX_5_4:kmod-nf-nat
+Depends: +kmod-nfnetlink +kmod-nf-reject +IPV6:kmod-nf-reject6 +IPV6:kmod-nf-conntrack6 +kmod-nf-nat +kmod-lib-crc32c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7580,7 +7876,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NFT_COMPAT=n CONFIG_NFT_QUEUE=n CONFIG_NF_TABLES CONFIG_NF_TABLES_INET CONFIG_NF_TABLES_IPV4 CONFIG_NF_TABLES_IPV6 CONFIG_NF_TABLES_SET CONFIG_NFT_CHAIN_ROUTE_IPV4 CONFIG_NFT_CHAIN_ROUTE_IPV6 CONFIG_NFT_COUNTER CONFIG_NFT_CT CONFIG_NFT_EXTHDR CONFIG_NFT_HASH CONFIG_NFT_LIMIT CONFIG_NFT_LOG CONFIG_NFT_META CONFIG_NFT_NUMGEN CONFIG_NFT_OBJREF CONFIG_NFT_QUOTA CONFIG_NFT_REDIR CONFIG_NFT_REJECT CONFIG_NFT_REJECT_INET CONFIG_NFT_SET_HASH CONFIG_NFT_SET_RBTREE
+Kernel-Config: CONFIG_NFT_COMPAT=n CONFIG_NFT_QUEUE=n CONFIG_NF_TABLES CONFIG_NF_TABLES_SET CONFIG_NFT_COUNTER CONFIG_NFT_CT CONFIG_NFT_HASH CONFIG_NFT_LIMIT CONFIG_NFT_LOG CONFIG_NFT_META CONFIG_NFT_NUMGEN CONFIG_NFT_OBJREF CONFIG_NFT_QUOTA CONFIG_NFT_REDIR CONFIG_NFT_REJECT CONFIG_NFT_REJECT_INET
 Description:  Kernel module support for nftables
 
 @@
@@ -7599,7 +7895,6 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_TABLES_ARP
 Description: Netfilter nf_tables ARP table support
 
 @@
@@ -7618,7 +7913,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_LOG_BRIDGE=n CONFIG_NF_TABLES_BRIDGE CONFIG_NFT_BRIDGE_META CONFIG_NFT_BRIDGE_REJECT
+Kernel-Config: CONFIG_NF_LOG_BRIDGE=n CONFIG_NFT_BRIDGE_META CONFIG_NFT_BRIDGE_REJECT
 Description: Netfilter nf_tables bridge table support
 
 @@
@@ -7637,7 +7932,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NFT_NAT CONFIG_NFT_CHAIN_NAT_IPV4 CONFIG_NFT_REDIR_IPV4 CONFIG_NFT_MASQ CONFIG_NFT_MASQ_IPV4
+Kernel-Config: CONFIG_NFT_NAT CONFIG_NFT_REDIR_IPV4 CONFIG_NFT_MASQ CONFIG_NFT_MASQ_IPV4
 Description: Netfilter nf_tables NAT support
 
 @@
@@ -7675,7 +7970,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NFT_REDIR_IPV6 CONFIG_NFT_CHAIN_NAT_IPV6 CONFIG_NFT_MASQ_IPV6
+Kernel-Config: CONFIG_NFT_REDIR_IPV6 CONFIG_NFT_MASQ_IPV6
 Description: Netfilter nf_tables IPv6-NAT support
 
 @@
@@ -7732,6 +8027,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
+Kernel-Config: CONFIG_NFT_QUEUE
 Description: Netfilter nf_tables queue support
 
 @@
@@ -7807,7 +8103,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NET_UDP_TUNNEL CONFIG_VXLAN=m
+Kernel-Config: CONFIG_NET_UDP_TUNNEL
 Hidden: 1
 Description: IPv4 UDP tunneling support
 
@@ -7827,7 +8123,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NET_UDP_TUNNEL CONFIG_VXLAN=m
+Kernel-Config: CONFIG_NET_UDP_TUNNEL
 Hidden: 1
 Description: IPv6 UDP tunneling support
 
@@ -7890,25 +8186,6 @@ Type: ipkg
 Kernel-Config: CONFIG_NET_NSH
 Description:   Network Service Header is an implementation of Service Function
   Chaining (RFC 7665).  Requires kernel 4.14 or newer
-
-@@
-
-Package: kmod-capi
-Submenu: Network Support
-Version: <LINUX_VERSION>-
-Depends: 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CAPI (ISDN) Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ISDN_CAPI CONFIG_ISDN_CAPI_CAPI20 CONFIG_ISDN_CAPIFS CONFIG_ISDN_CAPI_CAPIFS
-Description:  Kernel module for basic CAPI (ISDN) support
 
 @@
 
@@ -8108,7 +8385,7 @@ Description:  Kernel modules for IPv6 VTI (Virtual Tunnel Interface)
 Package: kmod-xfrm-interface
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-ipsec4 +IPV6:kmod-ipsec6 @!LINUX_4_14
+Depends: +kmod-ipsec4 +IPV6:kmod-ipsec6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -8524,7 +8801,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NET_SCHED=y CONFIG_NET_SCH_HFSC CONFIG_NET_SCH_HTB CONFIG_NET_SCH_TBF CONFIG_NET_SCH_INGRESS CONFIG_NET_SCH_FQ_CODEL CONFIG_NET_CLS=y CONFIG_NET_CLS_ACT=y CONFIG_NET_CLS_BASIC CONFIG_NET_CLS_FLOW CONFIG_NET_CLS_FW CONFIG_NET_CLS_ROUTE4 CONFIG_NET_CLS_TCINDEX CONFIG_NET_CLS_U32 CONFIG_NET_ACT_MIRRED CONFIG_NET_ACT_SKBEDIT CONFIG_NET_CLS_MATCHALL CONFIG_NET_EMATCH=y CONFIG_NET_EMATCH_U32
+Kernel-Config: CONFIG_NET_SCHED=y CONFIG_NET_SCH_HFSC CONFIG_NET_SCH_HTB CONFIG_NET_SCH_TBF CONFIG_NET_SCH_INGRESS CONFIG_NET_SCH_FQ_CODEL CONFIG_NET_CLS=y CONFIG_NET_CLS_ACT=y CONFIG_NET_CLS_BASIC CONFIG_NET_CLS_FLOW CONFIG_NET_CLS_FW CONFIG_NET_CLS_ROUTE4 CONFIG_NET_CLS_TCINDEX CONFIG_NET_CLS_U32 CONFIG_NET_ACT_GACT CONFIG_NET_ACT_MIRRED CONFIG_NET_ACT_SKBEDIT CONFIG_NET_CLS_MATCHALL CONFIG_NET_EMATCH=y CONFIG_NET_EMATCH_U32
 Description:  Core kernel scheduler support for IP traffic
 
 @@
@@ -8532,10 +8809,10 @@ Description:  Core kernel scheduler support for IP traffic
 Package: kmod-sched-cake
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: @!LINUX_4_14 +kmod-sched-core
+Depends: +kmod-sched-core
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: kmod-sched-cake-oot
 Section: kernel
 Category: Kernel modules
 Title: Cake fq_codel/blue derived shaper
@@ -8714,7 +8991,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NET_SCH_CODEL CONFIG_NET_SCH_DSMARK CONFIG_NET_SCH_FIFO CONFIG_NET_SCH_GRED CONFIG_NET_SCH_MULTIQ CONFIG_NET_SCH_PRIO CONFIG_NET_SCH_RED CONFIG_NET_SCH_SFQ CONFIG_NET_SCH_TEQL CONFIG_NET_SCH_FQ CONFIG_NET_SCH_PIE CONFIG_NET_ACT_POLICE CONFIG_NET_ACT_GACT CONFIG_NET_ACT_IPT CONFIG_NET_ACT_PEDIT CONFIG_NET_ACT_SIMP CONFIG_NET_ACT_CSUM CONFIG_NET_EMATCH_CMP CONFIG_NET_EMATCH_NBYTE CONFIG_NET_EMATCH_META CONFIG_NET_EMATCH_TEXT
+Kernel-Config: CONFIG_NET_SCH_CODEL CONFIG_NET_SCH_DSMARK CONFIG_NET_SCH_FIFO CONFIG_NET_SCH_GRED CONFIG_NET_SCH_MULTIQ CONFIG_NET_SCH_PRIO CONFIG_NET_SCH_RED CONFIG_NET_SCH_SFQ CONFIG_NET_SCH_TEQL CONFIG_NET_SCH_FQ CONFIG_NET_SCH_PIE CONFIG_NET_ACT_POLICE CONFIG_NET_ACT_IPT CONFIG_NET_ACT_PEDIT CONFIG_NET_ACT_SIMP CONFIG_NET_ACT_CSUM CONFIG_NET_EMATCH_CMP CONFIG_NET_EMATCH_NBYTE CONFIG_NET_EMATCH_META CONFIG_NET_EMATCH_TEXT
 Description:  Extra kernel schedulers modules for IP traffic
 
 @@
@@ -8733,10 +9010,32 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_TCP_CONG_ADVANCED=y CONFIG_TCP_CONG_BBR
+Kernel-Config: CONFIG_TCP_CONG_BBR
 Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
  control. It requires the fq ("Fair Queue") pacing packet scheduler.
  For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+@@
+
+Package: kmod-tcp-hybla
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: TCP-Hybla congestion control algorithm
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_TCP_CONG_HYBLA
+Description:   TCP-Hybla is a sender-side only change that eliminates penalization of
+  long-RTT, large-bandwidth connections, like when satellite legs are
+  involved, especially when sharing a common bottleneck with normal
+  terrestrial connections.
 
 @@
 
@@ -8934,7 +9233,7 @@ Description:   Kernel support for AF_RXRPC; required for AFS client
 Package: kmod-mpls
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_4_14:kmod-iptunnel
+Depends: +kmod-iptunnel
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9044,6 +9343,30 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_NETLINK_DIAG
 Description:  Netlink diag is a module made for use with iproute2's ss utility
+
+@@
+
+Package: kmod-wireguard
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-crypto-lib-blake2s +kmod-crypto-lib-chacha20poly1305 +kmod-crypto-lib-curve25519 +kmod-udptunnel4 +IPV6:kmod-udptunnel6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: WireGuard secure network tunnel
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_WIREGUARD CONFIG_WIREGUARD_DEBUG=n
+Description:   WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
+  state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
+  more useful than IPSec, while avoiding the massive headache. It intends to
+  be considerably more performant than OpenVPN.  WireGuard is designed as a
+  general purpose VPN for running on embedded interfaces and super computers
+  alike, fit for many different circumstances. It uses UDP.
 
 @@
 
@@ -9561,26 +9884,6 @@ Description: DMA shared buffer support
 
 @@
 
-Package: kmod-nvmem
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @!LINUX_5_4
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Non Volatile Memory support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_NVMEM
-Hidden: 1
-Description:   Support for NVMEM(Non Volatile Memory) devices like EEPROM, EFUSES, etc.
-
-@@
-
 Package: kmod-eeprom-93cx6
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -9603,7 +9906,7 @@ Description:  Kernel module for EEPROM 93CX6 support
 Package: kmod-eeprom-at24
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +!LINUX_5_4:kmod-nvmem +!LINUX_4_14:kmod-regmap-i2c
+Depends: +kmod-i2c-core +kmod-regmap-i2c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9622,7 +9925,7 @@ Description:  Kernel module for most I2C EEPROMs
 Package: kmod-eeprom-at25
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_5_4:kmod-nvmem
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9717,7 +10020,7 @@ Description:  Kernel module for NXP 74HC164 GPIO expander
 Package: kmod-gpio-pca953x
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @GPIO_SUPPORT +kmod-i2c-core +LINUX_5_4:kmod-regmap-i2c
+Depends: @GPIO_SUPPORT +kmod-i2c-core +kmod-regmap-i2c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10111,7 +10414,7 @@ Package: kmod-rtc-pcf2123
 Submenu: Other modules
 Default: m if ALL_KMODS && RTC_SUPPORT
 Version: <LINUX_VERSION>-
-Depends: +LINUX_5_4:kmod-regmap-spi
+Depends: +kmod-regmap-spi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10435,7 +10738,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_ZSMALLOC CONFIG_ZRAM CONFIG_ZRAM_DEBUG=n CONFIG_PGTABLE_MAPPING=n CONFIG_ZRAM_WRITEBACK=n CONFIG_ZSMALLOC_STAT=n
+Kernel-Config: CONFIG_ZSMALLOC CONFIG_ZRAM CONFIG_ZRAM_DEBUG=n CONFIG_ZRAM_WRITEBACK=n CONFIG_ZSMALLOC_STAT=n
 Description:  Compressed RAM block device support
 
 @@
@@ -10522,30 +10825,10 @@ Description:  The IEEE 1588 standard defines a method to precisely
 
 @@
 
-Package: kmod-ptp-gianfar
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mpc85xx +kmod-ptp @LINUX_4_14
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Freescale Gianfar PTP support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PTP_1588_CLOCK_GIANFAR
-Description:  Kernel module for IEEE 1588 support for Freescale
- Gianfar Ethernet drivers
-
-@@
-
 Package: kmod-ptp-qoriq
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_mpc85xx +kmod-ptp @!LINUX_4_14
+Depends: @TARGET_mpc85xx +kmod-ptp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10578,26 +10861,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_HW_RANDOM
 Description:  Kernel module for the HW random number generator core infrastructure
-
-@@
-
-Package: kmod-random-tpm
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: +kmod-random-core +kmod-tpm @LINUX_4_14
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Hardware Random Number Generator TPM support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_HW_RANDOM_TPM
-Description:  Kernel module for the Random Number Generator
- in the Trusted Platform Module.
 
 @@
 
@@ -10661,70 +10924,56 @@ Description:  This driver provides line echo cancelling support for mISDN and
 
 @@
 
-Package: kmod-bmp085
+Package: kmod-keys-encrypted
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-regmap-core
+Depends: @KERNEL_KEYS +kmod-crypto-cbc +kmod-crypto-hmac +kmod-crypto-rng +kmod-crypto-sha256 +kmod-keys-trusted
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: BMP085/BMP18x pressure sensor
+Title: encrypted keys on kernel keyring
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_BMP085
-Description:  This driver adds support for Bosch Sensortec's digital pressure
- sensors BMP085 and BMP18x.
+Kernel-Config: CONFIG_ENCRYPTED_KEYS
+Description: 	This module provides support for create/encrypting/decrypting keys
+	in the kernel.  Encrypted keys are kernel generated random numbers,
+	which are encrypted/decrypted with a 'master' symmetric key. The
+	'master' key can be either a trusted-key or user-key type.
+	Userspace only ever sees/stores encrypted blobs.
 
 @@
 
-Package: kmod-bmp085-i2c
+Package: kmod-keys-trusted
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-bmp085
+Depends: @KERNEL_KEYS +kmod-crypto-hash +kmod-crypto-hmac +kmod-crypto-sha1 +kmod-tpm
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: BMP085/BMP18x pressure sensor I2C
+Title: TPM trusted keys on kernel keyring
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_BMP085_I2C
-Description:  This driver adds support for Bosch Sensortec's digital pressure
- sensor connected via I2C.
-
-@@
-
-Package: kmod-bmp085-spi
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: +kmod-bmp085
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BMP085/BMP18x pressure sensor SPI
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BMP085_SPI
-Description:  This driver adds support for Bosch Sensortec's digital pressure
- sensor connected via SPI.
+Kernel-Config: CONFIG_TRUSTED_KEYS
+Description: 	This module provides support for creating, sealing, and unsealing
+	keys in the kernel. Trusted keys are random number symmetric keys,
+	generated and RSA-sealed by the TPM. The TPM only unseals the keys,
+	if the boot PCRs and other criteria match.  Userspace will only ever
+	see encrypted blobs.
 
 @@
 
 Package: kmod-tpm
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_4_14:kmod-random-core
+Depends: +kmod-random-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11262,7 +11511,7 @@ Description:  Dummy sound device for Alsa when no hardware present
 Package: kmod-sound-hda-core
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core +kmod-regmap-core @!TARGET_uml
+Depends: +kmod-ledtrig-audio kmod-sound-core +kmod-regmap-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11760,6 +12009,25 @@ Description:  Kernel support for USB Ethernet Gadget
 
 @@
 
+Package: kmod-usb-gadget-ncm
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-usb-gadget +kmod-usb-lib-composite +kmod-usb-gadget-eth +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: USB Network Control Model (NCM) Gadget support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_G_NCM
+Description:   Kernel support for USB Network Control Model (NCM) Gadget
+
+@@
+
 Package: kmod-usb-gadget-serial
 Submenu: USB Support
 Version: <LINUX_VERSION>-
@@ -11995,7 +12263,7 @@ Description:  Kernel support for PCI USB2 (EHCI) controllers
 Package: kmod-usb-dwc2
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +USB_GADGET_SUPPORT:kmod-usb-gadget +kmod-usb-core 
+Depends: +USB_GADGET_SUPPORT:kmod-usb-gadget +kmod-usb-roles +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12032,30 +12300,10 @@ Description:  This driver provides support for the Dual Role SuperSpeed
 
 @@
 
-Package: kmod-usb-dwc3-of-simple
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @LINUX_4_14 @(TARGET_ipq40xx||TARGET_ipq806x) +kmod-usb-dwc3 +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: DWC3 USB simple OF driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_DWC3_OF_SIMPLE
-Description:  This driver provides generic platform glue for the integrated DesignWare
- USB3 IP Core.
-
-@@
-
 Package: kmod-usb-dwc3-qcom
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: @(!LINUX_4_14) @(TARGET_ipq40xx||TARGET_ipq806x) +kmod-usb-dwc3 +kmod-usb-core 
+Depends: @(TARGET_ipq40xx||TARGET_ipq806x) +kmod-usb-dwc3 +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12171,7 +12419,7 @@ Description:  Kernel support for USB-to-Serial converters
 Package: kmod-usb-serial-belkin
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12190,7 +12438,7 @@ Description:  Kernel support for Belkin USB-to-Serial converters
 Package: kmod-usb-serial-ch341
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12209,7 +12457,7 @@ Description:  Kernel support for Winchiphead CH341 USB-to-Serial converters
 Package: kmod-usb-serial-edgeport
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial  +edgeport-firmware
+Depends:  +kmod-usb-serial  +edgeport-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12244,7 +12492,7 @@ Description:  Kernel support for Inside Out Networks (Digi)
 Package: kmod-usb-serial-ftdi
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12263,7 +12511,7 @@ Description:  Kernel support for FTDI USB-to-Serial converters
 Package: kmod-usb-serial-garmin
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12282,7 +12530,7 @@ Description:  Should work with most Garmin GPS devices which have a native USB p
 Package: kmod-usb-serial-simple
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12314,7 +12562,7 @@ Specifically, it supports:
 Package: kmod-usb-serial-ti-usb
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12333,7 +12581,7 @@ Description:  Kernel support for TI USB 3410/5052 devices
 Package: kmod-usb-serial-ipw
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial +kmod-usb-serial-wwan
+Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12352,7 +12600,7 @@ Description: Support for IPWireless 3G devices
 Package: kmod-usb-serial-mct
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12371,7 +12619,7 @@ Description:  Kernel support for Magic Control Technology USB-to-Serial converte
 Package: kmod-usb-serial-mos7720
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12390,7 +12638,7 @@ Description:  Kernel support for Moschip MOS7720 USB-to-Serial converters
 Package: kmod-usb-serial-mos7840
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12409,7 +12657,7 @@ Description:  Kernel support for Moschip MOS7840 USB-to-Serial converters
 Package: kmod-usb-serial-pl2303
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12428,7 +12676,7 @@ Description:  Kernel support for Prolific PL2303 USB-to-Serial converters
 Package: kmod-usb-serial-cp210x
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12447,7 +12695,7 @@ Description:  Kernel support for Silicon Labs cp210x USB-to-Serial converters
 Package: kmod-usb-serial-ark3116
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12466,7 +12714,7 @@ Description:  Kernel support for ArkMicroChips ARK3116 USB-to-Serial converters
 Package: kmod-usb-serial-oti6858
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12485,7 +12733,7 @@ Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converter
 Package: kmod-usb-serial-sierrawireless
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12504,7 +12752,7 @@ Description:  Kernel support for Sierra Wireless devices
 Package: kmod-usb-serial-visor
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12523,7 +12771,7 @@ Description:  Kernel support for Handspring Visor PDAs
 Package: kmod-usb-serial-cypress-m8
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12545,7 +12793,7 @@ Description:  Kernel support for devices with Cypress M8 USB to Serial chip
 Package: kmod-usb-serial-keyspan
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12564,7 +12812,7 @@ Description:  Kernel support for Keyspan USB-to-Serial devices
 Package: kmod-usb-serial-wwan
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial 
+Depends:  +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12584,7 +12832,7 @@ Description:  Kernel support for USB GSM and CDMA modems
 Package: kmod-usb-serial-option
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial +kmod-usb-serial-wwan
+Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12603,7 +12851,7 @@ Description:  Kernel support for Option HSDPA modems
 Package: kmod-usb-serial-qualcomm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-serial +kmod-usb-serial-wwan
+Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12778,19 +13026,20 @@ Description:  Kernel modules for USB-to-Ethernet convertors
 Package: kmod-usb-net-aqc111
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-libphy +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
+Title: Kernel module for Aquantia AQtion USB to 5/2.5GbE Controllers
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_USB_NET_AQC111
-Description:  Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
+Description:  Kernel module for Aquantia AQtion USB Ethernet adapters
+ based on AQC111U/AQC112 chips.
 
 @@
 
@@ -12912,7 +13161,7 @@ Description:  Kernel module for USB-to-Ethernet MCS7830 convertors
 Package: kmod-usb-net-smsc95xx
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net  +kmod-lib-crc16
+Depends: +LINUX_5_10:kmod-libphy +kmod-usb-net  +kmod-lib-crc16
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13045,7 +13294,7 @@ Description:  Kernel module for USB-to-Ethernet Realtek 8150 convertors
 Package: kmod-usb-net-rtl8152
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +!LINUX_5_4:r8169-firmware +kmod-usb-net  +LINUX_5_10:kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13121,7 +13370,7 @@ Description:  Kernel module for CDC MBIM (Mobile Broadband Interface Model) devi
 Package: kmod-usb-net-cdc-ncm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends:  +kmod-usb-net +!LINUX_5_4:kmod-usb-net-cdc-ether
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13251,6 +13500,26 @@ Description:  Kernel support for USB HID devices such as keyboards and mice
 
 @@
 
+Package: kmod-usb-hid-cp2112
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-usb-hid +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Silicon Labs CP2112 HID USB to SMBus Master Bridge
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_GPIOLIB=y CONFIG_HID_CP2112
+Description:  HID device driver which registers as an i2c adapter and gpiochip to expose
+ these functions of the CP2112.
+
+@@
+
 Package: kmod-usb-yealink
 Submenu: USB Support
 Version: <LINUX_VERSION>-
@@ -13368,7 +13637,7 @@ Description: USB-over-IP host driver
 Package: kmod-usb-chipidea
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +USB_GADGET_SUPPORT:kmod-usb-gadget @TARGET_ar71xx||TARGET_ath79 +kmod-usb-ehci +kmod-usb-phy-nop +kmod-usb-core 
+Depends: +USB_GADGET_SUPPORT:kmod-usb-gadget @TARGET_ath79 +kmod-usb-ehci +kmod-usb-phy-nop +kmod-usb-roles +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13379,7 +13648,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_EXTCON CONFIG_USB_CHIPIDEA CONFIG_USB_CHIPIDEA_HOST=y CONFIG_USB_CHIPIDEA_UDC=y CONFIG_USB_CHIPIDEA_DEBUG=y
+Kernel-Config: CONFIG_EXTCON CONFIG_USB_CHIPIDEA CONFIG_USB_CHIPIDEA_GENERIC CONFIG_USB_CHIPIDEA_HOST=y CONFIG_USB_CHIPIDEA_UDC=y CONFIG_USB_CHIPIDEA_DEBUG=y
 Description:  Kernel support for USB Chipidea controllers
 
 @@
@@ -13425,7 +13694,7 @@ Description:  Kernel support for USB traffic monitoring
 Package: kmod-usb3
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +TARGET_bcm53xx:kmod-usb-bcma +TARGET_bcm53xx:kmod-phy-bcm-ns-usb3 +kmod-usb-core 
+Depends: +kmod-usb-xhci-hcd +TARGET_bcm53xx:kmod-usb-bcma +TARGET_bcm53xx:kmod-phy-bcm-ns-usb3 +TARGET_ramips_mt7621:kmod-usb-xhci-mtk +(TARGET_apm821xx_nand&&LINUX_5_10):kmod-usb-xhci-pci-renesas +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13436,7 +13705,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_USB_PCI=y CONFIG_USB_XHCI_HCD CONFIG_USB_XHCI_PCI CONFIG_USB_XHCI_PLATFORM CONFIG_USB_XHCI_MTK CONFIG_USB_XHCI_HCD_DEBUGGING=n
+Kernel-Config: CONFIG_USB_PCI=y CONFIG_USB_XHCI_PCI CONFIG_USB_XHCI_PLATFORM
 Description:  Kernel support for USB3 (XHCI) controllers
 
 @@
@@ -13457,6 +13726,88 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_USB_PCI=y CONFIG_USB_NET2280
 Description:   Kernel support for NetChip 228x / PLX USB338x PCI USB peripheral controller.
+
+@@
+
+Package: kmod-usb-roles
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: USB Role Switch Library Module
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_ROLE_SWITCH
+Hidden: 1
+Description:   Support for USB Role Switch
+
+@@
+
+Package: kmod-usb-xhci-hcd
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: xHCI HCD (USB 3.0) support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_XHCI_HCD CONFIG_USB_XHCI_HCD_DEBUGGING=n
+Hidden: 1
+Description:   The eXtensible Host Controller Interface (xHCI) is standard for USB 3.0
+  "SuperSpeed" host controller hardware.
+
+@@
+
+Package: kmod-usb-xhci-mtk
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-usb-xhci-hcd +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: xHCI support for MediaTek SoCs
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_XHCI_MTK
+Hidden: 1
+Description:   Kernel support for the xHCI host controller found in MediaTek SoCs.
+
+@@
+
+Package: kmod-usb-xhci-pci-renesas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @LINUX_5_10 +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Support for additional Renesas xHCI controller with firmware
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_XHCI_PCI_RENESAS
+Hidden: 1
+Description:   Kernel support for the Renesas xHCI controller with firmware. Make sure you have
+  the firwmare for the device and installed on your system for this device to work.
 
 @@
 
@@ -13670,10 +14021,29 @@ Description:   FB driver for the ILI9486 LCD Controller
 
 @@
 
+Package: kmod-multimedia-input
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Multimedia input support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_RC_CORE CONFIG_LIRC=y CONFIG_RC_DECODERS=y CONFIG_RC_DEVICES=y
+Description:   Enable multimedia input.
+
+@@
+
 Package: kmod-drm
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-dma-buf +kmod-i2c-core
+Depends: +kmod-dma-buf +kmod-i2c-core +PACKAGE_kmod-backlight:kmod-backlight
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13923,7 +14293,7 @@ Package: kmod-video-gspca-core
 Menu: 1
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @USB_SUPPORT +kmod-usb-core +kmod-input-core +!LINUX_4_14:kmod-video-videobuf2 kmod-video-core 
+Depends: @USB_SUPPORT +kmod-usb-core +kmod-input-core +kmod-video-videobuf2 kmod-video-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15140,82 +15510,6 @@ Description:  Kernel module for LEDs on reset lines
 
 @@
 
-Package: kmod-leds-nu801
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ar71xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Meraki MR18 LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_NU801
-Description:  Kernel module for the nu801 LED driver used on the Meraki MR18.
-
-@@
-
-Package: kmod-leds-rb750
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ar71xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RouterBOARD 750 LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_RB750
-Description:  Kernel module for the LEDs on the MikroTik RouterBOARD 750.
-
-@@
-
-Package: kmod-leds-wndr3700-usb
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ar71xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: WNDR3700 USB LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_WNDR3700_USB
-Description:  Kernel module for the USB LED on the NETGEAR WNDR3700 board.
-
-@@
-
-Package: kmod-spi-vsc7385
-Submenu: SPI Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ar71xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Vitesse VSC7385 ethernet switch driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SPI_VSC7385
-Description:   This package contains the SPI driver for the Vitesse VSC7385 ethernet switch.
-
-@@
-
 Package: kmod-ata-oxnas-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -15311,6 +15605,25 @@ Type: ipkg
 Kernel-Config: CONFIG_PHY_BCM_NS_USB3
 Description:   Support for Broadcom USB 3.0 PHY connected to the USB controller on Northstar
   family.
+
+@@
+
+Package: kmod-i2c-bcm-iproc
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_bcm53xx +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom iProc I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_BCM_IPROC
+Description:  Kernel module for the Broadcom iProc I2C controller.
 
 @@
 
@@ -16699,7 +17012,7 @@ Menu-Depends:
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Sunxi SoC built-in RTC support
+Title: Allwinner A10/A20 built-in RTC support
 Maintainer: 
 Source: 
 License: GPL-2.0
@@ -16804,6 +17117,44 @@ Description:   Kernel support for Allwinner A10 SPDIF Support
 
 @@
 
+Package: kmod-drm-rockchip
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-backlight +kmod-drm-kms-helper +kmod-multimedia-input
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Rockchip DRM support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE CONFIG_HDMI CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_DRM_PANEL CONFIG_DRM_PANEL_BRIDGE CONFIG_DRM_PANEL_SIMPLE
+Description:   Direct Rendering Manager (DRM) support for Rockchip
+
+@@
+
+Package: kmod-gpu-lima
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-drm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Mali-4xx GPU support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
+Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
+
+@@
+
 Package: kmod-i2c-lantiq
 Submenu: I2C support
 Version: <LINUX_VERSION>-
@@ -16840,6 +17191,45 @@ Type: ipkg
 Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
 Description:  This driver provides support for the integrated DesignWare
  USB3 IP Core within the QCOM SoCs.
+
+@@
+
+Package: kmod-amazon-ena
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Elastic Network Adapter (for Amazon AWS T3)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ENA_ETHERNET
+Description:   This driver supports Elastic Network Adapter (ENA)
+  used by Amazon AWS T3 instances.
+
+@@
+
+Package: kmod-amd-xgbe
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +LINUX_5_10:kmod-mdio-devres
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AMD Ethernet on SoC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AMD_XGBE
+Description:  Kernel modules for AMD 10GbE Ethernet device on an AMD SoC.
 
 @@
 
@@ -16921,44 +17311,6 @@ Description:   This driver supports turning off some Buffalo LinkStations by
   setting an output pin at the ethernet PHY to the correct state.
   It also makes the device compatible with the WoL function.
   Say Y here if you have a Buffalo LinkStation LS421D/E.
-
-@@
-
-Package: kmod-ata-rb532-cf
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 @BROKEN +kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 Compact Flash support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
-Description:   RB532 Compact Flash support.
-
-@@
-
-Package: kmod-input-rb532
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 +kmod-input-polldev
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 button device support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
-Description:   Kernel module for RB532 button
 
 @@
 

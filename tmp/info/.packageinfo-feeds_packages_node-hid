@@ -3,8 +3,8 @@ Build-Depends: node/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: node-hid
 Submenu: Node.js
-Version: 1.2.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-npm +libusb-1.0 +hidapi +libudev-fbsd +BUILD_NLS:libiconv-full
+Version: 2.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-npm +libusb-1.0 +libudev +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,11 +13,11 @@ Category: Languages
 Repository: packages
 Title: Node.js package to access HID devices
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: node-hid-1.2.0.tgz
+Source: node-hid-2.1.1.tgz
 License: MIT or X11
 Type: ipkg
 Description:  Node.js package to access HID devices
-https://github.com/node-hid/node-hid
+https://www.npmjs.com/package/node-hid
 Hirokazu MORIKAWA <morikw2@gmail.com>
 @@
 

@@ -24,7 +24,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-ga
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-bridge-helper
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66,7 +66,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-img
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -87,7 +87,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-nbd
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +kmod-nbd
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +kmod-nbd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-keymaps
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -129,7 +129,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-firmware-seabios
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -150,7 +150,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-firmware-seavgabios
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -171,7 +171,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-firmware-pxe
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -192,7 +192,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-firmware-efi
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -213,7 +213,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: qemu-x86_64-softmmu
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -260,7 +260,7 @@ endif
 Package: qemu-arm-softmmu
 Submenu: Virtualization
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

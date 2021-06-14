@@ -1,0 +1,95 @@
+Source-Makefile: package/utils/ucode/Makefile
+
+Package: ucode
+Version: 2021-03-31-973cc6c865dcf6075c493125313058b650b08234-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson-c
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ucode - Tiny scripting and templating language
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ucode-2021-03-31-973cc6c865dcf6075c493125313058b650b08234.tar.xz
+License: ISC
+Type: ipkg
+Description:  ucode is a tiny script interpreter featuring an ECMAScript oriented
+ script language and Jinja-inspired templating.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: ucode-mod-fs
+Version: 2021-03-31-973cc6c865dcf6075c493125313058b650b08234-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ucode
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ucode - Tiny scripting and templating language (filesystem module)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ucode-2021-03-31-973cc6c865dcf6075c493125313058b650b08234.tar.xz
+License: ISC
+Type: ipkg
+Description:  The filesystem plugin module allows interaction with the local file system.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: ucode-mod-math
+Version: 2021-03-31-973cc6c865dcf6075c493125313058b650b08234-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ucode
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ucode - Tiny scripting and templating language (math module)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ucode-2021-03-31-973cc6c865dcf6075c493125313058b650b08234.tar.xz
+License: ISC
+Type: ipkg
+Description:  The math plugin provides access to various <math.h> procedures.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: ucode-mod-ubus
+Version: 2021-03-31-973cc6c865dcf6075c493125313058b650b08234-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ucode +libubus +libblobmsg-json
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ucode - Tiny scripting and templating language (ubus module)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ucode-2021-03-31-973cc6c865dcf6075c493125313058b650b08234.tar.xz
+License: ISC
+Type: ipkg
+Description:  The ubus module allows ucode template scripts to enumerate and invoke ubus
+ procedures.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: ucode-mod-uci
+Version: 2021-03-31-973cc6c865dcf6075c493125313058b650b08234-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ucode +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ucode - Tiny scripting and templating language (uci module)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ucode-2021-03-31-973cc6c865dcf6075c493125313058b650b08234.tar.xz
+License: ISC
+Type: ipkg
+Description:  The uci module allows templates to read and modify uci configuration.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+

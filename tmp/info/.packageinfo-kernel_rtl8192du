@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/rtl8192du/Makefile
+
+Package: kmod-rtl8192du
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2020-12-12-331ec03d89d0c0ebe771c4011846f029f6af33d3-1
+Depends: +kmod-cfg80211 +kmod-usb-core +@DRIVER_11N_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Realtek RTL8192DU support
+Maintainer: Larry Finger <Larry.Finger@lwfinger.net>
+Source: rtl8192du-2020-12-12-331ec03d89d0c0ebe771c4011846f029f6af33d3.tar.xz
+Type: ipkg
+Description:   Kernel modules for the Realtek 8192DU USB 802.11n wireless USB adapters
+Larry Finger <Larry.Finger@lwfinger.net>
+@@
+
+

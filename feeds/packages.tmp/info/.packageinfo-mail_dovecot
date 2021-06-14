@@ -3,7 +3,6 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: dovecot
 Version: 2.3.10.1-1
-ABIVersion: 2.3.10.1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DOVECOT_GSSAPI:krb5-libs +DOVECOT_LDAP:libopenldap +DOVECOT_MYSQL:libmysqlclient +DOVECOT_PGSQL:libpq +DOVECOT_SQLITE:libsqlite3 +libopenssl +librt +zlib +libbz2 +libcap +DOVECOT_ICU:icu +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 

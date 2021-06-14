@@ -2,7 +2,6 @@ Source-Makefile: feeds/packages/libs/tiff/Makefile
 
 Package: libtiff
 Version: 4.1.0-2
-ABIVersion: 5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +22,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: libtiffxx
 Version: 4.1.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtiff +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtiff +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 

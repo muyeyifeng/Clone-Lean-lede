@@ -2,7 +2,7 @@ Source-Makefile: package/lean/dns2socks/Makefile
 
 Package: dns2socks
 Submenu: IP Addresses and Names
-Version: 2.1-1
+Version: 2.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,13 +11,13 @@ Section: net
 Category: Network
 Repository: base
 Title: The utility to resolve DNS requests via a SOCKS5 tunnel.
-Maintainer: kongfl888 <kongfl888@outlook.com>
-Source: dns2socks-2.1.tar.gz
-License: GPL-3.0
+Maintainer: ghostmaker
+Source: SourceCode.zip
+License: BSD-3-Clause
 Type: ipkg
 Description:   This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
-https://sourceforge.net/projects/dns2socks/
-kongfl888 <kongfl888@outlook.com>
+http://dns2socks.sourceforge.net/
+ghostmaker
 @@
 
 

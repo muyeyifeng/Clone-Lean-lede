@@ -2,8 +2,7 @@ Source-Makefile: package/network/utils/curl/Makefile
 
 Package: libcurl
 Menu: 1
-Version: 7.77.0
-ABIVersion: 4
+Version: 7.77.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBCURL_WOLFSSL:libwolfssl +LIBCURL_OPENSSL:libopenssl +LIBCURL_GNUTLS:libgnutls +LIBCURL_MBEDTLS:libmbedtls +LIBCURL_ZLIB:zlib +LIBCURL_ZSTD:libzstd +LIBCURL_THREADED_RESOLVER:libpthread +LIBCURL_LDAP:libopenldap +LIBCURL_LIBIDN2:libidn2 +LIBCURL_SSH2:libssh2 +LIBCURL_NGHTTP2:libnghttp2 +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -27,7 +26,7 @@ Config:
 
 Package: curl
 Submenu: File Transfer
-Version: 7.77.0
+Version: 7.77.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl
 Conflicts: 
 Menu-Depends: 

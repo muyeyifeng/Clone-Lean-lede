@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-sunxi/Makefile
 Package: u-boot-a64-olinuxino
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino || TARGET_DEVICE_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-a64-olinuxino-emmc
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino-emmc || TARGET_DEVICE_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino-emmc)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino-emmc:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino-emmc:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -225,6 +225,29 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Bananapi
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
+Package: u-boot-bananapi_m2_berry
+Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-berry || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-berry)
+Version: 2020.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: bananapi_m2_berry
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Bananapi M2 Berry
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Bananapi M2 Berry
 http://www.denx.de/wiki/U-Boot
 Zoltan HERPAI <wigyori@uid0.hu>
 @@
@@ -482,6 +505,29 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 
+Package: u-boot-Linksprite_pcDuino3_Nano
+Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_linksprite_pcduino3-nano || TARGET_DEVICE_sunxi_cortexa7_DEVICE_linksprite_pcduino3-nano)
+Version: 2020.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: Linksprite_pcDuino3_Nano
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Linksprite pcDuino3 Nano
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Linksprite pcDuino3 Nano
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
 Package: u-boot-Lamobo_R1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_lamobo_lamobo-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_lamobo_lamobo-r1)
 Version: 2020.04
@@ -600,7 +646,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo_plus2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo-plus2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo-plus2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo_plus2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo_plus2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -623,7 +669,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -661,6 +707,29 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for U-Boot for NanoPi R1 (H3)
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
+Package: u-boot-nanopi_r1s_h5
+Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-r1s-h5 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-r1s-h5)
+Version: 2020.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_r1s_h5:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: nanopi_r1s_h5
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for NanoPi R1S (H5)
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for NanoPi R1S (H5)
 http://www.denx.de/wiki/U-Boot
 Zoltan HERPAI <wigyori@uid0.hu>
 @@
@@ -730,6 +799,29 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Orange Pi One (H3)
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
+Package: u-boot-orangepi_one_plus
+Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-one-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-one-plus)
+Version: 2020.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_one_plus:arm-trusted-firmware-sunxi-h6 @TARGET_sunxi_cortexa53
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: orangepi_one_plus
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Orange Pi One Plus (H6)
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Orange Pi One Plus (H6)
 http://www.denx.de/wiki/U-Boot
 Zoltan HERPAI <wigyori@uid0.hu>
 @@
@@ -830,7 +922,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_pc2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-pc2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-pc2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_pc2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_pc2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -875,7 +967,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-pine64_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_pine64_pine64-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_pine64_pine64-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-pine64_plus:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-pine64_plus:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -898,7 +990,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-sopine_baseboard
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_pine64_sopine-baseboard || TARGET_DEVICE_sunxi_cortexa53_DEVICE_pine64_sopine-baseboard)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-sopine_baseboard:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-sopine_baseboard:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -921,7 +1013,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_zero_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-zero-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-zero-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_zero_plus:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_zero_plus:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -936,6 +1028,29 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Xunlong Orange Pi Zero Plus
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
+Package: u-boot-libretech_all_h3_cc_h5
+Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_libretech_all-h3-cc-h5 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_libretech_all-h3-cc-h5)
+Version: 2020.04
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-libretech_all_h3_cc_h5:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: libretech_all_h3_cc_h5
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Libre Computer ALL-H3-CC H5
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Libre Computer ALL-H3-CC H5
 http://www.denx.de/wiki/U-Boot
 Zoltan HERPAI <wigyori@uid0.hu>
 @@

@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-kirkwood/Makefile
 
 Package: u-boot-dockstar
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_seagate_dockstar || TARGET_DEVICE_kirkwood_DEVICE_seagate_dockstar)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-dockstar_second_stage
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_seagate_dockstar || TARGET_DEVICE_kirkwood_DEVICE_seagate_dockstar)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -46,7 +46,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-goflexhome
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_seagate_goflexhome || TARGET_kirkwood_DEVICE_seagate_goflexnet || TARGET_DEVICE_kirkwood_DEVICE_seagate_goflexhome || TARGET_DEVICE_kirkwood_DEVICE_seagate_goflexnet)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -68,7 +68,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-ib62x0
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_raidsonic_ib-nas62x0 || TARGET_DEVICE_kirkwood_DEVICE_raidsonic_ib-nas62x0)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -90,7 +90,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-ib62x0_second_stage
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_raidsonic_ib-nas62x0 || TARGET_DEVICE_kirkwood_DEVICE_raidsonic_ib-nas62x0)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -112,7 +112,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-iconnect
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_iom_iconnect-1.1 || TARGET_DEVICE_kirkwood_DEVICE_iom_iconnect-1.1)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -134,7 +134,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-iconnect_second_stage
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_iom_iconnect-1.1 || TARGET_DEVICE_kirkwood_DEVICE_iom_iconnect-1.1)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -156,7 +156,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-l-50
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_checkpoint_l-50 || TARGET_DEVICE_kirkwood_DEVICE_checkpoint_l-50)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -178,7 +178,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-nas220
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_seagate_blackarmor-nas220 || TARGET_DEVICE_kirkwood_DEVICE_seagate_blackarmor-nas220)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -200,7 +200,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-nsa310
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_zyxel_nsa310b || TARGET_DEVICE_kirkwood_DEVICE_zyxel_nsa310b)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -222,7 +222,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-nsa310s
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_zyxel_nsa310s || TARGET_DEVICE_kirkwood_DEVICE_zyxel_nsa310s)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -244,7 +244,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-nsa325
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_zyxel_nsa325 || TARGET_DEVICE_kirkwood_DEVICE_zyxel_nsa325)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -266,7 +266,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-pogo_e02
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_cloudengines_pogoe02 || TARGET_DEVICE_kirkwood_DEVICE_cloudengines_pogoe02)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -288,7 +288,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-pogo_e02_second_stage
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_cloudengines_pogoe02 || TARGET_DEVICE_kirkwood_DEVICE_cloudengines_pogoe02)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -310,7 +310,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-pogoplugv4
 Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_cloudengines_pogoplugv4 || TARGET_DEVICE_kirkwood_DEVICE_cloudengines_pogoplugv4)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
 Conflicts: 
 Menu-Depends: 
@@ -325,6 +325,28 @@ License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
 Description: U-Boot for Cloud Engines Pogoplug V4
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+
+Package: u-boot-sheevaplug
+Default: y if (TARGET_kirkwood_Default || TARGET_kirkwood_DEVICE_globalscale_sheevaplug || TARGET_DEVICE_kirkwood_DEVICE_globalscale_sheevaplug)
+Version: 2020.04-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_kirkwood
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: sheevaplug
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Globalscale SheevaPlug
+Maintainer: 
+Source: u-boot-2020.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for Globalscale SheevaPlug
 http://www.denx.de/wiki/U-Boot
 
 @@

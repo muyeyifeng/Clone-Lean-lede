@@ -1,9 +1,8 @@
 Source-Makefile: package/lean/ipt2socks/Makefile
 
 Package: ipt2socks
-Submenu: Web Servers/Proxies
 Version: 1.1.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,9 +11,10 @@ Category: Network
 Repository: base
 Title: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
 Maintainer: 
-Source: ipt2socks-1.1.3-c1413335f0b5f15241d7072204902778d122a578.tar.gz
+Source: ipt2socks-1.1.3.tar.gz
+License: AGPL-3.0
 Type: ipkg
-Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
 https://github.com/zfl9/ipt2socks
 
 @@

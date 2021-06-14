@@ -2,31 +2,8 @@ Source-Makefile: package/utils/e2fsprogs/Makefile
 Build-Depends: util-linux e2fsprogs/host
 Build-Types: host
 
-Package: e2fsprogs
-Submenu: Filesystem
-Version: 1.45.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libext2fs
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Ext2/3/4 filesystem utilities
-Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
-License: GPL-2.0
-LicenseFiles: NOTICE
-Type: ipkg
-Description:  This package contains essential ext2 filesystem utilities which consists of
- e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
-http://e2fsprogs.sourceforge.net/
-
-@@
-
 Package: libcomerr
-Version: 1.45.6-1
-ABIVersion: 0
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -47,8 +24,7 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libss
-Version: 1.45.6-1
-ABIVersion: 2
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcomerr
 Conflicts: 
 Menu-Depends: 
@@ -69,8 +45,7 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libext2fs
-Version: 1.45.6-1
-ABIVersion: 2
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libblkid +libss +libcomerr
 Conflicts: 
 Menu-Depends: 
@@ -89,9 +64,31 @@ http://e2fsprogs.sourceforge.net/
 
 @@
 
+Package: e2fsprogs
+Submenu: Filesystem
+Version: 1.45.6-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libext2fs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Ext2/3/4 filesystem utilities
+Maintainer: 
+Source: e2fsprogs-1.45.6.tar.xz
+License: GPL-2.0
+LicenseFiles: NOTICE
+Type: ipkg
+Description:  This package contains essential ext2 filesystem utilities which consists of
+ e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
+http://e2fsprogs.sourceforge.net/
+
+@@
+
 Package: tune2fs
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -112,7 +109,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: resize2fs
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -133,7 +130,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: badblocks
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -154,7 +151,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: dumpe2fs
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -175,7 +172,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e2freefrag
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +193,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e4crypt
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -217,7 +214,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: filefrag
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -238,7 +235,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: debugfs
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -259,7 +256,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: chattr
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -280,7 +277,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: lsattr
 Submenu: Filesystem
-Version: 1.45.6-1
+Version: 1.45.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 

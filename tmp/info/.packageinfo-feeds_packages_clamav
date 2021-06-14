@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/clamav/Makefile
 Package: clamav
 Submenu: Web Servers/Proxies
 Version: 0.102.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +libpthread +zlib +libcurl +libjson-c +libmilter-sendmail +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libpthread +zlib +libcurl +libjson-c +libmilter-sendmail +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr> Lucian Cristian <lucian.cristian@gmail.co
 Package: freshclam
 Submenu: Web Servers/Proxies
 Version: 0.102.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBCXX:libcxx +USE_LIBSTDCXX:libstdcpp +libpthread +zlib +libcurl +libjson-c +libmilter-sendmail +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts +clamav
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libpthread +zlib +libcurl +libjson-c +libmilter-sendmail +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts +clamav
 Conflicts: 
 Menu-Depends: 
 Provides: 
