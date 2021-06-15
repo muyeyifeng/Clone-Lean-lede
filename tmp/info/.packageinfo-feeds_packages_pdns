@@ -3,7 +3,7 @@ Build-Depends: unixodbc/host protobuf-c/host
 
 Package: pdns-backend-geoip
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libmaxminddb +libyaml-cpp
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (geoip)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -23,12 +23,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the GeoIP backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-mysql
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -37,8 +37,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (mysql)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -48,12 +48,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the MySQL backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-odbc
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +unixodbc
 Conflicts: 
 Menu-Depends: 
@@ -62,8 +62,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (odbc)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -73,12 +73,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the ODBC backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-pgsql
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libpq
 Conflicts: 
 Menu-Depends: 
@@ -87,8 +87,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (pgsql)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -98,12 +98,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the PostgreSQL backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-sqlite3
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -112,8 +112,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (sqlite3)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -123,12 +123,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the SQLite 3 backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-ldap
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libopenldap +krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -137,8 +137,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (ldap)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -148,37 +148,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the OpenLDAP backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
-@@
-
-Package: pdns-backend-lua
-Submenu: IP Addresses and Names
-Version: 4.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +lua +liblua
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: PowerDNS Authoritative Server (lua)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
-Type: ipkg
-Hidden: 1
-Description:    PowerDNS is a versatile nameserver which supports a large number
-   of different backends ranging from simple zonefiles to relational
-   databases and load balancing/failover algorithms.
-   PowerDNS tries to emphasize speed and security.
-
-   This package contains the Lua backend for the PowerDNS nameserver.
-https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-lua2
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +lua +liblua
 Conflicts: 
 Menu-Depends: 
@@ -187,8 +162,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (lua2)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -198,37 +173,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the Lua2 backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
-@@
-
-Package: pdns-backend-mydns
-Submenu: IP Addresses and Names
-Version: 4.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libmysqlclient
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: PowerDNS Authoritative Server (mydns)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
-Type: ipkg
-Hidden: 1
-Description:    PowerDNS is a versatile nameserver which supports a large number
-   of different backends ranging from simple zonefiles to relational
-   databases and load balancing/failover algorithms.
-   PowerDNS tries to emphasize speed and security.
-
-   This package contains the MyDNS backend for the PowerDNS nameserver.
-https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-pipe
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns
 Conflicts: 
 Menu-Depends: 
@@ -237,8 +187,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (pipe)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -248,12 +198,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the Pipe backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-backend-remote
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns
 Conflicts: 
 Menu-Depends: 
@@ -262,8 +212,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server (remote)
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -273,12 +223,12 @@ Description:    PowerDNS is a versatile nameserver which supports a large number
 
    This package contains the Remote backend for the PowerDNS nameserver.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libcurl +liblua +libopenssl +libsqlite3 +p11-kit
 Conflicts: 
 Menu-Depends: 
@@ -287,8 +237,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: PowerDNS Authoritative Server
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational
@@ -299,7 +249,7 @@ Description:   PowerDNS is a versatile nameserver which supports a large number
   domains that it knows about. You also need at least one backend installed to
   serve data.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 Config:
 	menu "Select PowerDNS backends"
@@ -324,14 +274,8 @@ Config:
 		  config PACKAGE_pdns-backend-ldap
 			prompt "OpenLDAP backend"
 			default m if ALL
-		  config PACKAGE_pdns-backend-lua
-			prompt "Lua backend"
-			default m if ALL
 		  config PACKAGE_pdns-backend-lua2
 			prompt "Lua2 backend"
-			default m if ALL
-		  config PACKAGE_pdns-backend-mydns
-			prompt "MyDNS backend"
 			default m if ALL
 		  config PACKAGE_pdns-backend-pipe
 			prompt "Pipe backend"
@@ -345,7 +289,7 @@ Config:
 
 Package: pdns-tools
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libcurl +libmbedtls +libopenssl +p11-kit +protobuf
 Conflicts: 
 Menu-Depends: 
@@ -354,8 +298,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: Tools for DNS debugging by PowerDNS
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational
@@ -376,12 +320,12 @@ Description:   PowerDNS is a versatile nameserver which supports a large number
     * nsec3dig: Calculate the correctness of NSEC3 proofs
     * saxfr: AXFR zones and show extra information
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 Package: pdns-ixfrdist
 Submenu: IP Addresses and Names
-Version: 4.2.2-1
+Version: 4.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libopenssl +libyaml-cpp +p11-kit +protobuf
 Conflicts: 
 Menu-Depends: 
@@ -390,8 +334,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: Redistribute zones via AXFR and IXFR
-Maintainer: James Taylor <james@jtaylor.id.au>
-Source: pdns-4.2.2.tar.bz2
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Source: pdns-4.4.1.tar.bz2
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational
@@ -402,7 +346,7 @@ Description:   PowerDNS is a versatile nameserver which supports a large number
   of zones over AXFR and IXFR. This tool does not require any part of the
   PowerDNS server components to work.
 https://www.powerdns.com/auth.html
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 

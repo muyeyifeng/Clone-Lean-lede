@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/fwknop/Makefile
 
 Package: fwknopd
 Submenu: Firewall
-Version: 2.6.10-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libfko +!FWKNOPD_NFQ_CAPTURE:libpcap +FWKNOPD_NFQ_CAPTURE:iptables-mod-nfqueue +FWKNOP_GPG:gnupg +FWKNOPD_NFQ_CAPTURE:libnetfilter-queue +FWKNOPD_NFQ_CAPTURE:libnfnetlink
+Version: 2.6.10-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libfko +!FWKNOPD_NFQ_CAPTURE:libpcap +FWKNOPD_NFQ_CAPTURE:iptables-mod-nfqueue +FWKNOPD_NFQ_CAPTURE:libnetfilter-queue +FWKNOPD_NFQ_CAPTURE:libnfnetlink +FWKNOP_GPG:gnupg +FWKNOP_GPG:libgpgme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,6 +14,7 @@ Title: FireWall KNock OPerator Daemon
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -33,8 +34,8 @@ Config:
 
 Package: fwknop
 Submenu: Firewall
-Version: 2.6.10-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfko
+Version: 2.6.10-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfko +FWKNOPD_GPG:gnupg +FWKNOPD_GPG:libgpgme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,6 +46,7 @@ Title: FireWall KNock OPerator Client
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -61,8 +63,8 @@ Jonathan Bennett <JBennett@incomsystems.biz>
 
 Package: libfko
 Submenu: Firewall
-Version: 2.6.10-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.6.10-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +FWKNOPD_GPG:gnupg +FWKNOPD_GPG:libgpgme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -73,6 +75,7 @@ Title: FireWall KNock OPerator Library
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a

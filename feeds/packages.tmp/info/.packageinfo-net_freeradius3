@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/freeradius3/Makefile
 
 Package: freeradius3
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +freeradius3-common
 Conflicts: 
 Menu-Depends: 
@@ -26,8 +26,8 @@ Config:
 
 Package: freeradius3-common
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +FREERADIUS3_OPENSSL:libopenssl +libcap +libpcap +libncurses +libpcre +libreadline +libtalloc +libatomic
+Version: 3_0_21-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_GLIBC:libbsd +FREERADIUS3_OPENSSL:libopenssl +libcap +libpcap +libncurses +libpcre +libreadline +libtalloc +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ https://freeradius.org/
 
 Package: freeradius3-default
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3 +freeradius3-democerts +freeradius3-mod-always +freeradius3-mod-attr-filter +freeradius3-mod-chap +freeradius3-mod-detail +freeradius3-mod-digest +freeradius3-mod-eap +freeradius3-mod-eap-gtc +freeradius3-mod-eap-leap +freeradius3-mod-eap-md5 +freeradius3-mod-eap-mschapv2 +freeradius3-mod-eap-peap +freeradius3-mod-eap-pwd +freeradius3-mod-eap-tls +freeradius3-mod-eap-ttls +freeradius3-mod-exec +freeradius3-mod-expiration +freeradius3-mod-expr +freeradius3-mod-files +freeradius3-mod-logintime +freeradius3-mod-mschap +freeradius3-mod-pap +freeradius3-mod-preprocess +freeradius3-mod-radutmp +freeradius3-mod-realm +freeradius3-mod-unix
 Conflicts: 
 Menu-Depends: 
@@ -61,14 +61,15 @@ Source: release_3_0_21.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
 Type: ipkg
-Description: Modules needed for Radius default configuration
+Description:  This meta-package contains only dependencies for modules needed in
+ FreeRADIUS default configuration.
 https://freeradius.org/
 
 @@
 
 Package: freeradius3-democerts
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -89,7 +90,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-always
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +111,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-attr-filter
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -131,7 +132,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-chap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -152,7 +153,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-detail
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +174,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-digest
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -194,7 +195,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -215,7 +216,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-gtc
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap
 Conflicts: 
 Menu-Depends: 
@@ -236,7 +237,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-leap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap
 Conflicts: 
 Menu-Depends: 
@@ -257,7 +258,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-md5
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap
 Conflicts: 
 Menu-Depends: 
@@ -278,7 +279,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-mschapv2
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap +freeradius3-mod-mschap
 Conflicts: 
 Menu-Depends: 
@@ -299,7 +300,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-peap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -320,7 +321,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-pwd
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -341,7 +342,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-tls
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -362,7 +363,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-ttls
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-eap-tls
 Conflicts: 
 Menu-Depends: 
@@ -383,7 +384,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-exec
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -404,7 +405,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-expiration
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -425,7 +426,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-expr
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -446,7 +447,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-files
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -467,7 +468,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-ldap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3 +libopenldap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -488,7 +489,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-logintime
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -509,7 +510,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-mschap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -530,7 +531,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-pap
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -551,7 +552,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-passwd
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -572,7 +573,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-preprocess
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -593,7 +594,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-python3
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3 +python3
 Conflicts: 
 Menu-Depends: 
@@ -614,7 +615,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-radutmp
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -635,7 +636,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-realm
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -656,7 +657,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-rest
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3 +libcurl +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -677,7 +678,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -698,7 +699,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-mysql
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-sql +libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -719,7 +720,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-null
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -740,7 +741,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-postgresql
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-sql +libpq
 Conflicts: 
 Menu-Depends: 
@@ -761,7 +762,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-sqlite
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3-mod-sql +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -782,7 +783,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sqlcounter
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -803,7 +804,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sqlippool
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -824,7 +825,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-unix
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -845,7 +846,7 @@ https://freeradius.org/
 
 Package: freeradius3-utils
 Submenu: FreeRADIUS (version 3)
-Version: release_3_0_21-2
+Version: 3_0_21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +freeradius3-common
 Conflicts: 
 Menu-Depends: 

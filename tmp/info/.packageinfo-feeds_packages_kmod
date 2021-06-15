@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/kmod/Makefile
 
 Package: kmod
-Version: 20-4
+Version: 27-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: packages
 Title: Linux kernel module handling (tools)
 Maintainer: Jeff Waugh <jdub@bethesignal.org>
-Source: kmod-20.tar.xz
+Source: kmod-27.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +23,7 @@ Jeff Waugh <jdub@bethesignal.org>
 @@
 
 Package: libkmod
-Version: 20-4
+Version: 27-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Libraries
 Repository: packages
 Title: Linux kernel module handling (library)
 Maintainer: Jeff Waugh <jdub@bethesignal.org>
-Source: kmod-20.tar.xz
+Source: kmod-27.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

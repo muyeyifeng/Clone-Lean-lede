@@ -1,9 +1,9 @@
 Source-Makefile: feeds/packages/utils/telldus-core/Makefile
-Build-Depends: !USE_GLIBC:argp-standalone !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: argp-standalone
 
 Package: telldus-core
-Version: 2.1.2-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +confuse +libftdi +libstdcpp +BUILD_NLS:libiconv-full
+Version: 2.1.2-6
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +confuse +libftdi +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 

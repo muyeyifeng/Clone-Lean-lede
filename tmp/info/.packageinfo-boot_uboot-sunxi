@@ -712,29 +712,6 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 
-Package: u-boot-nanopi_r1s_h5
-Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-r1s-h5 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-r1s-h5)
-Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_r1s_h5:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: nanopi_r1s_h5
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for NanoPi R1S (H5)
-Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2020.04.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for NanoPi R1S (H5)
-http://www.denx.de/wiki/U-Boot
-Zoltan HERPAI <wigyori@uid0.hu>
-@@
-
-
 Package: u-boot-orangepi_zero
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-zero || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-zero)
 Version: 2020.04

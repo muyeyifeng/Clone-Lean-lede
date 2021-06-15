@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/forked-daapd/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: forked-daapd
-Version: 27.1-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libgcrypt +libgdbm +zlib +libexpat +libunistring +libevent2 +libdaemon +libantlr3c +confuse +libopus +alsa-lib +libffmpeg-full +mxml +libavahi-client +sqlite3-cli +libplist +libcurl +libjson-c +libprotobuf-c +libgnutls +libsodium +libwebsockets-full +BUILD_NLS:libiconv-full
+Version: 27.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libgcrypt +libgdbm +zlib +libexpat +libunistring +libevent2 +libdaemon +libantlr3c +confuse +alsa-lib +libffmpeg-full +mxml +libavahi-client +sqlite3-cli +libplist +libcurl +libjson-c +libprotobuf-c +libgnutls +libsodium +libwebsockets +BUILD_NLS:libiconv-full +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Sound
 Repository: packages
 Title: iTunes (DAAP) server for Apple Remote and AirPlay
 Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
-Source: forked-daapd-27.1.tar.xz
+Source: forked-daapd-27.4.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

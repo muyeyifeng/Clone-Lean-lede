@@ -4,18 +4,18 @@ Package: kmod-acx-mac80211
 Menu: 1
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+2014-02-16-b6fc31491020cb01d2cd1acc170cfa03ced7e726-1
-Depends: @(PCI_SUPPORT||TARGET_ar7) @mipsel +kmod-mac80211
+Depends: @PCI_SUPPORT @mipsel +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
 Title: ACX1xx mac80211 driver
-Maintainer: Florian Fainelli <florian@openwrt.org>
+Maintainer: 
 Source: acx-mac80211-2014-02-16-b6fc31491020cb01d2cd1acc170cfa03ced7e726.tar.xz
 Type: ipkg
 Description: 	Driver for acx111 cards (mac80211 version)
-Florian Fainelli <florian@openwrt.org>
+
 @@
 Config:
 	menu "Configuration"
@@ -49,8 +49,7 @@ Config:
 	choice
 		prompt "ACX111 firmware version"
 		depends on ACX_ID_16
-		default ACX_DEFAULT if !TARGET_adm5120
-		default ACX_1_2_1_34 if TARGET_adm5120
+		default ACX_DEFAULT
 		help
 		  This option allows you to select the version of the acx firmware.
 

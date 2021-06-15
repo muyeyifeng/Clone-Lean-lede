@@ -1,7 +1,9 @@
 Source-Makefile: feeds/packages/utils/flashrom/Makefile
+Build-Depends: meson/host ninja/host
+Build-Depends/host: ninja/host
 
 Package: flashrom
-Version: 1.2-1
+Version: 1.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +libftdi1 +libusb-1.0 +pciutils
 Conflicts: 
 Menu-Depends: 
@@ -25,7 +27,7 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-pci
-Version: 1.2-1
+Version: 1.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +pciutils
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +50,7 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-spi
-Version: 1.2-1
+Version: 1.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -71,7 +73,7 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-usb
-Version: 1.2-1
+Version: 1.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libftdi1 +libusb-1.0
 Conflicts: 
 Menu-Depends: 

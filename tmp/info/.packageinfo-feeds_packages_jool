@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/jool/Makefile
 Build-Depends: !USE_GLIBC:argp-standalone
 
 Package: jool
-Version: 4.0.9-1
+Version: 4.1.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-jool +jool-tools
 Conflicts: 
 Menu-Depends: 
@@ -12,10 +12,11 @@ Category: Network
 Repository: packages
 Title: Jool meta-package
 Maintainer: 
-Source: jool-4.0.9.tar.gz
+Source: jool-4.1.5.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
+Build-Only: 1
 Description:     Jool is an Open Source SIIT and NAT64 for Linux.
 https://www.jool.mx
 
@@ -23,7 +24,7 @@ https://www.jool.mx
 
 Package: kmod-jool
 Submenu: Network Support
-Version: <LINUX_VERSION>+4.0.9-1
+Version: <LINUX_VERSION>+4.1.5-1
 Depends: @IPV6 +kmod-crypto-md5 +kmod-nf-conntrack +kmod-nf-conntrack6 +kmod-nf-ipt
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +33,7 @@ Section: kernel
 Category: Kernel modules
 Title: Jool kernel module
 Maintainer: 
-Source: jool-4.0.9.tar.gz
+Source: jool-4.1.5.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -43,7 +44,7 @@ Description:     Jool is an Open Source SIIT and NAT64 for Linux.
 @@
 
 Package: jool-tools
-Version: 4.0.9-1
+Version: 4.1.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +54,7 @@ Category: Network
 Repository: packages
 Title: Jool userspace control programs
 Maintainer: 
-Source: jool-4.0.9.tar.gz
+Source: jool-4.1.5.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg

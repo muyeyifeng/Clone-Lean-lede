@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libmbim/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libmbim
-Version: 1.24.0-1
+Version: 1.24.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: Helper library and utils to talk to MBIM enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libmbim-1.24.0.tar.xz
+Source: libmbim-1.24.8.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -23,7 +23,7 @@ Nicholas Smith <nicholas.smith@telcoantennas.com.au>
 @@
 
 Package: mbim-utils
-Version: 1.24.0-1
+Version: 1.24.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbim
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Utilities
 Repository: packages
 Title: Utilities to talk to MBIM enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libmbim-1.24.0.tar.xz
+Source: libmbim-1.24.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

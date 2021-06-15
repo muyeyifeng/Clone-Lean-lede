@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/gptfdisk/Makefile
 
 Package: gdisk
 Submenu: Disc
-Version: 1.0.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libuuid
+Version: 1.0.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for interactive use
 Maintainer: Alif M. Ahmad <alive4ever@live.com>
-Source: gptfdisk-1.0.5.tar.gz
+Source: gptfdisk-1.0.6.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,8 +23,8 @@ Alif M. Ahmad <alive4ever@live.com>
 
 Package: cgdisk
 Submenu: Disc
-Version: 1.0.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libuuid +libncursesw
+Version: 1.0.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuuid +libncursesw
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for interactive use
 Maintainer: Alif M. Ahmad <alive4ever@live.com>
-Source: gptfdisk-1.0.5.tar.gz
+Source: gptfdisk-1.0.6.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -44,8 +44,8 @@ Alif M. Ahmad <alive4ever@live.com>
 
 Package: sgdisk
 Submenu: Disc
-Version: 1.0.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libuuid +libpopt
+Version: 1.0.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuuid +libpopt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for scripting use
 Maintainer: Alif M. Ahmad <alive4ever@live.com>
-Source: gptfdisk-1.0.5.tar.gz
+Source: gptfdisk-1.0.6.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -65,8 +65,8 @@ Alif M. Ahmad <alive4ever@live.com>
 
 Package: fixparts
 Submenu: Disc
-Version: 1.0.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
+Version: 1.0.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,7 +75,7 @@ Category: Utilities
 Repository: base
 Title: A utility to fix corrupted MBR partitions
 Maintainer: Alif M. Ahmad <alive4ever@live.com>
-Source: gptfdisk-1.0.5.tar.gz
+Source: gptfdisk-1.0.6.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

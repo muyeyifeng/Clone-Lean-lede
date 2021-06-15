@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/inotify-tools/Makefile
 
 Package: libinotifytools
-Version: 3.20.2.2-1
+Version: 3.20.11.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: libinotifytools
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.2.2.tar.gz
+Source: inotify-tools-3.20.11.0.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -28,7 +28,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: inotifywait
-Version: 3.20.2.2-1
+Version: 3.20.11.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Utilities
 Repository: base
 Title: inotifywait tool
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.2.2.tar.gz
+Source: inotify-tools-3.20.11.0.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -55,7 +55,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: inotifywatch
-Version: 3.20.2.2-1
+Version: 3.20.11.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Category: Utilities
 Repository: base
 Title: inotifywatch tool
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.2.2.tar.gz
+Source: inotify-tools-3.20.11.0.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg

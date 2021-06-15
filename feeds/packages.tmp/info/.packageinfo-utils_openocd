@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/openocd/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: openocd
-Version: v0.10.0-1000-gdb23c13d-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_openocd_with_usb:libusb-1.0 +PACKAGE_openocd_with_usb:libusb-compat +PACKAGE_openocd_with_usb:libftdi1 +PACKAGE_openocd_with_usb:hidapi
+Version: v0.11.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libusb-compat +libftdi1 +hidapi +libgpiod
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,8 +12,8 @@ Category: Utilities
 Repository: base
 Title: OpenOCD Utility
 Maintainer: Paul Fertser <fercerpav@gmail.com>
-Source: openocd-v0.10.0-1000-gdb23c13d.tar.xz
-License: GPL-2.0
+Source: openocd-v0.11.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
 Description: OpenOCD provides on-chip programming and debugging support with a
@@ -33,13 +33,6 @@ the GNU GDB program (and the others who talk GDB protocol, e.g. IDA
 Pro).
 http://openocd.sf.net/
 Paul Fertser <fercerpav@gmail.com>
-@@
-Config:
-  if PACKAGE_openocd
-	config PACKAGE_openocd_with_usb
-		bool "Build with support for USB adapters."
-		default y
-  endif
 @@
 
 

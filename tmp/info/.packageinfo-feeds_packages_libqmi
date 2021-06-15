@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/libqmi/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libqmi
-Version: 1.26.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbim
+Version: 1.28.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +LIBQMI_WITH_MBIM_QMUX:libmbim +LIBQMI_WITH_QRTR_GLIB:libqrtr-glib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: Helper library to talk to QMI enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqmi-1.26.0.tar.xz
+Source: libqmi-1.28.6.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -21,9 +21,12 @@ Description:   Helper library talk to QMI enabled modems.
 https://www.freedesktop.org/wiki/Software/libqmi
 Nicholas Smith <nicholas.smith@telcoantennas.com.au>
 @@
+Config:
+  source "feeds/packages/libs/libqmi/Config.in"
+@@
 
 Package: qmi-utils
-Version: 1.26.0-1
+Version: 1.28.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libqmi
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +36,7 @@ Category: Utilities
 Repository: packages
 Title: Utilities to talk to QMI enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqmi-1.26.0.tar.xz
+Source: libqmi-1.28.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

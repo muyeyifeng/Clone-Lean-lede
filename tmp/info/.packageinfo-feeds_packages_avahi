@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/avahi/Makefile
 
 Package: libavahi-client
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +avahi-dbus-daemon
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libavahi-compat-libdnssd
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libavahi-client
 Conflicts: 
 Menu-Depends: 
@@ -69,7 +69,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-utils
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libavahi-client +libgdbm
 Conflicts: 
 Menu-Depends: 
@@ -103,7 +103,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libavahi-dbus-support
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dbus
 Conflicts: 
 Menu-Depends: 
@@ -147,7 +147,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libavahi-nodbus-support
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -185,7 +185,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-autoipd
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libdaemon
 Conflicts: 
 Menu-Depends: 
@@ -220,7 +220,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-dbus-daemon
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libavahi-dbus-support +libexpat +librt +libdaemon
 Conflicts: 
 Menu-Depends: 
@@ -252,7 +252,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-nodbus-daemon
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libavahi-nodbus-support +libexpat +librt +libdaemon
 Conflicts: 
 Menu-Depends: 
@@ -285,7 +285,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-daemon-service-http
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -316,7 +316,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-daemon-service-ssh
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -347,7 +347,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: avahi-dnsconfd
 Submenu: IP Addresses and Names
-Version: 0.8-6
+Version: 0.8-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libavahi +libdaemon +libpthread
 Conflicts: 
 Menu-Depends: 

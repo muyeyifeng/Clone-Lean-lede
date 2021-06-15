@@ -8,13 +8,13 @@ Target-Features: boot-part ext4 fpu gpio nand pcie rootfs-part squashfs ubifs us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for NXP Layerscape based boards.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target: layerscape/armv8_64b
 Target-Board: layerscape
 Target-Name: ARMv8 64-bit based boards
@@ -24,18 +24,19 @@ Target-Features: boot-part display dt ext4 fpu gpio nand pci pcie rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for NXP Layerscape ARMv8 64-bit based boards.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1012a-frdm
 Target-Profile-Name: NXP FRDM-LS1012A
 Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-frdm kmod-ppfe 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-frdm
+
 
 Target-Profile-Description:
 Build firmware images for NXP FRDM-LS1012A
@@ -50,6 +51,7 @@ Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-rdb kmod-hwmon-ina2xx kmod
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-rdb
 
+
 Target-Profile-Description:
 Build firmware images for NXP LS1012A-RDB
 
@@ -62,6 +64,7 @@ Target-Profile-Name: NXP FRWY-LS1012A
 Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-frwy-sdboot kmod-ppfe 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-frwy-sdboot
+
 
 Target-Profile-Description:
 Build firmware images for NXP FRWY-LS1012A
@@ -76,6 +79,7 @@ Target-Profile-Packages:  layerscape-fman tfa-ls1043a-rdb fmc fmc-eth-config kmo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1043a-rdb
 
+
 Target-Profile-Description:
 Build firmware images for NXP LS1043A-RDB Default
 
@@ -88,6 +92,7 @@ Target-Profile-Name: NXP LS1043A-RDB SD Card Boot
 Target-Profile-Packages:  layerscape-fman tfa-ls1043a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1043a-rdb-sdboot
+
 
 Target-Profile-Description:
 Build firmware images for NXP LS1043A-RDB SD Card Boot
@@ -102,6 +107,7 @@ Target-Profile-Packages:  layerscape-fman tfa-ls1046a-frwy
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-frwy
 
+
 Target-Profile-Description:
 Build firmware images for NXP FRWY-LS1046A Default
 
@@ -114,6 +120,7 @@ Target-Profile-Name: NXP FRWY-LS1046A SD Card Boot
 Target-Profile-Packages:  layerscape-fman tfa-ls1046a-frwy-sdboot 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-frwy-sdboot
+
 
 Target-Profile-Description:
 Build firmware images for NXP FRWY-LS1046A SD Card Boot
@@ -128,6 +135,7 @@ Target-Profile-Packages:  layerscape-fman tfa-ls1046a-rdb fmc fmc-eth-config kmo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-rdb
 
+
 Target-Profile-Description:
 Build firmware images for NXP LS1046A-RDB Default
 
@@ -140,6 +148,7 @@ Target-Profile-Name: NXP LS1046A-RDB SD Card Boot
 Target-Profile-Packages:  layerscape-fman tfa-ls1046a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-rdb-sdboot
+
 
 Target-Profile-Description:
 Build firmware images for NXP LS1046A-RDB SD Card Boot
@@ -154,6 +163,7 @@ Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls1088a-rdb restool k
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1088a-rdb
 
+
 Target-Profile-Description:
 Build firmware images for NXP LS1088A-RDB Default
 
@@ -166,6 +176,7 @@ Target-Profile-Name: NXP LS1088A-RDB SD Card Boot
 Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls1088a-rdb-sdboot restool kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1088a-rdb-sdboot
+
 
 Target-Profile-Description:
 Build firmware images for NXP LS1088A-RDB SD Card Boot
@@ -180,6 +191,7 @@ Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls2088a-rdb restool k
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls2088a-rdb
 
+
 Target-Profile-Description:
 Build firmware images for NXP LS2088ARDB
 
@@ -192,6 +204,7 @@ Target-Profile-Name: NXP LX2160A-RDB Rev2.0 silicon
 Target-Profile-Packages:  layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx2160a-rdb restool 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,lx2160a-rdb
+
 
 Target-Profile-Description:
 Build firmware images for NXP LX2160A-RDB Rev2.0 silicon
@@ -206,6 +219,7 @@ Target-Profile-Packages:  layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,lx2160a-rdb-sdboot
 
+
 Target-Profile-Description:
 Build firmware images for NXP LX2160A-RDB Rev2.0 silicon SD Card Boot
 
@@ -218,6 +232,7 @@ Target-Profile-Name: Traverse LS1043 Boards
 Target-Profile-Packages:  layerscape-fman uboot-envtools kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: traverse,ls1043s traverse,ls1043v
+
 
 Target-Profile-Description:
 Build images for Traverse LS1043 boards. This generates a single image capable of booting on any of the boards in this family.
@@ -235,18 +250,19 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for NXP Layerscape ARMv7 based boards.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1021a-twr
 Target-Profile-Name: NXP TWR-LS1021A Default
 Target-Profile-Packages:  layerscape-rcw 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1021a-twr
+
 
 Target-Profile-Description:
 Build firmware images for NXP TWR-LS1021A Default
@@ -261,6 +277,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1021a-twr-sdboot
 
+
 Target-Profile-Description:
 Build firmware images for NXP TWR-LS1021A SD Card Boot
 
@@ -273,6 +290,7 @@ Target-Profile-Name: NXP LS1021A-IoT SD Card Boot
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: 
+
 
 Target-Profile-Description:
 Build firmware images for NXP LS1021A-IoT SD Card Boot

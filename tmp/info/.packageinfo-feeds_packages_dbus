@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/dbus/Makefile
 
 Package: libdbus
-Version: 1.13.12-1
+Version: 1.13.18-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,16 +11,16 @@ Category: Libraries
 Repository: packages
 Title: Simple interprocess messaging system (library)
 Maintainer: 
-Source: dbus-1.13.12.tar.xz
+Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
 Type: ipkg
 Description: Simple interprocess messaging system (library)
-http://dbus.freedesktop.org/
+https://dbus.freedesktop.org/
 
 @@
 
 Package: dbus
-Version: 1.13.12-1
+Version: 1.13.18-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libdbus
 Conflicts: 
 Menu-Depends: 
@@ -30,16 +30,16 @@ Category: Utilities
 Repository: packages
 Title: Simple interprocess messaging system (daemon)
 Maintainer: 
-Source: dbus-1.13.12.tar.xz
+Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
 Type: ipkg
 Description: Simple interprocess messaging system (daemon)
-http://dbus.freedesktop.org/
+https://dbus.freedesktop.org/
 
 @@
 
 Package: dbus-utils
-Version: 1.13.12-1
+Version: 1.13.18-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dbus
 Conflicts: 
 Menu-Depends: 
@@ -49,11 +49,11 @@ Category: Utilities
 Repository: packages
 Title: Simple interprocess messaging system (utilities)
 Maintainer: 
-Source: dbus-1.13.12.tar.xz
+Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
 Type: ipkg
 Description: Simple interprocess messaging system (utilities)
-http://dbus.freedesktop.org/
+https://dbus.freedesktop.org/
 
 @@
 

@@ -3,7 +3,7 @@ Build-Depends: c-ares pcre
 
 Package: shadowsocks-libev-config
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
+Version: 3.3.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -24,8 +24,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: shadowsocks-libev-ss-rules
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables-mod-tproxy +resolveip +shadowsocks-libev-ss-redir
+Version: 3.3.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables-mod-tproxy +resolveip +shadowsocks-libev-ss-redir +shadowsocks-libev-config
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,8 +45,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: shadowsocks-libev-ss-local
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +libpcre
+Version: 3.3.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66,8 +66,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: shadowsocks-libev-ss-redir
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium
+Version: 3.3.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -87,8 +87,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: shadowsocks-libev-ss-tunnel
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium
+Version: 3.3.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,8 +108,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: shadowsocks-libev-ss-server
 Submenu: Web Servers/Proxies
-Version: 3.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +libcares +libpcre
+Version: 3.3.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config +libcares +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 

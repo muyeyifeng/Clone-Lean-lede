@@ -1,5 +1,24 @@
 Source-Makefile: feeds/packages/utils/lm-sensors/Makefile
 
+Package: libsensors
+Version: 3.6.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libsensors
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lm-sensors-3.6.0.tar.gz
+License: GPL-2.0-or-later LGPL-2.1-or-later
+Type: ipkg
+Description:  lm-sensors libraries
+https://hwmon.wiki.kernel.org/lm_sensors
+Jo-Philipp Wich <jo@mein.io>
+@@
+
 Package: lm-sensors
 Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils +libsensors
@@ -34,25 +53,6 @@ Source: lm-sensors-3.6.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 Type: ipkg
 Description:  script to autodetect sensor hardware
-https://hwmon.wiki.kernel.org/lm_sensors
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: libsensors
-Version: 3.6.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: libsensors
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: lm-sensors-3.6.0.tar.gz
-License: GPL-2.0-or-later LGPL-2.1-or-later
-Type: ipkg
-Description:  lm-sensors libraries
 https://hwmon.wiki.kernel.org/lm_sensors
 Jo-Philipp Wich <jo@mein.io>
 @@

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libp11/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: libp11
-Version: 0.4.10-2
+Version: 0.4.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_ENGINE
 Conflicts: engine_pkcs11
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: PKCS
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: libp11-0.4.10.tar.gz
+Source: libp11-0.4.11.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

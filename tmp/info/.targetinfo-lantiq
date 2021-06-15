@@ -8,14 +8,14 @@ Target-Features: dt gpio mips16 squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for Lantiq SoC
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target: lantiq/xrx200
 Target-Board: lantiq
 Target-Name: XRX200
@@ -25,14 +25,14 @@ Target-Features: atm dt gpio mips16 nand pci pcie ramdisk squashfs testing-kerne
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XRX200
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-leds-gpio kmod-gpio-button-hotplug ltq-vdsl-vr9-vectoring-fw-installer kmod-ltq-vdsl-vr9-mei kmod-ltq-vdsl-vr9 kmod-ltq-atm-vr9 kmod-ltq-ptm-vr9 kmod-ltq-deu-vr9 ltq-vdsl-app dsl-vrx200-firmware-xdsl-a dsl-vrx200-firmware-xdsl-b-patch ppp-mod-pppoa swconfig dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd kmod-leds-gpio kmod-gpio-button-hotplug ltq-vdsl-vr9-vectoring-fw-installer kmod-ltq-vdsl-vr9-mei kmod-ltq-vdsl-vr9 kmod-ltq-atm-vr9 kmod-ltq-ptm-vr9 kmod-ltq-deu-vr9 ltq-vdsl-app dsl-vrx200-firmware-xdsl-a dsl-vrx200-firmware-xdsl-b-patch ppp-mod-pppoa swconfig dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -43,9 +43,10 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_tplink_tdw8970
 Target-Profile-Name: TP-Link TD-W8970 v1
-Target-Profile-Packages: kmod-ath9k wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-ath9k wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: tplink,tdw8970 TDW8970
+
 
 Target-Profile-Description:
 Build firmware images for TP-Link TD-W8970 v1
@@ -56,9 +57,10 @@ Build firmware images for TP-Link TD-W8970 v1
 
 Target-Profile: DEVICE_tplink_tdw8980
 Target-Profile-Name: TP-Link TD-W8980 v1
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: tplink,tdw8980 TDW8980
+
 
 Target-Profile-Description:
 Build firmware images for TP-Link TD-W8980 v1
@@ -69,9 +71,10 @@ Build firmware images for TP-Link TD-W8980 v1
 
 Target-Profile: DEVICE_tplink_vr200
 Target-Profile-Name: TP-Link Archer VR200 v1
-Target-Profile-Packages: kmod-mt76x0e wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-mt76x0e wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: tplink,vr200 VR200
+
 
 Target-Profile-Description:
 Build firmware images for TP-Link Archer VR200 v1
@@ -82,9 +85,10 @@ Build firmware images for TP-Link Archer VR200 v1
 
 Target-Profile: DEVICE_tplink_vr200v
 Target-Profile-Name: TP-Link Archer VR200v v1
-Target-Profile-Packages: kmod-mt76x0e wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-mt76x0e wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: tplink,vr200v VR200v
+
 
 Target-Profile-Description:
 Build firmware images for TP-Link Archer VR200v v1
@@ -98,6 +102,7 @@ Target-Profile-Name: BT Openreach ECI VDSL Modem V-2FUb/I (Alpha ASL56026)
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: alphanetworks,asl56026
+
 
 Target-Profile-Description:
 Build firmware images for Alpha ASL56026
@@ -113,6 +118,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: alphanetworks,asl56026
 
+
 Target-Profile-Description:
 Build firmware images for Alpha ASL56026
 Alternative device titles:
@@ -126,6 +132,7 @@ Target-Profile-Name: Orange Livebox 2.1 (Arcadyan ARV7519RW22)
 Target-Profile-Packages: kmod-usb-dwc2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
+
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519RW22
@@ -140,6 +147,7 @@ Target-Profile-Name: Astoria Networks ARV7519RW22 (Arcadyan ARV7519RW22)
 Target-Profile-Packages: kmod-usb-dwc2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
+
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519RW22
@@ -154,6 +162,7 @@ Target-Profile-Name: Arcadyan ARV7519RW22
 Target-Profile-Packages: kmod-usb-dwc2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
+
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519RW22
@@ -169,6 +178,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vg3503j VG3503J
 
+
 Target-Profile-Description:
 Build firmware images for BT Openreach ECI VDSL Modem V-2FUb/R
 
@@ -178,9 +188,10 @@ Build firmware images for BT Openreach ECI VDSL Modem V-2FUb/R
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-brn
 Target-Profile-Name: o2 Box 6431 BRN (Arcadyan VGV7510KW22 BRN)
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: arcadyan,vgv7510kw22-brn VGV7510KW22BRN
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 BRN
@@ -192,9 +203,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-brn
 Target-Profile-Name: Arcadyan VGV7510KW22 BRN
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: arcadyan,vgv7510kw22-brn VGV7510KW22BRN
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 BRN
@@ -206,9 +218,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-nor
 Target-Profile-Name: o2 Box 6431 NOR (Arcadyan VGV7510KW22 NOR)
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vgv7510kw22-nor VGV7510KW22NOR
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 NOR
@@ -220,9 +233,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-nor
 Target-Profile-Name: Arcadyan VGV7510KW22 NOR
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vgv7510kw22-nor VGV7510KW22NOR
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 NOR
@@ -234,9 +248,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7519-brn
 Target-Profile-Name: KPN Experiabox 8 BRN (Arcadyan VGV7519 BRN)
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: arcadyan,vgv7519-brn VGV7519BRN
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7519 BRN
@@ -248,9 +263,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7519-brn
 Target-Profile-Name: Arcadyan VGV7519 BRN
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: arcadyan,vgv7519-brn VGV7519BRN
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7519 BRN
@@ -262,9 +278,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7519-nor
 Target-Profile-Name: KPN Experiabox 8 NOR (Arcadyan VGV7519 NOR)
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vgv7519-nor VGV7519NOR
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7519 NOR
@@ -276,9 +293,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_vgv7519-nor
 Target-Profile-Name: Arcadyan VGV7519 NOR
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vgv7519-nor VGV7519NOR
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan VGV7519 NOR
@@ -290,9 +308,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_avm_fritz3370-rev2-hynix
 Target-Profile-Name: AVM FRITZ!Box 3370 Rev. 2 (Hynix NAND)
-Target-Profile-Packages: kmod-ath9k wpad-basic kmod-usb-dwc2 fritz-tffs iwinfo
+Target-Profile-Packages: kmod-ath9k wpad-basic-wolfssl kmod-usb-dwc2 fritz-tffs iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz3370-rev2-hynix
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 3370 Rev. 2 (Hynix NAND)
@@ -303,9 +322,10 @@ Build firmware images for AVM FRITZ!Box 3370 Rev. 2 (Hynix NAND)
 
 Target-Profile: DEVICE_avm_fritz3370-rev2-micron
 Target-Profile-Name: AVM FRITZ!Box 3370 Rev. 2 (Micron NAND)
-Target-Profile-Packages: kmod-ath9k wpad-basic kmod-usb-dwc2 fritz-tffs iwinfo
+Target-Profile-Packages: kmod-ath9k wpad-basic-wolfssl kmod-usb-dwc2 fritz-tffs iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz3370-rev2-micron
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 3370 Rev. 2 (Micron NAND)
@@ -320,6 +340,7 @@ Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz3390
 
+
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 3390
 
@@ -329,9 +350,10 @@ Build firmware images for AVM FRITZ!Box 3390
 
 Target-Profile: DEVICE_avm_fritz7360sl
 Target-Profile-Name: AVM FRITZ!Box 7360 SL
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-usb-dwc2 iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7360sl FRITZ7360SL
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7360 SL
@@ -340,11 +362,26 @@ Build firmware images for AVM FRITZ!Box 7360 SL
 
 @@
 
+Target-Profile: DEVICE_avm_fritz7360-v2
+Target-Profile-Name: AVM FRITZ!Box 7360 v2
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: avm,fritz7360-v2
+
+
+Target-Profile-Description:
+Build firmware images for AVM FRITZ!Box 7360 v2
+
+
+
+@@
+
 Target-Profile: DEVICE_avm_fritz7362sl
 Target-Profile-Name: AVM FRITZ!Box 7362 SL
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-usb-dwc2 fritz-tffs iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 fritz-tffs iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7362sl
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7362 SL
@@ -355,9 +392,10 @@ Build firmware images for AVM FRITZ!Box 7362 SL
 
 Target-Profile: DEVICE_avm_fritz7412
 Target-Profile-Name: AVM FRITZ!Box 7412
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic fritz-tffs-nand fritz-caldata iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl fritz-tffs-nand fritz-caldata iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7412
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7412
@@ -372,6 +410,7 @@ Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl fritz-tff
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7430
 
+
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7430
 
@@ -381,9 +420,10 @@ Build firmware images for AVM FRITZ!Box 7430
 
 Target-Profile: DEVICE_bt_homehub-v5a
 Target-Profile-Name: British Telecom Home Hub 5 Type A
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader kmod-ath10k-ct ath10k-firmware-qca988x-ct wpad-basic kmod-usb-dwc2 iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader kmod-ath10k-ct ath10k-firmware-qca988x-ct wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bt,homehub-v5a BTHOMEHUBV5A
+
 
 Target-Profile-Description:
 Build firmware images for British Telecom Home Hub 5 Type A
@@ -394,9 +434,10 @@ Build firmware images for British Telecom Home Hub 5 Type A
 
 Target-Profile: DEVICE_buffalo_wbmr-300hpd
 Target-Profile-Name: Buffalo WBMR-300HPD
-Target-Profile-Packages: kmod-mt7603 wpad-basic kmod-usb-dwc2 iwinfo
+Target-Profile-Packages: kmod-mt7603 wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,wbmr-300hpd WBMR300
+
 
 Target-Profile-Description:
 Build firmware images for Buffalo WBMR-300HPD
@@ -407,9 +448,10 @@ Build firmware images for Buffalo WBMR-300HPD
 
 Target-Profile: DEVICE_lantiq_easy80920-nand
 Target-Profile-Name: Lantiq VR9 EASY80920 NAND
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy80920-nand
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq VR9 EASY80920 NAND
@@ -420,9 +462,10 @@ Build firmware images for Lantiq VR9 EASY80920 NAND
 
 Target-Profile: DEVICE_lantiq_easy80920-nor
 Target-Profile-Name: Lantiq VR9 EASY80920 NOR
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy80920-nor
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq VR9 EASY80920 NOR
@@ -437,6 +480,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dm200
 
+
 Target-Profile-Description:
 Build firmware images for NETGEAR DM200
 
@@ -446,9 +490,10 @@ Build firmware images for NETGEAR DM200
 
 Target-Profile: DEVICE_zyxel_p-2812hnu-f1
 Target-Profile-Name: ZyXEL P-2812HNU F1
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,p-2812hnu-f1 P2812HNUF1
+
 
 Target-Profile-Description:
 Build firmware images for ZyXEL P-2812HNU F1
@@ -459,9 +504,10 @@ Build firmware images for ZyXEL P-2812HNU F1
 
 Target-Profile: DEVICE_zyxel_p-2812hnu-f3
 Target-Profile-Name: ZyXEL P-2812HNU F3
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-usb-dwc2 iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,p-2812hnu-f3 P2812HNUF3
+
 
 Target-Profile-Description:
 Build firmware images for ZyXEL P-2812HNU F3
@@ -479,14 +525,14 @@ Target-Features: atm dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XWAY
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -497,9 +543,10 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_arcadyan_arv4510pw
 Target-Profile-Name: Wippies BeWan iBox v1.0 (Arcadyan ARV4510PW)
-Target-Profile-Packages: kmod-usb-ledtrig-usbport kmod-usb2-pci kmod-usb-uhci kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci kmod-ath5k wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-ledtrig-usbport kmod-usb2-pci kmod-usb-uhci kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci kmod-ath5k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4510pw ARV4510PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4510PW
@@ -511,9 +558,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv4510pw
 Target-Profile-Name: Arcadyan ARV4510PW
-Target-Profile-Packages: kmod-usb-ledtrig-usbport kmod-usb2-pci kmod-usb-uhci kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci kmod-ath5k wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-ledtrig-usbport kmod-usb2-pci kmod-usb-uhci kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci kmod-ath5k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4510pw ARV4510PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4510PW
@@ -529,6 +577,7 @@ Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-da
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
@@ -543,6 +592,7 @@ Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-da
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
@@ -557,6 +607,7 @@ Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-da
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
@@ -567,9 +618,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7506pw11
 Target-Profile-Name: Alice/O2 IAD 4421 (Arcadyan ARV7506PW11)
-Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7506pw11 ARV7506PW11
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7506PW11
@@ -581,9 +633,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7506pw11
 Target-Profile-Name: Arcadyan ARV7506PW11
-Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7506pw11 ARV7506PW11
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7506PW11
@@ -595,9 +648,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7510pw22
 Target-Profile-Name: Astoria Networks ARV7510PW22 (Arcadyan ARV7510PW22)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic kmod-usb-uhci kmod-usb2 kmod-usb2-pci iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-uhci kmod-usb2 kmod-usb2-pci iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7510pw22 ARV7510PW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7510PW22
@@ -609,9 +663,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7510pw22
 Target-Profile-Name: Arcadyan ARV7510PW22
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic kmod-usb-uhci kmod-usb2 kmod-usb2-pci iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-uhci kmod-usb2 kmod-usb2-pci iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7510pw22 ARV7510PW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7510PW22
@@ -623,9 +678,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7518pw
 Target-Profile-Name: Astoria Networks ARV7518PW (Arcadyan ARV7518PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7518pw ARV7518PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7518PW
@@ -637,9 +693,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7518pw
 Target-Profile-Name: Arcadyan ARV7518PW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7518pw ARV7518PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7518PW
@@ -651,9 +708,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7519pw
 Target-Profile-Name: Astoria Networks ARV7519PW (Arcadyan ARV7519PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519pw ARV7519PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519PW
@@ -665,9 +723,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7519pw
 Target-Profile-Name: Arcadyan ARV7519PW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519pw ARV7519PW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519PW
@@ -679,10 +738,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7525pw
 Target-Profile-Name: Telekom Speedport W303V Typ A (Arcadyan ARV7525PW)
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7525pw ARV4510PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7525PW
 Alternative device titles:
@@ -693,10 +753,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv7525pw
 Target-Profile-Name: Arcadyan ARV7525PW
-Target-Profile-Packages: kmod-rt2800-pci wpad-basic kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
+Target-Profile-Packages: kmod-rt2800-pci wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7525pw ARV4510PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV7525PW
 Alternative device titles:
@@ -707,9 +768,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv752dpw
 Target-Profile-Name: Vodafone Easybox 802 (Arcadyan ARV752DPW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv752dpw ARV752DPW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW
@@ -721,9 +783,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv752dpw
 Target-Profile-Name: Arcadyan ARV752DPW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv752dpw ARV752DPW
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW
@@ -735,9 +798,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv752dpw22
 Target-Profile-Name: Vodafone Easybox 803 (Arcadyan ARV752DPW22)
-Target-Profile-Packages: kmod-usb2-pci kmod-usb-uhci kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb2-pci kmod-usb-uhci kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv752dpw22 ARV752DPW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW22
@@ -749,9 +813,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv752dpw22
 Target-Profile-Name: Arcadyan ARV752DPW22
-Target-Profile-Packages: kmod-usb2-pci kmod-usb-uhci kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb2-pci kmod-usb-uhci kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ltq-tapi kmod-ltq-vmmc kmod-rt2800-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv752dpw22 ARV752DPW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW22
@@ -763,9 +828,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv8539pw22
 Target-Profile-Name: Telekom Speedport W504V Typ A (Arcadyan ARV8539PW22)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv8539pw22 ARV8539PW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV8539PW22
@@ -777,9 +843,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv8539pw22
 Target-Profile-Name: Arcadyan ARV8539PW22
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv8539pw22 ARV8539PW22
+
 
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV8539PW22
@@ -791,9 +858,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_audiocodes_mp-252
 Target-Profile-Name: AudioCodes MediaPack MP-252
-Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube kmod-ltq-tapi kmod-ltq-vmmc kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-rt2800-pci ltq-adsl-app ppp-mod-pppoa wpad-basic iwinfo
+Target-Profile-Packages: kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube kmod-ltq-tapi kmod-ltq-vmmc kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-rt2800-pci ltq-adsl-app ppp-mod-pppoa wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: audiocodes,mp-252 ACMP252
+
 
 Target-Profile-Description:
 Build firmware images for AudioCodes MediaPack MP-252
@@ -804,9 +872,10 @@ Build firmware images for AudioCodes MediaPack MP-252
 
 Target-Profile: DEVICE_bt_homehub-v2b
 Target-Profile-Name: British Telecom Home Hub 2 Type B
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube kmod-ltq-deu-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube kmod-ltq-deu-danube ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bt,homehub-v2b BTHOMEHUBV2B
+
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for British Telecom Home Hub 2 Type B
@@ -821,6 +890,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy50712
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Lantiq Danube (EASY50712)
 
@@ -830,9 +900,10 @@ Build firmware images for Lantiq Danube (EASY50712)
 
 Target-Profile: DEVICE_siemens_gigaset-sx76x
 Target-Profile-Name: Siemens Gigaset sx76x
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoe kmod-ath5k wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoe kmod-ath5k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: siemens,gigaset-sx76x GIGASX76X
+
 
 Target-Profile-Description:
 Build firmware images for Siemens Gigaset sx76x
@@ -843,9 +914,10 @@ Build firmware images for Siemens Gigaset sx76x
 
 Target-Profile: DEVICE_avm_fritz7312
 Target-Profile-Name: AVM FRITZ!Box 7312
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 -swconfig iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7312
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7312
@@ -856,9 +928,10 @@ Build firmware images for AVM FRITZ!Box 7312
 
 Target-Profile: DEVICE_avm_fritz7320
 Target-Profile-Name: 1&1 HomeServer (AVM FRITZ!Box 7320)
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 kmod-usb-dwc2 -swconfig iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 kmod-usb-dwc2 -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7320 FRITZ7320
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7320
@@ -870,9 +943,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_avm_fritz7320
 Target-Profile-Name: AVM FRITZ!Box 7320
-Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 kmod-usb-dwc2 -swconfig iwinfo
+Target-Profile-Packages: kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 kmod-usb-dwc2 -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritz7320 FRITZ7320
+
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7320
@@ -884,9 +958,10 @@ Alternative device titles:
 
 Target-Profile: DEVICE_bt_homehub-v3a
 Target-Profile-Name: British Telecom Home Hub 3 Type A
-Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 kmod-ltq-deu-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic uboot-envtools iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 kmod-ltq-deu-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl uboot-envtools iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bt,homehub-v3a BTHOMEHUBV3A
+
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for British Telecom Home Hub 3 Type A
@@ -897,9 +972,10 @@ Build firmware images for British Telecom Home Hub 3 Type A
 
 Target-Profile: DEVICE_buffalo_wbmr-hp-g300h-a
 Target-Profile-Name: Buffalo WBMR-HP-G300H A
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: WBMR buffalo,wbmr-hp-g300h
+
 
 Target-Profile-Description:
 Build firmware images for Buffalo WBMR-HP-G300H A
@@ -910,9 +986,10 @@ Build firmware images for Buffalo WBMR-HP-G300H A
 
 Target-Profile: DEVICE_buffalo_wbmr-hp-g300h-b
 Target-Profile-Name: Buffalo WBMR-HP-G300H B
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ath9k kmod-owl-loader wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: WBMR buffalo,wbmr-hp-g300h
+
 
 Target-Profile-Description:
 Build firmware images for Buffalo WBMR-HP-G300H B
@@ -923,9 +1000,10 @@ Build firmware images for Buffalo WBMR-HP-G300H B
 
 Target-Profile: DEVICE_netgear_dgn3500
 Target-Profile-Name: NETGEAR DGN3500
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath9k kmod-owl-loader wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-a kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgn3500 DGN3500
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR DGN3500
@@ -936,9 +1014,10 @@ Build firmware images for NETGEAR DGN3500
 
 Target-Profile: DEVICE_netgear_dgn3500b
 Target-Profile-Name: NETGEAR DGN3500B
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath9k kmod-owl-loader wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath9k kmod-owl-loader wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoa kmod-ltq-deu-ar9 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgn3500b DGN3500B
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR DGN3500B
@@ -949,9 +1028,10 @@ Build firmware images for NETGEAR DGN3500B
 
 Target-Profile: DEVICE_zte_h201l
 Target-Profile-Name: ZTE H201L
-Target-Profile-Packages: kmod-ath9k-htc wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoe kmod-ltq-deu-ar9 kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-tapi kmod-ltq-vmmc iwinfo
+Target-Profile-Packages: kmod-ath9k-htc wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoe kmod-ltq-deu-ar9 kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-tapi kmod-ltq-vmmc iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zte,h201l H201L
+
 
 Target-Profile-Description:
 Build firmware images for ZTE H201L
@@ -962,9 +1042,10 @@ Build firmware images for ZTE H201L
 
 Target-Profile: DEVICE_zyxel_p-2601hn
 Target-Profile-Name: ZyXEL P-2601HN F1/F3
-Target-Profile-Packages: kmod-rt2800-usb wpad-basic kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoe kmod-ltq-deu-ar9 kmod-usb-dwc2 iwinfo
+Target-Profile-Packages: kmod-rt2800-usb wpad-basic-wolfssl kmod-ltq-adsl-ar9-mei kmod-ltq-adsl-ar9 kmod-ltq-adsl-ar9-fw-b kmod-ltq-atm-ar9 ltq-adsl-app ppp-mod-pppoe kmod-ltq-deu-ar9 kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,p-2601hn P2601HNFX
+
 
 Target-Profile-Description:
 Build firmware images for ZyXEL P-2601HN F1/F3
@@ -982,14 +1063,14 @@ Target-Features: atm dt gpio mips16 pci ramdisk small_flash squashfs testing-ker
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XWAY Legacy for old boards with small flash
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -1000,10 +1081,11 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_arcadyan_arv4518pwr01
 Target-Profile-Name: Arcadyan ARV4518PWR01
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath5k wpad-mini iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath5k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4518pwr01 ARV4518PWR01
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4518PWR01
 
@@ -1013,10 +1095,11 @@ Build firmware images for Arcadyan ARV4518PWR01
 
 Target-Profile: DEVICE_arcadyan_arv4518pwr01a
 Target-Profile-Name: Arcadyan ARV4518PWR01A
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath5k wpad-basic iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-ath5k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4518pwr01a ARV4518PWR01A
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4518PWR01A
 
@@ -1026,10 +1109,11 @@ Build firmware images for Arcadyan ARV4518PWR01A
 
 Target-Profile: DEVICE_arcadyan_arv4520pw
 Target-Profile-Name: Vodafone Easybox 800 (Arcadyan ARV4520PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-mini iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4520pw ARV4520PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4520PW
 Alternative device titles:
@@ -1040,10 +1124,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv4520pw
 Target-Profile-Name: Airties WAV-281 (Arcadyan ARV4520PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-mini iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4520pw ARV4520PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4520PW
 Alternative device titles:
@@ -1054,10 +1139,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv4520pw
 Target-Profile-Name: Arcadyan ARV4520PW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-mini iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa kmod-rt61-pci wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4520pw ARV4520PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4520PW
 Alternative device titles:
@@ -1068,10 +1154,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv4525pw
 Target-Profile-Name: Telekom Speedport W502V Typ A (Arcadyan ARV4525PW)
-Target-Profile-Packages: kmod-ath5k wpad-mini kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
+Target-Profile-Packages: kmod-ath5k wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4525pw ARV4525PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4525PW
 Alternative device titles:
@@ -1082,10 +1169,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv4525pw
 Target-Profile-Name: Arcadyan ARV4525PW
-Target-Profile-Packages: kmod-ath5k wpad-mini kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
+Target-Profile-Packages: kmod-ath5k wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa -swconfig iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4525pw ARV4525PW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4525PW
 Alternative device titles:
@@ -1096,10 +1184,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv452cqw
 Target-Profile-Name: Vodafone Easybox 801 (Arcadyan ARV452CQW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath5k wpad-mini kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath5k wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv452cqw ARV452CQW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV452CQW
 Alternative device titles:
@@ -1110,10 +1199,11 @@ Alternative device titles:
 
 Target-Profile: DEVICE_arcadyan_arv452cqw
 Target-Profile-Name: Arcadyan ARV452CQW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath5k wpad-mini kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa iwinfo
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ath5k wpad-basic-wolfssl kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-b kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv452cqw ARV452CQW
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV452CQW
 Alternative device titles:
@@ -1131,14 +1221,14 @@ Target-Features: dt gpio mips16 nand source-only squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq Falcon
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-leds-gpio kmod-gpio-button-hotplug dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd kmod-leds-gpio kmod-gpio-button-hotplug dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -1153,6 +1243,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy88388
 
+
 Target-Profile-Description:
 Build firmware images for Lantiq EASY88388 Falcon FTTDP8 Reference Board
 
@@ -1165,6 +1256,7 @@ Target-Profile-Name: Lantiq EASY88444 Falcon FTTdp G.FAST Reference Board
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy88444
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq EASY88444 Falcon FTTdp G.FAST Reference Board
@@ -1179,6 +1271,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98020
 
+
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFU Reference Board (EASY98020) v1.0-v1.7
 
@@ -1191,6 +1284,7 @@ Target-Profile-Name: Lantiq Falcon SFU Reference Board (EASY98020) v1.8
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98020-v18
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFU Reference Board (EASY98020) v1.8
@@ -1205,6 +1299,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98021
 
+
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon HGU Reference Board (EASY98021)
 
@@ -1217,6 +1312,7 @@ Target-Profile-Name: Lantiq Falcon SFP Stick (EASY98035SYNCE) with Synchronous E
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98035synce
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFP Stick (EASY98035SYNCE) with Synchronous Ethernet
@@ -1231,6 +1327,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98035synce1588
 
+
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFP Stick (EASY98035SYNCE1588) with SyncE and IEEE1588
 
@@ -1244,6 +1341,7 @@ Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-nand
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Lantiq EASY98000 Falcon Eval Board NAND
 
@@ -1257,6 +1355,7 @@ Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-nor
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Lantiq EASY98000 Falcon Eval Board NOR
 
@@ -1269,6 +1368,7 @@ Target-Profile-Name: Lantiq EASY98000 Falcon Eval Board SFLASH
 Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-sflash
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq EASY98000 Falcon Eval Board SFLASH
@@ -1283,6 +1383,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,falcon-mdu
 
+
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon / VINAXdp MDU Board
 
@@ -1295,6 +1396,7 @@ Target-Profile-Name: Lantiq Falcon SFP Stick
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,falcon-sfp
+
 
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFP Stick
@@ -1312,14 +1414,14 @@ Target-Features: atm dt gpio mips16 small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq Amazon-SE Boards
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd kmod-leds-gpio kmod-gpio-button-hotplug kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe dnsmasq-full iptables ppp ppp-mod-pppoe firewall 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd kmod-leds-gpio kmod-gpio-button-hotplug kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -1334,6 +1436,7 @@ Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-a
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: allnet,all0333cj
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Allnet ALL0333CJ
 
@@ -1347,6 +1450,7 @@ Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-a
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgn1000b DGN1000B
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for NETGEAR DGN1000B
 

@@ -1,10 +1,11 @@
 Source-Makefile: feeds/packages/net/fastd/Makefile
-Build-Depends: nacl
+Build-Depends: meson/host nacl ninja/host
+Build-Depends/host: ninja/host
 
 Package: fastd
 Submenu: VPN
-Version: 19-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +librt +libpthread +libuecc +FASTD_WITH_STATUS_SOCKET:libjson-c +FASTD_WITH_CAPABILITIES:libcap
+Version: 21
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +libpthread +libuecc +FASTD_WITH_STATUS_SOCKET:libjson-c +FASTD_WITH_CAPABILITIES:libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +14,7 @@ Category: Network
 Repository: base
 Title: Fast and Secure Tunneling Daemon
 Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
-Source: fastd-19.tar.xz
+Source: fastd-21.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYRIGHT
 Type: ipkg

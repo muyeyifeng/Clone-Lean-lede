@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/linknx/Makefile
 Build-Depends: USE_UCLIBC:argp-standalone USE_MUSL:argp-standalone !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: linknx
-Version: 0.0.1.38-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pthsem +lua +luac +libcurl +libesmtp +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +BUILD_NLS:libiconv-full
+Version: 0.0.1.38-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pthsem +lua +luac +libcurl +libesmtp +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

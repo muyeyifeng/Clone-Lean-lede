@@ -3,8 +3,8 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.3.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +kmod-crypto-user
+Version: 2.3.5-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.3.3.tar.xz
+Source: cryptsetup-2.3.5.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg

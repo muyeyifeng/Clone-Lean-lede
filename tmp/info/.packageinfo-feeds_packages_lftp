@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/lftp/Makefile
 
 Package: lftp
 Submenu: File Transfer
-Version: 4.9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libopenssl +libreadline +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libexpat +zlib
+Version: 4.9.2-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libopenssl +libreadline +libstdcpp +libexpat +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: packages
 Title: a sophisticated file transfer program with command line interface.
 Maintainer: Federico Di Marco <fededim@gmail.com>
-Source: lftp-4.9.1.tar.xz
+Source: lftp-4.9.2.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

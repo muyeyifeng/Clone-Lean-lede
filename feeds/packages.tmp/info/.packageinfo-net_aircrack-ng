@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/aircrack-ng/Makefile
 
 Package: aircrack-ng
 Submenu: Wireless
-Version: 1.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +AIRCRACK_NG_HWLOC:libhwloc +libpcap +libpcre +libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +AIRCRACK_NG_OPENSSL:libopenssl +AIRCRACK_NG_GCRYPT:libgcrypt +AIRCRACK_NG_SQLITE3:libsqlite3 +libnl-core +libnl-genl +zlib
+Version: 1.6-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +AIRCRACK_NG_HWLOC:libhwloc +libpcap +libpcre +libpthread +libstdcpp +AIRCRACK_NG_OPENSSL:libopenssl +AIRCRACK_NG_GCRYPT:libgcrypt +AIRCRACK_NG_SQLITE3:libsqlite3 +libnl-core +libnl-genl +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 
 Package: airmon-ng
 Submenu: Wireless
-Version: 1.6-1
+Version: 1.6-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wireless-tools +ethtool +procps-ng +CONFIG_PCI_SUPPORT:pciutils +CONFIG_USB_SUPPORT:usbutils
 Conflicts: 
 Menu-Depends: 

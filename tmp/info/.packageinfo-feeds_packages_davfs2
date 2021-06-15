@@ -1,10 +1,9 @@
 Source-Makefile: package/feeds/packages/davfs2/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: davfs2
 Submenu: Filesystem
-Version: 1.5.5-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libneon +kmod-fuse +libfuse +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Version: 1.6.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libneon +kmod-fuse +libfuse
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,8 +12,8 @@ Category: Network
 Repository: packages
 Title: Mount a WebDAV resource as a regular file system.
 Maintainer: Federico Di Marco <fededim@gmail.com>
-Source: davfs2-1.5.5.tar.gz
-License: GPL-3
+Source: davfs2-1.6.0.tar.gz
+License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Web Distributed Authoring and Versioning (WebDAV), an extension to the HTTP-protocol,

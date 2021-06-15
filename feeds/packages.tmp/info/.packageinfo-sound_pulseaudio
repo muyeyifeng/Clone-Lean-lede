@@ -3,7 +3,7 @@ Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
 Build-Depends/host: ninja/host
 
 Package: pulseaudio-daemon
-Version: 13.0-4
+Version: 14.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Repository: base
 Title: Network sound server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: pulse=51:pulse=51
-Source: pulseaudio-13.0.tar.xz
+Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-daemon-avahi
-Version: 13.0-4
+Version: 14.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +dbus +libavahi-client +sbc
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Repository: base
 Title: Network sound server (avahi/bluez)
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: pulse=51:pulse=51
-Source: pulseaudio-13.0.tar.xz
+Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
@@ -48,7 +48,7 @@ Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-tools
-Version: 13.0-4
+Version: 14.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile pulseaudio
 Conflicts: 
 Menu-Depends: 
@@ -59,7 +59,7 @@ Category: Sound
 Repository: base
 Title: Tools for Pulseaudio
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: pulseaudio-13.0.tar.xz
+Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
@@ -69,7 +69,7 @@ Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-profiles
-Version: 13.0-4
+Version: 14.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread pulseaudio
 Conflicts: 
 Menu-Depends: 
@@ -79,7 +79,7 @@ Category: Sound
 Repository: base
 Title: Profiles for Pulseaudio
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: pulseaudio-13.0.tar.xz
+Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg

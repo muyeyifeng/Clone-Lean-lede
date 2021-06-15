@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libarchive/Makefile
 
 Package: libarchive
-Version: 3.4.3-1
+Version: 3.5.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +liblzma +libbz2 +libexpat +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Multi-format archive and compression library
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.4.3.tar.xz
+Source: libarchive-3.5.1.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -21,7 +21,7 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 @@
 
 Package: libarchive-noopenssl
-Version: 3.4.3-1
+Version: 3.5.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +liblzma +libbz2 +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Libraries
 Repository: base
 Title: Multi-format archive and compression library (without OpenSSL dependency)
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.4.3.tar.xz
+Source: libarchive-3.5.1.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -43,7 +43,7 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 
 Package: bsdtar
 Submenu: Compression
-Version: 3.4.3-1
+Version: 3.5.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libarchive
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Category: Utilities
 Repository: base
 Title: tar BSD variant
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.4.3.tar.xz
+Source: libarchive-3.5.1.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -67,7 +67,7 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 
 Package: bsdtar-noopenssl
 Submenu: Compression
-Version: 3.4.3-1
+Version: 3.5.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libarchive-noopenssl
 Conflicts: 
 Menu-Depends: 
@@ -78,7 +78,7 @@ Category: Utilities
 Repository: base
 Title: tar BSD variant (without OpenSSL dependency)
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.4.3.tar.xz
+Source: libarchive-3.5.1.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg

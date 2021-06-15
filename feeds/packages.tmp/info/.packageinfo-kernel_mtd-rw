@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/kernel/mtd-rw/Makefile
 
 Package: kmod-mtd-rw
 Submenu: Other modules
-Version: <LINUX_VERSION>+git-20160214-1
-Depends: 
+Version: <LINUX_VERSION>+git-20160214-2
+Depends: @!(TARGET_x86||TARGET_bcm27xx||TARGET_octeontx)
 Conflicts: 
 Menu-Depends: 
 Provides: 

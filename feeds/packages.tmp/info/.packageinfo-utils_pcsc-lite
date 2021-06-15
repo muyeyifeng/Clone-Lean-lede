@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/pcsc-lite/Makefile
 
 Package: libpcsclite
-Version: 1.9.0-1
+Version: 1.9.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Access a smart card using SCard API (PC/SC) (library)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: pcsc-lite-1.9.0.tar.bz2
+Source: pcsc-lite-1.9.1.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: pcscd
-Version: 1.9.0-1
+Version: 1.9.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcsclite
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Utilities
 Repository: base
 Title: Access a smart card using SCard API (PC/SC) (daemon)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: pcsc-lite-1.9.0.tar.bz2
+Source: pcsc-lite-1.9.1.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg

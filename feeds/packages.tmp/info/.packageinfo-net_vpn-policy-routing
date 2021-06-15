@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/vpn-policy-routing/Makefile
 
 Package: vpn-policy-routing
-Version: 0.2.1-13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset +iptables +resolveip +kmod-ipt-ipset +iptables-mod-ipopt +!BUSYBOX_CONFIG_IP:ip-full
+Version: 0.3.2-20
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +ipset +iptables +resolveip +kmod-ipt-ipset +iptables-mod-ipopt +ip-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16,6 +16,7 @@ License: GPL-3.0-or-later
 Type: ipkg
 Description: This service allows policy-based routing for L2TP, Openconnect, OpenVPN, PPTP and Wireguard tunnels and WAN interface.
 Policies can specify domains, local IPs/subnets and ports, as well as remote IPs/subnets and ports.
+https://docs.openwrt.melmac.net/vpn-policy-routing/
 Stan Grishin <stangri@melmac.net>
 @@
 

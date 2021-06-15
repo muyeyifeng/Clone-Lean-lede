@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/ntpd/Makefile
 
 Package: ntpd
 Submenu: Time Synchronization
-Version: 4.2.8p13-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads +ntp-utils
+Version: 4.2.8p15-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +ntp-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Repository: base
 Title: ISC ntp server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: ntp=123:ntp=123
-Source: ntp-4.2.8p13.tar.gz
+Source: ntp-4.2.8p15.tar.gz
 License: Unique
 LicenseFiles: COPYRIGHT html/copyright.html
 Type: ipkg
@@ -28,8 +28,8 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntpdate
 Submenu: Time Synchronization
-Version: 4.2.8p13-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads
+Version: 4.2.8p15-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: ISC ntp date
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p13.tar.gz
+Source: ntp-4.2.8p15.tar.gz
 License: Unique
 LicenseFiles: COPYRIGHT html/copyright.html
 Type: ipkg
@@ -53,7 +53,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntp-utils
 Submenu: Time Synchronization
-Version: 4.2.8p13-4
+Version: 4.2.8p15-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
@@ -63,7 +63,7 @@ Category: Network
 Repository: base
 Title: ISC ntp utilities
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p13.tar.gz
+Source: ntp-4.2.8p15.tar.gz
 License: Unique
 LicenseFiles: COPYRIGHT html/copyright.html
 Type: ipkg
@@ -71,15 +71,15 @@ Description:  The ISC ntp suite is a collection of tools used to synchronize the
  system clock with remote NTP time servers and run/monitor local NTP
  servers.
  .
- This package contains ntpdc, ntpq and ntptime.
+ This package contains ntpdc, ntpq, ntptime and sntp.
 http://www.ntp.org/
 Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: ntp-keygen
 Submenu: Time Synchronization
-Version: 4.2.8p13-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads
+Version: 4.2.8p15-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -88,7 +88,7 @@ Category: Network
 Repository: base
 Title: ISC ntp keygen
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p13.tar.gz
+Source: ntp-4.2.8p15.tar.gz
 License: Unique
 LicenseFiles: COPYRIGHT html/copyright.html
 Type: ipkg

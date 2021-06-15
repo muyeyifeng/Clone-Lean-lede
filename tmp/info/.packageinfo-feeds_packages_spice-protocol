@@ -3,7 +3,7 @@ Build-Depends: meson/host ninja/host
 Build-Depends/host: ninja/host
 
 Package: spice-protocol
-Version: 0.14.2-1
+Version: 0.14.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,10 +13,11 @@ Category: Libraries
 Repository: packages
 Title: SPICE - headers defining protocols
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: spice-protocol-0.14.2.tar.xz
+Source: spice-protocol-0.14.3.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
+Build-Only: 1
 Description: SPICE - headers defining protocols
 https://www.spice-space.org/index.html
 Yousong Zhou <yszhou4tech@gmail.com>

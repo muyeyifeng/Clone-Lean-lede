@@ -1,7 +1,7 @@
 Source-Makefile: package/system/ubox/Makefile
 
 Package: ubox
-Version: 2019-12-31-0e34af143373126fc62b43612233a158694ec643-4
+Version: 2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +ubusd +ubus +libubus +libuci
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt system helper toolbox
 Maintainer: John Crispin <john@phrozen.org>
-Source: ubox-2019-12-31-0e34af143373126fc62b43612233a158694ec643.tar.xz
+Source: ubox-2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system helper toolbox
@@ -19,7 +19,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: getrandom
-Version: 2019-12-31-0e34af143373126fc62b43612233a158694ec643-4
+Version: 2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt getrandom system helper
 Maintainer: John Crispin <john@phrozen.org>
-Source: ubox-2019-12-31-0e34af143373126fc62b43612233a158694ec643.tar.xz
+Source: ubox-2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt getrandom system helper
@@ -37,7 +37,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: logd
-Version: 2019-12-31-0e34af143373126fc62b43612233a158694ec643-4
+Version: 2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libubus +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,8 @@ Category: Base system
 Repository: base
 Title: OpenWrt system log implementation
 Maintainer: John Crispin <john@phrozen.org>
-Source: ubox-2019-12-31-0e34af143373126fc62b43612233a158694ec643.tar.xz
+Require-User: logd=514:logd=514
+Source: ubox-2020-10-25-9ef886819dd48303d8ced4cdbc9afbf32682535c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system log implementation

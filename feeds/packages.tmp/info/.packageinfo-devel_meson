@@ -1,9 +1,9 @@
 Source-Makefile: feeds/packages/devel/meson/Makefile
-Build-Depends/host: ninja/host python3/host
+Build-Depends/host: ninja/host
 Build-Types: host
 
 Package: meson
-Version: 0.54.3-1
+Version: 0.57.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ninja +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Development
 Repository: base
 Title: meson
 Maintainer: Andre Heider <a.heider@gmail.com>
-Source: meson-0.54.3.tar.gz
+Source: meson-0.57.2.tar.gz
 License: Apache-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +23,7 @@ Andre Heider <a.heider@gmail.com>
 @@
 
 Package: meson-src
-Version: 0.54.3-1
+Version: 0.57.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Development
 Repository: base
 Title: meson (sources)
 Maintainer: Andre Heider <a.heider@gmail.com>
-Source: meson-0.54.3.tar.gz
+Source: meson-0.57.2.tar.gz
 License: Apache-2.0
 LicenseFiles: COPYING
 Type: ipkg

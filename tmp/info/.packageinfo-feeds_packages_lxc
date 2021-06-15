@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/lxc/Makefile
 
 Package: lxc
 Menu: 1
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: packages
 Title: LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description:  LXC is the userspace control package for Linux Containers, a lightweight
@@ -25,7 +25,7 @@ Config:
 @@
 
 Package: lxc-common
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Utilities
 Repository: packages
 Title: LXC common files
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC common files
@@ -44,7 +44,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-hooks
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
 Conflicts: 
 Menu-Depends: 
@@ -54,7 +54,7 @@ Category: Utilities
 Repository: packages
 Title: LXC virtual machine hooks
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC virtual machine hooks
@@ -63,7 +63,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-configs
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
 Conflicts: 
 Menu-Depends: 
@@ -73,7 +73,7 @@ Category: Utilities
 Repository: packages
 Title: LXC virtual machine common config files
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC virtual machine common config files
@@ -82,7 +82,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-templates
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
 Conflicts: 
 Menu-Depends: 
@@ -92,7 +92,7 @@ Category: Utilities
 Repository: packages
 Title: LXC virtual machine templates
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC virtual machine templates
@@ -101,7 +101,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: liblxc
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +libcap +libpthread +LXC_SECCOMP:libseccomp +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -111,7 +111,7 @@ Category: Libraries
 Repository: packages
 Title: LXC userspace library
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC userspace library
@@ -120,7 +120,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-init
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -130,7 +130,7 @@ Category: Utilities
 Repository: packages
 Title: LXC Lua bindings
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: LXC Lua bindings
@@ -139,7 +139,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-auto
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-start +lxc-stop
 Conflicts: 
 Menu-Depends: 
@@ -149,7 +149,7 @@ Category: Utilities
 Repository: packages
 Title: (initscript)
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description:  LXC is the userspace control package for Linux Containers, a lightweight
@@ -161,7 +161,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-unprivileged
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +shadow-utils +shadow-newuidmap +shadow-newgidmap
 Conflicts: 
 Menu-Depends: 
@@ -171,7 +171,7 @@ Category: Utilities
 Repository: packages
 Title: Helper script for unprivileged containers support
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description:  Support for unprivileged containers requires newuidmap and newguidmap.
@@ -181,7 +181,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-attach
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -191,7 +191,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-attach from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-attach from the LXC userspace tools
@@ -200,7 +200,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-autostart
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -210,7 +210,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-autostart from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-autostart from the LXC userspace tools
@@ -219,7 +219,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-cgroup
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -229,7 +229,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-cgroup from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-cgroup from the LXC userspace tools
@@ -238,7 +238,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-copy
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -248,7 +248,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-copy from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-copy from the LXC userspace tools
@@ -257,7 +257,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-config
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -267,7 +267,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-config from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-config from the LXC userspace tools
@@ -276,7 +276,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-console
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -286,7 +286,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-console from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-console from the LXC userspace tools
@@ -295,7 +295,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-create
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc +lxc-configs +lxc-hooks +lxc-templates +flock
 Conflicts: 
 Menu-Depends: 
@@ -305,7 +305,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-create from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-create from the LXC userspace tools
@@ -314,7 +314,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-destroy
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -324,7 +324,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-destroy from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-destroy from the LXC userspace tools
@@ -333,7 +333,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-device
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -343,7 +343,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-device from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-device from the LXC userspace tools
@@ -352,7 +352,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-execute
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -362,7 +362,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-execute from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-execute from the LXC userspace tools
@@ -371,7 +371,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-freeze
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -381,7 +381,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-freeze from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-freeze from the LXC userspace tools
@@ -390,7 +390,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-info
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -400,7 +400,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-info from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-info from the LXC userspace tools
@@ -409,7 +409,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-monitor
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -419,7 +419,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-monitor from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-monitor from the LXC userspace tools
@@ -428,7 +428,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-snapshot
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -438,7 +438,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-snapshot from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-snapshot from the LXC userspace tools
@@ -447,7 +447,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-start
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -457,7 +457,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-start from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-start from the LXC userspace tools
@@ -466,7 +466,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-stop
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -476,7 +476,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-stop from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-stop from the LXC userspace tools
@@ -485,7 +485,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-unfreeze
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -495,7 +495,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-unfreeze from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-unfreeze from the LXC userspace tools
@@ -504,7 +504,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-unshare
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -514,7 +514,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-unshare from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-unshare from the LXC userspace tools
@@ -523,7 +523,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-usernsexec
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -533,7 +533,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-usernsexec from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-usernsexec from the LXC userspace tools
@@ -542,7 +542,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-wait
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -552,7 +552,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-wait from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-wait from the LXC userspace tools
@@ -561,7 +561,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-top
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -571,7 +571,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-top from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-top from the LXC userspace tools
@@ -580,7 +580,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-ls
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -590,7 +590,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-ls from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-ls from the LXC userspace tools
@@ -599,7 +599,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-monitord
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -609,7 +609,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-monitord from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-monitord from the LXC userspace tools
@@ -618,7 +618,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-user-nic
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
@@ -628,7 +628,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-user-nic from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-user-nic from the LXC userspace tools
@@ -637,7 +637,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 Package: lxc-checkconfig
-Version: 4.0.2-3
+Version: 4.0.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common
 Conflicts: 
 Menu-Depends: 
@@ -647,7 +647,7 @@ Category: Utilities
 Repository: packages
 Title: Utility lxc-checkconfig from the LXC userspace tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: lxc-4.0.2.tar.gz
+Source: lxc-4.0.5.tar.gz
 License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
 Type: ipkg
 Description: Utility lxc-checkconfig from the LXC userspace tools

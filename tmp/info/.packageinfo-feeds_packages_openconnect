@@ -1,9 +1,10 @@
 Source-Makefile: package/feeds/packages/openconnect/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: openconnect
 Submenu: VPN
-Version: 8.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +kmod-tun +resolveip +vpnc-scripts +OPENCONNECT_OPENSSL:libopenssl +OPENCONNECT_OPENSSL:p11-kit +OPENCONNECT_OPENSSL:libp11 +OPENCONNECT_GNUTLS:libgnutls +OPENCONNECT_GNUTLS:libtasn1 +OPENCONNECT_STOKEN:libstoken
+Version: 8.10-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +kmod-tun +resolveip +vpnc-scripts +OPENCONNECT_OPENSSL:libopenssl +OPENCONNECT_OPENSSL:p11-kit +OPENCONNECT_OPENSSL:libp11 +OPENCONNECT_GNUTLS:libgnutls +OPENCONNECT_GNUTLS:libtasn1 +OPENCONNECT_STOKEN:libstoken +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16,13 +17,15 @@ Source: openconnect-8.10.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LGPL
 Type: ipkg
-Description: 	A VPN client compatible with Cisco's AnyConnect SSL VPN, ocserv and Juniper (Pulse secure).
+Description: 	A VPN client compatible with several SSL VPN implementations (ocserv, Cisco AnyConnect, Juniper, Palo Alto)
 
-        OpenConnect is a client that follows the Cisco's AnyConnect SSL VPN protocol,
-        which is supported by IOS 12.4(9)T or later on Cisco SR500, 870, 880, 1800,
-        2800, 3800, 7200 Series and Cisco 7301 Routers, as well as the OpenConnect
-        VPN server. It has later been ported to support the Juniper SSL VPN which
-        is now known as Pulse Connect Secure.
+	OpenConnect is an SSL VPN client initially created to support Cisco's
+	AnyConnect SSL VPN. It has since been extended to support the Pulse Connect
+	Secure VPN (formerly known as Juniper Network Connect or Junos Pulse) and
+	the Palo Alto Networks GlobalProtect SSL VPN.
+
+	A corresponding OpenConnect VPN server implementation can be found in the
+	ocserv package.
 https://www.infradead.org/openconnect/
 Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 @@

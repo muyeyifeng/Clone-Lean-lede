@@ -3,8 +3,8 @@ Build-Depends: meson/host ninja/host
 Build-Depends/host: ninja/host
 
 Package: libdrm
-Version: 2.4.101-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpciaccess
+Version: 2.4.104-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBDRM_INTEL:libpciaccess
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: packages
 Title: libdrm
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: libdrm-2.4.101.tar.xz
+Source: libdrm-2.4.104.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description:   LIBDRM is the cross-driver middleware which allows user-space applications
@@ -21,6 +21,9 @@ Description:   LIBDRM is the cross-driver middleware which allows user-space app
   of the DRI protocol.
 https://dri.freedesktop.org/
 Lucian Cristian <lucian.cristian@gmail.com>
+@@
+Config:
+	source "feeds/packages/libs/libdrm/Config.in"
 @@
 
 

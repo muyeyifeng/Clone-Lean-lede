@@ -5,7 +5,7 @@ Build-Depends/host: ninja/host
 Package: libzstd
 Menu: 1
 Submenu: Compression
-Version: 1.4.5-2
+Version: 1.4.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Category: Libraries
 Repository: packages
 Title: zstd library.
 Maintainer: 
-Source: zstd-1.4.5.tar.zst
+Source: zstd-1.4.9.tar.zst
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -35,7 +35,7 @@ Config:
 
 Package: zstd
 Submenu: Compression
-Version: 1.4.5-2
+Version: 1.4.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzstd
 Conflicts: 
 Menu-Depends: 
@@ -45,7 +45,7 @@ Category: Utilities
 Repository: packages
 Title: Fast real-time compression algorithm.
 Maintainer: 
-Source: zstd-1.4.5.tar.zst
+Source: zstd-1.4.9.tar.zst
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

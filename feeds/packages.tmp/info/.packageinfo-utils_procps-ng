@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/procps-ng/Makefile
 
 Package: procps-ng-free
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -21,7 +21,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-kill
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-pgrep
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-pkill
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -81,7 +81,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-pmap
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -101,7 +101,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-ps
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -121,7 +121,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-pwdx
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -141,7 +141,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-skill
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -161,7 +161,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-slabtop
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -181,7 +181,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-snice
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -200,8 +200,28 @@ https://gitlab.com/procps-ng/procps
 
 @@
 
+Package: procps-ng-sysctl
+Version: 3.3.16-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Applet sysctl from the procps-ng package
+Maintainer: 
+Source: procps-ng-3.3.16.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING COPYING.LIB
+Type: ipkg
+Description:   Installs the applet sysctl.
+https://gitlab.com/procps-ng/procps
+
+@@
+
 Package: procps-ng-tload
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -221,7 +241,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-top
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -241,7 +261,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-uptime
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -261,7 +281,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-vmstat
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -281,7 +301,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-w
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -301,7 +321,7 @@ https://gitlab.com/procps-ng/procps
 @@
 
 Package: procps-ng-watch
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread procps-ng
 Conflicts: 
 Menu-Depends: 
@@ -322,7 +342,7 @@ https://gitlab.com/procps-ng/procps
 
 Package: procps-ng
 Menu: 1
-Version: 3.3.16-1
+Version: 3.3.16-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 

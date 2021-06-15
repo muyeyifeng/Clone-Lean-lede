@@ -2,7 +2,7 @@ Source-Makefile: package/network/utils/wireguard-tools/Makefile
 
 Package: wireguard-tools
 Submenu: VPN
-Version: 1.0.20210424-1
+Version: 1.0.20210223-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +@BUSYBOX_CONFIG_IP +@BUSYBOX_CONFIG_FEATURE_IP_LINK +kmod-wireguard
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: WireGuard userspace control program (wg)
 Maintainer: Jason A. Donenfeld <Jason@zx2c4.com>
-Source: wireguard-tools-1.0.20210424.tar.xz
+Source: wireguard-tools-1.0.20210223.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

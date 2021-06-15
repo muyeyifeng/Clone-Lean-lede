@@ -8,13 +8,14 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall autocore-arm uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -32,13 +33,14 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall autocore-arm uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -53,6 +55,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-sun4i-emac kmod-rtc-sunxi
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cubietech,a10-cubieboard
 
+
 Target-Profile-Description:
 Build firmware images for Cubietech Cubieboard
 
@@ -65,6 +68,7 @@ Target-Profile-Name: LinkSprite pcDuino
 Target-Profile-Packages: kmod-sun4i-emac kmod-rtc-sunxi kmod-rtl8192cu 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksprite,a10-pcduino
+
 
 Target-Profile-Description:
 Build firmware images for LinkSprite pcDuino
@@ -79,6 +83,7 @@ Target-Profile-Packages: mod-ata-core kmod-ata-sunxi kmod-sun4i-emac kmod-rtc-su
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marsboard,a10-marsboard
 
+
 Target-Profile-Description:
 Build firmware images for HAOYU Electronics MarsBoard A10
 
@@ -91,6 +96,7 @@ Target-Profile-Name: Olimex A10-OLinuXino-LIME
 Target-Profile-Packages: kmod-ata-sunxi kmod-sun4i-emac kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a10-olinuxino-lime
+
 
 Target-Profile-Description:
 Build firmware images for Olimex A10-OLinuXino-LIME
@@ -105,6 +111,7 @@ Target-Profile-Packages: kmod-rtl8192cu
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a13-olinuxino
 
+
 Target-Profile-Description:
 Build firmware images for Olimex A13-SOM
 
@@ -117,6 +124,7 @@ Target-Profile-Name: Olimex A13-OLinuXino
 Target-Profile-Packages: kmod-rtl8192cu 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a13-olinuxino
+
 
 Target-Profile-Description:
 Build firmware images for Olimex A13-OLinuXino
@@ -134,13 +142,14 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall autocore-arm uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -155,6 +164,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-sun4i-emac kmod-rtc-sunxi
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cubietech,cubieboard2
 
+
 Target-Profile-Description:
 Build firmware images for Cubietech Cubieboard2
 
@@ -168,6 +178,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-rtc-sunxi kmod-brcmfmac
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cubietech,cubietruck
 
+
 Target-Profile-Description:
 Build firmware images for Cubietech Cubietruck
 
@@ -177,9 +188,10 @@ Build firmware images for Cubietech Cubietruck
 
 Target-Profile: DEVICE_friendlyarm_nanopi-m1-plus
 Target-Profile-Name: FriendlyARM NanoPi M1 Plus
-Target-Profile-Packages: kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-rtc-sunxi kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-m1-plus
+
 
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi M1 Plus
@@ -194,6 +206,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-neo
 
+
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi NEO
 
@@ -203,9 +216,10 @@ Build firmware images for FriendlyARM NanoPi NEO
 
 Target-Profile: DEVICE_friendlyarm_nanopi-neo-air
 Target-Profile-Name: FriendlyARM NanoPi NEO Air
-Target-Profile-Packages: kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-rtc-sunxi kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-neo-air
+
 
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi NEO Air
@@ -216,9 +230,10 @@ Build firmware images for FriendlyARM NanoPi NEO Air
 
 Target-Profile: DEVICE_friendlyarm_nanopi-r1
 Target-Profile-Name: FriendlyARM NanoPi R1
-Target-Profile-Packages: kmod-usb-net-rtl8152 kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl	 iwinfo
+Target-Profile-Packages: kmod-rtc-sunxi kmod-usb-net-rtl8152 kmod-leds-gpio kmod-brcmfmac cypress-firmware-43430-sdio wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r1
+
 
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi R1
@@ -229,9 +244,10 @@ Build firmware images for FriendlyARM NanoPi R1
 
 Target-Profile: DEVICE_friendlyarm_zeropi
 Target-Profile-Name: FriendlyARM ZeroPi
-Target-Profile-Packages:  
+Target-Profile-Packages: kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,zeropi
+
 
 Target-Profile-Description:
 Build firmware images for FriendlyARM ZeroPi
@@ -246,6 +262,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-rtl8192cu swconfig wpad-basic-wolfs
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lamobo,lamobo-r1
 
+
 Target-Profile-Description:
 Build firmware images for Lamobo Lamobo R1
 
@@ -258,6 +275,7 @@ Target-Profile-Name: LeMaker Banana Pi
 Target-Profile-Packages: kmod-rtc-sunxi kmod-ata-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lemaker,bananapi
+
 
 Target-Profile-Description:
 Build firmware images for LeMaker Banana Pi
@@ -272,6 +290,7 @@ Target-Profile-Packages: kmod-rtc-sunxi kmod-ata-sunxi kmod-brcmfmac cypress-fir
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lemaker,bananapi-m2-berry
 
+
 Target-Profile-Description:
 Build firmware images for Sinovoip Banana Pi M2 Berry
 
@@ -281,9 +300,10 @@ Build firmware images for Sinovoip Banana Pi M2 Berry
 
 Target-Profile: DEVICE_sinovoip_bananapi-m2-ultra
 Target-Profile-Name: Sinovoip Banana Pi M2 Ultra
-Target-Profile-Packages: kmod-ata-sunxi kmod-brcmfmac brcmfmac-firmware-43430a0-sdio wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-rtc-sunxi kmod-ata-sunxi kmod-brcmfmac brcmfmac-firmware-43430a0-sdio wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lemaker,bananapi-m2-ultra
+
 
 Target-Profile-Description:
 Build firmware images for Sinovoip Banana Pi M2 Ultra
@@ -298,6 +318,7 @@ Target-Profile-Packages: kmod-rtc-sunxi kmod-ata-sunxi kmod-brcmfmac
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lemaker,bananapro
 
+
 Target-Profile-Description:
 Build firmware images for LeMaker Banana Pro
 
@@ -310,6 +331,7 @@ Target-Profile-Name: LinkSprite pcDuino3
 Target-Profile-Packages: kmod-sun4i-emac kmod-rtc-sunxi kmod-ata-sunxi kmod-rtl8xxxu rtl8188eu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksprite,pcduino3
+
 
 Target-Profile-Description:
 Build firmware images for LinkSprite pcDuino3
@@ -324,6 +346,7 @@ Target-Profile-Packages: kmod-rtc-sunxi kmod-ata-sunxi
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksprite,pcduino3-nano
 
+
 Target-Profile-Description:
 Build firmware images for LinkSprite pcDuino3 Nano
 
@@ -333,9 +356,10 @@ Build firmware images for LinkSprite pcDuino3 Nano
 
 Target-Profile: DEVICE_mele_m9
 Target-Profile-Name: Mele M9
-Target-Profile-Packages: kmod-sun4i-emac kmod-rtl8192cu 
+Target-Profile-Packages: kmod-sun4i-emac kmod-rtc-sunxi kmod-rtl8192cu 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mele,m9
+
 
 Target-Profile-Description:
 Build firmware images for Mele M9
@@ -350,6 +374,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-rtc-sunxi
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a20-olinuxino-lime
 
+
 Target-Profile-Description:
 Build firmware images for Olimex A20-OLinuXino-LIME
 
@@ -362,6 +387,7 @@ Target-Profile-Name: Olimex A20-OLinuXino-LIME2
 Target-Profile-Packages: kmod-ata-sunxi kmod-rtc-sunxi kmod-usb-hid 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a20-olinuxino-lime2
+
 
 Target-Profile-Description:
 Build firmware images for Olimex A20-OLinuXino-LIME2
@@ -376,6 +402,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-rtc-sunxi kmod-usb-hid
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a20-olinuxino-lime2-emmc
 
+
 Target-Profile-Description:
 Build firmware images for Olimex A20-OLinuXino-LIME2 eMMC
 
@@ -389,6 +416,7 @@ Target-Profile-Packages: kmod-ata-sunxi kmod-sun4i-emac kmod-rtc-sunxi
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a20-olinuxino-micro
 
+
 Target-Profile-Description:
 Build firmware images for Olimex A20-OLinuXino-MICRO
 
@@ -398,9 +426,10 @@ Build firmware images for Olimex A20-OLinuXino-MICRO
 
 Target-Profile: DEVICE_sinovoip_bananapi-m2-plus
 Target-Profile-Name: Sinovoip Banana Pi M2+
-Target-Profile-Packages: kmod-leds-gpio kmod-brcmfmac brcmfmac-firmware-43430a0-sdio wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-rtc-sunxi kmod-leds-gpio kmod-brcmfmac brcmfmac-firmware-43430a0-sdio wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: sinovoip,bananapi-m2-plus
+
 
 Target-Profile-Description:
 Build firmware images for Sinovoip Banana Pi M2+
@@ -411,9 +440,10 @@ Build firmware images for Sinovoip Banana Pi M2+
 
 Target-Profile: DEVICE_xunlong_orangepi-one
 Target-Profile-Name: Xunlong Orange Pi One
-Target-Profile-Packages:  
+Target-Profile-Packages: kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-one
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi One
@@ -424,9 +454,10 @@ Build firmware images for Xunlong Orange Pi One
 
 Target-Profile: DEVICE_xunlong_orangepi-pc
 Target-Profile-Name: Xunlong Orange Pi PC
-Target-Profile-Packages: kmod-gpio-button-hotplug 
+Target-Profile-Packages: kmod-rtc-sunxi kmod-gpio-button-hotplug 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-pc
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi PC
@@ -437,9 +468,10 @@ Build firmware images for Xunlong Orange Pi PC
 
 Target-Profile: DEVICE_xunlong_orangepi-pc-plus
 Target-Profile-Name: Xunlong Orange Pi PC Plus
-Target-Profile-Packages: kmod-gpio-button-hotplug 
+Target-Profile-Packages: kmod-rtc-sunxi kmod-gpio-button-hotplug 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-pc-plus
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi PC Plus
@@ -450,9 +482,10 @@ Build firmware images for Xunlong Orange Pi PC Plus
 
 Target-Profile: DEVICE_xunlong_orangepi-plus
 Target-Profile-Name: Xunlong Orange Pi Plus
-Target-Profile-Packages:  
+Target-Profile-Packages: kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-plus
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi Plus
@@ -463,9 +496,10 @@ Build firmware images for Xunlong Orange Pi Plus
 
 Target-Profile: DEVICE_xunlong_orangepi-r1
 Target-Profile-Name: Xunlong Orange Pi R1
-Target-Profile-Packages: kmod-usb-net-rtl8152 
+Target-Profile-Packages: kmod-rtc-sunxi kmod-usb-net-rtl8152 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-r1
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi R1
@@ -476,9 +510,10 @@ Build firmware images for Xunlong Orange Pi R1
 
 Target-Profile: DEVICE_xunlong_orangepi-zero
 Target-Profile-Name: Xunlong Orange Pi Zero
-Target-Profile-Packages:  
+Target-Profile-Packages: kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-zero
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi Zero
@@ -489,9 +524,10 @@ Build firmware images for Xunlong Orange Pi Zero
 
 Target-Profile: DEVICE_xunlong_orangepi-2
 Target-Profile-Name: Xunlong Orange Pi 2
-Target-Profile-Packages:  
+Target-Profile-Packages: kmod-rtc-sunxi 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-2
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi 2
@@ -509,13 +545,14 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall autocore-arm uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -530,6 +567,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: nanopi-neo-plus2
 
+
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi NEO Plus2
 
@@ -543,21 +581,9 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: nanopi-neo2
 
+
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi NEO2
-
-
-
-@@
-
-Target-Profile: DEVICE_friendlyarm_nanopi-r1s-h5
-Target-Profile-Name: FriendlyARM Nanopi R1S H5
-Target-Profile-Packages: kmod-gpio-button-hotplug kmod-rtl8189es kmod-usb2 kmod-usb-net-rtl8152 wpad-basic iwinfo
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: nanopi-r1s-h5
-
-Target-Profile-Description:
-Build firmware images for FriendlyARM Nanopi R1S H5
 
 
 
@@ -568,6 +594,7 @@ Target-Profile-Name: Libre Computer ALL-H3-CC H5
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: libretech,all-h3-cc-h5
+
 
 Target-Profile-Description:
 Build firmware images for Libre Computer ALL-H3-CC H5
@@ -582,6 +609,7 @@ Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino
 
+
 Target-Profile-Description:
 Build firmware images for Olimex A64-Olinuxino
 
@@ -594,6 +622,7 @@ Target-Profile-Name: Olimex A64-Olinuxino eMMC
 Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino-emmc
+
 
 Target-Profile-Description:
 Build firmware images for Olimex A64-Olinuxino eMMC
@@ -608,6 +637,7 @@ Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,pine64-plus
 
+
 Target-Profile-Description:
 Build firmware images for Pine64 Pine64+
 
@@ -620,6 +650,7 @@ Target-Profile-Name: Pine64 SoPine
 Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,sopine-baseboard
+
 
 Target-Profile-Description:
 Build firmware images for Pine64 SoPine
@@ -634,6 +665,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-one-plus
 
+
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi One Plus
 
@@ -647,6 +679,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-pc2
 
+
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi PC 2
 
@@ -659,6 +692,7 @@ Target-Profile-Name: Xunlong Orange Pi Zero Plus
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-zero-plus
+
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi Zero Plus

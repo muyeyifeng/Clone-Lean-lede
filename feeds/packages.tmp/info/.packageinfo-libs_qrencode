@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/qrencode/Makefile
 
 Package: libqrencode
-Version: 4.0.2-2
+Version: 4.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,9 @@ Category: Libraries
 Repository: base
 Title: Library for encoding data in a QR Code symbol
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
-Source: qrencode-4.0.2.tar.bz2
+Source: qrencode-4.1.1.tar.bz2
 License: LGPL-2.1-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description: Libqrencode is a C library for encoding data in a QR Code symbol,
 a kind of 2D symbology that can be scanned by handy terminals such
@@ -23,7 +24,7 @@ Jonathan Bennett <JBennett@incomsystems.biz>
 @@
 
 Package: qrencode
-Version: 4.0.2-2
+Version: 4.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libqrencode
 Conflicts: 
 Menu-Depends: 
@@ -33,8 +34,9 @@ Category: Utilities
 Repository: base
 Title: qrencode binary for producing qr codes
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
-Source: qrencode-4.0.2.tar.bz2
+Source: qrencode-4.1.1.tar.bz2
 License: LGPL-2.1-or-later
+LicenseFiles: COPYING
 Type: ipkg
 Description: Qrencode is a C program for encoding data in a QR Code symbol,
 a kind of 2D symbology that can be scanned by handy terminals such

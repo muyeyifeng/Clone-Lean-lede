@@ -1,8 +1,9 @@
 Source-Makefile: feeds/packages/multimedia/icecast/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: icecast
-Version: 2.4.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libxml2 +libxslt +libogg +libvorbisidec
+Version: 2.4.4-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libxml2 +libxslt +libogg +libvorbisidec +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

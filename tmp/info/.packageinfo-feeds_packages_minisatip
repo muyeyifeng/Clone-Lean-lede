@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/minisatip/Makefile
 
 Package: minisatip
-Version: 1.0.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +MINISATIP_AES:libopenssl
+Version: 1.0.4-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +MINISATIP_AES:libopenssl +BUILD_PATENTED:libdvbcsa
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Multimedia
 Repository: packages
 Title: SATIP server
 Maintainer: Daniel Kucera <github@danman.eu>
-Source: minisatip-1.0.3.tar.gz
+Source: minisatip-1.0.4.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: SATIP server

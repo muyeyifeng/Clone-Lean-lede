@@ -8,14 +8,14 @@ Target-Features: dt gpio pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -march=octeon+ -mabi=64
 CPU-Type: octeonplus
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
 Linux-Testing-Version: 5.10.43
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Cavium Networks Octeon-based boards.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall mkf2fs e2fsprogs 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -30,6 +30,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: generic
 
+
 Target-Profile-Description:
 Build firmware images for Generic Octeon
 
@@ -42,6 +43,7 @@ Target-Profile-Name: Itus Networks Shield Router
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: itus,shield-router
+
 
 Target-Profile-Description:
 Build firmware images for Itus Networks Shield Router
@@ -56,6 +58,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,edgerouter
 
+
 Target-Profile-Description:
 Build firmware images for Ubiquiti EdgeRouter
 
@@ -68,6 +71,7 @@ Target-Profile-Name: Ubiquiti EdgeRouter 4
 Target-Profile-Packages:  kmod-gpio-button-hotplug kmod-leds-gpio kmod-of-mdio kmod-sfp kmod-usb3 kmod-usb-dwc3 kmod-usb-storage-uas 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,edgerouter-4
+
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti EdgeRouter 4
@@ -82,6 +86,7 @@ Target-Profile-Packages:  kmod-gpio-button-hotplug kmod-leds-gpio kmod-of-mdio k
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,edgerouter-6p
 
+
 Target-Profile-Description:
 Build firmware images for Ubiquiti EdgeRouter 6P
 
@@ -94,6 +99,7 @@ Target-Profile-Name: Ubiquiti EdgeRouter Lite
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,edgerouter-lite
+
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti EdgeRouter Lite

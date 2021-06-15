@@ -1,7 +1,8 @@
 Source-Makefile: feeds/packages/admin/monit/Makefile
+Build-Depends: libtool gettext libiconv
 
 Package: monit
-Version: 5.26.0-1
+Version: 5.26.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +24,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: monit-nossl
-Version: 5.26.0-1
+Version: 5.26.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib
 Conflicts: 
 Menu-Depends: 

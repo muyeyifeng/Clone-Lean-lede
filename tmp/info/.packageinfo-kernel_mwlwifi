@@ -2,8 +2,8 @@ Source-Makefile: package/kernel/mwlwifi/Makefile
 
 Package: kmod-mwlwifi
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-1
-Depends: +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT @PCI_SUPPORT @TARGET_mvebu
+Version: <LINUX_VERSION>+2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-2
+Depends: +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT @PCI_SUPPORT @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -19,7 +19,7 @@ Imre Kaloz <kaloz@openwrt.org>
 @@
 
 Package: mwlwifi-firmware-88w8864
-Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-1
+Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-mwlwifi @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Imre Kaloz <kaloz@openwrt.org>
 @@
 
 Package: mwlwifi-firmware-88w8897
-Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-1
+Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-mwlwifi @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Imre Kaloz <kaloz@openwrt.org>
 @@
 
 Package: mwlwifi-firmware-88w8964
-Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-1
+Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-mwlwifi @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 
@@ -70,7 +70,7 @@ Imre Kaloz <kaloz@openwrt.org>
 @@
 
 Package: mwlwifi-firmware-88w8997
-Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-1
+Version: 2020-02-06-a2fd00bb74c35820dfe233d762690c0433a87ef5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-mwlwifi @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 

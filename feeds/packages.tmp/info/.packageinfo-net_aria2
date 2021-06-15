@@ -1,8 +1,9 @@
 Source-Makefile: feeds/packages/net/aria2/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: aria2
 Submenu: File Transfer
-Version: 1.35.0-3
+Version: 1.35.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp +ARIA2_OPENSSL:libopenssl +ARIA2_GNUTLS:libgnutls +ARIA2_NETTLE:libnettle +ARIA2_LIBGCRYPT:libgcrypt +ARIA2_GMP:libgmp +ARIA2_LIBXML2:libxml2 +ARIA2_EXPAT:libexpat +ARIA2_SFTP:libssh2 +ARIA2_ASYNC_DNS:libcares +ARIA2_COOKIE:libsqlite3
 Conflicts: 
 Menu-Depends: 

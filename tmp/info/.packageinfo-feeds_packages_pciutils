@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/pciutils/Makefile
 
 Package: libpci
-Version: 3.7.0-1
+Version: 3.7.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -21,8 +21,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 @@
 
 Package: pciutils
-Version: 3.7.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libkmod +libpci
+Version: 3.7.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libkmod +libpci +pciids
 Conflicts: 
 Menu-Depends: 
 Provides: 

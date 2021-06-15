@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/gnupg/Makefile
 Package: gnupg
 Menu: 1
 Submenu: Encryption
-Version: 1.4.23-1
+Version: 1.4.23-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: packages
 Title: GNU privacy guard - a free PGP replacement
 Maintainer: 
 Source: gnupg-1.4.23.tar.bz2
-License: GPL-3.0
+License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:  GnuPG is GNU's tool for secure communication and data storage.
@@ -30,7 +30,7 @@ http://www.gnupg.org/
 
 Package: gpgv
 Submenu: Encryption
-Version: 1.4.23-1
+Version: 1.4.23-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ Repository: packages
 Title: GnuPG signature verification only
 Maintainer: 
 Source: gnupg-1.4.23.tar.bz2
-License: GPL-3.0
+License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:  GPGv is a stripped down version of GnuPG that only checks signatures.
@@ -54,7 +54,7 @@ http://www.gnupg.org/
 
 Package: gnupg-utils
 Submenu: Encryption
-Version: 1.4.23-1
+Version: 1.4.23-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Repository: packages
 Title: Key management utilities for GnuPG
 Maintainer: 
 Source: gnupg-1.4.23.tar.bz2
-License: GPL-3.0
+License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Key management utilies for GnuPG.

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/dump1090/Makefile
 Build-Depends: libusb
 
 Package: dump1090
-Version: 3.8.1-3
+Version: 4.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librtlsdr +uhttpd +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Mode S decoder for the Realtek RTL2832U (dump1090)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: dump1090-3.8.1.tar.gz
+Source: dump1090-4.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
 Type: ipkg
@@ -22,7 +22,7 @@ https://github.com/flightaware/dump1090
 @@
 
 Package: view1090
-Version: 3.8.1-3
+Version: 4.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Utilities
 Repository: base
 Title: Mode S decoder for the Realtek RTL2832U (view1090)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: dump1090-3.8.1.tar.gz
+Source: dump1090-4.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
 Type: ipkg

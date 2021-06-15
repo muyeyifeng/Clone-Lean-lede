@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/open-vm-tools/Makefile
-Build-Depends: glib2/host
+Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: open-vm-tools
-Version: 11.2.5-3
+Version: 11.2.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +glib2 +libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +22,7 @@ Yuhei OKAWA <tochiro.srchack@gmail.com>
 @@
 
 Package: open-vm-tools-fuse
-Version: 11.2.5-3
+Version: 11.2.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse
 Conflicts: 
 Menu-Depends: 

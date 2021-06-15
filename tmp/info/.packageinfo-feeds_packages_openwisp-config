@@ -1,9 +1,9 @@
 Source-Makefile: package/feeds/packages/openwisp-config/Makefile
 
 Package: openwisp-config-openssl
-Submenu: OpenWISP
-Version: 0.4.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libopenssl
+Submenu: openwisp
+Version: 0.5.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +luci-lib-nixio +ca-certificates +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,19 +12,19 @@ Section: admin
 Category: Administration
 Repository: packages
 Title: Remote configuration management agent (OpenSSL variant)
-Maintainer: Federico Capoano <f.capoano@cineca.it>
-Source: openwisp-config-0.4.5.tar.xz
-License: GPL-3.0
+Maintainer: Federico Capoano <f.capoano@openwisp.io>
+Source: openwisp-config-0.5.0.tar.xz
+License: GPL3.0-or-later
 Type: ipkg
 Description: Remote configuration management agent (OpenSSL variant)
 http://openwisp.org
-Federico Capoano <f.capoano@cineca.it>
+Federico Capoano <f.capoano@openwisp.io>
 @@
 
 Package: openwisp-config-mbedtls
-Submenu: OpenWISP
-Version: 0.4.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libmbedtls
+Submenu: openwisp
+Version: 0.5.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +luci-lib-nixio +ca-certificates +libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,40 +33,40 @@ Section: admin
 Category: Administration
 Repository: packages
 Title: Remote configuration management agent (mbedTLS variant)
-Maintainer: Federico Capoano <f.capoano@cineca.it>
-Source: openwisp-config-0.4.5.tar.xz
-License: GPL-3.0
+Maintainer: Federico Capoano <f.capoano@openwisp.io>
+Source: openwisp-config-0.5.0.tar.xz
+License: GPL3.0-or-later
 Type: ipkg
 Description: Remote configuration management agent (mbedTLS variant)
 http://openwisp.org
-Federico Capoano <f.capoano@cineca.it>
+Federico Capoano <f.capoano@openwisp.io>
 @@
 
-Package: openwisp-config-cyassl
-Submenu: OpenWISP
-Version: 0.4.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libcyassl
+Package: openwisp-config-wolfssl
+Submenu: openwisp
+Version: 0.5.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +luci-lib-nixio +ca-certificates +libwolfssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: cyassl
+Build-Variant: wolfssl
 Section: admin
 Category: Administration
 Repository: packages
-Title: Remote configuration management agent (CyaSSL variant)
-Maintainer: Federico Capoano <f.capoano@cineca.it>
-Source: openwisp-config-0.4.5.tar.xz
-License: GPL-3.0
+Title: Remote configuration management agent (WolfSSL variant)
+Maintainer: Federico Capoano <f.capoano@openwisp.io>
+Source: openwisp-config-0.5.0.tar.xz
+License: GPL3.0-or-later
 Type: ipkg
-Description: Remote configuration management agent (CyaSSL variant)
+Description: Remote configuration management agent (WolfSSL variant)
 http://openwisp.org
-Federico Capoano <f.capoano@cineca.it>
+Federico Capoano <f.capoano@openwisp.io>
 @@
 
 Package: openwisp-config-nossl
-Submenu: OpenWISP
-Version: 0.4.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem
+Submenu: openwisp
+Version: 0.5.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,13 +75,13 @@ Section: admin
 Category: Administration
 Repository: packages
 Title: Remote configuration management agent (No SSL variant)
-Maintainer: Federico Capoano <f.capoano@cineca.it>
-Source: openwisp-config-0.4.5.tar.xz
-License: GPL-3.0
+Maintainer: Federico Capoano <f.capoano@openwisp.io>
+Source: openwisp-config-0.5.0.tar.xz
+License: GPL3.0-or-later
 Type: ipkg
 Description: Remote configuration management agent (No SSL variant)
 http://openwisp.org
-Federico Capoano <f.capoano@cineca.it>
+Federico Capoano <f.capoano@openwisp.io>
 @@
 
 

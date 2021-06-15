@@ -8,13 +8,14 @@ Target-Features: gpio pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with MIPS CPU, *not* ARM.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd dnsmasq-full iptables ppp ppp-mod-pppoe firewall swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug 
 Target: bcm47xx/generic
 Target-Board: bcm47xx
 Target-Name: Generic
@@ -24,14 +25,15 @@ Target-Features: gpio pci pcmcia squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build generic firmware for all Broadcom BCM47xx and BCM53xx MIPS
 	devices. It runs on both architectures BMIPS3300 and MIPS 74K.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd wpad-basic dnsmasq-full iptables ppp ppp-mod-pppoe firewall swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-b43
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (b43, default)
 Target-Profile-Packages: kmod-b44 kmod-tg3 kmod-bgmac kmod-b43 kmod-b43legacy iwinfo
@@ -43,7 +45,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-wl
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (wl, proprietary)
-Target-Profile-Packages: -wpad-basic kmod-b44 kmod-tg3 kmod-bgmac kmod-brcm-wl wlc nas iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-b44 kmod-tg3 kmod-bgmac kmod-brcm-wl wlc nas iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware any Broadcom BCM47xx or BCM535x
 	SoC with Broadcom BCM43xx Wifi cards using the proprietary Broadcom
@@ -61,7 +63,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-none
 Target-Profile-Name: Broadcom SoC, all Ethernet, No WiFi
-Target-Profile-Packages: -wpad-basic kmod-b44 kmod-tg3 kmod-bgmac iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-b44 kmod-tg3 kmod-bgmac iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware any Broadcom BCM47xx or BCM535x
 	SoC without any Wifi cards and b44, tg3 or bgmac Ethernet driver.
@@ -78,7 +80,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-b44-wl
 Target-Profile-Name: Broadcom SoC, b44 Ethernet, BCM43xx WiFi (wl, proprietary)
-Target-Profile-Packages: -wpad-basic kmod-b44 kmod-brcm-wl wlc nas iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-b44 kmod-brcm-wl wlc nas iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware older Broadcom BCM47xx or BCM535x
 	SoC with Broadcom BCM43xx Wifi cards using the proprietary Broadcom
@@ -96,7 +98,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-b44-none
 Target-Profile-Name: Broadcom SoC, b44 Ethernet, No WiFi
-Target-Profile-Packages: -wpad-basic kmod-b44 iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-b44 iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware older Broadcom BCM47xx or BCM535x
 	SoC without any Wifi cards and b44 Ethernet driver.
@@ -113,7 +115,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-tg3-wl
 Target-Profile-Name: Broadcom SoC, tg3 Ethernet, BCM43xx WiFi (wl, proprietary)
-Target-Profile-Packages: -wpad-basic kmod-brcm-wl wlc nas kmod-tg3 iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-brcm-wl wlc nas kmod-tg3 iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware Broadcom BCM4705/BCM4785
 	SoC with Broadcom BCM43xx Wifi cards using the proprietary Broadcom
@@ -122,7 +124,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-tg3-none
 Target-Profile-Name: Broadcom SoC, tg3 Ethernet, no WiFi
-Target-Profile-Packages: -wpad-basic kmod-tg3 iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-tg3 iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware Broadcom BCM4705/BCM4785
 	SoC without any Wifi cards and tg3 Ethernet driver.
@@ -139,7 +141,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-bgmac-wl
 Target-Profile-Name: Broadcom SoC, bgmac Ethernet, BCM43xx WiFi (wl, proprietary)
-Target-Profile-Packages: -wpad-basic kmod-bgmac kmod-brcm-wl wlc nas iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-bgmac kmod-brcm-wl wlc nas iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware newer Broadcom BCM47xx or BCM535x
 	SoC with Broadcom BCM43xx Wifi cards using the proprietary Broadcom
@@ -148,7 +150,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-bgmac-none
 Target-Profile-Name: Broadcom SoC, bgmac Ethernet, No WiFi
-Target-Profile-Packages: -wpad-basic kmod-bgmac iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-bgmac iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware newer Broadcom BCM47xx or BCM535x
 	SoC without any Wifi cards and bgmac Ethernet driver.
@@ -165,16 +167,17 @@ Target-Profile-Description:
 
 Target-Profile: Ps1208mfg
 Target-Profile-Name: Edimax PS-1208MFG
-Target-Profile-Packages: -firewall -dropbear -dnsmasq -mtd -ppp -wpad-basic kmod-b44 block-mount kmod-usb-storage kmod-usb2 kmod-usb-ohci -iptables -swconfig kmod-fs-ext4 iwinfo
+Target-Profile-Packages: -firewall -dropbear -dnsmasq -mtd -ppp -wpad-basic-wolfssl kmod-b44 block-mount kmod-usb-storage kmod-usb2 kmod-usb-ohci -iptables -swconfig kmod-fs-ext4 iwinfo
 Target-Profile-Description:
 	Package set optimize for edimax PS-1208MFG printserver
 @@
 
-Target-Profile: DEVICE_linksys-wrt300n-v1.1
+Target-Profile: DEVICE_linksys_wrt300n-v1.1
 Target-Profile-Name: Linksys WRT300N v1.1
 Target-Profile-Packages: kmod-tg3 kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt300n-v1.1
+Target-Profile-SupportedDevices: linksys,wrt300n-v1.1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT300N v1.1
@@ -183,11 +186,12 @@ Build firmware images for Linksys WRT300N v1.1
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt310n-v1
+Target-Profile: DEVICE_linksys_wrt310n-v1
 Target-Profile-Name: Linksys WRT310N v1
 Target-Profile-Packages: kmod-tg3 kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt310n-v1
+Target-Profile-SupportedDevices: linksys,wrt310n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT310N v1
@@ -196,11 +200,12 @@ Build firmware images for Linksys WRT310N v1
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt350n-v1
+Target-Profile: DEVICE_linksys_wrt350n-v1
 Target-Profile-Name: Linksys WRT350N v1
 Target-Profile-Packages: kmod-tg3 kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt350n-v1
+Target-Profile-SupportedDevices: linksys,wrt350n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT350N v1
@@ -209,11 +214,12 @@ Build firmware images for Linksys WRT350N v1
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt610n-v1
+Target-Profile: DEVICE_linksys_wrt610n-v1
 Target-Profile-Name: Linksys WRT610N v1
 Target-Profile-Packages: kmod-tg3 kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt610n-v1
+Target-Profile-SupportedDevices: linksys,wrt610n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT610N v1
@@ -222,11 +228,12 @@ Build firmware images for Linksys WRT610N v1
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt610n-v2
+Target-Profile: DEVICE_linksys_wrt610n-v2
 Target-Profile-Name: Linksys WRT610N v2
 Target-Profile-Packages: kmod-bgmac kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt610n-v2
+Target-Profile-SupportedDevices: linksys,wrt610n-v2
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT610N v2
@@ -235,11 +242,12 @@ Build firmware images for Linksys WRT610N v2
 
 @@
 
-Target-Profile: DEVICE_linksys-e3000-v1
+Target-Profile: DEVICE_linksys_e3000-v1
 Target-Profile-Name: Linksys E3000 v1
 Target-Profile-Packages: kmod-bgmac kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e3000-v1
+Target-Profile-SupportedDevices: linksys,e3000-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E3000 v1
@@ -253,6 +261,7 @@ Target-Profile-Name: Image with LZMA loader and LZMA compressed kernel
 Target-Profile-Packages: kmod-b44 kmod-bgmac kmod-tg3 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: standard
+
 
 Target-Profile-Description:
 Build firmware images for Image with LZMA loader and LZMA compressed kernel
@@ -270,14 +279,15 @@ Target-Features: gpio mips16 pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware for Broadcom BCM47xx and BCM53xx devices with
 	MIPS 74K CPU.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd wpad-basic dnsmasq-full iptables ppp ppp-mod-pppoe firewall swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-mips74k-b43
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43)
 Target-Profile-Packages: kmod-b43 iwinfo
@@ -296,7 +306,7 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-mips74k-wl
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (proprietary wl)
-Target-Profile-Packages: -wpad-basic kmod-brcm-wl wlc nas iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-brcm-wl wlc nas iwinfo
 Target-Profile-Description:
 	Package set for devices with BCM43xx WiFi including proprietary (and
 	closed source) driver "wl".
@@ -304,16 +314,17 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-mips74k-none
 Target-Profile-Name: Broadcom SoC, No WiFi
-Target-Profile-Packages: -wpad-basic iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl iwinfo
 Target-Profile-Description:
 	Package set for devices without a WiFi.
 @@
 
-Target-Profile: DEVICE_asus-rt-ac53u
+Target-Profile: DEVICE_asus_rt-ac53u
 Target-Profile-Name: ASUS RT-AC53U
 Target-Profile-Packages: kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-ac53u
+Target-Profile-SupportedDevices: asus,rt-ac53u
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-AC53U
@@ -322,11 +333,26 @@ Build firmware images for ASUS RT-AC53U
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n10
+Target-Profile: DEVICE_asus_rt-ac66u
+Target-Profile-Name: ASUS RT-AC66U
+Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: asus,rt-ac66u
+
+Target-Profile-Default: n
+Target-Profile-Description:
+Build firmware images for ASUS RT-AC66U
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_rt-n10
 Target-Profile-Name: ASUS RT-N10
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n10
+Target-Profile-SupportedDevices: asus,rt-n10
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N10
@@ -335,11 +361,12 @@ Build firmware images for ASUS RT-N10
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n10p
+Target-Profile: DEVICE_asus_rt-n10p
 Target-Profile-Name: ASUS RT-N10P v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n10p
+Target-Profile-SupportedDevices: asus,rt-n10p
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N10P v1
@@ -348,11 +375,12 @@ Build firmware images for ASUS RT-N10P v1
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n10p-v2
+Target-Profile: DEVICE_asus_rt-n10p-v2
 Target-Profile-Name: ASUS RT-N10P v2
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n10p-v2
+Target-Profile-SupportedDevices: asus,rt-n10p-v2
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N10P v2
@@ -361,11 +389,12 @@ Build firmware images for ASUS RT-N10P v2
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n10u
+Target-Profile: DEVICE_asus_rt-n10u
 Target-Profile-Name: ASUS RT-N10U A
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n10u
+Target-Profile-SupportedDevices: asus,rt-n10u
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N10U A
@@ -374,11 +403,12 @@ Build firmware images for ASUS RT-N10U A
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n10u-b
+Target-Profile: DEVICE_asus_rt-n10u-b
 Target-Profile-Name: ASUS RT-N10U B
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n10u-b
+Target-Profile-SupportedDevices: asus,rt-n10u-b
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N10U B
@@ -387,11 +417,12 @@ Build firmware images for ASUS RT-N10U B
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n12
+Target-Profile: DEVICE_asus_rt-n12
 Target-Profile-Name: ASUS RT-N12 A1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n12
+Target-Profile-SupportedDevices: asus,rt-n12
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N12 A1
@@ -400,11 +431,12 @@ Build firmware images for ASUS RT-N12 A1
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n12-b1
+Target-Profile: DEVICE_asus_rt-n12-b1
 Target-Profile-Name: ASUS RT-N12 B1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n12-b1
+Target-Profile-SupportedDevices: asus,rt-n12-b1
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N12 B1
@@ -413,11 +445,12 @@ Build firmware images for ASUS RT-N12 B1
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n12-c1
+Target-Profile: DEVICE_asus_rt-n12-c1
 Target-Profile-Name: ASUS RT-N12 C1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n12-c1
+Target-Profile-SupportedDevices: asus,rt-n12-c1
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N12 C1
@@ -426,11 +459,12 @@ Build firmware images for ASUS RT-N12 C1
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n12-d1
+Target-Profile: DEVICE_asus_rt-n12-d1
 Target-Profile-Name: ASUS RT-N12 D1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n12-d1
+Target-Profile-SupportedDevices: asus,rt-n12-d1
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N12 D1
@@ -439,11 +473,12 @@ Build firmware images for ASUS RT-N12 D1
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n12hp
+Target-Profile: DEVICE_asus_rt-n12hp
 Target-Profile-Name: ASUS RT-N12HP
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n12hp
+Target-Profile-SupportedDevices: asus,rt-n12hp
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N12HP
@@ -452,11 +487,12 @@ Build firmware images for ASUS RT-N12HP
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n14uhp
+Target-Profile: DEVICE_asus_rt-n14uhp
 Target-Profile-Name: ASUS RT-N14UHP
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n14uhp
+Target-Profile-SupportedDevices: asus,rt-n14uhp
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N14UHP
@@ -465,11 +501,12 @@ Build firmware images for ASUS RT-N14UHP
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n15u
+Target-Profile: DEVICE_asus_rt-n15u
 Target-Profile-Name: ASUS RT-N15U
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n15u
+Target-Profile-SupportedDevices: asus,rt-n15u
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N15U
@@ -478,11 +515,12 @@ Build firmware images for ASUS RT-N15U
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n16
+Target-Profile: DEVICE_asus_rt-n16
 Target-Profile-Name: ASUS RT-N16
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n16
+Target-Profile-SupportedDevices: asus,rt-n16
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N16
@@ -491,11 +529,12 @@ Build firmware images for ASUS RT-N16
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n53
+Target-Profile: DEVICE_asus_rt-n53
 Target-Profile-Name: ASUS RT-N53
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n53
+Target-Profile-SupportedDevices: asus,rt-n53
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N53
@@ -504,11 +543,12 @@ Build firmware images for ASUS RT-N53
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n66u
+Target-Profile: DEVICE_asus_rt-n66u
 Target-Profile-Name: ASUS RT-N66U
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n66u
+Target-Profile-SupportedDevices: asus,rt-n66u
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N66U
@@ -517,11 +557,12 @@ Build firmware images for ASUS RT-N66U
 
 @@
 
-Target-Profile: DEVICE_asus-rt-n66w
+Target-Profile: DEVICE_asus_rt-n66w
 Target-Profile-Name: ASUS RT-N66W
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-rt-n66w
+Target-Profile-SupportedDevices: asus,rt-n66w
+
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N66W
@@ -530,12 +571,13 @@ Build firmware images for ASUS RT-N66W
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt160n-v3
+Target-Profile: DEVICE_linksys_wrt160n-v3
 Target-Profile-Name: Linksys WRT160N v3
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt160n-v3
+Target-Profile-SupportedDevices: linksys,wrt160n-v3
 
+Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Linksys WRT160N v3
 
@@ -543,11 +585,12 @@ Build firmware images for Linksys WRT160N v3
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt310n-v2
+Target-Profile: DEVICE_linksys_wrt310n-v2
 Target-Profile-Name: Linksys WRT310N v2
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt310n-v2
+Target-Profile-SupportedDevices: linksys,wrt310n-v2
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT310N v2
@@ -556,11 +599,12 @@ Build firmware images for Linksys WRT310N v2
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt320n-v1
+Target-Profile: DEVICE_linksys_wrt320n-v1
 Target-Profile-Name: Linksys WRT320N v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt320n-v1
+Target-Profile-SupportedDevices: linksys,wrt320n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT320N v1
@@ -569,11 +613,12 @@ Build firmware images for Linksys WRT320N v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e900-v1
+Target-Profile: DEVICE_linksys_e900-v1
 Target-Profile-Name: Linksys E900 v1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e900-v1
+Target-Profile-SupportedDevices: linksys,e900-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E900 v1
@@ -582,11 +627,12 @@ Build firmware images for Linksys E900 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e1000
+Target-Profile: DEVICE_linksys_e1000
 Target-Profile-Name: Linksys E1000 v1/v2/v2.1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e1000
+Target-Profile-SupportedDevices: linksys,e1000
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E1000 v1/v2/v2.1
@@ -595,11 +641,12 @@ Build firmware images for Linksys E1000 v1/v2/v2.1
 
 @@
 
-Target-Profile: DEVICE_linksys-e1200-v1
+Target-Profile: DEVICE_linksys_e1200-v1
 Target-Profile-Name: Linksys E1200 v1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e1200-v1
+Target-Profile-SupportedDevices: linksys,e1200-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E1200 v1
@@ -608,11 +655,12 @@ Build firmware images for Linksys E1200 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e1200-v2
+Target-Profile: DEVICE_linksys_e1200-v2
 Target-Profile-Name: Linksys E1200 v2
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e1200-v2
+Target-Profile-SupportedDevices: linksys,e1200-v2
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E1200 v2
@@ -621,11 +669,12 @@ Build firmware images for Linksys E1200 v2
 
 @@
 
-Target-Profile: DEVICE_linksys-e1500-v1
+Target-Profile: DEVICE_linksys_e1500-v1
 Target-Profile-Name: Linksys E1500 v1
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e1500-v1
+Target-Profile-SupportedDevices: linksys,e1500-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E1500 v1
@@ -634,11 +683,12 @@ Build firmware images for Linksys E1500 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e1550-v1
+Target-Profile: DEVICE_linksys_e1550-v1
 Target-Profile-Name: Linksys E1550 v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e1550-v1
+Target-Profile-SupportedDevices: linksys,e1550-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E1550 v1
@@ -647,11 +697,12 @@ Build firmware images for Linksys E1550 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e2000-v1
+Target-Profile: DEVICE_linksys_e2000-v1
 Target-Profile-Name: Linksys E2000 v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e2000-v1
+Target-Profile-SupportedDevices: linksys,e2000-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E2000 v1
@@ -660,11 +711,12 @@ Build firmware images for Linksys E2000 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e2500-v1
+Target-Profile: DEVICE_linksys_e2500-v1
 Target-Profile-Name: Linksys E2500 v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e2500-v1
+Target-Profile-SupportedDevices: linksys,e2500-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E2500 v1
@@ -673,11 +725,12 @@ Build firmware images for Linksys E2500 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e2500-v2
+Target-Profile: DEVICE_linksys_e2500-v2
 Target-Profile-Name: Linksys E2500 v2
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e2500-v2
+Target-Profile-SupportedDevices: linksys,e2500-v2
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E2500 v2
@@ -686,11 +739,12 @@ Build firmware images for Linksys E2500 v2
 
 @@
 
-Target-Profile: DEVICE_linksys-e2500-v2.1
+Target-Profile: DEVICE_linksys_e2500-v2.1
 Target-Profile-Name: Linksys E2500 v2.1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e2500-v2.1
+Target-Profile-SupportedDevices: linksys,e2500-v2.1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E2500 v2.1
@@ -699,11 +753,12 @@ Build firmware images for Linksys E2500 v2.1
 
 @@
 
-Target-Profile: DEVICE_linksys-e2500-v3
+Target-Profile: DEVICE_linksys_e2500-v3
 Target-Profile-Name: Linksys E2500 v3
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e2500-v3
+Target-Profile-SupportedDevices: linksys,e2500-v3
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E2500 v3
@@ -712,11 +767,12 @@ Build firmware images for Linksys E2500 v3
 
 @@
 
-Target-Profile: DEVICE_linksys-e3200-v1
+Target-Profile: DEVICE_linksys_e3200-v1
 Target-Profile-Name: Linksys E3200 v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e3200-v1
+Target-Profile-SupportedDevices: linksys,e3200-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E3200 v1
@@ -725,11 +781,12 @@ Build firmware images for Linksys E3200 v1
 
 @@
 
-Target-Profile: DEVICE_linksys-e4200-v1
+Target-Profile: DEVICE_linksys_e4200-v1
 Target-Profile-Name: Linksys E4200 v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-e4200-v1
+Target-Profile-SupportedDevices: linksys,e4200-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys E4200 v1
@@ -738,11 +795,12 @@ Build firmware images for Linksys E4200 v1
 
 @@
 
-Target-Profile: DEVICE_netgear-r6200-v1
+Target-Profile: DEVICE_netgear_r6200-v1
 Target-Profile-Name: NETGEAR R6200 v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-r6200-v1
+Target-Profile-SupportedDevices: netgear,r6200-v1
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR R6200 v1
@@ -751,11 +809,12 @@ Build firmware images for NETGEAR R6200 v1
 
 @@
 
-Target-Profile: DEVICE_netgear-wgr614-v10-na
+Target-Profile: DEVICE_netgear_wgr614-v10-na
 Target-Profile-Name: NETGEAR WGR614 v10 (NA)
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wgr614-v10-na
+Target-Profile-SupportedDevices: netgear,wgr614-v10-na
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WGR614 v10 (NA)
@@ -764,11 +823,12 @@ Build firmware images for NETGEAR WGR614 v10 (NA)
 
 @@
 
-Target-Profile: DEVICE_netgear-wgr614-v10
+Target-Profile: DEVICE_netgear_wgr614-v10
 Target-Profile-Name: NETGEAR WGR614 v10
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wgr614-v10
+Target-Profile-SupportedDevices: netgear,wgr614-v10
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WGR614 v10
@@ -777,11 +837,12 @@ Build firmware images for NETGEAR WGR614 v10
 
 @@
 
-Target-Profile: DEVICE_netgear-wn2500rp-v1
+Target-Profile: DEVICE_netgear_wn2500rp-v1
 Target-Profile-Name: NETGEAR WN2500RP v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wn2500rp-v1
+Target-Profile-SupportedDevices: netgear,wn2500rp-v1
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WN2500RP v1
@@ -790,11 +851,12 @@ Build firmware images for NETGEAR WN2500RP v1
 
 @@
 
-Target-Profile: DEVICE_netgear-wn3000rp
+Target-Profile: DEVICE_netgear_wn3000rp
 Target-Profile-Name: NETGEAR WN3000RP
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wn3000rp
+Target-Profile-SupportedDevices: netgear,wn3000rp
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WN3000RP
@@ -803,11 +865,12 @@ Build firmware images for NETGEAR WN3000RP
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr3400-v1
+Target-Profile: DEVICE_netgear_wndr3400-v1
 Target-Profile-Name: NETGEAR WNDR3400 v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr3400-v1
+Target-Profile-SupportedDevices: netgear,wndr3400-v1
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR3400 v1
@@ -816,11 +879,12 @@ Build firmware images for NETGEAR WNDR3400 v1
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr3400-v2
+Target-Profile: DEVICE_netgear_wndr3400-v2
 Target-Profile-Name: NETGEAR WNDR3400 v2
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr3400-v2
+Target-Profile-SupportedDevices: netgear,wndr3400-v2
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR3400 v2
@@ -829,11 +893,12 @@ Build firmware images for NETGEAR WNDR3400 v2
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr3400-v3
+Target-Profile: DEVICE_netgear_wndr3400-v3
 Target-Profile-Name: NETGEAR WNDR3400 v3
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr3400-v3
+Target-Profile-SupportedDevices: netgear,wndr3400-v3
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR3400 v3
@@ -842,11 +907,12 @@ Build firmware images for NETGEAR WNDR3400 v3
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr3700-v3
+Target-Profile: DEVICE_netgear_wndr3700-v3
 Target-Profile-Name: NETGEAR WNDR3700 v3
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr3700-v3
+Target-Profile-SupportedDevices: netgear,wndr3700-v3
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR3700 v3
@@ -855,11 +921,26 @@ Build firmware images for NETGEAR WNDR3700 v3
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr4000
+Target-Profile: DEVICE_netgear_wndr3400-vcna
+Target-Profile-Name: NETGEAR WNDR3400 vcna
+Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: netgear,wndr3400-vcna
+
+Target-Profile-Default: n
+Target-Profile-Description:
+Build firmware images for NETGEAR WNDR3400 vcna
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wndr4000
 Target-Profile-Name: NETGEAR WNDR4000 v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr4000
+Target-Profile-SupportedDevices: netgear,wndr4000
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR4000 v1
@@ -868,11 +949,12 @@ Build firmware images for NETGEAR WNDR4000 v1
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr1000-v3
+Target-Profile: DEVICE_netgear_wnr1000-v3
 Target-Profile-Name: NETGEAR WNR1000 v3
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr1000-v3
+Target-Profile-SupportedDevices: netgear,wnr1000-v3
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR1000 v3
@@ -881,11 +963,12 @@ Build firmware images for NETGEAR WNR1000 v3
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr2000v2
+Target-Profile: DEVICE_netgear_wnr2000v2
 Target-Profile-Name: NETGEAR WNR2000 v2
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr2000v2
+Target-Profile-SupportedDevices: netgear,wnr2000v2
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR2000 v2
@@ -894,11 +977,12 @@ Build firmware images for NETGEAR WNR2000 v2
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr3500l-v1-na
+Target-Profile: DEVICE_netgear_wnr3500l-v1-na
 Target-Profile-Name: NETGEAR WNR3500L v1 (NA)
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr3500l-v1-na
+Target-Profile-SupportedDevices: netgear,wnr3500l-v1-na
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR3500L v1 (NA)
@@ -907,11 +991,12 @@ Build firmware images for NETGEAR WNR3500L v1 (NA)
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr3500l-v1
+Target-Profile: DEVICE_netgear_wnr3500l-v1
 Target-Profile-Name: NETGEAR WNR3500L v1 (ROW)
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr3500l-v1
+Target-Profile-SupportedDevices: netgear,wnr3500l-v1
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR3500L v1 (ROW)
@@ -920,11 +1005,12 @@ Build firmware images for NETGEAR WNR3500L v1 (ROW)
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr3500l-v2
+Target-Profile: DEVICE_netgear_wnr3500l-v2
 Target-Profile-Name: NETGEAR WNR3500L v2
 Target-Profile-Packages: kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr3500l-v2
+Target-Profile-SupportedDevices: netgear,wnr3500l-v2
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR3500L v2
@@ -933,14 +1019,43 @@ Build firmware images for NETGEAR WNR3500L v2
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr3500-v2
+Target-Profile: DEVICE_netgear_wnr3500u
+Target-Profile-Name: NETGEAR WNR3500U
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: netgear,wnr3500u
+
+Target-Profile-Default: n
+Target-Profile-Description:
+Build firmware images for NETGEAR WNR3500U
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wnr3500-v2
 Target-Profile-Name: NETGEAR WNR3500 v2
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr3500-v2
+Target-Profile-SupportedDevices: netgear,wnr3500-v2
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR3500 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wnr3500-v2-vc
+Target-Profile-Name: NETGEAR WNR3500 v2 (VC)
+Target-Profile-Packages: kmod-b43 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: netgear,wnr3500-v2-vc
+
+Target-Profile-Default: n
+Target-Profile-Description:
+Build firmware images for NETGEAR WNR3500 v2 (VC)
 
 
 
@@ -951,6 +1066,7 @@ Target-Profile-Name: Image with LZMA loader and LZMA compressed kernel
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: standard
+
 
 Target-Profile-Description:
 Build firmware images for Image with LZMA loader and LZMA compressed kernel
@@ -964,6 +1080,7 @@ Target-Profile-Name: Image with LZMA compressed kernel matching CFE decompressor
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: standard-noloader-nodictionarylzma
+
 
 Target-Profile-Description:
 Build firmware images for Image with LZMA compressed kernel matching CFE decompressor
@@ -981,7 +1098,8 @@ Target-Features: gpio low_mem pci pcmcia small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.124
+Linux-Version: 5.4.125
+Linux-Testing-Version: 5.4.125
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -989,7 +1107,7 @@ Target-Description:
 	BMIPS3300 CPU except for BCM4705 SoC.
 	Supported SoCs: BCM5352E, BCM5354, BCM5365?, BCM4712, BCM4704.
 @@
-Default-Packages: base-files libc libgcc dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod busybox procd wpad-mini dnsmasq-full iptables ppp ppp-mod-pppoe firewall swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables kmod-ipt-offload ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget-ssl default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-newapi luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-b43
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (b43, default)
 Target-Profile-Packages: kmod-b43 kmod-b43legacy iwinfo
@@ -1001,18 +1119,19 @@ Target-Profile-Description:
 
 Target-Profile: Broadcom-wl
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (wl, proprietary)
-Target-Profile-Packages: -wpad-mini kmod-brcm-wl-mini wlc nas iwinfo
+Target-Profile-Packages: -wpad-basic-wolfssl kmod-brcm-wl-mini wlc nas iwinfo
 Target-Profile-Description:
 	Package set compatible with hardware any Broadcom BCM47xx or BCM535x
 	SoC with Broadcom BCM43xx Wifi cards using the proprietary Broadcom
 	wireless "wl" driver and b44, tg3 or bgmac Ethernet driver.
 @@
 
-Target-Profile: DEVICE_asus-wl-300g
+Target-Profile: DEVICE_asus_wl-300g
 Target-Profile-Name: ASUS WL-300g
 Target-Profile-Packages: kmod-b43 kmod-b43legacy 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-300g
+Target-Profile-SupportedDevices: asus,wl-300g
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-300g
@@ -1021,11 +1140,12 @@ Build firmware images for ASUS WL-300g
 
 @@
 
-Target-Profile: DEVICE_asus-wl-320gp
+Target-Profile: DEVICE_asus_wl-320gp
 Target-Profile-Name: ASUS WL-320gP
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-320gp
+Target-Profile-SupportedDevices: asus,wl-320gp
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-320gP
@@ -1034,11 +1154,12 @@ Build firmware images for ASUS WL-320gP
 
 @@
 
-Target-Profile: DEVICE_asus-wl-330ge
+Target-Profile: DEVICE_asus_wl-330ge
 Target-Profile-Name: ASUS WL-330gE
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-330ge
+Target-Profile-SupportedDevices: asus,wl-330ge
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-330gE
@@ -1047,11 +1168,12 @@ Build firmware images for ASUS WL-330gE
 
 @@
 
-Target-Profile: DEVICE_asus-wl-500gd
+Target-Profile: DEVICE_asus_wl-500gd
 Target-Profile-Name: ASUS WL-500g Deluxe
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-500gd
+Target-Profile-SupportedDevices: asus,wl-500gd
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-500g Deluxe
@@ -1060,11 +1182,12 @@ Build firmware images for ASUS WL-500g Deluxe
 
 @@
 
-Target-Profile: DEVICE_asus-wl-500gp-v1
+Target-Profile: DEVICE_asus_wl-500gp-v1
 Target-Profile-Name: ASUS WL-500gP v1
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-500gp-v1
+Target-Profile-SupportedDevices: asus,wl-500gp-v1
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-500gP v1
@@ -1073,11 +1196,12 @@ Build firmware images for ASUS WL-500gP v1
 
 @@
 
-Target-Profile: DEVICE_asus-wl-500gp-v2
+Target-Profile: DEVICE_asus_wl-500gp-v2
 Target-Profile-Name: ASUS WL-500gP v2
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-500gp-v2
+Target-Profile-SupportedDevices: asus,wl-500gp-v2
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-500gP v2
@@ -1086,11 +1210,12 @@ Build firmware images for ASUS WL-500gP v2
 
 @@
 
-Target-Profile: DEVICE_asus-wl-500w
+Target-Profile: DEVICE_asus_wl-500w
 Target-Profile-Name: ASUS WL-500W
 Target-Profile-Packages: kmod-b43 kmod-usb-uhci kmod-usb2-pci 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-500w
+Target-Profile-SupportedDevices: asus,wl-500w
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-500W
@@ -1099,11 +1224,12 @@ Build firmware images for ASUS WL-500W
 
 @@
 
-Target-Profile: DEVICE_asus-wl-520gu
+Target-Profile: DEVICE_asus_wl-520gu
 Target-Profile-Name: ASUS WL-520gU
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-520gu
+Target-Profile-SupportedDevices: asus,wl-520gu
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-520gU
@@ -1112,11 +1238,12 @@ Build firmware images for ASUS WL-520gU
 
 @@
 
-Target-Profile: DEVICE_asus-wl-550ge
+Target-Profile: DEVICE_asus_wl-550ge
 Target-Profile-Name: ASUS WL-550gE
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-550ge
+Target-Profile-SupportedDevices: asus,wl-550ge
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-550gE
@@ -1125,11 +1252,12 @@ Build firmware images for ASUS WL-550gE
 
 @@
 
-Target-Profile: DEVICE_asus-wl-hdd25
+Target-Profile: DEVICE_asus_wl-hdd25
 Target-Profile-Name: ASUS WL-HDD25
 Target-Profile-Packages: kmod-b43 kmod-b43legacy kmod-usb-ohci 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: asus-wl-hdd25
+Target-Profile-SupportedDevices: asus,wl-hdd25
+
 
 Target-Profile-Description:
 Build firmware images for ASUS WL-HDD25
@@ -1138,11 +1266,12 @@ Build firmware images for ASUS WL-HDD25
 
 @@
 
-Target-Profile: DEVICE_dlink-dwl-3150
+Target-Profile: DEVICE_dlink_dwl-3150
 Target-Profile-Name: D-Link DWL-3150
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: dlink-dwl-3150
+Target-Profile-SupportedDevices: dlink,dwl-3150
+
 
 Target-Profile-Description:
 Build firmware images for D-Link DWL-3150
@@ -1151,11 +1280,12 @@ Build firmware images for D-Link DWL-3150
 
 @@
 
-Target-Profile: DEVICE_edimax-ps1208-mfg
+Target-Profile: DEVICE_edimax_ps1208-mfg
 Target-Profile-Name: Edimax PS-1208MFg
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: edimax-ps1208-mfg
+Target-Profile-SupportedDevices: edimax,ps1208-mfg
+
 
 Target-Profile-Description:
 Build firmware images for Edimax PS-1208MFg
@@ -1164,11 +1294,12 @@ Build firmware images for Edimax PS-1208MFg
 
 @@
 
-Target-Profile: DEVICE_huawei-e970
+Target-Profile: DEVICE_huawei_e970
 Target-Profile-Name: Huawei E970
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: huawei-e970
+Target-Profile-SupportedDevices: huawei,e970
+
 
 Target-Profile-Description:
 Build firmware images for Huawei E970
@@ -1177,11 +1308,12 @@ Build firmware images for Huawei E970
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54g3g
+Target-Profile: DEVICE_linksys_wrt54g3g
 Target-Profile-Name: Linksys WRT54G3G
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54g3g
+Target-Profile-SupportedDevices: linksys,wrt54g3g
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54G3G
@@ -1190,11 +1322,12 @@ Build firmware images for Linksys WRT54G3G
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54g3g-em
+Target-Profile: DEVICE_linksys_wrt54g3g-em
 Target-Profile-Name: Linksys WRT54G3G-EM
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54g3g-em
+Target-Profile-SupportedDevices: linksys,wrt54g3g-em
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54G3G-EM
@@ -1203,11 +1336,12 @@ Build firmware images for Linksys WRT54G3G-EM
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54g3gv2-vf
+Target-Profile: DEVICE_linksys_wrt54g3gv2-vf
 Target-Profile-Name: Linksys WRT54G3GV2-VF
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: linksys-wrt54g3gv2-vf
+Target-Profile-SupportedDevices: linksys,wrt54g3gv2-vf
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54G3GV2-VF
@@ -1216,11 +1350,12 @@ Build firmware images for Linksys WRT54G3GV2-VF
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54g
+Target-Profile: DEVICE_linksys_wrt54g
 Target-Profile-Name: Linksys WRT54G
 Target-Profile-Packages: kmod-b43 kmod-b43legacy 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54g
+Target-Profile-SupportedDevices: linksys,wrt54g
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54G
@@ -1229,11 +1364,12 @@ Build firmware images for Linksys WRT54G
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54gs
+Target-Profile: DEVICE_linksys_wrt54gs
 Target-Profile-Name: Linksys WRT54G-TM v1 (Linksys WRT54GS v1/v2/v3)
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54gs
+Target-Profile-SupportedDevices: linksys,wrt54gs
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54GS v1/v2/v3
@@ -1243,11 +1379,12 @@ Alternative device titles:
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54gs
+Target-Profile: DEVICE_linksys_wrt54gs
 Target-Profile-Name: Linksys WRT54GS v1/v2/v3
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54gs
+Target-Profile-SupportedDevices: linksys,wrt54gs
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54GS v1/v2/v3
@@ -1257,11 +1394,12 @@ Alternative device titles:
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt54gs-v4
+Target-Profile: DEVICE_linksys_wrt54gs-v4
 Target-Profile-Name: Linksys WRT54GS v4
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt54gs-v4
+Target-Profile-SupportedDevices: linksys,wrt54gs-v4
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT54GS v4
@@ -1270,11 +1408,12 @@ Build firmware images for Linksys WRT54GS v4
 
 @@
 
-Target-Profile: DEVICE_linksys-wrtsl54gs
+Target-Profile: DEVICE_linksys_wrtsl54gs
 Target-Profile-Name: Linksys WRTSL54GS
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrtsl54gs
+Target-Profile-SupportedDevices: linksys,wrtsl54gs
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRTSL54GS
@@ -1283,11 +1422,12 @@ Build firmware images for Linksys WRTSL54GS
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt150n
+Target-Profile: DEVICE_linksys_wrt150n
 Target-Profile-Name: Linksys WRT150N
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt150n
+Target-Profile-SupportedDevices: linksys,wrt150n
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT150N
@@ -1296,11 +1436,12 @@ Build firmware images for Linksys WRT150N
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt160n-v1
+Target-Profile: DEVICE_linksys_wrt160n-v1
 Target-Profile-Name: Linksys WRT160N v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: linksys-wrt160n-v1
+Target-Profile-SupportedDevices: linksys,wrt160n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT160N v1
@@ -1309,11 +1450,12 @@ Build firmware images for Linksys WRT160N v1
 
 @@
 
-Target-Profile: DEVICE_linksys-wrt300n-v1
+Target-Profile: DEVICE_linksys_wrt300n-v1
 Target-Profile-Name: Linksys WRT300N v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: linksys-wrt300n-v1
+Target-Profile-SupportedDevices: linksys,wrt300n-v1
+
 
 Target-Profile-Description:
 Build firmware images for Linksys WRT300N v1
@@ -1322,11 +1464,12 @@ Build firmware images for Linksys WRT300N v1
 
 @@
 
-Target-Profile: DEVICE_motorola-wa840g
+Target-Profile: DEVICE_motorola_wa840g
 Target-Profile-Name: Motorola WA840G
 Target-Profile-Packages: kmod-b43 kmod-b43legacy 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: motorola-wa840g
+Target-Profile-SupportedDevices: motorola,wa840g
+
 
 Target-Profile-Description:
 Build firmware images for Motorola WA840G
@@ -1335,11 +1478,12 @@ Build firmware images for Motorola WA840G
 
 @@
 
-Target-Profile: DEVICE_motorola-we800g
+Target-Profile: DEVICE_motorola_we800g
 Target-Profile-Name: Motorola WE800G
 Target-Profile-Packages: kmod-b43 kmod-b43legacy 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: motorola-we800g
+Target-Profile-SupportedDevices: motorola,we800g
+
 
 Target-Profile-Description:
 Build firmware images for Motorola WE800G
@@ -1348,11 +1492,12 @@ Build firmware images for Motorola WE800G
 
 @@
 
-Target-Profile: DEVICE_motorola-wr850g
+Target-Profile: DEVICE_motorola_wr850g
 Target-Profile-Name: Motorola WR850G
 Target-Profile-Packages: kmod-b43 kmod-b43legacy 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: motorola-wr850g
+Target-Profile-SupportedDevices: motorola,wr850g
+
 
 Target-Profile-Description:
 Build firmware images for Motorola WR850G
@@ -1361,11 +1506,12 @@ Build firmware images for Motorola WR850G
 
 @@
 
-Target-Profile: DEVICE_netgear-wgr614-v8
+Target-Profile: DEVICE_netgear_wgr614-v8
 Target-Profile-Name: NETGEAR WGR614 v8
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wgr614-v8
+Target-Profile-SupportedDevices: netgear,wgr614-v8
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WGR614 v8
@@ -1374,11 +1520,12 @@ Build firmware images for NETGEAR WGR614 v8
 
 @@
 
-Target-Profile: DEVICE_netgear-wgt634u
+Target-Profile: DEVICE_netgear_wgt634u
 Target-Profile-Name: NETGEAR WGT634U
 Target-Profile-Packages: kmod-ath5k kmod-usb-ohci kmod-usb2 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wgt634u
+Target-Profile-SupportedDevices: netgear,wgt634u
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WGT634U
@@ -1387,11 +1534,12 @@ Build firmware images for NETGEAR WGT634U
 
 @@
 
-Target-Profile: DEVICE_netgear-wndr3300-v1
+Target-Profile: DEVICE_netgear_wndr3300-v1
 Target-Profile-Name: NETGEAR WNDR3300 v1
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wndr3300-v1
+Target-Profile-SupportedDevices: netgear,wndr3300-v1
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNDR3300 v1
@@ -1400,11 +1548,12 @@ Build firmware images for NETGEAR WNDR3300 v1
 
 @@
 
-Target-Profile: DEVICE_netgear-wnr834b-v2
+Target-Profile: DEVICE_netgear_wnr834b-v2
 Target-Profile-Name: NETGEAR WNR834B v2
 Target-Profile-Packages: kmod-b43 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: netgear-wnr834b-v2
+Target-Profile-SupportedDevices: netgear,wnr834b-v2
+
 
 Target-Profile-Description:
 Build firmware images for NETGEAR WNR834B v2
@@ -1413,11 +1562,12 @@ Build firmware images for NETGEAR WNR834B v2
 
 @@
 
-Target-Profile: DEVICE_usrobotics-usr5461
+Target-Profile: DEVICE_usrobotics_usr5461
 Target-Profile-Name: US Robotics USR5461
 Target-Profile-Packages: kmod-b43 kmod-usb-ohci 
 Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: usrobotics-usr5461
+Target-Profile-SupportedDevices: usrobotics,usr5461
+
 
 Target-Profile-Description:
 Build firmware images for US Robotics USR5461
@@ -1432,6 +1582,7 @@ Target-Profile-Packages:
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: standard
 
+
 Target-Profile-Description:
 Build firmware images for Image with LZMA loader and LZMA compressed kernel
 
@@ -1444,6 +1595,7 @@ Target-Profile-Name: Image with gzipped kernel
 Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: standard-noloader-gz
+
 
 Target-Profile-Description:
 Build firmware images for Image with gzipped kernel

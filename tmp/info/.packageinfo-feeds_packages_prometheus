@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/prometheus/Makefile
 Build-Depends: golang/host
 
 Package: prometheus
-Version: 2.15.2-1
+Version: 2.25.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: packages
 Title: Monitoring system & time series database
 Maintainer: Paul Spooren <mail@aparcar.org>
 Require-User: prometheus=112:prometheus=112
-Source: prometheus-2.15.2.tar.gz
+Source: prometheus-2.25.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

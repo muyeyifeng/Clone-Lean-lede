@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/taglib/Makefile
 
 Package: taglib
-Version: 1.12-beta-1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Version: 1.12-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,11 +11,10 @@ Category: Libraries
 Repository: packages
 Title: taglib
 Maintainer: 
-Source: taglib-1.12-beta-1.tar.gz
+Source: taglib-1.12.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LGPL
 Type: ipkg
-Build-Only: 1
 Description:   TagLib is a library for reading and editing the metadata of several
   popular audio formats. Currently it supports both ID3v1 and ID3v2 for
   MP3 files, Ogg Vorbis comments and ID3 tags in FLAC, MPC, Speex, WavPack,

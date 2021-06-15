@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/mpg123/Makefile
 
 Package: libmpg123
-Version: 1.25.13-3
+Version: 1.27.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: fast console mpeg audio decoder library
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.13.tar.bz2
+Source: mpg123-1.27.2.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -21,7 +21,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 Package: libout123
-Version: 1.25.13-3
+Version: 1.27.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Libraries
 Repository: packages
 Title: Library for continuous playback of audio streams via various platform-specific output methods
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.13.tar.bz2
+Source: mpg123-1.27.2.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -40,9 +40,29 @@ http://www.mpg123.de
 Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
+Package: libsyn123
+Version: 1.27.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Library for signal generation and format conversion
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: mpg123-1.27.2.tar.bz2
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description: Library for signal generation and format conversion
+http://www.mpg123.de
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
 Package: mpg123
-Version: 1.25.13-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpg123 +alsa-lib +libout123
+Version: 1.27.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpg123 +alsa-lib +libout123 +libsyn123
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +71,7 @@ Category: Sound
 Repository: packages
 Title: fast console mpeg audio player
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.13.tar.bz2
+Source: mpg123-1.27.2.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

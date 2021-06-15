@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/keepalived/Makefile
 
 Package: keepalived
-Version: 2.2.2-1
+Version: 2.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-genl +libmagic +KEEPALIVED_VRRP:kmod-macvlan +KEEPALIVED_VRRP:libnl-route +KEEPALIVED_VRRP:libnfnetlink +KEEPALIVED_SHA1:libopenssl +KEEPALIVED_IPTABLES:libip4tc +KEEPALIVED_IPTABLES:libxtables +KEEPALIVED_IPTABLES:libipset +(KEEPALIVED_SNMP_VRRP||KEEPALIVED_SNMP_CHECKER||KEEPALIVED_SNMP_RFC2||KEEPALIVED_SNMP_RFC3):libnetsnmp +KEEPALIVED_JSON:libjson-c +KEEPALIVED_DBUS:glib2
 Conflicts: 
 Menu-Depends: 

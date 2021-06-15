@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/tesseract/Makefile
 
 Package: tesseract
 Menu: 1
-Version: 4.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libleptonica +libpthread +libstdcpp
+Version: 4.1.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libleptonica +libarchive +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: packages
 Title: Tesseract Open Source OCR Engine
 Maintainer: Valentin Kivachuk <vk18496@gmail.com>
-Source: tesseract-4.0.0.tar.gz
+Source: tesseract-4.1.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

@@ -1,9 +1,10 @@
 Source-Makefile: feeds/packages/utils/stoken/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: stoken
 Menu: 1
 Submenu: Encryption
-Version: 0.92-1
+Version: 0.92-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstoken
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +23,7 @@ https://sourceforge.net/p/stoken/wiki/Home/
 @@
 
 Package: libstoken
-Version: 0.92-1
+Version: 0.92-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libnettle
 Conflicts: 
 Menu-Depends: 

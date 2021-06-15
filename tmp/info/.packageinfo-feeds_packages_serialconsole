@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/serialconsole/Makefile
 
 Package: serialconsole
 Submenu: Terminal
-Version: 0.95-1
+Version: 1.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,9 @@ Category: Utilities
 Repository: packages
 Title: Serial Console - minimal terminal program
 Maintainer: Stefan Bethke <stb@lassitu.de>
-Source: sc-0.95.tar.gz
+Source: sc-1.0.tar.gz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
 Type: ipkg
 Description: serialconsole (sc) is a minimal terminal program allowing to use one machine
 to access the serial console of another machine.

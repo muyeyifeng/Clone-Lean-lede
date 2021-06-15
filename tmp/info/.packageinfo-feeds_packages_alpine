@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/alpine/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: alpine
-Version: 2.23-1
+Version: 2.24-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Mail
 Repository: packages
 Title: Alternatively Licensed Program for Internet News and Email (with OpenSSL support)
 Maintainer: Antti Seppälä <a.seppala@gmail.com>
-Source: alpine-2.23.tar.xz
+Source: alpine-2.24.tar.xz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -27,8 +27,8 @@ Antti Seppälä <a.seppala@gmail.com>
 @@
 
 Package: alpine-nossl
-Version: 2.23-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Version: 2.24-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full @BROKEN
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Category: Mail
 Repository: packages
 Title: Alternatively Licensed Program for Internet News and Email (without OpenSSL support)
 Maintainer: Antti Seppälä <a.seppala@gmail.com>
-Source: alpine-2.23.tar.xz
+Source: alpine-2.24.tar.xz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

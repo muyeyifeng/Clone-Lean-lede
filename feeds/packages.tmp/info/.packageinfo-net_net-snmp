@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/net-snmp/Makefile
 
 Package: libnetsnmp
-Version: 5.8-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +libpci
+Version: 5.9-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +libpci +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Open source SNMP implementation (libraries)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
@@ -26,7 +26,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmp-mibs
-Version: 5.8-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: Open source SNMP implementation (MIB-files)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
@@ -51,7 +51,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmp-utils
-Version: 5.8-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ Category: Network
 Repository: base
 Title: Open source SNMP implementation (utilities)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
@@ -82,7 +82,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmpd
-Version: 5.8-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -92,7 +92,7 @@ Category: Network
 Repository: base
 Title: Open source SNMP implementation (daemon)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
@@ -107,7 +107,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmpd-static
-Version: 5.8-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +snmpd
 Conflicts: 
 Menu-Depends: 
@@ -117,16 +117,17 @@ Category: Network
 Repository: base
 Title: Open source SNMP implementation (daemon)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
+Build-Only: 1
 Description: Open source SNMP implementation (daemon)
 http://www.net-snmp.org/
 Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmptrapd
-Version: 5.8-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -136,7 +137,7 @@ Category: Network
 Repository: base
 Title: Open source SNMP implementation (notification receiver)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: net-snmp-5.8.tar.gz
+Source: net-snmp-5.9.tar.gz
 License: MIT BSD-3-Clause-Clear
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libjpeg-turbo/Makefile
 
 Package: libjpeg-turbo
-Version: 2.0.5-1
+Version: 2.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: libjpeg-turbo runtime library
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: libjpeg-turbo-2.0.5.tar.gz
+Source: libjpeg-turbo-2.1.0.tar.gz
 License: BSD-3-Clause IJG zlib
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -22,7 +22,7 @@ Rosen Penev <rosenp@gmail.com>
 
 Package: libjpeg-turbo-utils
 Submenu: Image Manipulation
-Version: 2.0.5-1
+Version: 2.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg-turbo
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Utilities
 Repository: base
 Title: libjpeg-turbo manipulation tools
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: libjpeg-turbo-2.0.5.tar.gz
+Source: libjpeg-turbo-2.1.0.tar.gz
 License: BSD-3-Clause IJG zlib
 LicenseFiles: LICENSE.md
 Type: ipkg

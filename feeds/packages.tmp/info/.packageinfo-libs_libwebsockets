@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libwebsockets/Makefile
 
 Package: libwebsockets-openssl
-Version: 3.2.1-1
+Version: 4.1.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Libraries
 Repository: base
 Title: libwebsockets (OpenSSL)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-3.2.1.tar.gz
-License: LGPL-2.1+exception
+Source: libwebsockets-4.1.6.tar.gz
+License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: libwebsockets (OpenSSL)
@@ -22,7 +22,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libwebsockets-mbedtls
-Version: 3.2.1-1
+Version: 4.1.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -33,8 +33,8 @@ Category: Libraries
 Repository: base
 Title: libwebsockets (mbedTLS)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-3.2.1.tar.gz
-License: LGPL-2.1+exception
+Source: libwebsockets-4.1.6.tar.gz
+License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: libwebsockets (mbedTLS)
@@ -43,7 +43,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libwebsockets-full
-Version: 3.2.1-1
+Version: 4.1.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl +libuv
 Conflicts: 
 Menu-Depends: 
@@ -54,8 +54,8 @@ Category: Libraries
 Repository: base
 Title: libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-3.2.1.tar.gz
-License: LGPL-2.1+exception
+Source: libwebsockets-4.1.6.tar.gz
+License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: libwebsockets (Full - OpenSSL, libuv, plugins, CGI)

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/https-dns-proxy/Makefile
 
 Package: https-dns-proxy
-Version: 2020-04-09-3
+Version: 2021-06-03-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcares +libcurl +libev +ca-bundle
 Conflicts: https_dns_proxy
 Menu-Depends: 
@@ -11,12 +11,14 @@ Category: Network
 Repository: base
 Title: DNS Over HTTPS Proxy
 Maintainer: Stan Grishin <stangri@melmac.net>
-Source: https-dns-proxy-2020-04-09.tar.xz
+Source: https-dns-proxy-2021-06-03.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description: https_dns_proxy is a light-weight DNS<-->HTTPS, non-caching translation proxy for the RFC 8484 DNS-over-HTTPS standard. It receives regular (UDP) DNS requests and issues them via DoH.
-Please see https://github.com/openwrt/packages/blob/master/net/https-dns-proxy/files/README.md for further information.
+Description: https-dns-proxy is a light-weight DNS<-->HTTPS, non-caching translation proxy for the RFC 8484 DoH standard.
+It receives regular (UDP) DNS requests and issues them via DoH.
+Please see https://docs.openwrt.melmac.net/https-dns-proxy/ for more information.
+https://docs.openwrt.melmac.net/https-dns-proxy/
 Stan Grishin <stangri@melmac.net>
 @@
 

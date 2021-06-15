@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/mail/postfix/Makefile
 
 Package: postfix
-Version: 3.5.0-1
+Version: 3.5.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +POSTFIX_CDB:tinycdb +POSTFIX_TLS:libopenssl +POSTFIX_SASL:libsasl2 +POSTFIX_LDAP:libopenldap +POSTFIX_DB:libdb47 +POSTFIX_SQLITE:libsqlite3 +POSTFIX_MYSQL:libmysqlclient +POSTFIX_PGSQL:libpq +POSTFIX_EAI:icu +POSTFIX_PCRE:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Repository: base
 Title: Postfix Mail Transmit Agent
 Maintainer: Denis Shulyaka <Shulyaka@gmail.com>
 Require-User: postfix=25:postfix=25 postdrop=26:postdrop=26
-Source: postfix-3.5.0.tar.gz
+Source: postfix-3.5.8.tar.gz
 License: IPL-1.0
 LicenseFiles: LICENSE
 Type: ipkg

@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/kernel/ksmbd/Makefile
 
 Package: kmod-fs-ksmbd
 Submenu: Filesystems
-Version: <LINUX_VERSION>+3.2.2-1
-Depends: +kmod-nls-base +kmod-nls-utf8 +kmod-crypto-md4 +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-arc4 +kmod-crypto-ecb +kmod-crypto-des +kmod-crypto-sha256 +kmod-crypto-cmac +kmod-crypto-sha512 +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-gcm
+Version: <LINUX_VERSION>+3.3.9-1
+Depends: +kmod-nls-base +kmod-nls-utf8 +kmod-crypto-md4 +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-arc4 +kmod-crypto-ecb +kmod-crypto-des +kmod-crypto-sha256 +kmod-crypto-cmac +kmod-crypto-sha512 +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-gcm +kmod-lib-crc32c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: SMB kernel server support
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: ksmbd-3.2.2.tar.gz
+Source: ksmbd-3.3.9.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

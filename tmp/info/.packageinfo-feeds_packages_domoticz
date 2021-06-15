@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/domoticz/Makefile
 Build-Depends: python3 minizip cereal
 
 Package: domoticz
-Version: 2020.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +minizip +lua5.3 +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
+Version: 2020.2-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +python3 +minizip @BROKEN +lua5.3 +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

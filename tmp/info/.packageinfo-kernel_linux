@@ -5279,7 +5279,7 @@ Description:  PHY library
 Package: kmod-phylink
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6133,29 +6133,6 @@ Description:  Kernel modules for Cologne AG's HFC multiport cards (HFC-4S/8S/E1)
 
 @@
 
-Package: kmod-gigaset
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @USB_SUPPORT +kmod-isdn4linux +kmod-lib-crc-ccitt +kmod-usb-core @!LINUX_5_4
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Siemens Gigaset support for isdn4linux
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ISDN_DRV_GIGASET CONFIG_GIGASET_BASE CONFIG_GIGASET_M101 CONFIG_GIGASET_M105 CONFIG_GIGASET_UNDOCREQ=y CONFIG_GIGASET_I4L=y
-Description:  This driver supports the Siemens Gigaset SX205/255 family of
- ISDN DECT bases, including the predecessors Gigaset 3070/3075
- and 4170/4175 and their T-Com versions Sinus 45isdn and Sinus
- 721X.
-http://gigaset307x.sourceforge.net/
-
-@@
-
 Package: kmod-macvlan
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -6504,6 +6481,44 @@ Description:   This driver supports QLogic QLE8240 and QLE8242 Converged Etherne
 
 @@
 
+Package: kmod-sfp
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core +kmod-hwmon-core +kmod-phylink
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SFP cage support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SFP CONFIG_MDIO_I2C
+Description:  Kernel module to support SFP cages
+
+@@
+
+Package: kmod-igc
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-ptp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Controller I225 Series support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IGC
+Description:   Kernel modules for Intel(R) Ethernet Controller I225 Series
+
+@@
+
 Package: kmod-sfc
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -6540,63 +6555,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SFC_FALCON CONFIG_SFC_FALCON_MTD=y
 Description:   Solarflare SFC4000 support
-
-@@
-
-Package: kmod-sfp
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-hwmon-core +kmod-phylink +kmod-libphy
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SFP cage support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SFP CONFIG_MDIO_I2C
-Description:  Kernel module to support SFP cages
-
-@@
-
-Package: kmod-igc
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-ptp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel(R) Ethernet Controller I225 Series support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_IGC
-Description:   Kernel modules for Intel(R) Ethernet Controller I225 Series
-
-@@
-
-Package: kmod-jme
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mii
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: JMicron(R) PCI-Express Gigabit Ethernet support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_JME
-Description:   Supports JMicron(R) PCI-Express Gigabit Ethernet adapters
 
 @@
 
@@ -7080,97 +7038,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_IP_NF_RAW
 Description: Netfilter IPv4 raw table support
-
-@@
-
-Package: kmod-ipt-imq
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intermediate Queueing support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_IMQ CONFIG_IMQ_BEHAVIOR_BA=y CONFIG_IMQ_NUM_DEVS=2 CONFIG_NETFILTER_XT_TARGET_IMQ
-Description:  Kernel support for Intermediate Queueing devices
-
-@@
-
-Package: kmod-ipt-bandwidth
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends: @!LINUX_5_4 kmod-ipt-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: bandwidth
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Description: bandwidth
-
-@@
-
-Package: kmod-ipt-timerange
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends: @!LINUX_5_4 kmod-ipt-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: timerange
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Description: timerange
-
-@@
-
-Package: kmod-ipt-webmon
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends: @!LINUX_5_4 kmod-ipt-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: webmon
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Description: webmon
-
-@@
-
-Package: kmod-ipt-weburl
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends: @!LINUX_5_4 kmod-ipt-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: weburl
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Description: weburl
 
 @@
 
@@ -8812,7 +8679,7 @@ Version: <LINUX_VERSION>-
 Depends: +kmod-sched-core
 Conflicts: 
 Menu-Depends: 
-Provides: kmod-sched-cake-oot
+Provides: 
 Section: kernel
 Category: Kernel modules
 Title: Cake fq_codel/blue derived shaper
@@ -13026,20 +12893,19 @@ Description:  Kernel modules for USB-to-Ethernet convertors
 Package: kmod-usb-net-aqc111
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy +kmod-usb-net 
+Depends:  +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Kernel module for Aquantia AQtion USB to 5/2.5GbE Controllers
+Title: Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_USB_NET_AQC111
-Description:  Kernel module for Aquantia AQtion USB Ethernet adapters
- based on AQC111U/AQC112 chips.
+Description:  Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
 
 @@
 
@@ -13294,7 +13160,7 @@ Description:  Kernel module for USB-to-Ethernet Realtek 8150 convertors
 Package: kmod-usb-net-rtl8152
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_5_4:r8169-firmware +kmod-usb-net  +LINUX_5_10:kmod-crypto-hash
+Depends:  +kmod-usb-net  +LINUX_5_10:kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -17012,7 +16878,7 @@ Menu-Depends:
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Allwinner A10/A20 built-in RTC support
+Title: Sunxi SoC built-in RTC support
 Maintainer: 
 Source: 
 License: GPL-2.0

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libfstrm/Makefile
 
 Package: libfstrm
-Version: 0.6.0-1
+Version: 0.6.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -10,7 +10,7 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: C implementation of the Frame Streams data transport protocol
-Maintainer: James Taylor <james@jtaylor.id.au>
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: fstrm-0.6.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
@@ -22,7 +22,7 @@ Description: fstrm is an optimized C implementation of Frame Streams that includ
   facilitate the addition of high speed binary logging to DNS servers written
   in C using the dnstap log format.
 https://github.com/farsightsec/fstrm
-James Taylor <james@jtaylor.id.au>
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 
