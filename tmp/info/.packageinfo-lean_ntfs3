@@ -1,0 +1,21 @@
+Source-Makefile: package/lean/ntfs3/Makefile
+
+Package: kmod-fs-ntfs3
+Submenu: Filesystems
+Version: <LINUX_VERSION>+5.1.1-2
+Depends: +kmod-nls-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel module for NTFS Read-Write file system support
+Maintainer: 
+Source: ntfs3-5.1.1.tar.xz
+License: GPL-2.0-only
+Type: ipkg
+Description: Kernel module for NTFS Read-Write file system support
+
+@@
+
+

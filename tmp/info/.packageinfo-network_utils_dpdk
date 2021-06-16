@@ -1,5 +1,6 @@
 Source-Makefile: package/network/utils/dpdk/Makefile
-Build-Depends: meson/host ninja/host
+Build-Depends: meson/host ninja/host ninja/host ninja/host
+Build-Depends/host: ninja/host ninja/host
 Build-Types: host
 
 Package: dpdk
