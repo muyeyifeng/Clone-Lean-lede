@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-qbittorrent
 Submenu: 3. Applications
-Version: 1.0-19
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +qBittorrent +python3
+Version: 1.0-20
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +qBittorrent
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Description: LuCI support for qBittorrent
 
 Package: luci-i18n-qbittorrent-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 1.0-19
+Version: 1.0-20
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qbittorrent
 Conflicts: 
 Menu-Depends: 
