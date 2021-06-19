@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-docker
 Submenu: 3. Applications
-Version: 1-10
+Version: 1-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dockerd +e2fsprogs +fdisk
 Conflicts: 
 Menu-Depends: 
@@ -21,7 +21,7 @@ Description: Luci for Docker-CE
 
 Package: luci-i18n-docker-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 1-10
+Version: 1-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-docker
 Conflicts: 
 Menu-Depends: 

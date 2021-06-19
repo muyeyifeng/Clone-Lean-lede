@@ -3651,7 +3651,7 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v14.17.0-2
+Version: v14.17.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @HAS_FPU @(i386||x86_64||arm||aarch64||mipsel) +libstdcpp +libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
@@ -3661,7 +3661,7 @@ Category: Languages
 Repository: base
 Title: Node.js is a platform built on Chrome's JavaScript runtime
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v14.17.0.tar.xz
+Source: node-v14.17.1.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -3699,7 +3699,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v14.17.0-2
+Version: v14.17.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
 Conflicts: 
 Menu-Depends: 
@@ -3709,7 +3709,7 @@ Category: Languages
 Repository: base
 Title: NPM stands for Node Package Manager
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v14.17.0.tar.xz
+Source: node-v14.17.1.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60866,7 +60866,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.4.0-1
+Version: 2.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -60877,7 +60877,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.0.tar.gz
+Source: haproxy-2.4.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60890,7 +60890,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.4.0-1
+Version: 2.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -60901,7 +60901,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.0.tar.gz
+Source: haproxy-2.4.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60912,7 +60912,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.4.0-1
+Version: 2.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -60923,7 +60923,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.0.tar.gz
+Source: haproxy-2.4.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -68472,7 +68472,7 @@ Source-Makefile: feeds/packages/net/openvpn/Makefile
 Package: openvpn-openssl
 Menu: 1
 Submenu: VPN
-Version: 2.5.2-2
+Version: 2.5.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_openssl_ENABLE_LZO:liblzo +OPENVPN_openssl_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -68483,7 +68483,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using OpenSSL
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.2.tar.xz
+Source: openvpn-2.5.3.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using OpenSSL
@@ -68497,7 +68497,7 @@ Config:
 Package: openvpn-mbedtls
 Menu: 1
 Submenu: VPN
-Version: 2.5.2-2
+Version: 2.5.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_mbedtls_ENABLE_LZO:liblzo +OPENVPN_mbedtls_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -68508,7 +68508,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using mbedTLS
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.2.tar.xz
+Source: openvpn-2.5.3.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using mbedTLS
@@ -68522,7 +68522,7 @@ Config:
 Package: openvpn-wolfssl
 Menu: 1
 Submenu: VPN
-Version: 2.5.2-2
+Version: 2.5.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_wolfssl_ENABLE_LZO:liblzo +OPENVPN_wolfssl_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -68533,7 +68533,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using WolfSSL \(experimental\)
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.2.tar.xz
+Source: openvpn-2.5.3.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using WolfSSL \(experimental\)
@@ -70639,7 +70639,7 @@ Build-Depends/host: python3/host rpcsvc-proto/host perl/host perl-parse-yapp/hos
 Build-Types: host
 
 Package: samba4-libs
-Version: 4.13.8-0
+Version: 4.13.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +libreadline +libpopt +libcap +zlib +libgnutls +libtasn1 +libuuid +libopenssl +libpthread +KERNEL_IO_URING:liburing +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python3-cryptodome +SAMBA4_SERVER_AD_DC:libopenldap +SAMBA4_SERVER_AD_DC:jansson +SAMBA4_SERVER_AD_DC:libarchive +SAMBA4_SERVER_AD_DC:acl +SAMBA4_SERVER_AD_DC:attr
 Conflicts: 
 Menu-Depends: 
@@ -70647,19 +70647,19 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.13.8 libs
+Title: Samba 4.13.9 libs
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.13.8.tar.gz
+Source: samba-4.13.9.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
-Description: Samba 4.13.8 libs
+Description: Samba 4.13.9 libs
 https://www.samba.org/
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-server
-Version: 4.13.8-0
+Version: 4.13.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: samba36-server
 Menu-Depends: 
@@ -70667,9 +70667,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.13.8 server
+Title: Samba 4.13.9 server
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.13.8.tar.gz
+Source: samba-4.13.9.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -70687,7 +70687,7 @@ Config:
 @@
 
 Package: samba4-client
-Version: 4.13.8-0
+Version: 4.13.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -70695,9 +70695,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.13.8 client
+Title: Samba 4.13.9 client
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.13.8.tar.gz
+Source: samba-4.13.9.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -70709,7 +70709,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-admin
-Version: 4.13.8-0
+Version: 4.13.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -70717,9 +70717,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.13.8 admin tools
+Title: Samba 4.13.9 admin tools
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.13.8.tar.gz
+Source: samba-4.13.9.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -70733,7 +70733,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-utils
-Version: 4.13.8-0
+Version: 4.13.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -70741,9 +70741,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.13.8 utils
+Title: Samba 4.13.9 utils
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.13.8.tar.gz
+Source: samba-4.13.9.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -72107,7 +72107,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: strongswan
 Menu: 1
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +ip +kmod-crypto-authenc +kmod-ipsec +kmod-ipsec4 +IPV6:kmod-ipsec6 +kmod-ipt-ipsec +iptables-mod-ipsec
 Conflicts: 
 Menu-Depends: 
@@ -72131,7 +72131,7 @@ Config:
 
 Package: strongswan-default
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-mod-aes +strongswan-mod-attr +strongswan-mod-connmark +strongswan-mod-constraints +strongswan-mod-des +strongswan-mod-dnskey +strongswan-mod-fips-prf +strongswan-mod-gmp +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-md5 +strongswan-mod-nonce +strongswan-mod-pem +strongswan-mod-pgp +strongswan-mod-pkcs1 +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-rc2 +strongswan-mod-resolve +strongswan-mod-revocation +strongswan-mod-sha1 +strongswan-mod-sha2 +strongswan-mod-socket-default +strongswan-mod-sshkey +strongswan-mod-updown +strongswan-mod-x509 +strongswan-mod-xauth-generic +strongswan-mod-xcbc +strongswan-swanctl
 Conflicts: 
 Menu-Depends: 
@@ -72152,7 +72152,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-full
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-charon-cmd +strongswan-ipsec +strongswan-libnttfft +strongswan-mod-addrblock +strongswan-mod-aes +strongswan-mod-af-alg +strongswan-mod-agent +strongswan-mod-attr +strongswan-mod-attr-sql +strongswan-mod-bliss +strongswan-mod-blowfish +strongswan-mod-ccm +strongswan-mod-chapoly +strongswan-mod-cmac +strongswan-mod-constraints +strongswan-mod-connmark +strongswan-mod-coupling +strongswan-mod-ctr +strongswan-mod-curl +strongswan-mod-curve25519 +strongswan-mod-des +strongswan-mod-dhcp +strongswan-mod-dnskey +strongswan-mod-duplicheck +strongswan-mod-eap-identity +strongswan-mod-eap-md5 +strongswan-mod-eap-mschapv2 +strongswan-mod-eap-radius +strongswan-mod-eap-tls +strongswan-mod-farp +strongswan-mod-fips-prf +strongswan-mod-forecast +strongswan-mod-gcm +strongswan-mod-gcrypt +strongswan-mod-gmp +strongswan-mod-ha +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-ldap +strongswan-mod-led +strongswan-mod-load-tester +strongswan-mod-nonce +strongswan-mod-md4 +strongswan-mod-md5 +strongswan-mod-mgf1 +strongswan-mod-mysql +strongswan-mod-newhope +strongswan-mod-ntru +strongswan-mod-openssl +strongswan-mod-pem +strongswan-mod-pgp +strongswan-mod-pkcs1 +strongswan-mod-pkcs7 +strongswan-mod-pkcs8 +strongswan-mod-pkcs11 +strongswan-mod-pkcs12 +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-rc2 +strongswan-mod-resolve +strongswan-mod-revocation +strongswan-mod-sha1 +strongswan-mod-sha2 +strongswan-mod-sha3 +strongswan-mod-smp +strongswan-mod-socket-default +strongswan-mod-sql +strongswan-mod-sqlite +strongswan-mod-sshkey +strongswan-mod-stroke +strongswan-mod-test-vectors +strongswan-mod-uci +strongswan-mod-unity +strongswan-mod-updown +strongswan-mod-vici +strongswan-mod-whitelist +strongswan-mod-x509 +strongswan-mod-xauth-eap +strongswan-mod-xauth-generic +strongswan-mod-xcbc +strongswan-pki +strongswan-scepclient +strongswan-swanctl @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -72176,7 +72176,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-minimal
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-mod-aes +strongswan-mod-gmp +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-nonce +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-sha1 +strongswan-mod-socket-default +strongswan-mod-stroke +strongswan-mod-updown +strongswan-mod-x509 +strongswan-mod-xcbc
 Conflicts: 
 Menu-Depends: 
@@ -72197,7 +72197,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-isakmp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-ipsec +strongswan-mod-aes +strongswan-mod-des +strongswan-mod-gmpdh +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-md5 +strongswan-mod-nonce +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-sha1 +strongswan-mod-socket-default +strongswan-mod-stroke +strongswan-mod-uci +strongswan-mod-updown
 Conflicts: 
 Menu-Depends: 
@@ -72220,7 +72220,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-charon
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72241,7 +72241,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-charon-cmd
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon
 Conflicts: 
 Menu-Depends: 
@@ -72262,7 +72262,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-ipsec
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72283,7 +72283,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-libnttfft
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72304,7 +72304,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-pki
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72325,7 +72325,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-scepclient
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72346,7 +72346,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-swanctl
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-vici
 Conflicts: 
 Menu-Depends: 
@@ -72367,7 +72367,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-gencerts
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-pki bash
 Conflicts: 
 Menu-Depends: 
@@ -72388,7 +72388,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-libtls
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72410,7 +72410,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-addrblock
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72430,7 +72430,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-aes
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72450,7 +72450,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-af-alg
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
@@ -72470,7 +72470,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-agent
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72490,7 +72490,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-attr
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72510,7 +72510,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-attr-sql
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon
 Conflicts: 
 Menu-Depends: 
@@ -72530,7 +72530,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-bliss
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libnttfft +strongswan-mod-mgf1 +strongswan-mod-hmac
 Conflicts: 
 Menu-Depends: 
@@ -72550,7 +72550,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-blowfish
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72570,7 +72570,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ccm
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72590,7 +72590,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-chapoly
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72610,7 +72610,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-cmac
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72630,7 +72630,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-connmark
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72650,7 +72650,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-constraints
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72670,7 +72670,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-coupling
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72690,7 +72690,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ctr
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72710,7 +72710,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-curl
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -72730,7 +72730,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-curve25519
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72750,7 +72750,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-des
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72770,7 +72770,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-dhcp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72790,7 +72790,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-dnskey
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72810,7 +72810,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-duplicheck
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72830,7 +72830,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-identity
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72850,7 +72850,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-md5
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72870,7 +72870,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-mschapv2
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-md4 +strongswan-mod-des
 Conflicts: 
 Menu-Depends: 
@@ -72890,7 +72890,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-radius
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72910,7 +72910,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-tls
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libtls
 Conflicts: 
 Menu-Depends: 
@@ -72930,7 +72930,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-farp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72950,7 +72950,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-fips-prf
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sha1
 Conflicts: 
 Menu-Depends: 
@@ -72970,7 +72970,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-forecast
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +kmod-ipt-conntrack-extra
 Conflicts: 
 Menu-Depends: 
@@ -72990,7 +72990,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gcm
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73010,7 +73010,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gcrypt
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-gcrypt:libgcrypt
 Conflicts: 
 Menu-Depends: 
@@ -73030,7 +73030,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gmp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -73050,7 +73050,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gmpdh
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73070,7 +73070,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ha
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73090,7 +73090,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-hmac
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73110,7 +73110,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-kernel-libipsec
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73130,7 +73130,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-kernel-netlink
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73150,7 +73150,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ldap
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -73170,7 +73170,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-led
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73190,7 +73190,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-load-tester
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73210,7 +73210,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-nonce
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73230,7 +73230,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-md4
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73250,7 +73250,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-md5
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73270,7 +73270,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-mgf1
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73290,7 +73290,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-mysql
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sql +PACKAGE_strongswan-mod-mysql:libmysqlclient-r
 Conflicts: 
 Menu-Depends: 
@@ -73310,7 +73310,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-newhope
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libnttfft +strongswan-mod-chapoly +strongswan-mod-sha3
 Conflicts: 
 Menu-Depends: 
@@ -73330,7 +73330,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ntru
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-mgf1
 Conflicts: 
 Menu-Depends: 
@@ -73350,7 +73350,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-openssl
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -73370,7 +73370,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pem
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73390,7 +73390,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pgp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73410,7 +73410,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs1
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73430,7 +73430,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs7
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73450,7 +73450,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs8
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73470,7 +73470,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs11
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73490,7 +73490,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs12
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73510,7 +73510,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pubkey
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73530,7 +73530,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-random
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73550,7 +73550,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-rc2
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73570,7 +73570,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-resolve
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73590,7 +73590,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-revocation
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73610,7 +73610,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha1
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73630,7 +73630,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha2
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73650,7 +73650,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha3
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73670,7 +73670,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-smp
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-smp:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -73690,7 +73690,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-socket-default
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73710,7 +73710,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-socket-dynamic
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73730,7 +73730,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sql
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73750,7 +73750,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sqlite
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sql +PACKAGE_strongswan-mod-sqlite:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -73770,7 +73770,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sshkey
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73790,7 +73790,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-stroke
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-ipsec
 Conflicts: 
 Menu-Depends: 
@@ -73810,7 +73810,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-test-vectors
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73830,7 +73830,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-uci
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-uci:libuci
 Conflicts: 
 Menu-Depends: 
@@ -73850,7 +73850,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-unity
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73870,7 +73870,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-updown
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73890,7 +73890,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-vici
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73910,7 +73910,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-whitelist
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73930,7 +73930,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-x509
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73950,7 +73950,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xauth-eap
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73970,7 +73970,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xauth-generic
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73990,7 +73990,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xcbc
 Submenu: VPN
-Version: 5.9.2-8
+Version: 5.9.2-11
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -90449,7 +90449,7 @@ Source-Makefile: feeds/packages/utils/nano/Makefile
 
 Package: nano
 Submenu: Editors
-Version: 5.7-1
+Version: 5.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -90459,7 +90459,7 @@ Category: Utilities
 Repository: base
 Title: An enhanced clone of the Pico text editor
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>, Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-5.7.tar.xz
+Source: nano-5.8.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104180,7 +104180,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.9.3-0
+Version: 4.9.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -104190,7 +104190,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.9.3.tar.gz
+Source: yq-4.9.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
