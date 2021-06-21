@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-unblockmusic
 Submenu: 3. Applications
-Version: 2.3.5-16
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq-full +ipset +wget +UnblockNeteaseMusic_NodeJS:UnblockNeteaseMusic +UnblockNeteaseMusic_Go:UnblockNeteaseMusicGo
+Version: 2.3.5-17
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq-full +ipset +uclient-fetch +UnblockNeteaseMusic_NodeJS:UnblockNeteaseMusic +UnblockNeteaseMusic_Go:UnblockNeteaseMusicGo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Config:
 
 Package: luci-i18n-unblockmusic-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 2.3.5-16
+Version: 2.3.5-17
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-unblockmusic
 Conflicts: 
 Menu-Depends: 
