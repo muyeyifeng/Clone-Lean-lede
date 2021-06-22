@@ -1,8 +1,8 @@
 Source-Makefile: package/lean/autocore/Makefile
 
 Package: autocore-arm
-Version: 1-37
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_mvebu||TARGET_rockchip) +TARGET_bcm27xx:bcm27xx-userland +TARGET_bcm53xx:nvram +(TARGET_ipq40xx||TARGET_ipq806x):lm-sensors
+Version: 1-39
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_mvebu||TARGET_rockchip) +TARGET_bcm27xx:bcm27xx-userland +TARGET_bcm53xx:nvram
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -19,7 +19,7 @@ CN_SZTL
 @@
 
 Package: autocore-x86
-Version: 1-37
+Version: 1-39
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +bc +lm-sensors +ethtool
 Conflicts: 
 Menu-Depends: 
