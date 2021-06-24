@@ -2,8 +2,8 @@ Source-Makefile: package/lean/ddns-scripts_dnspod/Makefile
 
 Package: ddns-scripts_dnspod
 Submenu: IP Addresses and Names
-Version: 1.0.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ddns-scripts +wget
+Version: 1.0.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ddns-scripts +wget-ssl +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 

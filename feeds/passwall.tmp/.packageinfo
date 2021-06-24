@@ -155,7 +155,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4-25
+Version: 4-26
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +coreutils-nohup +curl +dnsmasq-full +ipset +ip-full +ipt2socks +iptables-mod-tproxy +libuci-lua +lua +luci-lib-jsonc +microsocks +tcping +resolveip +unzip +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_Dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_Haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_PDNSD:pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-geodata
 Conflicts: 
 Menu-Depends: 
@@ -248,7 +248,7 @@ endmenu
 
 Package: luci-i18n-passwall-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 4-25
+Version: 4-26
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
@@ -267,7 +267,7 @@ Description:     Translation for luci-app-passwall -
 
 Package: luci-i18n-passwall-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 4-25
+Version: 4-26
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
@@ -763,7 +763,7 @@ Source-Makefile: feeds/passwall/v2ray-core/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-core
-Version: 4.40.0-1
+Version: 4.41.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -773,7 +773,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.40.0.tar.gz
+Source: v2ray-core-4.41.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -797,7 +797,7 @@ endmenu
 @@
 
 Package: v2ray-ctl
-Version: 4.40.0-1
+Version: 4.41.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -807,7 +807,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.40.0.tar.gz
+Source: v2ray-core-4.41.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -833,7 +833,7 @@ endmenu
 @@
 
 Package: v2ray-extra
-Version: 4.40.0-1
+Version: 4.41.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -843,7 +843,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.40.0.tar.gz
+Source: v2ray-core-4.41.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -856,7 +856,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-geodata
-Version: 4.40.0-1
+Version: 4.41.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -866,7 +866,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.40.0.tar.gz
+Source: v2ray-core-4.41.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -884,7 +884,7 @@ Build-Depends: golang/host
 
 Package: v2ray-plugin
 Submenu: Project V
-Version: 4.40.0-1
+Version: 4.41.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -894,7 +894,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-4.40.0.tar.gz
+Source: v2ray-plugin-4.41.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

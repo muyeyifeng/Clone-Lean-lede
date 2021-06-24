@@ -1,59 +1,87 @@
 Source-Makefile: target/linux/ipq807x/Makefile
 Target: ipq807x
 Target-Board: ipq807x
-Target-Name: Qualcomm Atheros IPQ807x
+Target-Name: Qualcomm IPQ807x
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: display dt gpio pci ramdisk rtc source-only squashfs usb virtio
+Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.125
+Linux-Version: 5.10.44
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall ip6tables iptables ppp ppp-mod-pppoe odhcp6c odhcpd-ipv6only luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
-Target-Profile: Default
-Target-Profile-Name: Default Profile (minimum package set)
-Target-Profile-Packages:  
-Target-Profile-Description:
-	Default package set compatible with most boards.
-@@
-
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp iwinfo
 Target: ipq807x/generic
 Target-Board: ipq807x
 Target-Name: Generic
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: display dt gpio pci ramdisk rtc source-only squashfs usb virtio
+Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.125
+Linux-Version: 5.10.44
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall ip6tables iptables ppp ppp-mod-pppoe odhcp6c odhcpd-ipv6only luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
-Target-Profile: Default
-Target-Profile-Name: Default Profile (minimum package set)
-Target-Profile-Packages:  
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp iwinfo
+Target-Profile: DEVICE_netgear_sxr80
+Target-Profile-Name: Netgear SXR80
+Target-Profile-Packages: ipq-wifi-netgear_sxr80 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,sxr80
+
+
 Target-Profile-Description:
-	Default package set compatible with most boards.
+Build firmware images for Netgear SXR80
+
+
+
+@@
+
+Target-Profile: DEVICE_redmi_ax6
+Target-Profile-Name: Redmi AX6
+Target-Profile-Packages: ipq-wifi-redmi_ax6 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: redmi,ax6
+
+
+Target-Profile-Description:
+Build firmware images for Redmi AX6
+
+
+
 @@
 
 Target-Profile: DEVICE_xiaomi_ax3600
-Target-Profile-Name: Xiaomi Mi AIoT Router AX3600
-Target-Profile-Packages:  
+Target-Profile-Name: Xiaomi AX3600
+Target-Profile-Packages: ipq-wifi-xiaomi_ax3600 kmod-ath10k-ct ath10k-firmware-qca9887-ct uboot-envtools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,ax3600
 
 
 Target-Profile-Description:
-Build firmware images for Xiaomi Mi AIoT Router AX3600
+Build firmware images for Xiaomi AX3600
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_ax9000
+Target-Profile-Name: Xiaomi AX9000
+Target-Profile-Packages: ipq-wifi-xiaomi_ax9000 kmod-ath10k-ct ath10k-firmware-qca9887-ct uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,ax9000
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi AX9000
 
 
 
