@@ -15338,6 +15338,45 @@ Description:  IPv6 compression over IEEE 802.15.4
 
 @@
 
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
+
+@@
+
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+@@
+
 Package: kmod-pcmcia-bcm63xx
 Submenu: PCMCIA support
 Version: <LINUX_VERSION>-
@@ -15376,26 +15415,6 @@ Description:   Kernel support for the USB gadget (device) controller on the BCM6
 
 @@
 
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
-
-@@
-
 Package: kmod-leds-reset
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -15415,139 +15434,6 @@ Description:  Kernel module for LEDs on reset lines
 
 @@
 
-Package: kmod-pwm-mediatek-ramips
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628 PWM
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
-Description:   Kernel modules for MediaTek Pulse Width Modulator
-
-@@
-
-Package: kmod-sdhci-mt7620
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 SDCI
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
-Description: MT7620 SDCI
-
-@@
-
-Package: kmod-i2c-ralink
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_RALINK
-Description:  Kernel modules for enable ralink i2c controller.
-
-@@
-
-Package: kmod-i2c-mt7628
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628/88 I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_MT7621
-Description:  Kernel modules for enable mt7621 i2c controller.
-
-@@
-
-Package: kmod-dma-ralink
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink GDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
-Description:  Kernel modules for enable ralink dma engine.
-
-@@
-
-Package: kmod-hsdma-mtk
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips @TARGET_ramips_mt7621
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HSDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
-Description:  Kernel modules for enable MediaTek hsdma engine.
-
-@@
-
-Package: kmod-sound-mt7620
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 PCM/I2S Alsa Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
-Description:  Alsa modules for ralink i2s controller.
-
-@@
-
 Package: kmod-bgmac
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -15564,45 +15450,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
 Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
-
-@@
-
-Package: kmod-ata-oxnas-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_oxnas
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: oxnas Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_OXNAS
-Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
-
-@@
-
-Package: kmod-usb2-oxnas
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OX820 EHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_EHCI_OXNAS
-Description:  This driver provides USB Device Controller support for the
- EHCI USB host built-in to the OX820 SoC.
 
 @@
 
@@ -15929,6 +15776,139 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_FSL_PPFE=y CONFIG_FSL_PPFE_UTIL_DISABLED=y
 Description:  Kernel modules for Freescale PPFE Driver support.
+
+@@
+
+Package: kmod-pwm-mediatek-ramips
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628 PWM
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
+Description:   Kernel modules for MediaTek Pulse Width Modulator
+
+@@
+
+Package: kmod-sdhci-mt7620
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 SDCI
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
+Description: MT7620 SDCI
+
+@@
+
+Package: kmod-i2c-ralink
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_RALINK
+Description:  Kernel modules for enable ralink i2c controller.
+
+@@
+
+Package: kmod-i2c-mt7628
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628/88 I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_MT7621
+Description:  Kernel modules for enable mt7621 i2c controller.
+
+@@
+
+Package: kmod-dma-ralink
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink GDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
+Description:  Kernel modules for enable ralink dma engine.
+
+@@
+
+Package: kmod-hsdma-mtk
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek HSDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
+Description:  Kernel modules for enable MediaTek hsdma engine.
+
+@@
+
+Package: kmod-sound-mt7620
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 PCM/I2S Alsa Driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
+Description:  Alsa modules for ralink i2s controller.
 
 @@
 
@@ -17120,22 +17100,42 @@ Description:   This driver provides support for the front button and LEDs on
 
 @@
 
-Package: kmod-i2c-lantiq
-Submenu: I2C support
+Package: kmod-ata-oxnas-sata
+Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Depends:  +kmod-ata-core @TARGET_oxnas
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Lantiq I2C controller
+Title: oxnas Serial ATA support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
+Kernel-Config: CONFIG_SATA_OXNAS
+Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+
+@@
+
+Package: kmod-usb2-oxnas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OX820 EHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_EHCI_OXNAS
+Description:  This driver provides USB Device Controller support for the
+ EHCI USB host built-in to the OX820 SoC.
 
 @@
 

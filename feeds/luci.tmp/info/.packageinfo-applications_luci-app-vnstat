@@ -19,6 +19,25 @@ Description: LuCI Support for VnStat
 
 @@
 
+Package: luci-i18n-vnstat-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vnstat - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vnstat - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-vnstat-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -57,8 +76,8 @@ Description:     Translation for luci-app-vnstat - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-vnstat-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-vnstat-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
 Conflicts: 
@@ -67,31 +86,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-vnstat - sk translation
+Title: luci-app-vnstat - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vnstat - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-vnstat-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-vnstat - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-vnstat - Norsk (Norwegian)
+Description:     Translation for luci-app-vnstat - Română (Romanian)
 
 @@
 
@@ -114,8 +114,8 @@ Description:     Translation for luci-app-vnstat - English
 
 @@
 
-Package: luci-i18n-vnstat-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-vnstat-pl
+Default: LUCI_LANG_pl||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
 Conflicts: 
@@ -124,17 +124,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-vnstat - el translation
+Title: luci-app-vnstat - pl translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vnstat - Ελληνικά (Greek)
+Description:     Translation for luci-app-vnstat - Polski (Polish)
 
 @@
 
-Package: luci-i18n-vnstat-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-vnstat-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
 Conflicts: 
@@ -143,12 +143,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-vnstat - uk translation
+Title: luci-app-vnstat - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vnstat - украї́нська (Ukrainian)
+Description:     Translation for luci-app-vnstat - Slovenčina (Slovak)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-vnstat - Deutsch (German)
 
 @@
 
-Package: luci-i18n-vnstat-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-vnstat-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
 Conflicts: 
@@ -219,12 +219,31 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-vnstat - ro translation
+Title: luci-app-vnstat - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vnstat - Română (Romanian)
+Description:     Translation for luci-app-vnstat - Norsk (Norwegian)
+
+@@
+
+Package: luci-i18n-vnstat-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vnstat - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vnstat - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -244,25 +263,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-vnstat - Bahasa Melayu (Malay)
-
-@@
-
-Package: luci-i18n-vnstat-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-vnstat - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-vnstat - Polski (Polish)
 
 @@
 
@@ -380,6 +380,25 @@ Description:     Translation for luci-app-vnstat - Русский (Russian)
 
 @@
 
+Package: luci-i18n-vnstat-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vnstat - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vnstat - Ελληνικά (Greek)
+
+@@
+
 Package: luci-i18n-vnstat-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x-1
@@ -415,25 +434,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-vnstat - Español (Spanish)
-
-@@
-
-Package: luci-i18n-vnstat-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-vnstat - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-vnstat - Português do Brasil (Brazialian Portuguese)
 
 @@
 
