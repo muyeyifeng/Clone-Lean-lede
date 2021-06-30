@@ -14,7 +14,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ath10k wpad-openssl kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019 autocore-arm automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier htop ethtool luci-app-cpufreq -luci-app-flowoffload luci-app-sfe iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ath10k-ct wpad-openssl kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019-ct autocore-arm automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier htop ethtool luci-app-cpufreq iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -109,7 +109,7 @@ Build firmware images for Aruba AP-365
 
 Target-Profile: DEVICE_asus_map-ac2200
 Target-Profile-Name: ASUS Lyra (MAP-AC2200)
-Target-Profile-Packages: ath10k-firmware-qca9888 kmod-ath3k 
+Target-Profile-Packages: ath10k-firmware-qca9888-ct kmod-ath3k 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: asus,map-ac2200
 
@@ -123,7 +123,7 @@ Build firmware images for ASUS Lyra (MAP-AC2200)
 
 Target-Profile: DEVICE_asus_rt-ac58u
 Target-Profile-Name: ASUS RT-AC58U
-Target-Profile-Packages: -kmod-ath10k -ath10k-firmware-qca4019 kmod-ath10k-ct-smallbuffers ath10k-firmware-qca4019-ct kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-ath10k-ct-smallbuffers ath10k-firmware-qca4019-ct kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: asus,rt-ac58u
 
@@ -137,7 +137,7 @@ Build firmware images for ASUS RT-AC58U
 
 Target-Profile: DEVICE_asus_rt-acrh17
 Target-Profile-Name: ASUS RT-ACRH17
-Target-Profile-Packages: ipq-wifi-asus_rt-acrh17 ath10k-firmware-qca9984 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: ipq-wifi-asus_rt-acrh17 ath10k-firmware-qca9984-ct kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: asus,rt-acrh17
 
@@ -193,7 +193,7 @@ Build firmware images for AVM FRITZ!Repeater 1200
 
 Target-Profile: DEVICE_avm_fritzrepeater-3000
 Target-Profile-Name: AVM FRITZ!Repeater 3000
-Target-Profile-Packages: ath10k-firmware-qca9984 fritz-caldata fritz-tffs-nand 
+Target-Profile-Packages: ath10k-firmware-qca9984-ct fritz-caldata fritz-tffs-nand 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: avm,fritzrepeater-3000
 
@@ -207,7 +207,7 @@ Build firmware images for AVM FRITZ!Repeater 3000
 
 Target-Profile: DEVICE_buffalo_wtr-m2133hp
 Target-Profile-Name: Buffalo WTR-M2133HP
-Target-Profile-Packages: ath10k-firmware-qca9984 ipq-wifi-buffalo_wtr-m2133hp 
+Target-Profile-Packages: ath10k-firmware-qca9984-ct ipq-wifi-buffalo_wtr-m2133hp 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,wtr-m2133hp
 
@@ -333,7 +333,7 @@ Build firmware images for EnGenius EAP1300
 
 Target-Profile: DEVICE_engenius_eap2200
 Target-Profile-Name: EnGenius EAP2200
-Target-Profile-Packages: ath10k-firmware-qca9888 ipq-wifi-engenius_eap2200 -kmod-ath10k-ct kmod-ath10k-ct-smallbuffers 
+Target-Profile-Packages: ath10k-firmware-qca9888-ct ipq-wifi-engenius_eap2200 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: engenius,eap2200
 
@@ -473,7 +473,7 @@ Build firmware images for Linksys EA6350 v3
 
 Target-Profile: DEVICE_linksys_ea8300
 Target-Profile-Name: Linksys EA8300
-Target-Profile-Packages: ath10k-firmware-qca9888 ipq-wifi-linksys_ea8300 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: ath10k-firmware-qca9888-ct ipq-wifi-linksys_ea8300 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,ea8300
 
@@ -487,7 +487,7 @@ Build firmware images for Linksys EA8300
 
 Target-Profile: DEVICE_meraki_mr33
 Target-Profile-Name: Cisco Meraki MR33
-Target-Profile-Packages: -swconfig ath10k-firmware-qca9887 
+Target-Profile-Packages: -swconfig ath10k-firmware-qca9887-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr33
 
@@ -571,7 +571,7 @@ Build firmware images for OpenMesh A42
 
 Target-Profile: DEVICE_openmesh_a62
 Target-Profile-Name: OpenMesh A62
-Target-Profile-Packages: ath10k-firmware-qca9888 
+Target-Profile-Packages: ath10k-firmware-qca9888-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: openmesh,a62
 
@@ -697,7 +697,7 @@ Build firmware images for ZyXEL NBG6617
 
 Target-Profile: DEVICE_zyxel_wre6606
 Target-Profile-Name: ZyXEL WRE6606
-Target-Profile-Packages: -kmod-ath10k -ath10k-firmware-qca4019 kmod-ath10k-ct-smallbuffers ath10k-firmware-qca4019-ct 
+Target-Profile-Packages: kmod-ath10k-ct-smallbuffers ath10k-firmware-qca4019-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,wre6606
 

@@ -18689,28 +18689,28 @@ Config:
     depends on PACKAGE_python3-multiprocessing
 @@
 
-Package: python3-codecs
+Package: python3-urllib
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 codecs + unicode support
+Title: Python 3.9 URL library module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 codecs + unicode support
+Description: Python 3.9 URL library module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-codecs-src
+Package: python3-urllib-src
 Submenu: Python
 Version: 3.9.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -18720,20 +18720,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 codecs + unicode support (sources)
+Title: Python 3.9 URL library module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 codecs + unicode support
+Description:     	Python 3.9 URL library module
 
-    This package contains the Python source files for python3-codecs.
+    This package contains the Python source files for python3-urllib.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-codecs
+    depends on PACKAGE_python3-urllib
 @@
 
 Package: python3-pip
@@ -19065,53 +19065,6 @@ Config:
     depends on PACKAGE_python3-xml
 @@
 
-Package: python3-email
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 email module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 email module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-email-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 email module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 email module
-
-    This package contains the Python source files for python3-email.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-email
-@@
-
 Package: python3-distutils
 Submenu: Python
 Version: 3.9.5-2
@@ -19159,6 +19112,53 @@ Config:
     depends on PACKAGE_python3-distutils
 @@
 
+Package: python3-email
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 email module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 email module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-email-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 email module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 email module
+
+    This package contains the Python source files for python3-email.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-email
+@@
+
 Package: python3-openssl
 Submenu: Python
 Version: 3.9.5-2
@@ -19204,53 +19204,6 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-openssl
-@@
-
-Package: python3-urllib
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 URL library module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 URL library module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-urllib-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 URL library module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 URL library module
-
-    This package contains the Python source files for python3-urllib.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-urllib
 @@
 
 Package: python3-setuptools
@@ -19439,6 +19392,53 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-dbm
+@@
+
+Package: python3-codecs
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 codecs + unicode support
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 codecs + unicode support
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-codecs-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 codecs + unicode support (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 codecs + unicode support
+
+    This package contains the Python source files for python3-codecs.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-codecs
 @@
 
 Package: python3-asyncio
@@ -19654,7 +19654,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-multiprocessing +python3-codecs +python3-readline +python3-gdbm +python3-sqlite3 +python3-xml +python3-email +python3-distutils +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-multiprocessing +python3-urllib +python3-readline +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-asyncio +python3-lzma +python3-decimal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62058,7 +62058,7 @@ Build-Depends: golang/host
 
 Package: kcptun-config
 Submenu: Web Servers/Proxies
-Version: 20201010-1
+Version: 20210624-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -62068,7 +62068,7 @@ Category: Network
 Repository: base
 Title: Kcptun Config Scripts
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20201010.tar.gz
+Source: kcptun-20210624.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -62079,7 +62079,7 @@ Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 
 Package: kcptun-server
 Submenu: Web Servers/Proxies
-Version: 20201010-1
+Version: 20210624-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kcptun-config
 Conflicts: 
 Menu-Depends: 
@@ -62089,7 +62089,7 @@ Category: Network
 Repository: base
 Title: KCP-based Secure Tunnel server
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20201010.tar.gz
+Source: kcptun-20210624.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -62101,7 +62101,7 @@ Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 
 Package: kcptun-client
 Submenu: Web Servers/Proxies
-Version: 20201010-1
+Version: 20210624-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kcptun-config
 Conflicts: 
 Menu-Depends: 
@@ -62111,7 +62111,7 @@ Category: Network
 Repository: base
 Title: KCP-based Secure Tunnel client
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20201010.tar.gz
+Source: kcptun-20210624.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -72130,7 +72130,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: strongswan
 Menu: 1
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +ip +kmod-crypto-authenc +kmod-ipsec +kmod-ipsec4 +IPV6:kmod-ipsec6 +kmod-ipt-ipsec +iptables-mod-ipsec
 Conflicts: 
 Menu-Depends: 
@@ -72154,7 +72154,7 @@ Config:
 
 Package: strongswan-default
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-mod-aes +strongswan-mod-attr +strongswan-mod-connmark +strongswan-mod-constraints +strongswan-mod-des +strongswan-mod-dnskey +strongswan-mod-fips-prf +strongswan-mod-gmp +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-md5 +strongswan-mod-nonce +strongswan-mod-pem +strongswan-mod-pgp +strongswan-mod-pkcs1 +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-rc2 +strongswan-mod-resolve +strongswan-mod-revocation +strongswan-mod-sha1 +strongswan-mod-sha2 +strongswan-mod-socket-default +strongswan-mod-sshkey +strongswan-mod-updown +strongswan-mod-x509 +strongswan-mod-xauth-generic +strongswan-mod-xcbc +strongswan-swanctl
 Conflicts: 
 Menu-Depends: 
@@ -72175,7 +72175,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-full
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-charon-cmd +strongswan-ipsec +strongswan-libnttfft +strongswan-mod-addrblock +strongswan-mod-aes +strongswan-mod-af-alg +strongswan-mod-agent +strongswan-mod-attr +strongswan-mod-attr-sql +strongswan-mod-bliss +strongswan-mod-blowfish +strongswan-mod-ccm +strongswan-mod-chapoly +strongswan-mod-cmac +strongswan-mod-constraints +strongswan-mod-connmark +strongswan-mod-coupling +strongswan-mod-ctr +strongswan-mod-curl +strongswan-mod-curve25519 +strongswan-mod-des +strongswan-mod-dhcp +strongswan-mod-dnskey +strongswan-mod-duplicheck +strongswan-mod-eap-identity +strongswan-mod-eap-md5 +strongswan-mod-eap-mschapv2 +strongswan-mod-eap-radius +strongswan-mod-eap-tls +strongswan-mod-farp +strongswan-mod-fips-prf +strongswan-mod-forecast +strongswan-mod-gcm +strongswan-mod-gcrypt +strongswan-mod-gmp +strongswan-mod-ha +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-ldap +strongswan-mod-led +strongswan-mod-load-tester +strongswan-mod-nonce +strongswan-mod-md4 +strongswan-mod-md5 +strongswan-mod-mgf1 +strongswan-mod-mysql +strongswan-mod-newhope +strongswan-mod-ntru +strongswan-mod-openssl +strongswan-mod-pem +strongswan-mod-pgp +strongswan-mod-pkcs1 +strongswan-mod-pkcs7 +strongswan-mod-pkcs8 +strongswan-mod-pkcs11 +strongswan-mod-pkcs12 +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-rc2 +strongswan-mod-resolve +strongswan-mod-revocation +strongswan-mod-sha1 +strongswan-mod-sha2 +strongswan-mod-sha3 +strongswan-mod-smp +strongswan-mod-socket-default +strongswan-mod-sql +strongswan-mod-sqlite +strongswan-mod-sshkey +strongswan-mod-stroke +strongswan-mod-test-vectors +strongswan-mod-uci +strongswan-mod-unity +strongswan-mod-updown +strongswan-mod-vici +strongswan-mod-whitelist +strongswan-mod-x509 +strongswan-mod-xauth-eap +strongswan-mod-xauth-generic +strongswan-mod-xcbc +strongswan-pki +strongswan-scepclient +strongswan-swanctl @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -72199,7 +72199,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-minimal
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-mod-aes +strongswan-mod-gmp +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-nonce +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-sha1 +strongswan-mod-socket-default +strongswan-mod-stroke +strongswan-mod-updown +strongswan-mod-x509 +strongswan-mod-xcbc
 Conflicts: 
 Menu-Depends: 
@@ -72220,7 +72220,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-isakmp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-ipsec +strongswan-mod-aes +strongswan-mod-des +strongswan-mod-gmpdh +strongswan-mod-hmac +strongswan-mod-kernel-netlink +strongswan-mod-md5 +strongswan-mod-nonce +strongswan-mod-pubkey +strongswan-mod-random +strongswan-mod-sha1 +strongswan-mod-socket-default +strongswan-mod-stroke +strongswan-mod-uci +strongswan-mod-updown
 Conflicts: 
 Menu-Depends: 
@@ -72243,7 +72243,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-charon
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72264,7 +72264,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-charon-cmd
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon
 Conflicts: 
 Menu-Depends: 
@@ -72285,7 +72285,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-ipsec
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72306,7 +72306,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-libnttfft
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72327,7 +72327,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-pki
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72348,7 +72348,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-scepclient
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72369,7 +72369,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-swanctl
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-vici
 Conflicts: 
 Menu-Depends: 
@@ -72390,7 +72390,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-gencerts
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-pki bash
 Conflicts: 
 Menu-Depends: 
@@ -72411,7 +72411,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-libtls
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72433,7 +72433,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-addrblock
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72453,7 +72453,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-aes
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72473,7 +72473,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-af-alg
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
@@ -72493,7 +72493,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-agent
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72513,7 +72513,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-attr
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72533,7 +72533,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-attr-sql
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon
 Conflicts: 
 Menu-Depends: 
@@ -72553,7 +72553,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-bliss
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libnttfft +strongswan-mod-mgf1 +strongswan-mod-hmac
 Conflicts: 
 Menu-Depends: 
@@ -72573,7 +72573,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-blowfish
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72593,7 +72593,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ccm
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72613,7 +72613,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-chapoly
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72633,7 +72633,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-cmac
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72653,7 +72653,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-connmark
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72673,7 +72673,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-constraints
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72693,7 +72693,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-coupling
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72713,7 +72713,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ctr
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72733,7 +72733,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-curl
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -72753,7 +72753,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-curve25519
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72773,7 +72773,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-des
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72793,7 +72793,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-dhcp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72813,7 +72813,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-dnskey
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72833,7 +72833,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-duplicheck
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72853,7 +72853,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-identity
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72873,7 +72873,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-md5
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72893,7 +72893,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-mschapv2
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-md4 +strongswan-mod-des
 Conflicts: 
 Menu-Depends: 
@@ -72913,7 +72913,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-radius
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72933,7 +72933,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-eap-tls
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libtls
 Conflicts: 
 Menu-Depends: 
@@ -72953,7 +72953,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-farp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -72973,7 +72973,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-fips-prf
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sha1
 Conflicts: 
 Menu-Depends: 
@@ -72993,7 +72993,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-forecast
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +kmod-ipt-conntrack-extra
 Conflicts: 
 Menu-Depends: 
@@ -73013,7 +73013,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gcm
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73033,7 +73033,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gcrypt
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-gcrypt:libgcrypt
 Conflicts: 
 Menu-Depends: 
@@ -73053,7 +73053,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gmp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -73073,7 +73073,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-gmpdh
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73093,7 +73093,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ha
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73113,7 +73113,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-hmac
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73133,7 +73133,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-kernel-libipsec
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73153,7 +73153,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-kernel-netlink
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73173,7 +73173,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ldap
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -73193,7 +73193,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-led
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73213,7 +73213,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-load-tester
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73233,7 +73233,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-nonce
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73253,7 +73253,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-md4
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73273,7 +73273,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-md5
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73293,7 +73293,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-mgf1
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73313,7 +73313,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-mysql
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sql +PACKAGE_strongswan-mod-mysql:libmysqlclient-r
 Conflicts: 
 Menu-Depends: 
@@ -73333,7 +73333,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-newhope
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-libnttfft +strongswan-mod-chapoly +strongswan-mod-sha3
 Conflicts: 
 Menu-Depends: 
@@ -73353,7 +73353,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-ntru
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-mgf1
 Conflicts: 
 Menu-Depends: 
@@ -73373,7 +73373,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-openssl
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -73393,7 +73393,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pem
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73413,7 +73413,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pgp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73433,7 +73433,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs1
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73453,7 +73453,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs7
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73473,7 +73473,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs8
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73493,7 +73493,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs11
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73513,7 +73513,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pkcs12
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73533,7 +73533,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-pubkey
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73553,7 +73553,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-random
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73573,7 +73573,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-rc2
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73593,7 +73593,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-resolve
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73613,7 +73613,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-revocation
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73633,7 +73633,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha1
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73653,7 +73653,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha2
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73673,7 +73673,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sha3
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73693,7 +73693,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-smp
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-smp:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -73713,7 +73713,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-socket-default
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73733,7 +73733,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-socket-dynamic
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73753,7 +73753,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sql
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73773,7 +73773,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sqlite
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-mod-sql +PACKAGE_strongswan-mod-sqlite:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -73793,7 +73793,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-sshkey
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73813,7 +73813,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-stroke
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +strongswan-charon +strongswan-ipsec
 Conflicts: 
 Menu-Depends: 
@@ -73833,7 +73833,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-test-vectors
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73853,7 +73853,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-uci
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan +PACKAGE_strongswan-mod-uci:libuci
 Conflicts: 
 Menu-Depends: 
@@ -73873,7 +73873,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-unity
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73893,7 +73893,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-updown
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73913,7 +73913,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-vici
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73933,7 +73933,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-whitelist
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73953,7 +73953,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-x509
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73973,7 +73973,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xauth-eap
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -73993,7 +73993,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xauth-generic
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
@@ -74013,7 +74013,7 @@ Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@the
 
 Package: strongswan-mod-xcbc
 Submenu: VPN
-Version: 5.9.2-11
+Version: 5.9.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread strongswan
 Conflicts: 
 Menu-Depends: 
