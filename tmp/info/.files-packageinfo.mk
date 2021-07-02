@@ -380,7 +380,6 @@ $(eval $(call PackageDir,feeds_freifunk_community-profiles,feeds/freifunk/commun
 $(eval $(call PackageDir,feeds_freifunk_freifunk-common,feeds/freifunk/freifunk-common,))
 $(eval $(call PackageDir,feeds_freifunk_freifunk-firewall,feeds/freifunk/freifunk-firewall,))
 $(eval $(call PackageDir,feeds_freifunk_freifunk-gwcheck,feeds/freifunk/freifunk-gwcheck,))
-$(eval $(call PackageDir,feeds_freifunk_freifunk-mapupdate,feeds/freifunk/freifunk-mapupdate,))
 $(eval $(call PackageDir,feeds_freifunk_freifunk-policyrouting,feeds/freifunk/freifunk-policyrouting,))
 $(eval $(call PackageDir,feeds_freifunk_freifunk-watchdog,feeds/freifunk/freifunk-watchdog,))
 $(eval $(call PackageDir,feeds_freifunk_luci-app-freifunk-diagnostics,feeds/freifunk/luci-app-freifunk-diagnostics,))

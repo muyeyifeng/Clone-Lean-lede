@@ -7,7 +7,6 @@ $(eval $(call PackageDir,contrib_package_community-profiles,contrib/package/comm
 $(eval $(call PackageDir,contrib_package_freifunk-common,contrib/package/freifunk-common,))
 $(eval $(call PackageDir,contrib_package_freifunk-firewall,contrib/package/freifunk-firewall,))
 $(eval $(call PackageDir,contrib_package_freifunk-gwcheck,contrib/package/freifunk-gwcheck,))
-$(eval $(call PackageDir,contrib_package_freifunk-mapupdate,contrib/package/freifunk-mapupdate,))
 $(eval $(call PackageDir,contrib_package_freifunk-policyrouting,contrib/package/freifunk-policyrouting,))
 $(eval $(call PackageDir,contrib_package_freifunk-watchdog,contrib/package/freifunk-watchdog,))
 $(eval $(call PackageDir,contrib_package_meshwizard,contrib/package/meshwizard,))
