@@ -4036,6 +4036,20 @@ Build firmware images for TP-Link RE450 v3
 
 @@
 
+Target-Profile: DEVICE_tplink_re455-v1
+Target-Profile-Name: TP-Link RE455 v1
+Target-Profile-Packages: kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,re455-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link RE455 v1
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_tl-mr6400-v1
 Target-Profile-Name: TP-Link TL-MR6400 v1
 Target-Profile-Packages: kmod-usb2 kmod-usb-net-rndis kmod-usb-serial-option adb-enablemodem 
@@ -16963,11 +16977,11 @@ Target-Board: ramips
 Target-Name: MediaTek Ralink MIPS
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_mips32
-Target-Features: gpio squashfs testing-kernel
+Target-Features: gpio squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -16980,18 +16994,18 @@ Target-Board: ramips
 Target-Name: MT7620 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
+Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7620 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd -ddns-scripts_aliyun -ddns-scripts_dnspod kmod-rt2800-soc wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_aigale_ai-br100
 Target-Profile-Name: Aigale Ai-BR100
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci 
@@ -17036,7 +17050,7 @@ Build firmware images for ALFA Network R36M-E4G
 
 Target-Profile: DEVICE_alfa-network_tube-e4g
 Target-Profile-Name: ALFA Network Tube-E4G
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci uboot-envtools uqmi -iwinfo -kmod-rt2800-soc -wpad-openssl 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci uboot-envtools uqmi -iwinfo -kmod-rt2800-soc -wpad-basic-wolfssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: alfa-network,tube-e4g tube-e4g
 
@@ -18182,20 +18196,6 @@ Build firmware images for TP-Link Archer C2 v1
 
 @@
 
-Target-Profile: DEVICE_tplink_archer-c5-v4
-Target-Profile-Name: TP-Link Archer C5 v4
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-mt76x2 kmod-switch-rtl8367b 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: tplink,archer-c5-v4
-
-
-Target-Profile-Description:
-Build firmware images for TP-Link Archer C5 v4
-
-
-
-@@
-
 Target-Profile: DEVICE_tplink_archer-c50-v1
 Target-Profile-Name: TP-Link Archer C50 v1
 Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci 
@@ -18331,20 +18331,6 @@ Target-Profile-SupportedDevices: xiaomi,miwifi-mini miwifi-mini
 
 Target-Profile-Description:
 Build firmware images for Xiaomi MiWiFi Mini
-
-
-
-@@
-
-Target-Profile: DEVICE_xiaomi_miwifi-r3
-Target-Profile-Name: Xiaomi Mi Router R3
-Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci uboot-envtools 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,miwifi-r3
-
-
-Target-Profile-Description:
-Build firmware images for Xiaomi Mi Router R3
 
 
 
@@ -18593,18 +18579,18 @@ Target-Board: ramips
 Target-Name: MT7621 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kernel usb
+Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7621 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-crypto-hw-eip93 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_adslr_g7
 Target-Profile-Name: ADSLR G7
 Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
@@ -18887,6 +18873,34 @@ Build firmware images for D-Link DIR-2660 A1
 
 @@
 
+Target-Profile: DEVICE_dlink_dir-853-a3
+Target-Profile-Name: D-Link DIR-853 A3
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,dir-853-a3
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DIR-853 A3
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_dir-853-r1
+Target-Profile-Name: D-Link DIR-853 R1
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,dir-853-r1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DIR-853 R1
+
+
+
+@@
+
 Target-Profile: DEVICE_dlink_dir-860l-b1
 Target-Profile-Name: D-Link DIR-860L B1
 Target-Profile-Packages: kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
@@ -18903,7 +18917,7 @@ Build firmware images for D-Link DIR-860L B1
 
 Target-Profile: DEVICE_dlink_dir-867-a1
 Target-Profile-Name: D-Link DIR-867 A1
-Target-Profile-Packages: kmod-mt7615d luci-app-mtwifi uboot-envtools -wpad-openssl 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dir-867-a1
 
@@ -18917,7 +18931,7 @@ Build firmware images for D-Link DIR-867 A1
 
 Target-Profile: DEVICE_dlink_dir-878-a1
 Target-Profile-Name: D-Link DIR-878 A1
-Target-Profile-Packages: kmod-mt7615d luci-app-mtwifi uboot-envtools -wpad-openssl 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dir-878-a1
 
@@ -18931,7 +18945,7 @@ Build firmware images for D-Link DIR-878 A1
 
 Target-Profile: DEVICE_dlink_dir-882-a1
 Target-Profile-Name: D-Link DIR-882 A1
-Target-Profile-Packages: kmod-mt7615d luci-app-mtwifi uboot-envtools -wpad-openssl kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dir-882-a1
 
@@ -18945,7 +18959,7 @@ Build firmware images for D-Link DIR-882 A1
 
 Target-Profile: DEVICE_dlink_dir-882-r1
 Target-Profile-Name: D-Link DIR-882 R1
-Target-Profile-Packages: kmod-mt7615d luci-app-mtwifi -wpad-openssl kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dir-882-r1
 
@@ -18959,7 +18973,7 @@ Build firmware images for D-Link DIR-882 R1
 
 Target-Profile: DEVICE_d-team_newifi-d2
 Target-Profile-Name: Newifi D2
-Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl 
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: d-team,newifi-d2
 
@@ -19157,6 +19171,20 @@ Build firmware images for ELECOM WRC-1900GST
 
 @@
 
+Target-Profile: DEVICE_elecom_wrc-2533ghbk-i
+Target-Profile-Name: ELECOM WRC-2533GHBK-I
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: elecom,wrc-2533ghbk-i
+
+
+Target-Profile-Description:
+Build firmware images for ELECOM WRC-2533GHBK-I
+
+
+
+@@
+
 Target-Profile: DEVICE_elecom_wrc-2533gst
 Target-Profile-Name: ELECOM WRC-2533GST
 Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
@@ -19201,7 +19229,7 @@ Build firmware images for Firefly FireWRT
 
 Target-Profile: DEVICE_gehua_ghl-r-001
 Target-Profile-Name: GeHua GHL-R-001
-Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl 
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: gehua,ghl-r-001
 
@@ -19215,7 +19243,7 @@ Build firmware images for GeHua GHL-R-001
 
 Target-Profile: DEVICE_glinet_gl-mt1300
 Target-Profile-Name: GL.iNet GL-MT1300
-Target-Profile-Packages: kmod-mt7615d kmod-usb3 luci-app-mtwifi -wpad-openssl 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: glinet,gl-mt1300
 
@@ -19425,27 +19453,13 @@ Build firmware images for JCG Q20
 
 Target-Profile: DEVICE_jcg_y2
 Target-Profile-Name: JCG Y2
-Target-Profile-Packages: kmod-mt7615d kmod-usb3 luci-app-mtwifi -wpad-openssl 
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: jcg,y2
 
 
 Target-Profile-Description:
 Build firmware images for JCG Y2
-
-
-
-@@
-
-Target-Profile: DEVICE_jdcloud_re-sp-01b
-Target-Profile-Name: JDCloud RE-SP-01B
-Target-Profile-Packages: kmod-fs-ext4 kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware kmod-sdhci-mt7620 kmod-usb3 wpad-openssl iwinfo
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: jdcloud,re-sp-01b
-
-
-Target-Profile-Description:
-Build firmware images for JDCloud RE-SP-01B
 
 
 
@@ -19493,6 +19507,20 @@ Build firmware images for Linksys EA7300 v1
 
 @@
 
+Target-Profile: DEVICE_linksys_ea7300-v2
+Target-Profile-Name: Linksys EA7300 v2
+Target-Profile-Packages: kmod-usb3 kmod-mt7615e kmod-mt7615-firmware uboot-envtools kmod-mt7603 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,ea7300-v2
+
+
+Target-Profile-Description:
+Build firmware images for Linksys EA7300 v2
+
+
+
+@@
+
 Target-Profile: DEVICE_linksys_ea7500-v2
 Target-Profile-Name: Linksys EA7500 v2
 Target-Profile-Packages: kmod-usb3 kmod-mt7615e kmod-mt7615-firmware uboot-envtools 
@@ -19516,6 +19544,20 @@ Target-Profile-SupportedDevices: linksys,ea8100-v1
 
 Target-Profile-Description:
 Build firmware images for Linksys EA8100 v1
+
+
+
+@@
+
+Target-Profile: DEVICE_linksys_ea8100-v2
+Target-Profile-Name: Linksys EA8100 v2
+Target-Profile-Packages: kmod-usb3 kmod-mt7615e kmod-mt7615-firmware uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,ea8100-v2
+
+
+Target-Profile-Description:
+Build firmware images for Linksys EA8100 v2
 
 
 
@@ -19614,20 +19656,6 @@ Target-Profile-SupportedDevices: mikrotik,routerboard-m33g mikrotik,rbm33g
 
 Target-Profile-Description:
 Build firmware images for MikroTik RouterBOARD M33G
-
-
-
-@@
-
-Target-Profile: DEVICE_motorola_mr2600
-Target-Profile-Name: Motorola MR2600
-Target-Profile-Packages: kmod-mt7615d kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl uboot-envtools 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: motorola,mr2600
-
-
-Target-Profile-Description:
-Build firmware images for Motorola MR2600
 
 
 
@@ -19848,7 +19876,7 @@ Build firmware images for NETIS WF2881
 
 Target-Profile: DEVICE_phicomm_k2p
 Target-Profile-Name: Phicomm K2P
-Target-Profile-Packages: kmod-mt7615d luci-app-mtwifi -wpad-openssl 
+Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc luci-app-adbyby-plus xray-core UnblockNeteaseMusicGo 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: phicomm,k2p k2p
 
@@ -19930,9 +19958,23 @@ Build firmware images for Telco Electronics X1
 
 @@
 
+Target-Profile: DEVICE_tenbay_t-mb5eu-v01
+Target-Profile-Name: Tenbay T-MB5EU-V01
+Target-Profile-Packages:  kmod-mt7915e kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tenbay,t-mb5eu-v01 mt7621-dm2-t-mb5eu-v01-nor
+
+
+Target-Profile-Description:
+Build firmware images for Tenbay T-MB5EU-V01
+
+
+
+@@
+
 Target-Profile: DEVICE_thunder_timecloud
 Target-Profile-Name: Thunder Timecloud
-Target-Profile-Packages: kmod-usb3 kmod-sdhci-mt7620 -wpad-openssl 
+Target-Profile-Packages: kmod-usb3 -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: thunder,timecloud timecloud
 
@@ -19953,6 +19995,20 @@ Target-Profile-SupportedDevices: totolink,a7000r
 
 Target-Profile-Description:
 Build firmware images for TOTOLINK A7000R
+
+
+
+@@
+
+Target-Profile: DEVICE_totolink_x5000r
+Target-Profile-Name: TOTOLINK X5000R
+Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: totolink,x5000r
+
+
+Target-Profile-Description:
+Build firmware images for TOTOLINK X5000R
 
 
 
@@ -20079,6 +20135,20 @@ Target-Profile-SupportedDevices: ubnt,edgerouter-x-sfp ubnt-erx-sfp ubiquiti,edg
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti EdgeRouter X SFP
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lite
+Target-Profile-Name: Ubiquiti UniFi 6 Lite
+Target-Profile-Packages:  kmod-mt7603 kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lite
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 Lite
 
 
 
@@ -20212,11 +20282,11 @@ Alternative device titles:
 
 @@
 
-Target-Profile: DEVICE_xiaomi_mir3g
+Target-Profile: DEVICE_xiaomi_mi-router-3g
 Target-Profile-Name: Xiaomi Mi Router 3G
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport uboot-envtools 
+Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir3g R3G mir3g
+Target-Profile-SupportedDevices: xiaomi,mi-router-3g R3G mir3g xiaomi,mir3g
 
 
 Target-Profile-Description:
@@ -20226,41 +20296,25 @@ Build firmware images for Xiaomi Mi Router 3G
 
 @@
 
-Target-Profile: DEVICE_xiaomi_mir3g-v2
-Target-Profile-Name: Xiaomi Mi Router 4A Gigabit Edition (Xiaomi Mi Router 3G v2)
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir3g-v2
-
-
-Target-Profile-Description:
-Build firmware images for Xiaomi Mi Router 3G v2
-Alternative device titles:
-- Xiaomi Mi Router 4A Gigabit Edition
-
-
-@@
-
-Target-Profile: DEVICE_xiaomi_mir3g-v2
+Target-Profile: DEVICE_xiaomi_mi-router-3g-v2
 Target-Profile-Name: Xiaomi Mi Router 3G v2
 Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir3g-v2
+Target-Profile-SupportedDevices: xiaomi,mi-router-3g-v2 xiaomi,mir3g-v2
 
 
 Target-Profile-Description:
 Build firmware images for Xiaomi Mi Router 3G v2
-Alternative device titles:
-- Xiaomi Mi Router 4A Gigabit Edition
+
 
 
 @@
 
-Target-Profile: DEVICE_xiaomi_mir3p
+Target-Profile: DEVICE_xiaomi_mi-router-3-pro
 Target-Profile-Name: Xiaomi Mi Router 3 Pro
 Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 kmod-usb-ledtrig-usbport uboot-envtools 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir3p
+Target-Profile-SupportedDevices: xiaomi,mi-router-3-pro xiaomi,mir3p
 
 
 Target-Profile-Description:
@@ -20270,11 +20324,11 @@ Build firmware images for Xiaomi Mi Router 3 Pro
 
 @@
 
-Target-Profile: DEVICE_xiaomi_mir4
+Target-Profile: DEVICE_xiaomi_mi-router-4
 Target-Profile-Name: Xiaomi Mi Router 4
-Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e luci-app-mtwifi uboot-envtools -wpad-openssl 
+Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt76x2 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir4
+Target-Profile-SupportedDevices: xiaomi,mi-router-4
 
 
 Target-Profile-Description:
@@ -20284,9 +20338,23 @@ Build firmware images for Xiaomi Mi Router 4
 
 @@
 
+Target-Profile: DEVICE_xiaomi_mi-router-4a-gigabit
+Target-Profile-Name: Xiaomi Mi Router 4A Gigabit Edition
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-4a-gigabit
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router 4A Gigabit Edition
+
+
+
+@@
+
 Target-Profile: DEVICE_xiaomi_mi-router-ac2100
 Target-Profile-Name: Xiaomi Mi Router AC2100
-Target-Profile-Packages: kmod-mt7603e kmod-mt7615d luci-app-mtwifi uboot-envtools -wpad-openssl 
+Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,mi-router-ac2100
 
@@ -20299,14 +20367,14 @@ Build firmware images for Xiaomi Mi Router AC2100
 @@
 
 Target-Profile: DEVICE_xiaomi_mi-router-cr6606
-Target-Profile-Name: Xiaomi Mi Router CR6606
+Target-Profile-Name: Xiaomi Mi Router CR6606/CR6608/CR6609
 Target-Profile-Packages:  kmod-mt7915e wpad-openssl uboot-envtools iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,mi-router-cr6606
 
 
 Target-Profile-Description:
-Build firmware images for Xiaomi Mi Router CR6606
+Build firmware images for Xiaomi Mi Router CR6606/CR6608/CR6609
 
 
 
@@ -20314,7 +20382,7 @@ Build firmware images for Xiaomi Mi Router CR6606
 
 Target-Profile: DEVICE_xiaomi_redmi-router-ac2100
 Target-Profile-Name: Xiaomi Redmi Router AC2100
-Target-Profile-Packages: kmod-mt7603e kmod-mt7615d luci-app-mtwifi uboot-envtools -wpad-openssl 
+Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,redmi-router-ac2100
 
@@ -20370,7 +20438,7 @@ Build firmware images for YouHua WR1200JS
 
 Target-Profile: DEVICE_youku_yk-l2
 Target-Profile-Name: Youku YK-L2
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: youku,yk-l2
 
@@ -20391,20 +20459,6 @@ Target-Profile-SupportedDevices: zbtlink,zbt-we1326 zbt-we1326
 
 Target-Profile-Description:
 Build firmware images for Zbtlink ZBT-WE1326
-
-
-
-@@
-
-Target-Profile: DEVICE_zbtlink_zbt-wg108
-Target-Profile-Name: Zbtlink ZBT-WG108
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb2 kmod-sdhci-mt7620 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: zbtlink,zbt-wg108 zbt-wg108
-
-
-Target-Profile-Description:
-Build firmware images for Zbtlink ZBT-WG108
 
 
 
@@ -20513,18 +20567,18 @@ Target-Board: ramips
 Target-Name: MT76x8 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
+Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT76x8 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_alfa-network_awusfree1
 Target-Profile-Name: ALFA Network AWUSFREE1
 Target-Profile-Packages: uboot-envtools 
@@ -20737,7 +20791,7 @@ Build firmware images for Hi-Link HLK-7688A
 
 Target-Profile: DEVICE_hiwifi_hc5661a
 Target-Profile-Name: HiWiFi HC5661A
-Target-Profile-Packages: kmod-sdhci-mt7620 
+Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hiwifi,hc5661a hc5661a
 
@@ -20751,7 +20805,7 @@ Build firmware images for HiWiFi HC5661A
 
 Target-Profile: DEVICE_hiwifi_hc5761a
 Target-Profile-Name: HiWiFi HC5761A
-Target-Profile-Packages: kmod-mt76x0e kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 
+Target-Profile-Packages: kmod-mt76x0e kmod-usb2 kmod-usb-ohci 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hiwifi,hc5761a
 
@@ -20884,6 +20938,20 @@ Target-Profile-SupportedDevices: mercury,mac1200r-v2 mac1200rv2
 
 Target-Profile-Description:
 Build firmware images for Mercury MAC1200R v2.0
+
+
+
+@@
+
+Target-Profile: DEVICE_minew_g1-c
+Target-Profile-Name: Minew G1-C
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb-serial-cp210x 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: minew,g1-c minew-g1c
+
+
+Target-Profile-Description:
+Build firmware images for Minew G1-C
 
 
 
@@ -21206,6 +21274,20 @@ Target-Profile-SupportedDevices: tplink,tl-mr6400-v4
 
 Target-Profile-Description:
 Build firmware images for TP-Link TL-MR6400 v4
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-mr6400-v5
+Target-Profile-Name: TP-Link TL-MR6400 v5
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb-serial-option kmod-usb-net-qmi-wwan uqmi 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-mr6400-v5
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-MR6400 v5
 
 
 
@@ -21537,11 +21619,11 @@ Build firmware images for WRTnode WRTnode 2R
 
 @@
 
-Target-Profile: DEVICE_xiaomi_mir4a-100m
+Target-Profile: DEVICE_xiaomi_mi-router-4a-100m
 Target-Profile-Name: Xiaomi Mi Router 4A 100M Edition
 Target-Profile-Packages: kmod-mt76x2 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,mir4a-100m
+Target-Profile-SupportedDevices: xiaomi,mi-router-4a-100m xiaomi,mir4a-100m
 
 
 Target-Profile-Description:
@@ -21612,11 +21694,11 @@ Target-Board: ramips
 Target-Name: RT288x based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
+Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -21741,11 +21823,11 @@ Target-Board: ramips
 Target-Name: RT3x5x/RT5350 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
+Target-Features: dt gpio mips16 ramdisk small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -23185,7 +23267,7 @@ Build firmware images for Zorlik ZL5900V2
 
 Target-Profile: DEVICE_zte_mf283plus
 Target-Profile-Name: ZTE MF283+
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb-net-qmi-wwan uqmi kmod-usb-serial-option 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-usb-net-qmi-wwan uqmi kmod-usb-serial kmod-usb-serial-option 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zte,mf283plus
 
@@ -23272,11 +23354,11 @@ Target-Board: ramips
 Target-Name: RT3662/RT3883 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_74kc
-Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
+Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -23335,6 +23417,20 @@ Target-Profile-SupportedDevices: edimax,br-6475nd br-6475nd
 
 Target-Profile-Description:
 Build firmware images for Edimax BR-6475nD
+
+
+
+@@
+
+Target-Profile: DEVICE_engenius_esr600h
+Target-Profile-Name: EnGenius ESR600H
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,esr600h
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius ESR600H
 
 
 
