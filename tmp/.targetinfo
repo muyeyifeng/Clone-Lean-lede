@@ -792,11 +792,11 @@ Target-Board: ath79
 Target-Name: Atheros ATH79
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -809,11 +809,11 @@ Target-Board: ath79
 Target-Name: Generic
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -3264,6 +3264,20 @@ Build firmware images for Telco T1
 
 @@
 
+Target-Profile: DEVICE_teltonika_rut230-v1
+Target-Profile-Name: Teltonika RUT230 v1
+Target-Profile-Packages: kmod-usb-chipidea2 kmod-usb-acm kmod-usb-net-qmi-wwan uqmi -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: teltonika,rut230-v1
+
+
+Target-Profile-Description:
+Build firmware images for Teltonika RUT230 v1
+
+
+
+@@
+
 Target-Profile: DEVICE_teltonika_rut955
 Target-Profile-Name: Teltonika RUT955
 Target-Profile-Packages: kmod-usb2 kmod-usb-acm kmod-usb-net-qmi-wwan kmod-usb-serial-option kmod-hwmon-mcp3021 uqmi -uboot-envtools 
@@ -4148,20 +4162,6 @@ Build firmware images for TP-Link TL-WDR4900 v2
 
 @@
 
-Target-Profile: DEVICE_tplink_tl-wdr6500-v2
-Target-Profile-Name: TP-Link TL-WDR6500 v2
-Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: tplink,tl-wdr6500-v2 tl-wdr6500-v2
-
-
-Target-Profile-Description:
-Build firmware images for TP-Link TL-WDR6500 v2
-
-
-
-@@
-
 Target-Profile: DEVICE_tplink_tl-wdr7500-v3
 Target-Profile-Name: TP-Link TL-WDR7500 v3
 Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
@@ -4171,6 +4171,20 @@ Target-Profile-SupportedDevices: tplink,tl-wdr7500-v3 archer-c7
 
 Target-Profile-Description:
 Build firmware images for TP-Link TL-WDR7500 v3
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-wdr6500-v2
+Target-Profile-Name: TP-Link TL-WDR6500 v2
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-wdr6500-v2 tl-wdr6500-v2
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-WDR6500 v2
 
 
 
@@ -4451,6 +4465,20 @@ Target-Profile-SupportedDevices: tplink,tl-wr902ac-v1 tl-wr902ac-v1
 
 Target-Profile-Description:
 Build firmware images for TP-Link TL-WR902AC v1
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-wr941hp-v1
+Target-Profile-Name: TP-Link TL-WR941HP v1
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-wr941hp-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-WR941HP v1
 
 
 
@@ -4834,6 +4862,20 @@ Build firmware images for Ubiquiti PowerBeam 5AC Gen2
 
 @@
 
+Target-Profile: DEVICE_ubnt_powerbeam-m-xw
+Target-Profile-Name: Ubiquiti PowerBeam M XW
+Target-Profile-Packages: kmod-usb2 rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,powerbeam-m-xw loco-m-xw
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti PowerBeam M XW
+
+
+
+@@
+
 Target-Profile: DEVICE_ubnt_powerbridge-m
 Target-Profile-Name: Ubiquiti PowerBridge M XM
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
@@ -5021,11 +5063,11 @@ Target-Board: ath79
 Target-Name: MikroTik devices
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -5033,7 +5075,7 @@ Target-Description:
 	Build firmware images for MikroTik devices based on Qualcomm Atheros
 	MIPS SoCs (AR71xx, AR72xx, AR91xx, AR93xx, QCA95xx).
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_mikrotik_routerboard-493g
 Target-Profile-Name: MikroTik RouterBOARD 493G
 Target-Profile-Packages: nand-utils kmod-usb-ohci kmod-usb2 
@@ -5043,6 +5085,20 @@ Target-Profile-SupportedDevices: mikrotik,routerboard-493g rb-493g
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for MikroTik RouterBOARD 493G
+
+
+
+@@
+
+Target-Profile: DEVICE_mikrotik_routerboard-912uag-2hpnd
+Target-Profile-Name: MikroTik RouterBOARD 912UAG-2HPnD
+Target-Profile-Packages: nand-utils kmod-usb-ehci kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mikrotik,routerboard-912uag-2hpnd rb-912uag-2hpnd
+
+Target-Profile-Default: n
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD 912UAG-2HPnD
 
 
 
@@ -5137,11 +5193,11 @@ Target-Board: ath79
 Target-Name: Generic devices with NAND flash
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -5393,11 +5449,11 @@ Target-Board: ath79
 Target-Name: Devices with small flash
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 pci ramdisk small_flash squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 pci ramdisk small_flash squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.128
+Linux-Version: 5.10.46
 Linux-Testing-Version: 5.10.46
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -12856,7 +12912,7 @@ Build firmware images for Edgecore ECW5410
 
 Target-Profile: DEVICE_linksys_ea7500-v1
 Target-Profile-Name: Linksys EA7500 v1
-Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-Packages: -kmod-ath10k-ct kmod-ath10k-ct-smallbuffers ath10k-firmware-qca99x0-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,ea7500-v1
 
@@ -17005,7 +17061,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7620 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_aigale_ai-br100
 Target-Profile-Name: Aigale Ai-BR100
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci 
@@ -20578,7 +20634,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT76x8 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_alfa-network_awusfree1
 Target-Profile-Name: ALFA Network AWUSFREE1
 Target-Profile-Packages: uboot-envtools 
