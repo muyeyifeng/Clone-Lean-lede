@@ -55573,7 +55573,7 @@ Config:
 Source-Makefile: feeds/packages/net/acme/Makefile
 
 Package: acme
-Version: 2.8.7-6
+Version: 2.9.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -55583,7 +55583,7 @@ Category: Network
 Repository: base
 Title: ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.7.tar.gz
+Source: acme-2.9.0.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -55593,7 +55593,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 2.8.7-6
+Version: 2.9.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -55603,7 +55603,7 @@ Category: Network
 Repository: base
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.7.tar.gz
+Source: acme-2.9.0.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -60889,7 +60889,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.4.1-1
+Version: 2.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -60900,7 +60900,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.1.tar.gz
+Source: haproxy-2.4.2.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60913,7 +60913,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.4.1-1
+Version: 2.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -60924,7 +60924,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.1.tar.gz
+Source: haproxy-2.4.2.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60935,7 +60935,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.4.1-1
+Version: 2.4.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -60946,7 +60946,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.1.tar.gz
+Source: haproxy-2.4.2.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -71139,7 +71139,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: shadowsocks-libev-ss-rules
 Submenu: Web Servers/Proxies
 Version: 3.3.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables-mod-tproxy +resolveip +shadowsocks-libev-ss-redir +shadowsocks-libev-config
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables-mod-tproxy +resolveip +shadowsocks-libev-ss-redir
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71160,7 +71160,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: shadowsocks-libev-ss-local
 Submenu: Web Servers/Proxies
 Version: 3.3.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config +libpcre
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71181,7 +71181,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: shadowsocks-libev-ss-redir
 Submenu: Web Servers/Proxies
 Version: 3.3.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71202,7 +71202,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: shadowsocks-libev-ss-tunnel
 Submenu: Web Servers/Proxies
 Version: 3.3.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71223,7 +71223,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: shadowsocks-libev-ss-server
 Submenu: Web Servers/Proxies
 Version: 3.3.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +shadowsocks-libev-config +libcares +libpcre
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libmbedtls +libpthread +libsodium +libcares +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -104203,7 +104203,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.9.7-0
+Version: 4.10.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -104213,7 +104213,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.9.7.tar.gz
+Source: yq-4.10.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

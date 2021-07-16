@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/acme/Makefile
 
 Package: acme
-Version: 2.8.7-6
+Version: 2.9.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.7.tar.gz
+Source: acme-2.9.0.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -21,7 +21,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 2.8.7-6
+Version: 2.9.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Network
 Repository: base
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.8.7.tar.gz
+Source: acme-2.9.0.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
