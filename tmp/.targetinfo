@@ -12924,6 +12924,20 @@ Build firmware images for Linksys EA7500 v1
 
 @@
 
+Target-Profile: DEVICE_linksys_e8350-v1
+Target-Profile-Name: Linksys E8350 v1
+Target-Profile-Packages: ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8350-v1
+
+
+Target-Profile-Description:
+Build firmware images for Linksys E8350 v1
+
+
+
+@@
+
 Target-Profile: DEVICE_linksys_ea8500
 Target-Profile-Name: Linksys EA8500
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct luci-app-advanced-reboot 
@@ -17047,11 +17061,11 @@ Target-Board: ramips
 Target-Name: MediaTek Ralink MIPS
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_mips32
-Target-Features: gpio squashfs
+Target-Features: gpio squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -17064,11 +17078,11 @@ Target-Board: ramips
 Target-Name: MT7620 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs usb
+Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -18649,11 +18663,11 @@ Target-Board: ramips
 Target-Name: MT7621 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs usb
+Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -19946,7 +19960,7 @@ Build firmware images for NETIS WF2881
 
 Target-Profile: DEVICE_phicomm_k2p
 Target-Profile-Name: Phicomm K2P
-Target-Profile-Packages: kmod-mt7615d_dbdc -luci-newapi -wpad-openssl  
+Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc wireless-tools  
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: phicomm,k2p k2p
 
@@ -20637,11 +20651,11 @@ Target-Board: ramips
 Target-Name: MT76x8 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs usb
+Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -21764,11 +21778,11 @@ Target-Board: ramips
 Target-Name: RT288x based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 pci small_flash squashfs usb
+Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -21893,11 +21907,11 @@ Target-Board: ramips
 Target-Name: RT3x5x/RT5350 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_24kc
-Target-Features: dt gpio mips16 ramdisk small_flash squashfs usb
+Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -23424,11 +23438,11 @@ Target-Board: ramips
 Target-Name: RT3662/RT3883 based boards
 Target-Arch: mipsel
 Target-Arch-Packages: mipsel_74kc
-Target-Features: dt gpio mips16 pci small_flash squashfs usb
+Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.10.50
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.50
 Linux-Release: 1
 Linux-Kernel-Arch: mips

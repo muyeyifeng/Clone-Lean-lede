@@ -309,11 +309,11 @@ lean
 
 
 Source-Makefile: feeds/passwall/naiveproxy/Makefile
-Build-Depends: python3/host
+Build-Depends: python3/host ninja/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 91.0.4472.77-1-0
+Version: 91.0.4472.77-1-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -327,7 +327,7 @@ Source: naiveproxy-91.0.4472.77-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+Description:   Na茂veProxy uses Chrome's network stack to camouflage traffic with strong
   censorship resistance and low detectability. Reusing Chrome's stack also
   ensures best practices in performance and security.
 https://github.com/klzgrad/naiveproxy
