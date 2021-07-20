@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-unblockmusic
 Submenu: 3. Applications
 Version: 2.3.5-17
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq-full +ipset +uclient-fetch +UnblockNeteaseMusic_NodeJS:UnblockNeteaseMusic +UnblockNeteaseMusic_Go:UnblockNeteaseMusicGo
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq-full +ipset +uclient-fetch +PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go:UnblockNeteaseMusic-Go +PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS:UnblockNeteaseMusic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -20,7 +20,14 @@ Description: LuCI support for Unblock NeteaseCloudMusic
 lean
 @@
 Config:
-  source "package/lean/luci-app-unblockmusic/Config.in"
+config PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go
+	bool "UnblockNeteaseMusic Golang Version"
+	default y if i386||x86_64||arm||aarch64
+
+config PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS
+	bool "UnblockNeteaseMusic NodeJS Version"
+	depends on HAS_FPU || KERNEL_MIPS_FPU_EMULATOR || SOFT_FLOAT
+	default n
 @@
 
 Package: luci-i18n-unblockmusic-zh-cn
