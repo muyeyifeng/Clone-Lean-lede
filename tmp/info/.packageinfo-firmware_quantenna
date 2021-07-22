@@ -1,0 +1,72 @@
+Source-Makefile: package/firmware/quantenna/Makefile
+Build-Depends: libtirpc
+
+Package: qtn-utils
+Version: 37.3.2.44-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +tc +kmod-sched-act-vlan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Quantenna QV840 (QTS1000) Utilities
+Maintainer: Bjørn Mork <bjorn@mork.no>
+Source: R7500-and_qtn_gpl_src_v1.0.0.124.tar.bz2.zip
+Type: ipkg
+Description:   Management tools for Quantenna QV840 (QTS1000) WiFi modules
+Bjørn Mork <bjorn@mork.no>
+@@
+
+Package: qtn-firmware
+Version: 37.3.2.44-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Quantenna QV840 (QTS1000) firmware
+Maintainer: Bjørn Mork <bjorn@mork.no>
+Source: R7500-and_qtn_gpl_src_v1.0.0.124.tar.bz2.zip
+Type: ipkg
+Description:   Firmware for Quantenna QV840 (QTS1000) WiFi modules
+Bjørn Mork <bjorn@mork.no>
+@@
+
+Package: qtn-proto
+Version: 37.3.2.44-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +qtn-utils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Quantenna QV840 (QTS1000) netifd support
+Maintainer: Bjørn Mork <bjorn@mork.no>
+Source: R7500-and_qtn_gpl_src_v1.0.0.124.tar.bz2.zip
+Type: ipkg
+Description: Quantenna QV840 (QTS1000) netifd support
+Bjørn Mork <bjorn@mork.no>
+@@
+
+Package: kmod-qtn-pcie2
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+37.3.2.44-1
+Depends: +qtn-utils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Quantenna QV840 (QTS1000) pcie2 driver
+Maintainer: Bjørn Mork <bjorn@mork.no>
+Source: R7500-and_qtn_gpl_src_v1.0.0.124.tar.bz2.zip
+Type: ipkg
+Description: 	Quantenna QV840 (QTS1000) WiFi modules PCIE2 driver
+Bjørn Mork <bjorn@mork.no>
+@@
+
+
