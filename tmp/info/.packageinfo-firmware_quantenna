@@ -2,7 +2,7 @@ Source-Makefile: package/firmware/quantenna/Makefile
 Build-Depends: libtirpc
 
 Package: qtn-utils
-Version: 37.3.2.44-8
+Version: 37.3.2.44-9
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +tc +kmod-sched-act-vlan
 Conflicts: 
 Menu-Depends: 
@@ -19,8 +19,8 @@ lean
 @@
 
 Package: qtn-firmware
-Version: 37.3.2.44-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq
+Version: 37.3.2.44-9
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,7 +36,7 @@ lean
 @@
 
 Package: qtn-proto
-Version: 37.3.2.44-8
+Version: 37.3.2.44-9
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +qtn-utils
 Conflicts: 
 Menu-Depends: 
@@ -54,7 +54,7 @@ lean
 
 Package: kmod-qtn-pcie2
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+37.3.2.44-8
+Version: <LINUX_VERSION>+37.3.2.44-9
 Depends: +qtn-utils
 Conflicts: 
 Menu-Depends: 

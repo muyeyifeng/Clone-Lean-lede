@@ -15,7 +15,7 @@ Linux-Kernel-Arch: powerpc
 Target-Description:
 	Build images for AppliedMicro APM821xx based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-i2c-core kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-i2c-core kmod-gpio-button-hotplug 
 Target: apm821xx/nand
 Target-Board: apm821xx
 Target-Name: Devices with NAND flash (Routers)
@@ -33,7 +33,7 @@ Target-Description:
 	Build firmware images for APM821XX boards with NAND flash.
 	For routers like the MR24 or the WNDR4700.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-ath9k swconfig wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-i2c-core kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-ath9k swconfig wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-i2c-core kmod-gpio-button-hotplug iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -252,7 +252,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
 Target: armvirt/32
 Target-Board: armvirt
 Target-Name: QEMU ARM Virtual Machine (cortex-a15)
@@ -269,7 +269,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
   Build images for QEMU ARM Virtual Machine (cortex-a15)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
 Target: armvirt/64
 Target-Board: armvirt
 Target-Name: QEMU ARMv8 Virtual Machine (cortex-a53)
@@ -286,7 +286,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
   Build multi-platform images for the ARMv8 instruction set architecture
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
 
 Source-Makefile: target/linux/at91/Makefile
 Target: at91
@@ -304,7 +304,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
 Target: at91/sama5
 Target-Board: at91
 Target-Name: SAMA5 boards(Cortex-A5)
@@ -321,7 +321,7 @@ Target-Description:
 	Build generic firmware for Microchip(Atmel AT91) SAMA5D2,
 	SAMA5D3 and SAMA5D4 MPU's using the ARMv7 instruction set.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-usb2 dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-usb2 dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
 Target-Profile: DEVICE_microchip_sama5d2-xplained
 Target-Profile-Name: Microchip SAMA5D2 Xplained
 Target-Profile-Packages:  
@@ -408,7 +408,7 @@ Target-Description:
 	Build generic firmware for Microchip AT91 SAM9x platforms
 	using the ARMv5 instruction set.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-ohci kmod-at91-udc kmod-usb-gadget-eth 
 Target-Profile: DEVICE_atmel_at91sam9263ek
 Target-Profile-Name: Atmel AT91SAM9263-EK
 Target-Profile-Packages:  
@@ -692,7 +692,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Atheros SoC boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-ath5k swconfig kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-ath5k swconfig kmod-gpio-button-hotplug iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -803,7 +803,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools 
 Target: ath79/generic
 Target-Board: ath79
 Target-Name: Generic
@@ -820,7 +820,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for generic Atheros AR71xx/AR913x/AR934x based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd -ddns-scripts_aliyun -ddns-scripts_dnspod wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd -ddns-scripts_aliyun -ddns-scripts_dnspod wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_8dev_carambola2
 Target-Profile-Name: 8devices Carambola2
 Target-Profile-Packages: kmod-usb-chipidea2 
@@ -5075,7 +5075,7 @@ Target-Description:
 	Build firmware images for MikroTik devices based on Qualcomm Atheros
 	MIPS SoCs (AR71xx, AR72xx, AR91xx, AR93xx, QCA95xx).
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_mikrotik_routerboard-493g
 Target-Profile-Name: MikroTik RouterBOARD 493G
 Target-Profile-Packages: nand-utils kmod-usb-ohci kmod-usb2 
@@ -5205,7 +5205,7 @@ Target-Description:
 	Firmware for boards using Qualcomm Atheros, MIPS-based SoCs
 	in the ar72xx and subsequent series, with support for NAND flash
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_8dev_rambutan
 Target-Profile-Name: 8devices Rambutan
 Target-Profile-Packages: kmod-usb2 
@@ -5460,7 +5460,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Atheros AR71xx/AR913x/AR934x based boards with small flash
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_buffalo_whr-g301n
 Target-Profile-Name: Buffalo WHR-G301N
 Target-Profile-Packages:  
@@ -6281,7 +6281,7 @@ Target-Description:
 	Build firmware image for Broadcom BCM27xx SoC devices.
 	Currently produces SD Card image for Raspberry Pi.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target: bcm27xx/bcm2708
 Target-Board: bcm27xx
 Target-Name: BCM2708 boards (32 bit)
@@ -6298,7 +6298,7 @@ Target-Description:
 	Build firmware image for BCM2708 devices.
 	This firmware features a 32 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi
 Target-Profile-Name: Raspberry Pi B/B+/CM/Zero/ZeroW
 Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-zero-w kmod-brcmfmac wpad-basic-wolfssl iwinfo
@@ -6329,7 +6329,7 @@ Target-Description:
 	Build firmware image for BCM2709/BCM2710/BCM2711 devices.
 	This firmware features a 32 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi-2
 Target-Profile-Name: Raspberry Pi 3B/3B+/3CM (32bit) (Raspberry Pi 2B/2B 1.2 (32bit))
 Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus cypress-nvram-43455-sdio-rpi-4b kmod-brcmfmac wpad-basic-wolfssl iwinfo
@@ -6391,7 +6391,7 @@ Target-Description:
 	Build firmware image for BCM2710 devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi-3
 Target-Profile-Name: Raspberry Pi 2B-1.2 (64bit) (Raspberry Pi 3B/3B+/3CM (64bit))
 Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus kmod-brcmfmac wpad-basic-wolfssl iwinfo
@@ -6438,7 +6438,7 @@ Target-Description:
 	Build firmware image for BCM2711 devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi-4
 Target-Profile-Name: Raspberry Pi 4B/400/4CM (64bit)
 Target-Profile-Packages: cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-4b kmod-brcmfmac wpad-basic-wolfssl iwinfo
@@ -6471,7 +6471,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with MIPS CPU, *not* ARM.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug 
 Target: bcm47xx/generic
 Target-Board: bcm47xx
 Target-Name: Generic
@@ -6489,7 +6489,7 @@ Target-Description:
 	Build generic firmware for all Broadcom BCM47xx and BCM53xx MIPS
 	devices. It runs on both architectures BMIPS3300 and MIPS 74K.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-b43
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (b43, default)
 Target-Profile-Packages: kmod-b44 kmod-tg3 kmod-bgmac kmod-b43 kmod-b43legacy iwinfo
@@ -6743,7 +6743,7 @@ Target-Description:
 	Build firmware for Broadcom BCM47xx and BCM53xx devices with
 	MIPS 74K CPU.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-mips74k-b43
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43)
 Target-Profile-Packages: kmod-b43 iwinfo
@@ -7563,7 +7563,7 @@ Target-Description:
 	BMIPS3300 CPU except for BCM4705 SoC.
 	Supported SoCs: BCM5352E, BCM5354, BCM5365?, BCM4712, BCM4704.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram otrx kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: Broadcom-b43
 Target-Profile-Name: Broadcom SoC, all Ethernet, BCM43xx WiFi (b43, default)
 Target-Profile-Packages: kmod-b43 kmod-b43legacy iwinfo
@@ -8078,7 +8078,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for Broadcom BCM4908 SoC family routers.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm4908img kmod-usb-ohci kmod-usb2 kmod-usb3 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm4908img kmod-usb-ohci kmod-usb2 kmod-usb3 
 Target: bcm4908/generic
 Target-Board: bcm4908
 Target-Name: Generic
@@ -8095,7 +8095,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for Broadcom BCM4908 SoC family routers.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm4908img kmod-usb-ohci kmod-usb2 kmod-usb3 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod bcm4908img kmod-usb-ohci kmod-usb2 kmod-usb3 
 Target-Profile: DEVICE_asus_gt-ac5300
 Target-Profile-Name: Asus GT-AC5300
 Target-Profile-Packages:  
@@ -8156,7 +8156,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with ARM CPU, *not* MIPS.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
 Target-Profile: Generic
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43, brcmfmac, default)
 Target-Profile-Packages: kmod-b43 kmod-brcmfmac 
@@ -8182,7 +8182,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with ARM CPU, *not* MIPS.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
 Target-Profile: Generic
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43, brcmfmac, default)
 Target-Profile-Packages: kmod-b43 kmod-brcmfmac 
@@ -8576,7 +8576,7 @@ Target-Description:
 	currently supports BCM6338, BCM6348 and BCM6358 based devices.
 	(e.g. Inventel Livebox, Siemens SE515, Neufbox 4)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -8601,7 +8601,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for BCM63XX boards without SMP support.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -10139,7 +10139,7 @@ Target-Description:
     - BCM6368 (v2.1)
     - BCM63268 (v4.0)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod swconfig kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -11766,7 +11766,7 @@ Target-Description:
 	Build firmware images for BCM33xx cable modem chips,
 	BCM63xx DSL chips and BCM7xxx set-top box chips.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -11790,7 +11790,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
   BMIPS boards without NAND support 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -11870,7 +11870,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
   BMIPS boards with NAND support 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod ethtool kmod-gpio-button-hotplug 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -11924,7 +11924,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for the StorLink/Cortina Gemini CS351x ARM FA526 CPU
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-fotg210 kmod-usb-ledtrig-usbport kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-fotg210 kmod-usb-ledtrig-usbport kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_dlink_dir-685
 Target-Profile-Name: D-Link DIR-685 Xtreme N Storage Router
 Target-Profile-Packages: block-mount fdisk lsblk mdadm kmod-md-mod kmod-md-linear kmod-md-multipath kmod-md-raid0 kmod-md-raid1 kmod-md-raid10 kmod-md-raid456 kmod-fs-btrfs kmod-fs-cifs kmod-fs-nfs kmod-fs-nfsd kmod-fs-ntfs kmod-fs-reiserfs kmod-fs-vfat kmod-nls-utf8 kmod-usb-storage-extras kmod-hwmon-drivetemp cfdisk e2fsprogs badblocks partx-utils kmod-rt2800-pci 
@@ -12013,7 +12013,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs blkid 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs blkid 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -12109,7 +12109,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ath10k-ct wpad-openssl uboot-envtools kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019-ct autocore-arm automount autosamba ethtool htop luci-app-adbyby-plus luci-app-cpufreq luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ath10k-ct wpad-openssl uboot-envtools kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019-ct autocore-arm automount autosamba ethtool htop luci-app-adbyby-plus luci-app-cpufreq luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -12822,7 +12822,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier luci-app-sqm iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic UnblockNeteaseMusic luci-app-zerotier iwinfo
 Target: ipq806x/generic
 Target-Board: ipq806x
 Target-Name: Generic
@@ -12839,7 +12839,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier luci-app-sqm iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic UnblockNeteaseMusic luci-app-zerotier iwinfo
 Target-Profile: DEVICE_askey_rt4230w-rev6
 Target-Profile-Name: Askey RT4230W REV6
 Target-Profile-Packages: ath10k-firmware-qca9984-ct 
@@ -13223,7 +13223,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 autocore-arm htop luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target: ipq807x/generic
 Target-Board: ipq807x
 Target-Name: Generic
@@ -13239,7 +13239,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 autocore-arm htop luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target-Profile: DEVICE_netgear_sxr80
 Target-Profile-Name: Netgear SXR80
 Target-Profile-Packages: ipq-wifi-netgear_sxr80 uboot-envtools 
@@ -13314,7 +13314,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-usb2 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-usb2 
 Target-Profile: DEVICE_checkpoint_l-50
 Target-Profile-Name: Check Point L-50
 Target-Profile-Packages: kmod-ath9k kmod-gpio-button-hotplug kmod-mvsdio kmod-rtc-s35390a kmod-usb-ledtrig-usbport wpad-basic-wolfssl iwinfo
@@ -13585,7 +13585,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for Lantiq SoC
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target: lantiq/xrx200
 Target-Board: lantiq
 Target-Name: XRX200
@@ -13602,7 +13602,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XRX200
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug ltq-vdsl-vr9-vectoring-fw-installer kmod-ltq-vdsl-vr9-mei kmod-ltq-vdsl-vr9 kmod-ltq-atm-vr9 kmod-ltq-ptm-vr9 kmod-ltq-deu-vr9 ltq-vdsl-app dsl-vrx200-firmware-xdsl-a dsl-vrx200-firmware-xdsl-b-patch ppp-mod-pppoa swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug ltq-vdsl-vr9-vectoring-fw-installer kmod-ltq-vdsl-vr9-mei kmod-ltq-vdsl-vr9 kmod-ltq-atm-vr9 kmod-ltq-ptm-vr9 kmod-ltq-deu-vr9 ltq-vdsl-app dsl-vrx200-firmware-xdsl-a dsl-vrx200-firmware-xdsl-b-patch ppp-mod-pppoa swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -14102,7 +14102,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XWAY
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -14640,7 +14640,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq XWAY Legacy for old boards with small flash
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -14798,7 +14798,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq Falcon
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -14991,7 +14991,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Lantiq Amazon-SE Boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-leds-gpio kmod-gpio-button-hotplug kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -15045,7 +15045,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for NXP Layerscape based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target: layerscape/armv8_64b
 Target-Board: layerscape
 Target-Name: ARMv8 64-bit based boards
@@ -15061,7 +15061,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for NXP Layerscape ARMv8 64-bit based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1012a-frdm
 Target-Profile-Name: NXP FRDM-LS1012A
 Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-frdm kmod-ppfe 
@@ -15287,7 +15287,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for NXP Layerscape ARMv7 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1021a-twr
 Target-Profile-Name: NXP TWR-LS1021A Default
 Target-Profile-Packages:  layerscape-rcw 
@@ -15348,7 +15348,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
 Target: malta/le
 Target-Board: malta
 Target-Name: Little Endian
@@ -15366,7 +15366,7 @@ Target-Description:
 	Build LE firmware images for MIPS Malta CoreLV board running in
 	little-endian mode
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
 Target: malta/be
 Target-Board: malta
 Target-Name: Big Endian
@@ -15384,7 +15384,7 @@ Target-Description:
 	Build BE firmware images for MIPS Malta CoreLV board running in
 	big-endian mode
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
 Target: malta/le64
 Target-Board: malta
 Target-Name: Little Endian (64-bits)
@@ -15402,7 +15402,7 @@ Target-Description:
 	Build LE firmware images for MIPS Malta CoreLV board running in
 	little-endian and 64-bits mode
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
 Target: malta/be64
 Target-Board: malta
 Target-Name: Big Endian (64-bits)
@@ -15420,7 +15420,7 @@ Target-Description:
 	Build BE firmware images for MIPS Malta CoreLV board running in
 	big-endian and 64-bits mode
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim kmod-pcnet32 mkf2fs e2fsprogs iwinfo
 
 Source-Makefile: target/linux/mediatek/Makefile
 Target: mediatek
@@ -15439,7 +15439,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
 Target: mediatek/mt7622
 Target-Board: mediatek
 Target-Name: MT7622
@@ -15456,7 +15456,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for MediaTek MT7622 ARM based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7615e kmod-mt7615-firmware wpad-basic-wolfssl blockdev uboot-envtools dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7615e kmod-mt7615-firmware wpad-basic-wolfssl blockdev uboot-envtools dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_bananapi_bpi-r64
 Target-Profile-Name: Bananapi BPi-R64
 Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 e2fsprogs mkf2fs f2fsck 
@@ -15631,7 +15631,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for MediaTek mt7623 ARM based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_bpi_bananapi-r2
 Target-Profile-Name: Bpi Banana Pi R2
 Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
@@ -15690,7 +15690,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for MediaTek mt7629 ARM based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_mediatek_mt7629-rfb
 Target-Profile-Name: MediaTek MT7629 rfb AP
 Target-Profile-Packages: swconfig 
@@ -15723,7 +15723,7 @@ Linux-Kernel-Arch: powerpc
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
 Target: mpc85xx/p1010
 Target-Board: mpc85xx
 Target-Name: P1010
@@ -15740,7 +15740,7 @@ Linux-Kernel-Arch: powerpc
 Target-Description:
 	Build firmware images for P1010 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -15793,7 +15793,7 @@ Linux-Kernel-Arch: powerpc
 Target-Description:
 	Build firmware images for Freescale P1020 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -15860,7 +15860,7 @@ Linux-Kernel-Arch: powerpc
 Target-Description:
 	Build firmware images for Freescale P2020 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-input-core kmod-input-gpio-keys kmod-button-hotplug kmod-leds-gpio swconfig kmod-ath9k wpad-basic-wolfssl kmod-usb2 iwinfo
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -15901,7 +15901,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
 Target: mvebu/cortexa9
 Target-Board: mvebu
 Target-Name: Marvell Armada 37x/38x/XP
@@ -15918,7 +15918,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_buffalo_ls421de
 Target-Profile-Name: Buffalo LinkStation LS421DE
 Target-Profile-Packages: kmod-rtc-rs5c372a kmod-hwmon-gpiofan kmod-hwmon-drivetemp kmod-usb3 kmod-linkstation-poweroff kmod-md-raid0 kmod-md-raid1 kmod-md-mod kmod-fs-xfs mkf2fs e2fsprogs partx-utils 
@@ -16312,7 +16312,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_glinet_gl-mv1000
 Target-Profile-Name: GL.iNet GL-MV1000
 Target-Profile-Packages:  
@@ -16505,7 +16505,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_marvell_armada7040-db
 Target-Profile-Name: Marvell Armada 7040 Development Board
 Target-Profile-Packages:  
@@ -16612,7 +16612,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Support for Freescale i.MX23/i.MX28 boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 Target-Profile: duckbill
 Target-Profile-Name: I2SE Duckbill boards
 Target-Profile-Packages:  -dnsmasq -firewall -ppp -ip6tables -iptables -6relayd -mtd uboot-envtools kmod-leds-gpio -kmod-ipt-nathelper uboot-mxs-duckbill 
@@ -16652,7 +16652,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Cavium Networks Octeon-based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -16762,7 +16762,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build images for Octeon-TX CN80XX/CN81XX based boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod 
 
 Source-Makefile: target/linux/omap/Makefile
 Target: omap
@@ -16780,7 +16780,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	TI OMAP boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -17015,7 +17015,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug uboot-envtools 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug uboot-envtools 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -17072,7 +17072,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink RT288x/RT3xxx based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug 
 Target: ramips/mt7620
 Target-Board: ramips
 Target-Name: MT7620 based boards
@@ -17089,7 +17089,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7620 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_aigale_ai-br100
 Target-Profile-Name: Aigale Ai-BR100
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci 
@@ -18674,7 +18674,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7621 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_adslr_g7
 Target-Profile-Name: ADSLR G7
 Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
@@ -20662,7 +20662,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT76x8 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-mt7603 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_alfa-network_awusfree1
 Target-Profile-Name: ALFA Network AWUSFREE1
 Target-Profile-Packages: uboot-envtools 
@@ -21789,7 +21789,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink RT288x based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_airlink101_ar670w
 Target-Profile-Name: Airlink AR670W
 Target-Profile-Packages:  
@@ -21918,7 +21918,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink RT3x5x/RT5350 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_7links_px-4885-4m
 Target-Profile-Name: 7Links PX-4885 4M
 Target-Profile-Packages: kmod-usb-dwc2 kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-leds-gpio 
@@ -23449,7 +23449,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink RT3662/RT3883 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-pci kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-rt2800-pci kmod-rt2800-soc wpad-basic-wolfssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_asus_rt-n56u
 Target-Profile-Name: Asus RT-N56U
 Target-Profile-Packages: kmod-usb-ohci kmod-usb2 
@@ -23854,7 +23854,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
 Target: rockchip/armv8
 Target-Board: rockchip
 Target-Name: RK33xx boards (64 bit)
@@ -23872,7 +23872,7 @@ Target-Description:
 	Build firmware image for Rockchip RK33xx devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
 Target-Profile: DEVICE_friendlyarm_nanopi-r2s
 Target-Profile-Name: FriendlyARM NanoPi R2S
 Target-Profile-Packages: kmod-usb-net-rtl8152 
@@ -23961,7 +23961,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -23986,7 +23986,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -24095,7 +24095,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -24498,7 +24498,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils mkf2fs e2fsprogs 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile (all drivers)
@@ -24665,7 +24665,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware image for NVIDIA Tegra SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod e2fsprogs mkf2fs partx-utils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod e2fsprogs mkf2fs partx-utils 
 Target-Profile: DEVICE_compulab_trimslice
 Target-Profile-Name: CompuLab TrimSlice
 Target-Profile-Packages: kmod-r8169 kmod-rt2800-usb kmod-rtc-em3027 kmod-usb-storage wpad-basic-wolfssl iwinfo
@@ -24697,7 +24697,7 @@ Linux-Kernel-Arch: um
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim mkf2fs e2fsprogs iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod wpad-basic-wolfssl kmod-mac80211-hwsim mkf2fs e2fsprogs iwinfo
 
 Source-Makefile: target/linux/x86/Makefile
 Target: x86
@@ -24716,7 +24716,7 @@ Linux-Kernel-Arch: x86
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
 Target: x86/64
 Target-Board: x86
 Target-Name: x86_64
@@ -24733,7 +24733,7 @@ Linux-Kernel-Arch: x86
 Target-Description:
         Build images for 64 bit systems including virtualized guests.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/64
 Target-Profile-Packages:  kmod-amazon-ena kmod-bnx2 kmod-e1000e kmod-e1000 kmod-forcedeth kmod-igb kmod-ixgbe kmod-amd-xgbe kmod-r8168 kmod-fs-vfat 
@@ -24766,7 +24766,7 @@ Target-Description:
 	supporting at least the Intel Pentium 4 instruction set with
 	MMX, SSE and SSE2.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86
 Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8168 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth kmod-fs-vfat 
@@ -24798,7 +24798,7 @@ Target-Description:
 	Build firmware images for legacy x86 based boards
 	(e.g : Soekris, ...)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/legacy
 Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8168 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth 
@@ -24829,7 +24829,7 @@ Linux-Kernel-Arch: x86
 Target-Description:
 	Build firmware images for AMD Geode GX/LX based systems (net5501, alix, geos)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-pcnet32 kmod-tulip kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-uugamebooster luci-app-qbittorrent ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/Geode
 Target-Profile-Packages:  kmod-crypto-cbc kmod-crypto-hw-geode kmod-ledtrig-gpio 
@@ -24875,7 +24875,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware image for Zynq 7000 SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-pptp-server luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs kmod-usb-storage kmod-fs-msdos 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs kmod-usb-storage kmod-fs-msdos 
 Target-Profile: DEVICE_avnet_zynq-zed
 Target-Profile-Name: Avnet ZedBoard
 Target-Profile-Packages:  
