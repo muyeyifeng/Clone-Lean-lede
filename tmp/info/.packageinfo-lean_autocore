@@ -2,7 +2,7 @@ Source-Makefile: package/lean/autocore/Makefile
 
 Package: autocore-arm
 Version: 1-39
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_mvebu||TARGET_rockchip) +TARGET_bcm27xx:bcm27xx-userland +TARGET_bcm53xx:nvram
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip) +TARGET_bcm27xx:bcm27xx-userland +TARGET_bcm53xx:nvram
 Conflicts: 
 Menu-Depends: 
 Provides: 
