@@ -126,24 +126,6 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: eip197-mini-firmware
-Version: 20210511-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Inside Secure EIP197 mini firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20210511.tar.xz
-Type: ipkg
-Description: Inside Secure EIP197 mini firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: ibt-firmware
 Version: 20210511-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -590,6 +572,24 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20210511.tar.xz
 Type: ipkg
 Description: Intel e100
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: eip197-mini-firmware
+Version: 20210511-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Inside Secure EIP197 mini firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20210511.tar.xz
+Type: ipkg
+Description: Inside Secure EIP197 mini firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
