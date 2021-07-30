@@ -1,8 +1,9 @@
 Source-Makefile: package/network/utils/iwinfo/Makefile
+Build-Depends: libtirpc
 
 Package: libiwinfo
 Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libuci +libubus
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libuci +libubus +PACKAGE_kmod-qtn-pcie2:libtirpc
 Conflicts: 
 Menu-Depends: 
 Provides: 

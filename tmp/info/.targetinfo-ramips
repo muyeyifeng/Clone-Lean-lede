@@ -1617,7 +1617,7 @@ Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Ralink MT7621 based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl kmod-crypto-hw-eip93 dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-crypto-hw-eip93 wpad-openssl swconfig dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_adslr_g7
 Target-Profile-Name: ADSLR G7
 Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
@@ -2000,7 +2000,7 @@ Build firmware images for D-Link DIR-882 R1
 
 Target-Profile: DEVICE_d-team_newifi-d2
 Target-Profile-Name: Newifi D2
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: d-team,newifi-d2
 
@@ -2256,7 +2256,7 @@ Build firmware images for Firefly FireWRT
 
 Target-Profile: DEVICE_gehua_ghl-r-001
 Target-Profile-Name: GeHua GHL-R-001
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: gehua,ghl-r-001
 
@@ -2270,7 +2270,7 @@ Build firmware images for GeHua GHL-R-001
 
 Target-Profile: DEVICE_glinet_gl-mt1300
 Target-Profile-Name: GL.iNet GL-MT1300
-Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 
+Target-Profile-Packages: kmod-mt7615d_dbdc kmod-usb3 -luci-newapi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: glinet,gl-mt1300
 
@@ -2480,7 +2480,7 @@ Build firmware images for JCG Q20
 
 Target-Profile: DEVICE_jcg_y2
 Target-Profile-Name: JCG Y2
-Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware kmod-usb3 
+Target-Profile-Packages: kmod-mt7615d_dbdc kmod-usb3 -luci-newapi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: jcg,y2
 
@@ -2903,7 +2903,7 @@ Build firmware images for NETIS WF2881
 
 Target-Profile: DEVICE_phicomm_k2p
 Target-Profile-Name: Phicomm K2P
-Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc wireless-tools  
+Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc wireless-tools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: phicomm,k2p k2p
 
@@ -3381,7 +3381,7 @@ Build firmware images for Xiaomi Mi Router 4A Gigabit Edition
 
 Target-Profile: DEVICE_xiaomi_mi-router-ac2100
 Target-Profile-Name: Xiaomi Mi Router AC2100
-Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware 
+Target-Profile-Packages: uboot-envtools kmod-mt7603e kmod-mt7615d luci-app-mtwifi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,mi-router-ac2100
 
@@ -3409,7 +3409,7 @@ Build firmware images for Xiaomi Mi Router CR660x
 
 Target-Profile: DEVICE_xiaomi_redmi-router-ac2100
 Target-Profile-Name: Xiaomi Redmi Router AC2100
-Target-Profile-Packages: uboot-envtools kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware 
+Target-Profile-Packages: uboot-envtools kmod-mt7603e kmod-mt7615d luci-app-mtwifi -wpad-openssl 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,redmi-router-ac2100
 
