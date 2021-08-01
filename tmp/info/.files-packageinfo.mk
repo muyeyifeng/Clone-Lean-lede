@@ -1785,6 +1785,7 @@ $(eval $(call PackageDir,feeds_routing_luci-app-cjdns,feeds/routing/luci-app-cjd
 $(eval $(call PackageDir,feeds_routing_mcproxy,feeds/routing/mcproxy,))
 $(eval $(call PackageDir,feeds_routing_minimalist-pcproxy,feeds/routing/minimalist-pcproxy,))
 $(eval $(call PackageDir,feeds_routing_mrd6,feeds/routing/mrd6,))
+$(eval $(call PackageDir,feeds_routing_naywatch,feeds/routing/naywatch,))
 $(eval $(call PackageDir,feeds_routing_ndppd,feeds/routing/ndppd,))
 $(eval $(call PackageDir,feeds_routing_nodogsplash,feeds/routing/nodogsplash,))
 $(eval $(call PackageDir,feeds_routing_ohybridproxy,feeds/routing/ohybridproxy,))
