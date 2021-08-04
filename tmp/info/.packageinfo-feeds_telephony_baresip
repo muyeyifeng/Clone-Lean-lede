@@ -22,9 +22,6 @@ Description: Portable and modular SIP User-Agent with A/V support
 https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
-Config:
-	source "feeds/telephony/net/baresip/Config.in"
-@@
 
 Package: baresip-mod-alsa
 Submenu: Telephony
@@ -92,7 +89,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-avcodec
 Submenu: Telephony
 Version: 1.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @BARESIP_WITH_FFMPEG +PACKAGE_baresip-mod-avcodec:libffmpeg-full
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-avcodec:libffmpeg-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
