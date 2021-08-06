@@ -12868,6 +12868,20 @@ Build firmware images for Askey RT4230W REV6
 
 @@
 
+Target-Profile: DEVICE_askey_rt4230w-rev9.3
+Target-Profile-Name: Askey RT4230W REV9.3
+Target-Profile-Packages: ath10k-firmware-qca9984-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: askey,rt4230w-rev9.3
+
+
+Target-Profile-Description:
+Build firmware images for Askey RT4230W REV9.3
+
+
+
+@@
+
 Target-Profile: DEVICE_asrock_g10
 Target-Profile-Name: ASRock G10
 Target-Profile-Packages: kmod-i2c-gpio ath10k-firmware-qca99x0-ct 
@@ -23868,7 +23882,7 @@ Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm fdisk e2fsprogs ethtool haveged htop lm-sensors openssh-sftp-server luci-app-zerotier 
 Target: rockchip/armv8
 Target-Board: rockchip
 Target-Name: RK33xx boards (64 bit)
@@ -23886,7 +23900,7 @@ Target-Description:
 	Build firmware image for Rockchip RK33xx devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug luci-app-cpufreq 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm fdisk e2fsprogs ethtool haveged htop lm-sensors openssh-sftp-server luci-app-zerotier 
 Target-Profile: DEVICE_friendlyarm_nanopi-r2s
 Target-Profile-Name: FriendlyARM NanoPi R2S
 Target-Profile-Packages: kmod-usb-net-rtl8152 
@@ -23902,14 +23916,14 @@ Build firmware images for FriendlyARM NanoPi R2S
 @@
 
 Target-Profile: DEVICE_friendlyarm_nanopi-r4s
-Target-Profile-Name: FriendlyARM NanoPi R4S 4GB LPDDR4
-Target-Profile-Packages: kmod-r8169 
+Target-Profile-Name: FriendlyARM NanoPi R4S
+Target-Profile-Packages: kmod-r8169 -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r4s
 
 
 Target-Profile-Description:
-Build firmware images for FriendlyARM NanoPi R4S 4GB LPDDR4
+Build firmware images for FriendlyARM NanoPi R4S
 
 
 
@@ -23917,7 +23931,7 @@ Build firmware images for FriendlyARM NanoPi R4S 4GB LPDDR4
 
 Target-Profile: DEVICE_pine64_rockpro64
 Target-Profile-Name: Pine64 RockPro64
-Target-Profile-Packages:  
+Target-Profile-Packages: -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,rockpro64
 
@@ -23931,7 +23945,7 @@ Build firmware images for Pine64 RockPro64
 
 Target-Profile: DEVICE_radxa_rock-pi-4
 Target-Profile-Name: Radxa ROCK Pi 4
-Target-Profile-Packages:  
+Target-Profile-Packages: -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: radxa,rockpi4
 
@@ -23945,7 +23959,7 @@ Build firmware images for Radxa ROCK Pi 4
 
 Target-Profile: DEVICE_xunlong_orangepi-r1-plus
 Target-Profile-Name: Xunlong Orange Pi R1 Plus
-Target-Profile-Packages: kmod-usb-net-rtl8152 r8169-firmware 
+Target-Profile-Packages: kmod-usb-net-rtl8152 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xunlong,orangepi-r1-plus
 
@@ -24719,11 +24733,11 @@ Target-Board: x86
 Target-Name: x86
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium-mmx
-Target-Features: boot-part display fpu pci pcmcia rootfs-part rtc squashfs usb vdi vmdk
+Target-Features: boot-part display fpu pci pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.10.51
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.51
 Linux-Release: 1
 Linux-Kernel-Arch: x86
@@ -24736,11 +24750,11 @@ Target-Board: x86
 Target-Name: x86_64
 Target-Arch: x86_64
 Target-Arch-Packages: x86_64
-Target-Features: boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squashfs usb vdi virtio vmdk
+Target-Features: boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squashfs testing-kernel usb vdi virtio vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.10.51
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.51
 Linux-Release: 1
 Linux-Kernel-Arch: x86
@@ -24767,11 +24781,11 @@ Target-Board: x86
 Target-Name: Generic
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium4
-Target-Features: audio boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squashfs usb vdi virtio vmdk
+Target-Features: audio boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squashfs testing-kernel usb vdi virtio vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium4
 CPU-Type: pentium4
-Linux-Version: 5.10.51
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.51
 Linux-Release: 1
 Linux-Kernel-Arch: x86
@@ -24800,11 +24814,11 @@ Target-Board: x86
 Target-Name: Legacy
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium-mmx
-Target-Features: boot-part display fpu pci pcie pcmcia rootfs-part rtc squashfs usb vdi vmdk
+Target-Features: boot-part display fpu pci pcie pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.10.51
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.51
 Linux-Release: 1
 Linux-Kernel-Arch: x86
@@ -24832,11 +24846,11 @@ Target-Board: x86
 Target-Name: AMD Geode based systems
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium-mmx
-Target-Features: boot-part display fpu gpio pci pcmcia rootfs-part rtc squashfs usb vdi vmdk
+Target-Features: boot-part display fpu gpio pci pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.10.51
+Linux-Version: 5.4.132
 Linux-Testing-Version: 5.10.51
 Linux-Release: 1
 Linux-Kernel-Arch: x86

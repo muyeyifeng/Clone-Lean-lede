@@ -3,6 +3,7 @@ DEPS_package/kernel/linux/Makefile=modules/*.mk $(TOPDIR)/target/linux/*/modules
 $(eval $(call PackageDir,base-files,base-files,))
 $(eval $(call PackageDir,boot_arm-trusted-firmware-mediatek,boot/arm-trusted-firmware-mediatek,))
 $(eval $(call PackageDir,boot_arm-trusted-firmware-mvebu,boot/arm-trusted-firmware-mvebu,))
+$(eval $(call PackageDir,boot_arm-trusted-firmware-rk3328,boot/arm-trusted-firmware-rk3328,))
 $(eval $(call PackageDir,boot_arm-trusted-firmware-rockchip,boot/arm-trusted-firmware-rockchip,))
 $(eval $(call PackageDir,boot_arm-trusted-firmware-sunxi,boot/arm-trusted-firmware-sunxi,))
 $(eval $(call PackageDir,boot_arm-trusted-firmware-tools,boot/arm-trusted-firmware-tools,))

@@ -3,7 +3,7 @@ Build-Depends: util-linux
 
 Package: fstools
 Menu: 1
-Version: 2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b-0
+Version: 2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ubox +NAND_SUPPORT:ubi-utils
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Section: base
 Category: Base system
 Title: OpenWrt filesystem tools
 Maintainer: John Crispin <john@phrozen.org>
-Source: fstools-2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b.tar.xz
+Source: fstools-2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt filesystem tools
@@ -43,7 +43,7 @@ Config:
 @@
 
 Package: snapshot-tool
-Version: 2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b-0
+Version: 2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +fstools
 Conflicts: 
 Menu-Depends: 
@@ -52,7 +52,7 @@ Section: base
 Category: Base system
 Title: rootfs snapshoting tool
 Maintainer: John Crispin <john@phrozen.org>
-Source: fstools-2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b.tar.xz
+Source: fstools-2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: rootfs snapshoting tool
@@ -60,8 +60,8 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: block-mount
-Version: 2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +fstools +ubox +libubox +libuci +libblobmsg-json +libjson-c
+Version: 2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ubox +libubox +libuci +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ Section: base
 Category: Base system
 Title: Block device mounting and checking
 Maintainer: John Crispin <john@phrozen.org>
-Source: fstools-2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b.tar.xz
+Source: fstools-2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Block device mounting and checking
@@ -77,7 +77,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: blockd
-Version: 2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b-0
+Version: 2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +block-mount +fstools +libubus +kmod-fs-autofs4 +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -86,7 +86,7 @@ Section: base
 Category: Base system
 Title: Block device automounting
 Maintainer: John Crispin <john@phrozen.org>
-Source: fstools-2021-05-16-3d40a1b591cd569f95891116cd033b496de0f92b.tar.xz
+Source: fstools-2021-08-05-d4f01298105bb8c97e7ac0cad0e78f0ffe261354.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Block device automounting

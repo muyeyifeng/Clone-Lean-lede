@@ -1,5 +1,5 @@
 Source-Makefile: package/boot/uboot-rockchip/Makefile
-Build-Depends: arm-trusted-firmware-rockchip
+Build-Depends: arm-trusted-firmware-rk3328
 
 Package: u-boot-nanopi-r4s-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s)
@@ -23,7 +23,7 @@ http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
-Build-Depends: arm-trusted-firmware-rockchip
+Build-Depends: arm-trusted-firmware-rk3328
 
 Package: u-boot-rock-pi-4-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-pi-4 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-pi-4)
@@ -47,7 +47,7 @@ http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
-Build-Depends: arm-trusted-firmware-rockchip
+Build-Depends: arm-trusted-firmware-rk3328
 
 Package: u-boot-rockpro64-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_pine64_rockpro64 || TARGET_DEVICE_rockchip_armv8_DEVICE_pine64_rockpro64)
@@ -71,12 +71,12 @@ http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
-Build-Depends: arm-trusted-firmware-rockchip
+Build-Depends: arm-trusted-firmware-rk3328
 
 Package: u-boot-nanopi-r2s-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s)
 Version: 2021.04-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95,12 +95,12 @@ http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
-Build-Depends: arm-trusted-firmware-rockchip
+Build-Depends: arm-trusted-firmware-rk3328
 
 Package: u-boot-orangepi-r1-plus-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus)
 Version: 2021.04-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
