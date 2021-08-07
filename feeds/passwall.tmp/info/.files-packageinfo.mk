@@ -1,6 +1,7 @@
 $(eval $(call PackageDir,brook,brook,))
 $(eval $(call PackageDir,chinadns-ng,chinadns-ng,))
 $(eval $(call PackageDir,dns2socks,dns2socks,))
+$(eval $(call PackageDir,hysteria,hysteria,))
 $(eval $(call PackageDir,ipt2socks,ipt2socks,))
 $(eval $(call PackageDir,kcptun,kcptun,))
 $(eval $(call PackageDir,luci-app-passwall,luci-app-passwall,))
