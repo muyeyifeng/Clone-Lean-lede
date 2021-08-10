@@ -148,6 +148,7 @@ $(eval $(call PackageDir,lean_luci-app-openvpn-server,lean/luci-app-openvpn-serv
 $(eval $(call PackageDir,lean_luci-app-pppoe-relay,lean/luci-app-pppoe-relay,))
 $(eval $(call PackageDir,lean_luci-app-pptp-server,lean/luci-app-pptp-server,))
 $(eval $(call PackageDir,lean_luci-app-ps3netsrv,lean/luci-app-ps3netsrv,))
+$(eval $(call PackageDir,lean_luci-app-pushbot,lean/luci-app-pushbot,))
 $(eval $(call PackageDir,lean_luci-app-qbittorrent,lean/luci-app-qbittorrent,))
 $(eval $(call PackageDir,lean_luci-app-ramfree,lean/luci-app-ramfree,))
 $(eval $(call PackageDir,lean_luci-app-rclone,lean/luci-app-rclone,))
