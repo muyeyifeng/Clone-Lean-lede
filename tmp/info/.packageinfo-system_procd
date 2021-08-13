@@ -1,7 +1,7 @@
 Source-Makefile: package/system/procd/Makefile
 
 Package: procd
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ubusd +ubus +libjson-script +ubox +libubox +libubus +libblobmsg-json +libjson-c +jshn
 Conflicts: procd-selinux
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: OpenWrt system process manager
 Maintainer: John Crispin <john@phrozen.org>
 Require-User: :dialout=20 :audio=29
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system process manager
@@ -36,7 +36,7 @@ endmenu
 @@
 
 Package: procd-selinux
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ubusd +ubus +libjson-script +ubox +libubox +libubus +libblobmsg-json +libjson-c +jshn +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +48,7 @@ Repository: base
 Title: OpenWrt system process manager with SELinux support
 Maintainer: John Crispin <john@phrozen.org>
 Require-User: :dialout=20 :audio=29
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system process manager with SELinux support
@@ -56,7 +56,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: procd-ujail
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @KERNEL_NAMESPACES +@KERNEL_UTS_NS +@KERNEL_IPC_NS +@KERNEL_PID_NS +libubox +libubus +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt process jail helper
 Maintainer: John Crispin <john@phrozen.org>
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt process jail helper
@@ -74,7 +74,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: procd-ujail-console
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +procd-ujail +libubus +libubox
 Conflicts: 
 Menu-Depends: 
@@ -84,7 +84,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt process jail console
 Maintainer: John Crispin <john@phrozen.org>
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt process jail console
@@ -92,7 +92,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: procd-seccomp
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||armeb||mips||mipsel||i386||powerpc||x86_64) @!TARGET_uml @KERNEL_SECCOMP +libubox +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
@@ -102,7 +102,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt process seccomp helper + utrace
 Maintainer: John Crispin <john@phrozen.org>
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt process seccomp helper + utrace
@@ -110,8 +110,8 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: uxc
-Version: 2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +procd-ujail +libubus +libubox +libblobmsg-json
+Version: 2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +procd-ujail +libubus +libubox +libblobmsg-json +blockd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -120,7 +120,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt container management
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: procd-2021-05-05-021ece84de430fca988acd6934f6046ea59d8c37.tar.xz
+Source: procd-2021-08-13-9f233f555f80d1c416656c04ab81d19edc738f07.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt container management
