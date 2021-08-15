@@ -2488,7 +2488,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.16.6-1
+Version: 1.16.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2498,7 +2498,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.6.src.tar.gz
+Source: go1.16.7.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2524,7 +2524,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.16.6-1
+Version: 1.16.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2534,7 +2534,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.6.src.tar.gz
+Source: go1.16.7.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2556,7 +2556,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.16.6-1
+Version: 1.16.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2566,7 +2566,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.16.6.src.tar.gz
+Source: go1.16.7.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -57420,7 +57420,7 @@ Source-Makefile: feeds/packages/net/curl/Makefile
 
 Package: libcurl
 Menu: 1
-Version: 7.77.0-0
+Version: 7.78.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBCURL_WOLFSSL:libwolfssl +LIBCURL_OPENSSL:libopenssl +LIBCURL_GNUTLS:libgnutls +LIBCURL_MBEDTLS:libmbedtls +LIBCURL_ZLIB:zlib +LIBCURL_ZSTD:libzstd +LIBCURL_THREADED_RESOLVER:libpthread +LIBCURL_LDAP:libopenldap +LIBCURL_LIBIDN2:libidn2 +LIBCURL_SSH2:libssh2 +LIBCURL_NGHTTP2:libnghttp2 +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -57429,14 +57429,14 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: A client-side URL transfer library
-Maintainer: Imre Kaloz <kaloz@openwrt.org>
-Source: curl-7.77.0.tar.xz
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: curl-7.78.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
 Description: A client-side URL transfer library
-http://curl.haxx.se/
-Imre Kaloz <kaloz@openwrt.org>
+http://curl.se/
+Stan Grishin <stangri@melmac.net>
 @@
 Config:
   source "feeds/packages/net/curl/Config.in"
@@ -57444,7 +57444,7 @@ Config:
 
 Package: curl
 Submenu: File Transfer
-Version: 7.77.0-0
+Version: 7.78.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -57453,14 +57453,14 @@ Section: net
 Category: Network
 Repository: base
 Title: A client-side URL transfer utility
-Maintainer: Imre Kaloz <kaloz@openwrt.org>
-Source: curl-7.77.0.tar.xz
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: curl-7.78.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
 Description: A client-side URL transfer utility
-http://curl.haxx.se/
-Imre Kaloz <kaloz@openwrt.org>
+http://curl.se/
+Stan Grishin <stangri@melmac.net>
 @@
 
 
@@ -83497,7 +83497,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.4.6-1
+Version: 1.4.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -83507,7 +83507,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.4.6.tar.gz
+Source: containerd-1.4.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86030,7 +86030,7 @@ Source-Makefile: feeds/packages/utils/docker/Makefile
 Build-Depends: golang/host
 
 Package: docker
-Version: 20.10.7-1
+Version: 20.10.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -86040,7 +86040,7 @@ Category: Utilities
 Repository: base
 Title: Docker Community Edition CLI
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: docker-20.10.7.tar.gz
+Source: docker-20.10.8.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86103,7 +86103,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.7-1
+Version: 20.10.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -86114,7 +86114,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.7.tar.gz
+Source: dockerd-20.10.8.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -96352,7 +96352,7 @@ Source-Makefile: feeds/packages/utils/runc/Makefile
 Build-Depends: golang/host
 
 Package: runc
-Version: 1.0.0-rc95-1
+Version: 1.0.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -96362,7 +96362,7 @@ Category: Utilities
 Repository: base
 Title: runc container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: runc-1.0.0-rc95.tar.gz
+Source: runc-1.0.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
