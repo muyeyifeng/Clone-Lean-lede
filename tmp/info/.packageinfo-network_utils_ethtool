@@ -1,9 +1,9 @@
 Source-Makefile: package/network/utils/ethtool/Makefile
 
 Package: ethtool
-Version: 5.13-1
+Version: 5.13-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
+Conflicts: ethtool-full
 Menu-Depends: 
 Provides: 
 Build-Variant: tiny
@@ -23,7 +23,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ethtool-full
-Version: 5.13-1
+Version: 5.13-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmnl
 Conflicts: 
 Menu-Depends: 
