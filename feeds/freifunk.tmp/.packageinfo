@@ -41,6 +41,25 @@ Description: Policy routing for mesh traffic
 
 @@
 
+Package: luci-i18n-freifunk-policyrouting-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-freifunk-policyrouting - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-freifunk-policyrouting - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-freifunk-policyrouting-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -79,8 +98,8 @@ Description:     Translation for luci-app-freifunk-policyrouting - Português (P
 
 @@
 
-Package: luci-i18n-freifunk-policyrouting-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-freifunk-policyrouting-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
 Conflicts: 
@@ -89,31 +108,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-freifunk-policyrouting - sk translation
+Title: luci-app-freifunk-policyrouting - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-freifunk-policyrouting-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-freifunk-policyrouting - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - Norsk (Norwegian)
+Description:     Translation for luci-app-freifunk-policyrouting - Română (Romanian)
 
 @@
 
@@ -155,8 +155,8 @@ Description:     Translation for luci-app-freifunk-policyrouting - Polski (Polis
 
 @@
 
-Package: luci-i18n-freifunk-policyrouting-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-freifunk-policyrouting-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
 Conflicts: 
@@ -165,17 +165,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-freifunk-policyrouting - uk translation
+Title: luci-app-freifunk-policyrouting - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - украї́нська (Ukrainian)
+Description:     Translation for luci-app-freifunk-policyrouting - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-freifunk-policyrouting-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-freifunk-policyrouting-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
 Conflicts: 
@@ -184,12 +184,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-freifunk-policyrouting - ru translation
+Title: luci-app-freifunk-policyrouting - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - Русский (Russian)
+Description:     Translation for luci-app-freifunk-policyrouting - 日本語 (Japanese)
 
 @@
 
@@ -231,8 +231,8 @@ Description:     Translation for luci-app-freifunk-policyrouting - עִבְרִ�
 
 @@
 
-Package: luci-i18n-freifunk-policyrouting-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-freifunk-policyrouting-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
 Conflicts: 
@@ -241,12 +241,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-freifunk-policyrouting - ro translation
+Title: luci-app-freifunk-policyrouting - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - Română (Romanian)
+Description:     Translation for luci-app-freifunk-policyrouting - Norsk (Norwegian)
 
 @@
 
@@ -364,8 +364,8 @@ Description:     Translation for luci-app-freifunk-policyrouting - Svenska (Swed
 
 @@
 
-Package: luci-i18n-freifunk-policyrouting-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-freifunk-policyrouting-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
 Conflicts: 
@@ -374,31 +374,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-freifunk-policyrouting - ja translation
+Title: luci-app-freifunk-policyrouting - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-freifunk-policyrouting-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-freifunk-policyrouting - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-freifunk-policyrouting - Русский (Russian)
 
 @@
 
@@ -456,6 +437,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-freifunk-policyrouting - Español (Spanish)
+
+@@
+
+Package: luci-i18n-freifunk-policyrouting-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-freifunk-policyrouting
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-freifunk-policyrouting - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-freifunk-policyrouting - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -560,6 +560,25 @@ Description: Shellscript based wizard to setup mesh networks
 
 @@
 
+Package: luci-i18n-meshwizard-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-meshwizard - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-meshwizard - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-meshwizard-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -598,8 +617,8 @@ Description:     Translation for luci-app-meshwizard - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-meshwizard-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-meshwizard-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
 Conflicts: 
@@ -608,31 +627,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-meshwizard - sk translation
+Title: luci-app-meshwizard - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-meshwizard-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-meshwizard - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-meshwizard - Norsk (Norwegian)
+Description:     Translation for luci-app-meshwizard - Română (Romanian)
 
 @@
 
@@ -674,8 +674,8 @@ Description:     Translation for luci-app-meshwizard - Polski (Polish)
 
 @@
 
-Package: luci-i18n-meshwizard-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-meshwizard-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
 Conflicts: 
@@ -684,17 +684,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-meshwizard - uk translation
+Title: luci-app-meshwizard - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - украї́нська (Ukrainian)
+Description:     Translation for luci-app-meshwizard - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-meshwizard-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-meshwizard-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
 Conflicts: 
@@ -703,12 +703,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-meshwizard - ru translation
+Title: luci-app-meshwizard - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - Русский (Russian)
+Description:     Translation for luci-app-meshwizard - 日本語 (Japanese)
 
 @@
 
@@ -750,8 +750,8 @@ Description:     Translation for luci-app-meshwizard - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-meshwizard-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-meshwizard-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
 Conflicts: 
@@ -760,12 +760,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-meshwizard - ro translation
+Title: luci-app-meshwizard - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - Română (Romanian)
+Description:     Translation for luci-app-meshwizard - Norsk (Norwegian)
 
 @@
 
@@ -883,8 +883,8 @@ Description:     Translation for luci-app-meshwizard - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-meshwizard-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-meshwizard-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
 Conflicts: 
@@ -893,31 +893,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-meshwizard - ja translation
+Title: luci-app-meshwizard - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-meshwizard-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-meshwizard - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-meshwizard - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-meshwizard - Русский (Russian)
 
 @@
 
@@ -975,6 +956,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-meshwizard - Español (Spanish)
+
+@@
+
+Package: luci-i18n-meshwizard-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-meshwizard
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-meshwizard - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-meshwizard - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -1303,6 +1303,25 @@ Description: LuCI Freifunk module
 
 @@
 
+Package: luci-i18n-freifunk-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-freifunk - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-freifunk - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-freifunk-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -1341,8 +1360,8 @@ Description:     Translation for luci-mod-freifunk - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-freifunk-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-freifunk-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
 Conflicts: 
@@ -1351,31 +1370,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-mod-freifunk - sk translation
+Title: luci-mod-freifunk - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-freifunk-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-mod-freifunk - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-mod-freifunk - Norsk (Norwegian)
+Description:     Translation for luci-mod-freifunk - Română (Romanian)
 
 @@
 
@@ -1417,8 +1417,8 @@ Description:     Translation for luci-mod-freifunk - Polski (Polish)
 
 @@
 
-Package: luci-i18n-freifunk-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-freifunk-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
 Conflicts: 
@@ -1427,17 +1427,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-mod-freifunk - uk translation
+Title: luci-mod-freifunk - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - украї́нська (Ukrainian)
+Description:     Translation for luci-mod-freifunk - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-freifunk-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-freifunk-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
 Conflicts: 
@@ -1446,12 +1446,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-mod-freifunk - ru translation
+Title: luci-mod-freifunk - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - Русский (Russian)
+Description:     Translation for luci-mod-freifunk - 日本語 (Japanese)
 
 @@
 
@@ -1493,8 +1493,8 @@ Description:     Translation for luci-mod-freifunk - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-freifunk-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-freifunk-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
 Conflicts: 
@@ -1503,12 +1503,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-mod-freifunk - ro translation
+Title: luci-mod-freifunk - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - Română (Romanian)
+Description:     Translation for luci-mod-freifunk - Norsk (Norwegian)
 
 @@
 
@@ -1626,8 +1626,8 @@ Description:     Translation for luci-mod-freifunk - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-freifunk-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-freifunk-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
 Conflicts: 
@@ -1636,31 +1636,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-mod-freifunk - ja translation
+Title: luci-mod-freifunk - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-freifunk-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-mod-freifunk - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-mod-freifunk - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-mod-freifunk - Русский (Russian)
 
 @@
 
@@ -1718,6 +1699,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-mod-freifunk - Español (Spanish)
+
+@@
+
+Package: luci-i18n-freifunk-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-mod-freifunk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-freifunk - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-freifunk - Português do Brasil (Brazialian Portuguese)
 
 @@
 

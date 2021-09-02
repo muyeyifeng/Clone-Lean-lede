@@ -19,6 +19,25 @@ Description: LuCI Support for miniDLNA
 
 @@
 
+Package: luci-i18n-minidlna-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-minidlna - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-minidlna - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-minidlna-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -57,8 +76,8 @@ Description:     Translation for luci-app-minidlna - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-minidlna-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-minidlna-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
 Conflicts: 
@@ -67,31 +86,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-minidlna - sk translation
+Title: luci-app-minidlna - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-minidlna-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-minidlna - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-minidlna - Norsk (Norwegian)
+Description:     Translation for luci-app-minidlna - Română (Romanian)
 
 @@
 
@@ -133,8 +133,8 @@ Description:     Translation for luci-app-minidlna - Polski (Polish)
 
 @@
 
-Package: luci-i18n-minidlna-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-minidlna-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
 Conflicts: 
@@ -143,17 +143,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-minidlna - uk translation
+Title: luci-app-minidlna - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - украї́нська (Ukrainian)
+Description:     Translation for luci-app-minidlna - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-minidlna-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-minidlna-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
 Conflicts: 
@@ -162,12 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-minidlna - ru translation
+Title: luci-app-minidlna - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - Русский (Russian)
+Description:     Translation for luci-app-minidlna - 日本語 (Japanese)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-minidlna - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-minidlna-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-minidlna-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
 Conflicts: 
@@ -219,12 +219,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-minidlna - ro translation
+Title: luci-app-minidlna - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - Română (Romanian)
+Description:     Translation for luci-app-minidlna - Norsk (Norwegian)
 
 @@
 
@@ -342,8 +342,8 @@ Description:     Translation for luci-app-minidlna - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-minidlna-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-minidlna-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
 Conflicts: 
@@ -352,31 +352,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-minidlna - ja translation
+Title: luci-app-minidlna - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-minidlna-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-minidlna - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-minidlna - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-minidlna - Русский (Russian)
 
 @@
 
@@ -434,6 +415,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-minidlna - Español (Spanish)
+
+@@
+
+Package: luci-i18n-minidlna-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-minidlna
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-minidlna - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-minidlna - Português do Brasil (Brazialian Portuguese)
 
 @@
 

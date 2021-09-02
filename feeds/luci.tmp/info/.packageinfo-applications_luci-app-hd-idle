@@ -19,6 +19,25 @@ Description: Hard Disk Idle Spin-Down module
 
 @@
 
+Package: luci-i18n-hd-idle-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-hd-idle - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-hd-idle - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-hd-idle-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -57,8 +76,8 @@ Description:     Translation for luci-app-hd-idle - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-hd-idle-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-hd-idle-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
 Conflicts: 
@@ -67,31 +86,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-hd-idle - sk translation
+Title: luci-app-hd-idle - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-hd-idle-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-hd-idle - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-hd-idle - Norsk (Norwegian)
+Description:     Translation for luci-app-hd-idle - Română (Romanian)
 
 @@
 
@@ -133,8 +133,8 @@ Description:     Translation for luci-app-hd-idle - Polski (Polish)
 
 @@
 
-Package: luci-i18n-hd-idle-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-hd-idle-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
 Conflicts: 
@@ -143,17 +143,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-hd-idle - uk translation
+Title: luci-app-hd-idle - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - украї́нська (Ukrainian)
+Description:     Translation for luci-app-hd-idle - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-hd-idle-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-hd-idle-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
 Conflicts: 
@@ -162,12 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-hd-idle - ru translation
+Title: luci-app-hd-idle - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - Русский (Russian)
+Description:     Translation for luci-app-hd-idle - 日本語 (Japanese)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-hd-idle - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-hd-idle-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-hd-idle-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
 Conflicts: 
@@ -219,12 +219,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-hd-idle - ro translation
+Title: luci-app-hd-idle - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - Română (Romanian)
+Description:     Translation for luci-app-hd-idle - Norsk (Norwegian)
 
 @@
 
@@ -342,8 +342,8 @@ Description:     Translation for luci-app-hd-idle - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-hd-idle-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-hd-idle-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
 Conflicts: 
@@ -352,31 +352,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-hd-idle - ja translation
+Title: luci-app-hd-idle - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-hd-idle-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-hd-idle - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-hd-idle - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-hd-idle - Русский (Russian)
 
 @@
 
@@ -434,6 +415,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-hd-idle - Español (Spanish)
+
+@@
+
+Package: luci-i18n-hd-idle-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-hd-idle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-hd-idle - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-hd-idle - Português do Brasil (Brazialian Portuguese)
 
 @@
 

@@ -19,6 +19,25 @@ Description: LuCI Support for Coova Chilli
 
 @@
 
+Package: luci-i18n-coovachilli-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-coovachilli - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-coovachilli - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-coovachilli-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -57,8 +76,8 @@ Description:     Translation for luci-app-coovachilli - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-coovachilli-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-coovachilli-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
 Conflicts: 
@@ -67,31 +86,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-coovachilli - sk translation
+Title: luci-app-coovachilli - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-coovachilli-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-coovachilli - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-coovachilli - Norsk (Norwegian)
+Description:     Translation for luci-app-coovachilli - Română (Romanian)
 
 @@
 
@@ -133,8 +133,8 @@ Description:     Translation for luci-app-coovachilli - Polski (Polish)
 
 @@
 
-Package: luci-i18n-coovachilli-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-coovachilli-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
 Conflicts: 
@@ -143,17 +143,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-coovachilli - uk translation
+Title: luci-app-coovachilli - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - украї́нська (Ukrainian)
+Description:     Translation for luci-app-coovachilli - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-coovachilli-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-coovachilli-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
 Conflicts: 
@@ -162,12 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-coovachilli - ru translation
+Title: luci-app-coovachilli - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - Русский (Russian)
+Description:     Translation for luci-app-coovachilli - 日本語 (Japanese)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-coovachilli - עִבְרִית (Hebrew
 
 @@
 
-Package: luci-i18n-coovachilli-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-coovachilli-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
 Conflicts: 
@@ -219,12 +219,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-coovachilli - ro translation
+Title: luci-app-coovachilli - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - Română (Romanian)
+Description:     Translation for luci-app-coovachilli - Norsk (Norwegian)
 
 @@
 
@@ -342,8 +342,8 @@ Description:     Translation for luci-app-coovachilli - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-coovachilli-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-coovachilli-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
 Conflicts: 
@@ -352,31 +352,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-coovachilli - ja translation
+Title: luci-app-coovachilli - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-coovachilli-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-coovachilli - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-coovachilli - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-coovachilli - Русский (Russian)
 
 @@
 
@@ -434,6 +415,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-coovachilli - Español (Spanish)
+
+@@
+
+Package: luci-i18n-coovachilli-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-coovachilli
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-coovachilli - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-coovachilli - Português do Brasil (Brazialian Portuguese)
 
 @@
 

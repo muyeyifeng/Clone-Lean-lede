@@ -238,53 +238,6 @@ Config:
     depends on PACKAGE_python3-pydoc
 @@
 
-Package: python3-logging
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: packages
-Title: Python 3.9 logging module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 logging module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-logging-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: packages
-Title: Python 3.9 logging module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 logging module
-
-    This package contains the Python source files for python3-logging.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-logging
-@@
-
 Package: python3-decimal
 Submenu: Python
 Version: 3.9.5-2
@@ -614,6 +567,53 @@ Config:
     depends on PACKAGE_python3-readline
 @@
 
+Package: python3-gdbm
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libgdbm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python 3.9 gdbm module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 gdbm module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-gdbm-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python 3.9 gdbm module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 gdbm module
+
+    This package contains the Python source files for python3-gdbm.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-gdbm
+@@
+
 Package: python3-xml
 Submenu: Python
 Version: 3.9.5-2
@@ -708,75 +708,28 @@ Config:
     depends on PACKAGE_python3-sqlite3
 @@
 
-Package: python3-gdbm
+Package: python3-logging
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libgdbm
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: packages
-Title: Python 3.9 gdbm module
+Title: Python 3.9 logging module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 gdbm module
+Description: Python 3.9 logging module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-gdbm-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: packages
-Title: Python 3.9 gdbm module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 gdbm module
-
-    This package contains the Python source files for python3-gdbm.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-gdbm
-@@
-
-Package: python3-distutils
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: packages
-Title: Python 3.9 distutils module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 distutils module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-distutils-src
+Package: python3-logging-src
 Submenu: Python
 Version: 3.9.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -786,20 +739,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: packages
-Title: Python 3.9 distutils module (sources)
+Title: Python 3.9 logging module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 distutils module
+Description:     	Python 3.9 logging module
 
-    This package contains the Python source files for python3-distutils.
+    This package contains the Python source files for python3-logging.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-distutils
+    depends on PACKAGE_python3-logging
 @@
 
 Package: python3-codecs
@@ -894,6 +847,53 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-email
+@@
+
+Package: python3-distutils
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python 3.9 distutils module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 distutils module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-distutils-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python 3.9 distutils module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 distutils module
+
+    This package contains the Python source files for python3-distutils.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-distutils
 @@
 
 Package: python3-openssl
@@ -1297,7 +1297,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-xml +python3-sqlite3 +python3-gdbm +python3-distutils +python3-codecs +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-codecs +python3-email +python3-distutils +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
 Conflicts: 
 Menu-Depends: 
 Provides: 
