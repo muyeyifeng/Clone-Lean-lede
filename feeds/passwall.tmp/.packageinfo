@@ -356,7 +356,7 @@ Build-Depends: python3/host ninja/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 92.0.4515.107-1-0
+Version: 93.0.4577.63-1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -366,7 +366,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-92.0.4515.107-1.tar.gz
+Source: naiveproxy-93.0.4577.63-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -806,7 +806,7 @@ Source-Makefile: feeds/passwall/v2ray-core/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-core
-Version: 4.41.1-0
+Version: 4.42.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -816,7 +816,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.1.tar.gz
+Source: v2ray-core-4.42.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -840,7 +840,7 @@ endmenu
 @@
 
 Package: v2ray-ctl
-Version: 4.41.1-0
+Version: 4.42.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -850,7 +850,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.1.tar.gz
+Source: v2ray-core-4.42.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -876,7 +876,7 @@ endmenu
 @@
 
 Package: v2ray-extra
-Version: 4.41.1-0
+Version: 4.42.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -886,7 +886,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.1.tar.gz
+Source: v2ray-core-4.42.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -899,7 +899,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-geodata
-Version: 4.41.1-0
+Version: 4.42.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -909,7 +909,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.1.tar.gz
+Source: v2ray-core-4.42.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -926,8 +926,7 @@ Source-Makefile: feeds/passwall/v2ray-plugin/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-plugin
-Submenu: Project V
-Version: 4.41.1-0
+Version: 4.42.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -937,7 +936,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-4.41.1.tar.gz
+Source: v2ray-plugin-4.42.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
