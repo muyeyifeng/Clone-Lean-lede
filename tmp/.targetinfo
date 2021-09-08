@@ -24043,6 +24043,20 @@ Build firmware images for Xunlong Orange Pi R1 Plus
 
 @@
 
+Target-Profile: DEVICE_embedfire_doornet1
+Target-Profile-Name: EmbedFire DoorNet1
+Target-Profile-Packages: kmod-usb-net-rtl8152  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: embedfire,doornet1
+
+
+Target-Profile-Description:
+Build firmware images for EmbedFire DoorNet1
+
+
+
+@@
+
 
 Source-Makefile: target/linux/sunxi/Makefile
 Target: sunxi

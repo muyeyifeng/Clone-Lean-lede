@@ -223,7 +223,7 @@ config PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG
 config PACKAGE_luci-app-passwall_INCLUDE_Haproxy
 	bool "Include Haproxy"
 	default y if aarch64||arm||i386||x86_64
-	
+
 config PACKAGE_luci-app-passwall_INCLUDE_Hysteria
 	bool "Include Hysteria"
 	default n
@@ -273,7 +273,7 @@ config PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO
 config PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus
 	bool "Include Trojan-Plus"
 	default y
-	
+
 config PACKAGE_luci-app-passwall_INCLUDE_V2ray
 	bool "Include V2ray"
 	default y if aarch64||arm||i386||x86_64
@@ -745,7 +745,7 @@ Build-Depends: golang/host
 
 Package: trojan-go
 Submenu: Web Servers/Proxies
-Version: 0.10.4-1
+Version: 0.10.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -755,7 +755,7 @@ Category: Network
 Repository: base
 Title: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 Maintainer: 
-Source: trojan-go-0.10.4.tar.gz
+Source: trojan-go-0.10.5.tar.gz
 Type: ipkg
 Description: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 https://github.com/p4gefau1t/trojan-go
@@ -956,7 +956,7 @@ Source-Makefile: feeds/passwall/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.4.2-0
+Version: 1.4.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -966,7 +966,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-1.4.2.tar.gz
+Source: xray-core-1.4.3.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -990,7 +990,7 @@ endmenu
 @@
 
 Package: xray-example
-Version: 1.4.2-0
+Version: 1.4.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -1000,7 +1000,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-1.4.2.tar.gz
+Source: xray-core-1.4.3.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1013,7 +1013,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: xray-geodata
-Version: 1.4.2-0
+Version: 1.4.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -1023,7 +1023,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-1.4.2.tar.gz
+Source: xray-core-1.4.3.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

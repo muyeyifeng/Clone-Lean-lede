@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-turboacc
 Submenu: 3. Applications
 Version: x-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pdnsd-alt +PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA:kmod-tcp-bbr +PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER:dnsforwarder +PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY:dnsproxy +PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING:kmod-ipt-offload +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE:kmod-fast-classifier
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pdnsd-alt +PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA:kmod-tcp-bbr +PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER:dnsforwarder +PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY:dnsproxy +PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING:kmod-ipt-offload +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE:kmod-shortcut-fe-cm +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV:kmod-shortcut-fe-drv
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,6 +24,11 @@ config PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING
 	bool "Include Flow Offload"
 	depends on PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=n
 	default y if i386||x86_64||TARGET_ramips
+
+config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV
+	bool "Include Shortcut-FE for ECM"
+	depends on PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=n
+	default y if (TARGET_ipq806x||TARGET_ipq807x)
 
 config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE
 	bool "Include Shortcut-FE"
