@@ -22,7 +22,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 Config:
 config PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING
 	bool "Include Flow Offload"
-	depends on PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=n
+	depends on (PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=n && PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV=n)
 	default y if i386||x86_64||TARGET_ramips
 
 config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV
