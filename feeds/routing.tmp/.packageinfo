@@ -27,7 +27,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2021.2-0
+Version: 2021.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: alfred-2021.2.tar.gz
+Source: alfred-2021.3.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -117,7 +117,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2021.2-0
+Version: 2021.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -128,21 +128,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Default)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.2.tar.gz
+Source: batctl-2021.3.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.2 of the user space utility.
+  version 2021.3 of the user space utility.
   Standard subcommands for configuration and online debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2021.2-0
+Version: 2021.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -153,21 +153,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Minimal)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.2.tar.gz
+Source: batctl-2021.3.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.2 of the user space utility.
+  version 2021.3 of the user space utility.
   Only configuration relevant subcommands are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2021.2-0
+Version: 2021.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -178,14 +178,14 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Full)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.2.tar.gz
+Source: batctl-2021.3.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.2 of the user space utility.
+  version 2021.3 of the user space utility.
   Subcommands for configuration, online and offline debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2021.2-0
+Version: <LINUX_VERSION>+2021.3-0
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +205,7 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2021.2.tar.gz
+Source: batman-adv-2021.3.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -213,7 +213,7 @@ Description:   B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
   a routing protocol for multi-hop ad-hoc mesh networks. The
   networks may be wired or wireless. See
   https://www.open-mesh.org/ for more information and user space
-  tools. This package builds version 2021.2 of the kernel
+  tools. This package builds version 2021.3 of the kernel
   module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
