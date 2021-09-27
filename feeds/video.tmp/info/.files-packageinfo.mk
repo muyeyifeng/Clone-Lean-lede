@@ -7,3 +7,4 @@ $(eval $(call PackageDir,frameworks_qt5quick2-controls2,frameworks/qt5quick2-con
 $(eval $(call PackageDir,frameworks_qt5script,frameworks/qt5script,))
 $(eval $(call PackageDir,frameworks_qt5tools,frameworks/qt5tools,))
 $(eval $(call PackageDir,frameworks_qt5translations,frameworks/qt5translations,))
+$(eval $(call PackageDir,libs_libdouble-conversion,libs/libdouble-conversion,))

@@ -2,8 +2,8 @@ Source-Makefile: package/lean/rclone-webui-react/Makefile
 
 Package: rclone-webui-react
 Submenu: Cloud Manager
-Version: 0.1.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.0.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rclone
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,8 +12,8 @@ Category: Network
 Repository: base
 Title: A reactjs based web UI for rclone
 Maintainer: ElonH <elonhhuang@gmail.com>
-Source: currentbuild.zip
-License: GPLv3
+Source: rclone-webui-react-2.0.5.zip
+License: MIT
 Type: ipkg
 Description: 	A full fledged UI for the rclone cloud sync tool.
 https://github.com/rclone/rclone-webui-react

@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
 Version: 184-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +dns2socks +dnsmasq-full +ipset +ip-full +iptables-mod-tproxy +lua +libuci-lua +microsocks +pdnsd-alt +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +libustream-openssl +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +dns2socks +dnsmasq-full +ipset +ip-full +iptables-mod-tproxy +lua +libuci-lua +microsocks +pdnsd-alt +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -19,6 +19,26 @@ Description: SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 @@
 Config:
+menu "Include libustream-ssl"
+	depends on PACKAGE_luci-app-ssr-plus
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl
+		bool "Include libustream-wolfssl"
+		default y if DEFAULT_libustream-wolfssl
+		select PACKAGE_libustream-wolfssl
+	
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-openssl
+		depends on !PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl
+		bool "Include libustream-openssl"
+		default y if DEFAULT_libustream-openssl
+		select PACKAGE_libustream-openssl
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-mbedtls
+		depends on !(PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl || PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-openssl)
+		bool "Include libustream-mbedtls"
+		default y if DEFAULT_libustream-mbedtls
+		select PACKAGE_libustream-mbedtls
+
+endmenu
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
 	bool "Include Kcptun"
 	default n

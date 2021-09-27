@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
 Version: 184-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +dns2socks +dnsmasq-full +ipset +ip-full +iptables-mod-tproxy +lua +libuci-lua +microsocks +pdnsd-alt +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +libustream-openssl +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +dns2socks +dnsmasq-full +ipset +ip-full +iptables-mod-tproxy +lua +libuci-lua +microsocks +pdnsd-alt +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -19,6 +19,26 @@ Description: SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 @@
 Config:
+menu "Include libustream-ssl"
+	depends on PACKAGE_luci-app-ssr-plus
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl
+		bool "Include libustream-wolfssl"
+		default y if DEFAULT_libustream-wolfssl
+		select PACKAGE_libustream-wolfssl
+	
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-openssl
+		depends on !PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl
+		bool "Include libustream-openssl"
+		default y if DEFAULT_libustream-openssl
+		select PACKAGE_libustream-openssl
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-mbedtls
+		depends on !(PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl || PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-openssl)
+		bool "Include libustream-mbedtls"
+		default y if DEFAULT_libustream-mbedtls
+		select PACKAGE_libustream-mbedtls
+
+endmenu
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
 	bool "Include Kcptun"
 	default n
@@ -115,11 +135,11 @@ Description:     Translation for luci-app-ssr-plus - 简体中文 (Simplified Ch
 
 
 Source-Makefile: feeds/helloworld/naiveproxy/Makefile
-Build-Depends: ninja/host python3/host
+Build-Depends: python3/host ninja/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 91.0.4472.77-1-1
+Version: 94.0.4606.61-1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -129,7 +149,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-91.0.4472.77-1.tar.gz
+Source: naiveproxy-94.0.4606.61-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -148,7 +168,7 @@ Source-Makefile: feeds/helloworld/shadowsocks-rust/Makefile
 
 Package: shadowsocks-rust-sslocal
 Submenu: Web Servers/Proxies
-Version: 1.11.1-1
+Version: 1.11.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -169,7 +189,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssmanager
 Submenu: Web Servers/Proxies
-Version: 1.11.1-1
+Version: 1.11.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -190,7 +210,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssserver
 Submenu: Web Servers/Proxies
-Version: 1.11.1-1
+Version: 1.11.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -211,7 +231,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssurl
 Submenu: Web Servers/Proxies
-Version: 1.11.1-1
+Version: 1.11.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -365,7 +385,7 @@ Source-Makefile: feeds/helloworld/v2ray-core/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-core
-Version: 4.41.0-0
+Version: 4.42.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -375,7 +395,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.0.tar.gz
+Source: v2ray-core-4.42.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -399,7 +419,7 @@ endmenu
 @@
 
 Package: v2ray-ctl
-Version: 4.41.0-0
+Version: 4.42.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -409,7 +429,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.0.tar.gz
+Source: v2ray-core-4.42.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -435,7 +455,7 @@ endmenu
 @@
 
 Package: v2ray-extra
-Version: 4.41.0-0
+Version: 4.42.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -445,7 +465,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.0.tar.gz
+Source: v2ray-core-4.42.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -458,7 +478,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-geodata
-Version: 4.41.0-0
+Version: 4.42.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -468,7 +488,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-4.41.0.tar.gz
+Source: v2ray-core-4.42.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -485,8 +505,7 @@ Source-Makefile: feeds/helloworld/v2ray-plugin/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-plugin
-Submenu: Project V
-Version: 4.41.0-0
+Version: 4.42.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -496,7 +515,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-4.41.0.tar.gz
+Source: v2ray-plugin-4.42.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -506,6 +525,7 @@ madeye <max.c.lv@gmail.com>
 @@
 Config:
 config v2ray-plugin_INCLUDE_GOPROXY
+	depends on PACKAGE_v2ray-plugin
 	bool "Compiling with GOPROXY proxy"
 	default y
 
@@ -516,7 +536,7 @@ Source-Makefile: feeds/helloworld/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.4.2-1
+Version: 1.4.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -526,7 +546,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-1.4.2.tar.gz
+Source: xray-core-1.4.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -550,7 +570,7 @@ endmenu
 @@
 
 Package: xray-geodata
-Version: 1.4.2-1
+Version: 1.4.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -560,7 +580,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (geodata files)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-1.4.2.tar.gz
+Source: xray-core-1.4.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -577,7 +597,7 @@ Source-Makefile: feeds/helloworld/xray-plugin/Makefile
 Build-Depends: golang/host
 
 Package: xray-plugin
-Version: 1.4.2-1
+Version: 1.4.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -587,7 +607,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
-Source: xray-plugin-1.4.2.tar.gz
+Source: xray-plugin-1.4.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
