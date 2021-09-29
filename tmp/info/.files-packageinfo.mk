@@ -142,7 +142,6 @@ $(eval $(call PackageDir,lean_luci-app-music-remote-center,lean/luci-app-music-r
 $(eval $(call PackageDir,lean_luci-app-mwan3helper,lean/luci-app-mwan3helper,))
 $(eval $(call PackageDir,lean_luci-app-n2n_v2,lean/luci-app-n2n_v2,))
 $(eval $(call PackageDir,lean_luci-app-netdata,lean/luci-app-netdata,))
-$(eval $(call PackageDir,lean_luci-app-netspeedtest,lean/luci-app-netspeedtest,))
 $(eval $(call PackageDir,lean_luci-app-nfs,lean/luci-app-nfs,))
 $(eval $(call PackageDir,lean_luci-app-nft-qos,lean/luci-app-nft-qos,))
 $(eval $(call PackageDir,lean_luci-app-nps,lean/luci-app-nps,))
