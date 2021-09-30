@@ -2,7 +2,7 @@ Source-Makefile: package/kernel/cryptodev-linux/Makefile
 
 Package: kmod-cryptodev
 Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>+1.11--1
+Version: <LINUX_VERSION>+1.12--1
 Depends: +kmod-crypto-authenc +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for cryptographic acceleration
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: cryptodev-linux-1.11.tar.gz
+Source: cryptodev-linux-1.12.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

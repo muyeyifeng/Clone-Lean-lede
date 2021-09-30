@@ -9,6 +9,7 @@ $(eval $(call PackageDir,applications_luci-app-clamav,applications/luci-app-clam
 $(eval $(call PackageDir,applications_luci-app-commands,applications/luci-app-commands,))
 $(eval $(call PackageDir,applications_luci-app-coovachilli,applications/luci-app-coovachilli,))
 $(eval $(call PackageDir,applications_luci-app-cshark,applications/luci-app-cshark,))
+$(eval $(call PackageDir,applications_luci-app-dawn,applications/luci-app-dawn,))
 $(eval $(call PackageDir,applications_luci-app-ddns,applications/luci-app-ddns,))
 $(eval $(call PackageDir,applications_luci-app-diag-core,applications/luci-app-diag-core,))
 $(eval $(call PackageDir,applications_luci-app-dnscrypt-proxy,applications/luci-app-dnscrypt-proxy,))

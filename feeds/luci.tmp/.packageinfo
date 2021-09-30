@@ -2671,6 +2671,28 @@ Luka Perkov <luka@openwrt.org>
 @@
 
 
+Source-Makefile: feeds/luci/applications/luci-app-dawn/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-dawn
+Submenu: 3. Applications
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dawn +luci-compat +luci-lib-json
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for DAWN
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for DAWN
+
+@@
+
+
 Source-Makefile: feeds/luci/applications/luci-app-ddns/Makefile
 Build-Depends: lua/host luci-base/host 
 
