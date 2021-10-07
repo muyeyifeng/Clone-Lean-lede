@@ -1,0 +1,44 @@
+Build-Depends: wayland/host
+
+Package: libseat
+Submenu: Video
+Version: 0.5.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: video
+Title: libseat
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: seatd-0.5.0.tar.xz
+License: MIT
+Type: ipkg
+Description: libseat
+https://git.sr.ht/~kennylevinsen/seatd
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: seatd
+Submenu: Video
+Version: 0.5.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libseat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: video
+Title: seatd
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: seatd-0.5.0.tar.xz
+License: MIT
+Type: ipkg
+Description: seatd
+https://git.sr.ht/~kennylevinsen/seatd
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Makefile:19: /home/runner/work/Clone-Lean-lede/Clone-Lean-lede/Clone-Lean-lede/include/meson.mk: No such file or directory
+make[2]: *** No rule to make target '/home/runner/work/Clone-Lean-lede/Clone-Lean-lede/Clone-Lean-lede/include/meson.mk'.  Stop.

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/video/pango/Makefile
+Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+
+Package: libpango
+Submenu: Video
+Version: 1.48.9-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +fribidi +harfbuzz +libcairo +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: video
+Title: libpango
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: pango-1.48.9.tar.xz
+License: LGPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description: libpango
+https://www.pango.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

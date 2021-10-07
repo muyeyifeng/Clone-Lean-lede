@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-imx6/Makefile
 
 Package: u-boot-apalis_imx6
 Default: y if (TARGET_imx6_Default || TARGET_imx6_DEVICE_toradex_apalis || TARGET_DEVICE_imx6_DEVICE_toradex_apalis)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx6
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-mx6cuboxi
 Default: y if (TARGET_imx6_Default || TARGET_imx6_DEVICE_solidrun_cubox-i || TARGET_DEVICE_imx6_DEVICE_solidrun_cubox-i)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx6
 Conflicts: 
 Menu-Depends: 
@@ -46,7 +46,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-wandboard
 Default: y if (TARGET_imx6_Default || TARGET_imx6_DEVICE_wandboard_dual || TARGET_DEVICE_imx6_DEVICE_wandboard_dual)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx6
 Conflicts: 
 Menu-Depends: 

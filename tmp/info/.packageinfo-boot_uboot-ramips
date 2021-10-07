@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-ramips/Makefile
 
 Package: u-boot-ravpower_rp-wd009
 Default: y if (TARGET_ramips_mt76x8_Default || TARGET_ramips_mt76x8_DEVICE_ravpower_rp-wd009 || TARGET_DEVICE_ramips_mt76x8_DEVICE_ravpower_rp-wd009)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt76x8
 Conflicts: 
 Menu-Depends: 

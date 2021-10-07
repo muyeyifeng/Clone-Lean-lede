@@ -1,0 +1,24 @@
+Source-Makefile: feeds/video/libs/cairo/Makefile
+
+Package: libcairo
+Submenu: Video
+Version: 1.16.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpng +libfreetype +fontconfig +libmesa +pixman +glib2 +libjpeg +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: cairo
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: cairo-1.16.0.tar.xz
+License: LGPL-2.1-or-later MPL-1.1
+LicenseFiles: COPYING COPYING-LGPL-2.1 COPYING-MPL-1.1
+Type: ipkg
+Description:   Cairo is a 2D graphics library with support for multiple output devices.
+https://cairo.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

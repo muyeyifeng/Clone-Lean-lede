@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-omap/Makefile
 
 Package: u-boot-omap4_panda
 Default: y if (TARGET_omap_Default || TARGET_omap_DEVICE_ti_omap4-panda || TARGET_DEVICE_omap_DEVICE_ti_omap4-panda)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_omap
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-am335x_evm
 Default: y if (TARGET_omap_Default || TARGET_omap_DEVICE_ti_am335x-evm || TARGET_omap_DEVICE_ti_am335x-bone-black || TARGET_DEVICE_omap_DEVICE_ti_am335x-evm || TARGET_DEVICE_omap_DEVICE_ti_am335x-bone-black)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_omap
 Conflicts: 
 Menu-Depends: 
@@ -45,7 +45,7 @@ http://www.denx.de/wiki/U-Boot
 
 
 Package: u-boot-omap3_overo
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_omap
 Conflicts: 
 Menu-Depends: 
@@ -67,7 +67,7 @@ http://www.denx.de/wiki/U-Boot
 
 Package: u-boot-omap3_beagle
 Default: y if (TARGET_omap_Default || TARGET_omap_DEVICE_ti_omap3-beagle || TARGET_DEVICE_omap_DEVICE_ti_omap3-beagle)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_omap
 Conflicts: 
 Menu-Depends: 

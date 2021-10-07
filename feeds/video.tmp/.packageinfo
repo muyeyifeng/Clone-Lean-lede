@@ -1521,6 +1521,173 @@ Mirko Vogt <mirko-openwrt@nanl.de>
 @@
 
 
+Source-Makefile: feeds/video/frameworks/wayland/Makefile
+Build-Depends: libffi/host libxml2/host expat/host wayland/host
+Build-Types: host
+
+Package: libwayland
+Submenu: Frameworks and Toolkits
+Version: 1.19.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libffi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Video
+Repository: base
+Title: wayland
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: wayland-1.19.0.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: wayland
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: wayland-scanner
+Submenu: Frameworks and Toolkits
+Version: 1.19.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libexpat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Video
+Repository: base
+Title: wayland
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: wayland-1.19.0.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: wayland
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/frameworks/wayland-protocols/Makefile
+Build-Depends: wayland
+
+Package: wayland-protocols
+Submenu: Frameworks and Toolkits
+Version: 1.21-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Video
+Repository: base
+Title: wayland-protocols
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: wayland-protocols-1.21.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: wayland-protocols
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/cairo/Makefile
+
+Package: libcairo
+Submenu: Video
+Version: 1.16.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpng +libfreetype +fontconfig +libmesa +pixman +glib2 +libjpeg +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: cairo
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: cairo-1.16.0.tar.xz
+License: LGPL-2.1-or-later MPL-1.1
+LicenseFiles: COPYING COPYING-LGPL-2.1 COPYING-MPL-1.1
+Type: ipkg
+Description:   Cairo is a 2D graphics library with support for multiple output devices.
+https://cairo.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/fribidi/Makefile
+
+Package: fribidi
+Submenu: Video
+Version: 1.0.10-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: fribidi
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: fribidi-1.0.10.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: fribidi
+https://github.com/fribidi/fribidi
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/harfbuzz/Makefile
+
+Package: harfbuzz
+Submenu: Video
+Version: 2.9.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +icu +libfreetype +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: hafbuzz
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: harfbuzz-2.9.0.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: hafbuzz
+http://www.harfbuzz.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/kmscube/Makefile
+
+Package: kmscube
+Submenu: Video
+Version: 2021-02-07-9f63f359fab1b5d8e862508e4e51c9dfe339ccb0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libmesa +libpng +gstreamer1-plugins-base +libgstreamer1 +libgst1allocators +libgst1video +libgst1app
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: kmscube KMS/DRM/EGL example
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: kmscube-2021-02-07-9f63f359fab1b5d8e862508e4e51c9dfe339ccb0.tar.xz
+License: MIT
+Type: ipkg
+Description: kmscube KMS/DRM/EGL example
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
 Source-Makefile: feeds/video/libs/libdouble-conversion/Makefile
 Build-Types: host
 
@@ -1546,6 +1713,1056 @@ Description:   double-conversion provides binary-decimal and decimal-binary rout
   it can be used more easily in other projects.
 https://github.com/google/double-conversion
 Yaroslav Petrov <info@lank.me>
+@@
+
+
+Source-Makefile: feeds/video/libs/libxkbcommon/Makefile
+Build-Depends: wayland
+
+Package: libxkbcommon
+Version: 1.3.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwayland +libxml2 +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libxkbcommon
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: libxkbcommon-1.3.0.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: libxkbcommon
+https://xkbcommon.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/mesa/Makefile
+Build-Depends: Mako/host
+
+Package: libmesadri-armada-drm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI armada-drm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI armada-drm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-etnaviv
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI etnaviv plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI etnaviv plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-exynos
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI exynos plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI exynos plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-hx8357d
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI hx8357d plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI hx8357d plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-i915
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_INTEL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI i915 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI i915 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-i965
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_INTEL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI i965 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI i965 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-ili9225
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI ili9225 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI ili9225 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-ili9341
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI ili9341 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI ili9341 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-imx-dcss
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI imx-dcss plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI imx-dcss plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-imx-drm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI imx-drm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI imx-drm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-ingenic-drm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm||mipsel)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI ingenic-drm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI ingenic-drm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-kgsl
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI kgsl plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI kgsl plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-kms-swrast
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI kms_swrast plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI kms_swrast plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-lima
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI lima plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI lima plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-mcde
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @arm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI mcde plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI mcde plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-mediatek
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI mediatek plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI mediatek plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-meson
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI meson plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI meson plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-mi0283qt
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI mi0283qt plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI mi0283qt plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-msm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI msm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI msm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-mxsfb-drm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI mxsfb-drm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI mxsfb-drm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-nouveau
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_NOUVEAU
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI nouveau plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI nouveau plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-nouveau-vieux
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_NOUVEAU
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI nouveau_vieux plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI nouveau_vieux plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-panfrost
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI panfrost plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI panfrost plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-pl111
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI pl111 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI pl111 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-r200
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_RADEON
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI r200 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI r200 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-r300
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_RADEON
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI r300 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI r300 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-radeon
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @LIBDRM_RADEON
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI radeon plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI radeon plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-repaper
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI repaper plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI repaper plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-rockchip
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI rockchip plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI rockchip plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-st7586
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI st7586 plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI st7586 plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-st7735r
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI st7735r plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI st7735r plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-stm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI stm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI stm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-sun4i-drm
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI sun4i-drm plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI sun4i-drm plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-swrast
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI swrast plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI swrast plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-tegra
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @((aarch64||arm)&&LIBDRM_NOUVEAU)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI tegra plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI tegra plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-vmwgfx
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(i386||i686||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI vmwgfx plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI vmwgfx plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesadri-virtio-gpu
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D DRI virtio_gpu plugin
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D DRI virtio_gpu plugin
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libxatracker
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +zlib +libdrm +libexpat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D libxatracker
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D libxatracker
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libglapi
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D libglapi
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D libglapi
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libmesa
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libglapi +libstdcpp +zlib +libdrm +libwayland +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Mesa3D OpenGL and friends
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Mesa3D OpenGL and friends
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libosmesa
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libglapi +libstdcpp +zlib +libwayland +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: off-screen Mesa library
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: off-screen Mesa library
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libvulkan-intel
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(i386||i686||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Intel Vulkan driver
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Intel Vulkan driver
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libvulkan-broadcom
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(arm||aarch64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Broadcom Vulkan driver
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Broadcom Vulkan driver
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: libvulkan-freedreno
+Submenu: Video
+Version: 21.1.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmesa @(arm||aarch64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Freedreno Vulkan driver
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: mesa-21.1.7.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: Freedreno Vulkan driver
+https://www.mesa3d.org
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/pango/Makefile
+Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+
+Package: libpango
+Submenu: Video
+Version: 1.48.9-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +fribidi +harfbuzz +libcairo +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libpango
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: pango-1.48.9.tar.xz
+License: LGPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description: libpango
+https://www.pango.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/seatd/Makefile
+Build-Depends: wayland/host
+
+Package: libseat
+Submenu: Video
+Version: 0.5.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libseat
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: seatd-0.5.0.tar.xz
+License: MIT
+Type: ipkg
+Description: libseat
+https://git.sr.ht/~kennylevinsen/seatd
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: seatd
+Submenu: Video
+Version: 0.5.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libseat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: seatd
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: seatd-0.5.0.tar.xz
+License: MIT
+Type: ipkg
+Description: seatd
+https://git.sr.ht/~kennylevinsen/seatd
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/wayland-utils/Makefile
+Build-Depends: wayland/host
+
+Package: wayland-info
+Submenu: Video
+Version: 1.0.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwayland +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: wayland-utils
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: wayland-utils-1.0.0.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: wayland-utils
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/weston/Makefile
+Build-Depends: wayland/host
+
+Package: weston
+Submenu: Video
+Version: 10.0.0~pre0-2021-08-13-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +gstreamer1-plugins-base +libcairo +libevdev +libgst1allocators +libgst1app +libgst1video +libgstreamer1 +libinput +libmesa +libpango +libseat +libwayland +libwebp +libxkbcommon +pixman +seatd +wayland-protocols +xkeyboard-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: weston
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: weston-10.0.0~pre0-2021-08-13.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: weston
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Source-Makefile: feeds/video/libs/xkeyboard-config/Makefile
+Build-Depends: libxslt/host intltool/host perl-xml-parser/host
+
+Package: xkeyboard-config
+Version: 2.24-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxkbcommon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: xkeyboard-config
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: xkeyboard-config-2.24.tar.bz2
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description:   The non-arch keyboard configuration database for X Window.
+https://www.freedesktop.org/wiki/Software/XKeyboardConfig/
+Daniel Golle <daniel@makrotopia.org>
 @@
 
 

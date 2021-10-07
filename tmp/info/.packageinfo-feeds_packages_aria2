@@ -3,7 +3,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: aria2
 Submenu: File Transfer
-Version: 1.35.0-4
+Version: 1.36.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp +ARIA2_OPENSSL:libopenssl +ARIA2_GNUTLS:libgnutls +ARIA2_NETTLE:libnettle +ARIA2_LIBGCRYPT:libgcrypt +ARIA2_GMP:libgmp +ARIA2_LIBXML2:libxml2 +ARIA2_EXPAT:libexpat +ARIA2_SFTP:libssh2 +ARIA2_ASYNC_DNS:libcares +ARIA2_COOKIE:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: packages
 Title: lightweight download utility
 Maintainer: Imre Kaloz <kaloz@openwrt.org>, Hsing-Wang Liao <kuoruan@gmail.com>
 Require-User: aria2=6800:aria2=6800
-Source: aria2-1.35.0.tar.xz
+Source: aria2-1.36.0.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg

@@ -1,0 +1,23 @@
+Source-Makefile: feeds/video/libs/libxkbcommon/Makefile
+Build-Depends: wayland
+
+Package: libxkbcommon
+Version: 1.3.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwayland +libxml2 +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libxkbcommon
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: libxkbcommon-1.3.0.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: libxkbcommon
+https://xkbcommon.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

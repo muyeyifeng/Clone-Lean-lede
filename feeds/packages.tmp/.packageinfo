@@ -138,7 +138,7 @@ Source-Makefile: feeds/packages/admin/htop/Makefile
 Build-Depends: HTOP_LMSENSORS:lm-sensors
 
 Package: htop
-Version: 3.0.5-2
+Version: 3.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -148,7 +148,7 @@ Category: Administration
 Repository: base
 Title: Interactive processes viewer
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: htop-3.0.5.tar.gz
+Source: htop-3.1.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -511,11 +511,9 @@ Config:
 
 
 Source-Makefile: feeds/packages/admin/sudo/Makefile
-Build-Depends: sudo/host
-Build-Types: host
 
 Package: sudo
-Version: 1.9.7p2-0
+Version: 1.9.8p2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -525,7 +523,7 @@ Category: Administration
 Repository: base
 Title: Delegate authority to run commands
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: sudo-1.9.7p2.tar.gz
+Source: sudo-1.9.8p2.tar.gz
 License: ISC
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -18606,53 +18604,6 @@ Config:
     depends on PACKAGE_python3-pydoc
 @@
 
-Package: python3-decimal
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 decimal module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 decimal module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-decimal-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 decimal module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 decimal module
-
-    This package contains the Python source files for python3-decimal.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-decimal
-@@
-
 Package: python3-multiprocessing
 Submenu: Python
 Version: 3.9.5-2
@@ -19123,53 +19074,6 @@ Config:
     depends on PACKAGE_python3-logging
 @@
 
-Package: python3-email
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 email module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 email module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-email-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 email module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 email module
-
-    This package contains the Python source files for python3-email.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-email
-@@
-
 Package: python3-distutils
 Submenu: Python
 Version: 3.9.5-2
@@ -19215,6 +19119,53 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-distutils
+@@
+
+Package: python3-email
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 email module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 email module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-email-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 email module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 email module
+
+    This package contains the Python source files for python3-email.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-email
 @@
 
 Package: python3-openssl
@@ -19499,6 +19450,53 @@ Config:
     depends on PACKAGE_python3-dbm
 @@
 
+Package: python3-asyncio
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 asyncio module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 asyncio module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-asyncio-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 asyncio module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 asyncio module
+
+    This package contains the Python source files for python3-asyncio.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-asyncio
+@@
+
 Package: python3-lzma
 Submenu: Python
 Version: 3.9.5-2
@@ -19546,7 +19544,7 @@ Config:
     depends on PACKAGE_python3-lzma
 @@
 
-Package: python3-asyncio
+Package: python3-decimal
 Submenu: Python
 Version: 3.9.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
@@ -19556,18 +19554,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 asyncio module
+Title: Python 3.9 decimal module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 asyncio module
+Description: Python 3.9 decimal module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-asyncio-src
+Package: python3-decimal-src
 Submenu: Python
 Version: 3.9.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -19577,20 +19575,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 asyncio module (sources)
+Title: Python 3.9 decimal module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Source: Python-3.9.5.tar.xz
 License: Python/2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 asyncio module
+Description:     	Python 3.9 decimal module
 
-    This package contains the Python source files for python3-asyncio.
+    This package contains the Python source files for python3-decimal.
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-asyncio
+    depends on PACKAGE_python3-decimal
 @@
 
 Package: libpython3
@@ -19665,7 +19663,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-decimal +python3-multiprocessing +python3-codecs +python3-readline +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-email +python3-distutils +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-multiprocessing +python3-codecs +python3-readline +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-distutils +python3-email +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -56299,7 +56297,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: aria2
 Submenu: File Transfer
-Version: 1.35.0-4
+Version: 1.36.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp +ARIA2_OPENSSL:libopenssl +ARIA2_GNUTLS:libgnutls +ARIA2_NETTLE:libnettle +ARIA2_LIBGCRYPT:libgcrypt +ARIA2_GMP:libgmp +ARIA2_LIBXML2:libxml2 +ARIA2_EXPAT:libexpat +ARIA2_SFTP:libssh2 +ARIA2_ASYNC_DNS:libcares +ARIA2_COOKIE:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -56310,7 +56308,7 @@ Repository: base
 Title: lightweight download utility
 Maintainer: Imre Kaloz <kaloz@openwrt.org>, Hsing-Wang Liao <kuoruan@gmail.com>
 Require-User: aria2=6800:aria2=6800
-Source: aria2-1.35.0.tar.xz
+Source: aria2-1.36.0.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -62069,7 +62067,7 @@ Build-Depends: golang/host
 
 Package: kcptun-config
 Submenu: Web Servers/Proxies
-Version: 20210624-1
+Version: 20210922-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -62079,7 +62077,7 @@ Category: Network
 Repository: base
 Title: Kcptun Config Scripts
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20210624.tar.gz
+Source: kcptun-20210922.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -62090,7 +62088,7 @@ Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 
 Package: kcptun-server
 Submenu: Web Servers/Proxies
-Version: 20210624-1
+Version: 20210922-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kcptun-config
 Conflicts: 
 Menu-Depends: 
@@ -62100,7 +62098,7 @@ Category: Network
 Repository: base
 Title: KCP-based Secure Tunnel server
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20210624.tar.gz
+Source: kcptun-20210922.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -62112,7 +62110,7 @@ Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 
 Package: kcptun-client
 Submenu: Web Servers/Proxies
-Version: 20210624-1
+Version: 20210922-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kcptun-config
 Conflicts: 
 Menu-Depends: 
@@ -62122,7 +62120,7 @@ Category: Network
 Repository: base
 Title: KCP-based Secure Tunnel client
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Source: kcptun-20210624.tar.gz
+Source: kcptun-20210922.tar.gz
 License: MIT
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -87500,7 +87498,7 @@ Tobe Deprez <trldp@outlook.com>
 Source-Makefile: feeds/packages/utils/haveged/Makefile
 
 Package: haveged
-Version: 1.9.14-1
+Version: 1.9.15-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libhavege
 Conflicts: 
 Menu-Depends: 
@@ -87510,7 +87508,7 @@ Category: Utilities
 Repository: base
 Title: Feeds the kernel entropy pool by timing CPU loops.
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: haveged-1.9.14.tar.gz
+Source: haveged-1.9.15.tar.gz
 License: GPLv3
 Type: ipkg
 Description: Feeds the kernel entropy pool by timing CPU loops.
@@ -87519,7 +87517,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: libhavege
-Version: 1.9.14-1
+Version: 1.9.15-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -87529,7 +87527,7 @@ Category: Libraries
 Repository: base
 Title: Library for haveged
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: haveged-1.9.14.tar.gz
+Source: haveged-1.9.15.tar.gz
 License: GPLv3
 Type: ipkg
 Description: Library for haveged

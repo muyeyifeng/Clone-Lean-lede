@@ -1,0 +1,25 @@
+Source-Makefile: feeds/video/libs/wayland-utils/Makefile
+Build-Depends: wayland/host
+
+Package: wayland-info
+Submenu: Video
+Version: 1.0.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwayland +wayland-protocols
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: wayland-utils
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: wayland-utils-1.0.0.tar.xz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: wayland-utils
+https://wayland.freedesktop.org/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

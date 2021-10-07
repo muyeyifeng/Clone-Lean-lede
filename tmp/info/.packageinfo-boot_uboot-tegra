@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-tegra/Makefile
 
 Package: u-boot-trimslice
 Default: y if (TARGET_tegra_Default || TARGET_tegra_DEVICE_compulab_trimslice || TARGET_DEVICE_tegra_DEVICE_compulab_trimslice)
-Version: 2020.04-1
+Version: 2020.04-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_tegra
 Conflicts: 
 Menu-Depends: 
