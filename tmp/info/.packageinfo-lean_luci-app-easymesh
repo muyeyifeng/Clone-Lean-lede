@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-easymesh
 Submenu: 3. Applications
-Version: 1.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-cfg80211 +batctl-default +kmod-batman-adv +wpad-openssl
+Version: 1.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-cfg80211 +batctl-default +kmod-batman-adv +wpad-openssl +dawn
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Description: LuCI Support for easymesh
 
 Package: luci-i18n-easymesh-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 1.6-1
+Version: 1.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-easymesh
 Conflicts: 
 Menu-Depends: 
@@ -40,7 +40,7 @@ Description:     Translation for luci-app-easymesh -
 
 Package: luci-i18n-easymesh-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 1.6-1
+Version: 1.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-easymesh
 Conflicts: 
 Menu-Depends: 
