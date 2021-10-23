@@ -25,6 +25,10 @@ config v2ray-plugin_INCLUDE_GOPROXY
 	bool "Compiling with GOPROXY proxy"
 	default n
 
+config v2ray-plugin_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	depends on @!mips64
+	default y
 @@
 
 

@@ -29,6 +29,7 @@ Config:
 
 	config BROOK_COMPRESS_UPX
 		bool "Compress executable files with UPX"
+		depends on @!mips64
 		default y
 @@
 
@@ -111,6 +112,7 @@ config HYSTERIA_COMPRESS_GOPROXY
 
 config HYSTERIA_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 
 endmenu
@@ -769,6 +771,7 @@ config TROJAN_GO_COMPRESS_GOPROXY
 
 config TROJAN_GO_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 
 endmenu
@@ -832,6 +835,7 @@ config V2RAY_CORE_COMPRESS_GOPROXY
 
 config V2RAY_CORE_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 endmenu
 @@
@@ -868,6 +872,7 @@ config V2RAY_CTL_COMPRESS_GOPROXY
 
 config V2RAY_CTL_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 endmenu
 @@
@@ -946,6 +951,10 @@ config v2ray-plugin_INCLUDE_GOPROXY
 	bool "Compiling with GOPROXY proxy"
 	default n
 
+config v2ray-plugin_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	depends on @!mips64
+	default y
 @@
 
 
@@ -982,6 +991,7 @@ config XRAY_CORE_COMPRESS_GOPROXY
 
 config XRAY_CORE_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 endmenu
 @@
@@ -1066,6 +1076,7 @@ config XRAY_PLUGIN_COMPRESS_GOPROXY
 
 config XRAY_PLUGIN_COMPRESS_UPX
 	bool "Compress executable files with UPX"
+	depends on @!mips64
 	default y
 @@
 
