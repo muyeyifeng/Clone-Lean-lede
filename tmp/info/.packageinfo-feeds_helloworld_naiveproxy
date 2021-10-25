@@ -3,8 +3,8 @@ Build-Depends: python3/host ninja/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 95.0.4638.54-1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc) +libatomic
+Version: 95.0.4638.54-2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: helloworld
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-95.0.4638.54-1.tar.gz
+Source: naiveproxy-95.0.4638.54-2.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

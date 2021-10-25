@@ -29,7 +29,7 @@ Config:
 
 	config BROOK_COMPRESS_UPX
 		bool "Compress executable files with UPX"
-		depends on @!mips64
+		depends on !mips64
 		default y
 @@
 
@@ -112,7 +112,7 @@ config HYSTERIA_COMPRESS_GOPROXY
 
 config HYSTERIA_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 
 endmenu
@@ -196,7 +196,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4.40-1
+Version: 4.41-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +coreutils-nohup +curl +dnsmasq-full +dns2socks +ipset +ip-full +ipt2socks +iptables-mod-tproxy +libuci-lua +lua +luci-lib-jsonc +microsocks +tcping +resolveip +unzip +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-passwall_INCLUDE_Haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-passwall_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_PDNSD:pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core
 Conflicts: 
 Menu-Depends: 
@@ -236,7 +236,7 @@ config PACKAGE_luci-app-passwall_INCLUDE_Kcptun
 
 config PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy
 	bool "Include NaiveProxy"
-	depends on !(arc||armeb||mips||mips64||powerpc)
+	depends on !(arc||(arm&&TARGET_gemini)||armeb||mips||mips64||powerpc)
 	default n
 
 config PACKAGE_luci-app-passwall_INCLUDE_PDNSD
@@ -293,7 +293,7 @@ endmenu
 
 Package: luci-i18n-passwall-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 4.40-1
+Version: 4.41-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
@@ -312,7 +312,7 @@ Description:     Translation for luci-app-passwall -
 
 Package: luci-i18n-passwall-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 4.40-1
+Version: 4.41-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
 Conflicts: 
 Menu-Depends: 
@@ -358,8 +358,8 @@ Build-Depends: python3/host ninja/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 95.0.4638.54-1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc) +libatomic
+Version: 95.0.4638.54-2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||(arm&&TARGET_gemini)||armeb||mips||mips64||powerpc) +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -368,7 +368,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-95.0.4638.54-1.tar.gz
+Source: naiveproxy-95.0.4638.54-2.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -771,7 +771,7 @@ config TROJAN_GO_COMPRESS_GOPROXY
 
 config TROJAN_GO_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 
 endmenu
@@ -835,7 +835,7 @@ config V2RAY_CORE_COMPRESS_GOPROXY
 
 config V2RAY_CORE_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 endmenu
 @@
@@ -872,7 +872,7 @@ config V2RAY_CTL_COMPRESS_GOPROXY
 
 config V2RAY_CTL_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 endmenu
 @@
@@ -953,7 +953,7 @@ config v2ray-plugin_INCLUDE_GOPROXY
 
 config v2ray-plugin_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 @@
 
@@ -991,7 +991,7 @@ config XRAY_CORE_COMPRESS_GOPROXY
 
 config XRAY_CORE_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 endmenu
 @@
@@ -1076,7 +1076,7 @@ config XRAY_PLUGIN_COMPRESS_GOPROXY
 
 config XRAY_PLUGIN_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	depends on @!mips64
+	depends on !mips64
 	default y
 @@
 

@@ -25,7 +25,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy
 	bool "Include NaiveProxy"
-	depends on !(arc||armeb||mips||mips64||powerpc)
+	depends on !(arc||armeb||mips||mips64||powerpc||TARGET_gemini)
 	default n
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2
