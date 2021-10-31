@@ -1,6 +1,7 @@
 $(eval $(call PackageDir,libs_bcg729,libs/bcg729,))
 $(eval $(call PackageDir,libs_dahdi-linux,libs/dahdi-linux,))
 $(eval $(call PackageDir,libs_dahdi-tools,libs/dahdi-tools,))
+$(eval $(call PackageDir,libs_freetdm,libs/freetdm,))
 $(eval $(call PackageDir,libs_gsmlib,libs/gsmlib,))
 $(eval $(call PackageDir,libs_iksemel,libs/iksemel,))
 $(eval $(call PackageDir,libs_libctb,libs/libctb,))

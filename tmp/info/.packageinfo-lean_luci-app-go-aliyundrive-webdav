@@ -1,0 +1,60 @@
+Source-Makefile: package/lean/luci-app-go-aliyundrive-webdav/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-go-aliyundrive-webdav
+Submenu: 3. Applications
+Version: 1.0.2-20211031
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libuci-lua +go-aliyundrive-webdav
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci for go-aliyundrive-webdav
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Description: Luci for go-aliyundrive-webdav
+jerrykuku <jerrykuku@qq.com>
+@@
+
+Package: luci-i18n-go-aliyundrive-webdav-zh_Hans
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: 1.0.2-20211031
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-go-aliyundrive-webdav
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-go-aliyundrive-webdav - zh_Hans translation
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-go-aliyundrive-webdav - 
+jerrykuku <jerrykuku@qq.com>
+@@
+
+Package: luci-i18n-go-aliyundrive-webdav-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0.2-20211031
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-go-aliyundrive-webdav
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-go-aliyundrive-webdav - zh-cn translation
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-go-aliyundrive-webdav - 简体中文 (Simplified Chinese)
+jerrykuku <jerrykuku@qq.com>
+@@
+
+

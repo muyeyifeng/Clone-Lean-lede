@@ -172,6 +172,181 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 @@
 
 
+Source-Makefile: feeds/telephony/libs/freetdm/Makefile
+Build-Depends: freeswitch
+
+Package: libfreetdm
+Menu: 1
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: TDM signaling and media API
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Provides a unified interface to hardware TDM cards and SS7 stacks.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: freeswitch-mod-freetdm
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +libfreetdm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: FreeTDM endpoint module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This module is the glue between FreeSWITCH and FreeTDM.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-analog
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Analog FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Offers generic FXO/FXS support for any type of card supported by FreeTDM.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-analog-em
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Analog EM FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Offers generic E&M signaling for any type of card supported by FreeTDM.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-libpri
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm +PACKAGE_libfreetdm-ftmod-libpri:libpri @!aarch64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: LibPRI FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Offers support for PRI lines using the open source libpri stack for any
+type of card supported by FreeTDM. Supports both PRI and BRI signalling.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-pritap
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm +PACKAGE_libfreetdm-ftmod-pritap:libfreetdm-ftmod-libpri
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: PRI tapping FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This module is used to tap PRI lines.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-skel
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Skeleton FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: ftmod_skel is an example module.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libfreetdm-ftmod-zt
+Submenu: Telephony
+Version: 2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: DAHDI I/O FreeTDM module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freetdm-2021-08-30-8918ee1c3637cad0f9d41a402d26d3aa076fc202.tar.xz
+License: BSD-2-Clause BSD-3-Clause BSD-4-Clause GPL-2.0+ MIT/X11 (BSD like) MPL-1.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This module supports the DAHDI interface. The DAHDI interface is used by
+several hardware vendors.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+
 Source-Makefile: feeds/telephony/libs/gsmlib/Makefile
 Build-Depends: gettext-full/host gettext-full
 
@@ -636,7 +811,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: sofia-sip
 Submenu: Telephony
-Version: 1.13.4-1
+Version: 1.13.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -646,7 +821,7 @@ Category: Libraries
 Repository: base
 Title: Sofia-SIP open-source SIP User-Agent library
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: sofia-sip-1.13.4.tar.gz
+Source: sofia-sip-1.13.6.tar.gz
 License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
@@ -7594,32 +7769,10 @@ Jiri Slachta <jiri@slachta.eu>
 Source-Makefile: feeds/telephony/net/freeswitch/Makefile
 Build-Depends: perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
-Package: libfreetdm
-Menu: 1
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: TDM signaling and media API
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: Provides a unified interface to hardware TDM cards and SS7 stacks.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
 Package: freeswitch
 Menu: 1
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libstdcpp +!BUSYBOX_DEFAULT_SU:shadow-utils +!BUSYBOX_DEFAULT_SU:shadow-su +@OPENSSL_WITH_DEPRECATED +FS_WITH_FREETYPE:libfreetype +FS_WITH_ODBC:unixodbc +FS_WITH_PNG:libpng +libcurl +libedit +libopenssl +libpcre +libpthread +librt +libspandsp3 +libspeex +libspeexdsp +libsqlite3 +libuuid +sofia-sip +zlib
 Conflicts: 
 Menu-Depends: 
@@ -7627,10 +7780,10 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Open source telephony platform, v1.10.6
+Title: Open source telephony platform, v1.10.7
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: freeswitch=372:freeswitch=372
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7646,7 +7799,7 @@ Config:
 
 Package: freeswitch-misc-perl-esl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-perl-esl:perlbase-autoloader +PACKAGE_freeswitch-misc-perl-esl:perlbase-data +PACKAGE_freeswitch-misc-perl-esl:perlbase-dynaloader @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
@@ -7656,7 +7809,7 @@ Category: Network
 Repository: base
 Title: Perl ESL
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7666,9 +7819,31 @@ https://www.freeswitch.org
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
+Package: freeswitch-misc-python3-esl
+Submenu: Telephony
+Version: 1.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-python3-esl:python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Python3 ESL
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freeswitch-1.10.7.-release.tar.xz
+License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
+LicenseFiles: debian/copyright
+Type: ipkg
+Description: This package contains the Python3 binding for FreeSWITCH's Event Socket
+Library (ESL).
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
 Package: freeswitch-misc-timezones
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7678,7 +7853,7 @@ Category: Network
 Repository: base
 Title: Timezones file
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7689,7 +7864,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-curl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7699,7 +7874,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7714,7 +7889,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-insideout
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7724,7 +7899,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7739,7 +7914,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-minimal
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7749,7 +7924,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7764,7 +7939,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-rayo
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7774,7 +7949,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7789,7 +7964,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-sbc
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7799,7 +7974,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7814,7 +7989,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-softphone
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7824,7 +7999,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7839,7 +8014,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-testing
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7849,7 +8024,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7864,7 +8039,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-vanilla
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -7874,7 +8049,7 @@ Category: Network
 Repository: base
 Title: Example configuration
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -7887,137 +8062,9 @@ https://www.freeswitch.org
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: libfreetdm-ftmod-analog
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: Analog FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: Offers generic FXO/FXS support for any type of card supported by FreeTDM.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: libfreetdm-ftmod-analog-em
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: Analog EM FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: Offers generic E&M signaling for any type of card supported by FreeTDM.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: libfreetdm-ftmod-libpri
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm +PACKAGE_libfreetdm-ftmod-libpri:libpri @!aarch64
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: LibPRI FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: Offers support for PRI lines using the open source libpri stack for any
-type of card supported by FreeTDM. Supports both PRI and BRI signalling.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: libfreetdm-ftmod-pritap
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm +PACKAGE_libfreetdm-ftmod-pritap:libfreetdm-ftmod-libpri
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: PRI tapping FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: This module is used to tap PRI lines.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: libfreetdm-ftmod-skel
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: Skeleton FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: ftmod_skel is an example module.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: libfreetdm-ftmod-zt
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libfreetdm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: DAHDI I/O FreeTDM module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: This module supports the DAHDI interface. The DAHDI interface is used by
-several hardware vendors.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
 Package: freeswitch-lang-de
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8027,7 +8074,7 @@ Category: Network
 Repository: base
 Title: German language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8038,7 +8085,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-en
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8048,7 +8095,7 @@ Category: Network
 Repository: base
 Title: English language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8059,7 +8106,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-es
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8069,7 +8116,7 @@ Category: Network
 Repository: base
 Title: Spanish language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8080,7 +8127,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-fr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8090,7 +8137,7 @@ Category: Network
 Repository: base
 Title: French language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8101,7 +8148,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-he
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8111,7 +8158,7 @@ Category: Network
 Repository: base
 Title: Hebrew language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8122,7 +8169,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-pt
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8132,7 +8179,7 @@ Category: Network
 Repository: base
 Title: Portuguese language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8143,7 +8190,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-ru
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8153,7 +8200,7 @@ Category: Network
 Repository: base
 Title: Russian language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8164,7 +8211,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-sv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8174,7 +8221,7 @@ Category: Network
 Repository: base
 Title: Swedish language files
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8185,7 +8232,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-fonts
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8195,7 +8242,7 @@ Category: Network
 Repository: base
 Title: Fonts
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8206,7 +8253,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-grammar
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8216,7 +8263,7 @@ Category: Network
 Repository: base
 Title: Grammar
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8228,7 +8275,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-images
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8238,7 +8285,7 @@ Category: Network
 Repository: base
 Title: Images
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8249,7 +8296,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-abstraction
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8259,7 +8306,7 @@ Category: Network
 Repository: base
 Title: API abstraction module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8271,7 +8318,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-alsa
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -8281,7 +8328,7 @@ Category: Network
 Repository: base
 Title: ALSA endpoint module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8292,7 +8339,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-amr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8302,7 +8349,7 @@ Category: Network
 Repository: base
 Title: AMR passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8313,7 +8360,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-amrwb
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8323,7 +8370,7 @@ Category: Network
 Repository: base
 Title: AMR wideband passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8334,7 +8381,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-av
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-av:libffmpeg-full @x86_64
 Conflicts: 
 Menu-Depends: 
@@ -8344,7 +8391,7 @@ Category: Network
 Repository: base
 Title: AV module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8355,7 +8402,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-avmd
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8365,7 +8412,7 @@ Category: Network
 Repository: base
 Title: Voicemail detection module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8377,7 +8424,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-b64
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8387,7 +8434,7 @@ Category: Network
 Repository: base
 Title: Base64 module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8398,7 +8445,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-basic
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8408,7 +8455,7 @@ Category: Network
 Repository: base
 Title: BASIC module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8419,7 +8466,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-bert
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8429,7 +8476,7 @@ Category: Network
 Repository: base
 Title: BERT module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8440,7 +8487,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-blacklist
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8450,7 +8497,7 @@ Category: Network
 Repository: base
 Title: Blacklist helper module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8461,7 +8508,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-callcenter
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8471,7 +8518,7 @@ Category: Network
 Repository: base
 Title: Call center module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8482,7 +8529,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-csv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8492,7 +8539,7 @@ Category: Network
 Repository: base
 Title: CSV CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8503,7 +8550,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-mongodb
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8513,7 +8560,7 @@ Category: Network
 Repository: base
 Title: MongoDB CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8524,7 +8571,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-pg-csv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cdr-pg-csv:libpq
 Conflicts: 
 Menu-Depends: 
@@ -8534,7 +8581,7 @@ Category: Network
 Repository: base
 Title: PostgreSQL CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8545,7 +8592,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-sqlite
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8555,7 +8602,7 @@ Category: Network
 Repository: base
 Title: SQLite CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8566,7 +8613,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cidlookup
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8576,7 +8623,7 @@ Category: Network
 Repository: base
 Title: Caller ID lookup module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8588,7 +8635,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-clearmode
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8598,7 +8645,7 @@ Category: Network
 Repository: base
 Title: Clearmode module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8609,7 +8656,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cluechoo
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cluechoo:libncurses
 Conflicts: 
 Menu-Depends: 
@@ -8619,7 +8666,7 @@ Category: Network
 Repository: base
 Title: Clue Choo module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8630,7 +8677,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-commands
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8640,7 +8687,7 @@ Category: Network
 Repository: base
 Title: Commands module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8651,7 +8698,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-conference
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8661,7 +8708,7 @@ Category: Network
 Repository: base
 Title: Conference module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8672,7 +8719,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-console
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8682,7 +8729,7 @@ Category: Network
 Repository: base
 Title: Console logger module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8693,7 +8740,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-curl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8703,7 +8750,7 @@ Category: Network
 Repository: base
 Title: cURL module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8714,7 +8761,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dahdi-codec
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8724,7 +8771,7 @@ Category: Network
 Repository: base
 Title: DAHDI codec module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8735,7 +8782,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-db
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8745,7 +8792,7 @@ Category: Network
 Repository: base
 Title: DB module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8757,7 +8804,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-asterisk
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8767,7 +8814,7 @@ Category: Network
 Repository: base
 Title: Asterisk dialplan module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8778,7 +8825,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-directory
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8788,7 +8835,7 @@ Category: Network
 Repository: base
 Title: Directory dialplan module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8799,7 +8846,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-xml
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8809,7 +8856,7 @@ Category: Network
 Repository: base
 Title: XML dialplan module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8820,7 +8867,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dingaling
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8830,7 +8877,7 @@ Category: Network
 Repository: base
 Title: Generic XMPP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8841,7 +8888,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-directory
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8851,7 +8898,7 @@ Category: Network
 Repository: base
 Title: Dial-by-name directory module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8862,7 +8909,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-distributor
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8872,7 +8919,7 @@ Category: Network
 Repository: base
 Title: Load distributor module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8883,7 +8930,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dptools
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8893,7 +8940,7 @@ Category: Network
 Repository: base
 Title: Dialplan tools module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8904,7 +8951,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-easyroute
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8914,7 +8961,7 @@ Category: Network
 Repository: base
 Title: DID routing module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8925,7 +8972,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-enum
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-enum:libldns
 Conflicts: 
 Menu-Depends: 
@@ -8935,7 +8982,7 @@ Category: Network
 Repository: base
 Title: ENUM routing module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8946,7 +8993,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-erlang-event
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-erlang-event:erlang
 Conflicts: 
 Menu-Depends: 
@@ -8956,7 +9003,7 @@ Category: Network
 Repository: base
 Title: Erlang event module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8967,7 +9014,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-esf
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8977,7 +9024,7 @@ Category: Network
 Repository: base
 Title: Multicast module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -8988,7 +9035,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-esl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8998,7 +9045,7 @@ Category: Network
 Repository: base
 Title: Single ESL module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9009,7 +9056,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-multicast
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9019,7 +9066,7 @@ Category: Network
 Repository: base
 Title: Multicast Event module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9030,7 +9077,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-socket
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9040,7 +9087,7 @@ Category: Network
 Repository: base
 Title: Event socket module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9051,7 +9098,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-test
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9061,7 +9108,7 @@ Category: Network
 Repository: base
 Title: Event test module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9072,7 +9119,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-zmq
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9082,7 +9129,7 @@ Category: Network
 Repository: base
 Title: ZMQ event module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9093,7 +9140,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-expr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9103,7 +9150,7 @@ Category: Network
 Repository: base
 Title: Expr module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9114,7 +9161,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fail2ban
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9124,7 +9171,7 @@ Category: Network
 Repository: base
 Title: Fail2ban logging module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9135,7 +9182,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fifo
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9145,7 +9192,7 @@ Category: Network
 Repository: base
 Title: FIFO module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9156,7 +9203,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-format-cdr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9166,7 +9213,7 @@ Category: Network
 Repository: base
 Title: Multiformat CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9175,30 +9222,9 @@ https://www.freeswitch.org
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: freeswitch-mod-freetdm
-Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-freetdm:libfreetdm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: FreeTDM endpoint module
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
-License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
-LicenseFiles: debian/copyright
-Type: ipkg
-Description: This module is the glue between FreeSWITCH and FreeTDM.
-https://www.freeswitch.org
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
 Package: freeswitch-mod-fsk
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9208,7 +9234,7 @@ Category: Network
 Repository: base
 Title: FSK module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9220,7 +9246,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fsv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9230,7 +9256,7 @@ Category: Network
 Repository: base
 Title: FSV module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9242,7 +9268,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-g723-1
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9252,7 +9278,7 @@ Category: Network
 Repository: base
 Title: G.723.1 passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9263,7 +9289,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-g729
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9273,7 +9299,7 @@ Category: Network
 Repository: base
 Title: G.729 passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9284,7 +9310,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-graylog2
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9294,7 +9320,7 @@ Category: Network
 Repository: base
 Title: Graylog2 logger module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9305,7 +9331,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-gsmopen
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-gsmopen:gsmlib +PACKAGE_freeswitch-mod-gsmopen:libctb +PACKAGE_freeswitch-mod-gsmopen:libjpeg-turbo +PACKAGE_freeswitch-mod-gsmopen:libtiff
 Conflicts: 
 Menu-Depends: 
@@ -9315,7 +9341,7 @@ Category: Network
 Repository: base
 Title: GSM endpoint module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9327,7 +9353,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-h26x
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9337,7 +9363,7 @@ Category: Network
 Repository: base
 Title: H.26x passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9348,7 +9374,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-hash
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9358,7 +9384,7 @@ Category: Network
 Repository: base
 Title: Hash module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9370,7 +9396,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-hiredis
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-hiredis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -9380,7 +9406,7 @@ Category: Network
 Repository: base
 Title: Redis client module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9391,7 +9417,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-httapi
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9401,7 +9427,7 @@ Category: Network
 Repository: base
 Title: HT-TAPI module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9413,7 +9439,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-http-cache
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9423,7 +9449,7 @@ Category: Network
 Repository: base
 Title: HTTP GET with caching module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9435,7 +9461,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-isac
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @arm||i386||mips||mips64||mips64el||mipsel||x86_64
 Conflicts: 
 Menu-Depends: 
@@ -9445,7 +9471,7 @@ Category: Network
 Repository: base
 Title: iSAC module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9456,7 +9482,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-json-cdr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9466,7 +9492,7 @@ Category: Network
 Repository: base
 Title: JSON CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9477,7 +9503,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-kazoo
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-kazoo:erlang
 Conflicts: 
 Menu-Depends: 
@@ -9487,7 +9513,7 @@ Category: Network
 Repository: base
 Title: Kazoo module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9498,7 +9524,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-lcr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9508,7 +9534,7 @@ Category: Network
 Repository: base
 Title: LCR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9519,7 +9545,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-ldap
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -9529,7 +9555,7 @@ Category: Network
 Repository: base
 Title: LDAP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9540,7 +9566,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-local-stream
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9550,7 +9576,7 @@ Category: Network
 Repository: base
 Title: Local stream module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9561,7 +9587,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-logfile
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9571,7 +9597,7 @@ Category: Network
 Repository: base
 Title: File logger module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9582,7 +9608,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-loopback
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9592,7 +9618,7 @@ Category: Network
 Repository: base
 Title: Loopback module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9603,7 +9629,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-lua
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-lua:liblua
 Conflicts: 
 Menu-Depends: 
@@ -9613,7 +9639,7 @@ Category: Network
 Repository: base
 Title: Lua module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9624,7 +9650,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-mariadb
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-mariadb:libmariadb
 Conflicts: 
 Menu-Depends: 
@@ -9634,7 +9660,7 @@ Category: Network
 Repository: base
 Title: MariaDB module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9645,7 +9671,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-mp4v
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9655,7 +9681,7 @@ Category: Network
 Repository: base
 Title: MP4 video passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9666,7 +9692,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-native-file
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9676,7 +9702,7 @@ Category: Network
 Repository: base
 Title: Native file module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9687,7 +9713,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-nibblebill
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9697,7 +9723,7 @@ Category: Network
 Repository: base
 Title: Nibblebill module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9709,7 +9735,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-odbc-cdr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9719,7 +9745,7 @@ Category: Network
 Repository: base
 Title: ODBC CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9730,7 +9756,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-opus
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opus:libopus
 Conflicts: 
 Menu-Depends: 
@@ -9740,7 +9766,7 @@ Category: Network
 Repository: base
 Title: Opus module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9751,7 +9777,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-opusfile
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opusfile:libopusenc +PACKAGE_freeswitch-mod-opusfile:libopusfile
 Conflicts: 
 Menu-Depends: 
@@ -9761,7 +9787,7 @@ Category: Network
 Repository: base
 Title: Opus file module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9772,7 +9798,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-oreka
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9782,7 +9808,7 @@ Category: Network
 Repository: base
 Title: Oreka module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9794,7 +9820,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-perl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-perl:libdb47 +PACKAGE_freeswitch-mod-perl:libgdbm +PACKAGE_freeswitch-mod-perl:perlbase-essential @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
@@ -9804,7 +9830,7 @@ Category: Network
 Repository: base
 Title: Perl module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9815,7 +9841,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-pgsql
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -9825,7 +9851,7 @@ Category: Network
 Repository: base
 Title: PostgreSQL module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9836,7 +9862,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-png
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_PNG
 Conflicts: 
 Menu-Depends: 
@@ -9846,7 +9872,7 @@ Category: Network
 Repository: base
 Title: PNG module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9857,7 +9883,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-pocketsphinx
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pocketsphinx:libsamplerate
 Conflicts: 
 Menu-Depends: 
@@ -9867,7 +9893,7 @@ Category: Network
 Repository: base
 Title: Pocketsphinx module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9879,7 +9905,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-portaudio
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -9889,7 +9915,7 @@ Category: Network
 Repository: base
 Title: Portaudio module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9900,7 +9926,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-portaudio-stream
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio-stream:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -9910,7 +9936,7 @@ Category: Network
 Repository: base
 Title: Portaudio streaming module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9921,7 +9947,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-posix-timer
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9931,7 +9957,7 @@ Category: Network
 Repository: base
 Title: POSIX timer module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9942,7 +9968,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-prefix
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9952,7 +9978,7 @@ Category: Network
 Repository: base
 Title: Prefix match module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9962,9 +9988,30 @@ https://www.freeswitch.org
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
+Package: freeswitch-mod-python3
+Submenu: Telephony
+Version: 1.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-python3:python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Python3 module
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: freeswitch-1.10.7.-release.tar.xz
+License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
+LicenseFiles: debian/copyright
+Type: ipkg
+Description: Python3 support module.
+https://www.freeswitch.org
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
 Package: freeswitch-mod-radius-cdr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9974,7 +10021,7 @@ Category: Network
 Repository: base
 Title: Radius CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -9985,7 +10032,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-random
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9995,7 +10042,7 @@ Category: Network
 Repository: base
 Title: Entropy module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10007,7 +10054,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-raven
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10017,7 +10064,7 @@ Category: Network
 Repository: base
 Title: Raven logging module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10028,7 +10075,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rayo
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-rayo:freeswitch-mod-ssml
 Conflicts: 
 Menu-Depends: 
@@ -10038,7 +10085,7 @@ Category: Network
 Repository: base
 Title: Rayo module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10049,7 +10096,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-redis
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10059,7 +10106,7 @@ Category: Network
 Repository: base
 Title: Redis limit backend module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10071,7 +10118,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rss
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10081,7 +10128,7 @@ Category: Network
 Repository: base
 Title: RSS module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10092,7 +10139,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rtc
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10102,7 +10149,7 @@ Category: Network
 Repository: base
 Title: Media streaming module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10113,7 +10160,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rtmp
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10123,7 +10170,7 @@ Category: Network
 Repository: base
 Title: RTMP endpoint module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10134,7 +10181,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-de
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10144,7 +10191,7 @@ Category: Network
 Repository: base
 Title: German Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10155,7 +10202,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-en
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10165,7 +10212,7 @@ Category: Network
 Repository: base
 Title: English Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10176,7 +10223,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-es
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10186,7 +10233,7 @@ Category: Network
 Repository: base
 Title: Spanish Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10197,7 +10244,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-es-ar
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10207,7 +10254,7 @@ Category: Network
 Repository: base
 Title: Argentinian Spanish Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10218,7 +10265,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-fa
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10228,7 +10275,7 @@ Category: Network
 Repository: base
 Title: Persian Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10239,7 +10286,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-fr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10249,7 +10296,7 @@ Category: Network
 Repository: base
 Title: French Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10260,7 +10307,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-he
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10270,7 +10317,7 @@ Category: Network
 Repository: base
 Title: Hebrew Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10281,7 +10328,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-hr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10291,7 +10338,7 @@ Category: Network
 Repository: base
 Title: Croatian Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10302,7 +10349,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-hu
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10312,7 +10359,7 @@ Category: Network
 Repository: base
 Title: Hungarian Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10323,7 +10370,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-it
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10333,7 +10380,7 @@ Category: Network
 Repository: base
 Title: Italian Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10344,7 +10391,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-ja
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10354,7 +10401,7 @@ Category: Network
 Repository: base
 Title: Japanese Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10365,7 +10412,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-nl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10375,7 +10422,7 @@ Category: Network
 Repository: base
 Title: Dutch Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10386,7 +10433,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-pl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10396,7 +10443,7 @@ Category: Network
 Repository: base
 Title: Polish Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10407,7 +10454,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-pt
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10417,7 +10464,7 @@ Category: Network
 Repository: base
 Title: Portuguese Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10428,7 +10475,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-ru
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10438,7 +10485,7 @@ Category: Network
 Repository: base
 Title: Russian Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10449,7 +10496,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-sv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10459,7 +10506,7 @@ Category: Network
 Repository: base
 Title: Swedish Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10470,7 +10517,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-th
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10480,7 +10527,7 @@ Category: Network
 Repository: base
 Title: Thai Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10491,7 +10538,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-zh
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10501,7 +10548,7 @@ Category: Network
 Repository: base
 Title: Chinese Say module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10512,7 +10559,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-shell-stream
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10522,7 +10569,7 @@ Category: Network
 Repository: base
 Title: Shell stream module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10533,7 +10580,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-shout
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-shout:lame-lib +PACKAGE_freeswitch-mod-shout:libmpg123 +PACKAGE_freeswitch-mod-shout:libshout
 Conflicts: 
 Menu-Depends: 
@@ -10543,7 +10590,7 @@ Category: Network
 Repository: base
 Title: Shout module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10554,7 +10601,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-signalwire
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-signalwire:signalwire-client-c
 Conflicts: 
 Menu-Depends: 
@@ -10564,7 +10611,7 @@ Category: Network
 Repository: base
 Title: SignalWire module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10575,7 +10622,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-skinny
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10585,7 +10632,7 @@ Category: Network
 Repository: base
 Title: Skinny module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10596,7 +10643,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sms
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10606,7 +10653,7 @@ Category: Network
 Repository: base
 Title: SMS module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10618,7 +10665,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snapshot
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10628,7 +10675,7 @@ Category: Network
 Repository: base
 Title: Snapshot module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10640,7 +10687,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sndfile
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-sndfile:libsndfile
 Conflicts: 
 Menu-Depends: 
@@ -10650,7 +10697,7 @@ Category: Network
 Repository: base
 Title: Soundfile module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10661,7 +10708,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snmp
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-snmp:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -10671,7 +10718,7 @@ Category: Network
 Repository: base
 Title: SNMP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10682,7 +10729,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snom
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10692,7 +10739,7 @@ Category: Network
 Repository: base
 Title: SNOM module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10703,7 +10750,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sofia
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10713,7 +10760,7 @@ Category: Network
 Repository: base
 Title: Sofia SIP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10724,7 +10771,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sonar
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10734,7 +10781,7 @@ Category: Network
 Repository: base
 Title: Sonar module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10746,7 +10793,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-spandsp
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-spandsp:libjpeg-turbo +PACKAGE_freeswitch-mod-spandsp:liblzma +PACKAGE_freeswitch-mod-spandsp:libtiff
 Conflicts: 
 Menu-Depends: 
@@ -10756,7 +10803,7 @@ Category: Network
 Repository: base
 Title: SpanDSP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10768,7 +10815,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-spy
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10778,7 +10825,7 @@ Category: Network
 Repository: base
 Title: User Spy module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10789,7 +10836,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-ssml
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10799,7 +10846,7 @@ Category: Network
 Repository: base
 Title: SSML module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10811,7 +10858,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-stress
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10821,7 +10868,7 @@ Category: Network
 Repository: base
 Title: Stress module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10832,7 +10879,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-syslog
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10842,7 +10889,7 @@ Category: Network
 Repository: base
 Title: Syslog logger module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10853,7 +10900,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-theora
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10863,7 +10910,7 @@ Category: Network
 Repository: base
 Title: Theora passthrough module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10874,7 +10921,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-tone-stream
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10884,7 +10931,7 @@ Category: Network
 Repository: base
 Title: Tone stream module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10895,7 +10942,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-translate
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10905,7 +10952,7 @@ Category: Network
 Repository: base
 Title: Number translation module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10916,7 +10963,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-tts-commandline
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10926,7 +10973,7 @@ Category: Network
 Repository: base
 Title: TTS command-line module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10937,7 +10984,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-unimrcp
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10947,7 +10994,7 @@ Category: Network
 Repository: base
 Title: UniMRCP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10958,7 +11005,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-valet-parking
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10968,7 +11015,7 @@ Category: Network
 Repository: base
 Title: Valet parking module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -10979,8 +11026,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-verto
 Submenu: Telephony
-Version: 1.10.6-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Version: 1.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-verto:libks
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10989,7 +11036,7 @@ Category: Network
 Repository: base
 Title: Verto module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11000,7 +11047,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-video-filter
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11010,7 +11057,7 @@ Category: Network
 Repository: base
 Title: Video filter chromakey module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11021,7 +11068,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-vmd
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11031,7 +11078,7 @@ Category: Network
 Repository: base
 Title: Voicemail detection module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11042,7 +11089,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-voicemail
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11052,7 +11099,7 @@ Category: Network
 Repository: base
 Title: Voicemail module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11063,7 +11110,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-voicemail-ivr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11073,7 +11120,7 @@ Category: Network
 Repository: base
 Title: Voicemail IVR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11084,7 +11131,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-cdr
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11094,7 +11141,7 @@ Category: Network
 Repository: base
 Title: XML CDR module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11105,7 +11152,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-curl
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11115,7 +11162,7 @@ Category: Network
 Repository: base
 Title: XML cURL module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11127,7 +11174,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-ldap
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-xml-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -11137,7 +11184,7 @@ Category: Network
 Repository: base
 Title: XML LDAP module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11148,7 +11195,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-rpc
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11158,7 +11205,7 @@ Category: Network
 Repository: base
 Title: XML RPC module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11169,7 +11216,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-scgi
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11179,7 +11226,7 @@ Category: Network
 Repository: base
 Title: XML SCGI module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11190,7 +11237,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-yaml
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-yaml:libyaml
 Conflicts: 
 Menu-Depends: 
@@ -11200,7 +11247,7 @@ Category: Network
 Repository: base
 Title: YAML module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11211,7 +11258,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-yuv
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_LIBYUV
 Conflicts: 
 Menu-Depends: 
@@ -11221,7 +11268,7 @@ Category: Network
 Repository: base
 Title: Raw YUV module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11232,7 +11279,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-cli
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11242,7 +11289,7 @@ Category: Network
 Repository: base
 Title: CLI utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11255,7 +11302,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-encode
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-native-file +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-sndfile +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-spandsp
 Conflicts: 
 Menu-Depends: 
@@ -11265,7 +11312,7 @@ Category: Network
 Repository: base
 Title: Sound file conversion utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11277,7 +11324,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-ivrd
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11287,7 +11334,7 @@ Category: Network
 Repository: base
 Title: IVR daemon utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11300,7 +11347,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-tts
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11310,7 +11357,7 @@ Category: Network
 Repository: base
 Title: TTS to sound file utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11321,7 +11368,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-gentls-cert
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-gentls-cert:openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -11331,7 +11378,7 @@ Category: Network
 Repository: base
 Title: TLS certificate utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
@@ -11342,7 +11389,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-tone2wav
 Submenu: Telephony
-Version: 1.10.6-5
+Version: 1.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-tone2wav:freeswitch-mod-sndfile
 Conflicts: 
 Menu-Depends: 
@@ -11352,7 +11399,7 @@ Category: Network
 Repository: base
 Title: Sound file generation utility
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: freeswitch-1.10.6.-release.tar.xz
+Source: freeswitch-1.10.7.-release.tar.xz
 License: AGPL-3.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-4-Clause BSD-like Beerware GPL-1.0+ GPL-2.0 GPL-2.0+ GPL-3.0 ISC LGPL-2.0+ LGPL-2.1 LGPL-2.1+ MIT/X11 (BSD like) MPL-1.1 OpenLDAP RSA-MD zlib-acknowledgement
 LicenseFiles: debian/copyright
 Type: ipkg
