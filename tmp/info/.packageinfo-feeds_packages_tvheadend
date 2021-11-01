@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/tvheadend/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: tvheadend
-Version: 4.0.10-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +librt +zlib +TVHEADEND_AVAHI_SUPPORT:libavahi-client +BUILD_NLS:libiconv-full
+Version: 4.2.8-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +librt +zlib +libffi +TVHEADEND_AVAHI_SUPPORT:libavahi-client +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,8 +11,9 @@ Section: multimedia
 Category: Multimedia
 Repository: packages
 Title: Tvheadend is a TV streaming server for Linux
-Maintainer: Jan Čermák <jan.cermak@nic.cz>
-Source: tvheadend-4.0.10.tar.gz
+Maintainer: Marius Dinu <m95d+git@psihoexpert.ro>
+Require-User: tvheadend:dvb
+Source: tvheadend-4.2.8.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -21,7 +22,7 @@ Description:   Tvheadend is a TV streaming server and recorder for Linux, FreeBS
 
   Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming.
 https://tvheadend.org
-Jan Čermák <jan.cermak@nic.cz>
+Marius Dinu <m95d+git@psihoexpert.ro>
 @@
 Config:
   menu "Configuration"

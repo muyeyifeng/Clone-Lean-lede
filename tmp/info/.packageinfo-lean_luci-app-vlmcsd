@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-vlmcsd
 Submenu: 3. Applications
-Version: 1.0-5
+Version: 1.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +vlmcsd
 Conflicts: 
 Menu-Depends: 
@@ -11,17 +11,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: LuCI page for KMS
+Title: LuCI support for KMS
 Maintainer: 
 Source: 
 Type: ipkg
-Description: LuCI page for KMS
+Description: LuCI support for KMS
 
 @@
 
 Package: luci-i18n-vlmcsd-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 1.0-5
+Version: 1.0-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vlmcsd
 Conflicts: 
 Menu-Depends: 
