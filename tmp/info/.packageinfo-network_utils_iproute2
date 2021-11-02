@@ -44,6 +44,26 @@ http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
 Russell Senior <russell@personaltelco.net>
 @@
 
+Package: tc-mod-iptables
+Submenu: Routing and Redirection
+Version: 5.14.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxtables
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Traffic control module - iptables action
+Maintainer: Russell Senior <russell@personaltelco.net>
+Source: iproute2-5.14.0.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: Traffic control module - iptables action
+http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+Russell Senior <russell@personaltelco.net>
+@@
+
 Package: tc-tiny
 Submenu: Routing and Redirection
 Version: 5.14.0-0
@@ -83,26 +103,6 @@ Source: iproute2-5.14.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Traffic control utility (full)
-http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
-Russell Senior <russell@personaltelco.net>
-@@
-
-Package: tc-mod-iptables
-Submenu: Routing and Redirection
-Version: 5.14.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxtables
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Traffic control module - iptables action
-Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.14.0.tar.xz
-License: GPL-2.0
-Type: ipkg
-Description: Traffic control module - iptables action
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
 Russell Senior <russell@personaltelco.net>
 @@

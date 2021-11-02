@@ -1,5 +1,24 @@
 Source-Makefile: package/network/services/hostapd/Makefile
 
+Package: hostapd-common
+Submenu: WirelessAPD
+Version: 2021-05-22-b102f19bcc53c7f7db3951424d4d46709b4f1986-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: hostapd/wpa_supplicant common support files
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: hostapd-2021-05-22-b102f19bcc53c7f7db3951424d4d46709b4f1986.tar.xz
+License: BSD-3-Clause
+Type: ipkg
+Description: hostapd/wpa_supplicant common support files
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: hostapd
 Submenu: WirelessAPD
 Version: 2021-05-22-b102f19bcc53c7f7db3951424d4d46709b4f1986-0
@@ -574,25 +593,6 @@ Type: ipkg
 Description:  This package contains a command line utility to control the
  IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
 http://hostap.epitest.fi/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: hostapd-common
-Submenu: WirelessAPD
-Version: 2021-05-22-b102f19bcc53c7f7db3951424d4d46709b4f1986-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: hostapd/wpa_supplicant common support files
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2021-05-22-b102f19bcc53c7f7db3951424d4d46709b4f1986.tar.xz
-License: BSD-3-Clause
-Type: ipkg
-Description: hostapd/wpa_supplicant common support files
 Felix Fietkau <nbd@nbd.name>
 @@
 
