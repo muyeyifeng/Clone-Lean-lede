@@ -19074,53 +19074,6 @@ Config:
     depends on PACKAGE_python3-logging
 @@
 
-Package: python3-distutils
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 distutils module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 distutils module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-distutils-src
-Submenu: Python
-Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 distutils module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.5.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 distutils module
-
-    This package contains the Python source files for python3-distutils.
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-distutils
-@@
-
 Package: python3-email
 Submenu: Python
 Version: 3.9.5-2
@@ -19166,6 +19119,53 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-email
+@@
+
+Package: python3-distutils
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 distutils module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 distutils module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-distutils-src
+Submenu: Python
+Version: 3.9.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 distutils module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.5.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 distutils module
+
+    This package contains the Python source files for python3-distutils.
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-distutils
 @@
 
 Package: python3-openssl
@@ -19663,7 +19663,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.9.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-multiprocessing +python3-codecs +python3-readline +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-distutils +python3-email +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-multiprocessing +python3-codecs +python3-readline +python3-gdbm +python3-xml +python3-sqlite3 +python3-logging +python3-email +python3-distutils +python3-openssl +python3-urllib +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26393,7 +26393,7 @@ Build-Depends/host: meson/host gettext-full/host libiconv/host libffi/host ninja
 Build-Types: host
 
 Package: glib2
-Version: 2.68.1-0
+Version: 2.68.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +zlib +libpthread +libffi +libattr
 Conflicts: 
 Menu-Depends: 
@@ -26403,7 +26403,7 @@ Category: Libraries
 Repository: base
 Title: glib 2.0
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: glib-2.68.1.tar.xz
+Source: glib-2.68.4.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -46190,7 +46190,7 @@ Lucian Cristian <lucian.cristian@gmail.com>
 Source-Makefile: feeds/packages/libs/nss/Makefile
 
 Package: nss-utils
-Version: 3.65-1
+Version: 3.69-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnss
 Conflicts: 
 Menu-Depends: 
@@ -46200,7 +46200,7 @@ Category: Utilities
 Repository: base
 Title: Utilities for Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: nss-3.65.tar.gz
+Source: nss-3.69.tar.gz
 LicenseFiles: nss/COPYING
 Type: ipkg
 Description: Utilities for Mozilla's SSL and TLS implementation
@@ -46210,7 +46210,7 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: libnss
 Submenu: SSL
-Version: 3.65-1
+Version: 3.69-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libsqlite3 +nspr
 Conflicts: 
 Menu-Depends: 
@@ -46220,7 +46220,7 @@ Category: Libraries
 Repository: base
 Title: Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: nss-3.65.tar.gz
+Source: nss-3.69.tar.gz
 LicenseFiles: nss/COPYING
 Type: ipkg
 Description:   Network Security Services (NSS) is a set of libraries designed to support

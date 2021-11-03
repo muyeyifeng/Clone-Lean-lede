@@ -8,8 +8,8 @@ Target-Features: gpio squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -25,8 +25,8 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1624,8 +1624,8 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kern
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1781,6 +1781,20 @@ Target-Profile-SupportedDevices: asus,rt-n56u-b1
 
 Target-Profile-Description:
 Build firmware images for ASUS RT-N56U B1
+
+
+
+@@
+
+Target-Profile: DEVICE_beeline_smartbox-turbo-plus
+Target-Profile-Name: Beeline SmartBox TURBO+
+Target-Profile-Packages: kmod-mt7603e kmod-mt7615d luci-app-mtwifi -wpad-openssl kmod-usb3 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: beeline,smartbox-turbo-plus
+
+
+Target-Profile-Description:
+Build firmware images for Beeline SmartBox TURBO+
 
 
 
@@ -3654,8 +3668,8 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -4781,8 +4795,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -4910,8 +4924,8 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6441,8 +6455,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.155
-Linux-Testing-Version: 5.10.76
+Linux-Version: 5.4.156
+Linux-Testing-Version: 5.10.77
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
