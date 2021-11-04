@@ -875,4 +875,29 @@ Do not install it for any other device!
 
 @@
 
+Package: ipq-wifi-zte_mf263
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6 ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000 ipq-wifi-zte_mf269
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for ZTE MF263
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The ZTE MF263 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the ZTE MF263.
+
+Do not install it for any other device!
+
+@@
+
 
