@@ -503,6 +503,27 @@ http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: asterisk-app-dtmfstore
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: DTMF storage support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Technology independent async DTMF storage.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: asterisk-app-dumpchan
 Submenu: Telephony
 Version: 18.7.1-0
@@ -632,7 +653,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: asterisk-app-getcpeid
 Submenu: Telephony
 Version: 18.7.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +PACKAGE_asterisk-app-getcpeid:asterisk-res-adsi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -709,6 +730,27 @@ License: GPL-2.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: IVR demo application.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-app-mf
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: MF digits support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Send MF digits Application.
 http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
@@ -982,6 +1024,27 @@ License: GPL-2.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: Trivial record application.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-app-reload
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Reload support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Reload module[s].
 http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
@@ -1381,6 +1444,27 @@ License: GPL-2.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: Send verbose output.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-app-waitforcond
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Wait for condition support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Wait until condition is true.
 http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
@@ -3065,6 +3149,27 @@ http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: asterisk-func-frame-drop
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Frame drop support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Function to drop frames on a channel.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: asterisk-func-frame-trace
 Submenu: Telephony
 Version: 18.7.1-0
@@ -3397,6 +3502,48 @@ License: GPL-2.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: Read/write/store/destroy values from a realtime repository.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-func-sayfiles
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Say files support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Say application files.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-func-scramble
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Scramble support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Frequency inverting voice scrambler.
 http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
@@ -5667,6 +5814,27 @@ License: GPL-2.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description: pthread timing interface.
+http://www.asterisk.org/
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk-res-tonedetect
+Submenu: Telephony
+Version: 18.7.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Tone detection support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: asterisk-18.7.1.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description: Tone detection module.
 http://www.asterisk.org/
 Jiri Slachta <jiri@slachta.eu>
 @@

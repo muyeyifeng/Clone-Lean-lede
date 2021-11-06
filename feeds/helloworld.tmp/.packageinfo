@@ -43,11 +43,13 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client
 	bool "Include Shadowsocks Rust Client"
 	depends on aarch64||arm||i386||mips||mipsel||x86_64
+	depends on !(TARGET_x86_geode||TARGET_x86_legacy)
 	default y if aarch64
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server
 	bool "Include Shadowsocks Rust Server"
 	depends on aarch64||arm||i386||mips||mipsel||x86_64
+	depends on !(TARGET_x86_geode||TARGET_x86_legacy)
 	default y if aarch64
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client
@@ -145,8 +147,8 @@ Source-Makefile: feeds/helloworld/shadowsocks-rust/Makefile
 
 Package: shadowsocks-rust-sslocal
 Submenu: Web Servers/Proxies
-Version: 1.11.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Version: 1.12.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -166,8 +168,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssmanager
 Submenu: Web Servers/Proxies
-Version: 1.11.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Version: 1.12.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -187,8 +189,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssserver
 Submenu: Web Servers/Proxies
-Version: 1.11.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Version: 1.12.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -208,8 +210,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssurl
 Submenu: Web Servers/Proxies
-Version: 1.11.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+Version: 1.12.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
