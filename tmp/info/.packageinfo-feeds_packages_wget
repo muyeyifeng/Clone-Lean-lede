@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/wget/Makefile
 
 Package: wget-ssl
 Submenu: File Transfer
-Version: 1.21.1-3
+Version: 1.21.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib +libopenssl +librt
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: packages
 Title: Non-interactive network downloader (with SSL support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.21.1.tar.gz
+Source: wget-1.21.2.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -30,7 +30,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: wget-nossl
 Submenu: File Transfer
-Version: 1.21.1-3
+Version: 1.21.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ Category: Network
 Repository: packages
 Title: Non-interactive network downloader (without SSL support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.21.1.tar.gz
+Source: wget-1.21.2.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
