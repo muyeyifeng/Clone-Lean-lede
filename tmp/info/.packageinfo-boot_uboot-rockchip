@@ -26,7 +26,7 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-guangmiao-g4c-rk3399
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_huake-cloud_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_huake-cloud_guangmiao-g4c)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
 Version: 2021.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
@@ -121,6 +121,30 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-doornet1-rk3328
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet1 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet1)
+Version: 2021.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet1-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: doornet1-rk3328
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for DoorNet1
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2021.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for DoorNet1
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-nanopi-r2c-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c)
 Version: 2021.07-0
@@ -187,30 +211,6 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Orange Pi R1 Plus
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
-Package: u-boot-doornet1-rk3328
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet1 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet1)
-Version: 2021.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet1-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: doornet1-rk3328
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for DoorNet1
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2021.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for DoorNet1
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@

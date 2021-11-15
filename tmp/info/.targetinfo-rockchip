@@ -50,7 +50,7 @@ Build firmware images for EmbedFire DoorNet1
 
 Target-Profile: DEVICE_embedfire_doornet2
 Target-Profile-Name: EmbedFire DoorNet2
-Target-Profile-Packages: kmod-r8168 kmod-rtl8821cu -urngd  
+Target-Profile-Packages: kmod-r8168 kmod-rtl8821cu -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: embedfire,doornet2
 
@@ -104,20 +104,6 @@ Build firmware images for FriendlyARM NanoPi R4S
 
 @@
 
-Target-Profile: DEVICE_huake-cloud_guangmiao-g4c
-Target-Profile-Name: HuaKe Cloud GuangMiao G4C
-Target-Profile-Packages: kmod-r8168 -urngd 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: huake-cloud,guangmiao-g4c
-
-
-Target-Profile-Description:
-Build firmware images for HuaKe Cloud GuangMiao G4C
-
-
-
-@@
-
 Target-Profile: DEVICE_pine64_rockpro64
 Target-Profile-Name: Pine64 RockPro64
 Target-Profile-Packages: -urngd 
@@ -141,6 +127,20 @@ Target-Profile-SupportedDevices: radxa,rockpi4
 
 Target-Profile-Description:
 Build firmware images for Radxa ROCK Pi 4
+
+
+
+@@
+
+Target-Profile: DEVICE_sharevdi_guangmiao-g4c
+Target-Profile-Name: SHAREVDI GuangMiao G4C
+Target-Profile-Packages: kmod-r8168 -urngd 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sharevdi,guangmiao-g4c
+
+
+Target-Profile-Description:
+Build firmware images for SHAREVDI GuangMiao G4C
 
 
 
