@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/ntfs-3g/Makefile
 
 Package: ntfs-3g
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +PACKAGE_NTFS-3G_USE_LIBFUSE:libfuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Stable Read/Write NTFS Driver
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -34,7 +34,7 @@ Config:
 config PACKAGE_NTFS-3G_USE_LIBFUSE
 	bool "use external FUSE library, selects package libfuse"
 	depends on PACKAGE_ntfs-3g
-	---help---
+	help
 	Ntfs-3g by default uses a minimalized lite version of FUSE.
 	If libfuse is part of your filesystem anyway (because of sshfs, owfs
 	etc.) it makes sense to activate this option and save some kilobytes
@@ -48,7 +48,7 @@ config PACKAGE_NTFS-3G_HAS_PROBE
 
 Package: ntfs-3g-low
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Category: Utilities
 Repository: base
 Title: lowntfs-3g (alternative using the fuse low-level interface)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -76,7 +76,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: ntfs-3g-utils
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g +libgcrypt +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -86,7 +86,7 @@ Category: Utilities
 Repository: base
 Title: ntfs-3g utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg

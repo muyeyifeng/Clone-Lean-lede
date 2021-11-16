@@ -55583,7 +55583,7 @@ Config:
 Source-Makefile: feeds/packages/net/acme/Makefile
 
 Package: acme
-Version: 3.0.1-6
+Version: 3.0.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -55603,7 +55603,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 3.0.1-6
+Version: 3.0.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -56327,7 +56327,7 @@ Source-Makefile: feeds/packages/net/ariang/Makefile
 
 Package: ariang
 Submenu: Download Manager
-Version: 1.1.7-2
+Version: 1.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +uhttpd
 Conflicts: 
 Menu-Depends: 
@@ -56337,7 +56337,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for uhttpd webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.1.7.tar.gz
+Source: ariang-1.2.2.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56348,7 +56348,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: ariang-nginx
 Submenu: Download Manager
-Version: 1.1.7-2
+Version: 1.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +nginx
 Conflicts: 
 Menu-Depends: 
@@ -56358,7 +56358,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for nginx webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.1.7.tar.gz
+Source: ariang-1.2.2.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59916,7 +59916,7 @@ Source-Makefile: feeds/packages/net/git/Makefile
 
 Package: git
 Submenu: Version Control Systems
-Version: 2.30.2-1
+Version: 2.33.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib
 Conflicts: 
 Menu-Depends: 
@@ -59926,7 +59926,7 @@ Category: Network
 Repository: base
 Title: The fast version control system
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.30.2.tar.xz
+Source: git-2.33.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -59939,7 +59939,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: git-http
 Submenu: Version Control Systems
-Version: 2.30.2-1
+Version: 2.33.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib +git +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -59949,7 +59949,7 @@ Category: Network
 Repository: base
 Title: Git HTTP commands
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.30.2.tar.xz
+Source: git-2.33.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -59964,7 +59964,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: git-gitweb
 Submenu: Version Control Systems
-Version: 2.30.2-1
+Version: 2.33.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib +git +perl-cgi +perlbase-digest +perlbase-encode +perlbase-essential +perlbase-fcntl +perlbase-file +perlbase-filetest +perlbase-storable +perlbase-time
 Conflicts: 
 Menu-Depends: 
@@ -59974,7 +59974,7 @@ Category: Network
 Repository: base
 Title: Git repository web interface
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.30.2.tar.xz
+Source: git-2.33.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -71451,7 +71451,7 @@ Stan Grishin <stangri@melmac.net>
 Source-Makefile: feeds/packages/net/smartdns/Makefile
 
 Package: smartdns
-Version: 1.2020.30-1
+Version: 1.2021.35-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -71461,7 +71461,7 @@ Category: Network
 Repository: base
 Title: smartdns server
 Maintainer: Nick Peng <pymumu@gmail.com>
-Source: smartdns-1.2020.30.tar.xz
+Source: smartdns-1.2021.35.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -71477,7 +71477,7 @@ Source-Makefile: feeds/packages/net/smcroute/Makefile
 
 Package: smcroute
 Submenu: Routing and Redirection
-Version: 2.4.4-1
+Version: 2.5.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -71487,7 +71487,7 @@ Category: Network
 Repository: base
 Title: Static Multicast Routing Daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: smcroute-2.4.4.tar.xz
+Source: smcroute-2.5.4.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -77700,7 +77700,7 @@ Source-Makefile: feeds/packages/net/zerotier/Makefile
 
 Package: zerotier
 Submenu: VPN
-Version: 1.6.6-1
+Version: 1.8.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp
 Conflicts: 
 Menu-Depends: 
@@ -77710,7 +77710,7 @@ Category: Network
 Repository: base
 Title: Create flat virtual Ethernet networks of almost unlimited size
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: zerotier-1.6.6.tar.gz
+Source: zerotier-1.8.2.tar.gz
 License: BSL 1.1
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -83506,7 +83506,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.4.9-1
+Version: 1.4.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -83516,7 +83516,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.4.9.tar.gz
+Source: containerd-1.4.11.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86039,7 +86039,7 @@ Source-Makefile: feeds/packages/utils/docker/Makefile
 Build-Depends: golang/host
 
 Package: docker
-Version: 20.10.8-1
+Version: 20.10.10-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -86049,7 +86049,7 @@ Category: Utilities
 Repository: base
 Title: Docker Community Edition CLI
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: docker-20.10.8.tar.gz
+Source: docker-20.10.10.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86060,10 +86060,11 @@ Gerard Ryan <G.M0N3Y.2503@gmail.com>
 
 
 Source-Makefile: feeds/packages/utils/docker-compose/Makefile
+Build-Depends: golang/host
 
 Package: docker-compose
-Version: 1.29.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +docker +python3-light +python3-cached-property +python3-distro +python3-distutils +python3-docopt +python3-docker +python3-dockerpty +python3-dotenv +python3-jsonschema +python3-logging +python3-openssl +python3-pkg-resources +python3-requests +python3-texttable +python3-websocket-client +python3-yaml
+Version: 2.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86072,7 +86073,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: docker-compose-1.29.2.tar.gz
+Source: v2.1.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86081,39 +86082,14 @@ https://github.com/docker/compose
 Javier Marcet <javier@marcet.info>
 @@
 
-Package: docker-compose-src
-Version: 1.29.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Docker Compose (sources)
-Maintainer: Javier Marcet <javier@marcet.info>
-Source: docker-compose-1.29.2.tar.gz
-License: Apache-2.0
-LicenseFiles: LICENSE
-Type: ipkg
-Description:       Multi-container orchestration for Docker
-
-    This package contains the Python source files for docker-compose.
-https://github.com/docker/compose
-Javier Marcet <javier@marcet.info>
-@@
-Config:
-    depends on PACKAGE_docker-compose
-@@
-
 
 Source-Makefile: feeds/packages/utils/dockerd/Makefile
 Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.8-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
+Version: 20.10.10-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +@KERNEL_NAMESPACES +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86123,7 +86099,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.8.tar.gz
+Source: dockerd-20.10.10.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -90581,7 +90557,7 @@ Source-Makefile: feeds/packages/utils/ntfs-3g/Makefile
 
 Package: ntfs-3g
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +PACKAGE_NTFS-3G_USE_LIBFUSE:libfuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -90591,7 +90567,7 @@ Category: Utilities
 Repository: base
 Title: Stable Read/Write NTFS Driver
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -90613,7 +90589,7 @@ Config:
 config PACKAGE_NTFS-3G_USE_LIBFUSE
 	bool "use external FUSE library, selects package libfuse"
 	depends on PACKAGE_ntfs-3g
-	---help---
+	help
 	Ntfs-3g by default uses a minimalized lite version of FUSE.
 	If libfuse is part of your filesystem anyway (because of sshfs, owfs
 	etc.) it makes sense to activate this option and save some kilobytes
@@ -90627,7 +90603,7 @@ config PACKAGE_NTFS-3G_HAS_PROBE
 
 Package: ntfs-3g-low
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g
 Conflicts: 
 Menu-Depends: 
@@ -90637,7 +90613,7 @@ Category: Utilities
 Repository: base
 Title: lowntfs-3g (alternative using the fuse low-level interface)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -90655,7 +90631,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: ntfs-3g-utils
 Submenu: Filesystem
-Version: 2017.3.23-4-fuseint
+Version: 2021.8.22-2-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g +libgcrypt +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -90665,7 +90641,7 @@ Category: Utilities
 Repository: base
 Title: ntfs-3g utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
+Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -96361,7 +96337,7 @@ Source-Makefile: feeds/packages/utils/runc/Makefile
 Build-Depends: golang/host
 
 Package: runc
-Version: 1.0.1-1
+Version: 1.0.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -96371,7 +96347,7 @@ Category: Utilities
 Repository: base
 Title: runc container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: runc-1.0.1.tar.gz
+Source: runc-1.0.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

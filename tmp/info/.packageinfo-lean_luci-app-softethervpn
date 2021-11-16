@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-softethervpn
 Submenu: 3. Applications
-Version: 1.0-3
+Version: 1.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +librt +libreadline +libncurses +libiconv-full +kmod-tun +libopenssl +softethervpn5-bridge +softethervpn5-client +softethervpn5-server
 Conflicts: 
 Menu-Depends: 
@@ -21,7 +21,7 @@ Description: LuCI support for SoftEtherVPN
 
 Package: luci-i18n-softethervpn-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 1.0-3
+Version: 1.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-softethervpn
 Conflicts: 
 Menu-Depends: 
