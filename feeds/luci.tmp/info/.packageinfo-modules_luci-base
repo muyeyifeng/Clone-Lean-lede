@@ -27,10 +27,6 @@ Config:
 
    menu "Translations"
 
-     config LUCI_LANG_uk
-	   tristate "Ukrainian (uk)"
-	   default n 
-
      config LUCI_LANG_hu
 	   tristate "Hungarian (hu)"
 	   default n 
@@ -43,16 +39,16 @@ Config:
 	   tristate "Korean (ko)"
 	   default n 
 
-     config LUCI_LANG_en
-	   tristate "English (en)"
-	   default n 
-
-     config LUCI_LANG_el
-	   tristate "Greek (el)"
-	   default n 
-
      config LUCI_LANG_sk
 	   tristate "Slovak (sk)"
+	   default n 
+
+     config LUCI_LANG_pl
+	   tristate "Polish (pl)"
+	   default n 
+
+     config LUCI_LANG_uk
+	   tristate "Ukrainian (uk)"
 	   default n 
 
      config LUCI_LANG_ja
@@ -67,24 +63,20 @@ Config:
 	   tristate "Hebrew (he)"
 	   default n 
 
-     config LUCI_LANG_no
-	   tristate "Norwegian (no)"
+     config LUCI_LANG_ro
+	   tristate "Romanian (ro)"
 	   default n 
 
      config LUCI_LANG_ms
 	   tristate "Malay (ms)"
 	   default n 
 
-     config LUCI_LANG_pl
-	   tristate "Polish (pl)"
-	   default n 
-
      config LUCI_LANG_zh-cn
 	   tristate "Simplified Chinese (zh-cn)"
 	   default y 
 
-     config LUCI_LANG_ro
-	   tristate "Romanian (ro)"
+     config LUCI_LANG_no
+	   tristate "Norwegian (no)"
 	   default n 
 
      config LUCI_LANG_de
@@ -107,16 +99,24 @@ Config:
 	   tristate "Russian (ru)"
 	   default n 
 
-     config LUCI_LANG_pt-br
-	   tristate "Brazialian Portuguese (pt-br)"
+     config LUCI_LANG_el
+	   tristate "Greek (el)"
 	   default n 
 
      config LUCI_LANG_ca
 	   tristate "Catalan (ca)"
 	   default n 
 
+     config LUCI_LANG_en
+	   tristate "English (en)"
+	   default n 
+
      config LUCI_LANG_es
 	   tristate "Spanish (es)"
+	   default n 
+
+     config LUCI_LANG_pt-br
+	   tristate "Brazialian Portuguese (pt-br)"
 	   default n 
 
      config LUCI_LANG_cs
@@ -131,26 +131,6 @@ Config:
 	   tristate "Italian (it)"
 	   default n
    endmenu
-@@
-
-Package: luci-i18n-base-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-base - uk translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - украї́нська (Ukrainian)
-
 @@
 
 Package: luci-i18n-base-hu
@@ -213,46 +193,6 @@ Description:     Translation for luci-base - 한국어 (Korean)
 
 @@
 
-Package: luci-i18n-base-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-base - en translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - English
-
-@@
-
-Package: luci-i18n-base-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-base - el translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - Ελληνικά (Greek)
-
-@@
-
 Package: luci-i18n-base-sk
 Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
@@ -270,6 +210,46 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Slovenčina (Slovak)
+
+@@
+
+Package: luci-i18n-base-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - pl translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - Polski (Polish)
+
+@@
+
+Package: luci-i18n-base-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - uk translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - украї́нська (Ukrainian)
 
 @@
 
@@ -333,8 +313,8 @@ Description:     Translation for luci-base - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-base-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-base-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -343,13 +323,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-base - no translation
+Title: luci-base - ro translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - Norsk (Norwegian)
+Description:     Translation for luci-base - Română (Romanian)
 
 @@
 
@@ -373,26 +353,6 @@ Description:     Translation for luci-base - Bahasa Melayu (Malay)
 
 @@
 
-Package: luci-i18n-base-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-base - pl translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - Polski (Polish)
-
-@@
-
 Package: luci-i18n-base-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
@@ -413,8 +373,8 @@ Description:     Translation for luci-base - 简体中文 (Simplified Chinese)
 
 @@
 
-Package: luci-i18n-base-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-base-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -423,13 +383,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-base - ro translation
+Title: luci-base - no translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - Română (Romanian)
+Description:     Translation for luci-base - Norsk (Norwegian)
 
 @@
 
@@ -533,8 +493,8 @@ Description:     Translation for luci-base - Русский (Russian)
 
 @@
 
-Package: luci-i18n-base-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
+Package: luci-i18n-base-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -543,13 +503,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-base - pt-br translation
+Title: luci-base - el translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-base - Ελληνικά (Greek)
 
 @@
 
@@ -573,6 +533,26 @@ Description:     Translation for luci-base - Català (Catalan)
 
 @@
 
+Package: luci-i18n-base-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - en translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - English
+
+@@
+
 Package: luci-i18n-base-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -590,6 +570,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Español (Spanish)
+
+@@
+
+Package: luci-i18n-base-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - pt-br translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - Português do Brasil (Brazialian Portuguese)
 
 @@
 
