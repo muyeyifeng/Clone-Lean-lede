@@ -27,7 +27,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2021.3-0
+Version: 2021.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: alfred-2021.3.tar.gz
+Source: alfred-2021.4.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -117,7 +117,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2021.3-0
+Version: 2021.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -128,21 +128,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Default)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.3.tar.gz
+Source: batctl-2021.4.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.3 of the user space utility.
+  version 2021.4 of the user space utility.
   Standard subcommands for configuration and online debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2021.3-0
+Version: 2021.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -153,21 +153,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Minimal)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.3.tar.gz
+Source: batctl-2021.4.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.3 of the user space utility.
+  version 2021.4 of the user space utility.
   Only configuration relevant subcommands are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2021.3-0
+Version: 2021.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -178,14 +178,14 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Full)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.3.tar.gz
+Source: batctl-2021.4.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.3 of the user space utility.
+  version 2021.4 of the user space utility.
   Subcommands for configuration, online and offline debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2021.3-0
+Version: <LINUX_VERSION>+2021.4-0
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +205,7 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2021.3.tar.gz
+Source: batman-adv-2021.4.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -213,7 +213,7 @@ Description:   B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
   a routing protocol for multi-hop ad-hoc mesh networks. The
   networks may be wired or wireless. See
   https://www.open-mesh.org/ for more information and user space
-  tools. This package builds version 2021.3 of the kernel
+  tools. This package builds version 2021.4 of the kernel
   module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -1182,7 +1182,7 @@ Source-Makefile: feeds/routing/mcproxy/Makefile
 
 Package: mcproxy
 Submenu: Routing and Redirection
-Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-2
+Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp @(!GCC_VERSION_4_4&&!GCC_VERSION_4_6)
 Conflicts: 
 Menu-Depends: 
@@ -1206,7 +1206,7 @@ Steven Barth <cyrus@openwrt.org>
 Source-Makefile: feeds/routing/minimalist-pcproxy/Makefile
 
 Package: minimalist-pcproxy
-Version: 2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-1
+Version: 2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -1233,7 +1233,7 @@ Markus Stenberg <fingon@iki.fi>
 Source-Makefile: feeds/routing/mrd6/Makefile
 
 Package: mrd6
-Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-2
+Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -1343,7 +1343,7 @@ Source-Makefile: feeds/routing/ohybridproxy/Makefile
 
 Package: ohybridproxy
 Submenu: IP Addresses and Names
-Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-2
+Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +mdnsd
 Conflicts: 
 Menu-Depends: 
@@ -1365,7 +1365,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: zonestitcher
 Submenu: IP Addresses and Names
-Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-2
+Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
 Conflicts: 
 Menu-Depends: 
@@ -1934,7 +1934,7 @@ Rob White <rob@blue-wave.net>
 Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
-Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-1
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
