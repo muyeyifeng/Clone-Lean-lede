@@ -2,7 +2,7 @@ Build-Depends: wayland/host
 
 Package: libseat
 Submenu: Video
-Version: 0.5.0-0
+Version: 0.6.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,17 +12,17 @@ Category: Libraries
 Repository: base
 Title: libseat
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: seatd-0.5.0.tar.xz
+Source: seatd-0.6.3.tar.xz
 License: MIT
 Type: ipkg
-Description: libseat
+Description:   A universal seat management library.
 https://git.sr.ht/~kennylevinsen/seatd
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: seatd
 Submenu: Video
-Version: 0.5.0-0
+Version: 0.6.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libseat
 Conflicts: 
 Menu-Depends: 
@@ -32,10 +32,10 @@ Category: Libraries
 Repository: base
 Title: seatd
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: seatd-0.5.0.tar.xz
+Source: seatd-0.6.3.tar.xz
 License: MIT
 Type: ipkg
-Description: seatd
+Description:   A minimal seat management daemon.
 https://git.sr.ht/~kennylevinsen/seatd
 Daniel Golle <daniel@makrotopia.org>
 @@

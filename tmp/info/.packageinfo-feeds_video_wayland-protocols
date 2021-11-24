@@ -1,9 +1,10 @@
 Source-Makefile: package/feeds/video/wayland-protocols/Makefile
 Build-Depends: wayland
+Build-Depends/host: wayland/host
 
 Package: wayland-protocols
 Submenu: Frameworks and Toolkits
-Version: 1.21-0
+Version: 1.24-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +14,7 @@ Category: Video
 Repository: video
 Title: wayland-protocols
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: wayland-protocols-1.21.tar.xz
+Source: wayland-protocols-1.24.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg

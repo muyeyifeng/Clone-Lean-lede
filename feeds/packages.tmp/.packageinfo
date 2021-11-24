@@ -71477,7 +71477,7 @@ Source-Makefile: feeds/packages/net/smcroute/Makefile
 
 Package: smcroute
 Submenu: Routing and Redirection
-Version: 2.5.4-1
+Version: 2.5.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -71487,7 +71487,7 @@ Category: Network
 Repository: base
 Title: Static Multicast Routing Daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: smcroute-2.5.4.tar.gz
+Source: smcroute-2.5.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -77700,7 +77700,7 @@ Source-Makefile: feeds/packages/net/zerotier/Makefile
 
 Package: zerotier
 Submenu: VPN
-Version: 1.8.2-0
+Version: 1.8.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp
 Conflicts: 
 Menu-Depends: 
@@ -77710,7 +77710,7 @@ Category: Network
 Repository: base
 Title: Create flat virtual Ethernet networks of almost unlimited size
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: zerotier-1.8.2.tar.gz
+Source: zerotier-1.8.3.tar.gz
 License: BSL 1.1
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -83506,7 +83506,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.4.11-1
+Version: 1.4.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -83516,7 +83516,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.4.11.tar.gz
+Source: containerd-1.4.12.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86039,7 +86039,7 @@ Source-Makefile: feeds/packages/utils/docker/Makefile
 Build-Depends: golang/host
 
 Package: docker
-Version: 20.10.10-0
+Version: 20.10.11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -86049,7 +86049,7 @@ Category: Utilities
 Repository: base
 Title: Docker Community Edition CLI
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: docker-20.10.10.tar.gz
+Source: docker-20.10.11.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86088,7 +86088,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.10-0
+Version: 20.10.11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +@KERNEL_NAMESPACES +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -86099,7 +86099,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.10.tar.gz
+Source: dockerd-20.10.11.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -104176,7 +104176,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.14.2-0
+Version: 4.15.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -104186,7 +104186,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.14.2.tar.gz
+Source: yq-4.15.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

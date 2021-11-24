@@ -1,9 +1,10 @@
 Build-Depends: libffi/host libxml2/host expat/host wayland/host
+Build-Depends/host: libffi/host libxml2/host expat/host wayland/host
 Build-Types: host
 
 Package: libwayland
 Submenu: Frameworks and Toolkits
-Version: 1.19.0-0
+Version: 1.19.92-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libffi
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +14,7 @@ Category: Video
 Repository: base
 Title: wayland
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: wayland-1.19.0.tar.xz
+Source: wayland-1.19.92.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -24,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: wayland-scanner
 Submenu: Frameworks and Toolkits
-Version: 1.19.0-0
+Version: 1.19.92-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +35,7 @@ Category: Video
 Repository: base
 Title: wayland
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: wayland-1.19.0.tar.xz
+Source: wayland-1.19.92.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -43,5 +44,5 @@ https://wayland.freedesktop.org/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
-Makefile:20: /home/runner/work/Clone-Lean-lede/Clone-Lean-lede/Clone-Lean-lede/include/meson.mk: No such file or directory
+Makefile:21: /home/runner/work/Clone-Lean-lede/Clone-Lean-lede/Clone-Lean-lede/include/meson.mk: No such file or directory
 make[1]: *** No rule to make target '/home/runner/work/Clone-Lean-lede/Clone-Lean-lede/Clone-Lean-lede/include/meson.mk'.  Stop.
