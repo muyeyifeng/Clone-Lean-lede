@@ -8,7 +8,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs testing-k
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.161
+Linux-Version: 5.4.162
 Linux-Testing-Version: 5.10.82
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -25,7 +25,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs testing-k
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.161
+Linux-Version: 5.4.162
 Linux-Testing-Version: 5.10.82
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -352,6 +352,20 @@ Target-Profile-SupportedDevices: ruijie,rg-mtfi-m520
 
 Target-Profile-Description:
 Build firmware images for Ruijie RG-MTFi-M520
+
+
+
+@@
+
+Target-Profile: DEVICE_norton_core-518
+Target-Profile-Name: Norton Core 518
+Target-Profile-Packages: ath10k-firmware-qca9984-ct e2fsprogs kmod-fs-ext4 losetup f2fs-tools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: norton,core-518 core-518
+
+
+Target-Profile-Description:
+Build firmware images for Norton Core 518
 
 
 

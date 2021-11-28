@@ -520,7 +520,7 @@ Source-Makefile: feeds/telephony/libs/libsrtp/Makefile
 
 Package: libsrtp2
 Submenu: Telephony
-Version: 2.3.0-1
+Version: 2.4.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -528,16 +528,16 @@ Provides:
 Section: libs
 Category: Libraries
 Repository: base
-Title: Secure RTP (SRTP) library, v2.3.0
+Title: Secure RTP (SRTP) library, v2.4.2
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: libsrtp-2.3.0.tar.gz
+Source: libsrtp-2.4.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Open-source implementation of the Secure Real-time Transport
 Protocol (SRTP) originally authored by Cisco Systems, Inc.
 It is available under a BSD-style license.
-http://sourceforge.net/projects/srtp
+https://github.com/cisco/libsrtp
 Jiri Slachta <jiri@slachta.eu>
 @@
 
@@ -16210,7 +16210,7 @@ Source-Makefile: feeds/telephony/net/rtpproxy/Makefile
 Package: rtpproxy
 Menu: 1
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-2
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -16231,7 +16231,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-mod-acct-csv
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-2
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread rtpproxy
 Conflicts: 
 Menu-Depends: 
@@ -16252,7 +16252,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-mod-acct-rtcp-hep
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-2
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread rtpproxy
 Conflicts: 
 Menu-Depends: 
@@ -16273,7 +16273,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-util-extractaudio
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-2
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread rtpproxy +PACKAGE_rtpproxy-util-extractaudio:bcg729 +PACKAGE_rtpproxy-util-extractaudio:libsndfile +PACKAGE_rtpproxy-util-extractaudio:libsrtp2
 Conflicts: 
 Menu-Depends: 
@@ -16294,7 +16294,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-util-makeann
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-2
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread rtpproxy +PACKAGE_rtpproxy-util-makeann:bcg729
 Conflicts: 
 Menu-Depends: 
@@ -16720,7 +16720,7 @@ Source-Makefile: feeds/telephony/net/sngrep/Makefile
 
 Package: sngrep
 Submenu: Telephony
-Version: 1.4.8-1
+Version: 1.4.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +libpcap +SNGREP_WITH_PCRE:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -16730,7 +16730,7 @@ Category: Utilities
 Repository: base
 Title: Ncurses SIP messages flow viewer
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: sngrep-1.4.8.tar.gz
+Source: sngrep-1.4.10.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg

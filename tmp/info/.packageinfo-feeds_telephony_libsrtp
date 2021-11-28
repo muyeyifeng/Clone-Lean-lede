@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/telephony/libsrtp/Makefile
 
 Package: libsrtp2
 Submenu: Telephony
-Version: 2.3.0-1
+Version: 2.4.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -10,16 +10,16 @@ Provides:
 Section: libs
 Category: Libraries
 Repository: telephony
-Title: Secure RTP (SRTP) library, v2.3.0
+Title: Secure RTP (SRTP) library, v2.4.2
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: libsrtp-2.3.0.tar.gz
+Source: libsrtp-2.4.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Open-source implementation of the Secure Real-time Transport
 Protocol (SRTP) originally authored by Cisco Systems, Inc.
 It is available under a BSD-style license.
-http://sourceforge.net/projects/srtp
+https://github.com/cisco/libsrtp
 Jiri Slachta <jiri@slachta.eu>
 @@
 
