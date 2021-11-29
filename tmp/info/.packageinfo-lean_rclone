@@ -33,20 +33,22 @@ config RCLONE_COMPRESS_UPX
 @@
 
 Package: rclone-config
+Submenu: File Transfer
 Version: 1.57.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rclone
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Section: opt
-Category: Extra packages
+Section: net
+Category: Network
 Repository: base
-Title:  (Config Scripts)
+Title: rsync for cloud storage (Config Scripts)
 Maintainer: Elon Huang <elonhhuang@gmail.com> Tianling Shen <cnsztl@immortalwrt.org>
 Source: rclone-1.57.0.tar.gz
 License: MIT
 Type: ipkg
-Description:  (Config Scripts)
+Description: rsync for cloud storage (Config Scripts)
+https://rclone.org
 Elon Huang <elonhhuang@gmail.com> Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
