@@ -6423,6 +6423,25 @@ Description:   QLogic BCM57710/57711/57711E/57712/57712_MF/57800/57800_MF/57810/
 
 @@
 
+Package: kmod-bnxt-en
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT  +kmod-lib-crc32c +kmod-mdio +kmod-ptp +kmod-lib-zlib-inflate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: BCM 574xx/575xx 10/25/50-Gigabit ethernet adapter driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BNXT CONFIG_BNXT_SRIOV=y CONFIG_BNXT_FLOWER_OFFLOAD=y CONFIG_BNXT_DCB=n CONFIG_BNXT_HWMON=y
+Description:   Broadcom 573xx/574xx/575xx 10/25/40/50-Gigabit ethernet adapter Driver
+
+@@
+
 Package: kmod-be2net
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
