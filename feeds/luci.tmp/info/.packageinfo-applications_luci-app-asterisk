@@ -19,6 +19,25 @@ Description: LuCI Support for Asterisk
 
 @@
 
+Package: luci-i18n-asterisk-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-asterisk - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-asterisk - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-asterisk-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -76,8 +95,8 @@ Description:     Translation for luci-app-asterisk - Română (Romanian)
 
 @@
 
-Package: luci-i18n-asterisk-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-asterisk-en
+Default: LUCI_LANG_en||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
 Conflicts: 
@@ -86,12 +105,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-asterisk - sk translation
+Title: luci-app-asterisk - en translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-asterisk - Slovenčina (Slovak)
+Description:     Translation for luci-app-asterisk - English
 
 @@
 
@@ -114,8 +133,8 @@ Description:     Translation for luci-app-asterisk - Polski (Polish)
 
 @@
 
-Package: luci-i18n-asterisk-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-asterisk-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
 Conflicts: 
@@ -124,12 +143,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-asterisk - uk translation
+Title: luci-app-asterisk - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-asterisk - украї́нська (Ukrainian)
+Description:     Translation for luci-app-asterisk - Slovenčina (Slovak)
 
 @@
 
@@ -171,8 +190,8 @@ Description:     Translation for luci-app-asterisk - Tiếng Việt (Vietnamese)
 
 @@
 
-Package: luci-i18n-asterisk-he
-Default: LUCI_LANG_he||(ALL&&m)
+Package: luci-i18n-asterisk-de
+Default: LUCI_LANG_de||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
 Conflicts: 
@@ -181,12 +200,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-asterisk - he translation
+Title: luci-app-asterisk - de translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-asterisk - עִבְרִית (Hebrew)
+Description:     Translation for luci-app-asterisk - Deutsch (German)
 
 @@
 
@@ -247,8 +266,8 @@ Description:     Translation for luci-app-asterisk - 简体中文 (Simplified Ch
 
 @@
 
-Package: luci-i18n-asterisk-de
-Default: LUCI_LANG_de||(ALL&&m)
+Package: luci-i18n-asterisk-he
+Default: LUCI_LANG_he||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
 Conflicts: 
@@ -257,12 +276,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-asterisk - de translation
+Title: luci-app-asterisk - he translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-asterisk - Deutsch (German)
+Description:     Translation for luci-app-asterisk - עִבְרִית (Hebrew)
 
 @@
 
@@ -377,25 +396,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-asterisk - Català (Catalan)
-
-@@
-
-Package: luci-i18n-asterisk-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-asterisk
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-asterisk - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-asterisk - English
 
 @@
 

@@ -19,6 +19,25 @@ Description: LuCI Support for Transmission
 
 @@
 
+Package: luci-i18n-transmission-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-transmission - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-transmission - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-transmission-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -76,8 +95,8 @@ Description:     Translation for luci-app-transmission - Română (Romanian)
 
 @@
 
-Package: luci-i18n-transmission-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-transmission-en
+Default: LUCI_LANG_en||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
 Conflicts: 
@@ -86,12 +105,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-transmission - sk translation
+Title: luci-app-transmission - en translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - Slovenčina (Slovak)
+Description:     Translation for luci-app-transmission - English
 
 @@
 
@@ -114,8 +133,8 @@ Description:     Translation for luci-app-transmission - Polski (Polish)
 
 @@
 
-Package: luci-i18n-transmission-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-transmission-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
 Conflicts: 
@@ -124,12 +143,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-transmission - uk translation
+Title: luci-app-transmission - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - украї́нська (Ukrainian)
+Description:     Translation for luci-app-transmission - Slovenčina (Slovak)
 
 @@
 
@@ -171,8 +190,8 @@ Description:     Translation for luci-app-transmission - Tiếng Việt (Vietnam
 
 @@
 
-Package: luci-i18n-transmission-he
-Default: LUCI_LANG_he||(ALL&&m)
+Package: luci-i18n-transmission-de
+Default: LUCI_LANG_de||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
 Conflicts: 
@@ -181,12 +200,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-transmission - he translation
+Title: luci-app-transmission - de translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - עִבְרִית (Hebrew)
+Description:     Translation for luci-app-transmission - Deutsch (German)
 
 @@
 
@@ -247,8 +266,8 @@ Description:     Translation for luci-app-transmission - 简体中文 (Simplifie
 
 @@
 
-Package: luci-i18n-transmission-de
-Default: LUCI_LANG_de||(ALL&&m)
+Package: luci-i18n-transmission-he
+Default: LUCI_LANG_he||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
 Conflicts: 
@@ -257,12 +276,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-transmission - de translation
+Title: luci-app-transmission - he translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - Deutsch (German)
+Description:     Translation for luci-app-transmission - עִבְרִית (Hebrew)
 
 @@
 
@@ -377,25 +396,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-transmission - Català (Catalan)
-
-@@
-
-Package: luci-i18n-transmission-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-transmission - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-transmission - English
 
 @@
 

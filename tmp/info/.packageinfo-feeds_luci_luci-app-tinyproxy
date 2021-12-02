@@ -19,6 +19,25 @@ Description: Tinyproxy - HTTP(S)-Proxy configuration
 
 @@
 
+Package: luci-i18n-tinyproxy-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-tinyproxy - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-tinyproxy - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-tinyproxy-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -76,8 +95,8 @@ Description:     Translation for luci-app-tinyproxy - Română (Romanian)
 
 @@
 
-Package: luci-i18n-tinyproxy-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-tinyproxy-en
+Default: LUCI_LANG_en||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
 Conflicts: 
@@ -86,12 +105,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-tinyproxy - sk translation
+Title: luci-app-tinyproxy - en translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyproxy - Slovenčina (Slovak)
+Description:     Translation for luci-app-tinyproxy - English
 
 @@
 
@@ -114,8 +133,8 @@ Description:     Translation for luci-app-tinyproxy - Polski (Polish)
 
 @@
 
-Package: luci-i18n-tinyproxy-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-tinyproxy-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
 Conflicts: 
@@ -124,12 +143,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-tinyproxy - uk translation
+Title: luci-app-tinyproxy - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyproxy - украї́нська (Ukrainian)
+Description:     Translation for luci-app-tinyproxy - Slovenčina (Slovak)
 
 @@
 
@@ -171,8 +190,8 @@ Description:     Translation for luci-app-tinyproxy - Tiếng Việt (Vietnamese
 
 @@
 
-Package: luci-i18n-tinyproxy-he
-Default: LUCI_LANG_he||(ALL&&m)
+Package: luci-i18n-tinyproxy-de
+Default: LUCI_LANG_de||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
 Conflicts: 
@@ -181,12 +200,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-tinyproxy - he translation
+Title: luci-app-tinyproxy - de translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyproxy - עִבְרִית (Hebrew)
+Description:     Translation for luci-app-tinyproxy - Deutsch (German)
 
 @@
 
@@ -247,8 +266,8 @@ Description:     Translation for luci-app-tinyproxy - 简体中文 (Simplified C
 
 @@
 
-Package: luci-i18n-tinyproxy-de
-Default: LUCI_LANG_de||(ALL&&m)
+Package: luci-i18n-tinyproxy-he
+Default: LUCI_LANG_he||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
 Conflicts: 
@@ -257,12 +276,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-tinyproxy - de translation
+Title: luci-app-tinyproxy - he translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyproxy - Deutsch (German)
+Description:     Translation for luci-app-tinyproxy - עִבְרִית (Hebrew)
 
 @@
 
@@ -377,25 +396,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-tinyproxy - Català (Catalan)
-
-@@
-
-Package: luci-i18n-tinyproxy-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tinyproxy
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-tinyproxy - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-tinyproxy - English
 
 @@
 
