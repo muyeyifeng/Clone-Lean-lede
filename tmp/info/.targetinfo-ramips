@@ -2520,6 +2520,20 @@ Build firmware images for JCG Q20
 
 @@
 
+Target-Profile: DEVICE_jcg_q20-ubootmod
+Target-Profile-Name: JCG Q20 U-Boot mod
+Target-Profile-Packages: kmod-mt7915e uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jcg,q20-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for JCG Q20 U-Boot mod
+
+
+
+@@
+
 Target-Profile: DEVICE_jcg_y2
 Target-Profile-Name: JCG Y2
 Target-Profile-Packages: kmod-mt7615d_dbdc kmod-usb3 -luci-newapi -wpad-openssl 

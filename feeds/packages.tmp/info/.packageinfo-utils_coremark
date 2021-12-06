@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/coremark/Makefile
 
 Package: coremark
-Version: 2021-03-12-1541482bf3e6ef7f5c69f5be76b14537b60833d0-3
+Version: 2021-11-17-45faaf84d2b76a413129909605fb4f09e55645e3-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -10,14 +10,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: CoreMark Embedded Microprocessor Benchmark
-Maintainer: Lim Guo Wei <limguowei@gmail.com>
-Source: coremark-2021-03-12.tar.gz
+Maintainer: Lim Guo Wei <limguowei@gmail.com> Aleksander Jan Bajkowski <olek2@wp.pl>
+Source: coremark-2021-11-17.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.md
 Type: ipkg
 Description:   Embedded Microprocessor Benchmark
 https://github.com/eembc/coremark
-Lim Guo Wei <limguowei@gmail.com>
+Lim Guo Wei <limguowei@gmail.com> Aleksander Jan Bajkowski <olek2@wp.pl>
 @@
 Config:
 	config COREMARK_OPTIMIZE_O3
