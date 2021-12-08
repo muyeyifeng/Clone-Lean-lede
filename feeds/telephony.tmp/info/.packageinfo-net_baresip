@@ -3,7 +3,7 @@ Source-Makefile: feeds/telephony/net/baresip/Makefile
 Package: baresip
 Menu: 1
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libre +librem
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: base
 Title: Portable and modular SIP User-Agent with A/V support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
 Require-User: baresip=374:baresip=374
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -23,9 +23,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-aac
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-aac:fdk-aac
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: MPEG-4 AAC Audio Codec
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: MPEG-4 AAC Audio Codec
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-alsa
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +56,7 @@ Category: Network
 Repository: base
 Title: ALSA audio driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -44,9 +65,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-amr
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Adaptive Multi-Rate [AMR] audio codec
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Adaptive Multi-Rate [AMR] audio codec
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-aubridge
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -56,7 +98,7 @@ Category: Network
 Repository: base
 Title: Audio bridge module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -67,7 +109,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-aufile
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -77,7 +119,7 @@ Category: Network
 Repository: base
 Title: Audio module for using a WAV-file as audio input
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -86,9 +128,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-ausine
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Sine Audio Source
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Sine Audio Source
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-avcodec
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-avcodec:libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -98,7 +161,7 @@ Category: Network
 Repository: base
 Title: Video codec using FFmpeg
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -109,7 +172,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-avformat
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip baresip-mod-avcodec
 Conflicts: 
 Menu-Depends: 
@@ -119,7 +182,7 @@ Category: Network
 Repository: base
 Title: Video source using FFmpeg
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -130,7 +193,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-b2bua
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -140,7 +203,7 @@ Category: Network
 Repository: base
 Title: Back-to-Back User-Agent module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -151,7 +214,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-cons
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -161,7 +224,7 @@ Category: Network
 Repository: base
 Title: UDP/TCP console UI driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -170,9 +233,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-ctrl-dbus
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-ctrl-dbus:glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: DBus control interface
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: DBus control interface
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-ctrl-tcp
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -182,7 +266,7 @@ Category: Network
 Repository: base
 Title: TCP control interface
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -193,7 +277,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-debug-cmd
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -203,7 +287,7 @@ Category: Network
 Repository: base
 Title: Debug commands
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -214,7 +298,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-dtls-srtp
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -224,7 +308,7 @@ Category: Network
 Repository: base
 Title: DTLS-SRTP end-to-end encryption
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -233,9 +317,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-ebuacip
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: EBU ACIP [Audio Contribution over IP] Profile
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: EBU ACIP [Audio Contribution over IP] Profile
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-echo
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -245,7 +350,7 @@ Category: Network
 Repository: base
 Title: Echo server module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -256,7 +361,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-evdev
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -266,7 +371,7 @@ Category: Network
 Repository: base
 Title: Linux input driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -277,7 +382,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-fakevideo
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -287,7 +392,7 @@ Category: Network
 Repository: base
 Title: Fake video input/output driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -298,7 +403,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-g711
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -308,7 +413,7 @@ Category: Network
 Repository: base
 Title: G.711 audio codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -319,7 +424,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-g722
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-g722:libspandsp
 Conflicts: 
 Menu-Depends: 
@@ -329,7 +434,7 @@ Category: Network
 Repository: base
 Title: G.722 audio codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -340,7 +445,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-g726
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-g726:libspandsp
 Conflicts: 
 Menu-Depends: 
@@ -350,7 +455,7 @@ Category: Network
 Repository: base
 Title: G.726 audio codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -359,9 +464,51 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-gst
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Gstreamer 1.0 playbin pipeline
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Gstreamer 1.0 playbin pipeline
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-gst-video
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Video codecs using Gstreamer 1.0
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Video codecs using Gstreamer 1.0
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-httpd
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -371,7 +518,7 @@ Category: Network
 Repository: base
 Title: HTTP webserver UI-module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -380,9 +527,114 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-httpreq
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: HTTP request module
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: HTTP request module
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-l16
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: 16-bit linear codec
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: 16-bit linear codec
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-mixausrc
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Mixes another audio source into audio stream
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Mixes another audio source into audio stream
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-mqtt
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-mqtt:libmosquitto
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Message Queue Telemetry Transport [MQTT] client
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Message Queue Telemetry Transport [MQTT] client
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-multicast
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Multicast support
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Multicast support
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-mwi
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -392,7 +644,7 @@ Category: Network
 Repository: base
 Title: Message Waiting Indication
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -403,7 +655,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-natpmp
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -413,7 +665,7 @@ Category: Network
 Repository: base
 Title: NAT Port Mapping Protocol module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -424,7 +676,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-opus
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-opus:libopus
 Conflicts: 
 Menu-Depends: 
@@ -434,7 +686,7 @@ Category: Network
 Repository: base
 Title: OPUS Interactive audio codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -443,9 +695,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-opus-multistream
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-opus-multistream:libopus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Opus Multistream Audio Codec
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Opus Multistream Audio Codec
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-oss
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -455,7 +728,7 @@ Category: Network
 Repository: base
 Title: OSS audio driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -466,7 +739,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-plc
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-plc:libspandsp
 Conflicts: 
 Menu-Depends: 
@@ -476,7 +749,7 @@ Category: Network
 Repository: base
 Title: Packet Loss Concealment
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -487,7 +760,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-portaudio
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-portaudio:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -497,7 +770,7 @@ Category: Network
 Repository: base
 Title: Portaudio audio driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -508,7 +781,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-presence
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -518,7 +791,7 @@ Category: Network
 Repository: base
 Title: Presence module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -529,7 +802,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-pulse
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip PACKAGE_baresip-mod-pulse:pulseaudio
 Conflicts: 
 Menu-Depends: 
@@ -539,7 +812,7 @@ Category: Network
 Repository: base
 Title: Pulseaudio audio driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -550,7 +823,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-rtcpsummary
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -560,7 +833,7 @@ Category: Network
 Repository: base
 Title: RTCP summary module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -571,7 +844,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-selfview
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -581,7 +854,7 @@ Category: Network
 Repository: base
 Title: Video selfview module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -590,9 +863,51 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-serreg
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Serial registration mode
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Serial registration mode
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: baresip-mod-snapshot
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-snapshot:libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Snapshot video module
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Snapshot video module
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-sndfile
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-sndfile:libsndfile
 Conflicts: 
 Menu-Depends: 
@@ -602,7 +917,7 @@ Category: Network
 Repository: base
 Title: Audio dumper using libsndfile
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -611,9 +926,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-speex-pp
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-speex-pp:libspeexdsp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Speex Pre-processor
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Speex Pre-processor
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-srtp
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -623,7 +959,7 @@ Category: Network
 Repository: base
 Title: Secure RTP module using libre
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -634,7 +970,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-stdio
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -644,7 +980,7 @@ Category: Network
 Repository: base
 Title: Standard input/output UI driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -653,9 +989,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-syslog
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Syslog module
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Syslog module
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-uuid
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -665,7 +1022,7 @@ Category: Network
 Repository: base
 Title: UUID generator and loader
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -676,7 +1033,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-v4l2
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-v4l2:libv4l
 Conflicts: 
 Menu-Depends: 
@@ -686,7 +1043,7 @@ Category: Network
 Repository: base
 Title: Video4Linux2 video source
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -697,7 +1054,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-v4l2-codec
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -707,7 +1064,7 @@ Category: Network
 Repository: base
 Title: Video4Linux2 video codec module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -718,7 +1075,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-vidbridge
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -728,7 +1085,7 @@ Category: Network
 Repository: base
 Title: Video bridge module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -737,9 +1094,30 @@ https://github.com/baresip/baresip
 Jiri Slachta <jiri@slachta.eu>
 @@
 
+Package: baresip-mod-vidinfo
+Submenu: Telephony
+Version: 1.1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Video-info filter
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: baresip-1.1.0.tar.gz
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Type: ipkg
+Description: Video-info filter
+https://github.com/baresip/baresip
+Jiri Slachta <jiri@slachta.eu>
+@@
+
 Package: baresip-mod-vidloop
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -749,7 +1127,7 @@ Category: Network
 Repository: base
 Title: Video-loop test module
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -760,7 +1138,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-vumeter
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
 Conflicts: 
 Menu-Depends: 
@@ -770,7 +1148,7 @@ Category: Network
 Repository: base
 Title: Display audio levels in console
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -781,7 +1159,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-vp8
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-vp8:libvpx
 Conflicts: 
 Menu-Depends: 
@@ -791,7 +1169,7 @@ Category: Network
 Repository: base
 Title: VP8 video codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
@@ -802,7 +1180,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: baresip-mod-vp9
 Submenu: Telephony
-Version: 1.0.0-1
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-vp9:libvpx
 Conflicts: 
 Menu-Depends: 
@@ -812,7 +1190,7 @@ Category: Network
 Repository: base
 Title: VP9 video codec
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: baresip-1.0.0.tar.gz
+Source: baresip-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/COPYING
 Type: ipkg
