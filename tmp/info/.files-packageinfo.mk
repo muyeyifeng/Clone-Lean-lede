@@ -1820,6 +1820,7 @@ $(eval $(call PackageDir,feeds_telephony_asterisk-g72x,feeds/telephony/asterisk-
 $(eval $(call PackageDir,feeds_telephony_asterisk-opus,feeds/telephony/asterisk-opus,))
 $(eval $(call PackageDir,feeds_telephony_baresip,feeds/telephony/baresip,))
 $(eval $(call PackageDir,feeds_telephony_bcg729,feeds/telephony/bcg729,))
+$(eval $(call PackageDir,feeds_telephony_coturn,feeds/telephony/coturn,))
 $(eval $(call PackageDir,feeds_telephony_dahdi-linux,feeds/telephony/dahdi-linux,))
 $(eval $(call PackageDir,feeds_telephony_dahdi-tools,feeds/telephony/dahdi-tools,))
 $(eval $(call PackageDir,feeds_telephony_freeswitch,feeds/telephony/freeswitch,))
