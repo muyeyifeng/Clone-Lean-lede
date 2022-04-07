@@ -1,6 +1,5 @@
 Source-Makefile: package/feeds/packages/spice/Makefile
-Build-Depends: spice-protocol !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
-Build-Depends/host: ninja/host
+Build-Depends: spice-protocol !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libspice-server
 Version: 0.15.0-0

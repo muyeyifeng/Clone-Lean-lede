@@ -3,13 +3,13 @@ Source-Makefile: package/feeds/packages/chicken-scheme/Makefile
 Package: chicken-scheme-interpreter
 Version: 5.2.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
+Conflicts: chicken-scheme-full
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: packages
-Title: Chicken Scheme -- interpreter only
+Title: Chicken Scheme interpreter only
 Maintainer: Jeronimo Pellegrini <j_p@aleph0.info>
 Source: chicken-5.2.0.tar.gz
 License: BSD-3-Clause
@@ -34,7 +34,7 @@ Provides:
 Section: lang
 Category: Languages
 Repository: packages
-Title: Chicken Scheme -- full package
+Title: Chicken Scheme full package
 Maintainer: Jeronimo Pellegrini <j_p@aleph0.info>
 Source: chicken-5.2.0.tar.gz
 License: BSD-3-Clause

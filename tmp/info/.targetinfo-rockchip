@@ -8,14 +8,14 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd wpad-openssl kmod-mt76x2u usbutils iwinfo
 Target: rockchip/armv8
 Target-Board: rockchip
 Target-Name: RK33xx boards (64 bit)
@@ -25,15 +25,15 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip RK33xx devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd wpad-openssl kmod-mt76x2u usbutils iwinfo
 Target-Profile: DEVICE_embedfire_doornet1
 Target-Profile-Name: EmbedFire DoorNet1
 Target-Profile-Packages: kmod-usb-net-rtl8152 kmod-rtl8821cu 
@@ -50,13 +50,27 @@ Build firmware images for EmbedFire DoorNet1
 
 Target-Profile: DEVICE_embedfire_doornet2
 Target-Profile-Name: EmbedFire DoorNet2
-Target-Profile-Packages: kmod-r8168 kmod-rtl8821cu -urngd 
+Target-Profile-Packages: kmod-r8169 kmod-rtl8821cu -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: embedfire,doornet2
 
 
 Target-Profile-Description:
 Build firmware images for EmbedFire DoorNet2
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-neo3
+Target-Profile-Name: FriendlyARM NanoPi NEO3
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-neo3
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi NEO3
 
 
 
@@ -92,7 +106,7 @@ Build firmware images for FriendlyARM NanoPi R2S
 
 Target-Profile: DEVICE_friendlyarm_nanopi-r4s
 Target-Profile-Name: FriendlyARM NanoPi R4S
-Target-Profile-Packages: kmod-r8169 -urngd 
+Target-Profile-Packages: kmod-r8168 -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r4s
 
@@ -155,6 +169,20 @@ Target-Profile-SupportedDevices: xunlong,orangepi-r1-plus
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi R1 Plus
+
+
+
+@@
+
+Target-Profile: DEVICE_xunlong_orangepi-r1-plus-lts
+Target-Profile-Name: Xunlong Orange Pi R1 Plus LTS
+Target-Profile-Packages: kmod-usb-net-rtl8152 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xunlong,orangepi-r1-plus-lts
+
+
+Target-Profile-Description:
+Build firmware images for Xunlong Orange Pi R1 Plus LTS
 
 
 

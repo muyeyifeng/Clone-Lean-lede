@@ -8,8 +8,8 @@ Target-Features: dt fpu gpio pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -25,8 +25,8 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk rtc squashfs testing-kernel u
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -121,8 +121,8 @@ Target-Features: boot-part dt ext4 fpu gpio pci pcie ramdisk rootfs-part squashf
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -163,7 +163,7 @@ Target-Features: dt gpio usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=arc700
 CPU-Type: arc700
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -179,7 +179,7 @@ Target-Features: dt ext4 gpio ramdisk usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=arc700
 CPU-Type: arc700
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -204,7 +204,7 @@ Target-Features: display dt gpio usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=archs
 CPU-Type: archs
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -220,7 +220,7 @@ Target-Features: display dt ext4 gpio ramdisk usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=archs
 CPU-Type: archs
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -245,8 +245,8 @@ Target-Features: cpiogz dt ext4 fpu gpio pci ramdisk rtc squashfs targz testing-
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -262,8 +262,8 @@ Target-Features: arm_v7 cpiogz dt ext4 fpu gpio pci ramdisk rtc squashfs targz t
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -279,8 +279,8 @@ Target-Features: cpiogz display dt ext4 fpu gpio pci ramdisk rtc squashfs targz 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -298,7 +298,7 @@ Target-Features: ext4 squashfs targz ubifs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -314,7 +314,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs targz ubifs usb us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a5+vfpv4
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -401,7 +401,7 @@ Target-Features: dt ext4 squashfs targz ubifs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -686,7 +686,7 @@ Target-Features: gpio low_mem pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -792,12 +792,11 @@ Target-Board: ath79
 Target-Name: Atheros ATH79
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -813,14 +812,14 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb usbgadge
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for generic Atheros AR71xx/AR913x/AR934x based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd -ddns-scripts_aliyun -ddns-scripts_dnspod wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_8dev_carambola2
 Target-Profile-Name: 8devices Carambola2
 Target-Profile-Packages: kmod-usb-chipidea2 
@@ -1006,6 +1005,20 @@ Build firmware images for ALFA Network R36A
 
 @@
 
+Target-Profile: DEVICE_alfa-network_tube-2hq
+Target-Profile-Name: ALFA Network Tube-2HQ
+Target-Profile-Packages: rssileds -swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: alfa-network,tube-2hq tube-2hq
+
+
+Target-Profile-Description:
+Build firmware images for ALFA Network Tube-2HQ
+
+
+
+@@
+
 Target-Profile: DEVICE_allnet_all-wap02860ac
 Target-Profile-Name: ALLNET ALL-WAP02860AC
 Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
@@ -1015,6 +1028,48 @@ Target-Profile-SupportedDevices: allnet,all-wap02860ac
 
 Target-Profile-Description:
 Build firmware images for ALLNET ALL-WAP02860AC
+
+
+
+@@
+
+Target-Profile: DEVICE_araknis_an-300-ap-i-n
+Target-Profile-Name: Araknis AN-300-AP-I-N
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: araknis,an-300-ap-i-n
+
+
+Target-Profile-Description:
+Build firmware images for Araknis AN-300-AP-I-N
+
+
+
+@@
+
+Target-Profile: DEVICE_araknis_an-500-ap-i-ac
+Target-Profile-Name: Araknis AN-500-AP-I-AC
+Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: araknis,an-500-ap-i-ac
+
+
+Target-Profile-Description:
+Build firmware images for Araknis AN-500-AP-I-AC
+
+
+
+@@
+
+Target-Profile: DEVICE_araknis_an-700-ap-i-ac
+Target-Profile-Name: Araknis AN-700-AP-I-AC
+Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: araknis,an-700-ap-i-ac
+
+
+Target-Profile-Description:
+Build firmware images for Araknis AN-700-AP-I-AC
 
 
 
@@ -1043,6 +1098,34 @@ Target-Profile-SupportedDevices: aruba,ap-105
 
 Target-Profile-Description:
 Build firmware images for Aruba AP-105
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_rp-ac66
+Target-Profile-Name: ASUS RP-AC66
+Target-Profile-Packages: kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct rssileds -swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,rp-ac66
+
+
+Target-Profile-Description:
+Build firmware images for ASUS RP-AC66
+
+
+
+@@
+
+Target-Profile: DEVICE_atheros_db120
+Target-Profile-Name: Atheros DB120
+Target-Profile-Packages: kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: atheros,db120 db120
+
+
+Target-Profile-Description:
+Build firmware images for Atheros DB120
 
 
 
@@ -1204,7 +1287,7 @@ Build firmware images for Buffalo WZR-HP-AG300H
 
 Target-Profile: DEVICE_buffalo_wzr-hp-g300nh-rb
 Target-Profile-Name: Buffalo WZR-HP-G300NH (RTL8366RB switch)
-Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-gpio-nxp-74hc153 
+Target-Profile-Packages: kmod-gpio-cascade kmod-mux-gpio kmod-usb2 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,wzr-hp-g300nh-rb wzr-hp-g300nh
 
@@ -1218,7 +1301,7 @@ Build firmware images for Buffalo WZR-HP-G300NH (RTL8366RB switch)
 
 Target-Profile: DEVICE_buffalo_wzr-hp-g300nh-s
 Target-Profile-Name: Buffalo WZR-HP-G300NH (RTL8366S switch)
-Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-gpio-nxp-74hc153 
+Target-Profile-Packages: kmod-gpio-cascade kmod-mux-gpio kmod-usb2 kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,wzr-hp-g300nh-s wzr-hp-g300nh
 
@@ -1454,6 +1537,20 @@ Build firmware images for Compex WPJ531 16M
 
 @@
 
+Target-Profile: DEVICE_compex_wpj558-16m
+Target-Profile-Name: Compex WPJ558 16M
+Target-Profile-Packages: kmod-gpio-beeper 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: compex,wpj558-16m wpj558
+
+
+Target-Profile-Description:
+Build firmware images for Compex WPJ558 16M
+
+
+
+@@
+
 Target-Profile: DEVICE_compex_wpj563
 Target-Profile-Name: Compex WPJ563
 Target-Profile-Packages: kmod-usb2 kmod-usb3 
@@ -1651,14 +1748,14 @@ Build firmware images for D-Link DAP-2680 A1
 @@
 
 Target-Profile: DEVICE_dlink_dap-2695-a1
-Target-Profile-Name: D-Link DAP-2965 A1
+Target-Profile-Name: D-Link DAP-2695 A1
 Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dap-2695-a1 dap-2695-a1
 
 
 Target-Profile-Description:
-Build firmware images for D-Link DAP-2965 A1
+Build firmware images for D-Link DAP-2695 A1
 
 
 
@@ -1708,7 +1805,7 @@ Build firmware images for D-Link DCH-G020 A1
 
 Target-Profile: DEVICE_dlink_dir-505
 Target-Profile-Name: D-Link DIR-505
-Target-Profile-Packages: kmod-usb2 
+Target-Profile-Packages: kmod-usb-chipidea2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: dlink,dir-505 dir-505-a1
 
@@ -1841,6 +1938,20 @@ Target-Profile-SupportedDevices: elecom,wrc-300ghbk2-i
 
 Target-Profile-Description:
 Build firmware images for ELECOM WRC-300GHBK2-I
+
+
+
+@@
+
+Target-Profile: DEVICE_embeddedwireless_balin
+Target-Profile-Name: Embedded Wireless Balin
+Target-Profile-Packages: kmod-usb-chipidea2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: embeddedwireless,balin
+
+
+Target-Profile-Description:
+Build firmware images for Embedded Wireless Balin
 
 
 
@@ -2030,7 +2141,7 @@ Build firmware images for eTactica EG200
 
 Target-Profile: DEVICE_glinet_6408
 Target-Profile-Name: GL.iNet 6408
-Target-Profile-Packages: kmod-usb2 
+Target-Profile-Packages: kmod-usb-chipidea2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: glinet,6408 gl-inet
 
@@ -2044,7 +2155,7 @@ Build firmware images for GL.iNet 6408
 
 Target-Profile: DEVICE_glinet_6416
 Target-Profile-Name: GL.iNet 6416
-Target-Profile-Packages: kmod-usb2 
+Target-Profile-Packages: kmod-usb-chipidea2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: glinet,6416 gl-inet
 
@@ -2135,6 +2246,20 @@ Target-Profile-SupportedDevices: glinet,gl-usb150 gl-usb150
 
 Target-Profile-Description:
 Build firmware images for GL.iNET GL-USB150
+
+
+
+@@
+
+Target-Profile: DEVICE_glinet_gl-x300b
+Target-Profile-Name: GL.iNet GL-X300B
+Target-Profile-Packages: kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: glinet,gl-x300b
+
+
+Target-Profile-Description:
+Build firmware images for GL.iNet GL-X300B
 
 
 
@@ -2280,6 +2405,48 @@ Build firmware images for jjPlus JA76PF2
 
 @@
 
+Target-Profile: DEVICE_jjplus_jwap230
+Target-Profile-Name: jjPlus JWAP230
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jjplus,jwap230
+
+
+Target-Profile-Description:
+Build firmware images for jjPlus JWAP230
+
+
+
+@@
+
+Target-Profile: DEVICE_joyit_jt-or750i
+Target-Profile-Name: Joy-IT JT-OR750i
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca9887-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: joyit,jt-or750i
+
+
+Target-Profile-Description:
+Build firmware images for Joy-IT JT-OR750i
+
+
+
+@@
+
+Target-Profile: DEVICE_letv_lba-047-ch
+Target-Profile-Name: Letv LBA-047-CH
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: letv,lba-047-ch
+
+
+Target-Profile-Description:
+Build firmware images for Letv LBA-047-CH
+
+
+
+@@
+
 Target-Profile: DEVICE_librerouter_librerouter-v1
 Target-Profile-Name: Librerouter LibreRouter v1
 Target-Profile-Packages: kmod-usb2 
@@ -2401,6 +2568,20 @@ Target-Profile-SupportedDevices: netgear,ex7300
 
 Target-Profile-Description:
 Build firmware images for NETGEAR EX7300
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex7300-v2
+Target-Profile-Name: NETGEAR EX7300 v2
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca9984-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex7300-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX7300 v2
 
 
 
@@ -2576,6 +2757,20 @@ Build firmware images for Ocedo Ursus
 
 @@
 
+Target-Profile: DEVICE_onion_omega
+Target-Profile-Name: Onion Omega
+Target-Profile-Packages: kmod-usb-chipidea2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: onion,omega onion-omega
+
+
+Target-Profile-Description:
+Build firmware images for Onion Omega
+
+
+
+@@
+
 Target-Profile: DEVICE_openmesh_a40
 Target-Profile-Name: OpenMesh A40
 Target-Profile-Packages: uboot-envtools kmod-ath10k-ct ath10k-firmware-qca988x-ct kmod-usb2 
@@ -2683,6 +2878,20 @@ Target-Profile-SupportedDevices: openmesh,mr1750-v2 mr1750v2
 
 Target-Profile-Description:
 Build firmware images for OpenMesh MR1750 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_openmesh_om2p-v1
+Target-Profile-Name: OpenMesh OM2P v1
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: openmesh,om2p-v1 om2p
+
+
+Target-Profile-Description:
+Build firmware images for OpenMesh OM2P v1
 
 
 
@@ -2800,15 +3009,43 @@ Build firmware images for OpenMesh OM5P
 
 @@
 
+Target-Profile: DEVICE_openmesh_om5p-ac-v1
+Target-Profile-Name: OpenMesh OM5P-AC v1
+Target-Profile-Packages: uboot-envtools kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: openmesh,om5p-ac-v1 om5p-ac
+
+
+Target-Profile-Description:
+Build firmware images for OpenMesh OM5P-AC v1
+
+
+
+@@
+
 Target-Profile: DEVICE_openmesh_om5p-ac-v2
 Target-Profile-Name: OpenMesh OM5P-AC v2
-Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct om-watchdog 
+Target-Profile-Packages: uboot-envtools kmod-ath10k-ct ath10k-firmware-qca988x-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: openmesh,om5p-ac-v2 om5p-acv2
 
 
 Target-Profile-Description:
 Build firmware images for OpenMesh OM5P-AC v2
+
+
+
+@@
+
+Target-Profile: DEVICE_openmesh_om5p-an
+Target-Profile-Name: OpenMesh OM5P-AN
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: openmesh,om5p-an om5p-an
+
+
+Target-Profile-Description:
+Build firmware images for OpenMesh OM5P-AN
 
 
 
@@ -2907,20 +3144,6 @@ Target-Profile-SupportedDevices: pisen,wmm003n
 
 Target-Profile-Description:
 Build firmware images for PISEN Cloud Easy Power (WMM003N)
-
-
-
-@@
-
-Target-Profile: DEVICE_pisen_wpr003n
-Target-Profile-Name: PISEN WPR003N
-Target-Profile-Packages: kmod-usb-core kmod-usb2 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: pisen,wpr003n
-
-
-Target-Profile-Description:
-Build firmware images for PISEN WPR003N
 
 
 
@@ -3334,6 +3557,20 @@ Build firmware images for Wallys DR531
 
 @@
 
+Target-Profile: DEVICE_wd_mynet-n600
+Target-Profile-Name: Western Digital My Net N600
+Target-Profile-Packages: kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: wd,mynet-n600 mynet-n600
+
+
+Target-Profile-Description:
+Build firmware images for Western Digital My Net N600
+
+
+
+@@
+
 Target-Profile: DEVICE_wd_mynet-n750
 Target-Profile-Name: Western Digital My Net N750
 Target-Profile-Packages: kmod-usb2 
@@ -3497,6 +3734,20 @@ Target-Profile-SupportedDevices: tplink,archer-a7-v5
 
 Target-Profile-Description:
 Build firmware images for TP-Link Archer A7 v5
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_archer-a9-v6
+Target-Profile-Name: TP-Link Archer A9 v6
+Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca9984-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,archer-a9-v6
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link Archer A9 v6
 
 
 
@@ -3910,6 +4161,20 @@ Build firmware images for TP-Link CPE610 v2
 
 @@
 
+Target-Profile: DEVICE_tplink_cpe710-v1
+Target-Profile-Name: TP-Link CPE710 v1
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca9888-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,cpe710-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link CPE710 v1
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_eap225-outdoor-v1
 Target-Profile-Name: TP-Link EAP225-Outdoor v1
 Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca9888-ct 
@@ -3919,6 +4184,20 @@ Target-Profile-SupportedDevices: tplink,eap225-outdoor-v1
 
 Target-Profile-Description:
 Build firmware images for TP-Link EAP225-Outdoor v1
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_eap225-v1
+Target-Profile-Name: TP-Link EAP225 v1
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,eap225-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EAP225 v1
 
 
 
@@ -4078,6 +4357,20 @@ Build firmware images for TP-Link TL-MR6400 v1
 
 @@
 
+Target-Profile: DEVICE_tplink_tl-wa1201-v2
+Target-Profile-Name: TP-Link TL-WA1201 v2
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca9888-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-wa1201-v2
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-WA1201 v2
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_tl-wdr3500-v1
 Target-Profile-Name: TP-Link TL-WDR3500 v1
 Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport 
@@ -4171,34 +4464,6 @@ Target-Profile-SupportedDevices: tplink,tl-wdr7500-v3 archer-c7
 
 Target-Profile-Description:
 Build firmware images for TP-Link TL-WDR7500 v3
-
-
-
-@@
-
-Target-Profile: DEVICE_tplink_tl-wdr7500-v3-16MB
-Target-Profile-Name: TP-Link TL-WDR7500 v3(16MB)
-Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: tplink,tl-wdr7500-v3-16MB archer-c7
-
-
-Target-Profile-Description:
-Build firmware images for TP-Link TL-WDR7500 v3(16MB)
-
-
-
-@@
-
-Target-Profile: DEVICE_tplink_tl-wdr6500-v2
-Target-Profile-Name: TP-Link TL-WDR6500 v2
-Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: tplink,tl-wdr6500-v2 tl-wdr6500-v2
-
-
-Target-Profile-Description:
-Build firmware images for TP-Link TL-WDR6500 v2
 
 
 
@@ -4409,6 +4674,20 @@ Target-Profile-SupportedDevices: tplink,tl-wr810n-v2 tl-wr810n-v2
 
 Target-Profile-Description:
 Build firmware images for TP-Link TL-WR810N v2
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-wr841hp-v2
+Target-Profile-Name: TP-Link TL-WR841HP v2
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-wr841hp-v2
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-WR841HP v2
 
 
 
@@ -4736,6 +5015,20 @@ Build firmware images for Ubiquiti NanoBeam AC Gen2
 
 @@
 
+Target-Profile: DEVICE_ubnt_nanobeam-ac-xc
+Target-Profile-Name: Ubiquiti NanoBeam AC Gen1 (XC)
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,nanobeam-ac-xc
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti NanoBeam AC Gen1 (XC)
+
+
+
+@@
+
 Target-Profile: DEVICE_ubnt_nanobridge-m
 Target-Profile-Name: Ubiquiti NanoBridge M XM
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
@@ -4876,15 +5169,29 @@ Build firmware images for Ubiquiti PowerBeam 5AC Gen2
 
 @@
 
-Target-Profile: DEVICE_ubnt_powerbeam-m-xw
-Target-Profile-Name: Ubiquiti PowerBeam M XW
+Target-Profile: DEVICE_ubnt_powerbeam-m2-xw
+Target-Profile-Name: Ubiquiti PowerBeam M2 XW
 Target-Profile-Packages: kmod-usb2 rssileds 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: ubnt,powerbeam-m-xw loco-m-xw
+Target-Profile-SupportedDevices: ubnt,powerbeam-m2-xw loco-m-xw
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti PowerBeam M XW
+Build firmware images for Ubiquiti PowerBeam M2 XW
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_powerbeam-m5-xw
+Target-Profile-Name: Ubiquiti PowerBeam M5 XW
+Target-Profile-Packages: kmod-usb2 rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,powerbeam-m5-xw loco-m-xw
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti PowerBeam M5 XW
 
 
 
@@ -4961,14 +5268,14 @@ Build firmware images for Ubiquiti RouterStation Pro
 @@
 
 Target-Profile: DEVICE_ubnt_unifi
-Target-Profile-Name: Ubiquiti UniFi
+Target-Profile-Name: Ubiquiti UniFi AP
 Target-Profile-Packages: kmod-usb2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi unifi
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi
+Build firmware images for Ubiquiti UniFi AP
 
 
 
@@ -5077,19 +5384,18 @@ Target-Board: ath79
 Target-Name: MikroTik devices
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for MikroTik devices based on Qualcomm Atheros
 	MIPS SoCs (AR71xx, AR72xx, AR91xx, AR93xx, QCA95xx).
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_mikrotik_routerboard-493g
 Target-Profile-Name: MikroTik RouterBOARD 493G
 Target-Profile-Packages: nand-utils kmod-usb-ohci kmod-usb2 
@@ -5120,7 +5426,7 @@ Build firmware images for MikroTik RouterBOARD 912UAG-2HPnD
 
 Target-Profile: DEVICE_mikrotik_routerboard-921gs-5hpacd-15s
 Target-Profile-Name: MikroTik RouterBOARD 921GS-5HPacD-15s (mANTBox 15s)
-Target-Profile-Packages: nand-utils kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-Packages: nand-utils kmod-ath10k-ct ath10k-firmware-qca988x-ct kmod-i2c-gpio kmod-sfp 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mikrotik,routerboard-921gs-5hpacd-15s rb-921gs-5hpacd-r2
 
@@ -5160,6 +5466,34 @@ Build firmware images for MikroTik RouterBOARD LHG 2nD (LHG 2)
 
 @@
 
+Target-Profile: DEVICE_mikrotik_routerboard-lhg-5nd
+Target-Profile-Name: MikroTik RouterBOARD LHG 5nD (LHG 5)
+Target-Profile-Packages:  rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mikrotik,routerboard-lhg-5nd
+
+
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD LHG 5nD (LHG 5)
+
+
+
+@@
+
+Target-Profile: DEVICE_mikrotik_routerboard-mapl-2nd
+Target-Profile-Name: MikroTik RouterBOARD mAPL-2nD (mAP lite)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mikrotik,routerboard-mapl-2nd
+
+
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD mAPL-2nD (mAP lite)
+
+
+
+@@
+
 Target-Profile: DEVICE_mikrotik_routerboard-sxt-5nd-r2
 Target-Profile-Name: MikroTik RouterBOARD SXT 5nD r2 (SXT Lite5)
 Target-Profile-Packages: nand-utils rssileds kmod-gpio-beeper 
@@ -5190,7 +5524,7 @@ Build firmware images for MikroTik RouterBOARD wAP G-5HacT2HnD (wAP AC)
 
 Target-Profile: DEVICE_mikrotik_routerboard-wapr-2nd
 Target-Profile-Name: MikroTik RouterBOARD wAPR-2nD (wAP R)
-Target-Profile-Packages:  rssileds 
+Target-Profile-Packages:  kmod-usb2 rssileds 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mikrotik,routerboard-wapr-2nd
 
@@ -5207,19 +5541,18 @@ Target-Board: ath79
 Target-Name: Generic devices with NAND flash
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Firmware for boards using Qualcomm Atheros, MIPS-based SoCs
 	in the ar72xx and subsequent series, with support for NAND flash
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-openssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd wpad-basic-wolfssl dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-gpio-button-hotplug swconfig kmod-ath9k uboot-envtools iwinfo
 Target-Profile: DEVICE_8dev_rambutan
 Target-Profile-Name: 8devices Rambutan
 Target-Profile-Packages: kmod-usb2 
@@ -5276,16 +5609,62 @@ Build firmware images for DomyWifi DW33D
 
 @@
 
-Target-Profile: DEVICE_domywifi_dw33d-nor
-Target-Profile-Name: DomyWifi DW33D NOR
-Target-Profile-Packages: kmod-usb2 kmod-usb-storage kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile: DEVICE_dongwon_dw02-412h-64m
+Target-Profile-Name: KT GiGA WiFi home (64M) (Dongwon T&I DW02-412H (64M))
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: domywifi,dw33d-nor
+Target-Profile-SupportedDevices: dongwon,dw02-412h-64m
 
 
 Target-Profile-Description:
-Build firmware images for DomyWifi DW33D NOR
+Build firmware images for Dongwon T&I DW02-412H (64M)
+Alternative device titles:
+- KT GiGA WiFi home (64M)
 
+
+@@
+
+Target-Profile: DEVICE_dongwon_dw02-412h-64m
+Target-Profile-Name: Dongwon T&I DW02-412H (64M)
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dongwon,dw02-412h-64m
+
+
+Target-Profile-Description:
+Build firmware images for Dongwon T&I DW02-412H (64M)
+Alternative device titles:
+- KT GiGA WiFi home (64M)
+
+
+@@
+
+Target-Profile: DEVICE_dongwon_dw02-412h-128m
+Target-Profile-Name: KT GiGA WiFi home (128M) (Dongwon T&I DW02-412H (128M))
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dongwon,dw02-412h-128m
+
+
+Target-Profile-Description:
+Build firmware images for Dongwon T&I DW02-412H (128M)
+Alternative device titles:
+- KT GiGA WiFi home (128M)
+
+
+@@
+
+Target-Profile: DEVICE_dongwon_dw02-412h-128m
+Target-Profile-Name: Dongwon T&I DW02-412H (128M)
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dongwon,dw02-412h-128m
+
+
+Target-Profile-Description:
+Build firmware images for Dongwon T&I DW02-412H (128M)
+Alternative device titles:
+- KT GiGA WiFi home (128M)
 
 
 @@
@@ -5355,6 +5734,34 @@ Target-Profile-SupportedDevices: glinet,gl-e750 gl-e750
 
 Target-Profile-Description:
 Build firmware images for GL.iNet GL-E750
+
+
+
+@@
+
+Target-Profile: DEVICE_glinet_gl-xe300
+Target-Profile-Name: GL.iNet GL-XE300
+Target-Profile-Packages: kmod-usb2 block-mount kmod-usb-serial-ch341 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: glinet,gl-xe300
+
+
+Target-Profile-Description:
+Build firmware images for GL.iNet GL-XE300
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_r6100
+Target-Profile-Name: NETGEAR R6100
+Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,r6100
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR R6100
 
 
 
@@ -5444,15 +5851,71 @@ Build firmware images for NETGEAR WNDR4500 v3
 
 @@
 
+Target-Profile: DEVICE_zte_mf286
+Target-Profile-Name: ZTE MF286
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca988x-ct kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf286
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF286
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf286a
+Target-Profile-Name: ZTE MF286A
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca9888-ct kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf286a
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF286A
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf286r
+Target-Profile-Name: ZTE MF286R
+Target-Profile-Packages: kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca9888-ct kmod-usb-net-rndis kmod-usb-acm 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf286r
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF286R
+
+
+
+@@
+
 Target-Profile: DEVICE_zyxel_nbg6716
 Target-Profile-Name: ZyXEL NBG6716
 Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,nbg6716
 
-Target-Profile-Default: n
+
 Target-Profile-Description:
 Build firmware images for ZyXEL NBG6716
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_emg2926_q10a
+Target-Profile-Name: ZyXEL EMG2926-Q10A
+Target-Profile-Packages: kmod-usb2 kmod-usb-ledtrig-usbport kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,emg2926,q10a
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL EMG2926-Q10A
 
 
 
@@ -5463,12 +5926,11 @@ Target-Board: ath79
 Target-Name: Devices with small flash
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: dt gpio mips16 pci ramdisk small_flash squashfs testing-kernel usb usbgadget
+Target-Features: dt gpio mips16 pci ramdisk small_flash squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -5547,7 +6009,7 @@ Build firmware images for EnGenius ENH202 v1
 
 Target-Profile: DEVICE_pqi_air-pen
 Target-Profile-Name: PQI Air-Pen
-Target-Profile-Packages: kmod-usb2 
+Target-Profile-Packages: kmod-usb-chipidea2 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pqi,air-pen pqi-air-pen
 
@@ -6288,8 +6750,8 @@ Target-Features: audio boot-part display ext4 fpu gpio rootfs-part squashfs test
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -6306,8 +6768,8 @@ Target-Features: audio boot-part display dt ext4 fpu gpio rootfs-part squashfs t
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm1176jzf-s+vfp
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -6338,8 +6800,8 @@ Target-Features: arm_v7 audio boot-part display dt ext4 fpu gpio pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -6401,8 +6863,8 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci rootfs-part squash
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -6449,8 +6911,8 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part s
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -6483,8 +6945,8 @@ Target-Features: gpio pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6500,8 +6962,8 @@ Target-Features: gpio pci pcmcia squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6754,8 +7216,8 @@ Target-Features: gpio mips16 pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -7573,8 +8035,8 @@ Target-Features: gpio low_mem pci pcmcia small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -8090,8 +8552,8 @@ Target-Features: dt gpio nand pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -8107,8 +8569,8 @@ Target-Features: dt gpio nand pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -8168,8 +8630,8 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -8194,8 +8656,8 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -8586,8 +9048,8 @@ Target-Features: atm dt gpio pci pcie pcmcia squashfs testing-kernel usb usbgadg
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -8613,8 +9075,8 @@ Target-Features: atm dt gpio pci pcie pcmcia squashfs testing-kernel usb usbgadg
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -10140,8 +10602,8 @@ Target-Features: atm dt gpio nand pci pcie pcmcia squashfs testing-kernel usb us
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -11778,7 +12240,7 @@ Target-Features: dt gpio pci pcie source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -11803,7 +12265,7 @@ Target-Features: dt gpio pci pcie source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -11883,7 +12345,7 @@ Target-Features: dt gpio nand pci pcie source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -11937,7 +12399,7 @@ Target-Features: boot-part display dt ext4 gpio pci rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: fa526
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -12015,18 +12477,17 @@ Build firmware images for StorLink SL93512r
 @@
 
 
-Source-Makefile: target/linux/imx6/Makefile
-Target: imx6
-Target-Board: imx6
-Target-Name: NXP i.MX 6
+Source-Makefile: target/linux/imx/Makefile
+Target: imx
+Target-Board: imx
+Target-Name: NXP i.MX
 Target-Arch: arm
-Target-Arch-Packages: arm_cortex-a9_neon
-Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pci pcie rootfs-part rtc squashfs targz testing-kernel ubifs usb usbgadget
+Target-Arch-Packages: arm_xscale
+Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pcie rootfs-part rtc squashfs targz ubifs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
-CPU-Type: cortex-a9+neon
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+CPU-Type: xscale
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -12038,7 +12499,55 @@ Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
 Target-Profile-Packages:  
 Target-Profile-Description:
- Package set compatible with most NXP i.MX 6 based boards.
+ Package set compatible with most NXP i.MX based boards.
+@@
+
+Target: imx/cortexa7
+Target-Board: imx
+Target-Name: NXP i.MX with Cortex-A7
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
+Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pcie rootfs-part rtc squashfs targz ubifs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a7+neon-vfpv4
+Linux-Version: 5.10.109
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware images for NXP i.MX (Cortex-A7) based boards.
+@@
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs blkid 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+ Package set compatible with most NXP i.MX based boards.
+@@
+
+Target: imx/cortexa9
+Target-Board: imx
+Target-Name: NXP i.MX with Cortex-A9
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a9_neon
+Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pci pcie rootfs-part rtc squashfs targz ubifs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a9+neon
+Linux-Version: 5.10.109
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware images for NXP i.MX (Cortex-A9) based boards.
+@@
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools mkf2fs e2fsprogs blkid 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+ Package set compatible with most NXP i.MX based boards.
 @@
 
 Target-Profile: DEVICE_gateworks_ventana
@@ -12122,7 +12631,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -12848,7 +13357,7 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virt
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a53+crypto
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -12857,34 +13366,20 @@ Target-Description:
 Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug  
 Target: ipq60xx/generic
 Target-Board: ipq60xx
-Target-Name: Generic
+Target-Name: Qualcomm Atheros IPQ60xx
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53+crypto
 Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a53+crypto
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
 Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug  
-Target-Profile: DEVICE_glinet_gl-ax1800
-Target-Profile-Name: GL.iNet GL-AX1800
-Target-Profile-Packages:  
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: glinet,gl-ax1800
-
-
-Target-Profile-Description:
-Build firmware images for GL.iNet GL-AX1800
-
-
-
-@@
-
 
 Source-Makefile: target/linux/ipq806x/Makefile
 Target: ipq806x
@@ -12892,35 +13387,35 @@ Target-Board: ipq806x
 Target-Name: Qualcomm Atheros IPQ806X
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a15_neon-vfpv4
-Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs testing-kernel usb
+Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic UnblockNeteaseMusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe kmod-qca-mcs autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target: ipq806x/generic
 Target-Board: ipq806x
 Target-Name: Generic
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a15_neon-vfpv4
-Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs testing-kernel usb
+Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic UnblockNeteaseMusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-leds-gpio kmod-gpio-button-hotplug swconfig kmod-ata-ahci kmod-ata-ahci-platform kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport kmod-phy-qcom-ipq806x-usb kmod-usb3 kmod-usb-dwc3-qcom kmod-ath10k-ct wpad-openssl uboot-envtools kmod-shortcut-fe kmod-qca-nss-drv kmod-qca-nss-ecm-standard kmod-qca-nss-gmac kmod-qca-nss-drv-pppoe kmod-qca-mcs autocore-arm htop automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target-Profile: DEVICE_arris_rac2v1a
 Target-Profile-Name: Arris TR4400-AC (Arris RAC2V1A)
 Target-Profile-Packages: ath10k-firmware-qca9984-ct ath10k-firmware-qca99x0-ct 
@@ -13259,6 +13754,20 @@ Build firmware images for Norton Core 518
 
 @@
 
+Target-Profile: DEVICE_surf_g-nat200
+Target-Profile-Name: SURF G-NAT200
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: surf,g-nat200
+
+
+Target-Profile-Description:
+Build firmware images for SURF G-NAT200
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_ad7200
 Target-Profile-Name: TP-Link Talon AD7200 v1/v2 (TP-Link AD7200 v1/v2)
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct kmod-wil6210 
@@ -13356,13 +13865,13 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 zram-swap autocore-arm htop luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target: ipq807x/generic
 Target-Board: ipq807x
 Target-Name: Generic
@@ -13372,64 +13881,22 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 zram-swap autocore-arm htop luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
-Target-Profile: DEVICE_netgear_sxr80
-Target-Profile-Name: Netgear SXR80
-Target-Profile-Packages: ipq-wifi-netgear_sxr80 uboot-envtools 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
+Target-Profile: DEVICE_qnap_301w
+Target-Profile-Name: QNAP 301w
+Target-Profile-Packages: ipq-wifi-qnap_301w e2fsprogs kmod-fs-ext4 losetup 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: netgear,sxr80
+Target-Profile-SupportedDevices: qnap,301w
 
 
 Target-Profile-Description:
-Build firmware images for Netgear SXR80
-
-
-
-@@
-
-Target-Profile: DEVICE_redmi_ax6
-Target-Profile-Name: Redmi AX6
-Target-Profile-Packages: ipq-wifi-redmi_ax6 uboot-envtools 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: redmi,ax6
-
-
-Target-Profile-Description:
-Build firmware images for Redmi AX6
-
-
-
-@@
-
-Target-Profile: DEVICE_xiaomi_ax3600
-Target-Profile-Name: Xiaomi AX3600
-Target-Profile-Packages: ipq-wifi-xiaomi_ax3600 kmod-ath10k-ct ath10k-firmware-qca9887-ct uboot-envtools 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,ax3600
-
-
-Target-Profile-Description:
-Build firmware images for Xiaomi AX3600
-
-
-
-@@
-
-Target-Profile: DEVICE_xiaomi_ax9000
-Target-Profile-Name: Xiaomi AX9000
-Target-Profile-Packages: ipq-wifi-xiaomi_ax9000 kmod-ath10k-ct ath10k-firmware-qca9887-ct uboot-envtools 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: xiaomi,ax9000
-
-
-Target-Profile-Description:
-Build firmware images for Xiaomi AX9000
+Build firmware images for QNAP 301w
 
 
 
@@ -13449,6 +13916,20 @@ Build firmware images for ZTE MF269
 
 @@
 
+Target-Profile: DEVICE_tplink_xtr10890
+Target-Profile-Name: TPLINK XTR10890
+Target-Profile-Packages: ipq-wifi-tplink_xtr10890 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,xtr10890
+
+
+Target-Profile-Description:
+Build firmware images for TPLINK XTR10890
+
+
+
+@@
+
 
 Source-Makefile: target/linux/kirkwood/Makefile
 Target: kirkwood
@@ -13460,8 +13941,8 @@ Target-Features: dt gpio nand pci ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -13731,8 +14212,8 @@ Target-Features: dt gpio mips16 squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -13748,8 +14229,8 @@ Target-Features: atm dt gpio mips16 nand pci pcie ramdisk squashfs testing-kerne
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -14248,8 +14729,8 @@ Target-Features: atm dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -14786,8 +15267,8 @@ Target-Features: atm dt gpio mips16 pci ramdisk small_flash squashfs testing-ker
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -14944,8 +15425,8 @@ Target-Features: dt gpio mips16 nand source-only squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15137,8 +15618,8 @@ Target-Features: atm dt gpio mips16 small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15192,7 +15673,7 @@ Target-Features: boot-part ext4 fpu gpio nand pcie rootfs-part squashfs ubifs us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -15208,7 +15689,7 @@ Target-Features: boot-part display dt ext4 fpu gpio nand pci pcie rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -15434,7 +15915,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15494,8 +15975,8 @@ Target-Features: cpiogz dt ext4 pci ramdisk rtc squashfs targz testing-kernel us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -15511,8 +15992,8 @@ Target-Features: cpiogz dt ext4 mips16 pci ramdisk rtc source-only squashfs targ
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15529,8 +16010,8 @@ Target-Features: cpiogz dt ext4 mips16 pci ramdisk rtc squashfs targz testing-ke
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15547,8 +16028,8 @@ Target-Features: cpiogz dt ext4 pci ramdisk rtc source-only squashfs targz testi
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips64r2 -mtune=mips64r2 -mabi=64
 CPU-Type: mips64r2
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15565,8 +16046,8 @@ Target-Features: cpiogz dt ext4 pci ramdisk rtc source-only squashfs targz testi
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips64r2 -mtune=mips64r2 -mabi=64
 CPU-Type: mips64r2
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15581,11 +16062,12 @@ Target-Board: mediatek
 Target-Name: MediaTek Ralink ARM
 Target-Arch: arm
 Target-Arch-Packages: arm_xscale
-Target-Features: dt-overlay emmc fpu gpio nand pci pcie separate_ramdisk squashfs usb
+Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15597,11 +16079,12 @@ Target-Board: mediatek
 Target-Name: MT7622
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rtc separate_ramdisk squashfs usb
+Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -15738,6 +16221,20 @@ Build firmware images for MediaTek MTK7622 rfb1 AP (UBI)
 
 @@
 
+Target-Profile: DEVICE_ruijie_rg-ew3200gx-pro
+Target-Profile-Name: Ruijie RG-EW3200GX PRO
+Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ruijie,rg-ew3200gx-pro
+
+
+Target-Profile-Description:
+Build firmware images for Ruijie RG-EW3200GX PRO
+
+
+
+@@
+
 Target-Profile: DEVICE_totolink_a8000ru
 Target-Profile-Name: TOTOLINK A8000RU
 Target-Profile-Packages: swconfig 
@@ -15815,11 +16312,12 @@ Target-Board: mediatek
 Target-Name: MT7623
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
-Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rtc separate_ramdisk squashfs usb usbgadget
+Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs testing-kernel usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15840,15 +16338,15 @@ Build firmware images for Bananapi BPi-R2
 
 @@
 
-Target-Profile: DEVICE_unielec_u7623-emmc
-Target-Profile-Name: UniElec U7623 eMMC
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile: DEVICE_unielec_u7623-02
+Target-Profile-Name: UniElec U7623-02
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
+Target-Profile-SupportedDevices: unielec,u7623-02 unielec,u7623-02-emmc-512m
 
 
 Target-Profile-Description:
-Build firmware images for UniElec U7623 eMMC
+Build firmware images for UniElec U7623-02
 
 
 
@@ -15856,7 +16354,7 @@ Build firmware images for UniElec U7623 eMMC
 
 Target-Profile: DEVICE_unielec_u7623-02-emmc-512m-legacy
 Target-Profile-Name: UniElec U7623-02 eMMC/512MiB RAM (legacy image)
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci partx-utils 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 
@@ -15873,11 +16371,12 @@ Target-Board: mediatek
 Target-Name: MT7629
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7
-Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15909,8 +16408,8 @@ Target-Features: dt gpio pci pcie ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8540
 CPU-Type: 8540
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -15926,8 +16425,8 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8540
 CPU-Type: 8540
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -15979,8 +16478,8 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8540
 CPU-Type: 8540
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -16046,8 +16545,8 @@ Target-Features: dt gpio pci pcie ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8540
 CPU-Type: 8540
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -16087,8 +16586,8 @@ Target-Features: arm_v7 boot-part dt fpu gpio nand pci pcie ramdisk rootfs-part 
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.10.84
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -16104,8 +16603,8 @@ Target-Features: arm_v7 boot-part dt fpu gpio nand pci pcie ramdisk rootfs-part 
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.10.84
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -16498,8 +16997,8 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie ramdisk rootfs-
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.84
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -16691,8 +17190,8 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie ramdisk rootfs-
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
-Linux-Version: 5.10.84
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.10.109
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -16798,8 +17297,8 @@ Target-Features: dt ext4 gpio rtc testing-kernel usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -16838,8 +17337,8 @@ Target-Features: dt gpio pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -march=octeon+ -mabi=64
 CPU-Type: octeonplus
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -16949,7 +17448,7 @@ Target-Features: dt fpu gpio pci pcie rtc targz usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -16967,7 +17466,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rtc squashfs targz u
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17049,8 +17548,8 @@ Target-Features: dt gpio ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17066,8 +17565,8 @@ Target-Features: dt gpio ramdisk rtc source-only squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17105,8 +17604,8 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs testing-kernel ubifs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: mpcore
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17202,7 +17701,7 @@ Target-Features: dt fpu gpio mips16 nand squashfs targz usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc+24kf
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -17258,8 +17757,8 @@ Target-Features: gpio squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -17275,8 +17774,8 @@ Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -18874,8 +19373,8 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kern
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -19588,6 +20087,20 @@ Build firmware images for GnuBee Personal Cloud Two
 
 @@
 
+Target-Profile: DEVICE_hilink_hlk-7621a
+Target-Profile-Name: HiLink HLK-7621A
+Target-Profile-Packages: kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hilink,hlk-7621a
+
+
+Target-Profile-Description:
+Build firmware images for HiLink HLK-7621A
+
+
+
+@@
+
 Target-Profile: DEVICE_hiwifi_hc5962
 Target-Profile-Name: HiWiFi HC5962
 Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 
@@ -20202,6 +20715,20 @@ Target-Profile-SupportedDevices: netis,wf2881
 
 Target-Profile-Description:
 Build firmware images for NETIS WF2881
+
+
+
+@@
+
+Target-Profile: DEVICE_oraybox_x3a
+Target-Profile-Name: OrayBox X3A
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: oraybox,x3a
+
+
+Target-Profile-Description:
+Build firmware images for OrayBox X3A
 
 
 
@@ -20946,8 +21473,8 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22073,8 +22600,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22202,8 +22729,8 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23733,8 +24260,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23906,7 +24433,7 @@ Target-Features: dt gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23930,7 +24457,7 @@ Target-Features: dt gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24138,14 +24665,14 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd wpad-openssl kmod-mt76x2u usbutils iwinfo
 Target: rockchip/armv8
 Target-Board: rockchip
 Target-Name: RK33xx boards (64 bit)
@@ -24155,15 +24682,15 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip RK33xx devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd wpad-openssl kmod-mt76x2u usbutils iwinfo
 Target-Profile: DEVICE_embedfire_doornet1
 Target-Profile-Name: EmbedFire DoorNet1
 Target-Profile-Packages: kmod-usb-net-rtl8152 kmod-rtl8821cu 
@@ -24180,13 +24707,27 @@ Build firmware images for EmbedFire DoorNet1
 
 Target-Profile: DEVICE_embedfire_doornet2
 Target-Profile-Name: EmbedFire DoorNet2
-Target-Profile-Packages: kmod-r8168 kmod-rtl8821cu -urngd 
+Target-Profile-Packages: kmod-r8169 kmod-rtl8821cu -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: embedfire,doornet2
 
 
 Target-Profile-Description:
 Build firmware images for EmbedFire DoorNet2
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-neo3
+Target-Profile-Name: FriendlyARM NanoPi NEO3
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-neo3
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi NEO3
 
 
 
@@ -24222,7 +24763,7 @@ Build firmware images for FriendlyARM NanoPi R2S
 
 Target-Profile: DEVICE_friendlyarm_nanopi-r4s
 Target-Profile-Name: FriendlyARM NanoPi R4S
-Target-Profile-Packages: kmod-r8169 -urngd 
+Target-Profile-Packages: kmod-r8168 -urngd 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r4s
 
@@ -24290,6 +24831,20 @@ Build firmware images for Xunlong Orange Pi R1 Plus
 
 @@
 
+Target-Profile: DEVICE_xunlong_orangepi-r1-plus-lts
+Target-Profile-Name: Xunlong Orange Pi R1 Plus LTS
+Target-Profile-Packages: kmod-usb-net-rtl8152 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xunlong,orangepi-r1-plus-lts
+
+
+Target-Profile-Description:
+Build firmware images for Xunlong Orange Pi R1 Plus LTS
+
+
+
+@@
+
 
 Source-Makefile: target/linux/sunxi/Makefile
 Target: sunxi
@@ -24301,8 +24856,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24326,8 +24881,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24435,8 +24990,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24838,8 +25393,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24898,7 +25453,7 @@ Build firmware images for Libre Computer ALL-H3-CC H5
 
 Target-Profile: DEVICE_olimex_a64-olinuxino
 Target-Profile-Name: Olimex A64-Olinuxino
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino
 
@@ -24912,7 +25467,7 @@ Build firmware images for Olimex A64-Olinuxino
 
 Target-Profile: DEVICE_olimex_a64-olinuxino-emmc
 Target-Profile-Name: Olimex A64-Olinuxino eMMC
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino-emmc
 
@@ -24926,7 +25481,7 @@ Build firmware images for Olimex A64-Olinuxino eMMC
 
 Target-Profile: DEVICE_pine64_pine64-plus
 Target-Profile-Name: Pine64 Pine64+
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,pine64-plus
 
@@ -24940,7 +25495,7 @@ Build firmware images for Pine64 Pine64+
 
 Target-Profile: DEVICE_pine64_sopine-baseboard
 Target-Profile-Name: Pine64 SoPine
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,sopine-baseboard
 
@@ -25005,8 +25560,8 @@ Target-Features: arm_v7 audio boot-part display dt ext4 fpu gpio pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -25038,7 +25593,7 @@ Target-Features: audio ext4 source-only squashfs virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: um
 Target-Description:
@@ -25056,14 +25611,14 @@ Target-Features: boot-part display fpu pci pcmcia rootfs-part rtc squashfs testi
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci usbutils pciutils kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-qbittorrent luci-app-ttyd ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid kmod-mmc kmod-sdhci usbutils pciutils kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core kmod-drm-i915 
 Target: x86/64
 Target-Board: x86
 Target-Name: x86_64
@@ -25073,14 +25628,14 @@ Target-Features: boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
         Build images for 64 bit systems including virtualized guests.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci usbutils pciutils kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-qbittorrent luci-app-ttyd ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid kmod-mmc kmod-sdhci usbutils pciutils kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core kmod-drm-i915 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/64
 Target-Profile-Packages:  kmod-amazon-ena kmod-bnx2 kmod-e1000e kmod-e1000 kmod-forcedeth kmod-igb kmod-ixgbe kmod-amd-xgbe kmod-r8168 kmod-fs-vfat 
@@ -25104,8 +25659,8 @@ Target-Features: audio boot-part display fpu gpio pci pcie pcmcia rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium4
 CPU-Type: pentium4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -25113,7 +25668,7 @@ Target-Description:
 	supporting at least the Intel Pentium 4 instruction set with
 	MMX, SSE and SSE2.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci usbutils pciutils kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-qbittorrent luci-app-ttyd ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid kmod-mmc kmod-sdhci usbutils pciutils kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core kmod-drm-i915 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86
 Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8168 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth kmod-fs-vfat 
@@ -25137,15 +25692,15 @@ Target-Features: boot-part display fpu pci pcie pcmcia rootfs-part rtc squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
 	Build firmware images for legacy x86 based boards
 	(e.g : Soekris, ...)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci usbutils pciutils kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-qbittorrent luci-app-ttyd ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid kmod-mmc kmod-sdhci usbutils pciutils kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core kmod-drm-i915 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/legacy
 Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8168 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth 
@@ -25169,14 +25724,14 @@ Target-Features: boot-part display fpu gpio pci pcmcia rootfs-part rtc squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.15.32
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
 	Build firmware images for AMD Geode GX/LX based systems (net5501, alix, geos)
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid kmod-mmc-spi kmod-sdhci usbutils pciutils kmod-ath5k kmod-ath9k kmod-ath9k-htc kmod-ath10k kmod-rt2800-usb kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-qbittorrent luci-app-ttyd ath10k-firmware-qca988x ath10k-firmware-qca9888 ath10k-firmware-qca9984 brcmfmac-firmware-43602a1-pcie kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-turboacc luci-app-nlbwmon luci-app-accesscontrol ddns-scripts_aliyun ddns-scripts_dnspod partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid kmod-mmc kmod-sdhci usbutils pciutils kmod-alx kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-iavf kmod-bnx2x kmod-pcnet32 kmod-tulip kmod-via-velocity kmod-vmxnet3 kmod-i40e kmod-i40evf kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs cfdisk htop lm-sensors autocore-x86 automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd kmod-sound-hda-core kmod-sound-hda-codec-realtek kmod-sound-hda-codec-via kmod-sound-via82xx kmod-sound-hda-intel kmod-sound-hda-codec-hdmi kmod-sound-i8x0 kmod-usb-audio kmod-usb-net kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor kmod-mlx4-core kmod-mlx5-core kmod-drm-i915 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/Geode
 Target-Profile-Packages:  kmod-crypto-cbc kmod-crypto-hw-geode kmod-ledtrig-gpio 
@@ -25216,7 +25771,7 @@ Target-Features: arm_v7 boot-part display dt fpu gpio pci rootfs-part rtc squash
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+neon
-Linux-Version: 5.4.162
+Linux-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

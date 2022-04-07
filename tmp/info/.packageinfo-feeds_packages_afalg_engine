@@ -3,10 +3,10 @@ Source-Makefile: package/feeds/packages/afalg_engine/Makefile
 Package: libopenssl-afalg_sync
 Menu: 1
 Submenu: SSL
-Version: 1.2.0-beta.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopenssl @OPENSSL_ENGINE @!OPENSSL_ENGINE_BUILTIN_AFALG +libopenssl-conf +kmod-crypto-user
+Version: 1.2.0-beta.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopenssl @OPENSSL_ENGINE +libopenssl-conf @!OPENSSL_ENGINE_BUILTIN_AFALG +kmod-crypto-user
 Conflicts: libopenssl-afalg 
-Menu-Depends: libopenssl
+Menu-Depends: 
 Provides: 
 Section: libs
 Category: Libraries

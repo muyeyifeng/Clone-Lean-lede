@@ -1,9 +1,8 @@
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-ugly/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
-Build-Depends/host: ninja/host
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: gst1-mod-asf
-Version: 1.18.4-0
+Version: 1.18.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgstreamer1 +libgst1audio +libgst1video +libgst1riff +libgst1rtp +libgst1rtsp +libgst1sdp +libgst1tag
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +12,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer ASF demuxer plugin (ugly)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-ugly-1.18.4.tar.xz
+Source: gst-plugins-ugly-1.18.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -26,7 +25,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-mpeg2dec
-Version: 1.18.4-0
+Version: 1.18.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgstreamer1 +libgst1video +libmpeg2
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +35,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer MPEG decoder plugin (ugly)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-ugly-1.18.4.tar.xz
+Source: gst-plugins-ugly-1.18.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -49,7 +48,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gstreamer1-plugins-ugly
-Version: 1.18.4-0
+Version: 1.18.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:gst1-plugins-ugly +gstreamer1-plugins-base
 Conflicts: 
 Menu-Depends: 
@@ -59,7 +58,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer plugins collection (ugly)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-ugly-1.18.4.tar.xz
+Source: gst-plugins-ugly-1.18.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -91,7 +90,7 @@ Config:
 @@
 
 Package: gst1-plugins-ugly
-Version: 1.18.4-0
+Version: 1.18.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +gst1-mod-asf +gst1-mod-mpeg2dec
 Conflicts: 
 Menu-Depends: 
@@ -101,7 +100,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer plugins collection (ugly)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-ugly-1.18.4.tar.xz
+Source: gst-plugins-ugly-1.18.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

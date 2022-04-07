@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/nginx-util/Makefile
 
 Package: nginx-ssl-util
 Submenu: Web Servers/Proxies
-Version: 1.6-1
+Version: 1.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuci +libubus +libubox +libpthread +libopenssl +nginx-util +libpcre
 Conflicts: nginx-ssl-util-nopcre,
 Menu-Depends: 
@@ -22,7 +22,7 @@ Peter Stadler <peter.stadler@student.uibk.ac.at>
 
 Package: nginx-ssl-util-nopcre
 Submenu: Web Servers/Proxies
-Version: 1.6-1
+Version: 1.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuci +libubus +libubox +libpthread +libopenssl +nginx-util
 Conflicts: nginx-ssl-util
 Menu-Depends: 
@@ -41,7 +41,7 @@ Peter Stadler <peter.stadler@student.uibk.ac.at>
 @@
 
 Package: nginx-util
-Version: 1.6-1
+Version: 1.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libubus +libubox +libpthread
 Conflicts: 
 Menu-Depends: 

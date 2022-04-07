@@ -3,7 +3,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.19.6-2
+Version: 1.21.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +NGINX_PCRE:libpcre +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c
 Conflicts: nginx-all-module
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Network
 Repository: base
 Title: Nginx web server with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.6.tar.gz
+Source: nginx-1.21.3.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
@@ -27,7 +27,7 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.19.6-2
+Version: 1.21.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +liblua +libxml2 +libubus +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: Nginx web server with ALL module selected
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.6.tar.gz
+Source: nginx-1.21.3.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with ALL module selected.
@@ -48,7 +48,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.19.6-2
+Version: 1.21.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi +uwsgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Category: Network
 Repository: base
 Title: Support file for Nginx
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.6.tar.gz
+Source: nginx-1.21.3.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  Support file for LuCI in nginx. Include custom nginx configuration, autostart script for uwsgi.
@@ -67,7 +67,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: nginx
-Version: 1.19.6-2
+Version: 1.21.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -77,7 +77,7 @@ Category: Extra packages
 Repository: base
 Title: Dummy package for transition when upgrading.
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.6.tar.gz
+Source: nginx-1.21.3.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev.
@@ -85,7 +85,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: nginx-mod-luci-ssl
-Version: 1.19.6-2
+Version: 1.21.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-mod-luci
 Conflicts: 
 Menu-Depends: 
@@ -95,7 +95,7 @@ Category: Extra packages
 Repository: base
 Title: Dummy package for transition when upgrading.
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.19.6.tar.gz
+Source: nginx-1.21.3.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description: Dummy package for transition when upgrading.

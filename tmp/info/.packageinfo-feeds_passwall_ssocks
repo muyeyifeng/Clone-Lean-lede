@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/passwall/ssocks/Makefile
 
 Package: ssocks
-Version: 0.0.14-1
+Version: 0.0.14-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -10,16 +10,20 @@ Section: net
 Category: Network
 Repository: passwall
 Title: sSocks Relay
-Maintainer: 
-Source: ssocks-0.0.14.tar.gz
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ssocks-0.0.14.tar.xz
+License: MIT
+LicenseFiles: LICENSE
 Type: ipkg
-Description: sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool and a socks5 relay.
+Description: 	sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and
+	RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool
+	and a socks5 relay.
 https://github.com/tostercx/ssocks
-
+Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: ssocksd
-Version: 0.0.14-1
+Version: 0.0.14-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -28,12 +32,16 @@ Section: net
 Category: Network
 Repository: passwall
 Title: sSocks Server
-Maintainer: 
-Source: ssocks-0.0.14.tar.gz
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ssocks-0.0.14.tar.xz
+License: MIT
+LicenseFiles: LICENSE
 Type: ipkg
-Description: sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool and a socks5 relay.
+Description: 	sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and
+	RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool
+	and a socks5 relay.
 https://github.com/tostercx/ssocks
-
+Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 

@@ -27,7 +27,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2021.4-0
+Version: 2022.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: alfred-2021.4.tar.gz
+Source: alfred-2022.0.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -90,7 +90,7 @@ Source-Makefile: feeds/routing/babeld/Makefile
 
 Package: babeld
 Submenu: Routing and Redirection
-Version: 1.10-0
+Version: 1.11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libubus +libubox
 Conflicts: 
 Menu-Depends: 
@@ -100,7 +100,7 @@ Category: Network
 Repository: base
 Title: A loop-avoiding distance-vector routing protocol
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetworks.org>, Nick Hainke <vincent@systemli.org>
-Source: babeld-1.10.tar.gz
+Source: babeld-1.11.tar.gz
 License: MIT
 LicenseFiles: LICENCE
 Type: ipkg
@@ -117,7 +117,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2021.4-0
+Version: 2022.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -128,21 +128,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Default)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.4.tar.gz
+Source: batctl-2022.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.4 of the user space utility.
+  version 2022.0 of the user space utility.
   Standard subcommands for configuration and online debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2021.4-0
+Version: 2022.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -153,21 +153,21 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Minimal)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.4.tar.gz
+Source: batctl-2022.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.4 of the user space utility.
+  version 2022.0 of the user space utility.
   Only configuration relevant subcommands are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2021.4-0
+Version: 2022.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -178,14 +178,14 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Full)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2021.4.tar.gz
+Source: batctl-2022.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2021.4 of the user space utility.
+  version 2022.0 of the user space utility.
   Subcommands for configuration, online and offline debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2021.4-0
+Version: <LINUX_VERSION>+2022.0-0
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +205,7 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2021.4.tar.gz
+Source: batman-adv-2022.0.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -213,7 +213,7 @@ Description:   B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
   a routing protocol for multi-hop ad-hoc mesh networks. The
   networks may be wired or wireless. See
   https://www.open-mesh.org/ for more information and user space
-  tools. This package builds version 2021.4 of the kernel
+  tools. This package builds version 2022.0 of the kernel
   module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -654,7 +654,7 @@ Source-Makefile: feeds/routing/bmx6/Makefile
 Package: bmx6
 Menu: 1
 Submenu: Routing and Redirection
-Version: r2018051214-2
+Version: 0.1-alpha-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -664,17 +664,17 @@ Category: Network
 Repository: base
 Title: BMX6 layer 3 routing daemon
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-r2018051214.tar.gz
-License: GPL-2.0
+Source: bmx6-0.1-alpha.tar.xz
+License: GPL-2.0-or-later
 Type: ipkg
 Description: BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
-http://bmx6.net/
+https://bmx6.net/projects/bmx6
 Axel Neumann <neumann@cgws.de>
 @@
 
 Package: bmx6-uci-config
 Submenu: Routing and Redirection
-Version: r2018051214-2
+Version: 0.1-alpha-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6 +libuci
 Conflicts: 
 Menu-Depends: 
@@ -684,17 +684,17 @@ Category: Network
 Repository: base
 Title: configuration plugin based on uci (recommended!)
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-r2018051214.tar.gz
-License: GPL-2.0
+Source: bmx6-0.1-alpha.tar.xz
+License: GPL-2.0-or-later
 Type: ipkg
 Description: configuration plugin based on uci (recommended!)
-http://bmx6.net/
+https://bmx6.net/projects/bmx6
 Axel Neumann <neumann@cgws.de>
 @@
 
 Package: bmx6-json
 Submenu: Routing and Redirection
-Version: r2018051214-2
+Version: 0.1-alpha-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6 +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -704,17 +704,17 @@ Category: Network
 Repository: base
 Title: json plugin based on json-c
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-r2018051214.tar.gz
-License: GPL-2.0
+Source: bmx6-0.1-alpha.tar.xz
+License: GPL-2.0-or-later
 Type: ipkg
 Description: json plugin based on json-c
-http://bmx6.net/
+https://bmx6.net/projects/bmx6
 Axel Neumann <neumann@cgws.de>
 @@
 
 Package: bmx6-sms
 Submenu: Routing and Redirection
-Version: r2018051214-2
+Version: 0.1-alpha-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6
 Conflicts: 
 Menu-Depends: 
@@ -724,17 +724,17 @@ Category: Network
 Repository: base
 Title: sms plugin
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-r2018051214.tar.gz
-License: GPL-2.0
+Source: bmx6-0.1-alpha.tar.xz
+License: GPL-2.0-or-later
 Type: ipkg
 Description: sms plugin
-http://bmx6.net/
+https://bmx6.net/projects/bmx6
 Axel Neumann <neumann@cgws.de>
 @@
 
 Package: bmx6-table
 Submenu: Routing and Redirection
-Version: r2018051214-2
+Version: 0.1-alpha-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6
 Conflicts: 
 Menu-Depends: 
@@ -744,11 +744,11 @@ Category: Network
 Repository: base
 Title: bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-r2018051214.tar.gz
-License: GPL-2.0
+Source: bmx6-0.1-alpha.tar.xz
+License: GPL-2.0-or-later
 Type: ipkg
 Description: bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
-http://bmx6.net/
+https://bmx6.net/projects/bmx6
 Axel Neumann <neumann@cgws.de>
 @@
 
@@ -1182,7 +1182,7 @@ Source-Makefile: feeds/routing/mcproxy/Makefile
 
 Package: mcproxy
 Submenu: Routing and Redirection
-Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-3
+Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp @(!GCC_VERSION_4_4&&!GCC_VERSION_4_6)
 Conflicts: 
 Menu-Depends: 
@@ -1192,21 +1192,55 @@ Category: Network
 Repository: base
 Title: Multicast Proxy for IGMP/MLD
 Maintainer: Steven Barth <cyrus@openwrt.org>
-Source: mcproxy-2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99.tar.bz2
-License: GPL-2.0+
+Source: mcproxy-2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
-Description:  mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
- It operates on the kernel tables for multicast routing and allows for multiple instantiations,
- as well as dynamically changing downstream interfaces.
-http://mcproxy.realmv6.org
+Description:   mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
+  It operates on the kernel tables for multicast routing and allows for multiple instantiations,
+  as well as dynamically changing downstream interfaces.
+https://mcproxy.realmv6.org
 Steven Barth <cyrus@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/routing/mesh11sd/Makefile
+
+Package: mesh11sd
+Submenu: Captive Portals
+Version: 1.0.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Dynamic 802.11s Mesh Configuration Daemon
+Maintainer: Rob White <rob@blue-wave.net>
+Source: mesh11sd-1.0.0.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Mesh11sd is a dynamic parameter configuration daemon for 802.11s mesh networks.
+  It was originally designed to leverage 802.11s mesh networking at Captive Portal venues.
+  This is the open source version and it enables easy and automated mesh network operation with multiple mesh nodes.
+  It allows all mesh parameters supported by the wireless driver to be set in the uci config file.
+  Settings take effect immediately without having to restart the wireless network.
+  Default settings give rapid and reliable layer 2 mesh convergence.
+  Without mesh11sd, many mesh parameters cannot be set in the uci wireless config file as the mesh interface must be up before the parameters can be set.
+  Some of those that are supported, would fail to be implemented when the network is (re)started resulting in errors or dropped nodes.
+  The mesh11sd daemon dynamically checks configured parameters and sets them as required.
+  This version does not require a Captive Portal to be running.
+https://github.com/opennds/mesh11sd
+Rob White <rob@blue-wave.net>
 @@
 
 
 Source-Makefile: feeds/routing/minimalist-pcproxy/Makefile
 
 Package: minimalist-pcproxy
-Version: 2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-2
+Version: 2014-12-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -1216,44 +1250,18 @@ Category: Network
 Repository: base
 Title: Lightweight PCP proxy
 Maintainer: Markus Stenberg <fingon@iki.fi>
-Source: minimalist-pcproxy-2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb.tar.bz2
-License: GPL-2.0
+Source: minimalist-pcproxy-2014-12-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb.tar.xz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
-Description: This package contains a daemon which can be used to forward
-PCP (Port Control Protocol - RFC6887) requests requests to PCP remote servers.
+Description:   This package contains a daemon which can be used to forward
+  PCP (Port Control Protocol - RFC6887) requests requests to PCP remote servers.
 
-In and of itself, it is not very useful, but combined with hnetd+miniupnpd
-it allows for control of NAT forwarding and firewall pinholes from multiple
-hops away.
+  In and of itself, it is not very useful, but combined with hnetd+miniupnpd
+  it allows for control of NAT forwarding and firewall pinholes from multiple
+  hops away.
 https://github.com/fingon/minimalist-pcproxy
 Markus Stenberg <fingon@iki.fi>
-@@
-
-
-Source-Makefile: feeds/routing/mrd6/Makefile
-
-Package: mrd6
-Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libstdcpp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: IPv6 multicast routing daemon
-Maintainer: Steven Barth <cyrus@openwrt.org>
-Source: mrd6-2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0.tar.bz2
-License: GPL-2.0+
-Type: ipkg
-Description:  Multicast is becoming a major component in next generation networks, used 
- in several scenarios, from video broadcasting to multimedia conferencing. 
- In order to be implemented, new technology needs supporting hardware and 
- software across a set of devices and systems. MRD6 is an implementation of 
- a modular IPv6 Multicast Routing Framework for the Linux operating system 
- and provides MLDv2 (as well as MLDv1), PIM-SM and MBGP support.
-http://fivebits.net/proj/mrd6
-Steven Barth <cyrus@openwrt.org>
 @@
 
 
@@ -1327,13 +1335,14 @@ Repository: base
 Title: Open public network gateway daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
 Source: nodogsplash-5.0.0.tar.gz
-License: GPL-2.0+
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
-Description: 	Nodogsplash is a Captive Portal that offers a simple way to
-	provide restricted access to the Internet by showing a splash
-	page to the user before Internet access is granted.
-	It also incorporates an API that allows the creation of
-	sophisticated authentication applications.
+Description:   Nodogsplash is a Captive Portal that offers a simple way to
+  provide restricted access to the Internet by showing a splash
+  page to the user before Internet access is granted.
+  It also incorporates an API that allows the creation of
+  sophisticated authentication applications.
 https://github.com/nodogsplash/nodogsplash
 Moritz Warning <moritzwarning@web.de>
 @@
@@ -1391,8 +1400,8 @@ Source-Makefile: feeds/routing/olsrd/Makefile
 Package: olsrd
 Menu: 1
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libubus +iptables +IPV6:ip6tables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1401,7 +1410,7 @@ Category: Network
 Repository: base
 Title: OLSR (Optimized Link State Routing) daemon
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: OLSR (Optimized Link State Routing) daemon
@@ -1411,7 +1420,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-arprefresh
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1421,7 +1430,7 @@ Category: Network
 Repository: base
 Title: Kernel ARP cache refresh plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Kernel ARP cache refresh plugin
@@ -1431,7 +1440,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dot-draw
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1441,7 +1450,7 @@ Category: Network
 Repository: base
 Title: Dot topology information plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Dot topology information plugin
@@ -1451,7 +1460,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-filtergw
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1461,7 +1470,7 @@ Category: Network
 Repository: base
 Title: Filter Gateway plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Filter Gateway plugin
@@ -1471,7 +1480,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-bmf
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -1481,7 +1490,7 @@ Category: Network
 Repository: base
 Title: Basic multicast forwarding plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Basic multicast forwarding plugin
@@ -1491,7 +1500,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dyn-gw
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1501,7 +1510,7 @@ Category: Network
 Repository: base
 Title: Dynamic internet gateway plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Dynamic internet gateway plugin
@@ -1511,7 +1520,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dyn-gw-plain
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1521,7 +1530,7 @@ Category: Network
 Repository: base
 Title: Dynamic internet gateway plain plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Dynamic internet gateway plain plugin
@@ -1531,7 +1540,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-httpinfo
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1541,7 +1550,7 @@ Category: Network
 Repository: base
 Title: Small informative web server plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Small informative web server plugin
@@ -1551,7 +1560,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-jsoninfo
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1561,7 +1570,7 @@ Category: Network
 Repository: base
 Title: Small informative plugin with JSON output
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Small informative plugin with JSON output
@@ -1571,7 +1580,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-netjson
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1581,7 +1590,7 @@ Category: Network
 Repository: base
 Title: netjson plugin with JSON output
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: netjson plugin with JSON output
@@ -1591,7 +1600,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-mdns
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1601,7 +1610,7 @@ Category: Network
 Repository: base
 Title: MDNS/Zeroconf/Bonjour packet distribution 
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: MDNS/Zeroconf/Bonjour packet distribution 
@@ -1611,7 +1620,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-nameservice
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1621,7 +1630,7 @@ Category: Network
 Repository: base
 Title: Lightweight hostname resolver plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Lightweight hostname resolver plugin
@@ -1631,7 +1640,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-p2pd
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1641,7 +1650,7 @@ Category: Network
 Repository: base
 Title: Peer to Peer Discovery plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Peer to Peer Discovery plugin
@@ -1651,7 +1660,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-pgraph
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1661,7 +1670,7 @@ Category: Network
 Repository: base
 Title: output network topology for pgraph
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: output network topology for pgraph
@@ -1671,7 +1680,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-pud
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +libgps
 Conflicts: 
 Menu-Depends: 
@@ -1681,7 +1690,7 @@ Category: Network
 Repository: base
 Title: Position Update Distribution plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Position Update Distribution plugin
@@ -1691,7 +1700,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-quagga
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1701,7 +1710,7 @@ Category: Network
 Repository: base
 Title: Quagga plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Quagga plugin
@@ -1711,7 +1720,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-secure
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1721,7 +1730,7 @@ Category: Network
 Repository: base
 Title: Message signing plugin to secure routing domain
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Message signing plugin to secure routing domain
@@ -1731,7 +1740,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-sgwdynspeed
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1741,7 +1750,7 @@ Category: Network
 Repository: base
 Title: Smart Gateway dynamic speed plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Smart Gateway dynamic speed plugin
@@ -1751,7 +1760,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-txtinfo
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1761,7 +1770,7 @@ Category: Network
 Repository: base
 Title: Small informative web server plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Small informative web server plugin
@@ -1771,7 +1780,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-watchdog
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1781,7 +1790,7 @@ Category: Network
 Repository: base
 Title: Watchdog plugin
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Watchdog plugin
@@ -1791,7 +1800,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-utils
 Submenu: Routing and Redirection
-Version: 2021-11-06-665051a845464c0f95edb81432104dac39426f79-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1801,7 +1810,7 @@ Category: Network
 Repository: base
 Title: Utils for OLSRD
 Maintainer: Saverio Proto <zioproto@gmail.com>
-Source: olsrd-2021-11-06-665051a845464c0f95edb81432104dac39426f79.tar.xz
+Source: olsrd-2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Utils for OLSRD
@@ -1836,7 +1845,7 @@ Source-Makefile: feeds/routing/oonf-dlep-radio/Makefile
 
 Package: oonf-dlep-radio
 Submenu: OLSR.org network framework
-Version: v0.15.1
+Version: 0.15.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libnl-tiny +libuci +oonf-init-scripts
 Conflicts: 
 Menu-Depends: 
@@ -1846,7 +1855,7 @@ Category: Network
 Repository: base
 Title: Build DLEP Radio Agent
 Maintainer: Henning Rogge <hrogge@gmail.com>
-Source: oonf-dlep-radio-v0.15.1.tar.bz2
+Source: oonf-dlep-radio-0.15.1.tar.xz
 Type: ipkg
 Description: Build DLEP Radio Agent
 http://www.olsr.org/
@@ -1906,9 +1915,9 @@ Source-Makefile: feeds/routing/opennds/Makefile
 
 Package: opennds
 Submenu: Captive Portals
-Version: 9.4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
-Conflicts: nodogsplash nodogsplash2
+Version: 9.7.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
+Conflicts: nodogsplash nodogsplash2 iptables-legacy
 Menu-Depends: 
 Provides: 
 Section: net
@@ -1916,16 +1925,18 @@ Category: Network
 Repository: base
 Title: Open public network gateway daemon
 Maintainer: Rob White <rob@blue-wave.net>
-Source: opennds-9.4.0.tar.gz
-License: GPL-2.0+
+Source: opennds-9.7.0.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
-Description: 	openNDS is a Captive Portal solution that offers an instant way to provide restricted access to the Internet.
-	With little or no configuration, a dynamically generated and adaptive splash page sequence is automatically served.
-	Both client driven Captive Portal Detection (CPD) and gateway driven Captive Portal Identification (CPI) are supported.
-	Internet access is granted by either a click to continue button, or after credential verification as a result of filling in a login form.
-	The package incorporates the FAS API allowing many flexible customisation options.
-	The creation of sophisticated third party authentication applications is fully supported.
-	Internet hosted https portals can be utilised to inspire maximum user confidence.
+Description:   openNDS is a Captive Portal solution that offers an instant way to provide restricted access to the Internet.
+  With little or no configuration, a dynamically generated and adaptive splash page sequence is automatically served.
+  Both client driven Captive Portal Detection (CPD) and gateway driven Captive Portal Identification (CPI - RFC 8910 and RFC 8908) are supported.
+  Internet access is granted by either a click to continue button, or after credential verification as a result of filling in a login form.
+  The package incorporates the FAS API allowing many flexible customisation options.
+  The creation of sophisticated third party authentication applications is fully supported.
+  Internet hosted https portals can be implemented with no security errors, to inspire maximum user confidence.
+  This version requires iptables-nft.
 https://github.com/opennds/opennds
 Rob White <rob@blue-wave.net>
 @@
@@ -1934,7 +1945,7 @@ Rob White <rob@blue-wave.net>
 Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
-Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-2
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
@@ -1944,12 +1955,13 @@ Category: Network
 Repository: base
 Title: PIM BIDIR daemon
 Maintainer: Pierre Pfister <pierre.pfister@darou.fr>
-Source: pimbd-2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21.tar.bz2
+Source: pimbd-2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21.tar.xz
 License: Apache-2.0
+LicenseFiles: LICENSE
 Type: ipkg
-Description: This package provides a daemon which implements the Protocol Independent
-Multicast BIDIR routing protocol. Note that a routing protocol must be 
-installed and running in order for PIM to function.
+Description:   This package provides a daemon which implements the Protocol Independent
+  Multicast BIDIR routing protocol. Note that a routing protocol must be
+  installed and running in order for PIM to function.
 https://github.com/Oryon/pimbd.git
 Pierre Pfister <pierre.pfister@darou.fr>
 @@
@@ -1958,9 +1970,8 @@ Pierre Pfister <pierre.pfister@darou.fr>
 Source-Makefile: feeds/routing/prince/Makefile
 
 Package: prince
-Menu: 0
 Submenu: Routing and Redirection
-Version: v0.4-2
+Version: 0.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson-c +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -1969,19 +1980,20 @@ Section: net
 Category: Network
 Repository: base
 Title: Prince
-Maintainer: 
-Source: prince-v0.4.tar.xz
+Maintainer: Gabriele Gemmi <gabriel@autistici.org>
+Source: prince-0.4.tar.gz
 License: MIT
+LicenseFiles: LICENSE
 Type: ipkg
-Description: 	Prince is an open source implementation of the PopRouting Algorithm.
-	It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
+Description:   Prince is an open source implementation of the PopRouting Algorithm.
+  It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
 
-	Prince fetches topology data from a Link State routing daemon (OONF, OLSR, OSPF, etc),
-	calculates the betweenness centrality using the topology and then computes the
-	the timers' optimal values using these data. At the end of the computation the timers are pushed back to the routing daemon.
-	Since v0.4 it supports both OONF and OLSRd.
+  Prince fetches topology data from a Link State routing daemon (OONF, OLSR, OSPF, etc),
+  calculates the betweenness centrality using the topology and then computes the
+  the timers' optimal values using these data. At the end of the computation the timers are pushed back to the routing daemon.
+  Since v0.4 it supports both OONF and OLSRd.
 https://github.com/AdvancedNetworkingSystems/prince
-
+Gabriele Gemmi <gabriel@autistici.org>
 @@
 
 
@@ -2001,12 +2013,12 @@ Repository: base
 Title: The Quagga Software Routing Suite
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description:   A routing software package that provides TCP/IP based routing services
   with routing protocols support such as RIPv1, RIPv2, RIPng, OSPFv2,
   OSPFv3, BGP-4, and BGP-4+
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2023,10 +2035,10 @@ Repository: base
 Title: zebra library
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: zebra library
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2043,10 +2055,10 @@ Repository: base
 Title: OSPF library
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: OSPF library
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2064,10 +2076,10 @@ Repository: base
 Title: Quagga watchdog
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: Quagga watchdog
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2085,10 +2097,10 @@ Repository: base
 Title: Zebra daemon
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: Zebra daemon
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2105,10 +2117,10 @@ Repository: base
 Title: BGPv4, BGPv4+, BGPv4- routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: BGPv4, BGPv4+, BGPv4- routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2125,10 +2137,10 @@ Repository: base
 Title: IS-IS routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: IS-IS routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2145,10 +2157,10 @@ Repository: base
 Title: OSPFv2 routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: OSPFv2 routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2165,10 +2177,10 @@ Repository: base
 Title: OSPFv3 routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: OSPFv3 routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2185,10 +2197,10 @@ Repository: base
 Title: RIP routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: RIP routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2205,10 +2217,10 @@ Repository: base
 Title: RIPNG routing engine
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: RIPNG routing engine
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2225,10 +2237,10 @@ Repository: base
 Title: integrated shell for Quagga routing software
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Source: quagga-1.2.4.tar.gz
-License: GPL-2.0
+License: GPL-2.0-or-later
 Type: ipkg
 Description: integrated shell for Quagga routing software
-http://www.quagga.net
+https://www.quagga.net
 Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 @@
 
@@ -2237,7 +2249,7 @@ Source-Makefile: feeds/routing/vis/Makefile
 
 Package: vis
 Submenu: Routing and Redirection
-Version: 1440-2
+Version: 2013-04-07-7710cce42e8d63ea114056a4a140835d4a452933-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -2247,8 +2259,8 @@ Category: Network
 Repository: base
 Title: visualization server for B.A.T.M.A.N. layer 3
 Maintainer: Corinna "Elektra" Aichele <onelektra@gmx.net>
-Source: vis-1440.tar.gz
-License: GPL-2.0
+Source: vis-2013-04-07-7710cce42e8d63ea114056a4a140835d4a452933.tar.xz
+License: GPL-2.0-only
 Type: ipkg
 Description: visualization server for B.A.T.M.A.N. layer 3
 https://www.open-mesh.org/

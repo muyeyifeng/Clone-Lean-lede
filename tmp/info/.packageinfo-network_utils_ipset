@@ -1,7 +1,7 @@
 Source-Makefile: package/network/utils/ipset/Makefile
 
 Package: libipset
-Version: 7.6-1
+Version: 7.15-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipt-ipset +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: IPset administration utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: ipset-7.6.tar.bz2
+Source: ipset-7.15.tar.bz2
 License: GPL-2.0
 Type: ipkg
 Description: IPset administration utility
@@ -20,7 +20,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: ipset
-Version: 7.6-1
+Version: 7.15-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipt-ipset +libmnl +libipset
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Category: Network
 Repository: base
 Title: IPset administration utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: ipset-7.6.tar.bz2
+Source: ipset-7.15.tar.bz2
 License: GPL-2.0
 Type: ipkg
 Description: IPset administration utility

@@ -1,9 +1,7 @@
 Source-Makefile: package/feeds/packages/libinput/Makefile
-Build-Depends: meson/host ninja/host
-Build-Depends/host: ninja/host
 
 Package: libinput
-Version: 1.17.1-0
+Version: 1.19.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevdev +mtdev +libudev
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: a library to handle input devices
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: libinput-1.17.1.tar.xz
+Source: libinput-1.19.2.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg

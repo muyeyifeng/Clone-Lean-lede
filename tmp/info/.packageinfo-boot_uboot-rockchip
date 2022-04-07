@@ -170,7 +170,7 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-nanopi-r2s-rk3328
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3 || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3)
 Version: 2021.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
@@ -211,6 +211,30 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Orange Pi R1 Plus
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-orangepi-r1-plus-lts-rk3328
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts)
+Version: 2021.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-lts-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: orangepi-r1-plus-lts-rk3328
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Orange Pi R1 Plus LTS
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2021.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Orange Pi R1 Plus LTS
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@

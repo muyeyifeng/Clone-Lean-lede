@@ -1522,8 +1522,8 @@ Mirko Vogt <mirko-openwrt@nanl.de>
 
 
 Source-Makefile: feeds/video/frameworks/wayland/Makefile
-Build-Depends: libffi/host libxml2/host expat/host wayland/host
-Build-Depends/host: libffi/host libxml2/host expat/host wayland/host
+Build-Depends: libffi/host libxml2/host wayland/host
+Build-Depends/host: libffi/host libxml2/host wayland/host
 Build-Types: host
 
 Package: libwayland
@@ -1742,7 +1742,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 
 Source-Makefile: feeds/video/libs/mesa/Makefile
-Build-Depends: Mako/host
+Build-Depends: python3/host
 
 Package: libmesadri-armada-drm
 Submenu: Video

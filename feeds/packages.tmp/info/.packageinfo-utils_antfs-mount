@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/antfs-mount/Makefile
 Package: antfs-mount
 Submenu: Filesystem
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-antfs
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!LINUX_5_15 +kmod-fs-antfs
 Conflicts: 
 Menu-Depends: 
 Provides: 

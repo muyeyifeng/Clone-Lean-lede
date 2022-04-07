@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/sslh/Makefile
 
 Package: sslh
 Submenu: Routing and Redirection
-Version: v1.21c-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libcap +USE_UCLIBC:libpcre +USE_MUSL:libpcre
+Version: v1.22c-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libcap +libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: SSL/SSH multiplexer
 Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
-Source: sslh-v1.21c.tar.gz
+Source: sslh-v1.22c.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

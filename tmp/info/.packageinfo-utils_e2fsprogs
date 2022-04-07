@@ -3,7 +3,7 @@ Build-Depends: util-linux e2fsprogs/host
 Build-Types: host
 
 Package: libcomerr
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: common error description library
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -24,7 +24,7 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libss
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcomerr
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Libraries
 Repository: base
 Title: command-line interface parsing library
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -45,7 +45,7 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libext2fs
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libblkid +libss +libcomerr
 Conflicts: 
 Menu-Depends: 
@@ -55,7 +55,7 @@ Category: Libraries
 Repository: base
 Title: ext2/3/4 filesystem library
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -66,7 +66,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e2fsprogs
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libext2fs
 Conflicts: 
 Menu-Depends: 
@@ -76,7 +76,7 @@ Category: Utilities
 Repository: base
 Title: Ext2/3/4 filesystem utilities
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -88,7 +88,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: tune2fs
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -98,7 +98,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem tune utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -109,7 +109,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: resize2fs
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -119,7 +119,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem resize utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -130,7 +130,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: badblocks
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -140,7 +140,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem badblocks utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -151,7 +151,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: dumpe2fs
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -161,7 +161,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem information dumping utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -172,7 +172,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e2freefrag
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -182,7 +182,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem free space fragmentation information utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -193,7 +193,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e4crypt
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -203,7 +203,7 @@ Category: Utilities
 Repository: base
 Title: Ext4 Filesystem encryption utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -214,7 +214,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: filefrag
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -224,7 +224,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem file fragmentation report utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -235,7 +235,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: debugfs
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -245,7 +245,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem debugger
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -256,7 +256,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: chattr
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -266,7 +266,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem chattr utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg
@@ -277,7 +277,7 @@ http://e2fsprogs.sourceforge.net/
 
 Package: lsattr
 Submenu: Filesystem
-Version: 1.45.6-2
+Version: 1.46.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
 Conflicts: 
 Menu-Depends: 
@@ -287,7 +287,7 @@ Category: Utilities
 Repository: base
 Title: Ext2 Filesystem lsattr utility
 Maintainer: 
-Source: e2fsprogs-1.45.6.tar.xz
+Source: e2fsprogs-1.46.5.tar.xz
 License: GPL-2.0
 LicenseFiles: NOTICE
 Type: ipkg

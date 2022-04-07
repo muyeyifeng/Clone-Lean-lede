@@ -472,7 +472,7 @@ Source-Makefile: feeds/telephony/libs/libosip2/Makefile
 
 Package: libosip2
 Submenu: Telephony
-Version: 5.1.2-1
+Version: 5.3.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -482,7 +482,7 @@ Category: Libraries
 Repository: base
 Title: GNU oSIP library
 Maintainer: 
-Source: libosip2-5.1.2.tar.gz
+Source: libosip2-5.3.0.tar.gz
 License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
@@ -495,7 +495,7 @@ http://www.gnu.org/software/osip/
 Source-Makefile: feeds/telephony/libs/libpri/Makefile
 
 Package: libpri
-Version: 1.6.0-3
+Version: 1.6.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dahdi-tools-libtonezone
 Conflicts: 
 Menu-Depends: 
@@ -811,7 +811,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: sofia-sip
 Submenu: Telephony
-Version: 1.13.6-1
+Version: 1.13.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -821,7 +821,7 @@ Category: Libraries
 Repository: base
 Title: Sofia-SIP open-source SIP User-Agent library
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: sofia-sip-1.13.6.tar.gz
+Source: sofia-sip-1.13.7.tar.gz
 License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
@@ -6983,7 +6983,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: asterisk-chan-dongle
 Submenu: Telephony
-Version: 2021-09-29-3d2a97f26ba84473a0926a9fe9a32e451a56bc36-2
+Version: 2021-10-06-3d046f7d6842298c6838b5ce5b51d495d383b158-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread asterisk +BUILD_NLS:libiconv-full +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -6993,7 +6993,7 @@ Category: Network
 Repository: base
 Title: Huawei UMTS 3G dongle support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: asterisk-chan-dongle-2021-09-29-3d2a97f26ba84473a0926a9fe9a32e451a56bc36.tar.xz
+Source: asterisk-chan-dongle-2021-10-06-3d046f7d6842298c6838b5ce5b51d495d383b158.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYRIGHT.txt LICENSE.txt
 Type: ipkg
@@ -7132,6 +7132,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 
 Source-Makefile: feeds/telephony/net/baresip/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: baresip
 Menu: 1
@@ -7600,7 +7601,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7621,7 +7622,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst-video
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -8338,7 +8339,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: coturn
 Submenu: Telephony
-Version: 4.5.2-1
+Version: 4.5.2-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libevent2-extra +libevent2-pthreads +libevent2-openssl +libopenssl +COTURN_ENABLE_MYSQL:libmariadb +COTURN_ENABLE_POSTGRESQL:libpq +COTURN_ENABLE_REDIS:libhiredis +COTURN_ENABLE_SQLITE:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -8397,7 +8398,7 @@ Build-Depends: perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: freeswitch
 Menu: 1
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libstdcpp +!BUSYBOX_DEFAULT_SU:shadow-utils +!BUSYBOX_DEFAULT_SU:shadow-su +@OPENSSL_WITH_DEPRECATED +FS_WITH_FREETYPE:libfreetype +FS_WITH_ODBC:unixodbc +FS_WITH_PNG:libpng +libcurl +libedit +libopenssl +libpcre +libpthread +librt +libspandsp3 +libspeex +libspeexdsp +libsqlite3 +libuuid +sofia-sip +zlib
 Conflicts: 
 Menu-Depends: 
@@ -8424,7 +8425,7 @@ Config:
 
 Package: freeswitch-misc-perl-esl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-perl-esl:perlbase-autoloader +PACKAGE_freeswitch-misc-perl-esl:perlbase-data +PACKAGE_freeswitch-misc-perl-esl:perlbase-dynaloader @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
@@ -8446,7 +8447,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-python3-esl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-python3-esl:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -8468,7 +8469,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-timezones
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8489,7 +8490,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-curl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8514,7 +8515,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-insideout
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8539,7 +8540,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-minimal
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8564,7 +8565,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-rayo
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8589,7 +8590,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-sbc
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8614,7 +8615,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-softphone
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8639,7 +8640,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-testing
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8664,7 +8665,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-example-vanilla
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8689,7 +8690,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-de
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8710,7 +8711,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-en
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8731,7 +8732,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-es
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8752,7 +8753,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-fr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8773,7 +8774,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-he
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8794,7 +8795,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-pt
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8815,7 +8816,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-ru
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8836,7 +8837,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-lang-sv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8857,7 +8858,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-fonts
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8878,7 +8879,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-grammar
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8900,7 +8901,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-misc-images
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8921,7 +8922,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-abstraction
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8943,7 +8944,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-alsa
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -8964,7 +8965,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-amr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -8985,7 +8986,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-amrwb
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9006,8 +9007,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-av
 Submenu: Telephony
-Version: 1.10.7-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-av:libffmpeg-full @x86_64
+Version: 1.10.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-av:libffmpeg-full @BROKEN @x86_64
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9027,7 +9028,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-avmd
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9049,7 +9050,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-b64
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9070,7 +9071,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-basic
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9091,7 +9092,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-bert
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9112,7 +9113,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-blacklist
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9133,7 +9134,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-callcenter
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9154,7 +9155,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-csv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9175,7 +9176,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-mongodb
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9196,7 +9197,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-pg-csv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cdr-pg-csv:libpq
 Conflicts: 
 Menu-Depends: 
@@ -9217,7 +9218,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cdr-sqlite
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9238,7 +9239,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cidlookup
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9260,7 +9261,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-clearmode
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9281,7 +9282,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-cluechoo
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cluechoo:libncurses
 Conflicts: 
 Menu-Depends: 
@@ -9302,7 +9303,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-commands
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9323,7 +9324,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-conference
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9344,7 +9345,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-console
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9365,7 +9366,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-curl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9386,7 +9387,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dahdi-codec
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9407,7 +9408,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-db
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9429,7 +9430,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-asterisk
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9450,7 +9451,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-directory
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9471,7 +9472,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dialplan-xml
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9492,7 +9493,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dingaling
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9513,7 +9514,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-directory
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9534,7 +9535,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-distributor
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9555,7 +9556,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-dptools
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9576,7 +9577,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-easyroute
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9597,7 +9598,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-enum
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-enum:libldns
 Conflicts: 
 Menu-Depends: 
@@ -9618,7 +9619,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-erlang-event
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-erlang-event:erlang
 Conflicts: 
 Menu-Depends: 
@@ -9639,7 +9640,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-esf
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9660,7 +9661,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-esl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9681,7 +9682,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-multicast
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9702,7 +9703,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-socket
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9723,7 +9724,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-test
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9744,7 +9745,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-event-zmq
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9765,7 +9766,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-expr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9786,7 +9787,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fail2ban
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9807,7 +9808,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fifo
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9828,7 +9829,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-format-cdr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9849,7 +9850,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fsk
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9871,7 +9872,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-fsv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9893,7 +9894,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-g723-1
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9914,7 +9915,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-g729
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9935,7 +9936,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-graylog2
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9956,7 +9957,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-gsmopen
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-gsmopen:gsmlib +PACKAGE_freeswitch-mod-gsmopen:libctb +PACKAGE_freeswitch-mod-gsmopen:libjpeg-turbo +PACKAGE_freeswitch-mod-gsmopen:libtiff
 Conflicts: 
 Menu-Depends: 
@@ -9978,7 +9979,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-h26x
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -9999,7 +10000,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-hash
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10021,7 +10022,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-hiredis
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-hiredis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -10042,7 +10043,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-httapi
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10064,7 +10065,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-http-cache
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10086,7 +10087,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-isac
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @arm||i386||mips||mips64||mips64el||mipsel||x86_64
 Conflicts: 
 Menu-Depends: 
@@ -10107,7 +10108,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-json-cdr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10128,7 +10129,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-kazoo
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-kazoo:erlang
 Conflicts: 
 Menu-Depends: 
@@ -10149,7 +10150,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-lcr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10170,7 +10171,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-ldap
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -10191,7 +10192,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-local-stream
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10212,7 +10213,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-logfile
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10233,7 +10234,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-loopback
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10254,7 +10255,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-lua
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-lua:liblua
 Conflicts: 
 Menu-Depends: 
@@ -10275,7 +10276,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-mariadb
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-mariadb:libmariadb
 Conflicts: 
 Menu-Depends: 
@@ -10296,7 +10297,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-mp4v
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10317,7 +10318,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-native-file
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10338,7 +10339,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-nibblebill
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10360,7 +10361,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-odbc-cdr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10381,7 +10382,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-opus
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opus:libopus
 Conflicts: 
 Menu-Depends: 
@@ -10402,7 +10403,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-opusfile
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opusfile:libopusenc +PACKAGE_freeswitch-mod-opusfile:libopusfile
 Conflicts: 
 Menu-Depends: 
@@ -10423,7 +10424,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-oreka
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10445,7 +10446,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-perl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-perl:libdb47 +PACKAGE_freeswitch-mod-perl:libgdbm +PACKAGE_freeswitch-mod-perl:perlbase-essential @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
@@ -10466,7 +10467,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-pgsql
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -10487,7 +10488,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-png
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_PNG
 Conflicts: 
 Menu-Depends: 
@@ -10508,7 +10509,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-pocketsphinx
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pocketsphinx:libsamplerate
 Conflicts: 
 Menu-Depends: 
@@ -10530,7 +10531,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-portaudio
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -10551,7 +10552,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-portaudio-stream
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio-stream:portaudio
 Conflicts: 
 Menu-Depends: 
@@ -10572,7 +10573,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-posix-timer
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10593,7 +10594,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-prefix
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10615,7 +10616,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-python3
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-python3:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10636,7 +10637,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-radius-cdr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10657,7 +10658,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-random
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10679,7 +10680,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-raven
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10700,7 +10701,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rayo
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-rayo:freeswitch-mod-ssml
 Conflicts: 
 Menu-Depends: 
@@ -10721,7 +10722,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-redis
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10743,7 +10744,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rss
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10764,7 +10765,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rtc
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10785,7 +10786,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-rtmp
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10806,7 +10807,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-de
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10827,7 +10828,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-en
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10848,7 +10849,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-es
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10869,7 +10870,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-es-ar
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10890,7 +10891,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-fa
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10911,7 +10912,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-fr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10932,7 +10933,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-he
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10953,7 +10954,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-hr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10974,7 +10975,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-hu
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -10995,7 +10996,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-it
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11016,7 +11017,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-ja
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11037,7 +11038,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-nl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11058,7 +11059,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-pl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11079,7 +11080,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-pt
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11100,7 +11101,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-ru
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11121,7 +11122,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-sv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11142,7 +11143,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-th
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11163,7 +11164,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-say-zh
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11184,7 +11185,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-shell-stream
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11205,7 +11206,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-shout
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-shout:lame-lib +PACKAGE_freeswitch-mod-shout:libmpg123 +PACKAGE_freeswitch-mod-shout:libshout
 Conflicts: 
 Menu-Depends: 
@@ -11226,7 +11227,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-signalwire
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-signalwire:signalwire-client-c
 Conflicts: 
 Menu-Depends: 
@@ -11247,7 +11248,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-skinny
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11268,7 +11269,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sms
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11290,7 +11291,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snapshot
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11312,7 +11313,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sndfile
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-sndfile:libsndfile
 Conflicts: 
 Menu-Depends: 
@@ -11333,7 +11334,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snmp
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-snmp:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -11354,7 +11355,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-snom
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11375,7 +11376,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sofia
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11396,7 +11397,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-sonar
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11418,7 +11419,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-spandsp
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-spandsp:libjpeg-turbo +PACKAGE_freeswitch-mod-spandsp:liblzma +PACKAGE_freeswitch-mod-spandsp:libtiff
 Conflicts: 
 Menu-Depends: 
@@ -11440,7 +11441,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-spy
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11461,7 +11462,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-ssml
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11483,7 +11484,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-stress
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11504,7 +11505,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-syslog
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11525,7 +11526,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-theora
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11546,7 +11547,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-tone-stream
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11567,7 +11568,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-translate
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11588,7 +11589,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-tts-commandline
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11609,7 +11610,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-unimrcp
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11630,7 +11631,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-valet-parking
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11651,7 +11652,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-verto
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-verto:libks
 Conflicts: 
 Menu-Depends: 
@@ -11672,7 +11673,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-video-filter
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11693,7 +11694,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-vmd
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11714,7 +11715,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-voicemail
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11735,7 +11736,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-voicemail-ivr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11756,7 +11757,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-cdr
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11777,7 +11778,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-curl
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11799,7 +11800,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-ldap
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-xml-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -11820,7 +11821,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-rpc
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11841,7 +11842,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-xml-scgi
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11862,7 +11863,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-yaml
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-yaml:libyaml
 Conflicts: 
 Menu-Depends: 
@@ -11883,7 +11884,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-mod-yuv
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_LIBYUV
 Conflicts: 
 Menu-Depends: 
@@ -11904,7 +11905,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-cli
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11927,7 +11928,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-encode
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-native-file +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-sndfile +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-spandsp
 Conflicts: 
 Menu-Depends: 
@@ -11949,7 +11950,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-ivrd
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11972,7 +11973,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-fs-tts
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
 Conflicts: 
 Menu-Depends: 
@@ -11993,7 +11994,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-gentls-cert
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-gentls-cert:openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -12014,7 +12015,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: freeswitch-util-tone2wav
 Submenu: Telephony
-Version: 1.10.7-2
+Version: 1.10.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-tone2wav:freeswitch-mod-sndfile
 Conflicts: 
 Menu-Depends: 
@@ -12066,7 +12067,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: kamailio
 Menu: 1
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libncurses +libpthread +libreadline +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -12088,7 +12089,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-lib-libkamailio-ims
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12109,7 +12110,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-lib-libtrie
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12130,7 +12131,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-util-kambdb-recover
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-util-kambdb-recover:kamailio-mod-db-berkeley
 Conflicts: 
 Menu-Depends: 
@@ -12151,7 +12152,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-acc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-acc:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -12172,7 +12173,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-acc-diameter
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-acc-diameter:kamailio-mod-acc
 Conflicts: 
 Menu-Depends: 
@@ -12193,7 +12194,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-acc-json
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-acc-json:jansson +PACKAGE_kamailio-mod-acc-json:kamailio-mod-acc
 Conflicts: 
 Menu-Depends: 
@@ -12214,7 +12215,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-alias-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12235,7 +12236,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-jsdt
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12256,7 +12257,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-lua
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-app-lua:liblua
 Conflicts: 
 Menu-Depends: 
@@ -12277,7 +12278,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-lua-sr
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-app-lua-sr:kamailio-mod-app-lua
 Conflicts: 
 Menu-Depends: 
@@ -12298,7 +12299,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-python3
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-app-python3:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -12319,7 +12320,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-ruby
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-app-ruby:libruby
 Conflicts: 
 Menu-Depends: 
@@ -12340,7 +12341,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-app-sqlang
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-app-sqlang:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -12361,7 +12362,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-async
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-async:kamailio-mod-tm +PACKAGE_kamailio-mod-async:kamailio-mod-tmx
 Conflicts: 
 Menu-Depends: 
@@ -12382,7 +12383,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12403,7 +12404,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-auth-db:kamailio-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -12424,7 +12425,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth-diameter
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-auth-diameter:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -12445,7 +12446,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth-ephemeral
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-auth-ephemeral:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12466,7 +12467,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth-identity
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-auth-identity:libopenssl +PACKAGE_kamailio-mod-auth-identity:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -12487,7 +12488,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-auth-xkeys
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-auth-xkeys:kamailio-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -12508,7 +12509,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-avp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12529,7 +12530,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-avpops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12550,7 +12551,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-benchmark
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12571,7 +12572,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-blst
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12592,7 +12593,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-call-control
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-call-control:kamailio-mod-dialog +PACKAGE_kamailio-mod-call-control:kamailio-mod-pv
 Conflicts: 
 Menu-Depends: 
@@ -12613,7 +12614,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-call-obj
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12634,7 +12635,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-carrierroute
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-carrierroute:kamailio-lib-libtrie
 Conflicts: 
 Menu-Depends: 
@@ -12655,7 +12656,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cdp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12676,7 +12677,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cdp-avp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-cdp-avp:kamailio-mod-cdp
 Conflicts: 
 Menu-Depends: 
@@ -12697,7 +12698,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cfgutils
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12718,7 +12719,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cfg-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12739,7 +12740,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cfg-rpc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12760,7 +12761,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cfgt
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12781,7 +12782,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cnxcc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-cnxcc:kamailio-mod-dialog +PACKAGE_kamailio-mod-cnxcc:libhiredis +PACKAGE_kamailio-mod-cnxcc:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -12802,7 +12803,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-corex
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12823,7 +12824,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-counters
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12844,7 +12845,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-cplc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-cplc:kamailio-mod-sl +PACKAGE_kamailio-mod-cplc:kamailio-mod-tm +PACKAGE_kamailio-mod-cplc:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -12865,7 +12866,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-crypto
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-crypto:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12886,7 +12887,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ctl
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12907,7 +12908,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db2-ldap
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db2-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -12928,7 +12929,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db2-ops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12949,7 +12950,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-berkeley
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-berkeley:libdb47
 Conflicts: 
 Menu-Depends: 
@@ -12970,7 +12971,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-cluster
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -12991,7 +12992,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-flatstore
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13012,7 +13013,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-mysql
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-mysql:libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -13033,7 +13034,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-postgres
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-postgres:libpq
 Conflicts: 
 Menu-Depends: 
@@ -13054,7 +13055,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-redis
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-redis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -13075,7 +13076,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-sqlite
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-sqlite:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -13096,7 +13097,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-text
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13117,7 +13118,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-db-unixodbc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-db-unixodbc:unixodbc
 Conflicts: 
 Menu-Depends: 
@@ -13138,7 +13139,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-debugger
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13159,7 +13160,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dialog
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-dialog:kamailio-mod-rr +PACKAGE_kamailio-mod-dialog:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13180,7 +13181,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dialplan
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-dialplan:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -13201,7 +13202,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dispatcher
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13222,7 +13223,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-diversion
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13243,7 +13244,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dlgs
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13264,7 +13265,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dmq
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-dmq:kamailio-mod-sl +PACKAGE_kamailio-mod-dmq:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13285,7 +13286,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-dmq-usrloc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-dmq-usrloc:kamailio-mod-dmq +PACKAGE_kamailio-mod-dmq-usrloc:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -13306,7 +13307,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-domain
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13327,7 +13328,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-domainpolicy
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13348,7 +13349,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-drouting
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13369,7 +13370,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-enum
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13390,7 +13391,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-erlang
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio @!USE_MUSL +PACKAGE_kamailio-mod-erlang:erlang
 Conflicts: 
 Menu-Depends: 
@@ -13411,7 +13412,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-evapi
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-evapi:libev
 Conflicts: 
 Menu-Depends: 
@@ -13432,7 +13433,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-evrexec
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13453,7 +13454,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-exec
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13474,7 +13475,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-group
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13495,7 +13496,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-gzcompress
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-gzcompress:zlib
 Conflicts: 
 Menu-Depends: 
@@ -13516,7 +13517,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-h350
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-h350:kamailio-mod-ldap +PACKAGE_kamailio-mod-h350:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -13537,7 +13538,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-htable
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13558,7 +13559,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-http-client
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-http-client:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -13579,7 +13580,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-imc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-imc:kamailio-mod-db-mysql +PACKAGE_kamailio-mod-imc:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13600,7 +13601,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-auth
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-auth:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-auth:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-auth:kamailio-mod-cdp-avp +PACKAGE_kamailio-mod-ims-auth:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13621,7 +13622,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-charging
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-charging:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-charging:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-charging:kamailio-mod-cdp-avp +PACKAGE_kamailio-mod-ims-charging:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13642,7 +13643,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-dialog
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-dialog:kamailio-mod-rr +PACKAGE_kamailio-mod-ims-dialog:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13663,7 +13664,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-diameter-server
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-diameter-server:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-diameter-server:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-diameter-server:kamailio-mod-cdp-avp
 Conflicts: 
 Menu-Depends: 
@@ -13684,7 +13685,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-icscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-icscf:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-icscf:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-icscf:kamailio-mod-cdp-avp +PACKAGE_kamailio-mod-ims-icscf:kamailio-mod-sl +PACKAGE_kamailio-mod-ims-icscf:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13705,7 +13706,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-ipsec-pcscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-ipsec-pcscf:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-ipsec-pcscf:kamailio-mod-ims-usrloc-pcscf +PACKAGE_kamailio-mod-ims-ipsec-pcscf:kamailio-mod-tm +PACKAGE_kamailio-mod-ims-ipsec-pcscf:libmnl
 Conflicts: 
 Menu-Depends: 
@@ -13726,7 +13727,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-isc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-isc:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-isc:kamailio-mod-ims-usrloc-scscf +PACKAGE_kamailio-mod-ims-isc:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13747,7 +13748,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-ocs
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-ocs:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-ocs:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-ocs:kamailio-mod-cdp-avp
 Conflicts: 
 Menu-Depends: 
@@ -13768,7 +13769,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-qos
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-qos:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-qos:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-qos:kamailio-mod-cdp-avp +PACKAGE_kamailio-mod-ims-qos:kamailio-mod-ims-dialog +PACKAGE_kamailio-mod-ims-qos:kamailio-mod-ims-usrloc-pcscf +PACKAGE_kamailio-mod-ims-qos:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13789,7 +13790,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-registrar-pcscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-registrar-pcscf:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-registrar-pcscf:kamailio-mod-ims-usrloc-pcscf
 Conflicts: 
 Menu-Depends: 
@@ -13810,7 +13811,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-registrar-scscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ims-registrar-scscf:kamailio-lib-libkamailio-ims +PACKAGE_kamailio-mod-ims-registrar-scscf:kamailio-mod-cdp +PACKAGE_kamailio-mod-ims-registrar-scscf:kamailio-mod-cdp-avp +PACKAGE_kamailio-mod-ims-registrar-scscf:kamailio-mod-ims-usrloc-scscf +PACKAGE_kamailio-mod-ims-registrar-scscf:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -13831,7 +13832,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-usrloc-pcscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13852,7 +13853,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ims-usrloc-scscf
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13873,7 +13874,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ipops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13894,7 +13895,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-jansson
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-jansson:jansson
 Conflicts: 
 Menu-Depends: 
@@ -13915,7 +13916,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-janssonrpcc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-janssonrpcc:kamailio-mod-jansson +PACKAGE_kamailio-mod-janssonrpcc:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -13936,7 +13937,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-json
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-json:libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -13957,7 +13958,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-jsonrpcs
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-jsonrpcs:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -13978,7 +13979,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-keepalive
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -13999,7 +14000,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-kemix
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14020,7 +14021,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-kex
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14041,7 +14042,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-lcr
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-lcr:kamailio-mod-tm +PACKAGE_kamailio-mod-lcr:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -14062,7 +14063,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ldap
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -14083,7 +14084,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-log-custom
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14104,7 +14105,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-lost
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-lost:kamailio-mod-http-client
 Conflicts: 
 Menu-Depends: 
@@ -14125,7 +14126,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-lrkproxy
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14146,7 +14147,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-mangler
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14167,7 +14168,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-matrix
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14188,7 +14189,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-maxfwd
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14209,7 +14210,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-mediaproxy
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-mediaproxy:kamailio-mod-dialog
 Conflicts: 
 Menu-Depends: 
@@ -14230,7 +14231,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-mohqueue
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-mohqueue:kamailio-mod-rtpproxy +PACKAGE_kamailio-mod-mohqueue:kamailio-mod-sl +PACKAGE_kamailio-mod-mohqueue:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -14251,7 +14252,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-mqueue
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14272,7 +14273,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-msilo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-msilo:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -14293,7 +14294,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-msrp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-msrp:kamailio-mod-tls
 Conflicts: 
 Menu-Depends: 
@@ -14314,7 +14315,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-mtree
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14335,7 +14336,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-nathelper
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-nathelper:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -14356,7 +14357,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-nat-traversal
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-nat-traversal:kamailio-mod-dialog +PACKAGE_kamailio-mod-nat-traversal:kamailio-mod-sl +PACKAGE_kamailio-mod-nat-traversal:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -14377,7 +14378,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ndb-redis
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-ndb-redis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -14398,7 +14399,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-nosip
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-nosip:kamailio-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -14419,7 +14420,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-outbound
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-outbound:kamailio-mod-stun +PACKAGE_kamailio-mod-outbound:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -14440,7 +14441,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-p-usrloc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14461,7 +14462,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-path
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-path:kamailio-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -14482,7 +14483,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pdb
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14503,7 +14504,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pdt
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14524,7 +14525,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-permissions
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14545,7 +14546,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pike
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14566,7 +14567,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pipelimit
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pipelimit:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -14587,7 +14588,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-prefix-route
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14608,7 +14609,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence:kamailio-mod-sl +PACKAGE_kamailio-mod-presence:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -14629,7 +14630,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-conference
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-conference:kamailio-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -14650,7 +14651,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-dialoginfo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-dialoginfo:kamailio-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -14671,7 +14672,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-mwi
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-mwi:kamailio-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -14692,7 +14693,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-profile
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-profile:kamailio-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -14713,7 +14714,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-reginfo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-reginfo:kamailio-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -14734,7 +14735,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-presence-xml
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-presence-xml:kamailio-mod-presence +PACKAGE_kamailio-mod-presence-xml:kamailio-mod-xcap-client
 Conflicts: 
 Menu-Depends: 
@@ -14755,7 +14756,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -14776,7 +14777,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-bla
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-bla:kamailio-mod-presence +PACKAGE_kamailio-mod-pua-bla:kamailio-mod-pua +PACKAGE_kamailio-mod-pua-bla:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -14797,7 +14798,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-dialoginfo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-dialoginfo:kamailio-mod-dialog +PACKAGE_kamailio-mod-pua-dialoginfo:kamailio-mod-pua
 Conflicts: 
 Menu-Depends: 
@@ -14818,7 +14819,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-json
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-json:libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -14839,7 +14840,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-reginfo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-reginfo:kamailio-mod-pua +PACKAGE_kamailio-mod-pua-reginfo:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -14860,7 +14861,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-rpc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-rpc:kamailio-mod-pua
 Conflicts: 
 Menu-Depends: 
@@ -14881,7 +14882,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-usrloc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-usrloc:kamailio-mod-pua +PACKAGE_kamailio-mod-pua-usrloc:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -14902,7 +14903,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pua-xmpp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-pua-xmpp:kamailio-mod-presence +PACKAGE_kamailio-mod-pua-xmpp:kamailio-mod-pua +PACKAGE_kamailio-mod-pua-xmpp:kamailio-mod-xmpp
 Conflicts: 
 Menu-Depends: 
@@ -14923,7 +14924,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pv
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14944,7 +14945,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-pv-headers
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -14965,7 +14966,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-qos
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-qos:kamailio-mod-dialog
 Conflicts: 
 Menu-Depends: 
@@ -14986,7 +14987,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ratelimit
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15007,7 +15008,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-regex
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-regex:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -15028,7 +15029,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-registrar
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-registrar:kamailio-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -15049,7 +15050,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rls
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-rls:kamailio-mod-presence +PACKAGE_kamailio-mod-rls:kamailio-mod-pua +PACKAGE_kamailio-mod-rls:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15070,7 +15071,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rr
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15091,7 +15092,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rtimer
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15112,7 +15113,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rtjson
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15133,7 +15134,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rtpengine
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-rtpengine:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15154,7 +15155,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-rtpproxy
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-rtpproxy:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15175,7 +15176,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sanity
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-sanity:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -15196,7 +15197,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sca
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-sca:kamailio-mod-sl +PACKAGE_kamailio-mod-sca:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15217,7 +15218,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sctp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-sctp:libsctp
 Conflicts: 
 Menu-Depends: 
@@ -15238,7 +15239,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sdpops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15259,7 +15260,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-seas
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-seas:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15280,7 +15281,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-secfilter
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15301,7 +15302,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sipcapture
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15322,7 +15323,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sipdump
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15343,7 +15344,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sipt
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15364,7 +15365,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-siptrace
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15385,7 +15386,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-siputils
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-siputils:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -15406,7 +15407,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sl
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15427,7 +15428,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sms
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-sms:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15448,7 +15449,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-smsops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15469,7 +15470,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-snmpstats
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-snmpstats:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -15490,7 +15491,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-speeddial
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15511,7 +15512,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sqlops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15532,7 +15533,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-ss7ops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15553,7 +15554,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-statistics
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15574,7 +15575,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-statsc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15595,7 +15596,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-statsd
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15616,7 +15617,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-stun
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15637,7 +15638,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-sst
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-sst:kamailio-mod-dialog +PACKAGE_kamailio-mod-sst:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -15658,7 +15659,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tcpops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15679,7 +15680,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-textops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15700,7 +15701,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-textopsx
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15721,7 +15722,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-timer
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15742,7 +15743,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tls
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-tls:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -15763,7 +15764,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tmrec
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15784,7 +15785,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-topoh
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-topoh:kamailio-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -15805,7 +15806,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-topos
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-topos:kamailio-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -15826,7 +15827,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-topos-redis
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-topos-redis:kamailio-mod-ndb-redis +PACKAGE_kamailio-mod-topos-redis:kamailio-mod-topos
 Conflicts: 
 Menu-Depends: 
@@ -15847,7 +15848,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tm
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15868,7 +15869,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tmx
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15889,7 +15890,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-tsilo
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-tsilo:kamailio-mod-registrar +PACKAGE_kamailio-mod-tsilo:kamailio-mod-sl +PACKAGE_kamailio-mod-tsilo:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15910,7 +15911,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uac
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-uac:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15931,7 +15932,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uac-redirect
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-uac-redirect:kamailio-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -15952,7 +15953,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uid-auth-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-uid-auth-db:kamailio-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -15973,7 +15974,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uid-avp-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -15994,7 +15995,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uid-domain
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16015,7 +16016,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uid-gflags
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16036,7 +16037,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uid-uri-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16057,7 +16058,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uri-db
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16078,7 +16079,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-userblocklist
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-userblocklist:kamailio-lib-libtrie
 Conflicts: 
 Menu-Depends: 
@@ -16099,7 +16100,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-usrloc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16120,7 +16121,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-utils
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-utils:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -16141,7 +16142,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-uuid
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-uuid:libuuid
 Conflicts: 
 Menu-Depends: 
@@ -16162,7 +16163,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-websocket
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-websocket:kamailio-mod-sl +PACKAGE_kamailio-mod-websocket:kamailio-mod-tm +PACKAGE_kamailio-mod-websocket:libopenssl +PACKAGE_kamailio-mod-websocket:libunistring
 Conflicts: 
 Menu-Depends: 
@@ -16183,7 +16184,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xcap-client
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xcap-client:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -16204,7 +16205,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xcap-server
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xcap-server:kamailio-mod-xhttp +PACKAGE_kamailio-mod-xcap-server:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -16225,7 +16226,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xhttp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xhttp:kamailio-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -16246,7 +16247,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xhttp-pi
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xhttp-pi:kamailio-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -16267,7 +16268,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xhttp-prom
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xhttp-prom:kamailio-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -16288,7 +16289,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xhttp-rpc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xhttp-rpc:kamailio-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -16309,7 +16310,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xlog
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16330,7 +16331,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xmlops
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16351,7 +16352,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xmlrpc
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16372,7 +16373,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xmpp
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio +PACKAGE_kamailio-mod-xmpp:kamailio-mod-tm +PACKAGE_kamailio-mod-xmpp:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -16393,7 +16394,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio-mod-xprint
 Submenu: Telephony
-Version: 5.5.2-1
+Version: 5.5.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio
 Conflicts: 
 Menu-Depends: 
@@ -16466,58 +16467,12 @@ http://sourceforge.net/projects/pcapsipdump/
 @@
 
 
-Source-Makefile: feeds/telephony/net/restund/Makefile
-
-Package: restund
-Submenu: Telephony
-Version: 0.4.12-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libre
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Modular STUN/TURN server
-Maintainer: Jiri Slachta <jiri@slachta.eu>
-Require-User: restund=373:restund=373
-Source: restund-0.4.12.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/COPYING
-Type: ipkg
-Description: Modular STUN/TURN server
-http://www.creytiv.com
-Jiri Slachta <jiri@slachta.eu>
-@@
-
-Package: restund-mod-mysql
-Submenu: Telephony
-Version: 0.4.12-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread restund +PACKAGE_restund-mod-mysql:libmysqlclient
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: restund MySQL database backend module
-Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: restund-0.4.12.tar.gz
-License: BSD-3-Clause
-LicenseFiles: docs/COPYING
-Type: ipkg
-Description: restund MySQL database backend module
-http://www.creytiv.com
-Jiri Slachta <jiri@slachta.eu>
-@@
-
-
 Source-Makefile: feeds/telephony/net/rtpengine/Makefile
-Build-Depends: gperf/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: gperf/host perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: kmod-ipt-rtpengine
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+9.5.2.1-1
+Version: <LINUX_VERSION>+9.5.3.2-0
 Depends: +PACKAGE_kmod-ipt-rtpengine:kmod-crypto-aead +PACKAGE_kmod-ipt-rtpengine:kmod-crypto-hash +PACKAGE_kmod-ipt-rtpengine:kmod-ipt-core
 Conflicts: 
 Menu-Depends: 
@@ -16527,7 +16482,7 @@ Category: Kernel modules
 Title: Sipwise rtpengine netfilter module
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: rtpengine=378:rtpengine=378
-Source: rtpengine-mr9.5.2.1.tar.gz
+Source: rtpengine-mr9.5.3.2.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16539,7 +16494,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine-no-transcode
 Submenu: Telephony
-Version: 9.5.2.1-1
+Version: 9.5.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine-no-transcode:glib2 +PACKAGE_rtpengine-no-transcode:json-glib +PACKAGE_rtpengine-no-transcode:libevent2 +PACKAGE_rtpengine-no-transcode:libevent2-pthreads +PACKAGE_rtpengine-no-transcode:libhiredis +PACKAGE_rtpengine-no-transcode:libip4tc +PACKAGE_rtpengine-no-transcode:libopenssl +PACKAGE_rtpengine-no-transcode:libpcap +PACKAGE_rtpengine-no-transcode:libpcre +PACKAGE_rtpengine-no-transcode:libwebsockets +PACKAGE_rtpengine-no-transcode:xmlrpc-c-client +PACKAGE_rtpengine-no-transcode:zlib +IPV6:libip6tc
 Conflicts: rtpengine
 Menu-Depends: 
@@ -16551,7 +16506,7 @@ Repository: base
 Title: Sipwise RTP Engine (no transcoding)
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: rtpengine=378:rtpengine=378
-Source: rtpengine-mr9.5.2.1.tar.gz
+Source: rtpengine-mr9.5.3.2.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16570,7 +16525,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: iptables-mod-rtpengine
 Submenu: Firewall
-Version: 9.5.2.1-1
+Version: 9.5.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_iptables-mod-rtpengine:libxtables
 Conflicts: 
 Menu-Depends: 
@@ -16580,7 +16535,7 @@ Category: Network
 Repository: base
 Title: Sipwise rtpengine iptables extension
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: rtpengine-mr9.5.2.1.tar.gz
+Source: rtpengine-mr9.5.3.2.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16591,7 +16546,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine
 Submenu: Telephony
-Version: 9.5.2.1-1
+Version: 9.5.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine:glib2 +PACKAGE_rtpengine:json-glib +PACKAGE_rtpengine:libevent2 +PACKAGE_rtpengine:libevent2-pthreads +PACKAGE_rtpengine:libhiredis +PACKAGE_rtpengine:libip4tc +PACKAGE_rtpengine:libopenssl +PACKAGE_rtpengine:libpcap +PACKAGE_rtpengine:libpcre +PACKAGE_rtpengine:libwebsockets +PACKAGE_rtpengine:xmlrpc-c-client +PACKAGE_rtpengine:zlib +PACKAGE_rtpengine:bcg729 +PACKAGE_rtpengine:libffmpeg-full +PACKAGE_rtpengine:libmariadb +PACKAGE_rtpengine:libspandsp3 +IPV6:libip6tc
 Conflicts: 
 Menu-Depends: 
@@ -16603,7 +16558,7 @@ Repository: base
 Title: Sipwise RTP Engine
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: rtpengine=378:rtpengine=378
-Source: rtpengine-mr9.5.2.1.tar.gz
+Source: rtpengine-mr9.5.3.2.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16620,7 +16575,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine-recording
 Submenu: Telephony
-Version: 9.5.2.1-1
+Version: 9.5.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine-recording:bcg729 +PACKAGE_rtpengine-recording:glib2 +PACKAGE_rtpengine-recording:libffmpeg-full +PACKAGE_rtpengine-recording:libmariadb +PACKAGE_rtpengine-recording:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -16631,7 +16586,7 @@ Repository: base
 Title: Sipwise RTP Recording Daemon
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: rtpengine=378:rtpengine=378
-Source: rtpengine-mr9.5.2.1.tar.gz
+Source: rtpengine-mr9.5.3.2.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16808,7 +16763,7 @@ Source-Makefile: feeds/telephony/net/siproxd/Makefile
 Package: siproxd
 Menu: 1
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl +libpthread +libosip2
 Conflicts: 
 Menu-Depends: 
@@ -16818,7 +16773,7 @@ Category: Network
 Repository: base
 Title: SIP (Session Initiation Protocol) proxy
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16838,7 +16793,7 @@ Config:
 
 Package: siproxd-mod-blacklist
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -16848,7 +16803,7 @@ Category: Network
 Repository: base
 Title: siproxd blacklist plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16859,7 +16814,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-codecfilter
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16869,7 +16824,7 @@ Category: Network
 Repository: base
 Title: siproxd codecfilter plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16880,7 +16835,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-defaulttarget
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16890,7 +16845,7 @@ Category: Network
 Repository: base
 Title: siproxd defaulttarget plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16901,7 +16856,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-demo
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16911,7 +16866,7 @@ Category: Network
 Repository: base
 Title: siproxd demo plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16922,7 +16877,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-bogus-via
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16932,7 +16887,7 @@ Category: Network
 Repository: base
 Title: siproxd fix_bogus_via plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16943,7 +16898,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-DTAG
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16953,7 +16908,7 @@ Category: Network
 Repository: base
 Title: siproxd fix_DTAG plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16964,7 +16919,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-fbox-anoncall
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16974,7 +16929,7 @@ Category: Network
 Repository: base
 Title: siproxd fix_fbox_anoncall plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -16985,7 +16940,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-logcall
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -16995,7 +16950,7 @@ Category: Network
 Repository: base
 Title: siproxd logcall plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17006,7 +16961,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-prefix
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17016,7 +16971,7 @@ Category: Network
 Repository: base
 Title: siproxd prefix plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17027,7 +16982,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-regex
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17037,7 +16992,7 @@ Category: Network
 Repository: base
 Title: siproxd regex plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17048,7 +17003,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-shortdial
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17058,7 +17013,7 @@ Category: Network
 Repository: base
 Title: siproxd shortdial plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17069,7 +17024,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stats
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17079,7 +17034,7 @@ Category: Network
 Repository: base
 Title: siproxd stats plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17090,7 +17045,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stripheader
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17100,7 +17055,7 @@ Category: Network
 Repository: base
 Title: siproxd stripheader plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17111,7 +17066,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stun
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17121,7 +17076,7 @@ Category: Network
 Repository: base
 Title: siproxd stun plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17132,7 +17087,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-siptrunk
 Submenu: Telephony
-Version: 0.8.3-4
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17142,7 +17097,7 @@ Category: Network
 Repository: base
 Title: siproxd siptrunk plugin
 Maintainer: 
-Source: siproxd-0.8.3.tar.gz
+Source: siproxd-2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -17197,12 +17152,12 @@ Config:
 
 
 Source-Makefile: feeds/telephony/net/yate/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: HOST_OS_MACOS:fakeuname/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: yate
 Menu: 1
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -17223,7 +17178,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-scripts-perl
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-scripts-perl:yate-mod-extmodule +PACKAGE_yate-scripts-perl:perlbase-data @!arc
 Conflicts: 
 Menu-Depends: 
@@ -17244,7 +17199,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-sounds
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17265,7 +17220,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-accfile
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17286,7 +17241,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-alsachan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-alsachan:alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -17307,7 +17262,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-amrnbcodec
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -17328,7 +17283,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-analog
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17349,7 +17304,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-analogdetect
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17370,7 +17325,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-analyzer
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17391,7 +17346,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-cache
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17412,7 +17367,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-callcounters
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17433,7 +17388,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-callfork
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17454,7 +17409,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-callgen
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17475,7 +17430,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-camel-map
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17496,7 +17451,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ccongestion
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17517,7 +17472,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-cdrbuild
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17538,7 +17493,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-cdrcombine
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17559,7 +17514,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-cdrfile
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17580,7 +17535,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ciscosm
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17601,7 +17556,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-clustering
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17622,7 +17577,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-conference
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17643,7 +17598,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-cpuload
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17664,7 +17619,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-dbpbx
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17685,7 +17640,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-dbwave
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-dbwave:yate-mod-wavefile
 Conflicts: 
 Menu-Depends: 
@@ -17706,7 +17661,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-dumbchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17727,7 +17682,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-enumroute
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17748,7 +17703,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-eventlogs
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17769,7 +17724,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-extmodule
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17790,7 +17745,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-faxchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-faxchan:libspandsp
 Conflicts: 
 Menu-Depends: 
@@ -17811,7 +17766,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-fileinfo
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17832,7 +17787,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-filetransfer
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17853,7 +17808,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-g722webrtc
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17874,7 +17829,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-gvoice
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17895,7 +17850,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-heartbeat
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17916,7 +17871,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ilbccodec
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17937,7 +17892,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ilbcwebrtc
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17958,7 +17913,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-isaccodec
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -17979,7 +17934,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-isupmangler
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18000,7 +17955,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-jabberclient
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18021,7 +17976,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-jabberserver
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18042,7 +17997,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-javascript
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18063,7 +18018,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-jbfeatures
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18084,7 +18039,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-lateroute
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18105,7 +18060,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-mgcpca
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18126,7 +18081,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-mgcpgw
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18147,7 +18102,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-moh
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18168,7 +18123,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-monitoring
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18189,7 +18144,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-mrcpspeech
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18210,7 +18165,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-msgsniff
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18231,7 +18186,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-mux
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18252,7 +18207,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-mysqldb
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-mysqldb:libmysqlclient-r
 Conflicts: 
 Menu-Depends: 
@@ -18273,7 +18228,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-openssl
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -18294,7 +18249,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-osschan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18315,7 +18270,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-park
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18336,7 +18291,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-pbx
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18357,7 +18312,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-pbxassist
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18378,7 +18333,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-pgsqldb
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-pgsqldb:libpq
 Conflicts: 
 Menu-Depends: 
@@ -18399,7 +18354,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-presence
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18420,7 +18375,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-queues
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18441,7 +18396,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-queuesnotify
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18462,7 +18417,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-regexroute
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18483,7 +18438,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-regfile
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18504,7 +18459,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-register
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18525,7 +18480,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-rmanager
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18546,7 +18501,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-sigtransport
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18567,7 +18522,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-sip-cnam-lnp
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18588,7 +18543,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-sipfeatures
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18609,7 +18564,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-speexcodec
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-speexcodec:libspeex
 Conflicts: 
 Menu-Depends: 
@@ -18630,7 +18585,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-sqlitedb
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-sqlitedb:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -18651,7 +18606,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ss7-lnp-ansi
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18672,7 +18627,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-subscription
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18693,7 +18648,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-tdmcard
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -18714,7 +18669,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-tonedetect
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18735,7 +18690,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-tonegen
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18756,7 +18711,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-users
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18777,7 +18732,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-wavefile
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18798,7 +18753,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-wiresniff
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18819,7 +18774,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-wpcard
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -18840,7 +18795,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-yiaxchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18861,7 +18816,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-yjinglechan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18882,7 +18837,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-yradius
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18903,7 +18858,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-yrtpchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18924,7 +18879,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ysigchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18945,7 +18900,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ysipchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18966,7 +18921,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ysnmpagent
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -18987,7 +18942,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ysockschan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -19008,7 +18963,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-ystunchan
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate
 Conflicts: 
 Menu-Depends: 
@@ -19029,7 +18984,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-zapcard
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate @!aarch64 +PACKAGE_yate-mod-zapcard:kmod-dahdi
 Conflicts: 
 Menu-Depends: 
@@ -19050,7 +19005,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: yate-mod-zlibcompress
 Submenu: Telephony
-Version: 6.4.0-1-1
+Version: 6.4.0-1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread yate +PACKAGE_yate-mod-zlibcompress:zlib
 Conflicts: 
 Menu-Depends: 

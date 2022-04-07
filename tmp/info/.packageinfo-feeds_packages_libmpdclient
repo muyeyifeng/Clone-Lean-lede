@@ -1,9 +1,7 @@
 Source-Makefile: package/feeds/packages/libmpdclient/Makefile
-Build-Depends: meson/host ninja/host
-Build-Depends/host: ninja/host
 
 Package: libmpdclient
-Version: 2.19-1
+Version: 2.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: libmpdclient
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: libmpdclient-2.19.tar.xz
+Source: libmpdclient-2.20.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg

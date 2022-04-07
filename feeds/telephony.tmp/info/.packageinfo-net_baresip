@@ -1,4 +1,5 @@
 Source-Makefile: feeds/telephony/net/baresip/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: baresip
 Menu: 1
@@ -467,7 +468,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -488,7 +489,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst-video
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,6 +1,5 @@
 Source-Makefile: feeds/packages/sound/pulseaudio/Makefile
-Build-Depends: meson/host !BUILD_NLS:libiconv !BUILD_NLS:gettext ninja/host
-Build-Depends/host: ninja/host
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: pulseaudio-daemon
 Version: 14.2-2

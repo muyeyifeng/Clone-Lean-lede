@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.03.12-0
+Version: 2.03.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.12.tgz
+Source: LVM2.2.03.14.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -23,7 +23,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libdevmapper-selinux
-Version: 2.03.12-0
+Version: 2.03.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.12.tgz
+Source: LVM2.2.03.14.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -48,7 +48,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2
 Submenu: Disc
-Version: 2.03.12-0
+Version: 2.03.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -59,7 +59,7 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.12.tgz
+Source: LVM2.2.03.14.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -72,7 +72,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2-selinux
 Submenu: Disc
-Version: 2.03.12-0
+Version: 2.03.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper-selinux
 Conflicts: 
 Menu-Depends: 
@@ -83,7 +83,7 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.12.tgz
+Source: LVM2.2.03.14.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg

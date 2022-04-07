@@ -8,8 +8,8 @@ Target-Features: gpio squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -25,8 +25,8 @@ Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1624,8 +1624,8 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kern
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -2338,6 +2338,20 @@ Build firmware images for GnuBee Personal Cloud Two
 
 @@
 
+Target-Profile: DEVICE_hilink_hlk-7621a
+Target-Profile-Name: HiLink HLK-7621A
+Target-Profile-Packages: kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hilink,hlk-7621a
+
+
+Target-Profile-Description:
+Build firmware images for HiLink HLK-7621A
+
+
+
+@@
+
 Target-Profile: DEVICE_hiwifi_hc5962
 Target-Profile-Name: HiWiFi HC5962
 Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 
@@ -2952,6 +2966,20 @@ Target-Profile-SupportedDevices: netis,wf2881
 
 Target-Profile-Description:
 Build firmware images for NETIS WF2881
+
+
+
+@@
+
+Target-Profile: DEVICE_oraybox_x3a
+Target-Profile-Name: OrayBox X3A
+Target-Profile-Packages: kmod-mt7615e kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: oraybox,x3a
+
+
+Target-Profile-Description:
+Build firmware images for OrayBox X3A
 
 
 
@@ -3696,8 +3724,8 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -4823,8 +4851,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -4952,8 +4980,8 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6483,8 +6511,8 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.10.84
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

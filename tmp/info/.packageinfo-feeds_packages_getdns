@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/getdns/Makefile
 
 Package: getdns
 Menu: 1
-Version: 1.7.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +!GETDNS_ENABLE_STUB_ONLY:libunbound +GETDNS_ENABLE_IDN_LIBIDN2:libidn2
+Version: 1.7.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +GETDNS_BUILD_LIBEVENT2:libevent2 +!GETDNS_ENABLE_STUB_ONLY:libunbound +GETDNS_ENABLE_IDN_LIBIDN2:libidn2
 Conflicts: 
 Menu-Depends: 
 Provides: 

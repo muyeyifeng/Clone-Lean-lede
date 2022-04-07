@@ -1,9 +1,7 @@
 Source-Makefile: package/feeds/packages/mpc/Makefile
-Build-Depends: meson/host ninja/host
-Build-Depends/host: ninja/host
 
 Package: mpc
-Version: 0.33-1
+Version: 0.34-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpdclient
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +11,7 @@ Category: Sound
 Repository: packages
 Title: Music Player Daemon Console Client
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpc-0.33.tar.xz
+Source: mpc-0.34.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

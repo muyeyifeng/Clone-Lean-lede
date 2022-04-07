@@ -4,11 +4,12 @@ Target-Board: mediatek
 Target-Name: MediaTek Ralink ARM
 Target-Arch: arm
 Target-Arch-Packages: arm_xscale
-Target-Features: dt-overlay emmc fpu gpio nand pci pcie separate_ramdisk squashfs usb
+Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -20,11 +21,12 @@ Target-Board: mediatek
 Target-Name: MT7622
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rtc separate_ramdisk squashfs usb
+Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -161,6 +163,20 @@ Build firmware images for MediaTek MTK7622 rfb1 AP (UBI)
 
 @@
 
+Target-Profile: DEVICE_ruijie_rg-ew3200gx-pro
+Target-Profile-Name: Ruijie RG-EW3200GX PRO
+Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ruijie,rg-ew3200gx-pro
+
+
+Target-Profile-Description:
+Build firmware images for Ruijie RG-EW3200GX PRO
+
+
+
+@@
+
 Target-Profile: DEVICE_totolink_a8000ru
 Target-Profile-Name: TOTOLINK A8000RU
 Target-Profile-Packages: swconfig 
@@ -238,11 +254,12 @@ Target-Board: mediatek
 Target-Name: MT7623
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
-Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rtc separate_ramdisk squashfs usb usbgadget
+Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs testing-kernel usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -263,15 +280,15 @@ Build firmware images for Bananapi BPi-R2
 
 @@
 
-Target-Profile: DEVICE_unielec_u7623-emmc
-Target-Profile-Name: UniElec U7623 eMMC
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile: DEVICE_unielec_u7623-02
+Target-Profile-Name: UniElec U7623-02
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
+Target-Profile-SupportedDevices: unielec,u7623-02 unielec,u7623-02-emmc-512m
 
 
 Target-Profile-Description:
-Build firmware images for UniElec U7623 eMMC
+Build firmware images for UniElec U7623-02
 
 
 
@@ -279,7 +296,7 @@ Build firmware images for UniElec U7623 eMMC
 
 Target-Profile: DEVICE_unielec_u7623-02-emmc-512m-legacy
 Target-Profile-Name: UniElec U7623-02 eMMC/512MiB RAM (legacy image)
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci-mtk 
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci partx-utils 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 
@@ -296,11 +313,12 @@ Target-Board: mediatek
 Target-Name: MT7629
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7
-Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.10.84
+Linux-Version: 5.10.109
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

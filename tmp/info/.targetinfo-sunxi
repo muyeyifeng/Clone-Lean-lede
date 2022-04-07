@@ -8,8 +8,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -33,8 +33,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -142,8 +142,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -545,8 +545,8 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.162
-Linux-Testing-Version: 5.4.162
+Linux-Version: 5.4.188
+Linux-Testing-Version: 5.4.188
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -605,7 +605,7 @@ Build firmware images for Libre Computer ALL-H3-CC H5
 
 Target-Profile: DEVICE_olimex_a64-olinuxino
 Target-Profile-Name: Olimex A64-Olinuxino
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino
 
@@ -619,7 +619,7 @@ Build firmware images for Olimex A64-Olinuxino
 
 Target-Profile: DEVICE_olimex_a64-olinuxino-emmc
 Target-Profile-Name: Olimex A64-Olinuxino eMMC
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: olimex,a64-olinuxino-emmc
 
@@ -633,7 +633,7 @@ Build firmware images for Olimex A64-Olinuxino eMMC
 
 Target-Profile: DEVICE_pine64_pine64-plus
 Target-Profile-Name: Pine64 Pine64+
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,pine64-plus
 
@@ -647,7 +647,7 @@ Build firmware images for Pine64 Pine64+
 
 Target-Profile: DEVICE_pine64_sopine-baseboard
 Target-Profile-Name: Pine64 SoPine
-Target-Profile-Packages: kmod-rtl8723bs rtl8723bs-firmware 
+Target-Profile-Packages: kmod-rtl8723bs rtl8723bu-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,sopine-baseboard
 

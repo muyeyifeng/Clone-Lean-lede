@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: brook
 Submenu: Web Servers/Proxies
-Version: 20210701-1
+Version: 20220406-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -12,15 +12,15 @@ Section: net
 Category: Network
 Repository: base
 Title: A cross-platform proxy software
-Maintainer: CN_SZTL <cnsztl@immortalwrt.org>
-Source: brook-20210701.tar.gz
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: brook-20220406.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description: 	Brook is a cross-platform strong encryption and not detectable proxy.
-	Zero-Configuration.
+Description:   Brook is a cross-platform strong encryption and not detectable proxy.
+  Zero-Configuration.
 https://github.com/txthinking/brook
-CN_SZTL <cnsztl@immortalwrt.org>
+Tianling Shen <cnsztl@immortalwrt.org>
 @@
 Config:
 	config BROOK_COMPRESS_GOPROXY
@@ -30,7 +30,7 @@ Config:
 	config BROOK_COMPRESS_UPX
 		bool "Compress executable files with UPX"
 		depends on !mips64
-		default y
+		default n
 @@
 
 

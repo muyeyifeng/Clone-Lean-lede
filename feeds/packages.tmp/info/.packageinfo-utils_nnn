@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/nnn/Makefile
 
 Package: nnn
-Version: 3.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libreadline
+Version: 4.4-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libreadline +musl-fts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Full-featured terminal file manager
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: nnn-v3.6.tar.gz
+Source: nnn-v4.4.tar.gz
 License: BSD-2-Clause
 LicenseFiles: LICENSE
 Type: ipkg

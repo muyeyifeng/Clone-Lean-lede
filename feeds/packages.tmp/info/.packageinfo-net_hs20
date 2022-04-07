@@ -3,7 +3,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: hs20-common
 Submenu: WirelessAPD
-Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-4
+Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -25,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: hs20-client
 Submenu: WirelessAPD
-Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-4
+Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hs20-common +libopenssl +libcurl +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -46,8 +46,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: hs20-server
 Submenu: WirelessAPD
-Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hs20-common +libopenssl +libsqlite3 +libxml2 +php7 +php7-cgi +php7-mod-xml +php7-mod-pdo-sqlite +openssl-util +sqlite3-cli +uhttpd +xxd
+Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hs20-common +libopenssl +libsqlite3 +libxml2 +php8 +php8-cgi +php8-mod-xml +php8-mod-pdo-sqlite +openssl-util +sqlite3-cli +uhttpd +xxd
 Conflicts: 
 Menu-Depends: 
 Provides: 

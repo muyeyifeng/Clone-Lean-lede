@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/rng-tools/Makefile
 Build-Depends: !USE_GLIBC:argp-standalone
 
 Package: rng-tools
-Version: 6.10-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysfs +libopenssl
+Version: 6.15-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Daemon for adding entropy to kernel entropy pool
 Maintainer: Nathaniel Wesley Filardo <nwfilardo@gmail.com>
-Source: rng-tools-6.10.tar.xz
+Source: rng-tools-6.15.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

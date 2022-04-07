@@ -1,10 +1,8 @@
 Source-Makefile: feeds/packages/utils/fuse3/Makefile
-Build-Depends: meson/host ninja/host
-Build-Depends/host: ninja/host
 
 Package: libfuse3
 Submenu: Filesystem
-Version: 3.10.1-1
+Version: 3.10.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: FUSE library
 Maintainer: 
-Source: fuse-3.10.1.tar.xz
+Source: fuse-3.10.5.tar.xz
 License: LGPL-2.1-only
 LicenseFiles: LGPL2.txt
 Type: ipkg
@@ -27,7 +25,7 @@ https://github.com/libfuse/libfuse
 
 Package: fuse3-utils
 Submenu: Filesystem
-Version: 3.10.1-1
+Version: 3.10.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse3
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +35,7 @@ Category: Utilities
 Repository: base
 Title: FUSE (utilities)
 Maintainer: 
-Source: fuse-3.10.1.tar.xz
+Source: fuse-3.10.5.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg

@@ -1,9 +1,9 @@
 Source-Makefile: feeds/helloworld/naiveproxy/Makefile
-Build-Depends: python3/host ninja/host
+Build-Depends: python3/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 96.0.4664.45-1-3
+Version: 100.0.4896.60-1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-96.0.4664.45-1.tar.gz
+Source: naiveproxy-100.0.4896.60-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

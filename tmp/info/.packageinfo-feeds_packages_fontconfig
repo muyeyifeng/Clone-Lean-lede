@@ -1,10 +1,9 @@
 Source-Makefile: package/feeds/packages/fontconfig/Makefile
-Build-Depends: gperf/host ninja/host
-Build-Depends/host: ninja/host
+Build-Depends: gperf/host
 
 Package: fontconfig
 Submenu: Font-Utils
-Version: 2.13.93-2
+Version: 2.13.94-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libexpat +libfreetype
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +13,7 @@ Category: Xorg
 Repository: packages
 Title: fontconfig
 Maintainer: 
-Source: fontconfig-2.13.93.tar.xz
+Source: fontconfig-2.13.94.tar.xz
 Type: ipkg
 Description: fontconfig
 http://fontconfig.org/

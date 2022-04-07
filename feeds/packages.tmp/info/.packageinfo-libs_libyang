@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/libyang/Makefile
 
 Package: libyang
-Version: 1.0.225-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libpthread
+Version: 2.0.112-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre2 +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: YANG data modeling language library
 Maintainer: Jakov Smolic <jakov.smolic@sartura.hr>
-Source: libyang-1.0.225.tar.gz
+Source: libyang-2.0.112.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -21,28 +21,8 @@ https://github.com/CESNET/libyang
 Jakov Smolic <jakov.smolic@sartura.hr>
 @@
 
-Package: libyang-cpp
-Version: 1.0.225-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libstdcpp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: YANG data modeling C++ language library
-Maintainer: Jakov Smolic <jakov.smolic@sartura.hr>
-Source: libyang-1.0.225.tar.gz
-License: BSD-3-Clause
-LicenseFiles: LICENSE
-Type: ipkg
-Description: YANG data modeling C++ language library
-https://github.com/CESNET/libyang
-Jakov Smolic <jakov.smolic@sartura.hr>
-@@
-
 Package: yanglint
-Version: 1.0.225-0
+Version: 2.0.112-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang
 Conflicts: 
 Menu-Depends: 
@@ -52,7 +32,7 @@ Category: Utilities
 Repository: base
 Title: YANG data modeling language utility
 Maintainer: Jakov Smolic <jakov.smolic@sartura.hr>
-Source: libyang-1.0.225.tar.gz
+Source: libyang-2.0.112.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

@@ -1,9 +1,7 @@
 Source-Makefile: package/feeds/packages/iputils/Makefile
-Build-Depends: meson/host ninja/host
-Build-Depends/host: ninja/host
 
 Package: iputils-ping
-Version: 20210202-1
+Version: 20211215-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-crypto-md5
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +11,7 @@ Category: Network
 Repository: packages
 Title: iputils-ping
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: iputils-20210202.tar.gz
+Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,7 +24,7 @@ Config:
 @@
 
 Package: iputils-arping
-Version: 20210202-1
+Version: 20211215-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +34,7 @@ Category: Network
 Repository: packages
 Title: iputils-arping
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: iputils-20210202.tar.gz
+Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -46,7 +44,7 @@ Noah Meyerhans <frodo@morgul.net>
 @@
 
 Package: iputils-clockdiff
-Version: 20210202-1
+Version: 20211215-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -56,7 +54,7 @@ Category: Network
 Repository: packages
 Title: iputils-clockdiff
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: iputils-20210202.tar.gz
+Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -66,7 +64,7 @@ Noah Meyerhans <frodo@morgul.net>
 @@
 
 Package: iputils-tracepath
-Version: 20210202-1
+Version: 20211215-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -76,7 +74,7 @@ Category: Network
 Repository: packages
 Title: iputils-tracepath
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: iputils-20210202.tar.gz
+Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -86,26 +84,6 @@ Noah Meyerhans <frodo@morgul.net>
 @@
 Config:
 	source "feeds/packages/net/iputils/Config_tracepath.in"
-@@
-
-Package: iputils-tftpd
-Version: 20210202-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: iputils-tftpd
-Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: iputils-20210202.tar.gz
-License: BSD-3-Clause
-LicenseFiles: LICENSE
-Type: ipkg
-Description:   Trivial File Transfer Protocol server
-https://github.com/iputils/iputils
-Noah Meyerhans <frodo@morgul.net>
 @@
 
 
