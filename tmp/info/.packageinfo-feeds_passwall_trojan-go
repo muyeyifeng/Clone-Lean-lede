@@ -22,15 +22,5 @@ Description:   Trojan features multiple protocols over TLS to avoid both
 https://p4gefau1t.github.io/trojan-go/
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
-Config:
-config TROJAN_GO_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config TROJAN_GO_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
-@@
 
 

@@ -2,34 +2,24 @@ Source-Makefile: feeds/packages/net/baidupcs-web/Makefile
 Build-Depends: golang/host
 
 Package: baidupcs-web
-Submenu: Web Servers/Proxies
+Submenu: Download Manager
 Version: 3.7.4-nnew-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: BaiduPCS-Web is a web controller for BaiduPCS-Go
+Title: A web controller for BaiduPCS-Go
 Maintainer: 
-Source: baidupcs-web-3.7.4-nnew.tar.xz
+Source: baidupcs-web-3.7.4-nnew.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   BaiduPCS-Web is a web controller for BaiduPCS-Go
+Description: A web controller for BaiduPCS-Go
 https://github.com/Erope/BaiduPCS-Go
 
-@@
-Config:
-config BAIDUPCS_WEB_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config BAIDUPCS_WEB_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
 @@
 
 

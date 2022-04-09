@@ -2344,7 +2344,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.17.8-1
+Version: 1.18-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2354,7 +2354,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.17.8.src.tar.gz
+Source: go1.18.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2380,7 +2380,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.17.8-1
+Version: 1.18-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2390,7 +2390,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.17.8.src.tar.gz
+Source: go1.18.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2412,7 +2412,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.17.8-1
+Version: 1.18-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2422,7 +2422,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.17.8.src.tar.gz
+Source: go1.18.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -9241,7 +9241,7 @@ Source-Makefile: feeds/packages/lang/python/django/Makefile
 
 Package: python3-django
 Submenu: Python
-Version: 4.0.2-0
+Version: 4.0.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-pytz +python3-sqlparse +python3-asgiref
 Conflicts: python3-django1
 Menu-Depends: 
@@ -9251,7 +9251,7 @@ Category: Languages
 Repository: base
 Title: The web framework for perfectionists with deadlines.
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Peter Stadler <peter.stadler@student.uibk.ac.at>
-Source: Django-4.0.2.tar.gz
+Source: Django-4.0.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE LICENSE.python
 Type: ipkg
@@ -9262,7 +9262,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Peter Stadler <peter.stadler@studen
 
 Package: python3-django-src
 Submenu: Python
-Version: 4.0.2-0
+Version: 4.0.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -9272,7 +9272,7 @@ Category: Languages
 Repository: base
 Title: The web framework for perfectionists with deadlines. (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Peter Stadler <peter.stadler@student.uibk.ac.at>
-Source: Django-4.0.2.tar.gz
+Source: Django-4.0.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE LICENSE.python
 Type: ipkg
@@ -53642,7 +53642,7 @@ Source-Makefile: feeds/packages/net/adguardhome/Makefile
 Build-Depends: golang/host node/host node-yarn/host
 
 Package: adguardhome
-Version: 0.107.5-1
+Version: 0.107.5-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -54569,34 +54569,24 @@ Source-Makefile: feeds/packages/net/baidupcs-web/Makefile
 Build-Depends: golang/host
 
 Package: baidupcs-web
-Submenu: Web Servers/Proxies
+Submenu: Download Manager
 Version: 3.7.4-nnew-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: BaiduPCS-Web is a web controller for BaiduPCS-Go
+Title: A web controller for BaiduPCS-Go
 Maintainer: 
-Source: baidupcs-web-3.7.4-nnew.tar.xz
+Source: baidupcs-web-3.7.4-nnew.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   BaiduPCS-Web is a web controller for BaiduPCS-Go
+Description: A web controller for BaiduPCS-Go
 https://github.com/Erope/BaiduPCS-Go
 
-@@
-Config:
-config BAIDUPCS_WEB_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config BAIDUPCS_WEB_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
 @@
 
 
@@ -55341,7 +55331,7 @@ Build-Depends: golang/host
 
 Package: cloudflared
 Submenu: Web Servers/Proxies
-Version: 2022.3.3-0
+Version: 2022.4.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -55351,7 +55341,7 @@ Category: Network
 Repository: base
 Title: Cloudflare Tunnel client
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: cloudflared-2022.3.3.tar.gz
+Source: cloudflared-2022.4.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56351,16 +56341,6 @@ Description:   A simple DNS proxy server that supports all existing DNS protocol
   work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
 https://github.com/AdguardTeam/dnsproxy
 Tianling Shen <cnsztl@immortalwrt.org>
-@@
-Config:
-config DNSPROXY_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config DNSPROXY_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
 @@
 
 
@@ -59383,15 +59363,6 @@ Type: ipkg
 Description: A WebDav server for AliyunDrive
 https://github.com/LinkLeong/go-aliyundrive-webdav
 Tianling Shen <cnsztl@immortalwrt.org>
-@@
-Config:
-config GO_ALIYUNDRIVE_WEBDAV_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config GO_ALIYUNDRIVE_WEBDAV_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	default y
 @@
 
 
@@ -63289,16 +63260,6 @@ Description: A plug-in DNS forwarder/splitter
 https://github.com/IrineSistiana/mosdns
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
-Config:
-config MOSDNS_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config MOSDNS_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
-@@
 
 
 Source-Makefile: feeds/packages/net/mosh/Makefile
@@ -64211,7 +64172,7 @@ Source-Makefile: feeds/packages/net/nextdns/Makefile
 Build-Depends: golang/host
 
 Package: nextdns
-Version: 1.32.1-1
+Version: 1.33.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -64221,7 +64182,7 @@ Category: Network
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.32.1.tar.xz
+Source: nextdns-1.33.11.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -64232,7 +64193,7 @@ Olivier Poitrey <rs@nextdns.io>
 
 Package: golang-github-nextdns-nextdns-dev
 Submenu: Go
-Version: 1.32.1-1
+Version: 1.33.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -64242,7 +64203,7 @@ Category: Languages
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy (source files)
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.32.1.tar.xz
+Source: nextdns-1.33.11.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -70453,7 +70414,7 @@ Source-Makefile: feeds/packages/net/speedtest-go/Makefile
 Build-Depends: golang/host
 
 Package: speedtest-go
-Version: 1.1.4-1
+Version: 1.1.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -70471,16 +70432,6 @@ Description:   Command Line Interface and pure Go API to
   Test Internet Speed using speedtest.net
 https://github.com/showwin/speedtest-go
 
-@@
-Config:
-config SPEEDTEST_GO_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config SPEEDTEST_GO_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
 @@
 
 
@@ -75483,6 +75434,32 @@ Description:   Web Services for Devices or Web Services on Devices (WSD),
   It also implements LLMNR multicast name lookup services.
 https://github.com/Netgear/wsdd2
 Andy Walsh <andy.walsh44+github@gmail.com>
+@@
+
+
+Source-Makefile: feeds/packages/net/xfrpc/Makefile
+
+Package: xfrpc
+Submenu: Web Servers/Proxies
+Version: 1.04.515-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libjson-c +libevent2 +libevent2-openssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: C language fast reverse proxy client
+Maintainer: Dengfeng Liu <liudf0716@gmail.com>
+Source: xfrpc-1.04.515.tar.xz
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   xfrpc is C language fast reverse proxy client
+  compare with golang version frpc
+  xfrpc can run in almost all openwrt device
+https://github.com/liudf0716/xfrpc
+Dengfeng Liu <liudf0716@gmail.com>
 @@
 
 
@@ -84864,7 +84841,7 @@ Source-Makefile: feeds/packages/utils/docker-compose/Makefile
 Build-Depends: golang/host
 
 Package: docker-compose
-Version: 2.4.0-0
+Version: 2.4.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
@@ -84874,7 +84851,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.4.0.tar.gz
+Source: v2.4.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -84917,8 +84894,8 @@ Source-Makefile: feeds/packages/utils/domoticz/Makefile
 Build-Depends: python3 minizip cereal
 
 Package: domoticz
-Version: 2020.2-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +python3 +minizip @BROKEN +lua5.3 +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
+Version: 2022.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +python3 +minizip +lua5.3 +libfmt +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -84928,7 +84905,7 @@ Repository: base
 Title: Open Source Home Automation System
 Maintainer: David Woodhouse <dwmw2@infradead.org>
 Require-User: domoticz=6144:domoticz=6144
-Source: domoticz-2020.2.tar.gz
+Source: domoticz-2022.1.tar.gz
 License: GPL-3.0
 LicenseFiles: License.txt
 Type: ipkg
@@ -99147,7 +99124,7 @@ Source-Makefile: feeds/packages/utils/squashfs-tools/Makefile
 
 Package: squashfs-tools-mksquashfs
 Submenu: Filesystem
-Version: 4.4-3
+Version: 4.5.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +SQUASHFS_TOOLS_LZO_SUPPORT:liblzo +SQUASHFS_TOOLS_LZ4_SUPPORT:liblz4 +SQUASHFS_TOOLS_XZ_SUPPORT:liblzma +SQUASHFS_TOOLS_ZSTD_SUPPORT:libzstd
 Conflicts: 
 Menu-Depends: 
@@ -99157,7 +99134,7 @@ Category: Utilities
 Repository: base
 Title: Tools to create and extract Squashfs filesystems mksquashfs
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: squashfs-tools-4.4.tar.gz
+Source: squashfs-tools-4.5.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -99168,7 +99145,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 
 Package: squashfs-tools-unsquashfs
 Submenu: Filesystem
-Version: 4.4-3
+Version: 4.5.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +SQUASHFS_TOOLS_LZO_SUPPORT:liblzo +SQUASHFS_TOOLS_LZ4_SUPPORT:liblz4 +SQUASHFS_TOOLS_XZ_SUPPORT:liblzma +SQUASHFS_TOOLS_ZSTD_SUPPORT:libzstd
 Conflicts: 
 Menu-Depends: 
@@ -99178,7 +99155,7 @@ Category: Utilities
 Repository: base
 Title: Tools to create and extract Squashfs filesystems unsquashfs
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: squashfs-tools-4.4.tar.gz
+Source: squashfs-tools-4.5.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg

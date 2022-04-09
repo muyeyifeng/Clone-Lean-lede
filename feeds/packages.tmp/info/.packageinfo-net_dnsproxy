@@ -24,15 +24,5 @@ Description:   A simple DNS proxy server that supports all existing DNS protocol
 https://github.com/AdguardTeam/dnsproxy
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
-Config:
-config DNSPROXY_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config DNSPROXY_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
-@@
 
 

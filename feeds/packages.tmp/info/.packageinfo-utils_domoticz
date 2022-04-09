@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/domoticz/Makefile
 Build-Depends: python3 minizip cereal
 
 Package: domoticz
-Version: 2020.2-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +python3 +minizip @BROKEN +lua5.3 +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
+Version: 2022.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +boost +boost-date_time +boost-system +boost-thread +jsoncpp +libcurl +python3 +minizip +lua5.3 +libfmt +libmosquitto +libopenssl +libopenzwave +libsqlite3 +libstdcpp +telldus-core +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Repository: base
 Title: Open Source Home Automation System
 Maintainer: David Woodhouse <dwmw2@infradead.org>
 Require-User: domoticz=6144:domoticz=6144
-Source: domoticz-2020.2.tar.gz
+Source: domoticz-2022.1.tar.gz
 License: GPL-3.0
 LicenseFiles: License.txt
 Type: ipkg

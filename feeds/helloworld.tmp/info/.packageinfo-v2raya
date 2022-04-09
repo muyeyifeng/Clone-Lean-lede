@@ -22,15 +22,5 @@ Description:   v2rayA is a V2Ray Linux client supporting global transparent prox
 https://v2raya.org
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
-Config:
-config V2RAYA_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config V2RAYA_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
-@@
 
 

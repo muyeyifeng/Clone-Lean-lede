@@ -12,24 +12,14 @@ Section: net
 Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
-Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Source: xray-plugin-1.5.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: SIP003 plugin for Shadowsocks, based on Xray
 https://github.com/teddysun/xray-plugin
-Tianling Shen <cnsztl@project-openwrt.eu.org>
-@@
-Config:
-config XRAY_PLUGIN_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config XRAY_PLUGIN_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
+Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 

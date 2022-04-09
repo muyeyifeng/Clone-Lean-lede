@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/speedtest-go/Makefile
 Build-Depends: golang/host
 
 Package: speedtest-go
-Version: 1.1.4-1
+Version: 1.1.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -20,16 +20,6 @@ Description:   Command Line Interface and pure Go API to
   Test Internet Speed using speedtest.net
 https://github.com/showwin/speedtest-go
 
-@@
-Config:
-config SPEEDTEST_GO_COMPRESS_GOPROXY
-	bool "Compiling with GOPROXY proxy"
-	default n
-
-config SPEEDTEST_GO_COMPRESS_UPX
-	bool "Compress executable files with UPX"
-	depends on !mips64
-	default n
 @@
 
 

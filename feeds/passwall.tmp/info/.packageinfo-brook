@@ -22,15 +22,5 @@ Description:   Brook is a cross-platform strong encryption and not detectable pr
 https://github.com/txthinking/brook
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
-Config:
-	config BROOK_COMPRESS_GOPROXY
-		bool "Compiling with GOPROXY proxy"
-		default n
-
-	config BROOK_COMPRESS_UPX
-		bool "Compress executable files with UPX"
-		depends on !mips64
-		default n
-@@
 
 
