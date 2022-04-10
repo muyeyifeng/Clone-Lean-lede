@@ -860,6 +860,39 @@ Jan Pavlinec <jan.pavlinec@nic.cz>
 @@
 
 
+Source-Makefile: feeds/packages/devel/go-rice/Makefile
+Build-Depends: golang/host
+Build-Depends/host: golang/host
+Build-Types: host
+
+Package: go-rice
+Version: 1.0.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: A Go package that makes working with resources
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: go.rice-1.0.2.tar.gz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   go.rice is a Go package that makes working with resources such as
+  html,js,css,images and templates easy.
+
+  During development go.rice will load required files directly from disk.
+  Upon deployment it's easy to add all resource files to a executable
+  using the rice tool without changing the source code for your package.
+
+  go.rice provides methods to add resources to a binary in different scenarios.
+https://github.com/GeertJohan/go.rice
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
 Source-Makefile: feeds/packages/devel/libtool-bin/Makefile
 
 Package: libtool-bin
@@ -54566,7 +54599,7 @@ Christian Beier <cb@shoutrlabs.com>
 
 
 Source-Makefile: feeds/packages/net/baidupcs-web/Makefile
-Build-Depends: golang/host
+Build-Depends: golang/host go-rice/host
 
 Package: baidupcs-web
 Submenu: Download Manager
@@ -91824,7 +91857,7 @@ Source-Makefile: feeds/packages/utils/open-vm-tools/Makefile
 Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: open-vm-tools
-Version: 11.2.5-1
+Version: 12.0.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +glib2 +libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
@@ -91834,7 +91867,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools
 Maintainer: Yuhei OKAWA <tochiro.srchack@gmail.com>
-Source: open-vm-tools-11.2.5-17337674.tar.gz
+Source: open-vm-tools-12.0.0-19345655.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -91844,8 +91877,8 @@ Yuhei OKAWA <tochiro.srchack@gmail.com>
 @@
 
 Package: open-vm-tools-fuse
-Version: 11.2.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse
+Version: 12.0.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91854,7 +91887,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools-fuse
 Maintainer: Kagurazaka Kotori <kagurazakakotori@gmail.com>
-Source: open-vm-tools-11.2.5-17337674.tar.gz
+Source: open-vm-tools-12.0.0-19345655.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -99390,7 +99423,7 @@ Source-Makefile: feeds/packages/utils/syncthing/Makefile
 Build-Depends: golang/host
 
 Package: syncthing
-Version: 1.18.2-0
+Version: 1.19.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -99401,7 +99434,7 @@ Repository: base
 Title: Continuous file synchronization program
 Maintainer: Paul Spooren <mail@aparcar.org>
 Require-User: syncthing=499:syncthing=499
-Source: syncthing-source-v1.18.2.tar.gz
+Source: syncthing-source-v1.19.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

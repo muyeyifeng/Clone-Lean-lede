@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/open-vm-tools/Makefile
 Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: open-vm-tools
-Version: 11.2.5-1
+Version: 12.0.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +glib2 +libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: packages
 Title: open-vm-tools
 Maintainer: Yuhei OKAWA <tochiro.srchack@gmail.com>
-Source: open-vm-tools-11.2.5-17337674.tar.gz
+Source: open-vm-tools-12.0.0-19345655.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -22,8 +22,8 @@ Yuhei OKAWA <tochiro.srchack@gmail.com>
 @@
 
 Package: open-vm-tools-fuse
-Version: 11.2.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse
+Version: 12.0.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Category: Utilities
 Repository: packages
 Title: open-vm-tools-fuse
 Maintainer: Kagurazaka Kotori <kagurazakakotori@gmail.com>
-Source: open-vm-tools-11.2.5-17337674.tar.gz
+Source: open-vm-tools-12.0.0-19345655.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
