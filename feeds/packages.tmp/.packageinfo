@@ -82296,7 +82296,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.4.12-1
+Version: 1.5.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -82306,7 +82306,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.4.12.tar.gz
+Source: containerd-1.5.11.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -84850,7 +84850,7 @@ Source-Makefile: feeds/packages/utils/docker/Makefile
 Build-Depends: golang/host
 
 Package: docker
-Version: 20.10.12-0
+Version: 20.10.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -84860,7 +84860,7 @@ Category: Utilities
 Repository: base
 Title: Docker Community Edition CLI
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: docker-20.10.12.tar.gz
+Source: docker-20.10.14.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -84899,7 +84899,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.12-0
+Version: 20.10.14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +@KERNEL_NAMESPACES +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -84910,7 +84910,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.12.tar.gz
+Source: dockerd-20.10.14.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -91857,7 +91857,7 @@ Source-Makefile: feeds/packages/utils/open-vm-tools/Makefile
 Build-Depends: glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: open-vm-tools
-Version: 12.0.0-0
+Version: 11.3.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +glib2 +libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
@@ -91867,7 +91867,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools
 Maintainer: Yuhei OKAWA <tochiro.srchack@gmail.com>
-Source: open-vm-tools-12.0.0-19345655.tar.gz
+Source: open-vm-tools-11.3.0-18090558.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -91877,8 +91877,8 @@ Yuhei OKAWA <tochiro.srchack@gmail.com>
 @@
 
 Package: open-vm-tools-fuse
-Version: 12.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse3
+Version: 11.3.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +open-vm-tools +libfuse
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91887,7 +91887,7 @@ Category: Utilities
 Repository: base
 Title: open-vm-tools-fuse
 Maintainer: Kagurazaka Kotori <kagurazakakotori@gmail.com>
-Source: open-vm-tools-12.0.0-19345655.tar.gz
+Source: open-vm-tools-11.3.0-18090558.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -95312,7 +95312,7 @@ Source-Makefile: feeds/packages/utils/runc/Makefile
 Build-Depends: golang/host
 
 Package: runc
-Version: 1.0.2-1
+Version: 1.0.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -95322,7 +95322,7 @@ Category: Utilities
 Repository: base
 Title: runc container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: runc-1.0.2.tar.gz
+Source: runc-1.0.3.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
