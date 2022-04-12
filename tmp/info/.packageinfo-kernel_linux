@@ -2475,7 +2475,7 @@ Description:  Kernel module for MSDOS filesystem support
 Package: kmod-fs-nfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: +kmod-fs-nfs-common +kmod-dnsresolver
+Depends: +kmod-fs-nfs-common +kmod-dnsresolver +!LINUX_5_4:kmod-fs-nfs-ssc
 Conflicts: 
 Menu-Depends: 
 Provides: 
