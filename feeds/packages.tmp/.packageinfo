@@ -2423,7 +2423,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18-1
+Version: 1.18.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2433,7 +2433,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.src.tar.gz
+Source: go1.18.1.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2459,7 +2459,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18-1
+Version: 1.18.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2469,7 +2469,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.src.tar.gz
+Source: go1.18.1.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2491,7 +2491,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18-1
+Version: 1.18.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2501,7 +2501,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.src.tar.gz
+Source: go1.18.1.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -66677,7 +66677,7 @@ Build-Depends/host: protobuf/host
 Build-Types: host
 
 Package: ola
-Version: 0.10.8-2
+Version: 0.10.8-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +protobuf +libftdi1 +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses +liblo +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
@@ -79832,6 +79832,29 @@ Type: ipkg
 Description: Bluetooth daemon
 http://www.bluez.org/
 
+@@
+
+
+Source-Makefile: feeds/packages/utils/bluez-tools/Makefile
+
+Package: bluez-tools
+Version: 20201025.f653217-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-daemon +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Utilities
+Category: Utilities
+Repository: base
+Title: Bluetooth tools
+Maintainer: Karl Osterseher <karli_o@gmx.at>
+Source: bluez-tools-20201025.f653217.tar.xz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Bluetooth tools for bluez daemon. This will install bt-agent only!
+https://github.com/khvzak/bluez-tools
+Karl Osterseher <karli_o@gmx.at>
 @@
 
 

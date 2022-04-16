@@ -1034,6 +1034,7 @@ $(eval $(call PackageDir,utils_bigclown_bigclown-gateway,utils/bigclown/bigclown
 $(eval $(call PackageDir,utils_bigclown_bigclown-mqtt2influxdb,utils/bigclown/bigclown-mqtt2influxdb,))
 $(eval $(call PackageDir,utils_bluelog,utils/bluelog,))
 $(eval $(call PackageDir,utils_bluez,utils/bluez,))
+$(eval $(call PackageDir,utils_bluez-tools,utils/bluez-tools,))
 $(eval $(call PackageDir,utils_bluld,utils/bluld,))
 $(eval $(call PackageDir,utils_bmx7-dnsupdate,utils/bmx7-dnsupdate,))
 $(eval $(call PackageDir,utils_bonnie++,utils/bonnie++,))
