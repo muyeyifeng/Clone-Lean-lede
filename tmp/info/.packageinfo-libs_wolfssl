@@ -11,7 +11,6 @@ Menu-Depends:
 Provides: libcyassl
 Section: libs
 Category: Libraries
-Repository: base
 Title: wolfSSL library
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
 Source: wolfssl-5.2.0-stable.tar.gz
@@ -25,6 +24,27 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 Config:
 	source "package/libs/wolfssl/Config.in"
+@@
+
+Package: libwolfssl-benchmark
+Submenu: SSL
+Version: 5.2.0-stable-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libwolfssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: wolfSSL Benchmark Utility
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Source: wolfssl-5.2.0-stable.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: LICENSING COPYING
+Type: ipkg
+Description: This is the wolfssl benchmark utility.
+http://www.wolfssl.com/
+Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 
 
