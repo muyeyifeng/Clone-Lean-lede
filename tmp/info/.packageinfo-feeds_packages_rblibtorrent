@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/rblibtorrent/Makefile
 
 Package: rblibtorrent
-Version: 1.2.15-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +libopenssl +boost +boost-system +boost-chrono +boost-random
+Version: 1.2.16-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +libopenssl +boost +boost-system +boost-chrono +boost-random +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Rasterbar BitTorrent library
 Maintainer: Arvid Norberg <arvid@libtorrent.org>
-Source: rblibtorrent-1.2.15.tar.gz
+Source: rblibtorrent-1.2.16.tar.gz
 License: BSD
 LicenseFiles: COPYING
 Type: ipkg

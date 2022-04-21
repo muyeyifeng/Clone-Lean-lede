@@ -126,6 +126,8 @@ $(eval $(call PackageDir,lean_shortcut-fe_fast-classifier,lean/shortcut-fe/fast-
 $(eval $(call PackageDir,lean_shortcut-fe_shortcut-fe,lean/shortcut-fe/shortcut-fe,))
 $(eval $(call PackageDir,lean_shortcut-fe_simulated-driver,lean/shortcut-fe/simulated-driver,))
 $(eval $(call PackageDir,lean_srelay,lean/srelay,))
+$(eval $(call PackageDir,lean_ucl,lean/ucl,))
+$(eval $(call PackageDir,lean_upx,lean/upx,))
 $(eval $(call PackageDir,lean_vsftpd-alt,lean/vsftpd-alt,))
 $(eval $(call PackageDir,lean_wol,lean/wol,))
 $(eval $(call PackageDir,libs_argp-standalone,libs/argp-standalone,))
