@@ -4,7 +4,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: rsync
 Menu: 1
 Submenu: File Transfer
-Version: 3.2.3-3
+Version: 3.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +zlib +RSYNC_xattr:libattr +RSYNC_acl:libacl +RSYNC_zstd:libzstd +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Network
 Repository: packages
 Title: Fast remote file copy program (like rcp)
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.3.tar.gz
+Source: rsync-3.2.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -34,7 +34,7 @@ Config:
 
 Package: rsyncd
 Submenu: File Transfer
-Version: 3.2.3-3
+Version: 3.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync
 Conflicts: 
 Menu-Depends: 
@@ -44,7 +44,7 @@ Category: Network
 Repository: packages
 Title: Rsync daemon
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.3.tar.gz
+Source: rsync-3.2.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -56,7 +56,7 @@ Maxim Storchak <m.storchak@gmail.com>
 
 Package: rrsync
 Submenu: File Transfer
-Version: 3.2.3-3
+Version: 3.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync +perlbase-file +perl @(PACKAGE_openssh-server||PACKAGE_openssh-server-pam)
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Category: Network
 Repository: packages
 Title: Restricted rsync script
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.3.tar.gz
+Source: rsync-3.2.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
