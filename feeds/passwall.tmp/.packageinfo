@@ -754,7 +754,7 @@ Source-Makefile: feeds/passwall/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.5.4-0
+Version: 1.5.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -764,7 +764,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.5.4.tar.gz
+Source: Xray-core-1.5.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -775,7 +775,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: xray-example
-Version: 1.5.4-0
+Version: 1.5.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -785,7 +785,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.5.4.tar.gz
+Source: Xray-core-1.5.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -803,7 +803,7 @@ Build-Depends: golang/host
 
 Package: xray-plugin
 Submenu: Web Servers/Proxies
-Version: 1.5.4-0
+Version: 1.5.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -813,7 +813,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-plugin-1.5.4.tar.gz
+Source: xray-plugin-1.5.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
