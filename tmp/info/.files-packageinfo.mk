@@ -435,7 +435,6 @@ $(eval $(call PackageDir,feeds_luci_luci-app-shadowsocks-libev,feeds/luci/luci-a
 $(eval $(call PackageDir,feeds_luci_luci-app-shairplay,feeds/luci/luci-app-shairplay,))
 $(eval $(call PackageDir,feeds_luci_luci-app-siitwizard,feeds/luci/luci-app-siitwizard,))
 $(eval $(call PackageDir,feeds_luci_luci-app-simple-adblock,feeds/luci/luci-app-simple-adblock,))
-$(eval $(call PackageDir,feeds_luci_luci-app-socat,feeds/luci/luci-app-socat,))
 $(eval $(call PackageDir,feeds_luci_luci-app-softethervpn,feeds/luci/luci-app-softethervpn,))
 $(eval $(call PackageDir,feeds_luci_luci-app-splash,feeds/luci/luci-app-splash,))
 $(eval $(call PackageDir,feeds_luci_luci-app-sqm,feeds/luci/luci-app-sqm,))
