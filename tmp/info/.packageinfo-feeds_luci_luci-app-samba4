@@ -19,25 +19,6 @@ Description: Network Shares - Samba 4 SMB/CIFS module
 
 @@
 
-Package: luci-i18n-samba4-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-samba4 - uk translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-samba4 - украї́нська (Ukrainian)
-
-@@
-
 Package: luci-i18n-samba4-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -76,8 +57,8 @@ Description:     Translation for luci-app-samba4 - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-samba4-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-samba4-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
 Conflicts: 
@@ -86,12 +67,31 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-samba4 - ro translation
+Title: luci-app-samba4 - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba4 - Română (Romanian)
+Description:     Translation for luci-app-samba4 - Slovenčina (Slovak)
+
+@@
+
+Package: luci-i18n-samba4-no
+Default: LUCI_LANG_no||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-samba4 - no translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Norsk (Norwegian)
 
 @@
 
@@ -114,8 +114,8 @@ Description:     Translation for luci-app-samba4 - English
 
 @@
 
-Package: luci-i18n-samba4-pl
-Default: LUCI_LANG_pl||(ALL&&m)
+Package: luci-i18n-samba4-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
 Conflicts: 
@@ -124,17 +124,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-samba4 - pl translation
+Title: luci-app-samba4 - el translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba4 - Polski (Polish)
+Description:     Translation for luci-app-samba4 - Ελληνικά (Greek)
 
 @@
 
-Package: luci-i18n-samba4-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-samba4-uk
+Default: LUCI_LANG_uk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
 Conflicts: 
@@ -143,12 +143,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-samba4 - sk translation
+Title: luci-app-samba4 - uk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba4 - Slovenčina (Slovak)
+Description:     Translation for luci-app-samba4 - украї́нська (Ukrainian)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-samba4 - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-samba4-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-samba4-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
 Conflicts: 
@@ -219,12 +219,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-samba4 - no translation
+Title: luci-app-samba4 - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba4 - Norsk (Norwegian)
+Description:     Translation for luci-app-samba4 - Română (Romanian)
 
 @@
 
@@ -244,6 +244,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-samba4 - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-samba4-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-samba4 - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Polski (Polish)
 
 @@
 
@@ -358,25 +377,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-samba4 - Русский (Russian)
-
-@@
-
-Package: luci-i18n-samba4-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-samba4 - el translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-samba4 - Ελληνικά (Greek)
 
 @@
 

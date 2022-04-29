@@ -20,26 +20,6 @@ Description: Quality of Service configuration module
 
 @@
 
-Package: luci-i18n-qos-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-qos - uk translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-qos - украї́нська (Ukrainian)
-
-@@
-
 Package: luci-i18n-qos-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -80,8 +60,8 @@ Description:     Translation for luci-app-qos - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-qos-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-qos-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
 Conflicts: 
@@ -90,13 +70,33 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-qos - ro translation
+Title: luci-app-qos - sk translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qos - Română (Romanian)
+Description:     Translation for luci-app-qos - Slovenčina (Slovak)
+
+@@
+
+Package: luci-i18n-qos-no
+Default: LUCI_LANG_no||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-qos - no translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-qos - Norsk (Norwegian)
 
 @@
 
@@ -120,8 +120,8 @@ Description:     Translation for luci-app-qos - English
 
 @@
 
-Package: luci-i18n-qos-pl
-Default: LUCI_LANG_pl||(ALL&&m)
+Package: luci-i18n-qos-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
 Conflicts: 
@@ -130,18 +130,18 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-qos - pl translation
+Title: luci-app-qos - el translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qos - Polski (Polish)
+Description:     Translation for luci-app-qos - Ελληνικά (Greek)
 
 @@
 
-Package: luci-i18n-qos-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-qos-uk
+Default: LUCI_LANG_uk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
 Conflicts: 
@@ -150,13 +150,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-qos - sk translation
+Title: luci-app-qos - uk translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qos - Slovenčina (Slovak)
+Description:     Translation for luci-app-qos - украї́нська (Ukrainian)
 
 @@
 
@@ -220,8 +220,8 @@ Description:     Translation for luci-app-qos - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-qos-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-qos-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
 Conflicts: 
@@ -230,13 +230,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-qos - no translation
+Title: luci-app-qos - ro translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qos - Norsk (Norwegian)
+Description:     Translation for luci-app-qos - Română (Romanian)
 
 @@
 
@@ -257,6 +257,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-qos - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-qos-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-qos - pl translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-qos - Polski (Polish)
 
 @@
 
@@ -377,26 +397,6 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-qos - Русский (Russian)
-
-@@
-
-Package: luci-i18n-qos-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qos
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-qos - el translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-qos - Ελληνικά (Greek)
 
 @@
 

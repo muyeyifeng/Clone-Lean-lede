@@ -20,26 +20,6 @@ Description: LuCI Support for Dynamic DNS Client (ddns-scripts)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: 2.4.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-ddns - uk translation
-Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ddns - украї́нська (Ukrainian)
-Ansuel Smith <ansuelsmth@gmail.com>
-@@
-
 Package: luci-i18n-ddns-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: 2.4.9-8
@@ -80,8 +60,8 @@ Description:     Translation for luci-app-ddns - Português (Portuguese)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-ddns-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: 2.4.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
@@ -90,13 +70,33 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ddns - ro translation
+Title: luci-app-ddns - sk translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - Română (Romanian)
+Description:     Translation for luci-app-ddns - Slovenčina (Slovak)
+Ansuel Smith <ansuelsmth@gmail.com>
+@@
+
+Package: luci-i18n-ddns-no
+Default: LUCI_LANG_no||(ALL&&m)
+Version: 2.4.9-8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-ddns - no translation
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ddns - Norsk (Norwegian)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
@@ -120,8 +120,8 @@ Description:     Translation for luci-app-ddns - English
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-pl
-Default: LUCI_LANG_pl||(ALL&&m)
+Package: luci-i18n-ddns-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: 2.4.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
@@ -130,18 +130,18 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ddns - pl translation
+Title: luci-app-ddns - el translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - Polski (Polish)
+Description:     Translation for luci-app-ddns - Ελληνικά (Greek)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-ddns-uk
+Default: LUCI_LANG_uk||(ALL&&m)
 Version: 2.4.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
@@ -150,13 +150,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ddns - sk translation
+Title: luci-app-ddns - uk translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - Slovenčina (Slovak)
+Description:     Translation for luci-app-ddns - украї́нська (Ukrainian)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
@@ -180,8 +180,8 @@ Description:     Translation for luci-app-ddns - 日本語 (Japanese)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-hi
-Default: LUCI_LANG_hi||(ALL&&m)
+Package: luci-i18n-ddns-vi
+Default: LUCI_LANG_vi||(ALL&&m)
 Version: 2.4.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
@@ -190,13 +190,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ddns - hi translation
+Title: luci-app-ddns - vi translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - 
+Description:     Translation for luci-app-ddns - Tiếng Việt (Vietnamese)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
@@ -280,6 +280,26 @@ Description:     Translation for luci-app-ddns - Bahasa Melayu (Malay)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
+Package: luci-i18n-ddns-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: 2.4.9-8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-ddns - pl translation
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ddns - Polski (Polish)
+Ansuel Smith <ansuelsmth@gmail.com>
+@@
+
 Package: luci-i18n-ddns-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 2.4.9-8
@@ -300,8 +320,8 @@ Description:     Translation for luci-app-ddns - 简体中文 (Simplified Chines
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-ddns-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: 2.4.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
@@ -310,13 +330,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ddns - no translation
+Title: luci-app-ddns - ro translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - Norsk (Norwegian)
+Description:     Translation for luci-app-ddns - Română (Romanian)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
@@ -380,26 +400,6 @@ Description:     Translation for luci-app-ddns - Türkçe (Turkish)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-vi
-Default: LUCI_LANG_vi||(ALL&&m)
-Version: 2.4.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-ddns - vi translation
-Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ddns - Tiếng Việt (Vietnamese)
-Ansuel Smith <ansuelsmth@gmail.com>
-@@
-
 Package: luci-i18n-ddns-sv
 Default: LUCI_LANG_sv||(ALL&&m)
 Version: 2.4.9-8
@@ -440,26 +440,6 @@ Description:     Translation for luci-app-ddns - Русский (Russian)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
-Package: luci-i18n-ddns-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: 2.4.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-ddns - el translation
-Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ddns - Ελληνικά (Greek)
-Ansuel Smith <ansuelsmth@gmail.com>
-@@
-
 Package: luci-i18n-ddns-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: 2.4.9-8
@@ -491,6 +471,26 @@ Section: luci
 Category: LuCI
 Repository: luci
 Title: luci-app-ddns - mr translation
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ddns - 
+Ansuel Smith <ansuelsmth@gmail.com>
+@@
+
+Package: luci-i18n-ddns-hi
+Default: LUCI_LANG_hi||(ALL&&m)
+Version: 2.4.9-8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-ddns - hi translation
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
