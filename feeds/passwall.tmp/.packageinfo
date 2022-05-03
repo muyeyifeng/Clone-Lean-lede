@@ -150,7 +150,7 @@ Build-Depends: python3/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 100.0.4896.60-1-0
+Version: 101.0.4951.41-1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||(arm&&TARGET_gemini)||armeb||mips||mips64||powerpc) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -160,7 +160,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-100.0.4896.60-1.tar.gz
+Source: naiveproxy-101.0.4951.41-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -613,7 +613,7 @@ Source-Makefile: feeds/passwall/v2ray-core/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-core
-Version: 5.0.3-0
+Version: 5.0.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -623,7 +623,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.0.3.tar.gz
+Source: v2ray-core-5.0.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -634,7 +634,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-example
-Version: 5.0.3-0
+Version: 5.0.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -644,7 +644,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.0.3.tar.gz
+Source: v2ray-core-5.0.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -657,7 +657,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-extra
-Version: 5.0.3-0
+Version: 5.0.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
 Conflicts: 
 Menu-Depends: 
@@ -667,7 +667,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.0.3.tar.gz
+Source: v2ray-core-5.0.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -730,7 +730,7 @@ Build-Depends: golang/host
 
 Package: v2ray-plugin
 Submenu: Web Servers/Proxies
-Version: 5.0.3-0
+Version: 5.0.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -740,7 +740,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-5.0.3.tar.gz
+Source: v2ray-plugin-5.0.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
