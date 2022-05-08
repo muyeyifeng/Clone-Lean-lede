@@ -53606,7 +53606,7 @@ http://xupnpd.org/
 Source-Makefile: feeds/packages/multimedia/youtube-dl/Makefile
 
 Package: youtube-dl
-Version: 2021.4.7-1
+Version: 2021.12.17-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates +python3 +python3-email +python3-xml +python3-codecs +python3-ctypes +python3-setuptools
 Conflicts: 
 Menu-Depends: 
@@ -53616,7 +53616,7 @@ Category: Multimedia
 Repository: base
 Title: Utility to download videos from YouTube.com
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: youtube_dl-2021.4.7.tar.gz
+Source: youtube_dl-2021.12.17.tar.gz
 License: Unlicense
 LicenseFiles: LICENSE
 Type: ipkg
@@ -53628,7 +53628,7 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: youtube-dl-src
-Version: 2021.4.7-1
+Version: 2021.12.17-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -53638,7 +53638,7 @@ Category: Multimedia
 Repository: base
 Title: Utility to download videos from YouTube.com (sources)
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: youtube_dl-2021.4.7.tar.gz
+Source: youtube_dl-2021.12.17.tar.gz
 License: Unlicense
 LicenseFiles: LICENSE
 Type: ipkg
@@ -53658,7 +53658,7 @@ Config:
 Source-Makefile: feeds/packages/net/acme/Makefile
 
 Package: acme
-Version: 3.0.1-0
+Version: 3.0.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -53668,7 +53668,7 @@ Category: Network
 Repository: base
 Title: ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-3.0.1.tar.gz
+Source: acme-3.0.3.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -53678,7 +53678,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 3.0.1-0
+Version: 3.0.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -53688,11 +53688,49 @@ Category: Network
 Repository: base
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-3.0.1.tar.gz
+Source: acme-3.0.3.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
 Description:  This package provides DNS API integration for ACME (Letsencrypt) client.
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
+Package: acme-notify
+Version: 3.0.3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Notification integration for ACME (Letsencrypt) client
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: acme-3.0.3.tar.gz
+License: GPL-3.0-only
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  This package provides notification integration for ACME (Letsencrypt) client.
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
+Package: acme-deploy
+Version: 3.0.3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Deployment integration for ACME (Letsencrypt) client
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: acme-3.0.3.tar.gz
+License: GPL-3.0-only
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  This package provides deployment integration for ACME (Letsencrypt) client.
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
@@ -86030,7 +86068,7 @@ Source-Makefile: feeds/packages/utils/gpsd/Makefile
 Build-Depends: scons/host
 
 Package: gpsd
-Version: 3.21-0
+Version: 3.23.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -86040,7 +86078,7 @@ Category: Utilities
 Repository: base
 Title: An interface daemon for GPS receivers
 Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
-Source: gpsd-3.21.tar.xz
+Source: gpsd-3.23.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -86057,7 +86095,7 @@ Pushpal Sidhu <psidhu.devel@gmail.com>
 @@
 
 Package: gpsd-clients
-Version: 3.21-0
+Version: 3.23.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -86067,7 +86105,7 @@ Category: Utilities
 Repository: base
 Title: GPS tools and clients
 Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
-Source: gpsd-3.21.tar.xz
+Source: gpsd-3.23.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -86085,7 +86123,7 @@ Pushpal Sidhu <psidhu.devel@gmail.com>
 @@
 
 Package: gpsd-utils
-Version: 3.21-0
+Version: 3.23.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -86095,7 +86133,7 @@ Category: Utilities
 Repository: base
 Title: GPS daemon utils
 Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
-Source: gpsd-3.21.tar.xz
+Source: gpsd-3.23.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -86112,7 +86150,7 @@ Pushpal Sidhu <psidhu.devel@gmail.com>
 @@
 
 Package: libgps
-Version: 3.21-0
+Version: 3.23.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -86122,7 +86160,7 @@ Category: Libraries
 Repository: base
 Title: C service library for communicating with the GPS daemon
 Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
-Source: gpsd-3.21.tar.xz
+Source: gpsd-3.23.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -99593,7 +99631,7 @@ Source-Makefile: feeds/packages/utils/syncthing/Makefile
 Build-Depends: golang/host
 
 Package: syncthing
-Version: 1.19.2-0
+Version: 1.20.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -99604,7 +99642,7 @@ Repository: base
 Title: Continuous file synchronization program
 Maintainer: Paul Spooren <mail@aparcar.org>
 Require-User: syncthing=499:syncthing=499
-Source: syncthing-source-v1.19.2.tar.gz
+Source: syncthing-source-v1.20.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
