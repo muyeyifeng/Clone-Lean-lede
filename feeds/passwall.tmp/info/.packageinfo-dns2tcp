@@ -1,0 +1,23 @@
+Source-Makefile: feeds/passwall/dns2tcp/Makefile
+
+Package: dns2tcp
+Version: 1.1.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility to convert DNS query from UDP to TCP
+Maintainer: pexcn <i@pexcn.me>
+Source: dns2tcp-1.1.0-10ed687778f18d1b9c98bb51187a3a9086d3a0d9.tar.gz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Utility to convert DNS query from UDP to TCP.
+https://github.com/zfl9/dns2tcp
+pexcn <i@pexcn.me>
+@@
+
+

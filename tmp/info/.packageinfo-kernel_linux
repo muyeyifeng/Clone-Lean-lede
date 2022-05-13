@@ -15790,6 +15790,26 @@ Description:  IPv6 compression over IEEE 802.15.4
 
 @@
 
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+@@
+
 Package: kmod-pcmcia-bcm63xx
 Submenu: PCMCIA support
 Version: <LINUX_VERSION>-
@@ -15828,45 +15848,6 @@ Description:   Kernel support for the USB gadget (device) controller on the BCM6
 
 @@
 
-Package: kmod-i2c-lantiq
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Lantiq I2C controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
-
-@@
-
 Package: kmod-leds-reset
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -15902,45 +15883,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
 Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
-
-@@
-
-Package: kmod-ata-oxnas-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_oxnas
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: oxnas Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_OXNAS
-Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
-
-@@
-
-Package: kmod-usb2-oxnas
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OX820 EHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_EHCI_OXNAS
-Description:  This driver provides USB Device Controller support for the
- EHCI USB host built-in to the OX820 SoC.
 
 @@
 
@@ -17610,6 +17552,45 @@ Description:   Kernel support for Allwinner A10 SPDIF Support
 
 @@
 
+Package: kmod-ata-oxnas-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends:  +kmod-ata-core @TARGET_oxnas
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: oxnas Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_OXNAS
+Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+
+@@
+
+Package: kmod-usb2-oxnas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OX820 EHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_EHCI_OXNAS
+Description:  This driver provides USB Device Controller support for the
+ EHCI USB host built-in to the OX820 SoC.
+
+@@
+
 Package: kmod-drm-rockchip
 Submenu: Video Support
 Version: <LINUX_VERSION>-
@@ -17645,6 +17626,25 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
 Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
+
+@@
+
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
 
 @@
 
