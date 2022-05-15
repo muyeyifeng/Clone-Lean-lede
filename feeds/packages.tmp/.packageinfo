@@ -2423,7 +2423,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18.1-1
+Version: 1.18.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2433,7 +2433,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.1.src.tar.gz
+Source: go1.18.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2459,7 +2459,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18.1-1
+Version: 1.18.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2469,7 +2469,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.1.src.tar.gz
+Source: go1.18.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2491,7 +2491,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18.1-1
+Version: 1.18.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2501,7 +2501,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.1.src.tar.gz
+Source: go1.18.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24689,7 +24689,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/libs/hwloc/Makefile
 
 Package: hwloc-utils
-Version: 2.3.0-1
+Version: 2.7.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libhwloc +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -24699,7 +24699,7 @@ Category: Utilities
 Repository: base
 Title: Portable Hardware Locality utilities
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: hwloc-2.3.0.tar.bz2
+Source: hwloc-2.7.1.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -24716,7 +24716,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: libhwloc
-Version: 2.3.0-1
+Version: 2.7.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpciaccess
 Conflicts: 
 Menu-Depends: 
@@ -24726,7 +24726,7 @@ Category: Libraries
 Repository: base
 Title: Portable Hardware Locality libraries
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: hwloc-2.3.0.tar.bz2
+Source: hwloc-2.7.1.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -24793,7 +24793,7 @@ Build-Depends/host: python3/host
 Build-Types: host
 
 Package: icu
-Version: 70.1-1
+Version: 71.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -24803,7 +24803,7 @@ Category: Libraries
 Repository: base
 Title: International Components for Unicode
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: icu4c-70_1-src.tgz
+Source: icu4c-71_1-src.tgz
 License: ICU
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24814,7 +24814,7 @@ Hirokazu MORIKAWA <morikw2@gmail.com>
 @@
 
 Package: icu-full-data
-Version: 70.1-1
+Version: 71.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +icu
 Conflicts: 
 Menu-Depends: 
@@ -24824,7 +24824,7 @@ Category: Libraries
 Repository: base
 Title: Full ICU Data
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: icu4c-70_1-src.tgz
+Source: icu4c-71_1-src.tgz
 License: ICU
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24836,7 +24836,7 @@ Hirokazu MORIKAWA <morikw2@gmail.com>
 @@
 
 Package: icu-data-tools
-Version: 70.1-1
+Version: 71.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +icu
 Conflicts: 
 Menu-Depends: 
@@ -24846,7 +24846,7 @@ Category: Libraries
 Repository: base
 Title: ICU Data manipulation tools
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: icu4c-70_1-src.tgz
+Source: icu4c-71_1-src.tgz
 License: ICU
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26880,7 +26880,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/libs/libgcrypt/Makefile
 
 Package: libgcrypt
-Version: 1.9.3-0
+Version: 1.10.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error
 Conflicts: 
 Menu-Depends: 
@@ -26890,7 +26890,7 @@ Category: Libraries
 Repository: base
 Title: GNU crypto library
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: libgcrypt-1.9.3.tar.bz2
+Source: libgcrypt-1.10.1.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -27000,7 +27000,7 @@ W. Michael Petullo <mike@flyn.org>
 Source-Makefile: feeds/packages/libs/libgpg-error/Makefile
 
 Package: libgpg-error
-Version: 1.43-0
+Version: 1.45-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -27010,7 +27010,7 @@ Category: Libraries
 Repository: base
 Title: GnuPG error handling helper library
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: libgpg-error-1.43.tar.bz2
+Source: libgpg-error-1.45.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -46333,7 +46333,7 @@ Source-Makefile: feeds/packages/libs/xr_usb_serial_common/Makefile
 
 Package: kmod-usb-serial-xr_usb_serial_common
 Submenu: USB Support
-Version: <LINUX_VERSION>+2017-08-01-b8dad8cf15de160afbd9989f880dc74b921a857b-2
+Version: <LINUX_VERSION>+2022-03-30-ecc6ebe0141b97942d774e6c6be37a330cc11a74-0
 Depends:  kmod-usb-serial
 Conflicts: 
 Menu-Depends: 
@@ -46342,7 +46342,7 @@ Section: kernel
 Category: Kernel modules
 Title: Support for Exar USB to RS-485/RS-422
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: usb-serial-xr_usb_serial_common-2017-08-01-b8dad8cf15de160afbd9989f880dc74b921a857b.tar.xz
+Source: usb-serial-xr_usb_serial_common-2022-03-30-ecc6ebe0141b97942d774e6c6be37a330cc11a74.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -53738,7 +53738,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 Source-Makefile: feeds/packages/net/adblock/Makefile
 
 Package: adblock
-Version: 4.1.3-8
+Version: 4.1.3-9
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +jsonfilter +coreutils +coreutils-sort +ca-bundle +opkg
 Conflicts: 
 Menu-Depends: 
@@ -55479,7 +55479,7 @@ Build-Depends: golang/host
 
 Package: cloudflared
 Submenu: Web Servers/Proxies
-Version: 2022.4.1-0
+Version: 2022.5.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -55489,7 +55489,7 @@ Category: Network
 Repository: base
 Title: Cloudflare Tunnel client
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: cloudflared-2022.4.1.tar.gz
+Source: cloudflared-2022.5.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -55880,7 +55880,7 @@ Federico Di Marco <fededim@gmail.com>
 Source-Makefile: feeds/packages/net/dawn/Makefile
 
 Package: dawn
-Version: 2022-01-17-7a72674063dd34bd21f39c7be8aadb867db67658-0
+Version: 2022-05-09-2bfd7397e1ad2a814a0aa4b38d66b2bbba79f5ba-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus +libubox +libblobmsg-json +libuci +libgcrypt +libiwinfo +umdns
 Conflicts: 
 Menu-Depends: 
@@ -55890,7 +55890,7 @@ Category: Network
 Repository: base
 Title: Decentralized wifi controller
 Maintainer: Nick Hainke <vincent@systemli.org>
-Source: dawn-2022-01-17-7a72674063dd34bd21f39c7be8aadb867db67658.tar.xz
+Source: dawn-2022-05-09-2bfd7397e1ad2a814a0aa4b38d66b2bbba79f5ba.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56469,7 +56469,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.42.2-0
+Version: 0.42.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56480,7 +56480,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.42.2.tar.gz
+Source: dnsproxy-0.42.3.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59518,7 +59518,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.4.15-0
+Version: 2.4.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -59529,7 +59529,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.15.tar.gz
+Source: haproxy-2.4.16.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59542,7 +59542,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.4.15-0
+Version: 2.4.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -59553,7 +59553,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.15.tar.gz
+Source: haproxy-2.4.16.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59564,7 +59564,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.4.15-0
+Version: 2.4.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -59575,7 +59575,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.4.15.tar.gz
+Source: haproxy-2.4.16.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61303,7 +61303,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Source-Makefile: feeds/packages/net/krb5/Makefile
 
 Package: krb5-libs
-Version: 1.19.1-0
+Version: 1.19.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libss +libcomerr
 Conflicts: 
 Menu-Depends: 
@@ -61313,7 +61313,7 @@ Category: Network
 Repository: base
 Title: Kerberos 5 Shared Libraries
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: krb5-1.19.1.tar.gz
+Source: krb5-1.19.3.tar.gz
 License: MIT
 LicenseFiles: NOTICE
 Type: ipkg
@@ -61323,7 +61323,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: krb5-server
-Version: 1.19.1-0
+Version: 1.19.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +krb5-libs +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -61333,7 +61333,7 @@ Category: Network
 Repository: base
 Title: Kerberos 5 Server
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: krb5-1.19.1.tar.gz
+Source: krb5-1.19.3.tar.gz
 License: MIT
 LicenseFiles: NOTICE
 Type: ipkg
@@ -61343,7 +61343,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: krb5-server-extras
-Version: 1.19.1-0
+Version: 1.19.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +krb5-libs +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -61353,7 +61353,7 @@ Category: Network
 Repository: base
 Title: Kerberos 5 Admin Server
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: krb5-1.19.1.tar.gz
+Source: krb5-1.19.3.tar.gz
 License: MIT
 LicenseFiles: NOTICE
 Type: ipkg
@@ -61363,7 +61363,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: krb5-client
-Version: 1.19.1-0
+Version: 1.19.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -61373,7 +61373,7 @@ Category: Network
 Repository: base
 Title: Kerberos 5 Client
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: krb5-1.19.1.tar.gz
+Source: krb5-1.19.3.tar.gz
 License: MIT
 LicenseFiles: NOTICE
 Type: ipkg
@@ -66899,7 +66899,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: openconnect
 Submenu: VPN
-Version: 8.10-4
+Version: 9.01-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +kmod-tun +resolveip +vpnc-scripts +OPENCONNECT_OPENSSL:libopenssl +OPENCONNECT_OPENSSL:p11-kit +OPENCONNECT_OPENSSL:libp11 +OPENCONNECT_GNUTLS:libgnutls +OPENCONNECT_GNUTLS:libtasn1 +OPENCONNECT_STOKEN:libstoken +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -66909,7 +66909,7 @@ Category: Network
 Repository: base
 Title: OpenConnect VPN client (Cisco AnyConnect and Juniper/Pulse compatible)
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
-Source: openconnect-8.10.tar.gz
+Source: openconnect-9.01.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LGPL
 Type: ipkg
@@ -68607,7 +68607,7 @@ Source-Makefile: feeds/packages/net/privoxy/Makefile
 Package: privoxy
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 3.0.28-1
+Version: 3.0.33-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +!PRIVOXY_no_pcre:libpcre +!PRIVOXY_no_pthread:libpthread +!PRIVOXY_no_zlib:zlib
 Conflicts: 
 Menu-Depends: 
@@ -68618,7 +68618,7 @@ Repository: base
 Title: Privoxy WEB Proxy
 Maintainer: 
 Require-User: privoxy=8118:privoxy=8118
-Source: privoxy-3.0.28-stable-src.tar.gz
+Source: privoxy-3.0.33-stable-src.tar.gz
 License: GPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -68635,7 +68635,7 @@ Config:
 		individual needs and tastes. 
 		Privoxy has application for both stand-alone systems and multi-user networks.
 		Run as : privoxy=8118:privoxy=8118
-		Version: 3.0.28-1
+		Version: 3.0.33-0
 		Home   : http://www.privoxy.org/
 
 	source "feeds/packages/net/privoxy/Config.in"
@@ -80933,7 +80933,7 @@ Source-Makefile: feeds/packages/utils/cni/Makefile
 Build-Depends: golang/host
 
 Package: cni
-Version: 0.8.1-0
+Version: 1.1.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -80943,7 +80943,7 @@ Category: Utilities
 Repository: base
 Title: cni
 Maintainer: Daniel Golle <daniel@makrotopia.org>, Paul Spooren <mail@aparcar.org>, Oskari Rauta <oskari.rauta@gmail.com>
-Source: cni-0.8.1.tar.gz
+Source: cni-1.1.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -80963,7 +80963,7 @@ Source-Makefile: feeds/packages/utils/cni-plugins/Makefile
 Build-Depends: golang/host
 
 Package: cni-plugins
-Version: 0.9.1-0
+Version: 1.0.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ip-full +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -80973,7 +80973,7 @@ Category: Utilities
 Repository: base
 Title: cni-plugins
 Maintainer: Daniel Golle <daniel@makrotopia.org>, Paul Spooren <mail@aparcar.org>
-Source: cni-plugins-0.9.1.tar.gz
+Source: cni-plugins-1.0.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -84689,7 +84689,7 @@ Source-Makefile: feeds/packages/utils/crun/Makefile
 Build-Depends: argp-standalone
 
 Package: crun
-Version: 1.4.2-0
+Version: 1.4.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc +libseccomp +libcap
 Conflicts: 
 Menu-Depends: 
@@ -84699,7 +84699,7 @@ Category: Utilities
 Repository: base
 Title: crun
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: crun-1.4.2.tar.xz
+Source: crun-1.4.5.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -86528,6 +86528,42 @@ Type: ipkg
 Description:  get/set SATA/IDE device parameters
 https://sourceforge.net/projects/hdparm/
 
+@@
+
+
+Source-Makefile: feeds/packages/utils/hexedit/Makefile
+
+Package: hexedit
+Submenu: Editors
+Version: 1.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Viewer and editor in hexadecimal or ASCII
+Maintainer: Nita Vesa <werecatf@outlook.com>
+Source: hexedit-1.6.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Viewer and editor in hexadecimal or ASCII for files or devices
+
+  hexedit shows a target both in hexadecimal and in ASCII. This target can be
+  a device or a file. You can edit the target and search through it. There are
+  also copy&paste and save to file functions. Is allowed truncating or appending
+  to the target. All modifications are shown in bold.
+
+  hexedit is ideal to edit or inspect very large files or devices, as hard disks
+  or its partitions, flash drives, etc. These elements will not be wholly read
+  because hexedit loads a piece at a time.
+
+  hexedit can be used by programmers in several activities. It also is useful
+  for debugging, forensics investigations and recovering from digital disasters.
+http://rigaux.org/hexedit.html
+Nita Vesa <werecatf@outlook.com>
 @@
 
 
@@ -89312,7 +89348,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/mmc-utils/Makefile
 
 Package: mmc-utils
-Version: 2022-02-11-4303889c8bd9a2357587eb6ebacecb70098a264d-1
+Version: 2022-04-17-b7e4d5a6ae9942d26a11de9b05ae7d52c0802802-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -89322,7 +89358,7 @@ Category: Utilities
 Repository: base
 Title: Userspace tools for MMC/SD devices
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: mmc-utils-2022-02-11-4303889c8bd9a2357587eb6ebacecb70098a264d.tar.xz
+Source: mmc-utils-2022-04-17-b7e4d5a6ae9942d26a11de9b05ae7d52c0802802.tar.xz
 License: GPL-2.0-only
 Type: ipkg
 Description:   This package contains the userspace mmc utils, the userspace
@@ -89638,6 +89674,7 @@ License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
 Description:   Nsutils suite includes a number of utilities to list, add/remove tag, and join namespaces.
+https://github.com/rd235/nsutils
 Oskari Rauta <oskari.rauta@gmail.com>
 @@
 
