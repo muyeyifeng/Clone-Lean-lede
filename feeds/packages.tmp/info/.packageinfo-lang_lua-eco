@@ -1,0 +1,213 @@
+Source-Makefile: feeds/packages/lang/lua-eco/Makefile
+
+Package: lua-eco
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: A Lua coroutine library
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Lua-eco is a Lua coroutine library which was implemented based on IO event.
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-log
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Log utils support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Log utils support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-sys
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: System utils support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: System utils support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-dns
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: DNS support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: DNS support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-socket
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Socket support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Socket support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-ssl
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) +PACKAGE_libopenssl:libopenssl +PACKAGE_libwolfssl:libwolfssl +PACKAGE_libmbedtls:libmbedtls +PACKAGE_libmbedtls:zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: SSL support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: SSL support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-iw
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: IW utils support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: IW utils support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-ip
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: IP utils support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: IP utils support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-file
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: File utils support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: File utils support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+Package: lua-eco-ubus
+Submenu: Lua
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libubus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Ubus support for lua-eco
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Source: lua-eco-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Ubus support for lua-eco
+https://github.com/zhaojh329/lua-eco
+Jianhui Zhao <zhaojh329@gmail.com>
+@@
+
+
