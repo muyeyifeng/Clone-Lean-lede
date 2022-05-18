@@ -1,4 +1,5 @@
 $(eval $(call PackageDir,applications_luci-app-accesscontrol,applications/luci-app-accesscontrol,))
+$(eval $(call PackageDir,applications_luci-app-acme,applications/luci-app-acme,))
 $(eval $(call PackageDir,applications_luci-app-adblock,applications/luci-app-adblock,))
 $(eval $(call PackageDir,applications_luci-app-adbyby-plus,applications/luci-app-adbyby-plus,))
 $(eval $(call PackageDir,applications_luci-app-advanced-reboot,applications/luci-app-advanced-reboot,))
