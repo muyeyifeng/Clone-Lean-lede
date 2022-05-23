@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: brook
 Submenu: Web Servers/Proxies
-Version: 20220501-0
+Version: 20220515-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: A cross-platform proxy software
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: brook-20220501.tar.gz
+Source: brook-20220515.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -169,7 +169,6 @@ lean
 
 
 Source-Makefile: feeds/passwall/naiveproxy/Makefile
-Build-Depends: python3/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
