@@ -14159,6 +14159,20 @@ Build firmware images for Seagate GoFlexHome
 
 @@
 
+Target-Profile: DEVICE_surfilter_net110
+Target-Profile-Name: Surfilter Net110-88F6281
+Target-Profile-Packages: kmod-ata-marvell-sata kmod-fs-ext4 kmod-switch-mv88e6xxx kmod-ata-core kmod-mmc kmod-mvsdio kmod-rt2800-pci kmod-usb2 kmod-usb-ledtrig-usbport kmod-gpio-button-hotplug 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: surfilter,net110 net110-88F6281
+
+
+Target-Profile-Description:
+Build firmware images for Surfilter Net110-88F6281
+
+
+
+@@
+
 Target-Profile: DEVICE_zyxel_nsa310b
 Target-Profile-Name: ZyXEL NSA310b
 Target-Profile-Packages: kmod-ata-marvell-sata kmod-r8169 kmod-fs-ext4 kmod-gpio-button-hotplug kmod-hwmon-lm85 
@@ -17758,7 +17772,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -17775,7 +17789,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -19374,7 +19388,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -21474,7 +21488,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22601,7 +22615,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22730,7 +22744,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24261,7 +24275,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
 Linux-Version: 5.4.195
-Linux-Testing-Version: 5.15
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

@@ -2,7 +2,7 @@ Source-Makefile: package/lean/mtk-eip93/Makefile
 
 Package: kmod-crypto-hw-eip93
 Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>+2020-12-10-bb5fd1c88a8a74de06b70c281bceeb14d0d960ef-1.3
+Version: <LINUX_VERSION>+ca08387bf8352652129019bb19e2423ab313d5cb-1.3
 Depends: @TARGET_ramips_mt7621 +kmod-crypto-authenc +kmod-crypto-des +kmod-crypto-md5 +kmod-crypto-sha1 +kmod-crypto-sha256
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: MTK EIP93 crypto module.
 Maintainer: 
-Source: mtk-eip93-2020-12-10-bb5fd1c88a8a74de06b70c281bceeb14d0d960ef.tar.xz
+Source: mtk-eip93-ca08387bf8352652129019bb19e2423ab313d5cb.tar.xz
 Type: ipkg
 Description: Kernel module to enable EIP-93 Crypto engine as found
 in the Mediatek MT7621 SoC.
