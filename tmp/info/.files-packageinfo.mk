@@ -685,6 +685,7 @@ $(eval $(call PackageDir,feeds_packages_dnscrypt-proxy,feeds/packages/dnscrypt-p
 $(eval $(call PackageDir,feeds_packages_dnscrypt-proxy2,feeds/packages/dnscrypt-proxy2,))
 $(eval $(call PackageDir,feeds_packages_dnsdist,feeds/packages/dnsdist,))
 $(eval $(call PackageDir,feeds_packages_dnsforwarder,feeds/packages/dnsforwarder,))
+$(eval $(call PackageDir,feeds_packages_dnslookup,feeds/packages/dnslookup,))
 $(eval $(call PackageDir,feeds_packages_dnsproxy,feeds/packages/dnsproxy,))
 $(eval $(call PackageDir,feeds_packages_dnstap,feeds/packages/dnstap,))
 $(eval $(call PackageDir,feeds_packages_dnstop,feeds/packages/dnstop,))
