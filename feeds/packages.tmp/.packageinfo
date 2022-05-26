@@ -60386,7 +60386,7 @@ Source-Makefile: feeds/packages/net/ipt2socks/Makefile
 
 Package: ipt2socks
 Version: 1.1.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86810,11 +86810,11 @@ Nita Vesa <werecatf@outlook.com>
 
 
 Source-Makefile: feeds/packages/utils/hfsprogs/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: util-linux
 
 Package: hfsfsck
 Submenu: Filesystem
-Version: 332.25-4
+Version: 540.1.linux3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +USE_GLIBC:libbsd
 Conflicts: 
 Menu-Depends: 
@@ -86824,7 +86824,7 @@ Category: Utilities
 Repository: base
 Title: fsck (fsck.hfs) utility from hfsprogs
 Maintainer: 
-Source: hfsprogs_332.25.orig.tar.gz
+Source: diskdev_cmds-540.1.linux3.tar.gz
 License: APSL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -86835,7 +86835,7 @@ Description: 	Utilities to create and check HFS/HFS+ filesystems.
 
 Package: mkhfs
 Submenu: Filesystem
-Version: 332.25-4
+Version: 540.1.linux3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +USE_GLIBC:libbsd
 Conflicts: 
 Menu-Depends: 
@@ -86845,7 +86845,7 @@ Category: Utilities
 Repository: base
 Title: mkfs (mkfs.hfs) utility from hfsprogs
 Maintainer: 
-Source: hfsprogs_332.25.orig.tar.gz
+Source: diskdev_cmds-540.1.linux3.tar.gz
 License: APSL-2.0
 LicenseFiles: COPYING
 Type: ipkg
