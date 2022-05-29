@@ -125,7 +125,7 @@ Source-Makefile: feeds/helloworld/naiveproxy/Makefile
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 101.0.4951.41-1-1
+Version: 102.0.5005.61-1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -135,13 +135,36 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-101.0.4951.41-1.tar.gz
+Source: naiveproxy-102.0.5005.61-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   NaïveProxy uses Chrome's network stack to camouflage traffic with strong
   censorship resistance and low detectability. Reusing Chrome's stack also
   ensures best practices in performance and security.
+https://github.com/klzgrad/naiveproxy
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: libcronet
+Version: 102.0.5005.61-1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: The Chromium network stack library
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: naiveproxy-102.0.5005.61-1.tar.gz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Cronet is the Chromium network stack made available to Android apps as a library.
+
+  Cronet takes advantage of multiple technologies that reduce the latency and
+  increase the throughput of the network requests that your app needs to work.
 https://github.com/klzgrad/naiveproxy
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
@@ -505,7 +528,7 @@ Source-Makefile: feeds/helloworld/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202204210050-1
+Version: 202205260055-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -526,7 +549,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20220425025949-1
+Version: 20220528180904-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -601,7 +624,7 @@ Source-Makefile: feeds/helloworld/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.5.5-0
+Version: 1.5.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -611,7 +634,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.5.5.tar.gz
+Source: Xray-core-1.5.6.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -627,7 +650,7 @@ Build-Depends: golang/host
 
 Package: xray-plugin
 Submenu: Web Servers/Proxies
-Version: 1.5.5-1
+Version: 1.5.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -637,7 +660,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-plugin-1.5.5.tar.gz
+Source: xray-plugin-1.5.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
