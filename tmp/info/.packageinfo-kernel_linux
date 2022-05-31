@@ -15828,22 +15828,23 @@ Description:   Kernel support for the USB gadget (device) controller on the BCM6
 
 @@
 
-Package: kmod-i2c-lantiq
-Submenu: I2C support
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Depends: @TARGET_ipq806x +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Lantiq I2C controller
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
 
 @@
 
@@ -16096,6 +16097,25 @@ Description:   This driver supports turning off some Buffalo LinkStations by
   setting an output pin at the ethernet PHY to the correct state.
   It also makes the device compatible with the WoL function.
   Say Y here if you have a Buffalo LinkStation LS421D/E.
+
+@@
+
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
 
 @@
 
@@ -17647,26 +17667,6 @@ Type: ipkg
 Kernel-Config: CONFIG_USB_EHCI_OXNAS
 Description:  This driver provides USB Device Controller support for the
  EHCI USB host built-in to the OX820 SoC.
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
 
 @@
 
