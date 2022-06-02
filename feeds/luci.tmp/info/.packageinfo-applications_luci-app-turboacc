@@ -23,7 +23,7 @@ Config:
 config PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING
 	bool "Include Flow Offload"
 	depends on (PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=n && PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV=n)
-	default y if i386||x86_64||TARGET_ramips
+	default y if TARGET_ramips
 
 config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV
 	bool "Include Shortcut-FE for ECM"
@@ -32,7 +32,7 @@ config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV
 
 config PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE
 	bool "Include Shortcut-FE"
-	default y if !(TARGET_ipq806x||TARGET_ipq807x||TARGET_ramips||i386||x86_64)
+	default y if !(TARGET_ipq806x||TARGET_ipq807x||TARGET_ramips)
 
 config PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA
 	bool "Include BBR CCA"
