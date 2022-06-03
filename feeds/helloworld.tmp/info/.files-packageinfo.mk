@@ -1,3 +1,4 @@
+$(eval $(call PackageDir,dns2tcp,dns2tcp,))
 $(eval $(call PackageDir,luci-app-ssr-plus,luci-app-ssr-plus,))
 $(eval $(call PackageDir,naiveproxy,naiveproxy,))
 $(eval $(call PackageDir,shadowsocks-rust,shadowsocks-rust,))
