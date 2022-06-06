@@ -2423,7 +2423,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18.2-1
+Version: 1.18.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2433,7 +2433,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.2.src.tar.gz
+Source: go1.18.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2459,7 +2459,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18.2-1
+Version: 1.18.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2469,7 +2469,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.2.src.tar.gz
+Source: go1.18.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2491,7 +2491,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18.2-1
+Version: 1.18.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2501,7 +2501,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.2.src.tar.gz
+Source: go1.18.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56712,7 +56712,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.43.0-0
+Version: 0.43.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56723,7 +56723,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.43.0.tar.gz
+Source: dnsproxy-0.43.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -58725,7 +58725,7 @@ Source-Makefile: feeds/packages/net/gg/Makefile
 Build-Depends: golang/host
 
 Package: gg
-Version: 0.2.3-0
+Version: 0.2.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -58735,7 +58735,7 @@ Category: Network
 Repository: base
 Title: A command-line tool for one-click proxy
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: gg-0.2.3.tar.gz
+Source: gg-0.2.6.tar.gz
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61631,7 +61631,7 @@ Build-Depends: glib2 !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: ksmbd-server
 Submenu: Filesystem
-Version: 3.4.4-0
+Version: 3.4.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +kmod-fs-ksmbd +libnl-core +libnl-genl
 Conflicts: 
 Menu-Depends: 
@@ -61641,7 +61641,7 @@ Category: Network
 Repository: base
 Title: Kernel SMB server
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: ksmbd-tools-3.4.4.tar.gz
+Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -61657,7 +61657,7 @@ Config:
 
 Package: ksmbd-utils
 Submenu: Filesystem
-Version: 3.4.4-0
+Version: 3.4.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -61667,7 +61667,7 @@ Category: Network
 Repository: base
 Title: Kernel SMB user management-util
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: ksmbd-tools-3.4.4.tar.gz
+Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -61689,7 +61689,7 @@ Config:
 
 Package: ksmbd-avahi-service
 Submenu: Filesystem
-Version: 3.4.4-0
+Version: 3.4.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -61699,7 +61699,7 @@ Category: Network
 Repository: base
 Title: Kernel SMB (Avahi service)
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: ksmbd-tools-3.4.4.tar.gz
+Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -64636,7 +64636,7 @@ Build-Types: host
 
 Package: nfs-utils
 Submenu: Filesystem
-Version: 2.5.2-1
+Version: 2.5.4-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -64646,7 +64646,7 @@ Category: Utilities
 Repository: base
 Title: updated mount utility (includes nfs4)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: nfs-utils-2.5.2.tar.xz
+Source: nfs-utils-2.5.4.tar.xz
 Type: ipkg
 Description: Updated mount.nfs command - allows mounting nfs4 volumes
 http://nfs.sourceforge.net/
@@ -64655,7 +64655,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-utils-libs
 Submenu: Filesystem
-Version: 2.5.2-1
+Version: 2.5.4-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -64665,7 +64665,7 @@ Category: Utilities
 Repository: base
 Title: libraries provided by nfs-utils
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: nfs-utils-2.5.2.tar.xz
+Source: nfs-utils-2.5.4.tar.xz
 Type: ipkg
 Description: Libraries provided by nfs-utils
 http://nfs.sourceforge.net/
@@ -64674,7 +64674,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-kernel-server
 Submenu: Filesystem
-Version: 2.5.2-1
+Version: 2.5.4-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +kmod-fs-nfsd +kmod-fs-nfs +NFS_KERNEL_SERVER_V4:kmod-fs-nfs-v4 +rpcbind +NFS_KERNEL_SERVER_V4:nfs-utils-libs +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -64685,7 +64685,7 @@ Repository: base
 Title: Kernel NFS server support
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: nfs:nfs
-Source: nfs-utils-2.5.2.tar.xz
+Source: nfs-utils-2.5.4.tar.xz
 Type: ipkg
 Description: Kernel NFS server support
 http://nfs.sourceforge.net/
@@ -64697,7 +64697,7 @@ Config:
 
 Package: nfs-kernel-server-utils
 Submenu: Filesystem
-Version: 2.5.2-1
+Version: 2.5.4-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nfs-kernel-server
 Conflicts: 
 Menu-Depends: 
@@ -64707,7 +64707,7 @@ Category: Network
 Repository: base
 Title: NFS server utils
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: nfs-utils-2.5.2.tar.xz
+Source: nfs-utils-2.5.4.tar.xz
 Type: ipkg
 Description: NFS server utils
 http://nfs.sourceforge.net/
@@ -85254,7 +85254,7 @@ Source-Makefile: feeds/packages/utils/docker-compose/Makefile
 Build-Depends: golang/host
 
 Package: docker-compose
-Version: 2.5.0-0
+Version: 2.6.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
@@ -85264,7 +85264,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.5.0.tar.gz
+Source: v2.6.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -89925,7 +89925,7 @@ Source-Makefile: feeds/packages/utils/ntfs-3g/Makefile
 
 Package: ntfs-3g
 Submenu: Filesystem
-Version: 2021.8.22-2-fuseint
+Version: 2022.5.17-0-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +PACKAGE_NTFS-3G_USE_LIBFUSE:libfuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -89935,7 +89935,7 @@ Category: Utilities
 Repository: base
 Title: Stable Read/Write NTFS Driver
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
+Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -89971,7 +89971,7 @@ config PACKAGE_NTFS-3G_HAS_PROBE
 
 Package: ntfs-3g-low
 Submenu: Filesystem
-Version: 2021.8.22-2-fuseint
+Version: 2022.5.17-0-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g
 Conflicts: 
 Menu-Depends: 
@@ -89981,7 +89981,7 @@ Category: Utilities
 Repository: base
 Title: lowntfs-3g (alternative using the fuse low-level interface)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
+Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -89999,7 +89999,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: ntfs-3g-utils
 Submenu: Filesystem
-Version: 2021.8.22-2-fuseint
+Version: 2022.5.17-0-fuseint
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g +libgcrypt +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -90009,7 +90009,7 @@ Category: Utilities
 Repository: base
 Title: ntfs-3g utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntfs-3g_ntfsprogs-2021.8.22.tgz
+Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
@@ -103712,7 +103712,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.25.1-0
+Version: 4.25.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -103722,7 +103722,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.25.1.tar.gz
+Source: yq-4.25.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

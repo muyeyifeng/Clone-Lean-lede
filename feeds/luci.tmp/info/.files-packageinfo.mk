@@ -34,7 +34,6 @@ $(eval $(call PackageDir,applications_luci-app-dump1090,applications/luci-app-du
 $(eval $(call PackageDir,applications_luci-app-dynapoint,applications/luci-app-dynapoint,))
 $(eval $(call PackageDir,applications_luci-app-e2guardian,applications/luci-app-e2guardian,))
 $(eval $(call PackageDir,applications_luci-app-easymesh,applications/luci-app-easymesh,))
-$(eval $(call PackageDir,applications_luci-app-familycloud,applications/luci-app-familycloud,))
 $(eval $(call PackageDir,applications_luci-app-filetransfer,applications/luci-app-filetransfer,))
 $(eval $(call PackageDir,applications_luci-app-firewall,applications/luci-app-firewall,))
 $(eval $(call PackageDir,applications_luci-app-frpc,applications/luci-app-frpc,))
