@@ -1,0 +1,23 @@
+Source-Makefile: feeds/cups/cups-opfilter/Makefile
+
+Package: cups-opfilter
+Submenu: Printing
+Version: 1.27.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcups +libcupsimage +libstdcpp +libtiff +libpng +libjpeg +glib2 +libfreetype +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - OpenPrinting Image Filters
+Maintainer: 
+Source: cups-filters-1.27.2.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - OpenPrinting Image Filters
+	Filters used to convert jpeg, png or tiff images to raster files
+https://github.com/OpenPrinting/cups-filters
+
+@@
+
+

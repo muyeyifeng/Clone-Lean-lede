@@ -1,0 +1,41 @@
+Source-Makefile: package/feeds/lienol/luci-app-timecontrol/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-timecontrol
+Submenu: 3. Applications
+Version: 1.1-20220505
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: lienol
+Title: LuCI support for Time Control
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Time Control
+
+@@
+
+Package: luci-i18n-timecontrol-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.1-20220505
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-timecontrol
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: lienol
+Title: luci-app-timecontrol - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-timecontrol - 简体中文 (Simplified Chinese)
+
+@@
+
+

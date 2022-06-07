@@ -1,0 +1,207 @@
+Source-Makefile: feeds/cups/cups/Makefile
+
+Package: cups
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libusb-1.0 +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System (daemon)
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System (daemon)
+http://www.cups.org/
+
+@@
+
+Package: libcups
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +libpng +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Common UNIX Printing System - Core library
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Core library
+http://www.cups.org/
+
+@@
+
+Package: libcupsimage
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Common UNIX Printing System - Image library
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Image library
+http://www.cups.org/
+
+@@
+
+Package: cups-bsd
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - BSD commands (old)
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - BSD commands (old)
+http://www.cups.org/
+
+@@
+
+Package: cups-client
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - Client commands
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Client commands
+http://www.cups.org/
+
+@@
+
+Package: cups-filters
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - Filter
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Filter
+http://www.cups.org/
+
+@@
+
+Package: cups-ppdc
+Submenu: Printing
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +zlib +libpthread +libpng +libjpeg +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - PPDC utils
+Maintainer: 
+Source: cups-2.3.0-source.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - PPDC utils
+http://www.cups.org/
+
+@@
+
+
+Source-Makefile: feeds/cups/cups-bjnp/Makefile
+Build-Depends: cups
+
+Package: cups-bjnp
+Submenu: Printing
+Version: 2.0.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread cups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: BJNP protocol backend for CUPS
+Maintainer: 
+Source: cups-bjnp-2.0.2.tar.gz
+Type: ipkg
+Description: CUPS backend for the canon printers using the proprietary USB over
+IP BJNP protocol. This backend allows Cups to print over the network
+to a Canon printer. It currently supports Cups 1.2 and Cups 1.3 and
+is designed by reverse engineering.
+http://sourceforge.net/projects/cups-bjnp/
+
+@@
+
+
+Source-Makefile: feeds/cups/cups-dymo/Makefile
+
+Package: cups-dymo
+Submenu: Printing
+Version: 1.4.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - Dymo Label Printer Driver
+Maintainer: 
+Source: dymo-cups-drivers-1.4.0.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Dymo Label Printer Driver
+https://www.dymo.com/de-DE/dymo-label-sdk-cups-linux-p
+
+@@
+
+
+Source-Makefile: feeds/cups/cups-opfilter/Makefile
+
+Package: cups-opfilter
+Submenu: Printing
+Version: 1.27.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcups +libcupsimage +libstdcpp +libtiff +libpng +libjpeg +glib2 +libfreetype +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Common UNIX Printing System - OpenPrinting Image Filters
+Maintainer: 
+Source: cups-filters-1.27.2.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - OpenPrinting Image Filters
+	Filters used to convert jpeg, png or tiff images to raster files
+https://github.com/OpenPrinting/cups-filters
+
+@@
+
+

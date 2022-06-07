@@ -1582,6 +1582,29 @@ Description: Key-agreement Protocol Primitives
 
 @@
 
+Package: kmod-crypto-lib-blake2s
+Submenu: Cryptographic API modules
+Version: <LINUX_VERSION>-
+Depends:  +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: BLAKE2s hash function library
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_CRYPTO_LIB_BLAKE2S
+Hidden: 1
+Description: BLAKE2s hash function library
+
+@@
+Config:
+  imply PACKAGE_kmod-crypto-hash
+@@
+
 Package: kmod-crypto-lib-chacha20
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
@@ -9407,7 +9430,7 @@ native Linux tools such as ss.
 Package: kmod-wireguard
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-lib-chacha20poly1305 +kmod-crypto-lib-curve25519 +kmod-udptunnel4 +IPV6:kmod-udptunnel6
+Depends: +kmod-crypto-lib-blake2s +kmod-crypto-lib-chacha20poly1305 +kmod-crypto-lib-curve25519 +kmod-udptunnel4 +IPV6:kmod-udptunnel6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15184,7 +15207,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_INTEL_GTT=y CONFIG_DRM_I915=m CONFIG_DRM_I915_CAPTURE_ERROR=y CONFIG_DRM_I915_COMPRESS_ERROR=y CONFIG_DRM_I915_USERPTR=y CONFIG_DRM_I915_GVT=y CONFIG_DRM_I915_WERROR=n CONFIG_DRM_I915_DEBUG=n CONFIG_DRM_I915_DEBUG_MMIO=n CONFIG_DRM_I915_SW_FENCE_DEBUG_OBJECTS=n CONFIG_DRM_I915_SW_FENCE_CHECK_DAG=n CONFIG_DRM_I915_DEBUG_GUC=n CONFIG_DRM_I915_SELFTEST=n CONFIG_DRM_I915_LOW_LEVEL_TRACEPOINTS=n CONFIG_DRM_I915_DEBUG_VBLANK_EVADE=n CONFIG_DRM_I915_DEBUG_RUNTIME_PM=n
+Kernel-Config: CONFIG_INTEL_GTT CONFIG_DRM_I915 CONFIG_DRM_I915_CAPTURE_ERROR CONFIG_DRM_I915_COMPRESS_ERROR CONFIG_DRM_I915_DEBUG=n CONFIG_DRM_I915_DEBUG_GUC=n CONFIG_DRM_I915_DEBUG_MMIO=n CONFIG_DRM_I915_DEBUG_RUNTIME_PM=n CONFIG_DRM_I915_DEBUG_VBLANK_EVADE=n CONFIG_DRM_I915_GVT=y CONFIG_DRM_I915_LOW_LEVEL_TRACEPOINTS=n CONFIG_DRM_I915_SELFTEST=n CONFIG_DRM_I915_SW_FENCE_CHECK_DAG=n CONFIG_DRM_I915_SW_FENCE_DEBUG_OBJECTS=n CONFIG_DRM_I915_USERPTR=y CONFIG_DRM_I915_WERROR=n
 Description:   Direct Rendering Manager (DRM) support for "Intel Graphics
   Media Accelerator" or "HD Graphics" integrated graphics,
   including 830M, 845G, 852GM, 855GM, 865G, 915G, 945G, 965G,
@@ -15292,7 +15315,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_IOMMU_API=y CONFIG_MMU=y CONFIG_VFIO=y CONFIG_VFIO_NOIOMMU=y CONFIG_VFIO_PCI=y CONFIG_VFIO_PCI_IGD=y CONFIG_VFIO_MDEV CONFIG_VFIO_MDEV_DEVICE
+Kernel-Config: CONFIG_IOMMU_API=y CONFIG_MMU=y CONFIG_VFIO=y CONFIG_VFIO_MDEV CONFIG_VFIO_MDEV_DEVICE CONFIG_VFIO_NOIOMMU=y CONFIG_VFIO_PCI=y CONFIG_VFIO_PCI_IGD=y
 Description:   Provides a framework to virtualize devices.
 
 @@
@@ -15311,28 +15334,10 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_DRM_I915_GVT_KVMGT=m
-Description:   Intel GVT-g is a technology that provides mediated device
-  passthrough for Intel GPUs (Broadwell and newer). It can
-  be used to virtualize the GPU for multiple guest virtual
-  machines, effectively providing near-native graphics performance
-  in the virtual machine and still letting your host use the
-  virtualized GPU normally.
-
-  Choose this option if you want to enable Intel GVT-g graphics
-  virtualization technology host support with integrated graphics.
-  With GVT-g, it's possible to have one integrated graphics
-  device shared by multiple VMs under different hypervisors.
-
-  Note that at least one hypervisor like Xen or KVM is required for
-  this driver to work, and it only supports newer device from
-  Broadwell+. For further information and setup guide, you can
-  visit: http://01.org/igvt-g.
-
-  Now it's just a stub to support the modifications of i915 for
-  GVT device model. It requires at least one MPT modules for Xen/KVM
-  and other components of GVT device model to work. Use it under
-  you own risk.
+Kernel-Config: CONFIG_DRM_I915_GVT_KVMGT
+Description:   Enable Intel GVT-g graphics virtualization technology host support with 
+  integrated graphics. With GVT-g, it's possible to have one integrated 
+  graphics device shared by multiple VMs under KVM.
 
 @@
 

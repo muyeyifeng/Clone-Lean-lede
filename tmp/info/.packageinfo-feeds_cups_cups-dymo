@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/cups/cups-dymo/Makefile
+
+Package: cups-dymo
+Submenu: Printing
+Version: 1.4.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: cups
+Title: Common UNIX Printing System - Dymo Label Printer Driver
+Maintainer: 
+Source: dymo-cups-drivers-1.4.0.tar.gz
+Type: ipkg
+Description: 	Common UNIX Printing System - Dymo Label Printer Driver
+https://www.dymo.com/de-DE/dymo-label-sdk-cups-linux-p
+
+@@
+
+

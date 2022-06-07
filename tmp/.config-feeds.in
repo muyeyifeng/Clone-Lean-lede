@@ -30,14 +30,6 @@
 		 Enable the \"telephony\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_freifunk
-		tristate "Enable feed freifunk"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"freifunk\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-
 	config FEED_helloworld
 		tristate "Enable feed helloworld"
 		depends on PER_FEED_REPO
@@ -46,59 +38,35 @@
 		 Enable the \"helloworld\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_video
-		tristate "Enable feed video"
+	config FEED_passwall_package
+		tristate "Enable feed passwall_package"
 		depends on PER_FEED_REPO
 		default y
 		help
-		 Enable the \"video\" feed in opkg distfeeds.conf.
+		 Enable the \"passwall_package\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_targets
-		tristate "Enable feed targets"
+	config FEED_passwall_luci
+		tristate "Enable feed passwall_luci"
 		depends on PER_FEED_REPO
 		default y
 		help
-		 Enable the \"targets\" feed in opkg distfeeds.conf.
+		 Enable the \"passwall_luci\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_management
-		tristate "Enable feed management"
+	config FEED_cups
+		tristate "Enable feed cups"
 		depends on PER_FEED_REPO
 		default y
 		help
-		 Enable the \"management\" feed in opkg distfeeds.conf.
+		 Enable the \"cups\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_custom
-		tristate "Enable feed custom"
+	config FEED_lienol
+		tristate "Enable feed lienol"
 		depends on PER_FEED_REPO
 		default y
 		help
-		 Enable the \"custom\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-
-	config FEED_passwall
-		tristate "Enable feed passwall"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"passwall\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-
-	config FEED_rosy
-		tristate "Enable feed rosy"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"rosy\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-
-	config FEED_darkmatter
-		tristate "Enable feed darkmatter"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"darkmatter\" feed in opkg distfeeds.conf.
+		 Enable the \"lienol\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
