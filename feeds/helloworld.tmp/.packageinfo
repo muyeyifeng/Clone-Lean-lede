@@ -53,7 +53,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
-Version: 186-2
+Version: 186-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin
 Conflicts: 
 Menu-Depends: 
@@ -140,7 +140,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin
 
 Package: luci-i18n-ssr-plus-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 186-2
+Version: 186-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -159,7 +159,7 @@ Description:     Translation for luci-app-ssr-plus -
 
 Package: luci-i18n-ssr-plus-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 186-2
+Version: 186-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -230,7 +230,7 @@ Source-Makefile: feeds/helloworld/sagernet-core/Makefile
 Build-Depends: golang/host
 
 Package: sagernet-core
-Version: 5.0.12-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c-1
+Version: 5.0.14-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: v2ray-core xray-core
 Menu-Depends: 
@@ -240,7 +240,7 @@ Category: Network
 Repository: base
 Title: An enhanced v2ray edition for SagerNet
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: sagernet-core-5.0.12-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c.tar.xz
+Source: sagernet-core-5.0.14-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -253,7 +253,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: sagernet-extra
-Version: 5.0.12-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c-1
+Version: 5.0.14-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread sagernet-core
 Conflicts: v2ray-extra
 Menu-Depends: 
@@ -263,7 +263,7 @@ Category: Network
 Repository: base
 Title: An enhanced v2ray edition for SagerNet (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: sagernet-core-5.0.12-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c.tar.xz
+Source: sagernet-core-5.0.14-2022-06-07-5590c5fe71ed3f0dbc0609cc4fcc7e3d5be0bd1c.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
