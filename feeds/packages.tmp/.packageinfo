@@ -56097,7 +56097,7 @@ Federico Di Marco <fededim@gmail.com>
 Source-Makefile: feeds/packages/net/dawn/Makefile
 
 Package: dawn
-Version: 2022-05-09-2bfd7397e1ad2a814a0aa4b38d66b2bbba79f5ba-0
+Version: 2022-06-09-850a75c18293fef2586513704142728fa0eba712-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus +libubox +libblobmsg-json +libuci +libgcrypt +libiwinfo +umdns
 Conflicts: 
 Menu-Depends: 
@@ -56107,7 +56107,7 @@ Category: Network
 Repository: base
 Title: Decentralized wifi controller
 Maintainer: Nick Hainke <vincent@systemli.org>
-Source: dawn-2022-05-09-2bfd7397e1ad2a814a0aa4b38d66b2bbba79f5ba.tar.xz
+Source: dawn-2022-06-09-850a75c18293fef2586513704142728fa0eba712.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -79872,7 +79872,7 @@ Description:   BCM27xx EEPROM tools.
 Source-Makefile: feeds/packages/utils/beep/Makefile
 
 Package: beep
-Version: 1.3-3
+Version: 1.4.12-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +TARGET_x86:kmod-pcspkr @!TARGET_x86:kmod-gpio-beeper
 Conflicts: 
 Menu-Depends: 
@@ -79882,12 +79882,12 @@ Category: Sound
 Repository: base
 Title: Play beep sounds through a PC speaker
 Maintainer: 
-Source: beep-1.3.tar.xz
-License: GPL-2.0
+Source: beep-1.4.12.tar.gz
+License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
-Description: 	This program plays beeps through the PC speaker
-http://johnath.com/beep/README
+Description:   This program plays beeps through the PC speaker
+https://github.com/spkr-beep/beep
 
 @@
 
@@ -85718,7 +85718,7 @@ Source-Makefile: feeds/packages/utils/fish/Makefile
 
 Package: fish
 Submenu: Shells
-Version: 3.2.2-0
+Version: 3.3.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libstdcpp +libatomic +librt +libpcre2-32 @!USE_UCLIBC
 Conflicts: 
 Menu-Depends: 
@@ -85728,7 +85728,7 @@ Category: Utilities
 Repository: base
 Title: A smart and user-friendly command line shell
 Maintainer: Curtis Jiang <jqqqqqqqqqq@gmail.com>, Hao Dong <halbertdong@gmail.com>
-Source: fish-3.2.2.tar.xz
+Source: fish-3.3.1.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
