@@ -47703,7 +47703,7 @@ config UNBLOCKNETEASEMUSIC_GO_COMPRESS_UPX
 Source-Makefile: feeds/packages/multimedia/aliyundrive-fuse/Makefile
 
 Package: aliyundrive-fuse
-Version: 0.1.9-0
+Version: 0.1.12-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +fuse-utils
 Conflicts: 
 Menu-Depends: 
@@ -47713,7 +47713,7 @@ Category: Multimedia
 Repository: base
 Title: FUSE for AliyunDrive
 Maintainer: messense <messense@icloud.com>
-Source: aliyundrive-fuse-v0.1.9.-unknown-linux-musl.tar.gz
+Source: aliyundrive-fuse-v0.1.12.-unknown-linux-musl.tar.gz
 License: MIT
 Type: ipkg
 Description:   FUSE for AliyunDrive.
@@ -47725,7 +47725,7 @@ messense <messense@icloud.com>
 Source-Makefile: feeds/packages/multimedia/aliyundrive-webdav/Makefile
 
 Package: aliyundrive-webdav
-Version: 1.3.2-0
+Version: 1.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -47735,7 +47735,7 @@ Category: Multimedia
 Repository: base
 Title: WebDAV server for AliyunDrive
 Maintainer: messense <messense@icloud.com>
-Source: aliyundrive-webdav-v1.3.2.-unknown-linux-musl.tar.gz
+Source: aliyundrive-webdav-v1.5.0.-unknown-linux-musl.tar.gz
 License: MIT
 Type: ipkg
 Description:  WebDAV server for AliyunDrive.
@@ -61867,7 +61867,7 @@ Source-Makefile: feeds/packages/net/lighttpd/Makefile
 Package: lighttpd
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnettle +libpcre2 +libpthread +LIGHTTPD_LOGROTATE:logrotate
 Conflicts: 
 Menu-Depends: 
@@ -61877,7 +61877,7 @@ Category: Network
 Repository: base
 Title: A flexible and lightweight web server
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -61918,7 +61918,7 @@ config LIGHTTPD_LOGROTATE
 
 Package: lighttpd-mod-redirect
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-redirect:libpcre2
 Conflicts: 
 Menu-Depends: 
@@ -61928,7 +61928,7 @@ Category: Network
 Repository: base
 Title: URL redirection module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -61939,7 +61939,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-auth
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-auth:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -61949,7 +61949,7 @@ Category: Network
 Repository: base
 Title: Authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -61960,7 +61960,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_dbi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_dbi:libnettle +PACKAGE_lighttpd-mod-authn_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
@@ -61970,7 +61970,7 @@ Category: Network
 Repository: base
 Title: DBI-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -61981,7 +61981,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_file
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_file:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -61991,7 +61991,7 @@ Category: Network
 Repository: base
 Title: File-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62002,7 +62002,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_gssapi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -62012,7 +62012,7 @@ Category: Network
 Repository: base
 Title: Kerberos-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62023,7 +62023,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_ldap
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -62033,7 +62033,7 @@ Category: Network
 Repository: base
 Title: LDAP-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62042,30 +62042,9 @@ https://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
-Package: lighttpd-mod-authn_mysql
-Submenu: Web Servers/Proxies
-Version: 1.4.63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_mysql:libnettle +PACKAGE_lighttpd-mod-authn_mysql:libmariadb
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Mysql-based authentication module
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
-License: BSD-3-Clause
-LicenseFiles: COPYING
-Type: ipkg
-Description: Mysql-based authentication module
-https://www.lighttpd.net/
-W. Michael Petullo <mike@flyn.org>
-@@
-
 Package: lighttpd-mod-authn_pam
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_pam:libpam
 Conflicts: 
 Menu-Depends: 
@@ -62075,7 +62054,7 @@ Category: Network
 Repository: base
 Title: PAM-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62086,7 +62065,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_sasl
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_sasl:libsasl2
 Conflicts: 
 Menu-Depends: 
@@ -62096,7 +62075,7 @@ Category: Network
 Repository: base
 Title: SASL-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62107,7 +62086,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-access
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62117,7 +62096,7 @@ Category: Network
 Repository: base
 Title: Access restrictions module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62128,7 +62107,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-accesslog
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62138,7 +62117,7 @@ Category: Network
 Repository: base
 Title: Access logging module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62149,7 +62128,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-ajp13
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62159,7 +62138,7 @@ Category: Network
 Repository: base
 Title: AJP13 Tomcat connector module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62170,7 +62149,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-alias
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62180,7 +62159,7 @@ Category: Network
 Repository: base
 Title: Directory alias module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62191,7 +62170,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-cgi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62201,7 +62180,7 @@ Category: Network
 Repository: base
 Title: CGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62210,30 +62189,9 @@ https://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
-Package: lighttpd-mod-cml
-Submenu: Web Servers/Proxies
-Version: 1.4.63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-cml:liblua +PACKAGE_lighttpd-mod-cml:libnettle
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Cache Meta Language module
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
-License: BSD-3-Clause
-LicenseFiles: COPYING
-Type: ipkg
-Description: Cache Meta Language module
-https://www.lighttpd.net/
-W. Michael Petullo <mike@flyn.org>
-@@
-
 Package: lighttpd-mod-deflate
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-deflate:zlib
 Conflicts: 
 Menu-Depends: 
@@ -62243,7 +62201,7 @@ Category: Network
 Repository: base
 Title: Compress dynamic output module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62254,7 +62212,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-evasive
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62264,7 +62222,7 @@ Category: Network
 Repository: base
 Title: Evasive module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62275,7 +62233,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-evhost
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62285,7 +62243,7 @@ Category: Network
 Repository: base
 Title: Enhanced Virtual-Hosting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62296,7 +62254,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-expire
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62306,7 +62264,7 @@ Category: Network
 Repository: base
 Title: Expire module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62317,7 +62275,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-extforward
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62327,7 +62285,7 @@ Category: Network
 Repository: base
 Title: Extract client module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62338,7 +62296,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-fastcgi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62348,7 +62306,7 @@ Category: Network
 Repository: base
 Title: FastCGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62357,30 +62315,9 @@ https://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
-Package: lighttpd-mod-flv_streaming
-Submenu: Web Servers/Proxies
-Version: 1.4.63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: FLV streaming module
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
-License: BSD-3-Clause
-LicenseFiles: COPYING
-Type: ipkg
-Description: FLV streaming module
-https://www.lighttpd.net/
-W. Michael Petullo <mike@flyn.org>
-@@
-
 Package: lighttpd-mod-gnutls
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-gnutls:libgnutls
 Conflicts: 
 Menu-Depends: 
@@ -62390,7 +62327,7 @@ Category: Network
 Repository: base
 Title: TLS using gnutls module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62401,7 +62338,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-magnet
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-magnet:liblua
 Conflicts: 
 Menu-Depends: 
@@ -62411,7 +62348,7 @@ Category: Network
 Repository: base
 Title: Magnet module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62422,7 +62359,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-maxminddb
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-maxminddb:libmaxminddb
 Conflicts: 
 Menu-Depends: 
@@ -62432,7 +62369,7 @@ Category: Network
 Repository: base
 Title: MaxMind DB module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62443,7 +62380,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-mbedtls
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -62453,7 +62390,7 @@ Category: Network
 Repository: base
 Title: TLS using mbedtls module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62464,7 +62401,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-nss
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-nss:libnss
 Conflicts: 
 Menu-Depends: 
@@ -62474,7 +62411,7 @@ Category: Network
 Repository: base
 Title: TLS using nss module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62485,7 +62422,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-openssl
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -62495,7 +62432,7 @@ Category: Network
 Repository: base
 Title: TLS using openssl module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62506,7 +62443,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-proxy
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62516,7 +62453,7 @@ Category: Network
 Repository: base
 Title: Proxy module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62527,7 +62464,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-rewrite
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-rewrite:libpcre2
 Conflicts: 
 Menu-Depends: 
@@ -62537,7 +62474,7 @@ Category: Network
 Repository: base
 Title: URL rewriting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62548,7 +62485,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-rrdtool
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62558,7 +62495,7 @@ Category: Network
 Repository: base
 Title: RRDtool module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62569,7 +62506,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-scgi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62579,7 +62516,7 @@ Category: Network
 Repository: base
 Title: SCGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62590,7 +62527,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-secdownload
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-secdownload:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62600,7 +62537,7 @@ Category: Network
 Repository: base
 Title: Secure and fast download module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62611,7 +62548,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-setenv
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62621,7 +62558,7 @@ Category: Network
 Repository: base
 Title: Environment variable setting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62632,7 +62569,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-simple_vhost
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62642,7 +62579,7 @@ Category: Network
 Repository: base
 Title: Simple virtual hosting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62653,7 +62590,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-sockproxy
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62663,7 +62600,7 @@ Category: Network
 Repository: base
 Title: sockproxy module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62674,7 +62611,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-ssi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62684,7 +62621,7 @@ Category: Network
 Repository: base
 Title: SSI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62695,7 +62632,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-staticfile
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62705,7 +62642,7 @@ Category: Network
 Repository: base
 Title: staticfile module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62716,7 +62653,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-status
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62726,7 +62663,7 @@ Category: Network
 Repository: base
 Title: Server status display module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62735,30 +62672,9 @@ https://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
-Package: lighttpd-mod-trigger_b4_dl
-Submenu: Web Servers/Proxies
-Version: 1.4.63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-trigger_b4_dl:libpcre2 +PACKAGE_lighttpd-mod-trigger_b4_dl:libgdbm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Trigger before download module
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
-License: BSD-3-Clause
-LicenseFiles: COPYING
-Type: ipkg
-Description: Trigger before download module
-https://www.lighttpd.net/
-W. Michael Petullo <mike@flyn.org>
-@@
-
 Package: lighttpd-mod-uploadprogress
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62768,7 +62684,7 @@ Category: Network
 Repository: base
 Title: Upload Progress module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62779,7 +62695,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-userdir
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62789,7 +62705,7 @@ Category: Network
 Repository: base
 Title: User directory module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62800,7 +62716,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-usertrack
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-usertrack:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62810,7 +62726,7 @@ Category: Network
 Repository: base
 Title: User tracking module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62821,7 +62737,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62831,7 +62747,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62842,7 +62758,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_dbi
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
@@ -62852,7 +62768,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (DBI) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62863,7 +62779,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_ldap
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -62873,7 +62789,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (LDAP) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62884,7 +62800,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_mysql
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_mysql:libmariadb
 Conflicts: 
 Menu-Depends: 
@@ -62894,7 +62810,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (MariaDB) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62905,7 +62821,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_pgsql
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -62915,7 +62831,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (PostgreSQL) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62924,30 +62840,9 @@ https://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
-Package: lighttpd-mod-mysql_vhost
-Submenu: Web Servers/Proxies
-Version: 1.4.63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-mysql_vhost:libmariadb
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Mysql virtual hosting module
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
-License: BSD-3-Clause
-LicenseFiles: COPYING
-Type: ipkg
-Description: Mysql virtual hosting module
-https://www.lighttpd.net/
-W. Michael Petullo <mike@flyn.org>
-@@
-
 Package: lighttpd-mod-webdav
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-webdav:libsqlite3 +PACKAGE_lighttpd-mod-webdav:libuuid +PACKAGE_lighttpd-mod-webdav:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -62957,7 +62852,7 @@ Category: Network
 Repository: base
 Title: WebDAV module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62968,7 +62863,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-wolfssl
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -62978,7 +62873,7 @@ Category: Network
 Repository: base
 Title: TLS using wolfssl module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62989,7 +62884,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-wstunnel
 Submenu: Web Servers/Proxies
-Version: 1.4.63-1
+Version: 1.4.65-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-wstunnel:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62999,7 +62894,7 @@ Category: Network
 Repository: base
 Title: Websocket tunneling module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.63.tar.xz
+Source: lighttpd-1.4.65.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -67476,7 +67371,7 @@ Source-Makefile: feeds/packages/net/openvpn/Makefile
 Package: openvpn-openssl
 Menu: 1
 Submenu: VPN
-Version: 2.5.6-1
+Version: 2.5.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_openssl_ENABLE_LZO:liblzo +OPENVPN_openssl_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -67487,7 +67382,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using OpenSSL
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.6.tar.xz
+Source: openvpn-2.5.7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using OpenSSL
@@ -67501,7 +67396,7 @@ Config:
 Package: openvpn-mbedtls
 Menu: 1
 Submenu: VPN
-Version: 2.5.6-1
+Version: 2.5.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_mbedtls_ENABLE_LZO:liblzo +OPENVPN_mbedtls_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -67512,7 +67407,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using mbedTLS
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.6.tar.xz
+Source: openvpn-2.5.7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using mbedTLS
@@ -67526,7 +67421,7 @@ Config:
 Package: openvpn-wolfssl
 Menu: 1
 Submenu: VPN
-Version: 2.5.6-1
+Version: 2.5.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +OPENVPN_wolfssl_ENABLE_LZO:liblzo +OPENVPN_wolfssl_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -67537,7 +67432,7 @@ Category: Network
 Repository: base
 Title: Open source VPN solution using WolfSSL \(experimental\)
 Maintainer: Magnus Kroken <mkroken@gmail.com>
-Source: openvpn-2.5.6.tar.xz
+Source: openvpn-2.5.7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Open source VPN solution using WolfSSL \(experimental\)
@@ -75912,7 +75807,7 @@ Build-Depends: iptables
 
 Package: kmod-ipt-compat-xtables
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +IPV6:kmod-ip6tables
 Conflicts: 
 Menu-Depends: 
@@ -75921,8 +75816,9 @@ Section: kernel
 Category: Kernel modules
 Title: API compatibilty layer netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: API compatibilty layer netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -75930,7 +75826,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-nathelper-rtsp
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-conntrack-extra +kmod-ipt-nat
 Conflicts: 
 Menu-Depends: 
@@ -75939,8 +75835,9 @@ Section: kernel
 Category: Kernel modules
 Title: RTSP Conntrack and NAT netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: RTSP Conntrack and NAT netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -75948,7 +75845,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-account
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-account
 Conflicts: 
 Menu-Depends: 
@@ -75958,8 +75855,9 @@ Category: Network
 Repository: base
 Title: ACCOUNT iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: ACCOUNT iptables extension
 https://inai.de/projects/xtables-addons/
@@ -75968,7 +75866,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-account
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -75977,8 +75875,9 @@ Section: kernel
 Category: Kernel modules
 Title: ACCOUNT netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: ACCOUNT netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -75986,7 +75885,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-chaos
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-chaos
 Conflicts: 
 Menu-Depends: 
@@ -75996,8 +75895,9 @@ Category: Network
 Repository: base
 Title: CHAOS iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: CHAOS iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76006,7 +75906,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-chaos
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-ipt-delude +kmod-ipt-tarpit
 Conflicts: 
 Menu-Depends: 
@@ -76015,8 +75915,9 @@ Section: kernel
 Category: Kernel modules
 Title: CHAOS netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: CHAOS netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76024,7 +75925,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-condition
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-condition
 Conflicts: 
 Menu-Depends: 
@@ -76034,8 +75935,9 @@ Category: Network
 Repository: base
 Title: Condition iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: Condition iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76044,7 +75946,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-condition
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76053,8 +75955,9 @@ Section: kernel
 Category: Kernel modules
 Title: Condition netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: Condition netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76062,7 +75965,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-delude
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-delude
 Conflicts: 
 Menu-Depends: 
@@ -76072,8 +75975,9 @@ Category: Network
 Repository: base
 Title: DELUDE iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DELUDE iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76082,7 +75986,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-delude
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76091,8 +75995,9 @@ Section: kernel
 Category: Kernel modules
 Title: DELUDE netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DELUDE netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76100,7 +76005,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-dhcpmac
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-dhcpmac
 Conflicts: 
 Menu-Depends: 
@@ -76110,8 +76015,9 @@ Category: Network
 Repository: base
 Title: DHCPMAC iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DHCPMAC iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76120,7 +76026,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-dhcpmac
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76129,8 +76035,9 @@ Section: kernel
 Category: Kernel modules
 Title: DHCPMAC netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DHCPMAC netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76138,7 +76045,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-dnetmap
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-dnetmap
 Conflicts: 
 Menu-Depends: 
@@ -76148,8 +76055,9 @@ Category: Network
 Repository: base
 Title: DNETMAP iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DNETMAP iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76158,7 +76066,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-dnetmap
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-ipt-nat
 Conflicts: 
 Menu-Depends: 
@@ -76167,8 +76075,9 @@ Section: kernel
 Category: Kernel modules
 Title: DNETMAP netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: DNETMAP netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76176,7 +76085,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-fuzzy
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-fuzzy
 Conflicts: 
 Menu-Depends: 
@@ -76186,8 +76095,9 @@ Category: Network
 Repository: base
 Title: fuzzy iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: fuzzy iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76196,7 +76106,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-fuzzy
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76205,8 +76115,9 @@ Section: kernel
 Category: Kernel modules
 Title: fuzzy netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: fuzzy netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76214,7 +76125,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-geoip
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-geoip
 Conflicts: 
 Menu-Depends: 
@@ -76224,8 +76135,9 @@ Category: Network
 Repository: base
 Title: geoip iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: geoip iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76234,7 +76146,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-geoip
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76243,8 +76155,9 @@ Section: kernel
 Category: Kernel modules
 Title: geoip netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: geoip netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76252,7 +76165,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-iface
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-iface
 Conflicts: 
 Menu-Depends: 
@@ -76262,8 +76175,9 @@ Category: Network
 Repository: base
 Title: iface iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: iface iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76272,7 +76186,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-iface
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76281,8 +76195,9 @@ Section: kernel
 Category: Kernel modules
 Title: iface netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: iface netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76290,7 +76205,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipmark
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipmark
 Conflicts: 
 Menu-Depends: 
@@ -76300,8 +76215,9 @@ Category: Network
 Repository: base
 Title: IPMARK iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: IPMARK iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76310,7 +76226,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipmark
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76319,8 +76235,9 @@ Section: kernel
 Category: Kernel modules
 Title: IPMARK netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: IPMARK netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76328,7 +76245,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipp2p
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipp2p
 Conflicts: 
 Menu-Depends: 
@@ -76338,8 +76255,9 @@ Category: Network
 Repository: base
 Title: IPP2P iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: IPP2P iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76348,7 +76266,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipp2p
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76357,8 +76275,9 @@ Section: kernel
 Category: Kernel modules
 Title: IPP2P netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: IPP2P netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76366,7 +76285,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipv4options
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipv4options
 Conflicts: 
 Menu-Depends: 
@@ -76376,8 +76295,9 @@ Category: Network
 Repository: base
 Title: ipv4options iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: ipv4options iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76386,7 +76306,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipv4options
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76395,8 +76315,9 @@ Section: kernel
 Category: Kernel modules
 Title: ipv4options netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: ipv4options netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76404,7 +76325,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-length2
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-length2
 Conflicts: 
 Menu-Depends: 
@@ -76414,8 +76335,9 @@ Category: Network
 Repository: base
 Title: length2 iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: length2 iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76424,7 +76346,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-length2
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76433,8 +76355,9 @@ Section: kernel
 Category: Kernel modules
 Title: length2 netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: length2 netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76442,7 +76365,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-logmark
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-logmark
 Conflicts: 
 Menu-Depends: 
@@ -76452,8 +76375,9 @@ Category: Network
 Repository: base
 Title: LOGMARK iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: LOGMARK iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76462,7 +76386,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-logmark
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76471,8 +76395,9 @@ Section: kernel
 Category: Kernel modules
 Title: LOGMARK netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: LOGMARK netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76480,7 +76405,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-lscan
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-lscan
 Conflicts: 
 Menu-Depends: 
@@ -76490,8 +76415,9 @@ Category: Network
 Repository: base
 Title: lscan iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: lscan iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76500,7 +76426,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-lscan
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76509,8 +76435,9 @@ Section: kernel
 Category: Kernel modules
 Title: lscan netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: lscan netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76518,7 +76445,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-lua
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-lua
 Conflicts: 
 Menu-Depends: 
@@ -76528,8 +76455,9 @@ Category: Network
 Repository: base
 Title: Lua PacketScript iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: Lua PacketScript iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76538,7 +76466,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-lua
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-conntrack-extra
 Conflicts: 
 Menu-Depends: 
@@ -76547,8 +76475,9 @@ Section: kernel
 Category: Kernel modules
 Title: Lua PacketScript netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: Lua PacketScript netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76556,7 +76485,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-proto
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-proto
 Conflicts: 
 Menu-Depends: 
@@ -76566,8 +76495,9 @@ Category: Network
 Repository: base
 Title: PROTO iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: PROTO iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76576,7 +76506,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-proto
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76585,8 +76515,9 @@ Section: kernel
 Category: Kernel modules
 Title: PROTO netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: PROTO netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76594,7 +76525,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-psd
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-psd
 Conflicts: 
 Menu-Depends: 
@@ -76604,8 +76535,9 @@ Category: Network
 Repository: base
 Title: psd iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: psd iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76614,7 +76546,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-psd
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76623,8 +76555,9 @@ Section: kernel
 Category: Kernel modules
 Title: psd netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: psd netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76632,7 +76565,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-quota2
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-quota2
 Conflicts: 
 Menu-Depends: 
@@ -76642,8 +76575,9 @@ Category: Network
 Repository: base
 Title: quota2 iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: quota2 iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76652,7 +76586,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-quota2
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -76661,8 +76595,9 @@ Section: kernel
 Category: Kernel modules
 Title: quota2 netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: quota2 netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76670,7 +76605,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-sysrq
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-sysrq
 Conflicts: 
 Menu-Depends: 
@@ -76680,8 +76615,9 @@ Category: Network
 Repository: base
 Title: SYSRQ iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: SYSRQ iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76690,7 +76626,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-sysrq
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
@@ -76699,8 +76635,9 @@ Section: kernel
 Category: Kernel modules
 Title: SYSRQ netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: SYSRQ netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76708,7 +76645,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-tarpit
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-tarpit
 Conflicts: 
 Menu-Depends: 
@@ -76718,8 +76655,9 @@ Category: Network
 Repository: base
 Title: TARPIT iptables extension
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: TARPIT iptables extension
 https://inai.de/projects/xtables-addons/
@@ -76728,7 +76666,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-tarpit
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+3.19-0
+Version: <LINUX_VERSION>+3.20-0
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -76737,8 +76675,9 @@ Section: kernel
 Category: Kernel modules
 Title: TARPIT netfilter module
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: TARPIT netfilter module
 Jo-Philipp Wich <jo@mein.io>
@@ -76746,7 +76685,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptaccount
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +iptables-mod-account
 Conflicts: 
 Menu-Depends: 
@@ -76756,8 +76695,9 @@ Category: Network
 Repository: base
 Title: iptables-mod-account control utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: iptables-mod-account control utility
 https://inai.de/projects/xtables-addons/
@@ -76766,7 +76706,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptgeoip
 Submenu: Firewall
-Version: 3.19-0
+Version: 3.20-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +iptables-mod-geoip +perl +perlbase-getopt +perlbase-io +perl-text-csv_xs +perl-net-cidr-lite +wget-ssl +!BUSYBOX_CONFIG_ZCAT:gzip
 Conflicts: 
 Menu-Depends: 
@@ -76776,8 +76716,9 @@ Category: Network
 Repository: base
 Title: iptables-mod-geoip support scripts for MaxMind GeoIP databases
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: xtables-addons-3.19.tar.xz
+Source: xtables-addons-3.20.tar.xz
 License: GPL-2.0
+LicenseFiles: COPYING
 Type: ipkg
 Description: iptables-mod-geoip support scripts for MaxMind GeoIP databases
 https://inai.de/projects/xtables-addons/
@@ -89674,6 +89615,29 @@ Description:   Mpack and munpack are utilities for encoding and decoding
   messages in split-uuencoded format.
 https://gitlab.com/osdp/mpack
 Dmitry V. Zimin <pfzim@mail.ru>
+@@
+
+
+Source-Makefile: feeds/packages/utils/mqttled/Makefile
+
+Package: mqttled
+Version: 0.1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-paho-mqtt +python3-uci +python3-idna +python3-jsonpath-ng +python3-yaml +python3-schema +python3-netifaces +python3-logging +python3-urllib +python3-asyncio +python3-pkg-resources
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: LED Control from MQTT 
+Maintainer: Tom Grime <tom.grime@gmail.com>
+Source: mqttled-0.1.0.tar.gz
+License: MIT
+LicenseFiles: LICENCE
+Type: ipkg
+Description: 	Exposes the LEDs of your device to an MQTT broker with optional Home Assistant auto discovery
+https://github.com/trevortrevor/mqttled/
+Tom Grime <tom.grime@gmail.com>
 @@
 
 
