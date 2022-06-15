@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
-Version: 186-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin
+Version: 186-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin:v2ray-plugin
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,6 +21,24 @@ Description: SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 Config:
 select PACKAGE_luci-lib-ipkg if PACKAGE_luci-app-ssr-plus
 
+choice
+	prompt "V2ray-core Selection"
+	default PACKAGE_luci-app-ssr-plus_INCLUDE_Xray if aarch64||arm||i386||x86_64
+	default PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY
+	bool "None"
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray
+	bool "Include V2ray-core"
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_Xray
+	bool "Include Xray-core"
+
+	config PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core
+	bool "Include SagerNet-core (An enhanced edition of v2ray-core)"
+endchoice
+
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
 	bool "Include Kcptun"
 	default n
@@ -30,7 +48,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria
 	default n
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks
-	bool "Include ipt2socks"
+	bool "Include IPT2Socks"
 	default n
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy
@@ -41,10 +59,6 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2
 	bool "Include Redsocks2"
 	default n
-
-config PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core
-	bool "Include sagernet-core (An enhanced edition of v2ray-core)"
-	default y if aarch64||arm||i386||x86_64
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client
 	bool "Include Shadowsocks Libev Client"
@@ -90,7 +104,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin
 
 Package: luci-i18n-ssr-plus-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 186-3
+Version: 186-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -109,7 +123,7 @@ Description:     Translation for luci-app-ssr-plus -
 
 Package: luci-i18n-ssr-plus-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 186-3
+Version: 186-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
