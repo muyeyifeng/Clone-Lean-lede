@@ -20,6 +20,26 @@ Description: LuCI Shell Command Module
 
 @@
 
+Package: luci-i18n-commands-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-commands - uk translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-commands - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-commands-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -60,8 +80,8 @@ Description:     Translation for luci-app-commands - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-commands-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-commands-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
 Conflicts: 
@@ -70,18 +90,18 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-commands - ro translation
+Title: luci-app-commands - no translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-commands - Română (Romanian)
+Description:     Translation for luci-app-commands - Norsk (Norwegian)
 
 @@
 
-Package: luci-i18n-commands-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-commands-en
+Default: LUCI_LANG_en||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
 Conflicts: 
@@ -90,13 +110,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-commands - sk translation
+Title: luci-app-commands - en translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-commands - Slovenčina (Slovak)
+Description:     Translation for luci-app-commands - English
 
 @@
 
@@ -120,8 +140,8 @@ Description:     Translation for luci-app-commands - Ελληνικά (Greek)
 
 @@
 
-Package: luci-i18n-commands-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-commands-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
 Conflicts: 
@@ -130,13 +150,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-commands - uk translation
+Title: luci-app-commands - sk translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-commands - украї́нська (Ukrainian)
+Description:     Translation for luci-app-commands - Slovenčina (Slovak)
 
 @@
 
@@ -200,8 +220,8 @@ Description:     Translation for luci-app-commands - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-commands-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-commands-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
 Conflicts: 
@@ -210,13 +230,33 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-commands - no translation
+Title: luci-app-commands - ro translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-commands - Norsk (Norwegian)
+Description:     Translation for luci-app-commands - Română (Romanian)
+
+@@
+
+Package: luci-i18n-commands-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-commands - pt-br translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-commands - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -400,26 +440,6 @@ Description:     Translation for luci-app-commands - Català (Catalan)
 
 @@
 
-Package: luci-i18n-commands-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-commands - en translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-commands - English
-
-@@
-
 Package: luci-i18n-commands-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -437,26 +457,6 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-commands - Español (Spanish)
-
-@@
-
-Package: luci-i18n-commands-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-commands - pt-br translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-commands - Português do Brasil (Brazialian Portuguese)
 
 @@
 

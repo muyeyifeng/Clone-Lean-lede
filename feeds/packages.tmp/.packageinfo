@@ -17294,6 +17294,53 @@ Config:
     depends on PACKAGE_python3-distutils
 @@
 
+Package: python3-codecs
+Submenu: Python
+Version: 3.9.12-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 codecs + unicode support
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.12.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.9 codecs + unicode support
+https://www.python.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-codecs-src
+Submenu: Python
+Version: 3.9.12-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.9 codecs + unicode support (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.9.12.tar.xz
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.9 codecs + unicode support
+
+    This package contains the Python source files for python3-codecs.
+https://www.python.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-codecs
+@@
+
 Package: python3-email
 Submenu: Python
 Version: 3.9.12-1
@@ -17576,53 +17623,6 @@ Config:
     depends on PACKAGE_python3-dbm
 @@
 
-Package: python3-codecs
-Submenu: Python
-Version: 3.9.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 codecs + unicode support
-Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.12.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 codecs + unicode support
-https://www.python.org/
-Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-codecs-src
-Submenu: Python
-Version: 3.9.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 codecs + unicode support (sources)
-Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.12.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 codecs + unicode support
-
-    This package contains the Python source files for python3-codecs.
-https://www.python.org/
-Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-codecs
-@@
-
 Package: python3-lzma
 Submenu: Python
 Version: 3.9.12-1
@@ -17789,7 +17789,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.9.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-lzma +python3-asyncio
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-codecs +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29360,7 +29360,7 @@ Source-Makefile: feeds/packages/libs/libmbim/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libmbim
-Version: 1.24.8-1
+Version: 1.26.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
 Conflicts: 
 Menu-Depends: 
@@ -29369,19 +29369,19 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: Helper library and utils to talk to MBIM enabled modems
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libmbim-1.24.8.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: libmbim-1.26.4.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
 Description:   Helper library to talk to MBIM enabled modems.
   Add mbim-utils for extra utilities.
 https://www.freedesktop.org/wiki/Software/libmbim
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 
 Package: mbim-utils
-Version: 1.24.8-1
+Version: 1.26.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbim
 Conflicts: 
 Menu-Depends: 
@@ -29390,14 +29390,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utilities to talk to MBIM enabled modems
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libmbim-1.24.8.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: libmbim-1.26.4.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description: Utilities to talk to MBIM enabled modems
 https://www.freedesktop.org/wiki/Software/libmbim
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 
 
@@ -30375,7 +30375,7 @@ Source-Makefile: feeds/packages/libs/libqmi/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libqmi
-Version: 1.28.6-1
+Version: 1.30.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +LIBQMI_WITH_MBIM_QMUX:libmbim +LIBQMI_WITH_QRTR_GLIB:libqrtr-glib
 Conflicts: 
 Menu-Depends: 
@@ -30384,22 +30384,22 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: Helper library to talk to QMI enabled modems
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqmi-1.28.6.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: libqmi-1.30.6.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
 Description:   Helper library talk to QMI enabled modems.
   Add qmi-utils for extra utilities.
 https://www.freedesktop.org/wiki/Software/libqmi
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 Config:
   source "feeds/packages/libs/libqmi/Config.in"
 @@
 
 Package: qmi-utils
-Version: 1.28.6-1
+Version: 1.30.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libqmi
 Conflicts: 
 Menu-Depends: 
@@ -30408,14 +30408,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utilities to talk to QMI enabled modems
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqmi-1.28.6.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: libqmi-1.30.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description: Utilities to talk to QMI enabled modems
 https://www.freedesktop.org/wiki/Software/libqmi
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 
 
@@ -30423,7 +30423,7 @@ Source-Makefile: feeds/packages/libs/libqrtr-glib/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libqrtr-glib
-Version: 1.0.0-1
+Version: 1.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
 Conflicts: 
 Menu-Depends: 
@@ -30433,8 +30433,8 @@ Category: Libraries
 Repository: base
 Title: Helper library to talk to QRTR enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqrtr-glib-1.0.0.tar.xz
-License: LGPL-2.0-or-later
+Source: libqrtr-glib-1.2.2.tar.xz
+License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
 Description:   Helper library talk to QRTR enabled modems.
@@ -30735,6 +30735,32 @@ Description:  libshout allows applications to easily communicate and broadcast
  details.
 http://www.icecast.org
 Ted Hess <thess@kitschensync.net>
+@@
+
+
+Source-Makefile: feeds/packages/libs/libslirp/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+
+Package: libslirp
+Submenu: Networking
+Version: 4.7.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: user-mode networking library for virtual environments
+Maintainer: Oskari Rauta <oskari.rauta@gmailcom>
+Source: libslirp-v4.7.0.tar.gz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description:   libslirp is a user-mode networking library used by virtual machines,
+  containers or various tools.
+https://gitlab.freedesktop.org/slirp/libslirp
+Oskari Rauta <oskari.rauta@gmailcom>
 @@
 
 
@@ -61699,7 +61725,7 @@ Type: ipkg
 Description:   installs: ksmbd.mountd
 
   This provides the basic fileserver service and is the minimum needed to serve 'guest only' file shares or use a existing user database file ksmbdpwd.db.
-https://github.com/cifsd-team/cifsd-tools
+https://github.com/cifsd-team/ksmbd-tools
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 Config:
@@ -61726,7 +61752,7 @@ Description:   installs: ksmbd.adduser (ksmbd.addshare)
 
   Tool needed to create the ksmbdpwd.db, to manage per user share passwords.
   NOTE: Not needed for 'guest only' shares.
-https://github.com/cifsd-team/cifsd-tools
+https://github.com/cifsd-team/ksmbd-tools
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 Config:
@@ -61758,7 +61784,7 @@ Description:   installs: smb.service
 
   This package contains the service definition for announcing the
   Ksmbd (smb/445) Daemon service via mDNS/DNS-SD.
-https://github.com/cifsd-team/cifsd-tools
+https://github.com/cifsd-team/ksmbd-tools
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
@@ -63547,11 +63573,11 @@ config MINIUPNPD_IGDv2
 
 
 Source-Makefile: feeds/packages/net/modemmanager/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: glib2/host libxslt/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: modemmanager
-Version: 1.16.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +glib2 +dbus +ppp +MODEMMANAGER_WITH_MBIM:libmbim +MODEMMANAGER_WITH_QMI:libqmi
+Version: 1.18.8-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +glib2 +dbus +ppp +MODEMMANAGER_WITH_MBIM:libmbim +MODEMMANAGER_WITH_QMI:libqmi +MODEMMANAGER_WITH_QRTR:libqrtr-glib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63559,8 +63585,8 @@ Section: net
 Category: Network
 Repository: base
 Title: Control utility for any kind of mobile broadband modem
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: ModemManager-1.16.6.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: modemmanager-1.18.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -63568,7 +63594,7 @@ Description:   ModemManager is a D-Bus-activated service which allows controllin
   broadband modems. Add kernel modules for your modems as needed.
   Select Utilities/usb-modeswitch if needed.
 https://www.freedesktop.org/wiki/Software/ModemManager
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 Config:
   source "feeds/packages/net/modemmanager/Config.in"

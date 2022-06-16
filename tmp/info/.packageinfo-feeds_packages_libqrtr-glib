@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libqrtr-glib/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libqrtr-glib
-Version: 1.0.0-1
+Version: 1.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Libraries
 Repository: packages
 Title: Helper library to talk to QRTR enabled modems
 Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: libqrtr-glib-1.0.0.tar.xz
-License: LGPL-2.0-or-later
+Source: libqrtr-glib-1.2.2.tar.xz
+License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
 Description:   Helper library talk to QRTR enabled modems.

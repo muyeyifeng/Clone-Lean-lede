@@ -20,6 +20,26 @@ Description: Firewall and Portforwarding application
 
 @@
 
+Package: luci-i18n-firewall-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-firewall - uk translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-firewall - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-firewall-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -60,8 +80,8 @@ Description:     Translation for luci-app-firewall - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-firewall-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-firewall-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
 Conflicts: 
@@ -70,18 +90,18 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-firewall - ro translation
+Title: luci-app-firewall - no translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-firewall - Română (Romanian)
+Description:     Translation for luci-app-firewall - Norsk (Norwegian)
 
 @@
 
-Package: luci-i18n-firewall-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-firewall-en
+Default: LUCI_LANG_en||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
 Conflicts: 
@@ -90,13 +110,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-firewall - sk translation
+Title: luci-app-firewall - en translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-firewall - Slovenčina (Slovak)
+Description:     Translation for luci-app-firewall - English
 
 @@
 
@@ -120,8 +140,8 @@ Description:     Translation for luci-app-firewall - Ελληνικά (Greek)
 
 @@
 
-Package: luci-i18n-firewall-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-firewall-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
 Conflicts: 
@@ -130,13 +150,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-firewall - uk translation
+Title: luci-app-firewall - sk translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-firewall - украї́нська (Ukrainian)
+Description:     Translation for luci-app-firewall - Slovenčina (Slovak)
 
 @@
 
@@ -200,8 +220,8 @@ Description:     Translation for luci-app-firewall - עִבְרִית (Hebrew)
 
 @@
 
-Package: luci-i18n-firewall-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-firewall-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
 Conflicts: 
@@ -210,13 +230,33 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-firewall - no translation
+Title: luci-app-firewall - ro translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-firewall - Norsk (Norwegian)
+Description:     Translation for luci-app-firewall - Română (Romanian)
+
+@@
+
+Package: luci-i18n-firewall-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-firewall - pt-br translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-firewall - Português do Brasil (Brazialian Portuguese)
 
 @@
 
@@ -420,26 +460,6 @@ Description:     Translation for luci-app-firewall - Català (Catalan)
 
 @@
 
-Package: luci-i18n-firewall-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-firewall - en translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-firewall - English
-
-@@
-
 Package: luci-i18n-firewall-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -457,26 +477,6 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-firewall - Español (Spanish)
-
-@@
-
-Package: luci-i18n-firewall-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-firewall
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-firewall - pt-br translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-firewall - Português do Brasil (Brazialian Portuguese)
 
 @@
 

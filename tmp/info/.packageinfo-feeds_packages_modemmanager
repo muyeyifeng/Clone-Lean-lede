@@ -1,9 +1,9 @@
 Source-Makefile: package/feeds/packages/modemmanager/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: glib2/host libxslt/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: modemmanager
-Version: 1.16.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +glib2 +dbus +ppp +MODEMMANAGER_WITH_MBIM:libmbim +MODEMMANAGER_WITH_QMI:libqmi
+Version: 1.18.8-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +glib2 +dbus +ppp +MODEMMANAGER_WITH_MBIM:libmbim +MODEMMANAGER_WITH_QMI:libqmi +MODEMMANAGER_WITH_QRTR:libqrtr-glib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,8 +11,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: Control utility for any kind of mobile broadband modem
-Maintainer: Nicholas Smith <nicholas.smith@telcoantennas.com.au>
-Source: ModemManager-1.16.6.tar.xz
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: modemmanager-1.18.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -20,7 +20,7 @@ Description:   ModemManager is a D-Bus-activated service which allows controllin
   broadband modems. Add kernel modules for your modems as needed.
   Select Utilities/usb-modeswitch if needed.
 https://www.freedesktop.org/wiki/Software/ModemManager
-Nicholas Smith <nicholas.smith@telcoantennas.com.au>
+Nicholas Smith <nicholas@nbembedded.com>
 @@
 Config:
   source "feeds/packages/net/modemmanager/Config.in"
