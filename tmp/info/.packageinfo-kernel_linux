@@ -15982,6 +15982,25 @@ Description:  Alsa modules for ralink i2s controller.
 
 @@
 
+Package: kmod-mtk-hnat
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621 +kmod-nf-flow
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek MT762x HW NAT driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BRIDGE_NETFILTER=y CONFIG_NET_MEDIATEK_HNAT CONFIG_NETFILTER_FAMILY_BRIDGE=y
+Description: MediaTek MT762x HW NAT driver
+
+@@
+
 Package: kmod-bgmac
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
