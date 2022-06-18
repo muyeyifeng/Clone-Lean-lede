@@ -929,7 +929,7 @@ Source-Makefile: feeds/routing/cjdns/Makefile
 
 Package: cjdns
 Submenu: Routing and Redirection
-Version: v21-3
+Version: v21.1-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 Conflicts: 
 Menu-Depends: 
@@ -939,7 +939,7 @@ Category: Network
 Repository: base
 Title: Encrypted near-zero-conf mesh routing protocol
 Maintainer: William Fleurant <meshnet@protonmail.com>
-Source: cjdns-v21.tar.gz
+Source: cjdns-v21.1.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -950,7 +950,7 @@ William Fleurant <meshnet@protonmail.com>
 
 Package: cjdns-tests
 Submenu: Routing and Redirection
-Version: v21-3
+Version: v21.1-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt @!arc
 Conflicts: 
 Menu-Depends: 
@@ -960,7 +960,7 @@ Category: Network
 Repository: base
 Title: cjdns test cases
 Maintainer: William Fleurant <meshnet@protonmail.com>
-Source: cjdns-v21.tar.gz
+Source: cjdns-v21.1.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
