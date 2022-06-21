@@ -929,7 +929,7 @@ Source-Makefile: feeds/routing/cjdns/Makefile
 
 Package: cjdns
 Submenu: Routing and Redirection
-Version: v21.1-3
+Version: v21.1-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 Conflicts: 
 Menu-Depends: 
@@ -950,7 +950,7 @@ William Fleurant <meshnet@protonmail.com>
 
 Package: cjdns-tests
 Submenu: Routing and Redirection
-Version: v21.1-3
+Version: v21.1-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt @!arc
 Conflicts: 
 Menu-Depends: 
@@ -1159,7 +1159,7 @@ Source-Makefile: feeds/routing/luci-app-cjdns/Makefile
 
 Package: luci-app-cjdns
 Submenu: 3. Applications
-Version: 1.3-8
+Version: 1.3-9
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cjdns +luci-compat +luci-base
 Conflicts: 
 Menu-Depends: 
