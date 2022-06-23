@@ -12,7 +12,7 @@ Section: net
 Category: Network
 Repository: packages
 Title: Kernel SMB server
-Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Maintainer: 
 Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
@@ -21,7 +21,7 @@ Description:   installs: ksmbd.mountd
 
   This provides the basic fileserver service and is the minimum needed to serve 'guest only' file shares or use a existing user database file ksmbdpwd.db.
 https://github.com/cifsd-team/ksmbd-tools
-Andy Walsh <andy.walsh44+github@gmail.com>
+
 @@
 Config:
   select PACKAGE_wsdd2
@@ -38,7 +38,7 @@ Section: net
 Category: Network
 Repository: packages
 Title: Kernel SMB user management-util
-Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Maintainer: 
 Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
@@ -48,7 +48,7 @@ Description:   installs: ksmbd.adduser (ksmbd.addshare)
   Tool needed to create the ksmbdpwd.db, to manage per user share passwords.
   NOTE: Not needed for 'guest only' shares.
 https://github.com/cifsd-team/ksmbd-tools
-Andy Walsh <andy.walsh44+github@gmail.com>
+
 @@
 Config:
 	config KSMBD_UTILS_SHAREADD
@@ -70,7 +70,7 @@ Section: net
 Category: Network
 Repository: packages
 Title: Kernel SMB (Avahi service)
-Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Maintainer: 
 Source: ksmbd-tools-3.4.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
@@ -80,7 +80,7 @@ Description:   installs: smb.service
   This package contains the service definition for announcing the
   Ksmbd (smb/445) Daemon service via mDNS/DNS-SD.
 https://github.com/cifsd-team/ksmbd-tools
-Andy Walsh <andy.walsh44+github@gmail.com>
+
 @@
 
 

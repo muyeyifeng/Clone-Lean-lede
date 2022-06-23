@@ -15810,45 +15810,6 @@ Description:   Kernel support for the USB gadget (device) controller on the BCM6
 
 @@
 
-Package: kmod-i2c-lantiq
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Lantiq I2C controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
-
-@@
-
 Package: kmod-pwm-mediatek-ramips
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -16020,45 +15981,6 @@ Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
 
 @@
 
-Package: kmod-ata-oxnas-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_oxnas
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: oxnas Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_OXNAS
-Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
-
-@@
-
-Package: kmod-usb2-oxnas
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OX820 EHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_EHCI_OXNAS
-Description:  This driver provides USB Device Controller support for the
- EHCI USB host built-in to the OX820 SoC.
-
-@@
-
 Package: kmod-phy-bcm-ns-usb2
 Submenu: USB Support
 Version: <LINUX_VERSION>-
@@ -16118,120 +16040,6 @@ Description:  Kernel module for the Broadcom iProc I2C controller.
 
 @@
 
-Package: kmod-mmc-at91
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MMC/SD Card Support on AT91
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MMC_AT91
-Description:  Kernel support for MMC/SD cards on the AT91 target
-
-@@
-
-Package: kmod-pwm-atmel
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PWM on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ATMEL_PWM
-Description:  Kernel module to use the PWM channel on ATMEL SoC
-
-@@
-
-Package: kmod-at91-adc
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: ADC on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AT91_ADC
-Description:  Kernel module to use the ADC channels of SoC
-
-@@
-
-Package: kmod-at91-udc
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: USB Device Controller on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_AT91
-Description:  Kernel module to use the USB Device controller for Atmel AT91
-
-@@
-
-Package: kmod-atmel-usba-udc
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: High-speed USB Device Controller on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_ATMEL_USBA
-Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
-
-@@
-
-Package: kmod-at91-i2c
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-i2c-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: I2C (TWI) master driver for Atmel AT91
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_AT91
-Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
-
-@@
-
 Package: kmod-leds-reset
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -16248,6 +16056,25 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_LEDS_RESET=m
 Description:  Kernel module for LEDs on reset lines
+
+@@
+
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
 
 @@
 
@@ -17497,6 +17324,120 @@ Description:   This driver provides support for the front button and LEDs on
 
 @@
 
+Package: kmod-mmc-at91
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MMC/SD Card Support on AT91
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MMC_AT91
+Description:  Kernel support for MMC/SD cards on the AT91 target
+
+@@
+
+Package: kmod-pwm-atmel
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PWM on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ATMEL_PWM
+Description:  Kernel module to use the PWM channel on ATMEL SoC
+
+@@
+
+Package: kmod-at91-adc
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ADC on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AT91_ADC
+Description:  Kernel module to use the ADC channels of SoC
+
+@@
+
+Package: kmod-at91-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: USB Device Controller on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_AT91
+Description:  Kernel module to use the USB Device controller for Atmel AT91
+
+@@
+
+Package: kmod-atmel-usba-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-usb-gadget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: High-speed USB Device Controller on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_ATMEL_USBA
+Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
+
+@@
+
+Package: kmod-at91-i2c
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: I2C (TWI) master driver for Atmel AT91
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_AT91
+Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
+
+@@
+
 Package: kmod-rtc-sunxi
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -17646,6 +17587,65 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
 Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
+
+@@
+
+Package: kmod-ata-oxnas-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends:  +kmod-ata-core @TARGET_oxnas
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: oxnas Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_OXNAS
+Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+
+@@
+
+Package: kmod-usb2-oxnas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OX820 EHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_EHCI_OXNAS
+Description:  This driver provides USB Device Controller support for the
+ EHCI USB host built-in to the OX820 SoC.
+
+@@
+
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
 
 @@
 

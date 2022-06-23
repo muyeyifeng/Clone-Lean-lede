@@ -6,7 +6,7 @@ Build-Types: host
 Package: node
 Submenu: Node.js
 Version: v12.22.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +libopenssl +zlib +libnghttp2 +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +libopenssl +zlib +libnghttp2 +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,6 +55,10 @@ Config:
 		config NODEJS_16
 			depends on !(mips||mipsel||mips64||mips64el)
 			bool "16.x Active LTS"
+
+		config NODEJS_18
+			depends on !(mips||mipsel||mips64||mips64el)
+			bool "18.x Current"
 	endchoice
 
 	choice
