@@ -400,7 +400,7 @@ Source-Makefile: feeds/packages/admin/openwisp-config/Makefile
 
 Package: openwisp-config
 Submenu: openwisp
-Version: 2021-12-07-08df34db29180a0d13c2e357723e8c546523014a-1
+Version: 1.0.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +luci-lib-nixio +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -410,12 +410,57 @@ Category: Administration
 Repository: base
 Title: Remote configuration management agent
 Maintainer: Federico Capoano <f.capoano@openwisp.io>
-Source: openwisp-config-2021-12-07-08df34db29180a0d13c2e357723e8c546523014a.tar.xz
+Source: openwisp-config-1.0.1.tar.xz
 License: GPL3.0-or-later
 Type: ipkg
 Description: Remote configuration management agent
 https://openwisp.org
 Federico Capoano <f.capoano@openwisp.io>
+@@
+
+
+Source-Makefile: feeds/packages/admin/openwisp-monitoring/Makefile
+
+Package: openwisp-monitoring
+Submenu: openwisp
+Version: 0.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +netjson-monitoring +openwisp-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Repository: base
+Title: OpenWISP Monitoring agent
+Maintainer: Federico Capoano <support@openwisp.io>
+Source: openwisp-monitoring-0.1.1.tar.xz
+License: GPL3.0-or-later
+LicenseFiles: LICENSE
+Type: ipkg
+Description: OpenWISP Monitoring agent
+http://openwisp.org
+Federico Capoano <support@openwisp.io>
+@@
+
+Package: netjson-monitoring
+Submenu: openwisp
+Version: 0.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus-lua +lua-cjson +rpcd +rpcd-mod-iwinfo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Repository: base
+Title: NetJson Monitoring
+Maintainer: Federico Capoano <support@openwisp.io>
+Source: openwisp-monitoring-0.1.1.tar.xz
+License: GPL3.0-or-later
+LicenseFiles: LICENSE
+Type: ipkg
+Description: NetJson Monitoring
+http://openwisp.org
+Federico Capoano <support@openwisp.io>
 @@
 
 
@@ -76851,7 +76896,7 @@ Source-Makefile: feeds/packages/net/zerotier/Makefile
 
 Package: zerotier
 Submenu: VPN
-Version: 1.8.9-0
+Version: 1.10.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp
 Conflicts: 
 Menu-Depends: 
@@ -76861,7 +76906,7 @@ Category: Network
 Repository: base
 Title: Create flat virtual Ethernet networks of almost unlimited size
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: zerotier-1.8.9.tar.gz
+Source: zerotier-1.10.0.tar.gz
 License: BSL 1.1
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -85276,7 +85321,7 @@ Source-Makefile: feeds/packages/utils/docker-compose/Makefile
 Build-Depends: golang/host
 
 Package: docker-compose
-Version: 2.6.0-0
+Version: 2.6.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
@@ -85286,7 +85331,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.6.0.tar.gz
+Source: v2.6.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
