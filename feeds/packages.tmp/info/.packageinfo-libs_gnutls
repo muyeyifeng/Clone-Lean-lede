@@ -3,7 +3,7 @@ Build-Depends: gettext-full/host
 
 Package: certtool
 Submenu: Encryption
-Version: 3.7.4-0
+Version: 3.7.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls
 Conflicts: 
 Menu-Depends: 
@@ -13,8 +13,9 @@ Category: Utilities
 Repository: base
 Title: GNU TLS (certool utility)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.4.tar.xz
+Source: gnutls-3.7.6.tar.xz
 License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
 Type: ipkg
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
@@ -29,7 +30,7 @@ Nikos Mavrogiannopoulos <nmav@gnutls.org>
 
 Package: gnutls-utils
 Submenu: Encryption
-Version: 3.7.4-0
+Version: 3.7.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +PACKAGE_libgnutls-dane:libgnutls-dane
 Conflicts: 
 Menu-Depends: 
@@ -39,8 +40,9 @@ Category: Utilities
 Repository: base
 Title: GNU TLS (utilities)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.4.tar.xz
+Source: gnutls-3.7.6.tar.xz
 License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
 Type: ipkg
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
@@ -56,7 +58,7 @@ Nikos Mavrogiannopoulos <nmav@gnutls.org>
 
 Package: libgnutls
 Submenu: SSL
-Version: 3.7.4-0
+Version: 3.7.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnettle +!LIBNETTLE_MINI:libgmp +GNUTLS_EXT_LIBTASN1:libtasn1 +GNUTLS_PKCS11:p11-kit +GNUTLS_CRYPTODEV:kmod-cryptodev +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -66,8 +68,9 @@ Category: Libraries
 Repository: base
 Title: GNU TLS (library)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.4.tar.xz
+Source: gnutls-3.7.6.tar.xz
 License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
 Type: ipkg
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
@@ -85,7 +88,7 @@ Config:
 
 Package: libgnutls-dane
 Submenu: SSL
-Version: 3.7.4-0
+Version: 3.7.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -95,8 +98,9 @@ Category: Libraries
 Repository: base
 Title: GNU TLS (libgnutls-dane library)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.4.tar.xz
+Source: gnutls-3.7.6.tar.xz
 License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
 Type: ipkg
 Description: GNU TLS (libgnutls-dane library)
 http://www.gnutls.org/
