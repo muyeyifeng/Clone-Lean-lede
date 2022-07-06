@@ -1,7 +1,7 @@
 Source-Makefile: package/libs/libnl/Makefile
 
 Package: libnl-core
-Version: 3.5.0-1
+Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,9 @@ Category: Libraries
 Repository: base
 Title: Core Netlink Library
 Maintainer: 
-Source: libnl-3.5.0.tar.gz
+Source: libnl-3.6.0.tar.gz
 License: LGPL-2.1
+LicenseFiles: COPYING
 Type: ipkg
 Description:  Common code for all netlink libraries
 http://www.infradead.org/~tgr/libnl/
@@ -20,7 +21,7 @@ http://www.infradead.org/~tgr/libnl/
 @@
 
 Package: libnl-genl
-Version: 3.5.0-1
+Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-core
 Conflicts: 
 Menu-Depends: 
@@ -30,8 +31,9 @@ Category: Libraries
 Repository: base
 Title: Generic Netlink Library
 Maintainer: 
-Source: libnl-3.5.0.tar.gz
+Source: libnl-3.6.0.tar.gz
 License: LGPL-2.1
+LicenseFiles: COPYING
 Type: ipkg
 Description:  Generic Netlink Library Functions
 http://www.infradead.org/~tgr/libnl/
@@ -39,7 +41,7 @@ http://www.infradead.org/~tgr/libnl/
 @@
 
 Package: libnl-route
-Version: 3.5.0-1
+Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-core
 Conflicts: 
 Menu-Depends: 
@@ -49,8 +51,9 @@ Category: Libraries
 Repository: base
 Title: Routing Netlink Library
 Maintainer: 
-Source: libnl-3.5.0.tar.gz
+Source: libnl-3.6.0.tar.gz
 License: LGPL-2.1
+LicenseFiles: COPYING
 Type: ipkg
 Description:  Routing Netlink Library Functions
 http://www.infradead.org/~tgr/libnl/
@@ -58,7 +61,7 @@ http://www.infradead.org/~tgr/libnl/
 @@
 
 Package: libnl-nf
-Version: 3.5.0-1
+Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-route
 Conflicts: 
 Menu-Depends: 
@@ -68,8 +71,9 @@ Category: Libraries
 Repository: base
 Title: Netfilter Netlink Library
 Maintainer: 
-Source: libnl-3.5.0.tar.gz
+Source: libnl-3.6.0.tar.gz
 License: LGPL-2.1
+LicenseFiles: COPYING
 Type: ipkg
 Description:  Netfilter Netlink Library Functions
 http://www.infradead.org/~tgr/libnl/
@@ -77,7 +81,7 @@ http://www.infradead.org/~tgr/libnl/
 @@
 
 Package: libnl
-Version: 3.5.0-1
+Version: 3.6.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-genl +libnl-route +libnl-nf
 Conflicts: 
 Menu-Depends: 
@@ -87,8 +91,9 @@ Category: Libraries
 Repository: base
 Title: Full Netlink Library
 Maintainer: 
-Source: libnl-3.5.0.tar.gz
+Source: libnl-3.6.0.tar.gz
 License: LGPL-2.1
+LicenseFiles: COPYING
 Type: ipkg
 Description:  Socket handling, connection management, sending and receiving of data,
  message construction and parsing, object caching system, etc.
