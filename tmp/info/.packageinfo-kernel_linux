@@ -1582,29 +1582,6 @@ Description: Key-agreement Protocol Primitives
 
 @@
 
-Package: kmod-crypto-lib-blake2s
-Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>-
-Depends:  +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BLAKE2s hash function library
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_LIB_BLAKE2S
-Hidden: 1
-Description: BLAKE2s hash function library
-
-@@
-Config:
-  imply PACKAGE_kmod-crypto-hash
-@@
-
 Package: kmod-crypto-lib-chacha20
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
@@ -9430,7 +9407,7 @@ native Linux tools such as ss.
 Package: kmod-wireguard
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-lib-blake2s +kmod-crypto-lib-chacha20poly1305 +kmod-crypto-lib-curve25519 +kmod-udptunnel4 +IPV6:kmod-udptunnel6
+Depends: +kmod-crypto-lib-chacha20poly1305 +kmod-crypto-lib-curve25519 +kmod-udptunnel4 +IPV6:kmod-udptunnel6
 Conflicts: 
 Menu-Depends: 
 Provides: 

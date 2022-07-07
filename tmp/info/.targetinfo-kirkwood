@@ -8,7 +8,7 @@ Target-Features: dt gpio nand pci ramdisk rtc squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.4.199
+Linux-Version: 5.4.203
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -151,6 +151,20 @@ Target-Profile-SupportedDevices: linksys,ea4500 linksys,viper linksys-viper
 
 Target-Profile-Description:
 Build firmware images for Linksys EA4500
+
+
+
+@@
+
+Target-Profile: DEVICE_Prafly_m8621t
+Target-Profile-Name: Prafly m8621t
+Target-Profile-Packages: kmod-ata-marvell-sata kmod-fs-ext4 kmod-switch-mvswe61xxx kmod-ata-core kmod-mmc kmod-mvsdio kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: Prafly,m8621t m8621t
+
+
+Target-Profile-Description:
+Build firmware images for Prafly m8621t
 
 
 

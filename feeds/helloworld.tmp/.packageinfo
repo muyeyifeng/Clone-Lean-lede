@@ -26,7 +26,7 @@ Source-Makefile: feeds/helloworld/hysteria/Makefile
 Build-Depends: golang/host
 
 Package: hysteria
-Version: 1.0.5-1
+Version: 1.1.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: A feature-packed network utility optimized for networks of poor quality
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: hysteria-1.0.5.tar.gz
+Source: hysteria-1.1.0.tar.gz
 License: MIT
 Type: ipkg
 Description:   Hysteria is a feature-packed network utility optimized for networks
@@ -195,7 +195,7 @@ Source-Makefile: feeds/helloworld/naiveproxy/Makefile
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 103.0.5060.53-2-1
+Version: 103.0.5060.53-3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +205,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-103.0.5060.53-2.tar.gz
+Source: naiveproxy-103.0.5060.53-3.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -217,7 +217,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: libcronet
-Version: 103.0.5060.53-2-1
+Version: 103.0.5060.53-3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -227,7 +227,7 @@ Category: Libraries
 Repository: base
 Title: The Chromium network stack library
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-103.0.5060.53-2.tar.gz
+Source: naiveproxy-103.0.5060.53-3.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
