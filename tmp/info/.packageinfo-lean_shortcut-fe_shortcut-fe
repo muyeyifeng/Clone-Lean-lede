@@ -2,7 +2,7 @@ Source-Makefile: package/lean/shortcut-fe/shortcut-fe/Makefile
 
 Package: kmod-shortcut-fe
 Submenu: Network Support
-Version: <LINUX_VERSION>-5
+Version: <LINUX_VERSION>-8
 Depends: @IPV6 +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
@@ -20,7 +20,7 @@ Description: Kernel driver for SFE
 
 Package: kmod-shortcut-fe-cm
 Submenu: Network Support
-Version: <LINUX_VERSION>-5
+Version: <LINUX_VERSION>-8
 Depends: +kmod-ipt-conntrack +kmod-shortcut-fe
 Conflicts: kmod-shortcut-fe-drv
 Menu-Depends: 

@@ -5449,7 +5449,7 @@ Description:   MII library
 Package: kmod-mdio-devres
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_10||LINUX_5_15) +kmod-libphy PACKAGE_kmod-of-mdio:kmod-of-mdio
+Depends: @(LINUX_5_10||LINUX_5_15||LINUX_5_18) +kmod-libphy PACKAGE_kmod-of-mdio:kmod-of-mdio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5935,7 +5935,7 @@ Description:  Kernel module for RealTek RTL-8139C+ PCI Fast Ethernet adapters
 Package: kmod-r8169
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +kmod-phy-realtek +(LINUX_5_10||LINUX_5_15):kmod-mdio-devres
+Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +kmod-phy-realtek +(LINUX_5_10||LINUX_5_15||LINUX_5_18):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6068,7 +6068,7 @@ Description:  Kernel modules for Intel(R) 82576 Virtual Function Ethernet adapte
 Package: kmod-ixgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy +(LINUX_5_10||LINUX_5_15):kmod-mdio-devres
+Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11112,7 +11112,7 @@ Description: 	This module provides support for creating, sealing, and unsealing
 Package: kmod-tpm
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-random-core +(LINUX_5_15):kmod-asn1-decoder +(LINUX_5_15):kmod-asn1-encoder +(LINUX_5_15):kmod-oid-registry
+Depends: +kmod-random-core +(LINUX_5_15||LINUX_5_18):kmod-asn1-decoder +(LINUX_5_15||LINUX_5_18):kmod-asn1-encoder +(LINUX_5_15||LINUX_5_18):kmod-oid-registry
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14238,7 +14238,7 @@ Description:   Enable multimedia input.
 Package: kmod-drm
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-dma-buf +kmod-i2c-core +kmod-i2c-algo-bit  +PACKAGE_kmod-backlight:kmod-backlight +(LINUX_5_15):kmod-fb
+Depends: +kmod-dma-buf +kmod-i2c-core +kmod-i2c-algo-bit  +PACKAGE_kmod-backlight:kmod-backlight +(LINUX_5_15||LINUX_5_18):kmod-fb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -17226,7 +17226,7 @@ Description:   This driver supports Elastic Network Adapter (ENA)
 Package: kmod-amd-xgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15):kmod-mdio-devres
+Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
