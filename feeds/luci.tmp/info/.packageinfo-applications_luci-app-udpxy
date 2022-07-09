@@ -19,4 +19,23 @@ Description: LuCI Support for udpxy
 
 @@
 
+Package: luci-i18n-udpxy-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-udpxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-udpxy - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-udpxy - 简体中文 (Simplified Chinese)
+
+@@
+
 
