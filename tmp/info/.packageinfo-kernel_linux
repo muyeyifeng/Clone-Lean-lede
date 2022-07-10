@@ -2603,7 +2603,7 @@ Description:  Kernel module for NTFS filesystem support
 Package: kmod-fs-ntfs3
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: @LINUX_5_15 +kmod-nls-base
+Depends: @(LINUX_5_15||LINUX_5_18) +kmod-nls-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13222,7 +13222,7 @@ Description:  Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
 Package: kmod-usb-net-asix
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy +LINUX_5_15:kmod-mdio-devres +kmod-usb-net 
+Depends: +kmod-libphy +(LINUX_5_15||LINUX_5_18):kmod-mdio-devres +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
