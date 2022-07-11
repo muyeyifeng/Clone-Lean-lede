@@ -443,15 +443,15 @@ Build firmware images for HiWiFi C526A
 
 @@
 
-Target-Profile: DEVICE_hugo_ac1200
-Target-Profile-Name: Hugo AC1200
-Target-Profile-Packages: ipq-wifi-hugo_ac1200 
+Target-Profile: DEVICE_leguang_ca100
+Target-Profile-Name: LEGUANG CA100
+Target-Profile-Packages:  
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: hugo,ac1200
+Target-Profile-SupportedDevices: leguang,ca100
 
 
 Target-Profile-Description:
-Build firmware images for Hugo AC1200
+Build firmware images for LEGUANG CA100
 
 
 
@@ -611,20 +611,6 @@ Build firmware images for P&W R619AC 128M
 
 @@
 
-Target-Profile: DEVICE_zte_mf263
-Target-Profile-Name: ZTE MF263
-Target-Profile-Packages: -kmod-ath10k-ct -ath10k-firmware-qca4019-ct kmod-ath10k ath10k-firmware-qca4019 ipq-wifi-zte_mf263 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: zte,mf263
-
-
-Target-Profile-Description:
-Build firmware images for ZTE MF263
-
-
-
-@@
-
 Target-Profile: DEVICE_qcom_ap-dk01.1-c1
 Target-Profile-Name: Qualcomm Atheros AP-DK01.1 C1
 Target-Profile-Packages:  
@@ -690,6 +676,20 @@ Target-Profile-SupportedDevices: unielec,u4019-32m
 
 Target-Profile-Description:
 Build firmware images for Unielec U4019 32M
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf263
+Target-Profile-Name: ZTE MF263
+Target-Profile-Packages: ipq-wifi-zte_mf263 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf263
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF263
 
 
 
