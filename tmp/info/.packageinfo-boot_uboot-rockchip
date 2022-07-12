@@ -3,7 +3,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-doornet2-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet2 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet2)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet2-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for DoorNet2
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -27,7 +27,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-guangmiao-g4c-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for GuangMiao G4C
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -51,7 +51,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-nanopi-r4s-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r4s-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi R4S
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -73,9 +73,33 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-nanopi-r4se-rk3399
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se)
+Version: 2022.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r4se-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: nanopi-r4se-rk3399
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for NanoPi R4SE
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for NanoPi R4SE
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-rock-pi-4-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-pi-4 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-pi-4)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-pi-4-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -85,7 +109,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Rock Pi 4
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -99,7 +123,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-rockpro64-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_pine64_rockpro64 || TARGET_DEVICE_rockchip_armv8_DEVICE_pine64_rockpro64)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rockpro64-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -109,7 +133,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for RockPro64
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -123,7 +147,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-doornet1-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet1 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet1)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet1-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -133,7 +157,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for DoorNet1
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -147,7 +171,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-nanopi-r2c-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2c-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -157,7 +181,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi R2C
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -171,7 +195,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-nanopi-r2s-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3 || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -181,7 +205,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi R2S
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -195,7 +219,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-orangepi-r1-plus-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +229,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi R1 Plus
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -219,7 +243,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-orangepi-r1-plus-lts-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts)
-Version: 2022.07-rc2-0
+Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-lts-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -229,7 +253,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi R1 Plus LTS
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07-rc2.tar.bz2
+Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin

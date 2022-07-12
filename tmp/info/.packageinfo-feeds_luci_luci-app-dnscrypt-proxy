@@ -19,25 +19,6 @@ Description: LuCI support for DNSCrypt-Proxy
 
 @@
 
-Package: luci-i18n-dnscrypt-proxy-ja
-Default: LUCI_LANG_ja||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dnscrypt-proxy
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-dnscrypt-proxy - ja translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-dnscrypt-proxy - 日本語 (Japanese)
-
-@@
-
 Package: luci-i18n-dnscrypt-proxy-ru
 Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
@@ -54,6 +35,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-dnscrypt-proxy - Русский (Russian)
+
+@@
+
+Package: luci-i18n-dnscrypt-proxy-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dnscrypt-proxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-dnscrypt-proxy - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dnscrypt-proxy - 日本語 (Japanese)
 
 @@
 
