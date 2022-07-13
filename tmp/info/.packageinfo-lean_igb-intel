@@ -2,9 +2,9 @@ Source-Makefile: package/lean/igb-intel/Makefile
 
 Package: kmod-igb-intel
 Submenu: Network Devices
-Version: <LINUX_VERSION>+5.10.2-1
-Depends: +kmod-ptp @PCI_SUPPORT 
-Conflicts: 
+Version: <LINUX_VERSION>+5.10.2-3
+Depends: +kmod-ptp @PCI_SUPPORT
+Conflicts: kmod-igb
 Menu-Depends: 
 Provides: 
 Section: kernel
