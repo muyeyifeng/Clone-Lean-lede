@@ -75837,7 +75837,7 @@ Section: net
 Category: Network
 Repository: base
 Title: Web Services for Devices (WSD) daemon
-Maintainer: 
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
 Source: wsdd2-2021-10-22-9831daf2e14e0e112b5ad95224e9167072d52aa3.tar.xz
 License: GPL-3.0-only
 LicenseFiles: COPYING
@@ -75849,7 +75849,7 @@ Description:   Web Services for Devices or Web Services on Devices (WSD),
   This daemon advertises and responds to probe requests from Windows clients looking for file shares.
   It also implements LLMNR multicast name lookup services.
 https://github.com/Netgear/wsdd2
-
+Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 
@@ -93847,24 +93847,48 @@ Jo-Philipp Wich <jo@mein.io>
 
 Source-Makefile: feeds/packages/utils/parted/Makefile
 
+Package: libparted
+Version: 3.4-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid +libuuid +PARTED_LVM2:libdevmapper
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: GNU Parted library
+Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
+Source: parted-3.4.tar.xz
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   GNU Parted shared library
+Oskari Rauta <oskari.rauta@gmail.com>
+@@
+
 Package: parted
 Submenu: Disc
-Version: 3.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libreadline +libncurses +libblkid
+Version: 3.4-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libparted +PARTED_READLINE:libreadline +PARTED_READLINE:libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: utils
 Category: Utilities
 Repository: base
-Title: parted Partition editor
-Maintainer: 
-Source: parted-3.3.tar.xz
+Title: GNU Parted
+Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
+Source: parted-3.4.tar.xz
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
 Type: ipkg
-Description: 	parted Partition editor
-	http://www.gnu.org/software/parted/index.shtml
-http://www.gnu.org/software/parted/index.shtml
-
+Description:   GNU Parted manipulates partition tables. This is useful for
+  creating space for new operating systems, reorganizing
+  disk usage, copying data on hard disks and disk imaging.
+Oskari Rauta <oskari.rauta@gmail.com>
+@@
+Config:
+  source "feeds/packages/utils/parted/Config.in"
 @@
 
 

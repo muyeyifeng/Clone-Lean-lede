@@ -1,23 +1,5 @@
 Source-Makefile: package/firmware/prism54-firmware/Makefile
 
-Package: prism54-firmware
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: prism54 firmware
-Maintainer: 
-Source: 
-Type: ipkg
-Description: prism54 firmware
-https://daemonizer.de/prism54/prism54-fw
-
-@@
-
 Package: p54-usb-firmware
 Version: 1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
