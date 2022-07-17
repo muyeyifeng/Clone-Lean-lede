@@ -3,7 +3,7 @@ Source-Makefile: package/lean/n2n/Makefile
 Package: n2n
 Submenu: VPN
 Version: 3.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libopenssl +libpthread +libzstd +kmod-tun +resolveip
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libzstd +libcap +kmod-tun +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Emanuele Faranda <faranda@ntop.org>
 Package: n2n-utils
 Submenu: VPN
 Version: 3.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libopenssl +libpthread +libzstd +n2n +libpcap
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libzstd +n2n +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
