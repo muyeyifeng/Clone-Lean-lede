@@ -8,14 +8,14 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.55
-Linux-Testing-Version: 5.18
+Linux-Version: 5.18.12
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip SoC devices.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd luci-app-diskman usbutils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug kmod-crypto-hw-rockchip automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd luci-app-diskman usbutils 
 Target: rockchip/armv8
 Target-Board: rockchip
 Target-Name: RK33xx/RK35xx boards (64 bit)
@@ -25,15 +25,15 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.55
-Linux-Testing-Version: 5.18
+Linux-Version: 5.18.12
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware image for Rockchip RK33xx/RK35xx devices.
 	This firmware features a 64 bit kernel.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd luci-app-diskman usbutils 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug kmod-crypto-hw-rockchip automount autocore-arm autosamba fdisk cfdisk e2fsprogs ethtool haveged htop luci-app-zerotier luci-app-ipsec-vpnd luci-app-diskman usbutils 
 Target-Profile: DEVICE_embedfire_doornet1
 Target-Profile-Name: EmbedFire DoorNet1
 Target-Profile-Packages: kmod-usb-net-rtl8152 kmod-rtl8821cu 
