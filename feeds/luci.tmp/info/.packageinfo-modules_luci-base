@@ -39,8 +39,8 @@ Config:
 	   tristate "Slovak (sk)"
 	   default n 
 
-     config LUCI_LANG_no
-	   tristate "Norwegian (no)"
+     config LUCI_LANG_ko
+	   tristate "Korean (ko)"
 	   default n 
 
      config LUCI_LANG_en
@@ -67,8 +67,8 @@ Config:
 	   tristate "German (de)"
 	   default n 
 
-     config LUCI_LANG_ko
-	   tristate "Korean (ko)"
+     config LUCI_LANG_no
+	   tristate "Norwegian (no)"
 	   default n 
 
      config LUCI_LANG_ms
@@ -103,6 +103,10 @@ Config:
 	   tristate "Japanese (ja)"
 	   default n 
 
+     config LUCI_LANG_pt-br
+	   tristate "Brazialian Portuguese (pt-br)"
+	   default n 
+
      config LUCI_LANG_el
 	   tristate "Greek (el)"
 	   default n 
@@ -113,10 +117,6 @@ Config:
 
      config LUCI_LANG_es
 	   tristate "Spanish (es)"
-	   default n 
-
-     config LUCI_LANG_pt-br
-	   tristate "Brazialian Portuguese (pt-br)"
 	   default n 
 
      config LUCI_LANG_cs
@@ -193,8 +193,8 @@ Description:     Translation for luci-base - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-base-no
-Default: LUCI_LANG_no||(ALL&&m)
+Package: luci-i18n-base-ko
+Default: LUCI_LANG_ko||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -203,13 +203,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-base - no translation
+Title: luci-base - ko translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - Norsk (Norwegian)
+Description:     Translation for luci-base - 한국어 (Korean)
 
 @@
 
@@ -333,8 +333,8 @@ Description:     Translation for luci-base - Deutsch (German)
 
 @@
 
-Package: luci-i18n-base-ko
-Default: LUCI_LANG_ko||(ALL&&m)
+Package: luci-i18n-base-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
 Conflicts: 
@@ -343,13 +343,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-base - ko translation
+Title: luci-base - no translation
 Maintainer: 
 Source: LuaSrcDiet-0.12.1.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - 한국어 (Korean)
+Description:     Translation for luci-base - Norsk (Norwegian)
 
 @@
 
@@ -513,6 +513,26 @@ Description:     Translation for luci-base - 日本語 (Japanese)
 
 @@
 
+Package: luci-i18n-base-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - pt-br translation
+Maintainer: 
+Source: LuaSrcDiet-0.12.1.tar.bz2
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - Português do Brasil (Brazialian Portuguese)
+
+@@
+
 Package: luci-i18n-base-el
 Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
@@ -570,26 +590,6 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Español (Spanish)
-
-@@
-
-Package: luci-i18n-base-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-base - pt-br translation
-Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-base - Português do Brasil (Brazialian Portuguese)
 
 @@
 

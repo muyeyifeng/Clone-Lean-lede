@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/coremark/Makefile
 
 Package: coremark
-Version: 2022-01-03-b24e397f7103061b3673261d292a0667bd3bc1b8-1
+Version: 2022-01-03-b24e397f7103061b3673261d292a0667bd3bc1b8-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,8 @@ Config:
 	config COREMARK_NUMBER_OF_THREADS
 		int "Number of threads"
 		depends on COREMARK_ENABLE_MULTITHREADING
-		default 32
+		default 128 if i386||x86_64
+		default 8
 		help
 			Number of threads to run in parallel
 @@

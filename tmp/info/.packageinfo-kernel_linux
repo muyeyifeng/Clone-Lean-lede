@@ -15769,6 +15769,45 @@ Description:   Kernel support for the USB gadget (device) controller on the BCM6
 
 @@
 
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
+
+@@
+
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+@@
+
 Package: kmod-leds-reset
 Submenu: LED modules
 Version: <LINUX_VERSION>-
@@ -15863,28 +15902,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_I2C_BCM_IPROC
 Description:  Kernel module for the Broadcom iProc I2C controller.
-
-@@
-
-Package: kmod-linkstation-poweroff
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mvebu
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Buffalo LinkStation power off driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_POWER_RESET=y CONFIG_POWER_RESET_LINKSTATION CONFIG_POWER_RESET_QNAP=n
-Description:   This driver supports turning off some Buffalo LinkStations by
-  setting an output pin at the ethernet PHY to the correct state.
-  It also makes the device compatible with the WoL function.
-  Say Y here if you have a Buffalo LinkStation LS421D/E.
 
 @@
 
@@ -17514,6 +17531,44 @@ Description:   Kernel support for Allwinner A10 SPDIF Support
 
 @@
 
+Package: kmod-drm-rockchip
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-backlight +kmod-drm-kms-helper +kmod-multimedia-input
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Rockchip DRM support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_ANALOGIX_DP=n CONFIG_ROCKCHIP_CDN_DP=n CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_ROCKCHIP_RGB=n CONFIG_ROCKCHIP_RK3066_HDMI=n CONFIG_DRM_DP_AUX_BUS@ge5.15 CONFIG_DRM_PANEL=y CONFIG_DRM_PANEL_BRIDGE=y CONFIG_DRM_PANEL_SIMPLE
+Description:   Direct Rendering Manager (DRM) support for Rockchip
+
+@@
+
+Package: kmod-gpu-lima
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-drm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Mali-4xx GPU support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
+Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
+
+@@
+
 Package: kmod-ata-oxnas-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -17553,80 +17608,25 @@ Description:  This driver provides USB Device Controller support for the
 
 @@
 
-Package: kmod-drm-rockchip
-Submenu: Video Support
+Package: kmod-linkstation-poweroff
+Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_rockchip +kmod-backlight +kmod-drm-kms-helper +kmod-multimedia-input
+Depends: @TARGET_mvebu
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Rockchip DRM support
+Title: Buffalo LinkStation power off driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_ANALOGIX_DP=n CONFIG_ROCKCHIP_CDN_DP=n CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_ROCKCHIP_RGB=n CONFIG_ROCKCHIP_RK3066_HDMI=n CONFIG_DRM_DP_AUX_BUS@ge5.15 CONFIG_DRM_PANEL=y CONFIG_DRM_PANEL_BRIDGE=y CONFIG_DRM_PANEL_SIMPLE
-Description:   Direct Rendering Manager (DRM) support for Rockchip
-
-@@
-
-Package: kmod-gpu-lima
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rockchip +kmod-drm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Mali-4xx GPU support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
-Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
-
-@@
-
-Package: kmod-i2c-lantiq
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Lantiq I2C controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
+Kernel-Config: CONFIG_POWER_RESET=y CONFIG_POWER_RESET_LINKSTATION CONFIG_POWER_RESET_QNAP=n
+Description:   This driver supports turning off some Buffalo LinkStations by
+  setting an output pin at the ethernet PHY to the correct state.
+  It also makes the device compatible with the WoL function.
+  Say Y here if you have a Buffalo LinkStation LS421D/E.
 
 @@
 
