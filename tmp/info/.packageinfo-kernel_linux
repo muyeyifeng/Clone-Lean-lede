@@ -9429,6 +9429,25 @@ Description:   WireGuard is a novel VPN that runs inside the Linux Kernel and ut
 
 @@
 
+Package: kmod-netconsole
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Network console logging support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NETCONSOLE CONFIG_NETCONSOLE_DYNAMIC=n
+Description:   Network console logging support.
+
+@@
+
 Package: kmod-qrtr
 Submenu: Network Support
 Version: <LINUX_VERSION>-
