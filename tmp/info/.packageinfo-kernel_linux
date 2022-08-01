@@ -547,6 +547,26 @@ Description:  Kernel module for network block device support
 
 @@
 
+Package: kmod-nvme
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NVM Express block device
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NVME_CORE CONFIG_BLK_DEV_NVME CONFIG_NVME_MULTIPATH=n CONFIG_NVME_HWMON=n
+Description:  Kernel module for NVM Express solid state drives directly
+ connected to the PCI or PCI Express bus.
+
+@@
+
 Package: kmod-scsi-core
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
