@@ -17267,7 +17267,7 @@ Description:   This driver supports Elastic Network Adapter (ENA)
 Package: kmod-amd-xgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18):kmod-mdio-devres
+Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18||LINUX_5_19):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
