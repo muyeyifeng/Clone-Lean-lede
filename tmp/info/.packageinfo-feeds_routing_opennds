@@ -2,9 +2,9 @@ Source-Makefile: package/feeds/routing/opennds/Makefile
 
 Package: opennds
 Submenu: Captive Portals
-Version: 9.7.0-2
+Version: 9.8.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
-Conflicts: nodogsplash nodogsplash2
+Conflicts: nodogsplash
 Menu-Depends: 
 Provides: 
 Section: net
@@ -12,7 +12,7 @@ Category: Network
 Repository: routing
 Title: Open public network gateway daemon
 Maintainer: Rob White <rob@blue-wave.net>
-Source: opennds-9.7.0.tar.gz
+Source: opennds-9.8.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
