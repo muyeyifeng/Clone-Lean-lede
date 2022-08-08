@@ -1,7 +1,7 @@
 Source-Makefile: package/boot/arm-trusted-firmware-rockchip-vendor/Makefile
 
 Package: arm-trusted-firmware-rk3328
-Version: 2021-06-01-7d631e0d5b2d373b54d4533580d08fb9bd2eaad4-0
+Version: 2022-08-01-b0c100f1a260d807df450019774993c761beb79d-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -12,14 +12,14 @@ Category: Boot Loaders
 Repository: base
 Title: ARM Trusted Firmware for Rockchip
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: arm-trusted-firmware-rockchip-vendor-2021-06-01-7d631e0d5b2d373b54d4533580d08fb9bd2eaad4.tar.xz
+Source: arm-trusted-firmware-rockchip-vendor-2022-08-01-b0c100f1a260d807df450019774993c761beb79d.tar.xz
 Type: ipkg
 Description: ARM Trusted Firmware for Rockchip
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: arm-trusted-firmware-rk3399
-Version: 2021-06-01-7d631e0d5b2d373b54d4533580d08fb9bd2eaad4-0
+Version: 2022-08-01-b0c100f1a260d807df450019774993c761beb79d-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,43 @@ Category: Boot Loaders
 Repository: base
 Title: ARM Trusted Firmware for Rockchip
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: arm-trusted-firmware-rockchip-vendor-2021-06-01-7d631e0d5b2d373b54d4533580d08fb9bd2eaad4.tar.xz
+Source: arm-trusted-firmware-rockchip-vendor-2022-08-01-b0c100f1a260d807df450019774993c761beb79d.tar.xz
+Type: ipkg
+Description: ARM Trusted Firmware for Rockchip
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: arm-trusted-firmware-rk3568
+Version: 2022-08-01-b0c100f1a260d807df450019774993c761beb79d-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: rk3568
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: ARM Trusted Firmware for Rockchip
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: arm-trusted-firmware-rockchip-vendor-2022-08-01-b0c100f1a260d807df450019774993c761beb79d.tar.xz
+Type: ipkg
+Description: ARM Trusted Firmware for Rockchip
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: arm-trusted-firmware-rk3588
+Version: 2022-08-01-b0c100f1a260d807df450019774993c761beb79d-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: rk3588
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: ARM Trusted Firmware for Rockchip
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: arm-trusted-firmware-rockchip-vendor-2022-08-01-b0c100f1a260d807df450019774993c761beb79d.tar.xz
 Type: ipkg
 Description: ARM Trusted Firmware for Rockchip
 Tianling Shen <cnsztl@immortalwrt.org>
