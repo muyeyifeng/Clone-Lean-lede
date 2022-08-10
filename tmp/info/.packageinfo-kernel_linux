@@ -5469,7 +5469,7 @@ Description:   MII library
 Package: kmod-mdio-devres
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_10||LINUX_5_15||LINUX_5_18||LINUX_5_19) +kmod-libphy PACKAGE_kmod-of-mdio:kmod-of-mdio
+Depends: @(LINUX_5_10||LINUX_5_15||LINUX_5_18||LINUX_5_19) +kmod-libphy +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_tegra):kmod-of-mdio
 Conflicts: 
 Menu-Depends: 
 Provides: 

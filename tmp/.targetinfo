@@ -245,8 +245,8 @@ Target-Features: cpiogz dt ext4 fpu gpio pci ramdisk rtc squashfs targz testing-
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.203
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.135
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -262,8 +262,8 @@ Target-Features: arm_v7 cpiogz dt ext4 fpu gpio pci ramdisk rtc squashfs targz t
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.4.203
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.135
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -279,8 +279,8 @@ Target-Features: cpiogz display dt ext4 fpu gpio pci ramdisk rtc squashfs targz 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.4.203
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.135
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24679,8 +24679,8 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.59
-Linux-Testing-Version: 5.19
+Linux-Version: 5.19
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24696,8 +24696,8 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.59
-Linux-Testing-Version: 5.19
+Linux-Version: 5.19
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24728,6 +24728,20 @@ Target-Profile-SupportedDevices: embedfire,doornet2
 
 Target-Profile-Description:
 Build firmware images for EmbedFire DoorNet2 1GB
+
+
+
+@@
+
+Target-Profile: DEVICE_fastrhino_r66s
+Target-Profile-Name: FastRhino R66S
+Target-Profile-Packages: kmod-r8125 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: fastrhino,r66s
+
+
+Target-Profile-Description:
+Build firmware images for FastRhino R66S
 
 
 
