@@ -1065,7 +1065,7 @@ Config:
 Package: kmod-brcmfmac
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
+Depends:  @USB_SUPPORT +kmod-mac80211 +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1086,6 +1086,7 @@ Config:
 		bool "Enable SDIO bus interface support"
 		default y if TARGET_bcm27xx
 		default y if TARGET_sunxi
+		default y if TARGET_rockchip
 		default n
 		help
 		  Enable support for cards attached to an SDIO bus.

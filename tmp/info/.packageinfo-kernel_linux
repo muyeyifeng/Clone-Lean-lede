@@ -17244,104 +17244,6 @@ Description:   This package contains the Broadcom 2835 I2C master controller dri
 
 @@
 
-Package: kmod-amazon-ena
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_64
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Elastic Network Adapter (for Amazon AWS T3)
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ENA_ETHERNET
-Description:   This driver supports Elastic Network Adapter (ENA)
-  used by Amazon AWS T3 instances.
-
-@@
-
-Package: kmod-amd-xgbe
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18||LINUX_5_19):kmod-mdio-devres
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: AMD Ethernet on SoC support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AMD_XGBE
-Description:  Kernel modules for AMD 10GbE Ethernet device on an AMD SoC.
-
-@@
-
-Package: kmod-sound-cs5535audio
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CS5535/CS5536 Audio Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_CS5535AUDIO
-Description:  Support for the integrated AC97 sound device on motherboards
- with AMD CS5535/CS5536 chipsets.
-
-@@
-
-Package: kmod-sp5100-tco
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SP5100 Watchdog Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SP5100_TCO
-Description:  Kernel module for the SP5100_TCO hardware watchdog.
-
-@@
-
-Package: kmod-pcengines-apuv2
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PC Engines APUv2/3 front button and LEDs driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PCENGINES_APU2
-Description:   This driver provides support for the front button and LEDs on
-  PC Engines APUv2/APUv3 board.
-
-@@
-
 Package: kmod-mmc-at91
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -17644,6 +17546,104 @@ Type: ipkg
 Kernel-Config: CONFIG_USB_EHCI_OXNAS
 Description:  This driver provides USB Device Controller support for the
  EHCI USB host built-in to the OX820 SoC.
+
+@@
+
+Package: kmod-amazon-ena
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Elastic Network Adapter (for Amazon AWS T3)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ENA_ETHERNET
+Description:   This driver supports Elastic Network Adapter (ENA)
+  used by Amazon AWS T3 instances.
+
+@@
+
+Package: kmod-amd-xgbe
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_5_18||LINUX_5_19):kmod-mdio-devres
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AMD Ethernet on SoC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AMD_XGBE
+Description:  Kernel modules for AMD 10GbE Ethernet device on an AMD SoC.
+
+@@
+
+Package: kmod-sound-cs5535audio
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: CS5535/CS5536 Audio Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_CS5535AUDIO
+Description:  Support for the integrated AC97 sound device on motherboards
+ with AMD CS5535/CS5536 chipsets.
+
+@@
+
+Package: kmod-sp5100-tco
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SP5100 Watchdog Support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SP5100_TCO
+Description:  Kernel module for the SP5100_TCO hardware watchdog.
+
+@@
+
+Package: kmod-pcengines-apuv2
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86 +kmod-gpio-amd-fch +kmod-leds-gpio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PC Engines APUv2/3 front button and LEDs driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCENGINES_APU2
+Description:   This driver provides support for the front button and LEDs on
+  PC Engines APUv2/APUv3 board.
 
 @@
 
