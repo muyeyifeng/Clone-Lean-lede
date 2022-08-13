@@ -76,6 +76,20 @@ Build firmware images for FastRhino R66S
 
 @@
 
+Target-Profile: DEVICE_firefly_station-p2
+Target-Profile-Name: Firefly Station P2
+Target-Profile-Packages: kmod-brcmfmac kmod-ikconfig ata-ahci-platform station-p2-firmware wpad iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: firefly,station-p2
+
+
+Target-Profile-Description:
+Build firmware images for Firefly Station P2
+
+
+
+@@
+
 Target-Profile: DEVICE_friendlyarm_nanopi-neo3
 Target-Profile-Name: FriendlyARM NanoPi NEO3
 Target-Profile-Packages:  
@@ -211,20 +225,6 @@ Target-Profile-SupportedDevices: xunlong,orangepi-r1-plus-lts
 
 Target-Profile-Description:
 Build firmware images for Xunlong Orange Pi R1 Plus LTS
-
-
-
-@@
-
-Target-Profile: DEVICE_firefly_station-p2
-Target-Profile-Name: Firefly Station_P2
-Target-Profile-Packages: kmod-brcmfmac kmod-ikconfig ata-ahci-platform station-p2-firmware wpad iwinfo
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: firefly,station-p2
-
-
-Target-Profile-Description:
-Build firmware images for Firefly Station_P2
 
 
 
