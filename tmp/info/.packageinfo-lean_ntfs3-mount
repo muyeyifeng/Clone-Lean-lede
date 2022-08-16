@@ -3,7 +3,7 @@ Source-Makefile: package/lean/ntfs3-mount/Makefile
 Package: ntfs3-mount
 Submenu: Filesystem
 Version: 3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LINUX_5_4:kmod-fs-ntfs3-oot +(LINUX_5_15||LINUX_5_18||LINUX_5_19):kmod-fs-ntfs3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LINUX_5_4:kmod-fs-ntfs3-oot +(LINUX_5_15||LINUX_5_19):kmod-fs-ntfs3
 Conflicts: 
 Menu-Depends: 
 Provides: 
