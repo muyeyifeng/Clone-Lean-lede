@@ -2003,17 +2003,17 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-rtw88
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
+Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Realtek RTL8822BE/RTL8822CE/RTL8723DE
+Title: Realtek RTL8821CU/RTL8822BE/RTL8822CE/RTL8723DE
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: backports-5.15.33-1.tar.xz
 Type: ipkg
-Description: Realtek RTL8822BE/RTL8822CE/RTL8723DE
+Description: Realtek RTL8821CU/RTL8822BE/RTL8822CE/RTL8723DE
 https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
