@@ -1116,6 +1116,24 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: rtl8821cu-firmware
+Version: 20220708-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: RealTek RTL8821CU firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220708.tar.xz
+Type: ipkg
+Description: RealTek RTL8821CU firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: rtl8822ce-firmware
 Version: 20220708-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
