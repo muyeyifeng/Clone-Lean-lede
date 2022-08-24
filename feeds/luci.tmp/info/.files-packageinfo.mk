@@ -69,6 +69,8 @@ $(eval $(call PackageDir,applications_luci-app-openvpn,applications/luci-app-ope
 $(eval $(call PackageDir,applications_luci-app-openvpn-server,applications/luci-app-openvpn-server,))
 $(eval $(call PackageDir,applications_luci-app-p910nd,applications/luci-app-p910nd,))
 $(eval $(call PackageDir,applications_luci-app-pagekitec,applications/luci-app-pagekitec,))
+$(eval $(call PackageDir,applications_luci-app-pgyvpn,applications/luci-app-pgyvpn,))
+$(eval $(call PackageDir,applications_luci-app-phtunnel,applications/luci-app-phtunnel,))
 $(eval $(call PackageDir,applications_luci-app-polipo,applications/luci-app-polipo,))
 $(eval $(call PackageDir,applications_luci-app-pppoe-relay,applications/luci-app-pppoe-relay,))
 $(eval $(call PackageDir,applications_luci-app-pptp-server,applications/luci-app-pptp-server,))
