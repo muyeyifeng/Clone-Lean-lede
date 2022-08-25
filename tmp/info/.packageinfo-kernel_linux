@@ -9471,7 +9471,7 @@ Description:   Network console logging support.
 Package: kmod-qrtr
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: @LINUX_5_15
+Depends: @(LINUX_5_15||LINUX_5_19)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11326,7 +11326,7 @@ Description:   Qualcomm QMI Helpers
 Package: kmod-mhi
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @LINUX_5_15
+Depends: @(LINUX_5_15||LINUX_5_19)
 Conflicts: 
 Menu-Depends: 
 Provides: 
