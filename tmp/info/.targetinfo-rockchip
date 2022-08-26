@@ -9,7 +9,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe
 CPU-Type: 
 Linux-Version: 5.19.4
-Linux-Testing-Version: 5.4
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -26,7 +26,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
 Linux-Version: 5.19.4
-Linux-Testing-Version: 5.4
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -78,7 +78,7 @@ Build firmware images for FastRhino R66S
 
 Target-Profile: DEVICE_firefly_station-p2
 Target-Profile-Name: Firefly Station P2
-Target-Profile-Packages: kmod-brcmfmac kmod-ikconfig ata-ahci-platform station-p2-firmware wpad-openssl iwinfo
+Target-Profile-Packages: kmod-brcmfmac kmod-ikconfig kmod-ata-ahci-platform station-p2-firmware wpad-openssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: firefly,station-p2
 
