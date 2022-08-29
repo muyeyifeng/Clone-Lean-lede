@@ -16351,7 +16351,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for MediaTek mt7623 ARM based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd uboot-envtools dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-leds-gpio kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-crypto-hw-safexcel uboot-envtools dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_bananapi_bpi-r2
 Target-Profile-Name: Bananapi BPi-R2
 Target-Profile-Packages: mkf2fs e2fsprogs kmod-usb3 kmod-ata-ahci 
@@ -16420,6 +16420,51 @@ Target-Profile-SupportedDevices: mediatek,mt7629-rfb
 
 Target-Profile-Description:
 Build firmware images for MediaTek MT7629 rfb AP
+
+
+
+@@
+
+Target: mediatek/filogic
+Target-Board: mediatek
+Target-Name: Filogic 830 (MT7986)
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_cortex-a53
+Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ramdisk squashfs testing-kernel usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=cortex-a53
+CPU-Type: cortex-a53
+Linux-Version: 5.10.138
+Linux-Testing-Version: 5.15
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware images for MediaTek Filogic ARM based boards.
+@@
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd kmod-crypto-hw-safexcel kmod-mt7915e kmod-mt7986-firmware wpad-basic-wolfssl uboot-envtools dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_mediatek_mt7986a-rfb
+Target-Profile-Name: MediaTek MTK7986 rfba AP
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7986a-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MTK7986 rfba AP
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7986b-rfb
+Target-Profile-Name: MediaTek MTK7986 rfbb AP
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7986b-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MTK7986 rfbb AP
 
 
 
@@ -25063,7 +25108,7 @@ Target-Features: audio boot-part ext4 fpu squashfs usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.19.4
+Linux-Version: 5.19.5
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -25079,7 +25124,7 @@ Target-Features: audio boot-part display dt ext4 fpu gpio squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.19.4
+Linux-Version: 5.19.5
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

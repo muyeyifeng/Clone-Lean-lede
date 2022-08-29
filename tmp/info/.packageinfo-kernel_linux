@@ -1540,7 +1540,7 @@ Description: VIA PadLock ACE with AES/SHA hw crypto module
 Package: kmod-crypto-hw-safexcel
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha256 +kmod-crypto-sha512 
+Depends: @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72||TARGET_mediatek_filogic||TARGET_mediatek_mt7623) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-des +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-crypto-sha512 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16283,25 +16283,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_MMC_MTK 
 Description: Mediatek SDHCI driver
-
-@@
-
-Package: kmod-crypto-hw-mtk
-Submenu: Cryptographic API modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek's Crypto Engine module
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_HW=y CONFIG_CRYPTO_AES=y CONFIG_CRYPTO_AEAD=y CONFIG_CRYPTO_SHA1=y CONFIG_CRYPTO_SHA256=y CONFIG_CRYPTO_SHA512=y CONFIG_CRYPTO_HMAC=y CONFIG_CRYPTO_DEV_MEDIATEK
-Description:   MediaTek's EIP97 Cryptographic Engine driver.
 
 @@
 
