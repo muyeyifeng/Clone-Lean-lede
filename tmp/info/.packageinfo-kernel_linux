@@ -17447,27 +17447,27 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_VOP=y CONFIG_ROCKCHIP_VOP2=y
+Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_ANALOGIX_DP=n CONFIG_ROCKCHIP_CDN_DP=n CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_ROCKCHIP_RGB=n CONFIG_ROCKCHIP_RK3066_HDMI=n CONFIG_DRM_DP_AUX_BUS@ge5.15 CONFIG_DRM_PANEL=y CONFIG_DRM_PANEL_BRIDGE=y CONFIG_DRM_PANEL_SIMPLE
 Description:   Direct Rendering Manager (DRM) support for Rockchip
 
 @@
 
-Package: kmod-gpu-lima
-Submenu: Video Support
+Package: kmod-saradc-rockchip
+Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_rockchip +kmod-drm
+Depends: @TARGET_rockchip +kmod-industrialio-triggered-buffer
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Mali-4xx GPU support
+Title: Rockchip SARADC support
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_DRM_VGEM CONFIG_DRM_GEM_CMA_HELPER=y CONFIG_DRM_LIMA
-Description:   Open-source reverse-engineered driver for Mali-4xx GPUs
+Kernel-Config: CONFIG_RESET_CONTROLLER=y CONFIG_ROCKCHIP_SARADC
+Description:   Support for the SARADC found in SoCs from Rockchip
 
 @@
 

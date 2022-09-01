@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/ddns-scripts/Makefile
 
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  
 Conflicts: 
 Menu-Depends: 
@@ -28,13 +28,13 @@ Config:
 		  - Proxy server support
 		  - log file support
 		  - support to run once
-		Version: 2.7.8-3
+		Version: 2.7.8-5
 		Info   : http://wiki.openwrt.org/doc/howto/ddns.client
 @@
 
 Package: ddns-scripts_cloudflare.com-v4
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Description:     Dynamic DNS Client scripts extension for CloudFlare.com API-v4 
 
 Package: ddns-scripts_freedns_42_pl
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -72,7 +72,7 @@ Description:     Dynamic DNS Client scripts extension for freedns.42.pl
 
 Package: ddns-scripts_godaddy.com-v1
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -91,7 +91,7 @@ Description:     Dynamic DNS Client scripts extension for GoDaddy.com (require/i
 
 Package: ddns-scripts_no-ip_com
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +110,7 @@ Description:     Dynamic DNS Client scripts extension for No-IP.com
 
 Package: ddns-scripts_nsupdate
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
@@ -138,7 +138,7 @@ Config:
 
 Package: ddns-scripts_route53-v1
 Submenu: IP Addresses and Names
-Version: 2.7.8-3
+Version: 2.7.8-5
 Depends:  ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 

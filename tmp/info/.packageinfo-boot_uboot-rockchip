@@ -1,48 +1,120 @@
 Source-Makefile: package/boot/uboot-rockchip/Makefile
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
-Package: u-boot-doornet2-rk3399
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet2 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet2)
+Package: u-boot-mrkaio-m68s-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet2-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-mrkaio-m68s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: doornet2-rk3399
+Build-Variant: mrkaio-m68s-rk3568
 Section: boot
 Category: Boot Loaders
-Title: U-Boot for DoorNet2
+Title: U-Boot for Mrkaio M68S
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
 Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
-Description: U-Boot for DoorNet2
+Description: U-Boot for Mrkaio M68S
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
-Package: u-boot-fastrhino-r66s-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r66s)
+Package: u-boot-opc-h68k-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h68k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h68k)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-fastrhino-r66s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: fastrhino-r66s-rk3568
+Build-Variant: opc-h68k-rk3568
 Section: boot
 Category: Boot Loaders
-Title: U-Boot for FastRhin-R66S
+Title: U-Boot for OPC-H68K Board
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
 Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
-Description: U-Boot for FastRhin-R66S
+Description: U-Boot for OPC-H68K Board
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-rock-3a-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-3a || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-3a)
+Version: 2022.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: rock-3a-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for ROCK3 Model A
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for ROCK3 Model A
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-r66s-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_rockchip_armv8_DEVICE_fastrhino_r68s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r68s)
+Version: 2022.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-r66s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: r66s-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for R66S/R68S
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for R66S/R68S
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-station-p2-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_firefly_station-p2 || TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-p2)
+Version: 2022.07-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: station-p2-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for StationP2
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for StationP2
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
@@ -50,7 +122,7 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-guangmiao-g4c-rk3399
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_rockchip_armv8_DEVICE_embedfire_doornet2-4gb || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet2-4gb)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
 Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
@@ -122,7 +194,7 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-nanopi-r5s-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyelec_nanopi-r5s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyelec_nanopi-r5s)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s)
 Version: 2022.07-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r5s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
@@ -131,38 +203,14 @@ Provides:
 Build-Variant: nanopi-r5s-rk3568
 Section: boot
 Category: Boot Loaders
-Title: U-Boot for NANOPI-R5S
+Title: U-Boot for NanoPi R5S
 Maintainer: Tobias Maedel <openwrt@tbspace.de>
 Source: u-boot-2022.07.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
-Description: U-Boot for NANOPI-R5S
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
-Package: u-boot-rock-3a-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-3a || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-3a)
-Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: rock-3a-rk3568
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for ROCK-3A
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for ROCK-3A
+Description: U-Boot for NanoPi R5S
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
@@ -211,30 +259,6 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for RockPro64
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
-Package: u-boot-doornet1-rk3328
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_embedfire_doornet1 || TARGET_DEVICE_rockchip_armv8_DEVICE_embedfire_doornet1)
-Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-doornet1-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: doornet1-rk3328
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for DoorNet1
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for DoorNet1
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
@@ -331,54 +355,6 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Orange Pi R1 Plus LTS
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
-Package: u-boot-opc-h68k-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h68k-d || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h68k-d)
-Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: opc-h68k-rk3568
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for HINLINK OPC-H68K
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for HINLINK OPC-H68K
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
-Package: u-boot-station-p2-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_firefly_station-p2 || TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-p2)
-Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: station-p2-rk3568
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for StationP2
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for StationP2
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
