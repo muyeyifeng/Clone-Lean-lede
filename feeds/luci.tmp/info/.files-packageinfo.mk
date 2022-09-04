@@ -118,6 +118,7 @@ $(eval $(call PackageDir,applications_luci-app-vpnbypass,applications/luci-app-v
 $(eval $(call PackageDir,applications_luci-app-vsftpd,applications/luci-app-vsftpd,))
 $(eval $(call PackageDir,applications_luci-app-watchcat,applications/luci-app-watchcat,))
 $(eval $(call PackageDir,applications_luci-app-webadmin,applications/luci-app-webadmin,))
+$(eval $(call PackageDir,applications_luci-app-webdav,applications/luci-app-webdav,))
 $(eval $(call PackageDir,applications_luci-app-wifischedule,applications/luci-app-wifischedule,))
 $(eval $(call PackageDir,applications_luci-app-wireguard,applications/luci-app-wireguard,))
 $(eval $(call PackageDir,applications_luci-app-wol,applications/luci-app-wol,))

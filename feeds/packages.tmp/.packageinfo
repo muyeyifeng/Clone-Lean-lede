@@ -24607,7 +24607,7 @@ Build-Depends: gettext-full/host
 
 Package: certtool
 Submenu: Encryption
-Version: 3.7.6-0
+Version: 3.7.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls
 Conflicts: 
 Menu-Depends: 
@@ -24617,7 +24617,7 @@ Category: Utilities
 Repository: base
 Title: GNU TLS (certool utility)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.6.tar.xz
+Source: gnutls-3.7.7.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24634,7 +24634,7 @@ Nikos Mavrogiannopoulos <nmav@gnutls.org>
 
 Package: gnutls-utils
 Submenu: Encryption
-Version: 3.7.6-0
+Version: 3.7.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +PACKAGE_libgnutls-dane:libgnutls-dane
 Conflicts: 
 Menu-Depends: 
@@ -24644,7 +24644,7 @@ Category: Utilities
 Repository: base
 Title: GNU TLS (utilities)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.6.tar.xz
+Source: gnutls-3.7.7.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24662,7 +24662,7 @@ Nikos Mavrogiannopoulos <nmav@gnutls.org>
 
 Package: libgnutls
 Submenu: SSL
-Version: 3.7.6-0
+Version: 3.7.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnettle +!LIBNETTLE_MINI:libgmp +GNUTLS_EXT_LIBTASN1:libtasn1 +GNUTLS_PKCS11:p11-kit +GNUTLS_CRYPTODEV:kmod-cryptodev +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -24672,7 +24672,7 @@ Category: Libraries
 Repository: base
 Title: GNU TLS (library)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.6.tar.xz
+Source: gnutls-3.7.7.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24692,7 +24692,7 @@ Config:
 
 Package: libgnutls-dane
 Submenu: SSL
-Version: 3.7.6-0
+Version: 3.7.7-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -24702,7 +24702,7 @@ Category: Libraries
 Repository: base
 Title: GNU TLS (libgnutls-dane library)
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Source: gnutls-3.7.6.tar.xz
+Source: gnutls-3.7.7.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -30194,7 +30194,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/libs/libpam/Makefile
 
 Package: libpam
-Version: 1.5.1-1
+Version: 1.5.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -30204,7 +30204,7 @@ Category: Libraries
 Repository: base
 Title: the Linux-PAM libraries and modules.
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
-Source: Linux-PAM-1.5.1.tar.xz
+Source: Linux-PAM-1.5.2.tar.xz
 License: BSD-3c GPL
 LicenseFiles: COPYING Copyright
 Type: ipkg
@@ -30952,7 +30952,7 @@ Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 Source-Makefile: feeds/packages/libs/libssh/Makefile
 
 Package: libssh
-Version: 0.9.6-1
+Version: 0.10.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -30962,13 +30962,13 @@ Category: Libraries
 Repository: base
 Title: SSH library
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: libssh-0.9.6.tar.xz
+Source: libssh-0.10.2.tar.xz
 License: LGPL-2.1-or-later BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
 Description:  libssh is a mulitplatform C library implementing the SSHv2 and SSHv1 protocol
  for client and server implementations.
-https://www.libssh.org/files/0.9/
+https://www.libssh.org/files/0.10/
 Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
@@ -30976,7 +30976,7 @@ Mislav Novakovic <mislav.novakovic@sartura.hr>
 Source-Makefile: feeds/packages/libs/libssh2/Makefile
 
 Package: libssh2
-Version: 1.9.0-2
+Version: 1.10.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBSSH2_MBEDTLS:libmbedtls +!LIBSSH2_MBEDTLS:libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -30986,7 +30986,7 @@ Category: Libraries
 Repository: base
 Title: SSH2 library
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: libssh2-1.9.0.tar.gz
+Source: libssh2-1.10.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -43095,7 +43095,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Source-Makefile: feeds/packages/libs/libwebp/Makefile
 
 Package: libwebp
-Version: 1.2.3-0
+Version: 1.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -43105,7 +43105,7 @@ Category: Libraries
 Repository: base
 Title: WebP library
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: libwebp-1.2.3.tar.gz
+Source: libwebp-1.2.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -54137,7 +54137,7 @@ Source-Makefile: feeds/packages/net/adguardhome/Makefile
 Build-Depends: golang/host node/host node-yarn/host
 
 Package: adguardhome
-Version: 0.107.6-1
+Version: 0.107.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -54147,7 +54147,7 @@ Category: Network
 Repository: base
 Title: Network-wide ads and trackers blocking DNS server
 Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Source: adguardhome-0.107.6.tar.xz
+Source: adguardhome-0.107.11.tar.xz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -54838,7 +54838,7 @@ Source-Makefile: feeds/packages/net/ariang/Makefile
 
 Package: ariang
 Submenu: Download Manager
-Version: 1.2.3-0
+Version: 1.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +uhttpd
 Conflicts: 
 Menu-Depends: 
@@ -54848,7 +54848,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for uhttpd webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.2.3.zip
+Source: ariang-1.2.4.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -54859,7 +54859,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: ariang-nginx
 Submenu: Download Manager
-Version: 1.2.3-0
+Version: 1.2.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +nginx
 Conflicts: 
 Menu-Depends: 
@@ -54869,7 +54869,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for nginx webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.2.3.zip
+Source: ariang-1.2.4.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56842,7 +56842,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.43.1-0
+Version: 0.44.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56853,7 +56853,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.43.1.tar.gz
+Source: dnsproxy-0.44.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59891,7 +59891,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.6.1-0
+Version: 2.6.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -59902,7 +59902,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.6.1.tar.gz
+Source: haproxy-2.6.4.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59915,7 +59915,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 2.6.1-0
+Version: 2.6.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -59926,7 +59926,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.6.1.tar.gz
+Source: haproxy-2.6.4.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -59937,7 +59937,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.6.1-0
+Version: 2.6.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -59948,7 +59948,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.6.1.tar.gz
+Source: haproxy-2.6.4.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -61997,7 +61997,7 @@ Source-Makefile: feeds/packages/net/lighttpd/Makefile
 Package: lighttpd
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnettle +libpcre2 +libpthread +LIGHTTPD_LOGROTATE:logrotate
 Conflicts: 
 Menu-Depends: 
@@ -62007,7 +62007,7 @@ Category: Network
 Repository: base
 Title: A flexible and lightweight web server
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62048,7 +62048,7 @@ config LIGHTTPD_LOGROTATE
 
 Package: lighttpd-mod-redirect
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-redirect:libpcre2
 Conflicts: 
 Menu-Depends: 
@@ -62058,7 +62058,7 @@ Category: Network
 Repository: base
 Title: URL redirection module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62069,7 +62069,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-auth
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-auth:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62079,7 +62079,7 @@ Category: Network
 Repository: base
 Title: Authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62090,7 +62090,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_dbi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_dbi:libnettle +PACKAGE_lighttpd-mod-authn_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
@@ -62100,7 +62100,7 @@ Category: Network
 Repository: base
 Title: DBI-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62111,7 +62111,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_file
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_file:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62121,7 +62121,7 @@ Category: Network
 Repository: base
 Title: File-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62132,7 +62132,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_gssapi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -62142,7 +62142,7 @@ Category: Network
 Repository: base
 Title: Kerberos-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62153,7 +62153,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_ldap
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -62163,7 +62163,7 @@ Category: Network
 Repository: base
 Title: LDAP-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62174,7 +62174,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_pam
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_pam:libpam
 Conflicts: 
 Menu-Depends: 
@@ -62184,7 +62184,7 @@ Category: Network
 Repository: base
 Title: PAM-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62195,7 +62195,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-authn_sasl
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_sasl:libsasl2
 Conflicts: 
 Menu-Depends: 
@@ -62205,7 +62205,7 @@ Category: Network
 Repository: base
 Title: SASL-based authentication module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62216,7 +62216,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-access
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62226,7 +62226,7 @@ Category: Network
 Repository: base
 Title: Access restrictions module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62237,7 +62237,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-accesslog
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62247,7 +62247,7 @@ Category: Network
 Repository: base
 Title: Access logging module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62258,7 +62258,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-ajp13
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62268,7 +62268,7 @@ Category: Network
 Repository: base
 Title: AJP13 Tomcat connector module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62279,7 +62279,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-alias
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62289,7 +62289,7 @@ Category: Network
 Repository: base
 Title: Directory alias module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62300,7 +62300,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-cgi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62310,7 +62310,7 @@ Category: Network
 Repository: base
 Title: CGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62321,7 +62321,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-deflate
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-deflate:zlib
 Conflicts: 
 Menu-Depends: 
@@ -62331,7 +62331,7 @@ Category: Network
 Repository: base
 Title: Compress dynamic output module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62342,7 +62342,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-evasive
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62352,7 +62352,7 @@ Category: Network
 Repository: base
 Title: Evasive module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62363,7 +62363,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-evhost
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62373,7 +62373,7 @@ Category: Network
 Repository: base
 Title: Enhanced Virtual-Hosting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62384,7 +62384,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-expire
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62394,7 +62394,7 @@ Category: Network
 Repository: base
 Title: Expire module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62405,7 +62405,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-extforward
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62415,7 +62415,7 @@ Category: Network
 Repository: base
 Title: Extract client module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62426,7 +62426,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-fastcgi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62436,7 +62436,7 @@ Category: Network
 Repository: base
 Title: FastCGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62447,7 +62447,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-gnutls
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-gnutls:libgnutls
 Conflicts: 
 Menu-Depends: 
@@ -62457,7 +62457,7 @@ Category: Network
 Repository: base
 Title: TLS using gnutls module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62468,7 +62468,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-magnet
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-magnet:liblua
 Conflicts: 
 Menu-Depends: 
@@ -62478,7 +62478,7 @@ Category: Network
 Repository: base
 Title: Magnet module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62489,7 +62489,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-maxminddb
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-maxminddb:libmaxminddb
 Conflicts: 
 Menu-Depends: 
@@ -62499,7 +62499,7 @@ Category: Network
 Repository: base
 Title: MaxMind DB module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62510,7 +62510,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-mbedtls
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -62520,7 +62520,7 @@ Category: Network
 Repository: base
 Title: TLS using mbedtls module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62531,7 +62531,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-nss
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-nss:libnss
 Conflicts: 
 Menu-Depends: 
@@ -62541,7 +62541,7 @@ Category: Network
 Repository: base
 Title: TLS using nss module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62552,7 +62552,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-openssl
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -62562,7 +62562,7 @@ Category: Network
 Repository: base
 Title: TLS using openssl module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62573,7 +62573,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-proxy
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62583,7 +62583,7 @@ Category: Network
 Repository: base
 Title: Proxy module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62594,7 +62594,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-rewrite
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-rewrite:libpcre2
 Conflicts: 
 Menu-Depends: 
@@ -62604,7 +62604,7 @@ Category: Network
 Repository: base
 Title: URL rewriting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62615,7 +62615,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-rrdtool
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62625,7 +62625,7 @@ Category: Network
 Repository: base
 Title: RRDtool module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62636,7 +62636,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-scgi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62646,7 +62646,7 @@ Category: Network
 Repository: base
 Title: SCGI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62657,7 +62657,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-secdownload
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-secdownload:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62667,7 +62667,7 @@ Category: Network
 Repository: base
 Title: Secure and fast download module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62678,7 +62678,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-setenv
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62688,7 +62688,7 @@ Category: Network
 Repository: base
 Title: Environment variable setting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62699,7 +62699,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-simple_vhost
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62709,7 +62709,7 @@ Category: Network
 Repository: base
 Title: Simple virtual hosting module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62720,7 +62720,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-sockproxy
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62730,7 +62730,7 @@ Category: Network
 Repository: base
 Title: sockproxy module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62741,7 +62741,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-ssi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62751,7 +62751,7 @@ Category: Network
 Repository: base
 Title: SSI module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62762,7 +62762,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-staticfile
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62772,7 +62772,7 @@ Category: Network
 Repository: base
 Title: staticfile module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62783,7 +62783,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-status
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62793,7 +62793,7 @@ Category: Network
 Repository: base
 Title: Server status display module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62804,7 +62804,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-uploadprogress
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62814,7 +62814,7 @@ Category: Network
 Repository: base
 Title: Upload Progress module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62825,7 +62825,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-userdir
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62835,7 +62835,7 @@ Category: Network
 Repository: base
 Title: User directory module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62846,7 +62846,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-usertrack
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-usertrack:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -62856,7 +62856,7 @@ Category: Network
 Repository: base
 Title: User tracking module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62867,7 +62867,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
 Conflicts: 
 Menu-Depends: 
@@ -62877,7 +62877,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62888,7 +62888,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_dbi
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
@@ -62898,7 +62898,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (DBI) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62909,7 +62909,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_ldap
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -62919,7 +62919,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (LDAP) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62930,7 +62930,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_mysql
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_mysql:libmariadb
 Conflicts: 
 Menu-Depends: 
@@ -62940,7 +62940,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (MariaDB) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62951,7 +62951,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-vhostdb_pgsql
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -62961,7 +62961,7 @@ Category: Network
 Repository: base
 Title: Virtual Host Database (PostgreSQL) module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62972,7 +62972,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-webdav
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-webdav:libsqlite3 +PACKAGE_lighttpd-mod-webdav:libuuid +PACKAGE_lighttpd-mod-webdav:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -62982,7 +62982,7 @@ Category: Network
 Repository: base
 Title: WebDAV module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -62993,7 +62993,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-wolfssl
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -63003,7 +63003,7 @@ Category: Network
 Repository: base
 Title: TLS using wolfssl module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -63014,7 +63014,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: lighttpd-mod-wstunnel
 Submenu: Web Servers/Proxies
-Version: 1.4.65-1
+Version: 1.4.66-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-wstunnel:libnettle
 Conflicts: 
 Menu-Depends: 
@@ -63024,7 +63024,7 @@ Category: Network
 Repository: base
 Title: Websocket tunneling module
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: lighttpd-1.4.65.tar.xz
+Source: lighttpd-1.4.66.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -75627,6 +75627,31 @@ Jonathan McCrohan <jmccrohan@gmail.com>
 @@
 
 
+Source-Makefile: feeds/packages/net/webdav-hacdias/Makefile
+Build-Depends: golang/host
+
+Package: webdav-hacdias
+Submenu: File Transfer
+Version: 4.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A powerful WebDav server written in Golang.
+Maintainer: ElonH <elonhhuang@gmail.com>
+Source: webdav-hacdias-4.2.0-436a3b0.tar.gz
+License: GPLv3
+Type: ipkg
+Description: webdav command line interface is really easy to use so you can easily create a WebDAV server for your own user.
+By default, it runs on a random free port and supports JSON, YAML and TOML configuration.
+https://github.com/hacdias/webdav
+ElonH <elonhhuang@gmail.com>
+@@
+
+
 Source-Makefile: feeds/packages/net/webui-aria2/Makefile
 
 Package: webui-aria2
@@ -85372,7 +85397,7 @@ Source-Makefile: feeds/packages/utils/docker-compose/Makefile
 Build-Depends: golang/host
 
 Package: docker-compose
-Version: 2.7.0-0
+Version: 2.10.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
@@ -85382,7 +85407,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.7.0.tar.gz
+Source: v2.10.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -103975,7 +104000,7 @@ Source-Makefile: feeds/packages/utils/zoneinfo/Makefile
 
 Package: zoneinfo-simple
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -103985,7 +104010,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (simple)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (simple)
@@ -103994,7 +104019,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-core
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104004,7 +104029,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (core)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (core)
@@ -104013,7 +104038,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-africa
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104023,7 +104048,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Africa)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Africa)
@@ -104032,7 +104057,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-northamerica
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104042,7 +104067,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (NorthAmerica)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (NorthAmerica)
@@ -104051,7 +104076,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-southamerica
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104061,7 +104086,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (SouthAmerica)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (SouthAmerica)
@@ -104070,7 +104095,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-poles
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104080,7 +104105,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Arctic, Antarctic)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Arctic, Antarctic)
@@ -104089,7 +104114,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-asia
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104099,7 +104124,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Asia)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Asia)
@@ -104108,7 +104133,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-atlantic
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104118,7 +104143,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Atlantic)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Atlantic)
@@ -104127,7 +104152,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-australia-nz
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104137,7 +104162,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Australia-NZ)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Australia-NZ)
@@ -104146,7 +104171,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-pacific
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104156,7 +104181,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Pacific)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Pacific)
@@ -104165,7 +104190,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-europe
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104175,7 +104200,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Europe)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Europe)
@@ -104184,7 +104209,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-india
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104194,7 +104219,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (India)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (India)
@@ -104203,7 +104228,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-all
 Submenu: Zoneinfo
-Version: 2022a-1
+Version: 2022c-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zoneinfo-simple +zoneinfo-core +zoneinfo-africa +zoneinfo-northamerica +zoneinfo-southamerica +zoneinfo-poles +zoneinfo-asia +zoneinfo-atlantic +zoneinfo-australia-nz +zoneinfo-pacific +zoneinfo-europe +zoneinfo-india
 Conflicts: 
 Menu-Depends: 
@@ -104213,7 +104238,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (all zones)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022a.tar.gz
+Source: tzdata2022c.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (all zones)

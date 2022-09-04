@@ -242,7 +242,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-adbyby-plus
 Submenu: 3. Applications
-Version: 2.0-75
+Version: 2.0-76
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +adbyby +uclient-fetch +ipset +dnsmasq-full
 Conflicts: 
 Menu-Depends: 
@@ -260,7 +260,7 @@ Description: LuCI support for Adbyby
 
 Package: luci-i18n-adbyby-plus-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 2.0-75
+Version: 2.0-76
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adbyby-plus
 Conflicts: 
 Menu-Depends: 
@@ -18267,6 +18267,28 @@ Description:     Translation for luci-app-webadmin - 简体中文 (Simplified Ch
 @@
 
 
+Source-Makefile: feeds/luci/applications/luci-app-webdav/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-webdav
+Submenu: 3. Applications
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +webdav-hacdias
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Webdav
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Webdav
+
+@@
+
+
 Source-Makefile: feeds/luci/applications/luci-app-wifischedule/Makefile
 Build-Depends: lua/host luci-base/host 
 
@@ -20682,7 +20704,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-theme-argon
 Submenu: 4. Themes
-Version: 1.0-2
+Version: 1.7.3-20220421
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
