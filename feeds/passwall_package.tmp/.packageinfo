@@ -586,6 +586,30 @@ endmenu
 @@
 
 
+Source-Makefile: feeds/passwall_package/sing-box/Makefile
+Build-Depends: golang/host
+
+Package: sing-box
+Submenu: Web Servers/Proxies
+Version: 1.0-rc1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The universal proxy platform.
+Maintainer: 
+Source: sing-box-1.0-rc1.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description: The universal proxy platform.
+https://sing-box.sagernet.org
+
+@@
+
+
 Source-Makefile: feeds/passwall_package/ssocks/Makefile
 
 Package: ssocks
