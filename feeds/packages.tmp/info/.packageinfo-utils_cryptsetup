@@ -3,7 +3,7 @@ Build-Depends: !USE_GLIBC:argp-standalone !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.4.3-0
+Version: 2.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.4.3.tar.xz
+Source: cryptsetup-2.5.0.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -24,7 +24,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: cryptsetup-ssh
 Submenu: Encryption
-Version: 2.4.3-0
+Version: 2.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cryptsetup +PACKAGE_cryptsetup-ssh:libssh
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup SSH token
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.4.3.tar.xz
+Source: cryptsetup-2.5.0.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg

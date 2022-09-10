@@ -619,7 +619,6 @@ $(eval $(call PackageDir,multimedia_aliyundrive-fuse,multimedia/aliyundrive-fuse
 $(eval $(call PackageDir,multimedia_aliyundrive-webdav,multimedia/aliyundrive-webdav,))
 $(eval $(call PackageDir,multimedia_ffmpeg,multimedia/ffmpeg,))
 $(eval $(call PackageDir,multimedia_fswebcam,multimedia/fswebcam,))
-$(eval $(call PackageDir,multimedia_gerbera,multimedia/gerbera,))
 $(eval $(call PackageDir,multimedia_gmediarender,multimedia/gmediarender,))
 $(eval $(call PackageDir,multimedia_gphoto2,multimedia/gphoto2,))
 $(eval $(call PackageDir,multimedia_graphicsmagick,multimedia/graphicsmagick,))

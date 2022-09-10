@@ -7927,7 +7927,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: php8
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre2 +zlib +PHP8_LIBXML:libxml2 +PHP8_SYSTEMTZDATA:zoneinfo-core
 Conflicts: php7
 Menu-Depends: 
@@ -7937,7 +7937,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -7968,7 +7968,7 @@ Config:
 
 Package: php8-cgi
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -7978,7 +7978,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (CGI & FastCGI)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -7991,7 +7991,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-cli
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -8001,7 +8001,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (CLI)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8014,7 +8014,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-fastcgi
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +php8-cgi
 Conflicts: 
 Menu-Depends: 
@@ -8024,7 +8024,7 @@ Category: Languages
 Repository: base
 Title: FastCGI startup script
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8036,7 +8036,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-fpm
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -8046,7 +8046,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (FPM)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8059,7 +8059,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: apache-mod-php8
 Submenu: Web Servers/Proxies
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 PACKAGE_apache-mod-php8:apache +PACKAGE_php8-mod-intl:libstdcpp +libpcre2 +zlib
 Conflicts: 
 Menu-Depends: 
@@ -8069,7 +8069,7 @@ Category: Network
 Repository: base
 Title: PHP8 module for Apache Web Server
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8082,7 +8082,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-bcmath
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8092,7 +8092,7 @@ Category: Languages
 Repository: base
 Title: Bcmath shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8103,7 +8103,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-calendar
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8113,7 +8113,7 @@ Category: Languages
 Repository: base
 Title: Calendar shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8124,7 +8124,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-ctype
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8134,7 +8134,7 @@ Category: Languages
 Repository: base
 Title: Ctype shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8145,7 +8145,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-curl
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -8155,7 +8155,7 @@ Category: Languages
 Repository: base
 Title: cURL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8166,7 +8166,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-dom
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +@PHP8_LIBXML +PACKAGE_php8-mod-dom:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -8176,7 +8176,7 @@ Category: Languages
 Repository: base
 Title: DOM shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8187,7 +8187,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-exif
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8197,7 +8197,7 @@ Category: Languages
 Repository: base
 Title: EXIF shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8208,7 +8208,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-fileinfo
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8218,7 +8218,7 @@ Category: Languages
 Repository: base
 Title: Fileinfo shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8229,7 +8229,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-filter
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8239,7 +8239,7 @@ Category: Languages
 Repository: base
 Title: Filter shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8250,7 +8250,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-ftp
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-ftp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -8260,7 +8260,7 @@ Category: Languages
 Repository: base
 Title: FTP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8271,7 +8271,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gd
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-gd:libgd-full
 Conflicts: 
 Menu-Depends: 
@@ -8281,7 +8281,7 @@ Category: Languages
 Repository: base
 Title: GD graphics shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8292,7 +8292,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gettext
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-gettext:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -8302,7 +8302,7 @@ Category: Languages
 Repository: base
 Title: Gettext shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8313,7 +8313,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gmp
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -8323,7 +8323,7 @@ Category: Languages
 Repository: base
 Title: GMP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8334,7 +8334,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-iconv
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -8344,7 +8344,7 @@ Category: Languages
 Repository: base
 Title: iConv shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8355,7 +8355,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-imap
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-imap:libopenssl +PACKAGE_libpam:libpam +PACKAGE_php8-mod-imap:uw-imap
 Conflicts: 
 Menu-Depends: 
@@ -8365,7 +8365,7 @@ Category: Languages
 Repository: base
 Title: IMAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8376,7 +8376,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-intl
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-intl:icu +PHP8_FULLICUDATA:icu-full-data
 Conflicts: 
 Menu-Depends: 
@@ -8386,7 +8386,7 @@ Category: Languages
 Repository: base
 Title: Internationalization Functions shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8408,7 +8408,7 @@ Config:
 
 Package: php8-mod-ldap
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-ldap:libopenldap +PACKAGE_php8-mod-ldap:libsasl2
 Conflicts: 
 Menu-Depends: 
@@ -8418,7 +8418,7 @@ Category: Languages
 Repository: base
 Title: LDAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8429,7 +8429,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mbstring
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-mbstring:oniguruma
 Conflicts: 
 Menu-Depends: 
@@ -8439,7 +8439,7 @@ Category: Languages
 Repository: base
 Title: MBString shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8450,7 +8450,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mysqli
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-mysqli:php8-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
@@ -8460,7 +8460,7 @@ Category: Languages
 Repository: base
 Title: MySQL Improved Extension shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8471,7 +8471,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mysqlnd
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-openssl:php8-mod-openssl
 Conflicts: 
 Menu-Depends: 
@@ -8481,7 +8481,7 @@ Category: Languages
 Repository: base
 Title: MySQL Native Driver shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8492,7 +8492,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-opcache
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8502,7 +8502,7 @@ Category: Languages
 Repository: base
 Title: OPcache shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8513,7 +8513,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-openssl
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -8523,7 +8523,7 @@ Category: Languages
 Repository: base
 Title: OpenSSL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8534,7 +8534,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pcntl
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8544,7 +8544,7 @@ Category: Languages
 Repository: base
 Title: PCNTL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8555,7 +8555,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8565,7 +8565,7 @@ Category: Languages
 Repository: base
 Title: PHP Data Objects shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8576,7 +8576,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-mysql
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-mysql:php8-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
@@ -8586,7 +8586,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for MySQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8597,7 +8597,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-pgsql
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -8607,7 +8607,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for PostgreSQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8618,7 +8618,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-sqlite
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-sqlite:libsqlite3 +PACKAGE_php8-mod-pdo-sqlite:librt
 Conflicts: 
 Menu-Depends: 
@@ -8628,7 +8628,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for SQLite 3.x shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8639,7 +8639,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pgsql
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -8649,7 +8649,7 @@ Category: Languages
 Repository: base
 Title: PostgreSQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8660,7 +8660,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-phar
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8670,7 +8670,7 @@ Category: Languages
 Repository: base
 Title: Phar Archives shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8681,7 +8681,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-session
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8691,7 +8691,7 @@ Category: Languages
 Repository: base
 Title: Session shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8702,7 +8702,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-shmop
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8712,7 +8712,7 @@ Category: Languages
 Repository: base
 Title: Shared Memory shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8723,7 +8723,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-simplexml
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +@PHP8_LIBXML +PACKAGE_php8-mod-simplexml:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -8733,7 +8733,7 @@ Category: Languages
 Repository: base
 Title: SimpleXML shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8744,7 +8744,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-snmp
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-snmp:libnetsnmp +PACKAGE_php8-mod-snmp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -8754,7 +8754,7 @@ Category: Languages
 Repository: base
 Title: SNMP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8765,7 +8765,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-soap
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +@PHP8_LIBXML +PACKAGE_php8-mod-soap:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -8775,7 +8775,7 @@ Category: Languages
 Repository: base
 Title: SOAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8786,7 +8786,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sockets
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8796,7 +8796,7 @@ Category: Languages
 Repository: base
 Title: Sockets shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8807,7 +8807,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sqlite3
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-sqlite3:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -8817,7 +8817,7 @@ Category: Languages
 Repository: base
 Title: SQLite3 shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8828,7 +8828,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvmsg
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8838,7 +8838,7 @@ Category: Languages
 Repository: base
 Title: System V messages shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8849,7 +8849,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvsem
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8859,7 +8859,7 @@ Category: Languages
 Repository: base
 Title: System V shared memory shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8870,7 +8870,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvshm
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8880,7 +8880,7 @@ Category: Languages
 Repository: base
 Title: System V semaphore shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8891,7 +8891,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-tokenizer
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -8901,7 +8901,7 @@ Category: Languages
 Repository: base
 Title: Tokenizer shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8912,7 +8912,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xml
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PHP8_LIBXML:libxml2 +!PHP8_LIBXML:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -8922,7 +8922,7 @@ Category: Languages
 Repository: base
 Title: XML shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8933,7 +8933,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xmlreader
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +@PHP8_LIBXML +PACKAGE_php8-mod-dom:php8-mod-dom +PACKAGE_php8-mod-xmlreader:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -8943,7 +8943,7 @@ Category: Languages
 Repository: base
 Title: XMLReader shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8954,7 +8954,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xmlwriter
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +@PHP8_LIBXML +PACKAGE_php8-mod-xmlwriter:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -8964,7 +8964,7 @@ Category: Languages
 Repository: base
 Title: XMLWriter shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -8975,7 +8975,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-zip
 Submenu: PHP8
-Version: 8.1.8-1
+Version: 8.1.10-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8 +PACKAGE_php8-mod-zip:libzip
 Conflicts: 
 Menu-Depends: 
@@ -8985,7 +8985,7 @@ Category: Languages
 Repository: base
 Title: ZIP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.1.8.tar.xz
+Source: php-8.1.10.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24816,7 +24816,7 @@ Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
 Source-Makefile: feeds/packages/libs/gpgme/Makefile
 
 Package: libgpgme
-Version: 1.17.1-1
+Version: 1.18.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libassuan +libgpg-error
 Conflicts: 
 Menu-Depends: 
@@ -24826,7 +24826,7 @@ Category: Libraries
 Repository: base
 Title: GnuPG Made Easy (GPGME) library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: gpgme-1.17.1.tar.bz2
+Source: gpgme-1.18.0.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -24841,7 +24841,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libgpgmepp
-Version: 1.17.1-1
+Version: 1.18.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpgme +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -24851,7 +24851,7 @@ Category: Libraries
 Repository: base
 Title: GnuPG Made Easy (GPGME) library (C++)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: gpgme-1.17.1.tar.bz2
+Source: gpgme-1.18.0.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -26331,7 +26331,7 @@ Karl Palsson <karlp@tweak.net.au>
 Source-Makefile: feeds/packages/libs/libevdev/Makefile
 
 Package: libevdev
-Version: 1.12.0-0
+Version: 1.13.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -26341,7 +26341,7 @@ Category: Libraries
 Repository: base
 Title: a wrapper library for evdev devices
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: libevdev-1.12.0.tar.xz
+Source: libevdev-1.13.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -47826,7 +47826,7 @@ messense <messense@icloud.com>
 Source-Makefile: feeds/packages/multimedia/ffmpeg/Makefile
 
 Package: ffmpeg
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -47837,7 +47837,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg program
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47854,7 +47854,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -47865,7 +47865,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg CLI media identifier
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47882,7 +47882,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffmpeg-custom
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
@@ -47893,7 +47893,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg program (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47910,7 +47910,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe-custom
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
@@ -47921,7 +47921,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg CLI media identifier (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47938,7 +47938,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-audio-dec
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -47949,7 +47949,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (audio)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47966,7 +47966,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-full
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +libgnutls +PACKAGE_libopus:libopus +SOFT_FLOAT:shine +!SOFT_FLOAT:lame-lib +PACKAGE_libx264:libx264 +!PACKAGE_libx264:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -47977,7 +47977,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (full)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47994,7 +47994,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-mini
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -48005,7 +48005,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (mini)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -48023,7 +48023,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-custom
 Menu: 1
-Version: 5.1-1
+Version: 5.1.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -48034,7 +48034,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.tar.xz
+Source: ffmpeg-5.1.1.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -48077,31 +48077,6 @@ Description:   fswebcam is a neat and simple webcam app. It captures images from
   is saved to a file or sent to stdio where it can be piped to something like ncftpput or scp.
 http://www.sanslogic.co.uk/fswebcam/
 Nicolas Thill <nico@openwrt.org>
-@@
-
-
-Source-Makefile: feeds/packages/multimedia/gerbera/Makefile
-Build-Depends: libmatroska pugixml spdlog !BUILD_NLS:libiconv !BUILD_NLS:gettext
-
-Package: gerbera
-Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +file +libnpupnp +libsqlite3 +libexif +libuuid +libfmt +libatomic +taglib +BUILD_PATENTED:libffmpeg +BUILD_NLS:libiconv-full
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: multimedia
-Category: Multimedia
-Repository: base
-Title: A free media server
-Maintainer: 
-Require-User: gerbera:gerbera
-Source: gerbera-1.8.2.tar.gz
-License: GPL-2.0-or-later
-LicenseFiles: LICENSE.md
-Type: ipkg
-Description:   Gerbera - UPnP Media Server based on Mediatomb.
-https://gerbera.io
-
 @@
 
 
@@ -58150,7 +58125,7 @@ Build-Depends: golang/host
 
 Package: frpc
 Submenu: Web Servers/Proxies
-Version: 0.42.0-0
+Version: 0.44.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -58160,7 +58135,7 @@ Category: Network
 Repository: base
 Title: A fast reverse proxy (frpc)
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
-Source: frp-0.42.0.tar.gz
+Source: frp-0.44.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -58175,7 +58150,7 @@ Xingwang Liao <kuoruan@gmail.com>
 
 Package: frps
 Submenu: Web Servers/Proxies
-Version: 0.42.0-0
+Version: 0.44.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -58185,7 +58160,7 @@ Category: Network
 Repository: base
 Title: A fast reverse proxy (frps)
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
-Source: frp-0.42.0.tar.gz
+Source: frp-0.44.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -69063,7 +69038,7 @@ Build-Depends: qttools
 
 Package: qbittorrent
 Submenu: BitTorrent
-Version: 4.4.4-1
+Version: 4.4.5-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +rblibtorrent +libopenssl +qt5-core +qt5-network +qt5-sql +qt5-xml +zlib
 Conflicts: 
 Menu-Depends: 
@@ -69073,7 +69048,7 @@ Category: Network
 Repository: base
 Title: bittorrent client programmed in C++ / Qt
 Maintainer: 
-Source: qBittorrent-release-4.4.4.tar.gz
+Source: qBittorrent-release-4.4.5.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -82820,7 +82795,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.6.6-1
+Version: 1.6.8-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -82830,7 +82805,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.6.6.tar.gz
+Source: containerd-1.6.8.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -85101,7 +85076,7 @@ Build-Depends: !USE_GLIBC:argp-standalone !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.4.3-0
+Version: 2.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
@@ -85111,7 +85086,7 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.4.3.tar.xz
+Source: cryptsetup-2.5.0.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -85122,7 +85097,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: cryptsetup-ssh
 Submenu: Encryption
-Version: 2.4.3-0
+Version: 2.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cryptsetup +PACKAGE_cryptsetup-ssh:libssh
 Conflicts: 
 Menu-Depends: 
@@ -85132,7 +85107,7 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup SSH token
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.4.3.tar.xz
+Source: cryptsetup-2.5.0.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -85375,7 +85350,7 @@ Source-Makefile: feeds/packages/utils/docker/Makefile
 Build-Depends: golang/host
 
 Package: docker
-Version: 20.10.17-0
+Version: 20.10.18-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -85385,7 +85360,7 @@ Category: Utilities
 Repository: base
 Title: Docker Community Edition CLI
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: docker-20.10.17.tar.gz
+Source: docker-20.10.18.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -85424,7 +85399,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.17-0
+Version: 20.10.18-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +@KERNEL_NAMESPACES +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -85435,7 +85410,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.17.tar.gz
+Source: dockerd-20.10.18.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -87790,7 +87765,7 @@ Source-Makefile: feeds/packages/utils/libnetwork/Makefile
 Build-Depends: golang/host
 
 Package: libnetwork
-Version: 2022-06-02-f6ccccb1c082a432c2a5814aaedaca56af33d9ea-1
+Version: 2022-07-16-0dde5c895075df6e3630e76f750a447cf63f4789-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -87800,7 +87775,7 @@ Category: Utilities
 Repository: base
 Title: networking for containers
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: libnetwork-2022-06-02-f6ccccb1c082a432c2a5814aaedaca56af33d9ea.tar.xz
+Source: libnetwork-2022-07-16-0dde5c895075df6e3630e76f750a447cf63f4789.tar.xz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -87958,7 +87933,7 @@ Maxim Storchak <m.storchak@gmail.com>
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.03.14-0
+Version: 2.03.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid
 Conflicts: 
 Menu-Depends: 
@@ -87969,7 +87944,7 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.14.tgz
+Source: LVM2.2.03.16.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -87980,7 +87955,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libdevmapper-selinux
-Version: 2.03.14-0
+Version: 2.03.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -87991,7 +87966,7 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.14.tgz
+Source: LVM2.2.03.16.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -88005,7 +87980,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2
 Submenu: Disc
-Version: 2.03.14-0
+Version: 2.03.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -88016,7 +87991,7 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.14.tgz
+Source: LVM2.2.03.16.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -88029,7 +88004,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2-selinux
 Submenu: Disc
-Version: 2.03.14-0
+Version: 2.03.16-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper-selinux
 Conflicts: 
 Menu-Depends: 
@@ -88040,7 +88015,7 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.14.tgz
+Source: LVM2.2.03.16.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -95967,7 +95942,7 @@ Source-Makefile: feeds/packages/utils/runc/Makefile
 Build-Depends: golang/host
 
 Package: runc
-Version: 1.1.2-1
+Version: 1.1.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -95977,7 +95952,7 @@ Category: Utilities
 Repository: base
 Title: runc container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: runc-1.1.2.tar.gz
+Source: runc-1.1.4.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
