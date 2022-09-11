@@ -6946,6 +6946,42 @@ Description: Netfilter flowtable support
 
 @@
 
+Package: kmod-nf-socket
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter socket lookup support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: Netfilter socket lookup support
+
+@@
+
+Package: kmod-nf-tproxy
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter tproxy support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: Netfilter tproxy support
+
+@@
+
 Package: kmod-ipt-conntrack
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
@@ -8088,6 +8124,81 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_NFT_QUEUE
 Description: Netfilter nf_tables queue support
+
+@@
+
+Package: kmod-nft-socket
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: +kmod-nft-core +kmod-nf-socket
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter nf_tables socket support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NFT_SOCKET
+Description: Netfilter nf_tables socket support
+
+@@
+
+Package: kmod-nft-tproxy
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: +kmod-nft-core +kmod-nf-tproxy +kmod-nf-conntrack
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter nf_tables tproxy support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NFT_TPROXY
+Description: Netfilter nf_tables tproxy support
+
+@@
+
+Package: kmod-nft-compat
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: +kmod-nft-core +kmod-nf-ipt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter nf_tables compat support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NFT_COMPAT
+Description: Netfilter nf_tables compat support
+
+@@
+
+Package: kmod-nft-xfrm
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: +kmod-nft-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter nf_tables xfrm support (ipsec)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: Netfilter nf_tables xfrm support (ipsec)
 
 @@
 
@@ -9510,7 +9621,7 @@ Description:  TUN device for Qualcomm IPC Router
 Package: kmod-qrtr-smd
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-qrtr @TARGET_ipq807x
+Depends: +kmod-qrtr @(TARGET_ipq60xx||TARGET_ipq807x)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12520,7 +12631,7 @@ Description:  This driver provides support for the Dual Role SuperSpeed
 Package: kmod-usb-dwc3-qcom
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x) +kmod-usb-dwc3 +kmod-usb-core 
+Depends: @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx) +kmod-usb-dwc3 +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 

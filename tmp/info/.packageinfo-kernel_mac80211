@@ -652,7 +652,7 @@ Config:
 Package: kmod-ath11k-ahb
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @TARGET_ipq807x +kmod-ath11k +(LINUX_5_15||LINUX_5_19):kmod-qrtr-smd
+Depends:  @(TARGET_ipq60xx||TARGET_ipq807x) +kmod-ath11k +(LINUX_5_15||LINUX_5_19):kmod-qrtr-smd
 Conflicts: 
 Menu-Depends: 
 Provides: 
