@@ -6809,7 +6809,7 @@ Description: Iptables core
 Package: kmod-nf-ipt6
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: +kmod-nf-ipt
+Depends: +kmod-nf-ipt +kmod-nf-log6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6828,7 +6828,7 @@ Description: Ip6tables core
 Package: kmod-ipt-core
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: +kmod-nf-reject +kmod-nf-ipt
+Depends: +kmod-nf-reject +kmod-nf-ipt +kmod-nf-log
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6886,6 +6886,44 @@ Source:
 License: GPL-2.0
 Type: ipkg
 Description: Netfilter IPv6 connection tracking
+
+@@
+
+Package: kmod-nf-log
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter Logging
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NF_LOG_COMMON CONFIG_NF_LOG_IPV4 CONFIG_NF_LOG_SYSLOG
+Description: Netfilter Logging
+
+@@
+
+Package: kmod-nf-log6
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends: @IPV6 +kmod-nf-log
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Netfilter IPV6 Logging
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NF_LOG_IPV6
+Description: Netfilter IPV6 Logging
 
 @@
 
@@ -7483,10 +7521,29 @@ Description:  Netfilter target to trigger a LED when a network packet is matched
 
 @@
 
+Package: kmod-ipt-socket
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>-
+Depends:  +kmod-nf-socket +kmod-nf-conntrack +kmod-ipt-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Iptables socket matching support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NETFILTER_XT_MATCH_SOCKET
+Description:   Kernel modules for socket matching
+
+@@
+
 Package: kmod-ipt-tproxy
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-conntrack +IPV6:kmod-nf-conntrack6 +IPV6:kmod-ip6tables +kmod-ipt-core 
+Depends:  +kmod-nf-tproxy +kmod-nf-conntrack +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7497,7 +7554,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NETFILTER_XT_MATCH_SOCKET CONFIG_NF_SOCKET_IPV4 CONFIG_NF_SOCKET_IPV6 CONFIG_NETFILTER_XT_TARGET_TPROXY CONFIG_NF_TPROXY_IPV4 CONFIG_NF_TPROXY_IPV6
+Kernel-Config: CONFIG_NETFILTER_XT_TARGET_TPROXY
 Description:   Kernel modules for Transparent Proxying
 
 @@
@@ -7695,7 +7752,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_IP6_NF_FILTER CONFIG_IP6_NF_MANGLE CONFIG_NF_LOG_IPV6 CONFIG_IP6_NF_TARGET_REJECT
+Kernel-Config: CONFIG_IP6_NF_FILTER CONFIG_NF_LOG_IPV6 CONFIG_IP6_NF_TARGET_REJECT
 Description:  Netfilter IPv6 firewalling support
 
 @@
@@ -7902,7 +7959,7 @@ Description:  Kernel modules support for queueing packets via NFNETLINK
 Package: kmod-nf-conntrack-netlink
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nfnetlink +kmod-ipt-conntrack
+Depends:  +kmod-nfnetlink +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7960,7 +8017,7 @@ Description:  Kernel modules support for the Netfilter rpfilter match
 Package: kmod-nft-core
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends: +kmod-nfnetlink +kmod-nf-reject +IPV6:kmod-nf-reject6 +IPV6:kmod-nf-conntrack6 +kmod-nf-nat +kmod-lib-crc32c
+Depends: +kmod-nfnetlink +kmod-nf-reject +IPV6:kmod-nf-reject6 +IPV6:kmod-nf-conntrack6 +kmod-nf-nat +kmod-nf-log +IPV6:kmod-nf-log6 +kmod-lib-crc32c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -8008,7 +8065,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NF_LOG_BRIDGE=n@lt5.13 CONFIG_NFT_BRIDGE_META CONFIG_NFT_BRIDGE_REJECT
+Kernel-Config: CONFIG_NF_LOG_BRIDGE=n@lt5.13 CONFIG_NFT_BRIDGE_META CONFIG_NFT_BRIDGE_REJECT CONFIG_NF_CONNTRACK_BRIDGE
 Description: Netfilter nf_tables bridge table support
 
 @@
@@ -8198,6 +8255,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
+Kernel-Config: CONFIG_NFT_XFRM
 Description: Netfilter nf_tables xfrm support (ipsec)
 
 @@
