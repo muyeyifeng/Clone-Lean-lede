@@ -82795,7 +82795,7 @@ Build-Depends: golang/host
 
 Package: containerd
 Menu: 1
-Version: 1.6.8-1
+Version: 1.6.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
@@ -82805,7 +82805,7 @@ Category: Utilities
 Repository: base
 Title: containerd container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: containerd-1.6.8.tar.gz
+Source: containerd-1.6.6.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -85399,7 +85399,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 20.10.18-0
+Version: 20.10.17-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +btrfs-progs +ca-certificates +containerd +libdevmapper +libnetwork +tini +@KERNEL_NAMESPACES +KERNEL_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-nf-nat +kmod-veth
 Conflicts: 
 Menu-Depends: 
@@ -85410,7 +85410,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-20.10.18.tar.gz
+Source: dockerd-20.10.17.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -87765,7 +87765,7 @@ Source-Makefile: feeds/packages/utils/libnetwork/Makefile
 Build-Depends: golang/host
 
 Package: libnetwork
-Version: 2022-07-16-0dde5c895075df6e3630e76f750a447cf63f4789-1
+Version: 2022-06-02-f6ccccb1c082a432c2a5814aaedaca56af33d9ea-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -87775,7 +87775,7 @@ Category: Utilities
 Repository: base
 Title: networking for containers
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: libnetwork-2022-07-16-0dde5c895075df6e3630e76f750a447cf63f4789.tar.xz
+Source: libnetwork-2022-06-02-f6ccccb1c082a432c2a5814aaedaca56af33d9ea.tar.xz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -95942,7 +95942,7 @@ Source-Makefile: feeds/packages/utils/runc/Makefile
 Build-Depends: golang/host
 
 Package: runc
-Version: 1.1.4-1
+Version: 1.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
@@ -95952,7 +95952,7 @@ Category: Utilities
 Repository: base
 Title: runc container runtime
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
-Source: runc-1.1.4.tar.gz
+Source: runc-1.1.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

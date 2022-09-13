@@ -4,33 +4,35 @@ Target-Board: ipq807x
 Target-Name: Qualcomm Atheros IPQ807x
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virtio
+Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs testing-kernel usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
 Linux-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 kmod-qca-nss-drv-bridge-mgr-64 kmod-qca-nss-drv-vlan-mgr-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 kmod-qca-nss-drv-bridge-mgr-64 kmod-qca-nss-drv-vlan-mgr-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target: ipq807x/generic
 Target-Board: ipq807x
 Target-Name: Generic
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs usb virtio
+Target-Features: dt fpu gpio nand pci pcie ramdisk source-only squashfs testing-kernel usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
 Linux-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 kmod-qca-nss-drv-bridge-mgr-64 kmod-qca-nss-drv-vlan-mgr-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug ath11k-firmware-ipq8074 kmod-ath11k-ahb autocore-arm htop wpad-openssl zram-swap uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 kmod-qca-nss-drv-bridge-mgr-64 kmod-qca-nss-drv-vlan-mgr-64 nss-firmware-ipq8074 luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier iwinfo
 Target-Profile: DEVICE_qnap_301w
 Target-Profile-Name: QNAP 301w
 Target-Profile-Packages: ipq-wifi-qnap_301w e2fsprogs kmod-fs-ext4 losetup 

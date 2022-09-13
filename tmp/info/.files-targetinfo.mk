@@ -1,3 +1,4 @@
+$(eval $(call PackageDir,airoha,airoha,))
 $(eval $(call PackageDir,apm821xx,apm821xx,))
 $(eval $(call PackageDir,arc770,arc770,))
 $(eval $(call PackageDir,archs38,archs38,))

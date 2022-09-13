@@ -4,35 +4,35 @@ Target-Board: mvebu
 Target-Name: Marvell EBU Armada
 Target-Arch: 
 Target-Arch-Packages: 
-Target-Features: arm_v7 boot-part dt fpu gpio nand pci pcie ramdisk rootfs-part rtc squashfs usb
+Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdisk rootfs-part rtc squashfs targz testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
 Linux-Version: 5.10.142
-Linux-Testing-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target: mvebu/cortexa9
 Target-Board: mvebu
 Target-Name: Marvell Armada 37x/38x/XP
 Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a9_vfpv3-d16
-Target-Features: arm_v7 boot-part dt fpu gpio nand pci pcie ramdisk rootfs-part rtc squashfs usb
+Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdisk rootfs-part rtc squashfs targz testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
 Linux-Version: 5.10.142
-Linux-Testing-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_buffalo_ls421de
 Target-Profile-Name: Buffalo LinkStation LS421DE
 Target-Profile-Packages: kmod-rtc-rs5c372a kmod-hwmon-gpiofan kmod-hwmon-drivetemp kmod-usb3 kmod-linkstation-poweroff kmod-md-raid0 kmod-md-raid1 kmod-md-mod kmod-fs-xfs mkf2fs e2fsprogs partx-utils 
@@ -47,9 +47,23 @@ Build firmware images for Buffalo LinkStation LS421DE
 
 @@
 
+Target-Profile: DEVICE_ctera_c200-v2
+Target-Profile-Name: Ctera C200 V2
+Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-drivetemp kmod-hwmon-nct7802 kmod-rtc-s35390a kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ctera,c200-v2
+
+
+Target-Profile-Description:
+Build firmware images for Ctera C200 V2
+
+
+
+@@
+
 Target-Profile: DEVICE_cznic_turris-omnia
 Target-Profile-Name: CZ.NIC Turris Omnia
-Target-Profile-Packages: mkf2fs e2fsprogs kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 wpad-basic-wolfssl kmod-ath9k kmod-ath10k-ct ath10k-firmware-qca988x-ct partx-utils kmod-i2c-mux-pca954x iwinfo
+Target-Profile-Packages: mkf2fs e2fsprogs kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 wpad-basic-wolfssl kmod-ath9k kmod-ath10k-ct ath10k-firmware-qca988x-ct partx-utils kmod-i2c-mux-pca954x kmod-leds-turris-omnia iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cznic,turris-omnia armada-385-turris-omnia
 
@@ -75,6 +89,20 @@ Build firmware images for Globalscale Mirabox
 
 @@
 
+Target-Profile: DEVICE_iptime_nas1dual
+Target-Profile-Name: ipTIME NAS1dual
+Target-Profile-Packages: kmod-hwmon-drivetemp kmod-hwmon-gpiofan kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: iptime,nas1dual
+
+
+Target-Profile-Description:
+Build firmware images for ipTIME NAS1dual
+
+
+
+@@
+
 Target-Profile: DEVICE_kobol_helios4
 Target-Profile-Name: Kobol Helios4
 Target-Profile-Packages: mkf2fs e2fsprogs partx-utils 
@@ -91,7 +119,7 @@ Build firmware images for Kobol Helios4
 
 Target-Profile: DEVICE_linksys_wrt1200ac
 Target-Profile-Name: Linksys Caiman (Linksys WRT1200AC)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1200ac armada-385-linksys-caiman linksys,caiman
 
@@ -106,7 +134,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1200ac
 Target-Profile-Name: Linksys WRT1200AC
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1200ac armada-385-linksys-caiman linksys,caiman
 
@@ -121,7 +149,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900acs
 Target-Profile-Name: Linksys WRT1900ACS v2 (Linksys WRT1900ACS v1)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900acs armada-385-linksys-shelby linksys,shelby
 
@@ -136,7 +164,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900acs
 Target-Profile-Name: Linksys Shelby (Linksys WRT1900ACS v1)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900acs armada-385-linksys-shelby linksys,shelby
 
@@ -151,7 +179,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900acs
 Target-Profile-Name: Linksys WRT1900ACS v1
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900acs armada-385-linksys-shelby linksys,shelby
 
@@ -166,7 +194,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v1
 Target-Profile-Name: Linksys Mamba (Linksys WRT1900AC v1)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900ac-v1 armada-xp-linksys-mamba linksys,mamba
 
@@ -181,7 +209,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v1
 Target-Profile-Name: Linksys WRT1900AC v1
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900ac-v1 armada-xp-linksys-mamba linksys,mamba
 
@@ -196,7 +224,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v2
 Target-Profile-Name: Linksys Cobra (Linksys WRT1900AC v2)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900ac-v2 armada-385-linksys-cobra linksys,cobra
 
@@ -211,7 +239,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v2
 Target-Profile-Name: Linksys WRT1900AC v2
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba mwlwifi-firmware-88w8864 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl mwlwifi-firmware-88w8864 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt1900ac-v2 armada-385-linksys-cobra linksys,cobra
 
@@ -226,7 +254,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt3200acm
 Target-Profile-Name: Linksys Rango (Linksys WRT3200ACM)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt3200acm armada-385-linksys-rango linksys,rango
 
@@ -241,7 +269,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt3200acm
 Target-Profile-Name: Linksys WRT3200ACM
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt3200acm armada-385-linksys-rango linksys,rango
 
@@ -256,7 +284,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt32x
 Target-Profile-Name: Linksys Venom (Linksys WRT32X)
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt32x armada-385-linksys-venom linksys,venom
 
@@ -271,7 +299,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_wrt32x
 Target-Profile-Name: Linksys WRT32X
-Target-Profile-Packages: kmod-mwlwifi wpad-openssl luci-app-advanced-reboot automount autosamba kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
+Target-Profile-Packages: kmod-mwlwifi wpad-basic-wolfssl kmod-btmrvl kmod-mwifiex-sdio mwlwifi-firmware-88w8964 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,wrt32x armada-385-linksys-venom linksys,venom
 
@@ -415,18 +443,18 @@ Target-Board: mvebu
 Target-Name: Marvell Armada 3700LP (ARM64)
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a53
-Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie ramdisk rootfs-part rtc squashfs usb
+Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie ramdisk rootfs-part rtc squashfs targz testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
 Linux-Version: 5.10.142
-Linux-Testing-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_glinet_gl-mv1000
 Target-Profile-Name: GL.iNet GL-MV1000
 Target-Profile-Packages:  
@@ -591,7 +619,7 @@ Build firmware images for Marvell Armada 3720 Development Board (DB-88F3720-DDR3
 
 Target-Profile: DEVICE_methode_udpu
 Target-Profile-Name: Methode micro-DPU (uDPU)
-Target-Profile-Packages:  f2fs-tools fdisk kmod-i2c-pxa 
+Target-Profile-Packages:  f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: methode,udpu
 
@@ -603,23 +631,51 @@ Build firmware images for Methode micro-DPU (uDPU)
 
 @@
 
+Target-Profile: DEVICE_methode_edpu
+Target-Profile-Name: Methode eDPU
+Target-Profile-Packages:  f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: methode,edpu
+
+
+Target-Profile-Description:
+Build firmware images for Methode eDPU
+
+
+
+@@
+
 Target: mvebu/cortexa72
 Target-Board: mvebu
 Target-Name: Marvell Armada 7k/8k (ARM64)
 Target-Arch: aarch64
 Target-Arch-Packages: aarch64_cortex-a72
-Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie ramdisk rootfs-part rtc squashfs usb
+Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie ramdisk rootfs-part rtc squashfs targz testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
 Linux-Version: 5.10.142
-Linux-Testing-Version: 5.10.142
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates uboot-envtools kmod-gpio-button-hotplug 
+Target-Profile: DEVICE_globalscale_mochabin
+Target-Profile-Name: Globalscale MOCHAbin
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: globalscale,mochabin
+
+
+Target-Profile-Description:
+Build firmware images for Globalscale MOCHAbin
+
+
+
+@@
+
 Target-Profile: DEVICE_marvell_armada7040-db
 Target-Profile-Name: Marvell Armada 7040 Development Board
 Target-Profile-Packages:  
@@ -704,6 +760,48 @@ Target-Profile-Description:
 Build firmware images for SolidRun MACCHIATObin Single Shot
 Alternative device titles:
 - SolidRun Armada 8040 Community Board Single Shot
+
+
+@@
+
+Target-Profile: DEVICE_marvell_clearfog-gt-8k
+Target-Profile-Name: SolidRun Clearfog GT-8K
+Target-Profile-Packages:  kmod-i2c-mux-pca954x kmod-crypto-hw-safexcel 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: marvell,armada8040-clearfog-gt-8k
+
+
+Target-Profile-Description:
+Build firmware images for SolidRun Clearfog GT-8K
+
+
+
+@@
+
+Target-Profile: DEVICE_iei_puzzle-m901
+Target-Profile-Name: iEi Puzzle-M901
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: iei,puzzle-m901
+
+
+Target-Profile-Description:
+Build firmware images for iEi Puzzle-M901
+
+
+
+@@
+
+Target-Profile: DEVICE_iei_puzzle-m902
+Target-Profile-Name: iEi Puzzle-M902
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: iei,puzzle-m902
+
+
+Target-Profile-Description:
+Build firmware images for iEi Puzzle-M902
+
 
 
 @@
