@@ -184,6 +184,7 @@ $(eval $(call PackageDir,network_config_ltq-adsl-app,network/config/ltq-adsl-app
 $(eval $(call PackageDir,network_config_ltq-vdsl-app,network/config/ltq-vdsl-app,))
 $(eval $(call PackageDir,network_config_netifd,network/config/netifd,))
 $(eval $(call PackageDir,network_config_qos-scripts,network/config/qos-scripts,))
+$(eval $(call PackageDir,network_config_qosify,network/config/qosify,))
 $(eval $(call PackageDir,network_config_soloscli,network/config/soloscli,))
 $(eval $(call PackageDir,network_config_swconfig,network/config/swconfig,))
 $(eval $(call PackageDir,network_config_vti,network/config/vti,))

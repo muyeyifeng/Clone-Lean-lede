@@ -15,7 +15,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with ARM CPU, *not* MIPS.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
 Target-Profile: Generic
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43, brcmfmac, default)
 Target-Profile-Packages: kmod-b43 kmod-brcmfmac 
@@ -41,7 +41,7 @@ Linux-Kernel-Arch: arm
 Target-Description:
 	Build firmware images for Broadcom based BCM47xx/53xx routers with ARM CPU, *not* MIPS.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-ramfree luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol ca-certificates nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates nvram osafeloader oseama otrx kmod-gpio-button-hotplug kmod-leds-gpio 
 Target-Profile: Generic
 Target-Profile-Name: Broadcom SoC, BCM43xx WiFi (b43, brcmfmac, default)
 Target-Profile-Packages: kmod-b43 kmod-brcmfmac 
@@ -431,27 +431,13 @@ Build firmware images for SmartRG SR400ac
 
 Target-Profile: DEVICE_phicomm_k3
 Target-Profile-Name: PHICOMM K3
-Target-Profile-Packages: wpad-basic-wolfssl kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-Packages: wpad-basic-wolfssl kmod-brcmfmac k3wifi kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 k3screenctrl iwinfo
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: phicomm,k3
 
 
 Target-Profile-Description:
 Build firmware images for PHICOMM K3
-
-
-
-@@
-
-Target-Profile: DEVICE_tenda_ac9
-Target-Profile-Name: Tenda AC9
-Target-Profile-Packages: wpad-basic-wolfssl kmod-b43 kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport iwinfo
-Target-Profile-hasImageMetadata: 0
-Target-Profile-SupportedDevices: tenda,ac9
-
-
-Target-Profile-Description:
-Build firmware images for Tenda AC9
 
 
 
