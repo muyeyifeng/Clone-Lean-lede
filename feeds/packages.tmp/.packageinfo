@@ -55993,7 +55993,7 @@ Source-Makefile: feeds/packages/net/curl/Makefile
 
 Package: libcurl
 Menu: 1
-Version: 7.83.1-0
+Version: 7.85.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBCURL_WOLFSSL:libwolfssl +LIBCURL_OPENSSL:libopenssl +LIBCURL_GNUTLS:libgnutls +LIBCURL_MBEDTLS:libmbedtls +LIBCURL_ZLIB:zlib +LIBCURL_ZSTD:libzstd +LIBCURL_THREADED_RESOLVER:libpthread +LIBCURL_LDAP:libopenldap +LIBCURL_LIBIDN2:libidn2 +LIBCURL_SSH2:libssh2 +LIBCURL_NGHTTP2:libnghttp2 +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56003,7 +56003,7 @@ Category: Libraries
 Repository: base
 Title: A client-side URL transfer library
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.83.1.tar.xz
+Source: curl-7.85.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -56017,7 +56017,7 @@ Config:
 
 Package: curl
 Submenu: File Transfer
-Version: 7.83.1-0
+Version: 7.85.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -56027,7 +56027,7 @@ Category: Network
 Repository: base
 Title: A client-side URL transfer utility
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.83.1.tar.xz
+Source: curl-7.85.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -63602,7 +63602,7 @@ Source-Makefile: feeds/packages/net/miniupnpd/Makefile
 
 Package: miniupnpd
 Submenu: Firewall
-Version: 2.0.20170421-5
+Version: 2.0.20170421-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -69737,7 +69737,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: rsync
 Menu: 1
 Submenu: File Transfer
-Version: 3.2.4-0
+Version: 3.2.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +zlib +RSYNC_xattr:libattr +RSYNC_acl:libacl +RSYNC_zstd:libzstd +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -69747,7 +69747,7 @@ Category: Network
 Repository: base
 Title: Fast remote file copy program (like rcp)
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.4.tar.gz
+Source: rsync-3.2.6.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -69767,7 +69767,7 @@ Config:
 
 Package: rsyncd
 Submenu: File Transfer
-Version: 3.2.4-0
+Version: 3.2.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync
 Conflicts: 
 Menu-Depends: 
@@ -69777,7 +69777,7 @@ Category: Network
 Repository: base
 Title: Rsync daemon
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.4.tar.gz
+Source: rsync-3.2.6.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -69789,7 +69789,7 @@ Maxim Storchak <m.storchak@gmail.com>
 
 Package: rrsync
 Submenu: File Transfer
-Version: 3.2.4-0
+Version: 3.2.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync +perlbase-file +perl @(PACKAGE_openssh-server||PACKAGE_openssh-server-pam)
 Conflicts: 
 Menu-Depends: 
@@ -69799,7 +69799,7 @@ Category: Network
 Repository: base
 Title: Restricted rsync script
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: rsync-3.2.4.tar.gz
+Source: rsync-3.2.6.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -85374,7 +85374,7 @@ Source-Makefile: feeds/packages/utils/docker-compose/Makefile
 Build-Depends: golang/host
 
 Package: docker-compose
-Version: 2.10.2-0
+Version: 2.11.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
@@ -85384,7 +85384,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.10.2.tar.gz
+Source: v2.11.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -102983,7 +102983,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/tree/Makefile
 
 Package: tree
-Version: 2.0.2-1
+Version: 2.0.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc
 Conflicts: 
 Menu-Depends: 
@@ -102993,7 +102993,7 @@ Category: Utilities
 Repository: base
 Title: List contents of directories in a tree-like format
 Maintainer: Banglang Huang <banglang.huang@foxmail.com>
-Source: tree-2.0.2.tgz
+Source: tree-2.0.4.tar.gz
 Type: ipkg
 Description: List contents of directories in a tree-like format
 Banglang Huang <banglang.huang@foxmail.com>
