@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/lua-eco/Makefile
 
 Package: lua-eco
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +23,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-log
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -44,7 +44,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-sys
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-dns
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -86,7 +86,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-socket
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -107,8 +107,8 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ssl
 Submenu: Lua
-Version: 1.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) +PACKAGE_libopenssl:libopenssl +PACKAGE_libwolfssl:libwolfssl +PACKAGE_libmbedtls:libmbedtls +PACKAGE_libmbedtls:zlib
+Version: 1.0.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) LUA_ECO_OPENSSL:libopenssl LUA_ECO_WOLFSSL:libwolfssl LUA_ECO_MBEDTLS:libmbedtls +LUA_ECO_MBEDTLS:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -125,10 +125,39 @@ Description: SSL support for lua-eco
 https://github.com/zhaojh329/lua-eco
 Jianhui Zhao <zhaojh329@gmail.com>
 @@
+Config:
+    config LUA_ECO_DEFAULT_WOLFSSL
+	bool
+	default y if PACKAGE_libopenssl != y && PACKAGE_libwolfssl >= PACKAGE_libopenssl && PACKAGE_libwolfssl >= PACKAGE_libmbedtls
+
+    config LUA_ECO_DEFAULT_OPENSSL
+	bool
+	default y if !LUA_ECO_DEFAULT_WOLFSSL && PACKAGE_libopenssl >= PACKAGE_libmbedtls
+
+    config LUA_ECO_DEFAULT_MBEDTLS
+	bool
+	default y if !LUA_ECO_DEFAULT_WOLFSSL && !LUA_ECO_DEFAULT_OPENSSL
+
+    choice
+	prompt "SSL Library"
+	default LUA_ECO_OPENSSL if LUA_ECO_DEFAULT_OPENSSL
+	default LUA_ECO_WOLFSSL if LUA_ECO_DEFAULT_WOLFSSL
+	default LUA_ECO_MBEDTLS if LUA_ECO_DEFAULT_MBEDTLS
+	config LUA_ECO_OPENSSL
+		bool "OpenSSL"
+		depends on PACKAGE_libopenssl
+	config LUA_ECO_WOLFSSL
+		bool "wolfSSL"
+		depends on PACKAGE_libwolfssl
+	config LUA_ECO_MBEDTLS
+		bool "mbedTLS"
+		depends on PACKAGE_libmbedtls
+    endchoice
+@@
 
 Package: lua-eco-iw
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -149,7 +178,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ip
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -170,7 +199,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-file
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -191,7 +220,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ubus
 Submenu: Lua
-Version: 1.0.0-1
+Version: 1.0.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libubus
 Conflicts: 
 Menu-Depends: 
