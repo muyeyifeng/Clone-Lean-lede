@@ -16454,6 +16454,25 @@ Description: Mediatek SDHCI driver
 
 @@
 
+Package: kmod-leds-ubnt-ledbar
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mediatek_mt7622 +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ubiquiti UniFi 6 LR LED support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LEDS_UBNT_LEDBAR
+Description:   LED support for Ubiquiti UniFi 6 LR
+
+@@
+
 Package: kmod-camera-bcm2835
 Submenu: Video Support
 Version: <LINUX_VERSION>-
