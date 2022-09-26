@@ -19,6 +19,25 @@ Description: LuCI Support for AHCPd
 
 @@
 
+Package: luci-i18n-ahcp-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-ahcp - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ahcp - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-ahcp-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -57,8 +76,8 @@ Description:     Translation for luci-app-ahcp - Português (Portuguese)
 
 @@
 
-Package: luci-i18n-ahcp-sk
-Default: LUCI_LANG_sk||(ALL&&m)
+Package: luci-i18n-ahcp-ro
+Default: LUCI_LANG_ro||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -67,31 +86,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ahcp - sk translation
+Title: luci-app-ahcp - ro translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - Slovenčina (Slovak)
-
-@@
-
-Package: luci-i18n-ahcp-no
-Default: LUCI_LANG_no||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-ahcp - no translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ahcp - Norsk (Norwegian)
+Description:     Translation for luci-app-ahcp - Română (Romanian)
 
 @@
 
@@ -133,8 +133,8 @@ Description:     Translation for luci-app-ahcp - Polski (Polish)
 
 @@
 
-Package: luci-i18n-ahcp-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-ahcp-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -143,17 +143,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ahcp - uk translation
+Title: luci-app-ahcp - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - украї́нська (Ukrainian)
+Description:     Translation for luci-app-ahcp - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-ahcp-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-ahcp-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -162,12 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ahcp - ja translation
+Title: luci-app-ahcp - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - 日本語 (Japanese)
+Description:     Translation for luci-app-ahcp - Русский (Russian)
 
 @@
 
@@ -209,8 +209,8 @@ Description:     Translation for luci-app-ahcp - Deutsch (German)
 
 @@
 
-Package: luci-i18n-ahcp-ro
-Default: LUCI_LANG_ro||(ALL&&m)
+Package: luci-i18n-ahcp-no
+Default: LUCI_LANG_no||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -219,12 +219,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ahcp - ro translation
+Title: luci-app-ahcp - no translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - Română (Romanian)
+Description:     Translation for luci-app-ahcp - Norsk (Norwegian)
 
 @@
 
@@ -342,8 +342,8 @@ Description:     Translation for luci-app-ahcp - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-ahcp-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-ahcp-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
 Conflicts: 
@@ -352,31 +352,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-ahcp - ru translation
+Title: luci-app-ahcp - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - Русский (Russian)
-
-@@
-
-Package: luci-i18n-ahcp-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-ahcp - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-ahcp - Português do Brasil (Brazialian Portuguese)
+Description:     Translation for luci-app-ahcp - 日本語 (Japanese)
 
 @@
 
@@ -434,6 +415,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ahcp - Español (Spanish)
+
+@@
+
+Package: luci-i18n-ahcp-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-ahcp - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ahcp - Português do Brasil (Brazialian Portuguese)
 
 @@
 

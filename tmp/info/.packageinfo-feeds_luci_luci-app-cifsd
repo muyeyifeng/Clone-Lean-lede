@@ -19,6 +19,25 @@ Description: Network Shares - CIFSD CIFS/SMB kernel fileserver
 
 @@
 
+Package: luci-i18n-cifsd-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: 1-12
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifsd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-cifsd - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cifsd - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-cifsd-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: 1-12
@@ -54,25 +73,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-cifsd - Português (Portuguese)
-
-@@
-
-Package: luci-i18n-cifsd-sk
-Default: LUCI_LANG_sk||(ALL&&m)
-Version: 1-12
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifsd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-cifsd - sk translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-cifsd - Slovenčina (Slovak)
 
 @@
 
@@ -133,8 +133,8 @@ Description:     Translation for luci-app-cifsd - Polski (Polish)
 
 @@
 
-Package: luci-i18n-cifsd-uk
-Default: LUCI_LANG_uk||(ALL&&m)
+Package: luci-i18n-cifsd-sk
+Default: LUCI_LANG_sk||(ALL&&m)
 Version: 1-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifsd
 Conflicts: 
@@ -143,17 +143,17 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-cifsd - uk translation
+Title: luci-app-cifsd - sk translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-cifsd - украї́нська (Ukrainian)
+Description:     Translation for luci-app-cifsd - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-cifsd-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-cifsd-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: 1-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifsd
 Conflicts: 
@@ -162,12 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-cifsd - ja translation
+Title: luci-app-cifsd - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-cifsd - 日本語 (Japanese)
+Description:     Translation for luci-app-cifsd - Русский (Russian)
 
 @@
 
@@ -380,8 +380,8 @@ Description:     Translation for luci-app-cifsd - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-cifsd-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-cifsd-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: 1-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifsd
 Conflicts: 
@@ -390,12 +390,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-cifsd - ru translation
+Title: luci-app-cifsd - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-cifsd - Русский (Russian)
+Description:     Translation for luci-app-cifsd - 日本語 (Japanese)
 
 @@
 
