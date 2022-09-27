@@ -738,6 +738,42 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: mt7921bt-firmware
+Version: 20220913-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: mt7921bt firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220913.tar.xz
+Type: ipkg
+Description: mt7921bt firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7922bt-firmware
+Version: 20220913-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: mt7922bt firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220913.tar.xz
+Type: ipkg
+Description: mt7922bt firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: amd64-microcode
 Version: 20220913-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86

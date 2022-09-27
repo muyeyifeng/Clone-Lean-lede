@@ -6,7 +6,7 @@ Menu: 1
 Submenu: SSL
 Version: 5.5.0-stable-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +WOLFSSL_HAS_DEVCRYPTO:kmod-cryptodev +WOLFSSL_HAS_AFALG:kmod-crypto-user
-Conflicts: libwolfssl-cpu-crypto
+Conflicts: libwolfsslcpu-crypto
 Menu-Depends: 
 Provides: libcyassl
 Build-Variant: regular
@@ -29,7 +29,7 @@ Config:
 	source "package/libs/wolfssl/Config.in"
 @@
 
-Package: libwolfssl-cpu-crypto
+Package: libwolfsslcpu-crypto
 Submenu: SSL
 Version: 5.5.0-stable-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @((aarch64||x86_64)&&(m||!TARGET_bcm27xx))
@@ -53,14 +53,14 @@ http://www.wolfssl.com/
 Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 Config:
-    if TARGET_armvirt && PACKAGE_libwolfssl-cpu-crypto = y
-	comment "You are about to build libwolfssl-cpu-crypto into an armvirt_64 image."
+    if TARGET_armvirt && PACKAGE_libwolfsslcpu-crypto = y
+	comment "You are about to build libwolfsslcpu-crypto into an armvirt_64 image."
 	comment "Ensure all of your installation targets support the Crypto Extension. "
 	comment "Look for the 'aes' feature in /proc/cpuinfo. This library does not do "
 	comment "run-time detection and will crash if the CPU does not support it.     "
     endif
-    if TARGET_bcm27xx && PACKAGE_libwolfssl-cpu-crypto
-	comment "Beware that libwolfssl-cpu-crypto will not run in a bcm27xx target.   "
+    if TARGET_bcm27xx && PACKAGE_libwolfsslcpu-crypto
+	comment "Beware that libwolfsslcpu-crypto will not run in a bcm27xx target.   "
     endif
 @@
 

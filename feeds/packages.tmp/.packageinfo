@@ -2468,7 +2468,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18.4-1
+Version: 1.18.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2478,7 +2478,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.4.src.tar.gz
+Source: go1.18.6.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2504,7 +2504,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18.4-1
+Version: 1.18.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2514,7 +2514,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.4.src.tar.gz
+Source: go1.18.6.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2536,7 +2536,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18.4-1
+Version: 1.18.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2546,7 +2546,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.4.src.tar.gz
+Source: go1.18.6.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -47855,7 +47855,7 @@ messense <messense@icloud.com>
 Source-Makefile: feeds/packages/multimedia/ffmpeg/Makefile
 
 Package: ffmpeg
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -47866,7 +47866,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg program
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47883,7 +47883,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -47894,7 +47894,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg CLI media identifier
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47911,7 +47911,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffmpeg-custom
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
@@ -47922,7 +47922,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg program (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47939,7 +47939,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe-custom
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
@@ -47950,7 +47950,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg CLI media identifier (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47967,7 +47967,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-audio-dec
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -47978,7 +47978,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (audio)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -47995,7 +47995,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-full
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +libgnutls +PACKAGE_libopus:libopus +SOFT_FLOAT:shine +!SOFT_FLOAT:lame-lib +PACKAGE_libx264:libx264 +!PACKAGE_libx264:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -48006,7 +48006,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (full)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -48023,7 +48023,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-mini
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -48034,7 +48034,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (mini)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -48052,7 +48052,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-custom
 Menu: 1
-Version: 5.1.1-1
+Version: 5.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -48063,7 +48063,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-5.1.1.tar.xz
+Source: ffmpeg-5.1.2.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -54089,7 +54089,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 Source-Makefile: feeds/packages/net/adblock/Makefile
 
 Package: adblock
-Version: 4.1.3-9
+Version: 4.1.4-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +jsonfilter +coreutils +coreutils-sort +ca-bundle +opkg
 Conflicts: 
 Menu-Depends: 
@@ -54102,7 +54102,7 @@ Maintainer: Dirk Brenken <dev@brenken.org>
 Source: 
 License: GPL-3.0-or-later
 Type: ipkg
-Description: Powerful adblock script to block ad/abuse domains via dnsmasq, unbound, named or kresd.
+Description: Powerful adblock solution to block ad/abuse domains via dnsmasq, unbound, named or kresd.
 The script supports many domain blacklist sites plus manual black- and whitelist overrides.
 Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
 
@@ -54141,7 +54141,7 @@ Source-Makefile: feeds/packages/net/adguardhome/Makefile
 Build-Depends: golang/host node/host node-yarn/host
 
 Package: adguardhome
-Version: 0.107.11-1
+Version: 0.107.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -54151,7 +54151,7 @@ Category: Network
 Repository: base
 Title: Network-wide ads and trackers blocking DNS server
 Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Source: adguardhome-0.107.11.tar.xz
+Source: adguardhome-0.107.12.tar.xz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -103339,7 +103339,7 @@ Build-Types: host
 
 Package: vim
 Submenu: Editors
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103349,7 +103349,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Tiny)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Tiny build)
@@ -103359,7 +103359,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-full
 Submenu: Editors
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103369,7 +103369,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Normal)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Normal build)
@@ -103379,7 +103379,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-fuller
 Submenu: Editors
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103389,7 +103389,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Big)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Big build)
@@ -103399,7 +103399,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-runtime
 Submenu: Editors
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103409,7 +103409,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (runtime files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Runtime files)
@@ -103419,7 +103419,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-help
 Submenu: Editors
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103429,7 +103429,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (help files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Help files)
@@ -103438,7 +103438,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 @@
 
 Package: xxd
-Version: 8.2-5
+Version: 9.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -103448,7 +103448,7 @@ Category: Utilities
 Repository: base
 Title: make a hexdump or do the reverse
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-8.2.tar.bz2
+Source: vim-9.0.tar.bz2
 Type: ipkg
 Description:  xxd creates a hex dump of a given file or standard input, it can also convert
  a hex dump back to its original binary form.
