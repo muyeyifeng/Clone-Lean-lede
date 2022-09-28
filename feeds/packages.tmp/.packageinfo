@@ -2842,7 +2842,7 @@ Source-Makefile: feeds/packages/lang/lua-eco/Makefile
 
 Package: lua-eco
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -2863,7 +2863,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-log
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -2884,7 +2884,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-sys
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -2905,7 +2905,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-dns
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -2926,7 +2926,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-socket
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -2947,7 +2947,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ssl
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) LUA_ECO_OPENSSL:libopenssl LUA_ECO_WOLFSSL:libwolfssl LUA_ECO_MBEDTLS:libmbedtls +LUA_ECO_MBEDTLS:zlib
 Conflicts: 
 Menu-Depends: 
@@ -2968,7 +2968,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Config:
     config LUA_ECO_DEFAULT_WOLFSSL
 	bool
-	default y if PACKAGE_libopenssl != y && PACKAGE_libwolfssl >= PACKAGE_libopenssl && PACKAGE_libwolfssl >= PACKAGE_libmbedtls
+	default y if PACKAGE_libopenssl != y && (PACKAGE_libwolfssl >= PACKAGE_libopenssl || PACKAGE_libwolfsslcpu-crypto >= PACKAGE_libopenssl) && (PACKAGE_libwolfssl >= PACKAGE_libmbedtls || PACKAGE_libwolfsslcpu-crypto >= PACKAGE_libmbedtls)
 
     config LUA_ECO_DEFAULT_OPENSSL
 	bool
@@ -2988,7 +2988,7 @@ Config:
 		depends on PACKAGE_libopenssl
 	config LUA_ECO_WOLFSSL
 		bool "wolfSSL"
-		depends on PACKAGE_libwolfssl
+		depends on PACKAGE_libwolfssl || PACKAGE_libwolfsslcpu-crypto
 	config LUA_ECO_MBEDTLS
 		bool "mbedTLS"
 		depends on PACKAGE_libmbedtls
@@ -2997,7 +2997,7 @@ Config:
 
 Package: lua-eco-iw
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -3018,7 +3018,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ip
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -3039,7 +3039,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-file
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3060,7 +3060,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ubus
 Submenu: Lua
-Version: 1.0.0-2
+Version: 1.0.0-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libubus
 Conflicts: 
 Menu-Depends: 
@@ -103339,7 +103339,7 @@ Build-Types: host
 
 Package: vim
 Submenu: Editors
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103349,7 +103349,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Tiny)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Tiny build)
@@ -103359,7 +103359,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-full
 Submenu: Editors
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103369,7 +103369,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Normal)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Normal build)
@@ -103379,7 +103379,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-fuller
 Submenu: Editors
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103389,7 +103389,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (Big)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Big build)
@@ -103399,7 +103399,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-runtime
 Submenu: Editors
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103409,7 +103409,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (runtime files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Runtime files)
@@ -103419,7 +103419,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: vim-help
 Submenu: Editors
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -103429,7 +103429,7 @@ Category: Utilities
 Repository: base
 Title: Vi IMproved - enhanced vi editor (help files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Help files)
@@ -103438,7 +103438,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 @@
 
 Package: xxd
-Version: 9.0-1
+Version: 8.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -103448,7 +103448,7 @@ Category: Utilities
 Repository: base
 Title: make a hexdump or do the reverse
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: vim-9.0.tar.bz2
+Source: vim-8.2.tar.bz2
 Type: ipkg
 Description:  xxd creates a hex dump of a given file or standard input, it can also convert
  a hex dump back to its original binary form.
