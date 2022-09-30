@@ -2,8 +2,8 @@ Source-Makefile: feeds/telephony/net/sngrep/Makefile
 
 Package: sngrep
 Submenu: Telephony
-Version: 1.4.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +libpcap +SNGREP_WITH_PCRE:libpcre
+Version: 1.6.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +libpcap +SNGREP_WITH_PCRE:libpcre2 +SNGREP_WITH_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Ncurses SIP messages flow viewer
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: sngrep-1.4.10.tar.gz
+Source: sngrep-1.6.0.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -38,6 +38,12 @@ Config:
       default y
       help
         Enable Perl compatible regular expressions
+
+    config SNGREP_WITH_ZLIB
+      bool "zlib support"
+      default y
+      help
+        Add support for opening gzip compressed input files
   endmenu
 @@
 

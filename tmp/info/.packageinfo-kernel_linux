@@ -95,25 +95,6 @@ Description:  PATA support for ARTOP 6210/6260 host controllers
 
 @@
 
-Package: kmod-ata-marvell-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_MV
-Description:  SATA support for marvell chipsets
-
-@@
-
 Package: kmod-ata-nvidia-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -10497,25 +10478,6 @@ Description:  Kernel support for MMC/SD cards
 
 @@
 
-Package: kmod-mvsdio
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: +kmod-mmc @TARGET_kirkwood
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell MMC/SD/SDIO host driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MMC_MVSDIO
-Description:  Kernel support for the Marvell SDIO host driver.
-
-@@
-
 Package: kmod-sdhci
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -16205,6 +16167,44 @@ Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
 
 @@
 
+Package: kmod-ata-marvell-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_kirkwood +kmod-ata-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_MV CONFIG_SATA_PMP=y
+Description:  SATA support for marvell chipsets
+
+@@
+
+Package: kmod-mvsdio
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: +kmod-mmc @TARGET_kirkwood
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell MMC/SD/SDIO host driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MMC_MVSDIO
+Description:  Kernel support for the Marvell SDIO host driver.
+
+@@
+
 Package: kmod-phy-bcm-ns-usb2
 Submenu: USB Support
 Version: <LINUX_VERSION>-
@@ -16585,25 +16585,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_MMC_MTK 
 Description: Mediatek SDHCI driver
-
-@@
-
-Package: kmod-leds-ubnt-ledbar
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek_mt7622 +kmod-i2c-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ubiquiti UniFi 6 LR LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_UBNT_LEDBAR
-Description:   LED support for Ubiquiti UniFi 6 LR
 
 @@
 
