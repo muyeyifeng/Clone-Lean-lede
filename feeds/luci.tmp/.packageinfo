@@ -19365,6 +19365,28 @@ Description: Lua library for IP calculation and routing information
 @@
 
 
+Source-Makefile: feeds/luci/libs/luci-lib-ipkg/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-lib-ipkg
+Submenu: 6. Libraries
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Legacy opkg interface class
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Legacy opkg interface class
+
+@@
+
+
 Source-Makefile: feeds/luci/libs/luci-lib-iptparser/Makefile
 Build-Depends: lua/host luci-base/host 
 
