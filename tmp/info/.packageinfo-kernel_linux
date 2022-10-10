@@ -14464,10 +14464,29 @@ Description:   CRTC helpers for KMS drivers.
 
 @@
 
+Package: kmod-drm-display-helper
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @DISPLAY_SUPPORT +kmod-drm @(LINUX_5_19||LINUX_6_0)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: DRM helpers for display adapters drivers
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_DISPLAY_HELPER
+Description:   DRM helpers for display adapters drivers.
+
+@@
+
 Package: kmod-drm-amdgpu
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-ttm +kmod-drm-kms-helper +kmod-i2c-algo-bit +amdgpu-firmware
+Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-ttm +kmod-drm-kms-helper +kmod-i2c-algo-bit +amdgpu-firmware +(LINUX_5_19||LINUX_6_0):kmod-drm-display-helper
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15343,7 +15362,7 @@ Description:  The Konica USB Camera Driver (konica) kernel module
 Package: kmod-drm-i915
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-drm-ttm +kmod-drm-kms-helper +i915-firmware
+Depends: @TARGET_x86 +kmod-drm-ttm +kmod-drm-kms-helper +i915-firmware +(LINUX_5_19||LINUX_6_0):kmod-drm-display-helper
 Conflicts: 
 Menu-Depends: 
 Provides: 
