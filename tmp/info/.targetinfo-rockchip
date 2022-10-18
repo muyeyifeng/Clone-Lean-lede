@@ -9,7 +9,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe
 CPU-Type: 
 Linux-Version: 5.15.74
-Linux-Testing-Version: 5.19
+Linux-Testing-Version: 6.0
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -26,7 +26,7 @@ Target-Depends:
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
 Linux-Version: 5.15.74
-Linux-Testing-Version: 5.19
+Linux-Testing-Version: 6.0
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -43,6 +43,20 @@ Target-Profile-SupportedDevices: ezpro,mrkaio-m68s
 
 Target-Profile-Description:
 Build firmware images for EZPRO Mrkaio M68S
+
+
+
+@@
+
+Target-Profile: DEVICE_hinlink_opc-h68k
+Target-Profile-Name: HINLINK OPC-H68K
+Target-Profile-Packages: kmod-mt7921e kmod-r8125 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hinlink,opc-h68k
+
+
+Target-Profile-Description:
+Build firmware images for HINLINK OPC-H68K
 
 
 

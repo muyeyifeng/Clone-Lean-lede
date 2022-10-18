@@ -19,25 +19,6 @@ Description: LuCI Support for Watchcat
 
 @@
 
-Package: luci-i18n-watchcat-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-watchcat - uk translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-watchcat - украї́нська (Ukrainian)
-
-@@
-
 Package: luci-i18n-watchcat-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -95,44 +76,6 @@ Description:     Translation for luci-app-watchcat - Română (Romanian)
 
 @@
 
-Package: luci-i18n-watchcat-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-watchcat - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-watchcat - English
-
-@@
-
-Package: luci-i18n-watchcat-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-watchcat - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-watchcat - Polski (Polish)
-
-@@
-
 Package: luci-i18n-watchcat-sk
 Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
@@ -152,8 +95,8 @@ Description:     Translation for luci-app-watchcat - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-watchcat-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-watchcat-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
 Conflicts: 
@@ -162,12 +105,50 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-watchcat - ru translation
+Title: luci-app-watchcat - el translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-watchcat - Русский (Russian)
+Description:     Translation for luci-app-watchcat - Ελληνικά (Greek)
+
+@@
+
+Package: luci-i18n-watchcat-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-watchcat - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-watchcat - украї́нська (Ukrainian)
+
+@@
+
+Package: luci-i18n-watchcat-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-watchcat - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-watchcat - 日本語 (Japanese)
 
 @@
 
@@ -228,6 +209,25 @@ Description:     Translation for luci-app-watchcat - Norsk (Norwegian)
 
 @@
 
+Package: luci-i18n-watchcat-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-watchcat - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-watchcat - Português do Brasil (Brazialian Portuguese)
+
+@@
+
 Package: luci-i18n-watchcat-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x-1
@@ -244,6 +244,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-watchcat - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-watchcat-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-watchcat - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-watchcat - Polski (Polish)
 
 @@
 
@@ -342,8 +361,8 @@ Description:     Translation for luci-app-watchcat - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-watchcat-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-watchcat-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
 Conflicts: 
@@ -352,31 +371,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: luci
-Title: luci-app-watchcat - ja translation
+Title: luci-app-watchcat - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-watchcat - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-watchcat-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-watchcat - el translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-watchcat - Ελληνικά (Greek)
+Description:     Translation for luci-app-watchcat - Русский (Russian)
 
 @@
 
@@ -399,6 +399,25 @@ Description:     Translation for luci-app-watchcat - Català (Catalan)
 
 @@
 
+Package: luci-i18n-watchcat-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-watchcat - en translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-watchcat - English
+
+@@
+
 Package: luci-i18n-watchcat-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -415,25 +434,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-watchcat - Español (Spanish)
-
-@@
-
-Package: luci-i18n-watchcat-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-watchcat
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-watchcat - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-watchcat - Português do Brasil (Brazialian Portuguese)
 
 @@
 

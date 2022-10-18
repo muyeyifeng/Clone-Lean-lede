@@ -19,25 +19,6 @@ Description: LuCI Support for the Polipo Proxy
 
 @@
 
-Package: luci-i18n-polipo-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-polipo - uk translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-polipo - украї́нська (Ukrainian)
-
-@@
-
 Package: luci-i18n-polipo-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -95,44 +76,6 @@ Description:     Translation for luci-app-polipo - Română (Romanian)
 
 @@
 
-Package: luci-i18n-polipo-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-polipo - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-polipo - English
-
-@@
-
-Package: luci-i18n-polipo-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-polipo - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-polipo - Polski (Polish)
-
-@@
-
 Package: luci-i18n-polipo-sk
 Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
@@ -152,8 +95,8 @@ Description:     Translation for luci-app-polipo - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-polipo-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-polipo-el
+Default: LUCI_LANG_el||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
 Conflicts: 
@@ -162,12 +105,50 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-polipo - ru translation
+Title: luci-app-polipo - el translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-polipo - Русский (Russian)
+Description:     Translation for luci-app-polipo - Ελληνικά (Greek)
+
+@@
+
+Package: luci-i18n-polipo-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-polipo - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - украї́нська (Ukrainian)
+
+@@
+
+Package: luci-i18n-polipo-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-polipo - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - 日本語 (Japanese)
 
 @@
 
@@ -228,6 +209,25 @@ Description:     Translation for luci-app-polipo - Norsk (Norwegian)
 
 @@
 
+Package: luci-i18n-polipo-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-polipo - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - Português do Brasil (Brazialian Portuguese)
+
+@@
+
 Package: luci-i18n-polipo-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x-1
@@ -244,6 +244,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-polipo - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-polipo-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-polipo - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - Polski (Polish)
 
 @@
 
@@ -342,8 +361,8 @@ Description:     Translation for luci-app-polipo - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-polipo-ja
-Default: LUCI_LANG_ja||(ALL&&m)
+Package: luci-i18n-polipo-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
 Conflicts: 
@@ -352,31 +371,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-polipo - ja translation
+Title: luci-app-polipo - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-polipo - 日本語 (Japanese)
-
-@@
-
-Package: luci-i18n-polipo-el
-Default: LUCI_LANG_el||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-polipo - el translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-polipo - Ελληνικά (Greek)
+Description:     Translation for luci-app-polipo - Русский (Russian)
 
 @@
 
@@ -399,6 +399,25 @@ Description:     Translation for luci-app-polipo - Català (Catalan)
 
 @@
 
+Package: luci-i18n-polipo-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-polipo - en translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - English
+
+@@
+
 Package: luci-i18n-polipo-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -415,25 +434,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-polipo - Español (Spanish)
-
-@@
-
-Package: luci-i18n-polipo-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-polipo - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-polipo - Português do Brasil (Brazialian Portuguese)
 
 @@
 
