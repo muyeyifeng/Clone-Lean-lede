@@ -3,8 +3,8 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.1-beta9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-tun
+Version: 1.1-beta10-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.1-beta9.tar.gz
+Source: sing-box-1.1-beta10.tar.gz
 License: GPL-3.0
 Type: ipkg
 Description: The universal proxy platform.
@@ -23,42 +23,49 @@ https://sing-box.sagernet.org
 Config:
   menu "Customizing build tags"
 
-    config TAG_sing-box_ACME
+    config SING_BOX_BUILD_ACME
       bool "Build with ACME TLS certificate issuer support"
       default n
 
-    config TAG_sing-box_CLASH_API
+    config SING_BOX_BUILD_CLASH_API
       bool "Build with Clash API support (EXPERIMENTAL!!!)"
       default y
 
-    config TAG_sing-box_ECH
+    config SING_BOX_BUILD_ECH
       bool "Build with TLS ECH extension support"
       default n
 
-    config TAG_sing-box_GRPC
+    config SING_BOX_BUILD_GRPC
       bool "Build with standard gRPC support"
       default n
+      help
+      sing-box has better performance gun-lite gRPC built-in by default.
+      This standard gRPC has better compatibility but poor performance.
 
-    config TAG_sing-box_GVISOR
+    config SING_BOX_BUILD_GVISOR
       bool "Build with gVisor support"
       default n
 
-    config TAG_sing-box_QUIC
+    config SING_BOX_BUILD_QUIC
       bool "Build with QUIC support"
       default y
       help
         Required by HTTP3 DNS transports, Naive inbound,
         Hysteria inbound / outbound, and v2ray QUIC transport.
 
-    config TAG_sing-box_SHADOWSOCKSR
+    config SING_BOX_BUILD_SHADOWSOCKSR
       bool "Build with ShadowsockR support"
       default n
 
-    config TAG_sing-box_UTLS
+    config SING_BOX_BUILD_UTLS
       bool "Build with uTLS support"
       default y
 
-    config TAG_sing-box_WIREGUARD
+    config SING_BOX_BUILD_V2RAY_API
+      bool "Build with V2Ray API support (EXPERIMENTAL!!!)"
+      default n
+
+    config SING_BOX_BUILD_WIREGUARD
       bool "Build with WireGuard support"
       default y
 

@@ -19,6 +19,25 @@ Description: Universal Plug & Play configuration module
 
 @@
 
+Package: luci-i18n-upnp-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-upnp - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-upnp - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-upnp-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -76,6 +95,44 @@ Description:     Translation for luci-app-upnp - Română (Romanian)
 
 @@
 
+Package: luci-i18n-upnp-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-upnp - en translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-upnp - English
+
+@@
+
+Package: luci-i18n-upnp-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-upnp - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-upnp - Polski (Polish)
+
+@@
+
 Package: luci-i18n-upnp-sk
 Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
@@ -95,8 +152,8 @@ Description:     Translation for luci-app-upnp - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-upnp-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-upnp-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
 Conflicts: 
@@ -105,50 +162,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-upnp - el translation
+Title: luci-app-upnp - ru translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-upnp - Ελληνικά (Greek)
-
-@@
-
-Package: luci-i18n-upnp-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-upnp - uk translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-upnp - украї́нська (Ukrainian)
-
-@@
-
-Package: luci-i18n-upnp-ja
-Default: LUCI_LANG_ja||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-upnp - ja translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-upnp - 日本語 (Japanese)
+Description:     Translation for luci-app-upnp - Русский (Russian)
 
 @@
 
@@ -209,25 +228,6 @@ Description:     Translation for luci-app-upnp - Norsk (Norwegian)
 
 @@
 
-Package: luci-i18n-upnp-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-upnp - pt-br translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-upnp - Português do Brasil (Brazialian Portuguese)
-
-@@
-
 Package: luci-i18n-upnp-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x-1
@@ -244,25 +244,6 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-upnp - Bahasa Melayu (Malay)
-
-@@
-
-Package: luci-i18n-upnp-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-upnp - pl translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-upnp - Polski (Polish)
 
 @@
 
@@ -361,8 +342,8 @@ Description:     Translation for luci-app-upnp - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-upnp-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-upnp-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
 Conflicts: 
@@ -371,12 +352,31 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-upnp - ru translation
+Title: luci-app-upnp - ja translation
 Maintainer: 
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-upnp - Русский (Russian)
+Description:     Translation for luci-app-upnp - 日本語 (Japanese)
+
+@@
+
+Package: luci-i18n-upnp-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-upnp - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-upnp - Ελληνικά (Greek)
 
 @@
 
@@ -399,25 +399,6 @@ Description:     Translation for luci-app-upnp - Català (Catalan)
 
 @@
 
-Package: luci-i18n-upnp-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-upnp - en translation
-Maintainer: 
-Source: 
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-upnp - English
-
-@@
-
 Package: luci-i18n-upnp-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -434,6 +415,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-upnp - Español (Spanish)
+
+@@
+
+Package: luci-i18n-upnp-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-upnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-upnp - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-upnp - Português do Brasil (Brazialian Portuguese)
 
 @@
 

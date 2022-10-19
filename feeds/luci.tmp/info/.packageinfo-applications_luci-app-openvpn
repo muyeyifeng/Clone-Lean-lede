@@ -20,6 +20,26 @@ Description: LuCI Support for OpenVPN
 
 @@
 
+Package: luci-i18n-openvpn-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn - uk translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn - украї́нська (Ukrainian)
+
+@@
+
 Package: luci-i18n-openvpn-hu
 Default: LUCI_LANG_hu||(ALL&&m)
 Version: x-1
@@ -80,6 +100,46 @@ Description:     Translation for luci-app-openvpn - Română (Romanian)
 
 @@
 
+Package: luci-i18n-openvpn-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn - en translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn - English
+
+@@
+
+Package: luci-i18n-openvpn-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn - pl translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn - Polski (Polish)
+
+@@
+
 Package: luci-i18n-openvpn-sk
 Default: LUCI_LANG_sk||(ALL&&m)
 Version: x-1
@@ -100,8 +160,8 @@ Description:     Translation for luci-app-openvpn - Slovenčina (Slovak)
 
 @@
 
-Package: luci-i18n-openvpn-el
-Default: LUCI_LANG_el||(ALL&&m)
+Package: luci-i18n-openvpn-ru
+Default: LUCI_LANG_ru||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
 Conflicts: 
@@ -110,53 +170,13 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-openvpn - el translation
+Title: luci-app-openvpn - ru translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-openvpn - Ελληνικά (Greek)
-
-@@
-
-Package: luci-i18n-openvpn-uk
-Default: LUCI_LANG_uk||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-openvpn - uk translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-openvpn - украї́нська (Ukrainian)
-
-@@
-
-Package: luci-i18n-openvpn-ja
-Default: LUCI_LANG_ja||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-openvpn - ja translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-openvpn - 日本語 (Japanese)
+Description:     Translation for luci-app-openvpn - Русский (Russian)
 
 @@
 
@@ -220,26 +240,6 @@ Description:     Translation for luci-app-openvpn - Norsk (Norwegian)
 
 @@
 
-Package: luci-i18n-openvpn-pt-br
-Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-openvpn - pt-br translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-openvpn - Português do Brasil (Brazialian Portuguese)
-
-@@
-
 Package: luci-i18n-openvpn-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x-1
@@ -257,26 +257,6 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Bahasa Melayu (Malay)
-
-@@
-
-Package: luci-i18n-openvpn-pl
-Default: LUCI_LANG_pl||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-openvpn - pl translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-openvpn - Polski (Polish)
 
 @@
 
@@ -380,8 +360,8 @@ Description:     Translation for luci-app-openvpn - Svenska (Swedish)
 
 @@
 
-Package: luci-i18n-openvpn-ru
-Default: LUCI_LANG_ru||(ALL&&m)
+Package: luci-i18n-openvpn-ja
+Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
 Conflicts: 
@@ -390,13 +370,33 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: luci-app-openvpn - ru translation
+Title: luci-app-openvpn - ja translation
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-openvpn - Русский (Russian)
+Description:     Translation for luci-app-openvpn - 日本語 (Japanese)
+
+@@
+
+Package: luci-i18n-openvpn-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn - el translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn - Ελληνικά (Greek)
 
 @@
 
@@ -420,26 +420,6 @@ Description:     Translation for luci-app-openvpn - Català (Catalan)
 
 @@
 
-Package: luci-i18n-openvpn-en
-Default: LUCI_LANG_en||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-openvpn - en translation
-Maintainer: 
-Source: 
-License: Apache-2.0
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-openvpn - English
-
-@@
-
 Package: luci-i18n-openvpn-es
 Default: LUCI_LANG_es||(ALL&&m)
 Version: x-1
@@ -457,6 +437,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Español (Spanish)
+
+@@
+
+Package: luci-i18n-openvpn-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn - pt-br translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn - Português do Brasil (Brazialian Portuguese)
 
 @@
 
