@@ -3,7 +3,7 @@ Build-Depends/host: libsepol/host pcre/host
 Build-Types: host
 
 Package: libselinux
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsepol +libpcre +USE_MUSL:musl-fts
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: Runtime SELinux library
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -30,7 +30,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-avcstat
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -40,7 +40,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library avcstat utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -51,7 +51,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-compute_av
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library compute_av utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -72,7 +72,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-compute_create
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -82,7 +82,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library compute_create utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93,7 +93,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-compute_member
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -103,7 +103,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library compute_member utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -114,7 +114,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-compute_relabel
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -124,7 +124,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library compute_relabel utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -135,7 +135,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getconlist
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -145,7 +145,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getconlist utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -156,7 +156,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getdefaultcon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -166,7 +166,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getdefaultcon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -177,7 +177,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getenforce
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -187,7 +187,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getenforce utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -198,7 +198,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getfilecon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -208,7 +208,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getfilecon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -219,7 +219,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getpidcon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -229,7 +229,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getpidcon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -240,7 +240,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getsebool
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -250,7 +250,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getsebool utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -261,7 +261,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-getseuser
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -271,7 +271,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library getseuser utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -282,7 +282,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-matchpathcon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -292,7 +292,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library matchpathcon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -303,7 +303,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-policyvers
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -313,7 +313,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library policyvers utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -324,7 +324,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-sefcontext_compile
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -334,7 +334,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library sefcontext_compile utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -345,7 +345,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selabel_digest
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -355,7 +355,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selabel_digest utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -366,7 +366,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selabel_get_digests_all_partial_matches
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -376,7 +376,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selabel_get_digests_all_partial_matches utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -387,7 +387,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selabel_lookup
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -397,7 +397,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selabel_lookup utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -408,7 +408,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selabel_lookup_best_match
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -418,7 +418,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selabel_lookup_best_match utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -429,7 +429,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selabel_partial_match
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -439,7 +439,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selabel_partial_match utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -450,7 +450,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selinux_check_access
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -460,7 +460,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selinux_check_access utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -471,7 +471,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selinux_check_securetty_context
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -481,7 +481,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selinux_check_securetty_context utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -492,7 +492,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selinuxenabled
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -502,7 +502,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selinuxenabled utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -513,7 +513,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-selinuxexeccon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -523,7 +523,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library selinuxexeccon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -534,7 +534,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-setenforce
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -544,7 +544,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library setenforce utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -555,7 +555,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-setfilecon
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -565,7 +565,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library setfilecon utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -576,7 +576,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-togglesebool
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -586,7 +586,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library togglesebool utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -597,7 +597,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: libselinux-validatetrans
 Submenu: libselinux tools
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -607,7 +607,7 @@ Category: Utilities
 Repository: base
 Title: Runtime SELinux library validatetrans utility
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: libselinux-3.2.tar.gz
+Source: libselinux-3.3.tar.gz
 License: libselinux-1.0
 LicenseFiles: LICENSE
 Type: ipkg
