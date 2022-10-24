@@ -1,3 +1,4 @@
+$(eval $(call PackageDir,chinadns-ng,chinadns-ng,))
 $(eval $(call PackageDir,dns2tcp,dns2tcp,))
 $(eval $(call PackageDir,hysteria,hysteria,))
 $(eval $(call PackageDir,lua-neturl,lua-neturl,))

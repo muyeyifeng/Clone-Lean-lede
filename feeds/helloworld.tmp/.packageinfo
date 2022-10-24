@@ -1,3 +1,27 @@
+Source-Makefile: feeds/helloworld/chinadns-ng/Makefile
+
+Package: chinadns-ng
+Submenu: IP Addresses and Names
+Version: 1.0-beta.25-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: ChinaDNS next generation, refactoring with epoll and ipset.
+Maintainer: pexcn <i@pexcn.me>
+Source: chinadns-ng-1.0-beta.25.tar.xz
+License: AGPL-3.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description: ChinaDNS next generation, refactoring with epoll and ipset.
+https://github.com/zfl9/chinadns-ng
+pexcn <i@pexcn.me>
+@@
+
+
 Source-Makefile: feeds/helloworld/dns2tcp/Makefile
 
 Package: dns2tcp
@@ -77,8 +101,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
-Version: 186-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +lua-neturl +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan
+Version: 186-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +lua-neturl +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,9 +172,9 @@ choice
 	bool "SagerNet-core (An enhanced edition of v2ray-core)"
 endchoice
 
-config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
-	bool "Include Kcptun"
-	default n
+config PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG
+	bool "Include ChinaDNS-NG"
+	default y
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria
 	bool "Include Hysteria"
@@ -158,6 +182,10 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks
 	bool "Include IPT2Socks"
+	default n
+
+config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
+	bool "Include Kcptun"
 	default n
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy
@@ -193,7 +221,7 @@ config PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan
 
 Package: luci-i18n-ssr-plus-zh_Hans
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: 186-6
+Version: 186-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -212,7 +240,7 @@ Description:     Translation for luci-app-ssr-plus -
 
 Package: luci-i18n-ssr-plus-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 186-6
+Version: 186-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-plus
 Conflicts: 
 Menu-Depends: 
@@ -687,7 +715,7 @@ Source-Makefile: feeds/helloworld/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202209080101-1
+Version: 202210200105-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -708,7 +736,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20220908131416-1
+Version: 20221023064040-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
