@@ -1,12 +1,12 @@
 Source-Makefile: package/feeds/packages/softethervpn/Makefile
-Build-Depends: softethervpn/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
-Build-Depends/host: readline/host libiconv/host
+Build-Depends: softethervpn/host
+Build-Depends/host: readline/host
 Build-Types: host
 
 Package: softethervpn-base
 Submenu: VPN
 Version: 4.38-9760-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +zlib +BUILD_NLS:libiconv-full
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
