@@ -13407,6 +13407,20 @@ Target-Description:
 
 @@
 Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom kmod-leds-gpio kmod-gpio-button-hotplug kmod-ath11k-ahb ath11k-firmware-ipq6018 wpad-openssl uboot-envtools kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 nss-firmware-ipq6018 qca-nss-ecm-64 iwinfo
+Target-Profile: DEVICE_cmiot_ax18
+Target-Profile-Name: CMIOT AX18
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cmiot,ax18
+
+
+Target-Profile-Description:
+Build firmware images for CMIOT AX18
+
+
+
+@@
+
 Target-Profile: DEVICE_mr7350
 Target-Profile-Name: Linksys MR7350
 Target-Profile-Packages: kmod-leds-pca963x 
@@ -13444,6 +13458,20 @@ Target-Profile-SupportedDevices: eap610-outdoor
 
 Target-Profile-Description:
 Build firmware images for TP-Link EAP610-Outdoor
+
+
+
+@@
+
+Target-Profile: DEVICE_zn_m2
+Target-Profile-Name: ZN M2
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zn,m2
+
+
+Target-Profile-Description:
+Build firmware images for ZN M2
 
 
 
@@ -25389,6 +25417,38 @@ Build firmware images for Xunlong Orange Pi R1 Plus LTS
 
 
 Source-Makefile: target/linux/silicon/Makefile
+Target: silicon
+Target-Board: silicon
+Target-Name: Apple Silicon family
+Target-Arch: arm
+Target-Arch-Packages: arm_xscale
+Target-Features: audio boot-part ext4 fpu squashfs usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: xscale
+Linux-Version: 6.0.5
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware image for Apple Silicon family
+@@
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates e2fsprogs kmod-sound-core kmod-usb-hid mkf2fs partx-utils 
+Target: silicon/armv8
+Target-Board: silicon
+Target-Name: Apple Silicon family
+Target-Arch: arm
+Target-Arch-Packages: arm_xscale
+Target-Features: audio boot-part ext4 fpu squashfs usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: xscale
+Linux-Version: 6.0.5
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware image for Apple Silicon family
+@@
+Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates e2fsprogs kmod-sound-core kmod-usb-hid mkf2fs partx-utils 
 
 Source-Makefile: target/linux/sunxi/Makefile
 Target: sunxi
