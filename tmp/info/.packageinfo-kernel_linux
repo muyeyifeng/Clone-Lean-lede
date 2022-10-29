@@ -3773,7 +3773,7 @@ Description:  The industrial I/O subsystem provides a unified framework for
 Package: kmod-iio-kfifo-buf
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core
+Depends:  +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3793,7 +3793,7 @@ Description:  A simple fifo based on kfifo.  Note that this currently provides n
 Package: kmod-industrialio-triggered-buffer
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-iio-kfifo-buf
+Depends: +kmod-iio-kfifo-buf +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3812,7 +3812,7 @@ Description:  Provides helper functions for setting up triggered buffers.
 Package: kmod-iio-ad799x
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer
+Depends: +kmod-i2c-core +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3833,7 +3833,7 @@ Description:  support for Analog Devices:
 Package: kmod-iio-ads1015
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-regmap-i2c +kmod-industrialio-triggered-buffer
+Depends: +kmod-i2c-core +kmod-regmap-i2c +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3852,7 +3852,7 @@ Description:  This driver adds support for Texas Instruments ADS1015 and ADS1115
 Package: kmod-iio-hmc5843
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-regmap-i2c +kmod-industrialio-triggered-buffer
+Depends: +kmod-i2c-core +kmod-regmap-i2c +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3871,7 +3871,7 @@ Description:   Honeywell HMC5843/5883/5883L 3-Axis Magnetometer
 Package: kmod-iio-bh1750
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core
+Depends: +kmod-i2c-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3890,7 +3890,7 @@ Description:   ROHM BH1750 ambient light sensor (i2c bus)
 Package: kmod-iio-am2315
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer
+Depends: +kmod-i2c-core +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3909,7 +3909,7 @@ Description:   Aosong AM2315 humidity/temperature sensor (I2C bus)
 Package: kmod-iio-mxs-lradc
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_mxs +kmod-iio-core +kmod-industrialio-triggered-buffer
+Depends: @TARGET_mxs +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3928,7 +3928,7 @@ Description:  Support for Freescale's i.MX23/i.MX28 SoC internal Low-Resolution 
 Package: kmod-iio-dht11
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core @GPIO_SUPPORT @USES_DEVICETREE
+Depends: @GPIO_SUPPORT @USES_DEVICETREE +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3949,7 +3949,7 @@ Description:  support for DHT11 and DHT22 digitial humidity and temperature sens
 Package: kmod-iio-bme680
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-regmap-core
+Depends: +kmod-regmap-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3969,7 +3969,7 @@ Description:  This driver adds support for Bosch Sensortec BME680 sensor with ga
 Package: kmod-iio-bme680-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-bme680 +kmod-regmap-i2c
+Depends: +kmod-iio-bme680 +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3988,7 +3988,7 @@ Description:  This driver adds support for Bosch Sensortec's BME680 connected vi
 Package: kmod-iio-bme680-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-bme680 +kmod-regmap-spi
+Depends: +kmod-iio-bme680 +kmod-regmap-spi +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4007,7 +4007,7 @@ Description:  This driver adds support for Bosch Sensortec's BME680 connected vi
 Package: kmod-iio-bmp280
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-regmap-core
+Depends: +kmod-regmap-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4028,7 +4028,7 @@ Description:  This driver adds support for Bosch Sensortec BMP180 and BMP280 pre
 Package: kmod-iio-bmp280-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-bmp280 +kmod-i2c-core +kmod-regmap-i2c
+Depends: +kmod-iio-bmp280 +kmod-i2c-core +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4048,7 +4048,7 @@ Description:  This driver adds support for Bosch Sensortec's digital pressure an
 Package: kmod-iio-bmp280-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-bmp280 +kmod-spi-bitbang
+Depends: +kmod-iio-bmp280 +kmod-spi-bitbang +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4068,7 +4068,7 @@ Description:  This driver adds support for Bosch Sensortec's digital pressure an
 Package: kmod-iio-htu21
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core
+Depends: +kmod-i2c-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4090,7 +4090,7 @@ Description:  support for the Measurement Specialties HTU21 humidity and
 Package: kmod-iio-ccs811
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer
+Depends: +kmod-i2c-core +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4109,7 +4109,7 @@ Description:   Support for the AMS CCS811 VOC (Volatile Organic Compounds) senso
 Package: kmod-iio-si7020
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core
+Depends: +kmod-i2c-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4130,7 +4130,7 @@ Description:  Support for Silicon Labs Si7020 family of relative humidity and
 Package: kmod-iio-st_accel
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-regmap-core +kmod-industrialio-triggered-buffer
+Depends: +kmod-regmap-core +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4152,7 +4152,7 @@ Description:  This package adds support for STMicroelectronics accelerometers:
 Package: kmod-iio-st_accel-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-st_accel +kmod-i2c-core +kmod-regmap-i2c
+Depends: +kmod-iio-st_accel +kmod-i2c-core +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4171,7 +4171,7 @@ Description:  This package adds support for STMicroelectronics I2C based acceler
 Package: kmod-iio-st_accel-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-st_accel +kmod-regmap-spi
+Depends: +kmod-iio-st_accel +kmod-regmap-spi +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4190,7 +4190,7 @@ Description:  This package adds support for STMicroelectronics SPI based acceler
 Package: kmod-iio-lsm6dsx
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-iio-kfifo-buf +kmod-regmap-core
+Depends: +kmod-iio-kfifo-buf +kmod-regmap-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4209,7 +4209,7 @@ Description:  Support for the ST LSM6DSx and related IMU MEMS sensors.
 Package: kmod-iio-lsm6dsx-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-lsm6dsx +kmod-i2c-core +kmod-regmap-i2c
+Depends: +kmod-iio-lsm6dsx +kmod-i2c-core +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4228,7 +4228,7 @@ Description:  Support for the ST LSM6DSx and related IMU MEMS I2C sensors.
 Package: kmod-iio-lsm6dsx-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-lsm6dsx +kmod-regmap-spi
+Depends: +kmod-iio-lsm6dsx +kmod-regmap-spi +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4247,7 +4247,7 @@ Description:  Support for the ST LSM6DSx and related IMU MEMS SPI sensors.
 Package: kmod-iio-sps30
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core +kmod-industrialio-triggered-buffer +kmod-lib-crc8
+Depends: +kmod-i2c-core +kmod-industrialio-triggered-buffer +kmod-lib-crc8 +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4258,7 +4258,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SPS30
+Kernel-Config: CONFIG_SPS30 CONFIG_SPS30_I2C
 Description:  Support for the Sensirion SPS30 particulate matter sensor.
 
 @@
@@ -4266,7 +4266,7 @@ Description:  Support for the Sensirion SPS30 particulate matter sensor.
 Package: kmod-iio-tsl4531
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core +kmod-iio-core
+Depends: +kmod-i2c-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4287,7 +4287,7 @@ Description:  Support for TAOS TSL4531x family of ambient light sensors
 Package: kmod-iio-fxas21002c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-regmap-core +kmod-industrialio-triggered-buffer
+Depends: +kmod-regmap-core +kmod-industrialio-triggered-buffer +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4306,7 +4306,7 @@ Description:  Support for Freescale FXAS21002C 3-axis gyro.
 Package: kmod-iio-fxas21002c-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-fxas21002c +kmod-i2c-core +kmod-regmap-i2c
+Depends: +kmod-iio-fxas21002c +kmod-i2c-core +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4326,7 +4326,7 @@ Description:  Support for Freescale FXAS21002C 3-axis gyro
 Package: kmod-iio-fxas21002c-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-fxas21002c +kmod-regmap-spi
+Depends: +kmod-iio-fxas21002c +kmod-regmap-spi +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4346,7 +4346,7 @@ Description:  Support for Freescale FXAS21002C 3-axis gyro
 Package: kmod-iio-fxos8700
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-core +kmod-regmap-core
+Depends: +kmod-regmap-core +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4365,7 +4365,7 @@ Description:  Support for Freescale FXOS8700 3-axis accelerometer.
 Package: kmod-iio-fxos8700-i2c
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-fxos8700 +kmod-i2c-core +kmod-regmap-i2c
+Depends: +kmod-iio-fxos8700 +kmod-i2c-core +kmod-regmap-i2c +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4385,7 +4385,7 @@ Description:  Support for Freescale FXOS8700 3-axis accelerometer
 Package: kmod-iio-fxos8700-spi
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-iio-fxos8700 +kmod-regmap-spi
+Depends: +kmod-iio-fxos8700 +kmod-regmap-spi +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16321,22 +16321,22 @@ Description: MediaTek HCI UART driver
 
 @@
 
-Package: kmod-sdhci-mtk
-Submenu: Other modules
+Package: kmod-iio-mt6577-auxadc
+Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek_mt7622 +kmod-sdhci
+Depends: @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623||TARGET_mediatek_filogic) +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Mediatek SDHCI driver
+Title: Mediatek AUXADC driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_MMC_MTK 
-Description: Mediatek SDHCI driver
+Kernel-Config: CONFIG_MEDIATEK_MT6577_AUXADC
+Description: Mediatek AUXADC driver
 
 @@
 
