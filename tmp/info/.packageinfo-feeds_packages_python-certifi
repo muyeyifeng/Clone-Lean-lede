@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-certifi/Makefile
 
 Package: python3-certifi
 Submenu: Python
-Version: 2021.5.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Version: 2022.9.24-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: Python package for Mozilla's CA Bundle
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: certifi-2021.5.30.tar.gz
+Source: certifi-2022.9.24.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,7 +24,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: python3-certifi-src
 Submenu: Python
-Version: 2021.5.30-1
+Version: 2022.9.24-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Languages
 Repository: packages
 Title: Python package for Mozilla's CA Bundle (sources)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: certifi-2021.5.30.tar.gz
+Source: certifi-2022.9.24.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

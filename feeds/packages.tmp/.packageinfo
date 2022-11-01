@@ -2491,7 +2491,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18.6-1
+Version: 1.19.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2501,7 +2501,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.6.src.tar.gz
+Source: go1.19.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2527,7 +2527,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18.6-1
+Version: 1.19.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2537,7 +2537,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.6.src.tar.gz
+Source: go1.19.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2559,7 +2559,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18.6-1
+Version: 1.19.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2569,7 +2569,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.6.src.tar.gz
+Source: go1.19.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -12266,8 +12266,8 @@ Source-Makefile: feeds/packages/lang/python/python-certifi/Makefile
 
 Package: python3-certifi
 Submenu: Python
-Version: 2021.5.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Version: 2022.9.24-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12276,7 +12276,7 @@ Category: Languages
 Repository: base
 Title: Python package for Mozilla's CA Bundle
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: certifi-2021.5.30.tar.gz
+Source: certifi-2022.9.24.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -12288,7 +12288,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: python3-certifi-src
 Submenu: Python
-Version: 2021.5.30-1
+Version: 2022.9.24-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12298,7 +12298,7 @@ Category: Languages
 Repository: base
 Title: Python package for Mozilla's CA Bundle (sources)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: certifi-2021.5.30.tar.gz
+Source: certifi-2022.9.24.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -45431,7 +45431,7 @@ Lucian Cristian <lucian.cristian@gmail.com>
 Source-Makefile: feeds/packages/libs/nss/Makefile
 
 Package: nss-utils
-Version: 3.78-0
+Version: 3.84-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnss
 Conflicts: 
 Menu-Depends: 
@@ -45441,7 +45441,7 @@ Category: Utilities
 Repository: base
 Title: Utilities for Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: nss-3.78.tar.gz
+Source: nss-3.84.tar.gz
 LicenseFiles: nss/COPYING
 Type: ipkg
 Description: Utilities for Mozilla's SSL and TLS implementation
@@ -45451,7 +45451,7 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: libnss
 Submenu: SSL
-Version: 3.78-0
+Version: 3.84-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libsqlite3 +nspr
 Conflicts: 
 Menu-Depends: 
@@ -45461,7 +45461,7 @@ Category: Libraries
 Repository: base
 Title: Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: nss-3.78.tar.gz
+Source: nss-3.84.tar.gz
 LicenseFiles: nss/COPYING
 Type: ipkg
 Description:   Network Security Services (NSS) is a set of libraries designed to support
@@ -61691,8 +61691,8 @@ Config:
 Source-Makefile: feeds/packages/net/iperf3/Makefile
 
 Package: iperf3
-Version: 3.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 3.12-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiperf3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -61702,7 +61702,7 @@ Category: Network
 Repository: base
 Title: Internet Protocol bandwidth measuring tool
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: iperf-3.11.tar.gz
+Source: iperf-3.12.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
@@ -61713,7 +61713,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: iperf3-ssl
-Version: 3.11-1
+Version: 3.12-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -61724,10 +61724,29 @@ Category: Network
 Repository: base
 Title: Internet Protocol bandwidth measuring tool with iperf_auth support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: iperf-3.11.tar.gz
+Source: iperf-3.12.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: Internet Protocol bandwidth measuring tool with iperf_auth support
+https://github.com/esnet/iperf
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: libiperf3
+Version: 3.12-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Internet Protocol bandwidth measuring library
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: iperf-3.12.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:  Libiperf is a library providing an API for iperf3 functionality.
 https://github.com/esnet/iperf
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -87350,7 +87369,7 @@ Vitaly Protsko <villy@sft.ru>
 Source-Makefile: feeds/packages/utils/gawk/Makefile
 
 Package: gawk
-Version: 5.1.0-1
+Version: 5.2.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -87360,7 +87379,7 @@ Category: Utilities
 Repository: base
 Title: GNU awk
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: gawk-5.1.0.tar.xz
+Source: gawk-5.2.0.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104856,7 +104875,7 @@ Source-Makefile: feeds/packages/utils/xz/Makefile
 Package: xz-utils
 Menu: 1
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -104866,7 +104885,7 @@ Category: Utilities
 Repository: base
 Title: XZ Utils (meta)
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104877,7 +104896,7 @@ https://tukaani.org/xz
 
 Package: liblzma
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -104887,7 +104906,7 @@ Category: Libraries
 Repository: base
 Title: liblzma library from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104898,7 +104917,7 @@ https://tukaani.org/xz
 
 Package: lzmadec
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -104908,7 +104927,7 @@ Category: Utilities
 Repository: base
 Title: lzmadec utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104919,7 +104938,7 @@ https://tukaani.org/xz
 
 Package: lzmainfo
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -104929,7 +104948,7 @@ Category: Utilities
 Repository: base
 Title: lzmainfo utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104940,7 +104959,7 @@ https://tukaani.org/xz
 
 Package: xz
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -104950,7 +104969,7 @@ Category: Utilities
 Repository: base
 Title: xz utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104961,7 +104980,7 @@ https://tukaani.org/xz
 
 Package: xzdec
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -104971,7 +104990,7 @@ Category: Utilities
 Repository: base
 Title: xzdec utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -104982,7 +105001,7 @@ https://tukaani.org/xz
 
 Package: xzdiff
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -104992,7 +105011,7 @@ Category: Utilities
 Repository: base
 Title: xzdiff utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -105003,7 +105022,7 @@ https://tukaani.org/xz
 
 Package: xzgrep
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -105013,7 +105032,7 @@ Category: Utilities
 Repository: base
 Title: xzgrep utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -105024,7 +105043,7 @@ https://tukaani.org/xz
 
 Package: xzless
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -105034,7 +105053,7 @@ Category: Utilities
 Repository: base
 Title: xzless utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -105045,7 +105064,7 @@ https://tukaani.org/xz
 
 Package: xzmore
 Submenu: Compression
-Version: 5.2.5-3
+Version: 5.2.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -105055,7 +105074,7 @@ Category: Utilities
 Repository: base
 Title: xzmore utility from XZ Utils
 Maintainer: 
-Source: xz-5.2.5.tar.xz
+Source: xz-5.2.7.tar.xz
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
