@@ -9694,6 +9694,64 @@ Description:  MHI IPC Router channels
 
 @@
 
+Package: kmod-mptcp
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MultiPath TCP support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MPTCP@ge5.6=y
+Description:  MPTCP is a module made for MultiPath TCP support
+
+@@
+
+Package: kmod-mptcp_ipv6
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: @IPV6 +kmod-mptcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MultiPath TCP IPv6 support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MPTCP_IPV6@ge5.6=y
+Description:  MPTCP_IPV6 is a module made for MultiPath TCP IPv6 support
+
+@@
+
+Package: kmod-inet-mptcp-diag
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: kmod-mptcp +kmod-inet-diag
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: INET diag support for MultiPath TCP
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INET_MPTCP_DIAG@ge5.6
+Description: Support for INET (MultiPath TCP) socket monitoring interface used by
+native Linux tools such as ss.
+
+@@
+
 Package: kmod-nls-base
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
