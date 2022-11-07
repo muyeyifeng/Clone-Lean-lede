@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-dotenv/Makefile
 
 Package: python3-dotenv
 Submenu: Python
-Version: 0.17.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-logging
+Version: 0.21.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-click +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: Add .env support to your django/flask apps in development and deployments
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: python-dotenv-0.17.1.tar.gz
+Source: python-dotenv-0.21.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-dotenv-src
 Submenu: Python
-Version: 0.17.1-1
+Version: 0.21.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Languages
 Repository: packages
 Title: Add .env support to your django/flask apps in development and deployments (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: python-dotenv-0.17.1.tar.gz
+Source: python-dotenv-0.21.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

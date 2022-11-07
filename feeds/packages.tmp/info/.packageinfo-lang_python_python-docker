@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-docker/Makefile
 
 Package: python3-docker
 Submenu: Python
-Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-distutils +python3-logging +python3-openssl +python3-paramiko +python3-six +python3-requests +python3-websocket-client
+Version: 6.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-distutils +python3-logging +python3-openssl +python3-packaging +python3-paramiko +python3-six +python3-requests +python3-urllib3 +python3-websocket-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: A Python library for the Docker Engine API
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: docker-5.0.0.tar.gz
+Source: docker-6.0.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-docker-src
 Submenu: Python
-Version: 5.0.0-1
+Version: 6.0.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Languages
 Repository: base
 Title: A Python library for the Docker Engine API (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: docker-5.0.0.tar.gz
+Source: docker-6.0.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
