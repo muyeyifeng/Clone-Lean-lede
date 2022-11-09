@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/msgpack-c/Makefile
 
 Package: msgpack-c
-Version: 3.3.0-0
+Version: 4.0.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -9,11 +9,11 @@ Provides:
 Section: lib
 Category: Libraries
 Repository: packages
-Title: MessagePack implementation for C and C++
+Title: MessagePack implementation for C
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: msgpack-c-3.3.0.tar.gz
+Source: msgpack-c-4.0.0.tar.gz
 License: BSL-1.0
-LicenseFiles: LICENSE
+LicenseFiles: COPYING LICENSE_1_0.txt
 Type: ipkg
 Description:   MessagePack is an efficient binary serialization format, which lets
   you exchange data among multiple languages like JSON, except that

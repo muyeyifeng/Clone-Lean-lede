@@ -1,11 +1,11 @@
 Source-Makefile: feeds/packages/lang/python/python3/Makefile
-Build-Depends: python3/host
-Build-Depends/host: bzip2/host expat/host libffi/host
+Build-Depends: bluez python3/host
+Build-Depends/host: bzip2/host libffi/host
 Build-Types: host
 
 Package: python3-unittest
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -13,20 +13,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 unittest module
+Title: Python 3.10 unittest module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 unittest module
+Description: Python 3.10 unittest module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-unittest-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -34,13 +34,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 unittest module (sources)
+Title: Python 3.10 unittest module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 unittest module
+Description:     	Python 3.10 unittest module
 
     This package contains the Python source files for python3-unittest.
 https://www.python.org/
@@ -52,7 +52,7 @@ Config:
 
 Package: python3-lib2to3
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
 Conflicts: 
 Menu-Depends: 
@@ -60,20 +60,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 lib2to3 module
+Title: Python 3.10 lib2to3 module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 lib2to3 module
+Description: Python 3.10 lib2to3 module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-lib2to3-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -81,13 +81,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 lib2to3 module (sources)
+Title: Python 3.10 lib2to3 module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 lib2to3 module
+Description:     	Python 3.10 lib2to3 module
 
     This package contains the Python source files for python3-lib2to3.
 https://www.python.org/
@@ -99,7 +99,7 @@ Config:
 
 Package: python3-ncurses
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libncursesw
 Conflicts: 
 Menu-Depends: 
@@ -107,20 +107,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 ncurses module
+Title: Python 3.10 ncurses module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 ncurses module
+Description: Python 3.10 ncurses module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-ncurses-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -128,13 +128,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 ncurses module (sources)
+Title: Python 3.10 ncurses module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 ncurses module
+Description:     	Python 3.10 ncurses module
 
     This package contains the Python source files for python3-ncurses.
 https://www.python.org/
@@ -146,7 +146,7 @@ Config:
 
 Package: python3-ctypes
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -154,20 +154,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 ctypes module
+Title: Python 3.10 ctypes module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 ctypes module
+Description: Python 3.10 ctypes module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-ctypes-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -175,13 +175,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 ctypes module (sources)
+Title: Python 3.10 ctypes module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 ctypes module
+Description:     	Python 3.10 ctypes module
 
     This package contains the Python source files for python3-ctypes.
 https://www.python.org/
@@ -193,7 +193,7 @@ Config:
 
 Package: python3-pydoc
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -201,20 +201,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pydoc module
+Title: Python 3.10 pydoc module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 pydoc module
+Description: Python 3.10 pydoc module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-pydoc-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -222,13 +222,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pydoc module (sources)
+Title: Python 3.10 pydoc module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 pydoc module
+Description:     	Python 3.10 pydoc module
 
     This package contains the Python source files for python3-pydoc.
 https://www.python.org/
@@ -240,7 +240,7 @@ Config:
 
 Package: python3-logging
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -248,20 +248,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 logging module
+Title: Python 3.10 logging module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 logging module
+Description: Python 3.10 logging module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-logging-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -269,13 +269,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 logging module (sources)
+Title: Python 3.10 logging module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 logging module
+Description:     	Python 3.10 logging module
 
     This package contains the Python source files for python3-logging.
 https://www.python.org/
@@ -287,7 +287,7 @@ Config:
 
 Package: python3-decimal
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -295,20 +295,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 decimal module
+Title: Python 3.10 decimal module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 decimal module
+Description: Python 3.10 decimal module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-decimal-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -316,13 +316,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 decimal module (sources)
+Title: Python 3.10 decimal module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 decimal module
+Description:     	Python 3.10 decimal module
 
     This package contains the Python source files for python3-decimal.
 https://www.python.org/
@@ -334,7 +334,7 @@ Config:
 
 Package: python3-multiprocessing
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -342,20 +342,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 multiprocessing
+Title: Python 3.10 multiprocessing
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 multiprocessing
+Description: Python 3.10 multiprocessing
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-multiprocessing-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -363,13 +363,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 multiprocessing (sources)
+Title: Python 3.10 multiprocessing (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 multiprocessing
+Description:     	Python 3.10 multiprocessing
 
     This package contains the Python source files for python3-multiprocessing.
 https://www.python.org/
@@ -381,7 +381,7 @@ Config:
 
 Package: python3-urllib
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
 Conflicts: 
 Menu-Depends: 
@@ -389,20 +389,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 URL library module
+Title: Python 3.10 URL library module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 URL library module
+Description: Python 3.10 URL library module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-urllib-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -410,13 +410,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 URL library module (sources)
+Title: Python 3.10 URL library module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 URL library module
+Description:     	Python 3.10 URL library module
 
     This package contains the Python source files for python3-urllib.
 https://www.python.org/
@@ -428,7 +428,7 @@ Config:
 
 Package: python3-pip
 Submenu: Python
-Version: 22.0.4-1
+Version: 22.2.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-setuptools +python-pip-conf
 Conflicts: 
 Menu-Depends: 
@@ -436,20 +436,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pip module
+Title: Python 3.10 pip module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description: Python 3.9 pip module
+Description: Python 3.10 pip module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-pip-src
 Submenu: Python
-Version: 22.0.4-1
+Version: 22.2.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -457,13 +457,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pip module (sources)
+Title: Python 3.10 pip module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:     	Python 3.9 pip module
+Description:     	Python 3.10 pip module
 
     This package contains the Python source files for python3-pip.
 https://www.python.org/
@@ -475,7 +475,7 @@ Config:
 
 Package: python3-pkg-resources
 Submenu: Python
-Version: 58.1.0-1
+Version: 63.2.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
 Conflicts: 
 Menu-Depends: 
@@ -483,20 +483,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pkg_resources module (part of setuptools)
+Title: Python 3.10 pkg_resources module (part of setuptools)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description: Python 3.9 pkg_resources module (part of setuptools)
+Description: Python 3.10 pkg_resources module (part of setuptools)
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-pkg-resources-src
 Submenu: Python
-Version: 58.1.0-1
+Version: 63.2.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -504,13 +504,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 pkg_resources module (part of setuptools) (sources)
+Title: Python 3.10 pkg_resources module (part of setuptools) (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     	Python 3.9 pkg_resources module (part of setuptools)
+Description:     	Python 3.10 pkg_resources module (part of setuptools)
 
     This package contains the Python source files for python3-pkg-resources.
 https://www.python.org/
@@ -522,7 +522,7 @@ Config:
 
 Package: python3-dev
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-lib2to3
 Conflicts: 
 Menu-Depends: 
@@ -530,20 +530,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 development files
+Title: Python 3.10 development files
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 development files
+Description: Python 3.10 development files
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-dev-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -551,13 +551,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 development files (sources)
+Title: Python 3.10 development files (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 development files
+Description:     	Python 3.10 development files
 
     This package contains the Python source files for python3-dev.
 https://www.python.org/
@@ -569,7 +569,7 @@ Config:
 
 Package: python3-readline
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libreadline +libncursesw
 Conflicts: 
 Menu-Depends: 
@@ -577,20 +577,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 readline module
+Title: Python 3.10 readline module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 readline module
+Description: Python 3.10 readline module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-readline-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -598,13 +598,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 readline module (sources)
+Title: Python 3.10 readline module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 readline module
+Description:     	Python 3.10 readline module
 
     This package contains the Python source files for python3-readline.
 https://www.python.org/
@@ -614,56 +614,9 @@ Config:
     depends on PACKAGE_python3-readline
 @@
 
-Package: python3-xml
-Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 xml libs
-Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description: Python 3.9 xml libs
-https://www.python.org/
-Jeffery To <jeffery.to@gmail.com>
-@@
-
-Package: python3-xml-src
-Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.9 xml libs (sources)
-Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Type: ipkg
-Description:     	Python 3.9 xml libs
-
-    This package contains the Python source files for python3-xml.
-https://www.python.org/
-Jeffery To <jeffery.to@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-xml
-@@
-
 Package: python3-sqlite3
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -671,20 +624,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 sqlite3 module
+Title: Python 3.10 sqlite3 module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 sqlite3 module
+Description: Python 3.10 sqlite3 module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-sqlite3-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -692,13 +645,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 sqlite3 module (sources)
+Title: Python 3.10 sqlite3 module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 sqlite3 module
+Description:     	Python 3.10 sqlite3 module
 
     This package contains the Python source files for python3-sqlite3.
 https://www.python.org/
@@ -708,30 +661,30 @@ Config:
     depends on PACKAGE_python3-sqlite3
 @@
 
-Package: python3-gdbm
+Package: python3-xml
 Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libgdbm
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 gdbm module
+Title: Python 3.10 xml libs
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 gdbm module
+Description: Python 3.10 xml libs
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
-Package: python3-gdbm-src
+Package: python3-xml-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -739,25 +692,25 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 gdbm module (sources)
+Title: Python 3.10 xml libs (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 gdbm module
+Description:     	Python 3.10 xml libs
 
-    This package contains the Python source files for python3-gdbm.
+    This package contains the Python source files for python3-xml.
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
-    depends on PACKAGE_python3-gdbm
+    depends on PACKAGE_python3-xml
 @@
 
 Package: python3-distutils
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
 Conflicts: 
 Menu-Depends: 
@@ -765,20 +718,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 distutils module
+Title: Python 3.10 distutils module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 distutils module
+Description: Python 3.10 distutils module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-distutils-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -786,13 +739,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 distutils module (sources)
+Title: Python 3.10 distutils module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 distutils module
+Description:     	Python 3.10 distutils module
 
     This package contains the Python source files for python3-distutils.
 https://www.python.org/
@@ -804,7 +757,7 @@ Config:
 
 Package: python3-email
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -812,20 +765,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 email module
+Title: Python 3.10 email module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 email module
+Description: Python 3.10 email module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-email-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -833,13 +786,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 email module (sources)
+Title: Python 3.10 email module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 email module
+Description:     	Python 3.10 email module
 
     This package contains the Python source files for python3-email.
 https://www.python.org/
@@ -851,7 +804,7 @@ Config:
 
 Package: python3-openssl
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libopenssl +ca-certs
 Conflicts: 
 Menu-Depends: 
@@ -859,20 +812,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 SSL module
+Title: Python 3.10 SSL module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 SSL module
+Description: Python 3.10 SSL module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-openssl-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -880,13 +833,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 SSL module (sources)
+Title: Python 3.10 SSL module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 SSL module
+Description:     	Python 3.10 SSL module
 
     This package contains the Python source files for python3-openssl.
 https://www.python.org/
@@ -898,7 +851,7 @@ Config:
 
 Package: python3-setuptools
 Submenu: Python
-Version: 58.1.0-1
+Version: 63.2.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
@@ -906,20 +859,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 setuptools module
+Title: Python 3.10 setuptools module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description: Python 3.9 setuptools module
+Description: Python 3.10 setuptools module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-setuptools-src
 Submenu: Python
-Version: 58.1.0-1
+Version: 63.2.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -927,13 +880,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 setuptools module (sources)
+Title: Python 3.10 setuptools module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
+Source: Python-3.10.7.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     	Python 3.9 setuptools module
+Description:     	Python 3.10 setuptools module
 
     This package contains the Python source files for python3-setuptools.
 https://www.python.org/
@@ -945,7 +898,7 @@ Config:
 
 Package: python3-cgi
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
 Conflicts: 
 Menu-Depends: 
@@ -953,20 +906,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 cgi module
+Title: Python 3.10 cgi module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 cgi module
+Description: Python 3.10 cgi module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-cgi-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -974,13 +927,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 cgi module (sources)
+Title: Python 3.10 cgi module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 cgi module
+Description:     	Python 3.10 cgi module
 
     This package contains the Python source files for python3-cgi.
 https://www.python.org/
@@ -992,7 +945,7 @@ Config:
 
 Package: python3-cgitb
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-cgi +python3-pydoc
 Conflicts: 
 Menu-Depends: 
@@ -1000,20 +953,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 cgitb module
+Title: Python 3.10 cgitb module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 cgitb module
+Description: Python 3.10 cgitb module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-cgitb-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1021,13 +974,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 cgitb module (sources)
+Title: Python 3.10 cgitb module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 cgitb module
+Description:     	Python 3.10 cgitb module
 
     This package contains the Python source files for python3-cgitb.
 https://www.python.org/
@@ -1039,28 +992,28 @@ Config:
 
 Package: python3-dbm
 Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libdb47
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libgdbm
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 dbm module
+Title: Python 3.10 dbm module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 dbm module
+Description: Python 3.10 dbm module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-dbm-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1068,13 +1021,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 dbm module (sources)
+Title: Python 3.10 dbm module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 dbm module
+Description:     	Python 3.10 dbm module
 
     This package contains the Python source files for python3-dbm.
 https://www.python.org/
@@ -1086,7 +1039,7 @@ Config:
 
 Package: python3-codecs
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -1094,20 +1047,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 codecs + unicode support
+Title: Python 3.10 codecs + unicode support
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 codecs + unicode support
+Description: Python 3.10 codecs + unicode support
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-codecs-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1115,13 +1068,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 codecs + unicode support (sources)
+Title: Python 3.10 codecs + unicode support (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 codecs + unicode support
+Description:     	Python 3.10 codecs + unicode support
 
     This package contains the Python source files for python3-codecs.
 https://www.python.org/
@@ -1133,7 +1086,7 @@ Config:
 
 Package: python3-lzma
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -1141,20 +1094,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 lzma module
+Title: Python 3.10 lzma module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 lzma module
+Description: Python 3.10 lzma module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-lzma-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1162,13 +1115,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 lzma module (sources)
+Title: Python 3.10 lzma module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 lzma module
+Description:     	Python 3.10 lzma module
 
     This package contains the Python source files for python3-lzma.
 https://www.python.org/
@@ -1180,7 +1133,7 @@ Config:
 
 Package: python3-asyncio
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -1188,20 +1141,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 asyncio module
+Title: Python 3.10 asyncio module
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description: Python 3.9 asyncio module
+Description: Python 3.10 asyncio module
 https://www.python.org/
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-asyncio-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1209,13 +1162,13 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 asyncio module (sources)
+Title: Python 3.10 asyncio module (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
-Description:     	Python 3.9 asyncio module
+Description:     	Python 3.10 asyncio module
 
     This package contains the Python source files for python3-asyncio.
 https://www.python.org/
@@ -1225,9 +1178,56 @@ Config:
     depends on PACKAGE_python3-asyncio
 @@
 
+Package: python3-uuid
+Submenu: Python
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libuuid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.10 UUID module
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description: Python 3.10 UUID module
+https://www.python.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-uuid-src
+Submenu: Python
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.10 UUID module (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Type: ipkg
+Description:     	Python 3.10 UUID module
+
+    This package contains the Python source files for python3-uuid.
+https://www.python.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-uuid
+@@
+
 Package: libpython3
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -1235,10 +1235,10 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 core library
+Title: Python 3.10 core library
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:   This package contains only core Python library.
@@ -1248,7 +1248,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-base
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +libpython3
 Conflicts: 
 Menu-Depends: 
@@ -1256,10 +1256,10 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 interpreter
+Title: Python 3.10 interpreter
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:   This package contains only the interpreter and the bare minimum
@@ -1270,18 +1270,18 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-light
 Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-base +libffi +libbz2 +PYTHON3_BLUETOOTH_SUPPORT:bluez-libs +libuuid
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-base +libffi +libbz2
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 light installation
+Title: Python 3.10 light installation
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:   This package is essentially the python3-base package plus
@@ -1296,18 +1296,18 @@ Config:
 
 Package: python3
 Submenu: Python
-Version: 3.9.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-xml +python3-sqlite3 +python3-gdbm +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-lzma +python3-asyncio
+Version: 3.10.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-urllib +python3-readline +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-codecs +python3-lzma +python3-asyncio +python3-uuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 programming language
+Title: Python 3.10 programming language
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:   This package contains the (almost) full Python install.
@@ -1318,7 +1318,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-base-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1326,10 +1326,10 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 interpreter (sources)
+Title: Python 3.10 interpreter (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:       This package contains only the interpreter and the bare minimum
@@ -1345,7 +1345,7 @@ Config:
 
 Package: python3-light-src
 Submenu: Python
-Version: 3.9.15-1
+Version: 3.10.7-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -1353,10 +1353,10 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.9 light installation (sources)
+Title: Python 3.10 light installation (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Python-3.9.15.tar.xz
-License: Python/2.0
+Source: Python-3.10.7.tar.xz
+License: PSF-2.0
 LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
 Type: ipkg
 Description:       This package is essentially the python3-base package plus

@@ -1,18 +1,19 @@
 Source-Makefile: feeds/packages/libs/libwebsockets/Makefile
+Build-Depends: libubox
 
 Package: libwebsockets-openssl
-Version: 4.1.6-1
+Version: 4.3.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl
-Conflicts: 
+Conflicts: libwebsockets-full
 Menu-Depends: 
-Provides: libwebsockets
+Provides: 
 Build-Variant: openssl
 Section: libs
 Category: Libraries
 Repository: base
 Title: libwebsockets (OpenSSL)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-4.1.6.tar.gz
+Source: libwebsockets-4.3.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -22,9 +23,9 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libwebsockets-mbedtls
-Version: 4.1.6-1
+Version: 4.3.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libmbedtls
-Conflicts: 
+Conflicts: libwebsockets-openssl
 Menu-Depends: 
 Provides: libwebsockets
 Build-Variant: mbedtls
@@ -33,7 +34,7 @@ Category: Libraries
 Repository: base
 Title: libwebsockets (mbedTLS)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-4.1.6.tar.gz
+Source: libwebsockets-4.3.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -43,18 +44,18 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libwebsockets-full
-Version: 4.1.6-1
+Version: 4.3.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl +libuv
 Conflicts: 
 Menu-Depends: 
-Provides: libwebsockets
+Provides: libwebsockets libwebsockets-openssl
 Build-Variant: full
 Section: libs
 Category: Libraries
 Repository: base
 Title: libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
 Maintainer: Karl Palsson <karlp@etactica.com>
-Source: libwebsockets-4.1.6.tar.gz
+Source: libwebsockets-4.3.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

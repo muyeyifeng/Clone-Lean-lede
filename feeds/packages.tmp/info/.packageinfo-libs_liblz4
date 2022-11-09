@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/liblz4/Makefile
 Package: liblz4
 Menu: 1
 Submenu: Compression
-Version: 1.9.3-1
+Version: 1.9.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: Extremely fast compression
 Maintainer: Darik Horn <dajhorn@vanadac.com>
-Source: lz4-1.9.3.tar.gz
+Source: lz4-1.9.4.tar.gz
 License: BSD-2-Clause
 LicenseFiles: LICENSE lib/LICENSE
 Type: ipkg
@@ -28,7 +28,7 @@ Config:
 
 Package: lz4
 Submenu: Compression
-Version: 1.9.3-1
+Version: 1.9.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblz4
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Utilities
 Repository: base
 Title: Extremely fast compression
 Maintainer: Darik Horn <dajhorn@vanadac.com>
-Source: lz4-1.9.3.tar.gz
+Source: lz4-1.9.4.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE programs/COPYING
 Type: ipkg

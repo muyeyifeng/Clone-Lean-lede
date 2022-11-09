@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/libfido2/Makefile
 
 Package: libfido2
-Version: 1.6.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcbor +libopenssl +libudev
+Version: 1.12.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcbor +libopenssl +libudev +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: FIDO2 Library
 Maintainer: Linos Giannopoulos <linosgian00+openwrt@gmail.com>
-Source: libfido2-1.6.0.tar.gz
+Source: libfido2-1.12.0.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

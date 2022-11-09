@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libqmi/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libqmi
-Version: 1.30.6-0
+Version: 1.30.8-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +LIBQMI_WITH_MBIM_QMUX:libmbim +LIBQMI_WITH_QRTR_GLIB:libqrtr-glib
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: Helper library to talk to QMI enabled modems
 Maintainer: Nicholas Smith <nicholas@nbembedded.com>
-Source: libqmi-1.30.6.tar.xz
+Source: libqmi-1.30.8.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -26,7 +26,7 @@ Config:
 @@
 
 Package: qmi-utils
-Version: 1.30.6-0
+Version: 1.30.8-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libqmi
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Utilities
 Repository: packages
 Title: Utilities to talk to QMI enabled modems
 Maintainer: Nicholas Smith <nicholas@nbembedded.com>
-Source: libqmi-1.30.6.tar.xz
+Source: libqmi-1.30.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

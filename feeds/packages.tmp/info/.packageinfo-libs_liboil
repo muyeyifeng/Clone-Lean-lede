@@ -1,9 +1,8 @@
 Source-Makefile: feeds/packages/libs/liboil/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: liboil
-Version: 0.3.17-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Version: 0.3.17-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 

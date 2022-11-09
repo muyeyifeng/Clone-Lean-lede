@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libcoap/Makefile
 
 Package: libcoap
-Version: 4.2.1-1
+Version: 4.3.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: CoAP (RFC 7252) library
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: libcoap-4.2.1.tar.gz
+Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
 Type: ipkg
@@ -21,7 +21,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: coap-client
-Version: 4.2.1-1
+Version: 4.3.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcoap
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Utilities
 Repository: base
 Title: CoAP (RFC 7252) client tool
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: libcoap-4.2.1.tar.gz
+Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
 Type: ipkg
@@ -40,7 +40,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: coap-server
-Version: 4.2.1-1
+Version: 4.3.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcoap
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Category: Network
 Repository: base
 Title: CoAP (RFC 7252) server programs
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: libcoap-4.2.1.tar.gz
+Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
 Type: ipkg
