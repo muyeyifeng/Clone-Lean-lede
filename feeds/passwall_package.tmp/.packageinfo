@@ -100,7 +100,7 @@ Source-Makefile: feeds/passwall_package/hysteria/Makefile
 Build-Depends: golang/host
 
 Package: hysteria
-Version: 1.2.2-0
+Version: 1.3.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +110,7 @@ Category: Network
 Repository: base
 Title: A feature-packed network utility optimized for networks of poor quality
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: hysteria-1.2.2.tar.gz
+Source: hysteria-1.3.0.tar.gz
 License: MIT
 Type: ipkg
 Description:   Hysteria is a feature-packed network utility optimized for networks
@@ -173,7 +173,7 @@ Source-Makefile: feeds/passwall_package/naiveproxy/Makefile
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 106.0.5249.91-2-0
+Version: 107.0.5304.87-1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -183,36 +183,13 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-106.0.5249.91-2.tar.gz
+Source: naiveproxy-107.0.5304.87-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   NaïveProxy uses Chrome's network stack to camouflage traffic with strong
   censorship resistance and low detectability. Reusing Chrome's stack also
   ensures best practices in performance and security.
-https://github.com/klzgrad/naiveproxy
-Tianling Shen <cnsztl@immortalwrt.org>
-@@
-
-Package: libcronet
-Version: 106.0.5249.91-2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: The Chromium network stack library
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-106.0.5249.91-2.tar.gz
-License: BSD 3-Clause
-LicenseFiles: LICENSE
-Type: ipkg
-Description:   Cronet is the Chromium network stack made available to Android apps as a library.
-
-  Cronet takes advantage of multiple technologies that reduce the latency and
-  increase the throughput of the network requests that your app needs to work.
 https://github.com/klzgrad/naiveproxy
 Tianling Shen <cnsztl@immortalwrt.org>
 @@
@@ -591,7 +568,7 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.1-beta13-0
+Version: 1.1-beta14-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -601,7 +578,7 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.1-beta13.tar.gz
+Source: sing-box-1.1-beta14.tar.gz
 License: GPL-3.0
 Type: ipkg
 Description: The universal proxy platform.

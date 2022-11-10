@@ -2,9 +2,9 @@ Source-Makefile: package/feeds/packages/pulseaudio/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: pulseaudio-daemon
-Version: 14.2-2
+Version: 14.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
-Conflicts: 
+Conflicts: pulseaudio-daemon-avahi
 Menu-Depends: 
 Provides: pulseaudio
 Build-Variant: noavahi
@@ -18,13 +18,13 @@ Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
-Description:     PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
-https://www.pulseaudio.org
+Description:   PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
+https://www.freedesktop.org/wiki/Software/PulseAudio/
 Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-daemon-avahi
-Version: 14.2-2
+Version: 14.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +dbus +libavahi-client +sbc
 Conflicts: 
 Menu-Depends: 
@@ -42,12 +42,12 @@ LicenseFiles: GPL LICENSE
 Type: ipkg
 Description:     PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
   This package enables avahi,bluez and is compiled against dbus, sbc, and avahi.
-https://www.pulseaudio.org
+https://www.freedesktop.org/wiki/Software/PulseAudio/
 Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-tools
-Version: 14.2-2
+Version: 14.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile pulseaudio
 Conflicts: 
 Menu-Depends: 
@@ -63,12 +63,12 @@ License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
 Description: Tools for Pulseaudio
-http://www.pulseaudio.org
+https://www.freedesktop.org/wiki/Software/PulseAudio/
 Peter Wagner <tripolar@gmx.at>
 @@
 
 Package: pulseaudio-profiles
-Version: 14.2-2
+Version: 14.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread pulseaudio
 Conflicts: 
 Menu-Depends: 
@@ -83,7 +83,7 @@ License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
 Type: ipkg
 Description: Profiles for Pulseaudio
-http://www.pulseaudio.org
+https://www.freedesktop.org/wiki/Software/PulseAudio/
 Peter Wagner <tripolar@gmx.at>
 @@
 

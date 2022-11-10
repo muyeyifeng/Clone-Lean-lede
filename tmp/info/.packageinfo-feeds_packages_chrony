@@ -3,9 +3,9 @@ Build-Depends: pps-tools
 
 Package: chrony
 Submenu: Time Synchronization
-Version: 4.1-1
+Version: 4.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread
-Conflicts: 
+Conflicts: chrony-nts
 Menu-Depends: 
 Provides: nts
 Build-Variant: normal
@@ -15,7 +15,7 @@ Repository: packages
 Title: A versatile NTP client and server (without NTS)
 Maintainer: Miroslav Lichvar <mlichvar0@gmail.com>
 Require-User: chrony=323:chrony=323
-Source: chrony-4.1.tar.gz
+Source: chrony-4.3.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -28,8 +28,8 @@ Miroslav Lichvar <mlichvar0@gmail.com>
 
 Package: chrony-nts
 Submenu: Time Synchronization
-Version: 4.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread +libgnutls +ca-bundle
+Version: 4.3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread +PACKAGE_chrony-nts:libgnutls +PACKAGE_chrony-nts:ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: nts
@@ -40,7 +40,7 @@ Repository: packages
 Title: A versatile NTP client and server (with NTS)
 Maintainer: Miroslav Lichvar <mlichvar0@gmail.com>
 Require-User: chrony=323:chrony=323
-Source: chrony-4.1.tar.gz
+Source: chrony-4.3.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

@@ -1,5 +1,5 @@
 Source-Makefile: feeds/packages/net/openvswitch/Makefile
-Build-Depends: python3/host python-six/host
+Build-Depends: python3/host
 
 Package: kmod-openvswitch
 Submenu: Network Support
@@ -351,7 +351,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 Package: openvswitch-python3
 Submenu: Open vSwitch
 Version: 2.15.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_openvswitch-python3:python3 +PACKAGE_openvswitch-python3:python3-six
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_openvswitch-python3:python3
 Conflicts: 
 Menu-Depends: 
 Provides: 

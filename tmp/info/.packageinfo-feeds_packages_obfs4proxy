@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/obfs4proxy/Makefile
 Build-Depends: golang/host
 
 Package: obfs4proxy
-Version: 0.0.11-1
+Version: 0.0.13-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,9 @@ Category: Network
 Repository: packages
 Title: A Tor pluggable transport proxy, implementing obfs4
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: obfs4-obfs4proxy-0.0.11.tar.bz2
-License: BSD-2-Clause
-LicenseFiles: LICENSE
+Source: obfs4-obfs4proxy-0.0.13.tar.bz2
+License: BSD-2-Clause GPL-3.0-or-later
+LicenseFiles: LICENSE LICENSE-GPL3.txt
 Type: ipkg
 Description: obfs4proxy is a tool that attempts to circumvent censorship by
 transforming the Tor traffic between the client and the bridge. This way
@@ -36,7 +36,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-gitlab-yawning-obfs4-dev
 Submenu: Go
-Version: 0.0.11-1
+Version: 0.0.13-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -46,9 +46,9 @@ Category: Languages
 Repository: packages
 Title: A Tor pluggable transport proxy, implementing obfs4 (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: obfs4-obfs4proxy-0.0.11.tar.bz2
-License: BSD-2-Clause
-LicenseFiles: LICENSE
+Source: obfs4-obfs4proxy-0.0.13.tar.bz2
+License: BSD-2-Clause GPL-3.0-or-later
+LicenseFiles: LICENSE LICENSE-GPL3.txt
 Type: ipkg
 Description: obfs4proxy is a tool that attempts to circumvent censorship by
 transforming the Tor traffic between the client and the bridge. This way

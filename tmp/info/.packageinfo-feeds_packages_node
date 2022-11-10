@@ -33,7 +33,6 @@ Hirokazu MORIKAWA <morikw2@gmail.com>
 @@
 Config:
 	menu "Configuration"
-		depends on PACKAGE_node
 
 	choice
 		prompt "Version Selection"
@@ -41,6 +40,7 @@ Config:
 		default NODEJS_16
 		help
 		 Select node.js version.
+		 The host package version is also the same.
 
 		config NODEJS_10
 			bool "10.x End-of-life : NO LONGER SUPPORTED"
@@ -50,34 +50,36 @@ Config:
 
 		config NODEJS_14
 			depends on !(mips||mipsel||mips64||mips64el)
-			bool "14.x Maintenance LTS"
+			bool "14.x Maintenance"
 
 		config NODEJS_16
 			depends on !(mips||mipsel||mips64||mips64el)
-			bool "16.x Active LTS"
+			bool "16.x Maintenance"
 
 		config NODEJS_18
 			depends on !(mips||mipsel||mips64||mips64el)
-			bool "18.x Current"
+			bool "18.x Active LTS"
 	endchoice
 
-	choice
-		prompt "i18n features"
-		default NODEJS_ICU_NONE
-		help
-		 Select i18n features
+	if PACKAGE_node
+		choice
+			prompt "i18n features"
+			default NODEJS_ICU_SMALL
+			help
+			 Select i18n features
 
-		config NODEJS_ICU_NONE
-			bool "Disable"
+			config NODEJS_ICU_NONE
+				bool "Disable"
 
-		config NODEJS_ICU_SMALL
-			depends on !BIG_ENDIAN
-			bool "small-icu"
+			config NODEJS_ICU_SMALL
+				depends on !BIG_ENDIAN
+				bool "small-icu"
 
-		config NODEJS_ICU_SYSTEM
-			depends on ARCH_64BIT&&!BIG_ENDIAN
-			bool "system-icu"
-	endchoice
+			config NODEJS_ICU_SYSTEM
+				depends on ARCH_64BIT&&!BIG_ENDIAN
+				bool "system-icu"
+		endchoice
+	endif
 
 	endmenu
 @@
