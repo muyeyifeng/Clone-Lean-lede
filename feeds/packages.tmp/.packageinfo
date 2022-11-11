@@ -3214,7 +3214,7 @@ Source-Makefile: feeds/packages/lang/lua-eco/Makefile
 
 Package: lua-eco
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -3235,7 +3235,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-log
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3256,7 +3256,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-sys
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3277,7 +3277,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-dns
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3298,7 +3298,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-socket
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3319,7 +3319,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ssl
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) LUA_ECO_OPENSSL:libopenssl LUA_ECO_WOLFSSL:libwolfssl LUA_ECO_MBEDTLS:libmbedtls +LUA_ECO_MBEDTLS:zlib
 Conflicts: 
 Menu-Depends: 
@@ -3369,7 +3369,7 @@ Config:
 
 Package: lua-eco-iw
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -3390,7 +3390,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ip
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -3411,7 +3411,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-file
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
 Conflicts: 
 Menu-Depends: 
@@ -3432,7 +3432,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: lua-eco-ubus
 Submenu: Lua
-Version: 1.0.0-3
+Version: 1.0.0-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libubus
 Conflicts: 
 Menu-Depends: 
@@ -33451,7 +33451,7 @@ Source-Makefile: feeds/packages/libs/libuhttpd/Makefile
 
 Package: libuhttpd-openssl
 Submenu: Networking
-Version: 3.14.1-1
+Version: 3.14.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -33473,7 +33473,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: libuhttpd-mbedtls
 Submenu: Networking
-Version: 3.14.1-1
+Version: 3.14.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-mbedtls:libmbedtls +PACKAGE_libuhttpd-mbedtls:zlib
 Conflicts: 
 Menu-Depends: 
@@ -33495,7 +33495,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: libuhttpd-wolfssl
 Submenu: Networking
-Version: 3.14.1-1
+Version: 3.14.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -33517,7 +33517,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: libuhttpd-nossl
 Submenu: Networking
-Version: 3.14.1-1
+Version: 3.14.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -44957,7 +44957,7 @@ Source-Makefile: feeds/packages/libs/libuwsc/Makefile
 
 Package: libuwsc-openssl
 Submenu: Networking
-Version: 3.3.5-0
+Version: 3.3.5-0.1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -44989,7 +44989,7 @@ endmenu
 
 Package: libuwsc-wolfssl
 Submenu: Networking
-Version: 3.3.5-0
+Version: 3.3.5-0.1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -45021,7 +45021,7 @@ endmenu
 
 Package: libuwsc-mbedtls
 Submenu: Networking
-Version: 3.3.5-0
+Version: 3.3.5-0.1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -45053,7 +45053,7 @@ endmenu
 
 Package: libuwsc-nossl
 Submenu: Networking
-Version: 3.3.5-0
+Version: 3.3.5-0.1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -81611,7 +81611,7 @@ Source-Makefile: feeds/packages/utils/acsccid/Makefile
 Build-Depends: libtool gettext libiconv !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: acsccid
-Version: 1.1.8-1
+Version: 1.1.8-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libusb-1.0 +libpcsclite
 Conflicts: 
 Menu-Depends: 
@@ -81621,7 +81621,7 @@ Category: Libraries
 Repository: base
 Title: PCSC driver for ACS USB CCID smart card readers
 Maintainer: Vincent JARDIN <vjardin@free.fr>
-Source: v1.1.8.tar.gz
+Source: acsccid-1.1.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -81829,7 +81829,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 Source-Makefile: feeds/packages/utils/at/Makefile
 
 Package: at
-Version: 3.2.1-1
+Version: 3.2.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
 Conflicts: 
 Menu-Depends: 
@@ -81839,7 +81839,7 @@ Category: Utilities
 Repository: base
 Title: Delayed job execution and batch processing
 Maintainer: Phil Eichinger <phil@zankapfel.net>
-Source: at-3.2.1.tar.bz2
+Source: at-3.2.2.tar.bz2
 License: GPL-2.0-or-later GPL-3.0-or-later ISC
 LicenseFiles: COPYING Copyright
 Type: ipkg
@@ -82174,7 +82174,7 @@ Ted Hess <thess@kitschensync.net>
 Source-Makefile: feeds/packages/utils/bandwidthd/Makefile
 
 Package: bandwidthd
-Version: 2.0.1-35-4
+Version: 2.0.1-35-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -82194,7 +82194,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 @@
 
 Package: bandwidthd-pgsql
-Version: 2.0.1-35-4
+Version: 2.0.1-35-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap +libpq
 Conflicts: 
 Menu-Depends: 
@@ -82215,7 +82215,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 @@
 
 Package: bandwidthd-sqlite
-Version: 2.0.1-35-4
+Version: 2.0.1-35-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap +libsqlite3 +php8 +php8-cgi +php8-mod-gd +php8-mod-pdo +php8-mod-pdo-sqlite
 Conflicts: 
 Menu-Depends: 
@@ -82236,7 +82236,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 @@
 
 Package: bandwidthd-php
-Version: 2.0.1-35-4
+Version: 2.0.1-35-7
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libxml2 +php8 +php8-cgi +php8-mod-pgsql +php8-mod-gd
 Conflicts: 
 Menu-Depends: 
@@ -82259,7 +82259,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 Source-Makefile: feeds/packages/utils/banhosts/Makefile
 
 Package: banhostlist
-Version: 1-1
+Version: 1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -82351,7 +82351,7 @@ Bruno Randolf <br1@einfach.org>
 Source-Makefile: feeds/packages/utils/bcm27xx-eeprom/Makefile
 
 Package: bcm27xx-eeprom
-Version: 3129546271da09dde04da5c9715db909b8e1e417-1
+Version: v2022.04.26-138a1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bcm27xx-userland +blkid +coreutils +coreutils-od +pciutils +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -82361,7 +82361,7 @@ Category: Utilities
 Repository: base
 Title: BCM27xx EEPROM tools
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bcm27xx-eeprom-3129546271da09dde04da5c9715db909b8e1e417.tar.gz
+Source: bcm27xx-eeprom-v2022.04.26-138a1.tar.gz
 License: BSD-3-Clause Custom
 LicenseFiles: LICENSE
 Type: ipkg
@@ -82397,8 +82397,8 @@ Source-Makefile: feeds/packages/utils/bigclown/bigclown-control-tool/Makefile
 
 Package: bigclown-control-tool
 Submenu: BigClown
-Version: 0.2.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-click +python3-click-log +python3-paho-mqtt +python3-pyserial +python3-yaml +python3-simplejson
+Version: 0.2.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-click +python3-click-log +python3-paho-mqtt +python3-pyserial +python3-yaml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -82445,8 +82445,8 @@ Source-Makefile: feeds/packages/utils/bigclown/bigclown-gateway/Makefile
 
 Package: bigclown-gateway
 Submenu: BigClown
-Version: 1.16.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-usb-serial-ftdi +kmod-usb-acm +python3-click +python3-click-log +python3-paho-mqtt +python3-pyserial +python3-yaml +python3-simplejson +python3-schema +python3-appdirs
+Version: 1.16.2-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-usb-serial-ftdi +kmod-usb-acm +python3-click +python3-click-log +python3-paho-mqtt +python3-pyserial +python3-yaml +python3-schema +python3-appdirs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -82492,7 +82492,7 @@ Karel Kočí <cynerd@email.cz>
 Source-Makefile: feeds/packages/utils/bluelog/Makefile
 
 Package: bluelog
-Version: 1.1.2-4
+Version: 1.1.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +kmod-bluetooth
 Conflicts: 
 Menu-Depends: 
@@ -82515,7 +82515,7 @@ Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: bluelog-live
-Version: 1.1.2-4
+Version: 1.1.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +kmod-bluetooth bluelog
 Conflicts: 
 Menu-Depends: 
@@ -82544,7 +82544,7 @@ Source-Makefile: feeds/packages/utils/bluez/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: bluez-libs
-Version: 5.56-1
+Version: 5.64-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +USB_SUPPORT:kmod-bluetooth
 Conflicts: 
 Menu-Depends: 
@@ -82554,7 +82554,7 @@ Category: Libraries
 Repository: base
 Title: Bluetooth library
 Maintainer: 
-Source: bluez-5.56.tar.xz
+Source: bluez-5.64.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82564,7 +82564,7 @@ http://www.bluez.org/
 @@
 
 Package: bluez-utils
-Version: 5.56-1
+Version: 5.64-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs
 Conflicts: 
 Menu-Depends: 
@@ -82574,7 +82574,7 @@ Category: Utilities
 Repository: base
 Title: Bluetooth utilities
 Maintainer: 
-Source: bluez-5.56.tar.xz
+Source: bluez-5.64.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82584,7 +82584,7 @@ http://www.bluez.org/
 @@
 
 Package: bluez-utils-extra
-Version: 5.56-1
+Version: 5.64-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +libpthread +librt +glib2 +libncurses +libreadline +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full +dbus
 Conflicts: 
 Menu-Depends: 
@@ -82594,7 +82594,7 @@ Category: Utilities
 Repository: base
 Title: Bluetooth additional utilities
 Maintainer: 
-Source: bluez-5.56.tar.xz
+Source: bluez-5.64.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82604,7 +82604,7 @@ http://www.bluez.org/
 @@
 
 Package: bluez-daemon
-Version: 5.56-1
+Version: 5.64-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +bluez-utils +bluez-utils-extra +glib2 +libncurses +libreadline +dbus +libical +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -82614,7 +82614,7 @@ Category: Utilities
 Repository: base
 Title: Bluetooth daemon
 Maintainer: 
-Source: bluez-5.56.tar.xz
+Source: bluez-5.64.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82625,6 +82625,7 @@ http://www.bluez.org/
 
 
 Source-Makefile: feeds/packages/utils/bluez-tools/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: bluez-tools
 Version: 20201025.f653217-0
@@ -82673,7 +82674,7 @@ Keith T. Garner <kgarner@kgarner.com>
 Source-Makefile: feeds/packages/utils/bmx7-dnsupdate/Makefile
 
 Package: bmx7-dnsupdate
-Version: 0.1-2
+Version: 0.1-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bmx7 +bmx7-json inotifywait jshn
 Conflicts: 
 Menu-Depends: 
@@ -82900,7 +82901,7 @@ Source-Makefile: feeds/packages/utils/canutils/Makefile
 
 Package: canutils
 Menu: 1
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -82910,7 +82911,7 @@ Category: Utilities
 Repository: base
 Title: CAN userspace utilities and tools
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82920,7 +82921,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-asc2log
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -82930,7 +82931,7 @@ Category: Utilities
 Repository: base
 Title: Utility asc2log from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82940,7 +82941,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-bcmserver
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -82950,7 +82951,7 @@ Category: Utilities
 Repository: base
 Title: Utility bcmserver from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82960,7 +82961,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-canbusload
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -82970,7 +82971,7 @@ Category: Utilities
 Repository: base
 Title: Utility canbusload from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82980,7 +82981,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-can-calc-bit-timing
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -82990,7 +82991,7 @@ Category: Utilities
 Repository: base
 Title: Utility can-calc-bit-timing from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83000,7 +83001,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-candump
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83010,7 +83011,7 @@ Category: Utilities
 Repository: base
 Title: Utility candump from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83020,7 +83021,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-canfdtest
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83030,7 +83031,7 @@ Category: Utilities
 Repository: base
 Title: Utility canfdtest from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83040,7 +83041,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-cangen
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83050,7 +83051,7 @@ Category: Utilities
 Repository: base
 Title: Utility cangen from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83060,7 +83061,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-cangw
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83070,7 +83071,7 @@ Category: Utilities
 Repository: base
 Title: Utility cangw from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83080,7 +83081,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-canlogserver
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83090,7 +83091,7 @@ Category: Utilities
 Repository: base
 Title: Utility canlogserver from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83100,7 +83101,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-canplayer
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83110,7 +83111,7 @@ Category: Utilities
 Repository: base
 Title: Utility canplayer from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83120,7 +83121,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-cansend
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83130,7 +83131,7 @@ Category: Utilities
 Repository: base
 Title: Utility cansend from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83140,7 +83141,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-cansniffer
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83150,7 +83151,7 @@ Category: Utilities
 Repository: base
 Title: Utility cansniffer from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83160,7 +83161,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotpdump
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83170,7 +83171,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotpdump from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83180,7 +83181,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotpperf
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83190,7 +83191,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotpperf from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83200,7 +83201,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotprecv
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83210,7 +83211,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotprecv from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83220,7 +83221,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotpsend
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83230,7 +83231,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotpsend from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83240,7 +83241,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotpserver
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83250,7 +83251,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotpserver from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83260,7 +83261,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotpsniffer
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83270,7 +83271,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotpsniffer from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83280,7 +83281,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-isotptun
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83290,7 +83291,7 @@ Category: Utilities
 Repository: base
 Title: Utility isotptun from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83300,7 +83301,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-j1939acd
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83310,7 +83311,7 @@ Category: Utilities
 Repository: base
 Title: Utility j1939acd from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83320,7 +83321,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-j1939cat
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83330,7 +83331,7 @@ Category: Utilities
 Repository: base
 Title: Utility j1939cat from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83340,7 +83341,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-j1939spy
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83350,7 +83351,7 @@ Category: Utilities
 Repository: base
 Title: Utility j1939spy from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83360,7 +83361,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-j1939sr
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83370,7 +83371,7 @@ Category: Utilities
 Repository: base
 Title: Utility j1939sr from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83380,7 +83381,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-log2asc
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83390,7 +83391,7 @@ Category: Utilities
 Repository: base
 Title: Utility log2asc from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83400,7 +83401,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-log2long
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83410,7 +83411,7 @@ Category: Utilities
 Repository: base
 Title: Utility log2long from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83420,7 +83421,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-slcan_attach
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83430,7 +83431,7 @@ Category: Utilities
 Repository: base
 Title: Utility slcan_attach from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83440,7 +83441,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-slcand
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83450,7 +83451,7 @@ Category: Utilities
 Repository: base
 Title: Utility slcand from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83460,7 +83461,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-slcanpty
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83470,7 +83471,7 @@ Category: Utilities
 Repository: base
 Title: Utility slcanpty from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83480,7 +83481,7 @@ Anton Glukhov <anton.a.glukhov@gmail.com>
 @@
 
 Package: canutils-testj1939
-Version: 2020.12.0-1
+Version: 2021.08.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread canutils
 Conflicts: 
 Menu-Depends: 
@@ -83490,7 +83491,7 @@ Category: Utilities
 Repository: base
 Title: Utility testj1939 from the CAN utilities
 Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
-Source: canutils-2020.12.0.tar.gz
+Source: canutils-2021.08.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83530,7 +83531,7 @@ Source-Makefile: feeds/packages/utils/ccid/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: ccid
-Version: 1.4.34-0
+Version: 1.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libpcsclite
 Conflicts: 
 Menu-Depends: 
@@ -83540,7 +83541,7 @@ Category: Libraries
 Repository: base
 Title: Generic USB CCID smart card reader driver
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: ccid-1.4.34.tar.bz2
+Source: ccid-1.5.0.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -83605,7 +83606,7 @@ Config:
 Source-Makefile: feeds/packages/utils/checksec/Makefile
 
 Package: checksec
-Version: 2.4.0-1
+Version: 2.5.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bash +file +binutils +procps-ng +procps-ng-sysctl +openssl-util +coreutils +coreutils-stat
 Conflicts: 
 Menu-Depends: 
@@ -83615,7 +83616,7 @@ Category: Utilities
 Repository: base
 Title: Utility to check PIE, RELRO, ASLR etc.
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: checksec.sh-2.4.0.tar.gz
+Source: checksec.sh-2.5.0.tar.gz
 LicenseFiles: LICENSE.txt
 Type: ipkg
 Description:   Checksec is a bash script to check the properties
@@ -83625,7 +83626,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 @@
 
 Package: checksec_automator
-Version: 2.4.0-1
+Version: 2.5.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +checksec +coreutils-tee +findutils-find +grep
 Conflicts: 
 Menu-Depends: 
@@ -83635,7 +83636,7 @@ Category: Utilities
 Repository: base
 Title: Utility to use checksec for dirs
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: checksec.sh-2.4.0.tar.gz
+Source: checksec.sh-2.5.0.tar.gz
 LicenseFiles: LICENSE.txt
 Type: ipkg
 Description:   Script for checksec directory scan.
@@ -83647,7 +83648,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source-Makefile: feeds/packages/utils/cmdpad/Makefile
 
 Package: cmdpad
-Version: 0.0.3-5
+Version: 0.0.3-6
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -87584,7 +87585,6 @@ https://dbus.freedesktop.org/
 
 
 Source-Makefile: feeds/packages/utils/device-observatory/Makefile
-Build-Depends: vim/host
 
 Package: device-observatory
 Version: 1.2.0-7
@@ -87634,7 +87634,7 @@ Stefan Hellermann <stefan@the2masters.de>
 Source-Makefile: feeds/packages/utils/dfu-util/Makefile
 
 Package: dfu-util
-Version: 0.10-1
+Version: 0.11-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -87644,7 +87644,7 @@ Category: Utilities
 Repository: base
 Title: Device Firmware Upgrade Utilities
 Maintainer: Bruno Randolf <br1@einfach.org>
-Source: dfu-util-0.10.tar.gz
+Source: dfu-util-0.11.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -87950,7 +87950,7 @@ Yunfan Jiang <jyf1987@gmail.com>
 Source-Makefile: feeds/packages/utils/ecdsautils/Makefile
 
 Package: libecdsautil
-Version: 0.3.2.20160630-1
+Version: 0.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuecc
 Conflicts: 
 Menu-Depends: 
@@ -87960,17 +87960,17 @@ Category: Libraries
 Repository: base
 Title: ECDSA library
 Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
-Source: ecdsautils-0.3.2.20160630.tar.xz
+Source: ecdsautils-0.4.1.tar.xz
 License: MIT
 LicenseFiles: COPYRIGHT
 Type: ipkg
 Description:  Library to sign and verify checksums using ECDSA.
-https://github.com/tcatm/ecdsautils
+https://github.com/freifunk-gluon/ecdsautils
 Matthias Schiffer <mschiffer@universe-factory.net>
 @@
 
 Package: ecdsautils
-Version: 0.3.2.20160630-1
+Version: 0.4.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libecdsautil +libuecc
 Conflicts: 
 Menu-Depends: 
@@ -87980,12 +87980,12 @@ Category: Utilities
 Repository: base
 Title: ECDSA Utilities
 Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
-Source: ecdsautils-0.3.2.20160630.tar.xz
+Source: ecdsautils-0.4.1.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYRIGHT
 Type: ipkg
 Description:  Utilities to sign and verify checksums using ECDSA.
-https://github.com/tcatm/ecdsautils
+https://github.com/freifunk-gluon/ecdsautils
 Matthias Schiffer <mschiffer@universe-factory.net>
 @@
 
@@ -88017,7 +88017,7 @@ Source-Makefile: feeds/packages/utils/exfatprogs/Makefile
 
 Package: exfat-mkfs
 Submenu: Filesystem
-Version: 1.1.1-0
+Version: 1.1.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -88027,7 +88027,7 @@ Category: Utilities
 Repository: base
 Title: Utility for creating an exFAT File System
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: exfatprogs-1.1.1.tar.gz
+Source: exfatprogs-1.1.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -88038,7 +88038,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: exfat-fsck
 Submenu: Filesystem
-Version: 1.1.1-0
+Version: 1.1.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -88048,7 +88048,7 @@ Category: Utilities
 Repository: base
 Title: Utility for checking/repairing an exFAT File System
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: exfatprogs-1.1.1.tar.gz
+Source: exfatprogs-1.1.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -88390,7 +88390,7 @@ Source-Makefile: feeds/packages/utils/fuse/Makefile
 
 Package: libfuse
 Submenu: Filesystem
-Version: 2.9.9-1
+Version: 2.9.9-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -88414,7 +88414,7 @@ https://github.com/libfuse/libfuse
 
 Package: fuse-utils
 Submenu: Filesystem
-Version: 2.9.9-1
+Version: 2.9.9-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse
 Conflicts: 
 Menu-Depends: 
@@ -88536,7 +88536,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/gddrescue/Makefile
 
 Package: gddrescue
-Version: 1.23-4
+Version: 1.26-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -88546,7 +88546,7 @@ Category: Utilities
 Repository: base
 Title: Data recovery tool
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: gddrescue_1.23.orig.tar.xz
+Source: gddrescue_1.26.orig.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -88613,7 +88613,7 @@ Source-Makefile: feeds/packages/utils/gnupg/Makefile
 Package: gnupg
 Menu: 1
 Submenu: Encryption
-Version: 1.4.23-3
+Version: 1.4.23-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -88640,7 +88640,7 @@ http://www.gnupg.org/
 
 Package: gpgv
 Submenu: Encryption
-Version: 1.4.23-3
+Version: 1.4.23-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -88664,7 +88664,7 @@ http://www.gnupg.org/
 
 Package: gnupg-utils
 Submenu: Encryption
-Version: 1.4.23-3
+Version: 1.4.23-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -88691,7 +88691,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: gnupg2
 Menu: 1
 Submenu: Encryption
-Version: 2.2.23-2
+Version: 2.2.39-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -88701,7 +88701,7 @@ Category: Utilities
 Repository: base
 Title: GNU privacy guard (version 2) - a free PGP replacement
 Maintainer: 
-Source: gnupg-2.2.23.tar.bz2
+Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
 Type: ipkg
@@ -88719,7 +88719,7 @@ http://www.gnupg.org/
 
 Package: gpgv2
 Submenu: Encryption
-Version: 2.2.23-2
+Version: 2.2.39-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -88729,7 +88729,7 @@ Category: Utilities
 Repository: base
 Title: GnuPG signature verification only (version 2)
 Maintainer: 
-Source: gnupg-2.2.23.tar.bz2
+Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
 Type: ipkg
@@ -88740,7 +88740,7 @@ http://www.gnupg.org/
 
 Package: gnupg2-dirmngr
 Submenu: Encryption
-Version: 2.2.23-2
+Version: 2.2.39-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -88750,7 +88750,7 @@ Category: Utilities
 Repository: base
 Title: Keyserver, CRL, and OCSP access for GnuPG (version 2)
 Maintainer: 
-Source: gnupg-2.2.23.tar.bz2
+Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
 Type: ipkg
@@ -88766,7 +88766,7 @@ http://www.gnupg.org/
 
 Package: gnupg2-utils
 Submenu: Encryption
-Version: 2.2.23-2
+Version: 2.2.39-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg2 +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -88776,7 +88776,7 @@ Category: Utilities
 Repository: base
 Title: Key management utilities for GnuPG (version 2)
 Maintainer: 
-Source: gnupg-2.2.23.tar.bz2
+Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
 Type: ipkg
@@ -88790,7 +88790,7 @@ http://www.gnupg.org/
 Source-Makefile: feeds/packages/utils/gnuplot/Makefile
 
 Package: gnuplot
-Version: 5.4.1-1
+Version: 5.4.2-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libgd +libncursesw +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -88800,7 +88800,7 @@ Category: Utilities
 Repository: base
 Title: A portable command-line driven graphing utility
 Maintainer: Matteo Cicuttin <datafl4sh@toxicnet.eu>
-Source: gnuplot-5.4.1.tar.gz
+Source: gnuplot-5.4.2.tar.gz
 Type: ipkg
 Description: A portable command-line driven graphing utility
 http://www.gnuplot.info/
@@ -89012,8 +89012,8 @@ https://www.rodsbooks.com/gdisk
 Source-Makefile: feeds/packages/utils/grep/Makefile
 
 Package: grep
-Version: 3.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre
+Version: 3.8-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89022,7 +89022,7 @@ Category: Utilities
 Repository: base
 Title: grep search utility - full version
 Maintainer: Julen Landa Alustiza <julen@zokormazo.info>
-Source: grep-3.6.tar.xz
+Source: grep-3.8.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -89065,7 +89065,7 @@ Source-Makefile: feeds/packages/utils/gzip/Makefile
 
 Package: gzip
 Submenu: Compression
-Version: 1.10-3
+Version: 1.11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -89075,7 +89075,7 @@ Category: Utilities
 Repository: base
 Title: gzip (GNU zip) is a compression utility.
 Maintainer: Christian Beier <dontmind@freeshell.org>
-Source: gzip-1.10.tar.xz
+Source: gzip-1.11.tar.xz
 License: GPL-3.0-or-later
 Type: ipkg
 Description: 	gzip (GNU zip) is a compression utility designed to be a replacement for compress.
@@ -89255,7 +89255,7 @@ Source-Makefile: feeds/packages/utils/hdparm/Makefile
 
 Package: hdparm
 Submenu: Disc
-Version: 9.60-1
+Version: 9.65-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -89265,7 +89265,7 @@ Category: Utilities
 Repository: base
 Title: Hard disk drive configuration utilitity
 Maintainer: 
-Source: hdparm-9.60.tar.gz
+Source: hdparm-9.65.tar.gz
 License: BSD-Style Open Source License
 LicenseFiles: LICENSE.TXT
 Type: ipkg
@@ -89317,7 +89317,7 @@ Build-Depends: util-linux
 Package: hfsfsck
 Submenu: Filesystem
 Version: 540.1.linux3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +USE_GLIBC:libbsd
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89338,7 +89338,7 @@ Description: 	Utilities to create and check HFS/HFS+ filesystems.
 Package: mkhfs
 Submenu: Filesystem
 Version: 540.1.linux3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +USE_GLIBC:libbsd
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89361,7 +89361,7 @@ Source-Makefile: feeds/packages/utils/hplip/Makefile
 Build-Depends: libcups
 
 Package: hplip-common
-Version: 3.21.2-1
+Version: 3.21.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -89371,7 +89371,7 @@ Category: Utilities
 Repository: base
 Title: HP Linux Imaging and Printing (common files)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: hplip-3.21.2.tar.gz
+Source: hplip-3.21.6.tar.gz
 License: GPL-2.0 GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
 Type: ipkg
@@ -89383,7 +89383,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: hplip-sane
-Version: 3.21.2-1
+Version: 3.21.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +hplip-common
 Conflicts: 
 Menu-Depends: 
@@ -89393,7 +89393,7 @@ Category: Utilities
 Repository: base
 Title: HP Linux Imaging and Printing (scanner drivers)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: hplip-3.21.2.tar.gz
+Source: hplip-3.21.6.tar.gz
 License: GPL-2.0 GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
 Type: ipkg
@@ -89416,13 +89416,13 @@ Provides:
 Section: utils
 Category: Utilities
 Repository: base
-Title: Control USB power on a port by port basis 
+Title: Control USB power on a port by port basis
 Maintainer: Simon Peter <probono@puredarwin.org>
 Source: hub-ctrl-1.0.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description:   Control USB power on a port by port basis on some USB hubs.
-  This only works on USB hubs that have the hardware necessary 
+  This only works on USB hubs that have the hardware necessary
   to allow software controlled power switching.
   Most hubs DO NOT include the hardware.
 https://github.com/codazoda/hub-ctrl.c
@@ -89478,7 +89478,7 @@ Build-Depends: hwinfo/host
 Build-Types: host
 
 Package: hwinfo
-Version: 21.71-3
+Version: 21.71-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -89506,7 +89506,7 @@ Alberto Bursi <bobafetthotmail@gmail.com>
 Source-Makefile: feeds/packages/utils/i2c-tools/Makefile
 
 Package: libi2c
-Version: 4.2-1
+Version: 4.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -89516,7 +89516,7 @@ Category: Libraries
 Repository: base
 Title: I2C library for i2c-tools
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-4.2.tar.xz
+Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -89526,7 +89526,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: i2c-tools
-Version: 4.2-1
+Version: 4.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libi2c
 Conflicts: 
 Menu-Depends: 
@@ -89536,7 +89536,7 @@ Category: Utilities
 Repository: base
 Title: I2C tools for Linux
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-4.2.tar.xz
+Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -89548,7 +89548,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: python3-smbus
 Submenu: Python
-Version: 4.2-1
+Version: 4.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libi2c +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -89558,7 +89558,7 @@ Category: Languages
 Repository: base
 Title: Python bindings for the SMBUS
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-4.2.tar.xz
+Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
@@ -89850,7 +89850,7 @@ Repository: base
 Title: Terminfo for kitty, an OpenGL-based terminal emulator
 Maintainer: 
 Source: kitty-0.24.4.tar.gz
-License: GPL-3.0-or-later
+License: GPL-3.0-only
 Type: ipkg
 Description: Terminfo for kitty, an OpenGL-based terminal emulator
 https://sw.kovidgoyal.net/kitty/
@@ -89863,7 +89863,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: klish
 Submenu: Shells
-Version: 2.2.0-4
+Version: 2.2.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -89873,7 +89873,7 @@ Category: Utilities
 Repository: base
 Title: Kommand Line Interface SHell (main tool)
 Maintainer: Takashi Umeno <umeno.takashi@gmail.com>
-Source: klish-2.2.0.tar.xz
+Source: klish-2.2.3.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Type: ipkg
@@ -89893,7 +89893,7 @@ Takashi Umeno <umeno.takashi@gmail.com>
 @@
 
 Package: klish-xml-files
-Version: 2.2.0-4
+Version: 2.2.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread klish
 Conflicts: 
 Menu-Depends: 
@@ -89903,7 +89903,7 @@ Category: Utilities
 Repository: base
 Title: klish sample XML files
 Maintainer: Takashi Umeno <umeno.takashi@gmail.com>
-Source: klish-2.2.0.tar.xz
+Source: klish-2.2.3.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Type: ipkg
@@ -90018,7 +90018,7 @@ Florian Eckert <fe@dev.tdt.de>
 Source-Makefile: feeds/packages/utils/lcdproc/Makefile
 
 Package: lcdproc-clients
-Version: 0.5.9-5
+Version: 0.5.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -90045,7 +90045,7 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 @@
 
 Package: lcdproc-server
-Version: 0.5.9-5
+Version: 0.5.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -90073,7 +90073,7 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 @@
 
 Package: lcdproc-drivers
-Version: 0.5.9-5
+Version: 0.5.9-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lcdproc-server +libncurses +libusb-1.0 +libusb-compat +libftdi1 +GPIO_SUPPORT:libugpio +serdisplib
 Conflicts: 
 Menu-Depends: 
@@ -90232,7 +90232,7 @@ Source-Makefile: feeds/packages/utils/logrotate/Makefile
 
 Package: logrotate
 Menu: 1
-Version: 3.17.0-1
+Version: 3.17.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +LOGROTATE_ACL:libacl
 Conflicts: 
 Menu-Depends: 
@@ -90266,7 +90266,7 @@ Config:
 Source-Makefile: feeds/packages/utils/lrzsz/Makefile
 
 Package: lrzsz
-Version: 0.12.20-2
+Version: 0.12.20-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -91930,7 +91930,7 @@ Build-Depends: MC_VFS:libtirpc !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mc
 Menu: 1
-Version: 4.8.26-1
+Version: 4.8.27-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -91940,7 +91940,7 @@ Category: Utilities
 Repository: base
 Title: Midnight Commander - a powerful visual file manager
 Maintainer: 
-Source: mc-4.8.26.tar.xz
+Source: mc-4.8.27.tar.xz
 License: GPL-3.0-or-later
 Type: ipkg
 Description: GNU Midnight Commander is a visual file manager.
@@ -91953,6 +91953,25 @@ https://www.midnight-commander.org/
 @@
 Config:
 	source "feeds/packages/utils/mc/Config.in"
+@@
+
+Package: mc-skins
+Version: 4.8.27-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +mc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Midnight Commander - a powerful visual file manager - skins
+Maintainer: 
+Source: mc-4.8.27.tar.xz
+License: GPL-3.0-or-later
+Type: ipkg
+Description: Midnight Commander - a powerful visual file manager - skins
+https://www.midnight-commander.org/
+
 @@
 
 
@@ -92009,7 +92028,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: minicom
 Submenu: Terminal
-Version: 2.7.1-2
+Version: 2.8-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -92019,12 +92038,12 @@ Category: Utilities
 Repository: base
 Title: Terminal emulation program
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: minicom-2.7.1.tar.gz
-License: GPL-2.0
+Source: minicom-2.8.tar.bz2
+License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description: Terminal emulation program
-http://alioth.debian.org/projects/minicom/
+https://salsa.debian.org/minicom-team/minicom
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
@@ -92069,7 +92088,7 @@ Source-Makefile: feeds/packages/utils/mktorrent/Makefile
 
 Package: mktorrent
 Submenu: BitTorrent
-Version: 1.1-1
+Version: 1.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -92092,7 +92111,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/mmc-utils/Makefile
 
 Package: mmc-utils
-Version: 2022-04-17-b7e4d5a6ae9942d26a11de9b05ae7d52c0802802-1
+Version: 2022-09-20-2a934139cfeef1249e46f50fbec548f11c2dd8ca-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -92102,7 +92121,7 @@ Category: Utilities
 Repository: base
 Title: Userspace tools for MMC/SD devices
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: mmc-utils-2022-04-17-b7e4d5a6ae9942d26a11de9b05ae7d52c0802802.tar.xz
+Source: mmc-utils-2022-09-20-2a934139cfeef1249e46f50fbec548f11c2dd8ca.tar.xz
 License: GPL-2.0-only
 Type: ipkg
 Description:   This package contains the userspace mmc utils, the userspace
@@ -92182,7 +92201,7 @@ Dmitry V. Zimin <pfzim@mail.ru>
 Source-Makefile: feeds/packages/utils/mqttled/Makefile
 
 Package: mqttled
-Version: 0.1.0-1
+Version: 0.1.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-paho-mqtt +python3-uci +python3-idna +python3-jsonpath-ng +python3-yaml +python3-schema +python3-netifaces +python3-logging +python3-urllib +python3-asyncio +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
@@ -92192,7 +92211,7 @@ Category: Utilities
 Repository: base
 Title: LED Control from MQTT 
 Maintainer: Tom Grime <tom.grime@gmail.com>
-Source: mqttled-0.1.0.tar.gz
+Source: mqttled-0.1.2.tar.gz
 License: MIT
 LicenseFiles: LICENCE
 Type: ipkg
@@ -92230,8 +92249,8 @@ Source-Makefile: feeds/packages/utils/mtools/Makefile
 
 Package: mtools
 Submenu: Disc
-Version: 4.0.26-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libbsd
+Version: 4.0.39-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -92240,7 +92259,7 @@ Category: Utilities
 Repository: base
 Title: Collection of utilities to access MS-DOS disks
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: mtools-4.0.26.tar.bz2
+Source: mtools-4.0.39.tar.bz2
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -92352,7 +92371,7 @@ Source-Makefile: feeds/packages/utils/ncdu/Makefile
 
 Package: ncdu
 Submenu: Filesystem
-Version: 1.15.1-1
+Version: 1.17-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -92362,7 +92381,7 @@ Category: Utilities
 Repository: base
 Title: ncurses disk usage viewer
 Maintainer: Charles E. Lehner <cel@celehner.com>
-Source: ncdu-1.15.1.tar.gz
+Source: ncdu-1.17.tar.gz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -92426,8 +92445,8 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 Source-Makefile: feeds/packages/utils/nsutils/Makefile
 
 Package: nsutils
-Version: 0.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libbsd +libcap
+Version: 0.2-2022-05-13-d6570bdec8435dfc781b95f6b404dedf965294dd-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -92436,7 +92455,7 @@ Category: Utilities
 Repository: base
 Title: Linux namespace utilities
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: nsutils-0.2.tar.xz
+Source: nsutils-0.2-2022-05-13-d6570bdec8435dfc781b95f6b404dedf965294dd.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -92638,7 +92657,7 @@ Source-Makefile: feeds/packages/utils/open-plc-utils/Makefile
 
 Package: open-plc-utils
 Menu: 1
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -92648,7 +92667,7 @@ Category: Utilities
 Repository: base
 Title: Qualcomm Atheros Power Line Communication utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92658,7 +92677,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-efbu
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92668,7 +92687,7 @@ Category: Utilities
 Repository: base
 Title: Utility efbu from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92678,7 +92697,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-efeu
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92688,7 +92707,7 @@ Category: Utilities
 Repository: base
 Title: Utility efeu from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92698,7 +92717,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-efru
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92708,7 +92727,7 @@ Category: Utilities
 Repository: base
 Title: Utility efru from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92718,7 +92737,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-efsu
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92728,7 +92747,7 @@ Category: Utilities
 Repository: base
 Title: Utility efsu from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92738,7 +92757,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-edru
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92748,7 +92767,7 @@ Category: Utilities
 Repository: base
 Title: Utility edru from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92758,7 +92777,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-edsu
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92768,7 +92787,7 @@ Category: Utilities
 Repository: base
 Title: Utility edsu from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92778,7 +92797,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-nics
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92788,7 +92807,7 @@ Category: Utilities
 Repository: base
 Title: Utility nics from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92798,7 +92817,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-hpavkey
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92808,7 +92827,7 @@ Category: Utilities
 Repository: base
 Title: Utility hpavkey from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92818,7 +92837,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-hpavkeys
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92828,7 +92847,7 @@ Category: Utilities
 Repository: base
 Title: Utility hpavkeys from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92838,7 +92857,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-rkey
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92848,7 +92867,7 @@ Category: Utilities
 Repository: base
 Title: Utility rkey from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92858,7 +92877,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mac2pw
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92868,7 +92887,7 @@ Category: Utilities
 Repository: base
 Title: Utility mac2pw from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92878,7 +92897,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mac2pwd
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92888,7 +92907,7 @@ Category: Utilities
 Repository: base
 Title: Utility mac2pwd from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92898,7 +92917,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mdioblock
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92908,7 +92927,7 @@ Category: Utilities
 Repository: base
 Title: Utility mdioblock from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92918,7 +92937,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mdioblock2
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92928,7 +92947,7 @@ Category: Utilities
 Repository: base
 Title: Utility mdioblock2 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92938,7 +92957,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mdiodump
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92948,7 +92967,7 @@ Category: Utilities
 Repository: base
 Title: Utility mdiodump from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92958,7 +92977,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mdiogen
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92968,7 +92987,7 @@ Category: Utilities
 Repository: base
 Title: Utility mdiogen from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92978,7 +92997,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-hpav
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -92988,7 +93007,7 @@ Category: Utilities
 Repository: base
 Title: Utility hpav from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92998,7 +93017,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mme
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93008,7 +93027,7 @@ Category: Utilities
 Repository: base
 Title: Utility mme from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93018,7 +93037,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-chknvm
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93028,7 +93047,7 @@ Category: Utilities
 Repository: base
 Title: Utility chknvm from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93038,7 +93057,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-chknvm2
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93048,7 +93067,7 @@ Category: Utilities
 Repository: base
 Title: Utility chknvm2 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93058,7 +93077,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-nvmsplit
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93068,7 +93087,7 @@ Category: Utilities
 Repository: base
 Title: Utility nvmsplit from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93078,7 +93097,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-nvmmerge
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93088,7 +93107,7 @@ Category: Utilities
 Repository: base
 Title: Utility nvmmerge from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93098,7 +93117,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-chkpib
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93108,7 +93127,7 @@ Category: Utilities
 Repository: base
 Title: Utility chkpib from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93118,7 +93137,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-chkpib2
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93128,7 +93147,7 @@ Category: Utilities
 Repository: base
 Title: Utility chkpib2 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93138,7 +93157,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-setpib
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93148,7 +93167,7 @@ Category: Utilities
 Repository: base
 Title: Utility setpib from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93158,7 +93177,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-getpib
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93168,7 +93187,7 @@ Category: Utilities
 Repository: base
 Title: Utility getpib from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93178,7 +93197,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-modpib
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93188,7 +93207,7 @@ Category: Utilities
 Repository: base
 Title: Utility modpib from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93198,7 +93217,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pib2xml
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93208,7 +93227,7 @@ Category: Utilities
 Repository: base
 Title: Utility pib2xml from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93218,7 +93237,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pibcomp
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93228,7 +93247,7 @@ Category: Utilities
 Repository: base
 Title: Utility pibcomp from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93238,7 +93257,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pibdump
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93248,7 +93267,7 @@ Category: Utilities
 Repository: base
 Title: Utility pibdump from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93258,7 +93277,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pibruin
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93268,7 +93287,7 @@ Category: Utilities
 Repository: base
 Title: Utility pibruin from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93278,7 +93297,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-xml2pib
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93288,7 +93307,7 @@ Category: Utilities
 Repository: base
 Title: Utility xml2pib from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93298,7 +93317,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-psin
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93308,7 +93327,7 @@ Category: Utilities
 Repository: base
 Title: Utility psin from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93318,7 +93337,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-psout
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93328,7 +93347,7 @@ Category: Utilities
 Repository: base
 Title: Utility psout from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93338,7 +93357,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pskey
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93348,7 +93367,7 @@ Category: Utilities
 Repository: base
 Title: Utility pskey from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93358,7 +93377,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-psgraph
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93368,7 +93387,7 @@ Category: Utilities
 Repository: base
 Title: Utility psgraph from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93378,7 +93397,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-psnotch
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93388,7 +93407,7 @@ Category: Utilities
 Repository: base
 Title: Utility psnotch from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93398,7 +93417,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pibrump
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93408,7 +93427,7 @@ Category: Utilities
 Repository: base
 Title: Utility pibrump from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93418,7 +93437,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6k
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93428,7 +93447,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6k from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93438,7 +93457,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kboot
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93448,7 +93467,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kboot from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93458,7 +93477,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6keth
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93468,7 +93487,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6keth from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93478,7 +93497,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kf
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93488,7 +93507,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kf from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93498,7 +93517,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6khost
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93508,7 +93527,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6khost from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93518,7 +93537,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int64host
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93528,7 +93547,7 @@ Category: Utilities
 Repository: base
 Title: Utility int64host from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93538,7 +93557,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kid
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93548,7 +93567,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kid from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93558,7 +93577,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6klist
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93568,7 +93587,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6klist from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93578,7 +93597,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6klog
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93588,7 +93607,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6klog from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93598,7 +93617,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kmdio
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93608,7 +93627,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kmdio from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93618,7 +93637,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kmdio2
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93628,7 +93647,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kmdio2 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93638,7 +93657,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kmod
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93648,7 +93667,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kmod from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93658,7 +93677,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kstat
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93668,7 +93687,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kstat from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93678,7 +93697,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6ktest
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93688,7 +93707,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6ktest from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93698,7 +93717,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6krate
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93708,7 +93727,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6krate from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93718,7 +93737,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6krule
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93728,7 +93747,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6krule from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93738,7 +93757,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6ktone
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93748,7 +93767,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6ktone from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93758,7 +93777,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kwait
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93768,7 +93787,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kwait from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93778,7 +93797,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-CMEncrypt
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93788,7 +93807,7 @@ Category: Utilities
 Repository: base
 Title: Utility CMEncrypt from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93798,7 +93817,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-sada
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93808,7 +93827,7 @@ Category: Utilities
 Repository: base
 Title: Utility sada from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93818,7 +93837,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-coqos_add
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93828,7 +93847,7 @@ Category: Utilities
 Repository: base
 Title: Utility coqos_add from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93838,7 +93857,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-coqos_info
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93848,7 +93867,7 @@ Category: Utilities
 Repository: base
 Title: Utility coqos_info from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93858,7 +93877,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-coqos_man
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93868,7 +93887,7 @@ Category: Utilities
 Repository: base
 Title: Utility coqos_man from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93878,7 +93897,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-coqos_mod
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93888,7 +93907,7 @@ Category: Utilities
 Repository: base
 Title: Utility coqos_mod from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93898,7 +93917,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-coqos_rel
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93908,7 +93927,7 @@ Category: Utilities
 Repository: base
 Title: Utility coqos_rel from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93918,7 +93937,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-mdustats
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93928,7 +93947,7 @@ Category: Utilities
 Repository: base
 Title: Utility mdustats from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93938,7 +93957,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ampboot
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93948,7 +93967,7 @@ Category: Utilities
 Repository: base
 Title: Utility ampboot from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93958,7 +93977,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amphost
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93968,7 +93987,7 @@ Category: Utilities
 Repository: base
 Title: Utility amphost from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93978,7 +93997,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ampID
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -93988,7 +94007,7 @@ Category: Utilities
 Repository: base
 Title: Utility ampID from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -93998,7 +94017,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amplist
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94008,7 +94027,7 @@ Category: Utilities
 Repository: base
 Title: Utility amplist from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94018,7 +94037,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amprate
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94028,7 +94047,7 @@ Category: Utilities
 Repository: base
 Title: Utility amprate from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94038,7 +94057,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amprule
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94048,7 +94067,7 @@ Category: Utilities
 Repository: base
 Title: Utility amprule from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94058,7 +94077,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ampstat
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94068,7 +94087,7 @@ Category: Utilities
 Repository: base
 Title: Utility ampstat from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94078,7 +94097,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amptest
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94088,7 +94107,7 @@ Category: Utilities
 Repository: base
 Title: Utility amptest from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94098,7 +94117,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amptool
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94108,7 +94127,7 @@ Category: Utilities
 Repository: base
 Title: Utility amptool from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94118,7 +94137,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-amptone
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94128,7 +94147,7 @@ Category: Utilities
 Repository: base
 Title: Utility amptone from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94138,7 +94157,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ampwait
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94148,7 +94167,7 @@ Category: Utilities
 Repository: base
 Title: Utility ampwait from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94158,7 +94177,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcboot
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94168,7 +94187,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcboot from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94178,7 +94197,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plchost
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94188,7 +94207,7 @@ Category: Utilities
 Repository: base
 Title: Utility plchost from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94198,7 +94217,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcID
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94208,7 +94227,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcID from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94218,7 +94237,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plclist
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94228,7 +94247,7 @@ Category: Utilities
 Repository: base
 Title: Utility plclist from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94238,7 +94257,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcrate
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94248,7 +94267,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcrate from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94258,7 +94277,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcrule
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94268,7 +94287,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcrule from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94278,7 +94297,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcstat
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94288,7 +94307,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcstat from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94298,7 +94317,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plctest
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94308,7 +94327,7 @@ Category: Utilities
 Repository: base
 Title: Utility plctest from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94318,7 +94337,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plctool
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94328,7 +94347,7 @@ Category: Utilities
 Repository: base
 Title: Utility plctool from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94338,7 +94357,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plctone
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94348,7 +94367,7 @@ Category: Utilities
 Repository: base
 Title: Utility plctone from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94358,7 +94377,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcwait
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94368,7 +94387,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcwait from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94378,7 +94397,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plchostd
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94388,7 +94407,7 @@ Category: Utilities
 Repository: base
 Title: Utility plchostd from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94398,7 +94417,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcget
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94408,7 +94427,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcget from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94418,7 +94437,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcset
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94428,7 +94447,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcset from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94438,7 +94457,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcotst
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94448,7 +94467,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcotst from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94458,7 +94477,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcfwd
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94468,7 +94487,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcfwd from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94478,7 +94497,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcdevs
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94488,7 +94507,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcdevs from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94498,7 +94517,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plclog
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94508,7 +94527,7 @@ Category: Utilities
 Repository: base
 Title: Utility plclog from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94518,7 +94537,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcmdio16
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94528,7 +94547,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcmdio16 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94538,7 +94557,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-plcmdio32
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94548,7 +94567,7 @@ Category: Utilities
 Repository: base
 Title: Utility plcmdio32 from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94558,7 +94577,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-config2cfg
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94568,7 +94587,7 @@ Category: Utilities
 Repository: base
 Title: Utility config2cfg from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94578,7 +94597,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-sdram
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94588,7 +94607,7 @@ Category: Utilities
 Repository: base
 Title: Utility sdram from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94598,7 +94617,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kuart
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94608,7 +94627,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kuart from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94618,7 +94637,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kbaud
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94628,7 +94647,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kbaud from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94638,7 +94657,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ttysig
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94648,7 +94667,7 @@ Category: Utilities
 Repository: base
 Title: Utility ttysig from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94658,7 +94677,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ptsctl
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94668,7 +94687,7 @@ Category: Utilities
 Repository: base
 Title: Utility ptsctl from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94678,7 +94697,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-weeder
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94688,7 +94707,7 @@ Category: Utilities
 Repository: base
 Title: Utility weeder from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94698,7 +94717,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ttysend
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94708,7 +94727,7 @@ Category: Utilities
 Repository: base
 Title: Utility ttysend from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94718,7 +94737,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ttyrecv
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94728,7 +94747,7 @@ Category: Utilities
 Repository: base
 Title: Utility ttyrecv from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94738,7 +94757,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-ttycat
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94748,7 +94767,7 @@ Category: Utilities
 Repository: base
 Title: Utility ttycat from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94758,7 +94777,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-int6kdetect
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94768,7 +94787,7 @@ Category: Utilities
 Repository: base
 Title: Utility int6kdetect from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94778,7 +94797,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-pev
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94788,7 +94807,7 @@ Category: Utilities
 Repository: base
 Title: Utility pev from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94798,7 +94817,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: open-plc-utils-evse
-Version: bb50f635ef6cec8b52898051e0d18f4ac3fdd331-4
+Version: 358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -94808,7 +94827,7 @@ Category: Utilities
 Repository: base
 Title: Utility evse from the Open PLC utilities
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-bb50f635ef6cec8b52898051e0d18f4ac3fdd331.tar.xz
+Source: open-plc-utils-358dfcf78bdaf7b0b13dcdf91cb1aae1789f2770.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
@@ -94865,7 +94884,7 @@ Kagurazaka Kotori <kagurazakakotori@gmail.com>
 Source-Makefile: feeds/packages/utils/open2300/Makefile
 
 Package: open2300
-Version: 2014-03-04-1af8ae609da66f8e1b745533c19095c9758bfb0b-2
+Version: 2014-03-04-1af8ae609da66f8e1b745533c19095c9758bfb0b-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -94888,7 +94907,7 @@ Gabor SZOLLOSI <dev@localnet.hu>
 Source-Makefile: feeds/packages/utils/openobex/Makefile
 
 Package: openobex
-Version: 1.7.2-3
+Version: 1.7.2-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +openobex-apps +libopenobex
 Conflicts: 
 Menu-Depends: 
@@ -94908,7 +94927,7 @@ https://www.gitorious.org/openobex
 @@
 
 Package: openobex-apps
-Version: 1.7.2-3
+Version: 1.7.2-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenobex +bluez-libs
 Conflicts: 
 Menu-Depends: 
@@ -94928,7 +94947,7 @@ https://www.gitorious.org/openobex
 @@
 
 Package: libopenobex
-Version: 1.7.2-3
+Version: 1.7.2-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -94991,7 +95010,7 @@ Build-Depends: pcsc-lite libtool gettext libiconv
 
 Package: libopensc
 Menu: 1
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -95001,7 +95020,7 @@ Category: Libraries
 Repository: base
 Title: OpenSC libraries for smart cards
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95014,7 +95033,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-pkcs11
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95024,7 +95043,7 @@ Category: Libraries
 Repository: base
 Title: OpenSC - PKCS11 provider
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95034,7 +95053,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libpkcs11-spy
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -95044,7 +95063,7 @@ Category: Libraries
 Repository: base
 Title: PKCS11 spying wrapper
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95055,7 +95074,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils
 Menu: 1
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95065,7 +95084,7 @@ Category: Utilities
 Repository: base
 Title: OpenSC - tools for smart cards
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95075,7 +95094,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-cardos-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95085,7 +95104,7 @@ Category: Utilities
 Repository: base
 Title: cardos-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95095,7 +95114,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-cryptoflex-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95105,7 +95124,7 @@ Category: Utilities
 Repository: base
 Title: cryptoflex-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95115,7 +95134,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-dnie-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95125,7 +95144,7 @@ Category: Utilities
 Repository: base
 Title: dnie-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95135,7 +95154,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-eidenv
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95145,7 +95164,7 @@ Category: Utilities
 Repository: base
 Title: eidenv utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95155,7 +95174,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-iasecc-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95165,7 +95184,7 @@ Category: Utilities
 Repository: base
 Title: iasecc-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95175,7 +95194,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-netkey-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95185,7 +95204,7 @@ Category: Utilities
 Repository: base
 Title: netkey-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95195,7 +95214,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-openpgp-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95205,7 +95224,7 @@ Category: Utilities
 Repository: base
 Title: openpgp-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95215,7 +95234,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-opensc-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95225,7 +95244,7 @@ Category: Utilities
 Repository: base
 Title: opensc-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95235,7 +95254,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-opensc-explorer
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -95245,7 +95264,7 @@ Category: Utilities
 Repository: base
 Title: opensc-explorer utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95255,7 +95274,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-piv-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95265,7 +95284,7 @@ Category: Utilities
 Repository: base
 Title: piv-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95275,7 +95294,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-pkcs11-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95285,7 +95304,7 @@ Category: Utilities
 Repository: base
 Title: pkcs11-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95295,7 +95314,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-pkcs15-crypt
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95305,7 +95324,7 @@ Category: Utilities
 Repository: base
 Title: pkcs15-crypt utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95315,7 +95334,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-pkcs15-init
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95325,7 +95344,7 @@ Category: Utilities
 Repository: base
 Title: pkcs15-init utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95335,7 +95354,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-pkcs15-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95345,7 +95364,7 @@ Category: Utilities
 Repository: base
 Title: pkcs15-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95355,7 +95374,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-sc-hsm-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95365,7 +95384,7 @@ Category: Utilities
 Repository: base
 Title: sc-hsm-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95375,7 +95394,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: opensc-utils-westcos-tool
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
 Conflicts: 
 Menu-Depends: 
@@ -95385,7 +95404,7 @@ Category: Utilities
 Repository: base
 Title: westcos-tool utility from opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95395,7 +95414,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-asepcos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95405,7 +95424,7 @@ Category: Libraries
 Repository: base
 Title: asepcos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95415,7 +95434,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-authentic
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95425,7 +95444,7 @@ Category: Libraries
 Repository: base
 Title: authentic card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95435,7 +95454,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-cardos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95445,7 +95464,7 @@ Category: Libraries
 Repository: base
 Title: cardos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95455,7 +95474,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-cyberflex
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95465,7 +95484,7 @@ Category: Libraries
 Repository: base
 Title: cyberflex card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95475,7 +95494,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-entersafe
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95485,7 +95504,7 @@ Category: Libraries
 Repository: base
 Title: entersafe card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95495,7 +95514,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-epass2003
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95505,7 +95524,7 @@ Category: Libraries
 Repository: base
 Title: epass2003 card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95515,7 +95534,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-flex
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95525,7 +95544,7 @@ Category: Libraries
 Repository: base
 Title: flex card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95535,7 +95554,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-gpk
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95545,7 +95564,7 @@ Category: Libraries
 Repository: base
 Title: gpk card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95555,7 +95574,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-ias-adele-admin1
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95565,7 +95584,7 @@ Category: Libraries
 Repository: base
 Title: ias_adele_admin1 card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95575,7 +95594,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-ias-adele-admin2
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95585,7 +95604,7 @@ Category: Libraries
 Repository: base
 Title: ias_adele_admin2 card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95595,7 +95614,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-ias-adele-common
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95605,7 +95624,7 @@ Category: Libraries
 Repository: base
 Title: ias_adele_common card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95615,7 +95634,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-iasecc-admin-eid
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95625,7 +95644,7 @@ Category: Libraries
 Repository: base
 Title: iasecc_admin_eid card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95635,7 +95654,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-iasecc-generic-oberthur
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95645,7 +95664,7 @@ Category: Libraries
 Repository: base
 Title: iasecc_generic_oberthur card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95655,7 +95674,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-iasecc-generic-pki
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95665,7 +95684,7 @@ Category: Libraries
 Repository: base
 Title: iasecc_generic_pki card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95675,7 +95694,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-iasecc
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95685,7 +95704,7 @@ Category: Libraries
 Repository: base
 Title: iasecc card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95695,7 +95714,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-incrypto34
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95705,7 +95724,7 @@ Category: Libraries
 Repository: base
 Title: incrypto34 card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95715,7 +95734,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-jcop
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95725,7 +95744,7 @@ Category: Libraries
 Repository: base
 Title: jcop card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95735,7 +95754,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-miocos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95745,7 +95764,7 @@ Category: Libraries
 Repository: base
 Title: miocos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95755,7 +95774,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-muscle
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95765,7 +95784,7 @@ Category: Libraries
 Repository: base
 Title: muscle card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95775,7 +95794,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-myeid
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95785,7 +95804,7 @@ Category: Libraries
 Repository: base
 Title: myeid card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95795,7 +95814,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-oberthur
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95805,7 +95824,7 @@ Category: Libraries
 Repository: base
 Title: oberthur card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95815,7 +95834,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-openpgp
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95825,7 +95844,7 @@ Category: Libraries
 Repository: base
 Title: openpgp card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95835,7 +95854,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-pkcs15
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95845,7 +95864,7 @@ Category: Libraries
 Repository: base
 Title: pkcs15 card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95855,7 +95874,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-rutoken-ecp
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95865,7 +95884,7 @@ Category: Libraries
 Repository: base
 Title: rutoken_ecp card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95875,7 +95894,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-rutoken
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95885,7 +95904,7 @@ Category: Libraries
 Repository: base
 Title: rutoken card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95895,7 +95914,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-sc-hsm
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95905,7 +95924,7 @@ Category: Libraries
 Repository: base
 Title: sc-hsm card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95915,7 +95934,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-setcos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95925,7 +95944,7 @@ Category: Libraries
 Repository: base
 Title: setcos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95935,7 +95954,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-starcos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95945,7 +95964,7 @@ Category: Libraries
 Repository: base
 Title: starcos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95955,7 +95974,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libopensc-profile-westcos
-Version: 0.21.0-0
+Version: 0.22.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
 Conflicts: 
 Menu-Depends: 
@@ -95965,7 +95984,7 @@ Category: Libraries
 Repository: base
 Title: westcos card profile for opensc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: opensc-0.21.0.tar.gz
+Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -95978,7 +95997,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/openzwave/Makefile
 
 Package: libopenzwave
-Version: 1.6.1149-2
+Version: 1.6.1149-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -95996,7 +96015,7 @@ David Woodhouse <dwmw2@infradead.org>
 @@
 
 Package: openzwave
-Version: 1.6.1149-2
+Version: 1.6.1149-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenzwave +openzwave-config
 Conflicts: 
 Menu-Depends: 
@@ -96014,7 +96033,7 @@ David Woodhouse <dwmw2@infradead.org>
 @@
 
 Package: openzwave-config
-Version: 1.6.1149-2
+Version: 1.6.1149-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -96416,7 +96435,7 @@ http://www.kernel.org/pub/linux/utils/kernel/pcmcia/pcmcia.html
 Source-Makefile: feeds/packages/utils/pcsc-lite/Makefile
 
 Package: libpcsclite
-Version: 1.9.1-0
+Version: 1.9.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -96426,7 +96445,7 @@ Category: Libraries
 Repository: base
 Title: Access a smart card using SCard API (PC/SC) (library)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: pcsc-lite-1.9.1.tar.bz2
+Source: pcsc-lite-1.9.9.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -96440,7 +96459,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: pcscd
-Version: 1.9.1-0
+Version: 1.9.9-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcsclite
 Conflicts: 
 Menu-Depends: 
@@ -96450,7 +96469,7 @@ Category: Utilities
 Repository: base
 Title: Access a smart card using SCard API (PC/SC) (daemon)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: pcsc-lite-1.9.1.tar.bz2
+Source: pcsc-lite-1.9.9.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -96585,7 +96604,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 Source-Makefile: feeds/packages/utils/poemgr/Makefile
 
 Package: poemgr
-Version: 2022-03-19-77395242f9b3cb6ef003c5ed74f9b5be78404450-2
+Version: 2022-09-20-8988247aacdf18013daa7d7931754e338e08b1bd-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -96595,7 +96614,7 @@ Category: Utilities
 Repository: base
 Title: Utility to control PoE ports on the UniFi Flex switch
 Maintainer: David Bauer <mail@david-bauer.net>
-Source: poemgr-2022-03-19-77395242f9b3cb6ef003c5ed74f9b5be78404450.tar.xz
+Source: poemgr-2022-09-20-8988247aacdf18013daa7d7931754e338e08b1bd.tar.xz
 License: GPL-2.0-only
 Type: ipkg
 Description: Utility to control PoE ports on the UniFi Flex switch
@@ -97075,6 +97094,9 @@ Description: Prometheus, a Cloud Native Computing Foundation project, is a syste
 service monitoring system. It collects metrics from configured targets at given
 intervals, evaluates rule expressions, displays the results, and can trigger
 alerts if some condition is observed to be true.
+
+Default tsdb path is /srv/prometheus, you might want to edit /etc/config/prometheus
+in order to place it on USB storage or external SD card.
 http://prometheus.io
 Paul Spooren <mail@aparcar.org>
 @@
@@ -97813,7 +97835,7 @@ Heinrich Schuchardt <xypron.glpk@gmx.de>
 Source-Makefile: feeds/packages/utils/reptyr/Makefile
 
 Package: reptyr
-Version: 0.8.0-4
+Version: 0.8.0-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||mips||mipsel||mips64||mips64el)
 Conflicts: 
 Menu-Depends: 
@@ -97840,7 +97862,7 @@ Source-Makefile: feeds/packages/utils/restic/Makefile
 Build-Depends: golang/host
 
 Package: restic
-Version: 0.9.6-1
+Version: 0.14.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -97849,8 +97871,8 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: restic backup program
-Maintainer: Markus Weippert <markus@gekmihesg.de>
-Source: restic-0.9.6.tar.gz
+Maintainer: Tom Stöveken <tom@naaa.de>
+Source: restic-0.14.0.tar.gz
 License: BSD-2-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -97858,7 +97880,7 @@ Description: restic is a backup program that is fast, efficient and secure. It s
 three major operating systems (Linux, macOS, Windows) and a few smaller ones
 (FreeBSD, OpenBSD).
 http://github.com/restic/restic
-Markus Weippert <markus@gekmihesg.de>
+Tom Stöveken <tom@naaa.de>
 @@
 
 
@@ -98006,7 +98028,7 @@ Source-Makefile: feeds/packages/utils/rtklib/Makefile
 
 Package: convbin
 Submenu: RTKLIB Suite
-Version: 2.4.3_b32-1
+Version: 2.4.3_b34-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -98016,7 +98038,7 @@ Category: Utilities
 Repository: base
 Title: RINEX Converter
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtklib-2.4.3_b32.tar.xz
+Source: rtklib-2.4.3_b34.tar.xz
 License: BSD-2-Clause
 Type: ipkg
 Description: RINEX Converter
@@ -98026,7 +98048,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: pos2kml
 Submenu: RTKLIB Suite
-Version: 2.4.3_b32-1
+Version: 2.4.3_b34-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -98036,7 +98058,7 @@ Category: Utilities
 Repository: base
 Title: Solution to KML converter
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtklib-2.4.3_b32.tar.xz
+Source: rtklib-2.4.3_b34.tar.xz
 License: BSD-2-Clause
 Type: ipkg
 Description: Solution to KML converter
@@ -98046,7 +98068,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: rnx2rtkp
 Submenu: RTKLIB Suite
-Version: 2.4.3_b32-1
+Version: 2.4.3_b34-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -98056,7 +98078,7 @@ Category: Utilities
 Repository: base
 Title: Post-Processing Analysis
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtklib-2.4.3_b32.tar.xz
+Source: rtklib-2.4.3_b34.tar.xz
 License: BSD-2-Clause
 Type: ipkg
 Description: Post-Processing Analysis
@@ -98066,7 +98088,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: rtkrcv
 Submenu: RTKLIB Suite
-Version: 2.4.3_b32-1
+Version: 2.4.3_b34-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -98076,7 +98098,7 @@ Category: Utilities
 Repository: base
 Title: Real-Time Positioning
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtklib-2.4.3_b32.tar.xz
+Source: rtklib-2.4.3_b34.tar.xz
 License: BSD-2-Clause
 Type: ipkg
 Description: Real-Time Positioning
@@ -98086,7 +98108,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: str2str
 Submenu: RTKLIB Suite
-Version: 2.4.3_b32-1
+Version: 2.4.3_b34-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -98096,7 +98118,7 @@ Category: Utilities
 Repository: base
 Title: Communication Server
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtklib-2.4.3_b32.tar.xz
+Source: rtklib-2.4.3_b34.tar.xz
 License: BSD-2-Clause
 Type: ipkg
 Description: Communication Server
@@ -98233,7 +98255,7 @@ Source-Makefile: feeds/packages/utils/rtty/Makefile
 
 Package: rtty-openssl
 Submenu: Terminal
-Version: 8.0.1-1
+Version: 8.0.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_rtty-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -98255,7 +98277,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: rtty-wolfssl
 Submenu: Terminal
-Version: 8.0.1-1
+Version: 8.0.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_rtty-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -98277,7 +98299,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: rtty-mbedtls
 Submenu: Terminal
-Version: 8.0.1-1
+Version: 8.0.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_rtty-mbedtls:libmbedtls +PACKAGE_rtty-mbedtls:zlib
 Conflicts: 
 Menu-Depends: 
@@ -98299,7 +98321,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 
 Package: rtty-nossl
 Submenu: Terminal
-Version: 8.0.1-1
+Version: 8.0.1-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -100880,7 +100902,7 @@ Build-Depends/host: libsemanage/host
 Build-Types: host
 
 Package: semodule-utils
-Version: 3.2-1
+Version: 3.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsepol
 Conflicts: 
 Menu-Depends: 
@@ -100890,7 +100912,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utilities for dealing with modules
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: semodule-utils-3.2.tar.gz
+Source: semodule-utils-3.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -100977,7 +100999,7 @@ Jo-Philipp Wich <jo@mein.io>
 Source-Makefile: feeds/packages/utils/sexpect/Makefile
 
 Package: sexpect
-Version: 2.3.8-0
+Version: 2.3.11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -100987,7 +101009,7 @@ Category: Utilities
 Repository: base
 Title: Expect for Shells
 Maintainer: Clark Wang <dearvoid@gmail.com>
-Source: sexpect-2.3.8.tar.gz
+Source: sexpect-2.3.11.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -102147,7 +102169,7 @@ Harald Geyer <harald@ccbib.org>
 Source-Makefile: feeds/packages/utils/sockread/Makefile
 
 Package: sockread
-Version: 1.0-1
+Version: 1.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -102169,7 +102191,7 @@ Moritz Warning <moritzwarning@web.de>
 Source-Makefile: feeds/packages/utils/spi-tools/Makefile
 
 Package: spi-tools
-Version: 0.8.7-0
+Version: 1.0.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -102179,7 +102201,7 @@ Category: Utilities
 Repository: base
 Title: Command line SPI tools
 Maintainer: John Crispin <blogic@openwrt.org>
-Source: spi-tools-0.8.7.tar.gz
+Source: spi-tools-1.0.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -102380,8 +102402,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 Source-Makefile: feeds/packages/utils/stress-ng/Makefile
 
 Package: stress-ng
-Version: 0.12.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libbsd +libaio +libsctp
+Version: 0.14.06-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libbsd +libaio +libsctp +libkmod +libatomic +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -102390,14 +102412,14 @@ Category: Utilities
 Repository: base
 Title: stress-ng is a stress test utility
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: stress-ng-0.12.10.tar.xz
+Source: stress-ng-0.14.06.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
 Description: stress-ng will stress test a computer system in various selectable ways. It
 was designed to exercise various physical subsystems of a computer as well as
 the various operating system kernel interfaces.
-https://kernel.ubuntu.com/~cking/stress-ng/
+https://github.com/ColinIanKing/stress-ng
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
@@ -102551,7 +102573,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 Source-Makefile: feeds/packages/utils/tang/Makefile
 
 Package: tang
-Version: 10-0
+Version: 11-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libhttp-parser +xinetd +jose +bash
 Conflicts: 
 Menu-Depends: 
@@ -102559,9 +102581,9 @@ Provides:
 Section: utils
 Category: Extra packages
 Repository: base
-Title: tang v10 - daemon for binding data to the presence of a third party
+Title: tang v11 - daemon for binding data to the presence of a third party
 Maintainer: Tibor Dudlák <tibor.dudlak@gmail.com>
-Source: tang-10.tar.xz
+Source: tang-11.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -102652,7 +102674,8 @@ https://taskwarrior.org/
 
 
 Source-Makefile: feeds/packages/utils/tcsh/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: tcsh/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Types: host
 
 Package: tcsh
 Submenu: Shells
@@ -102687,7 +102710,7 @@ Source-Makefile: feeds/packages/utils/telegraf/Makefile
 Build-Depends: golang/host
 
 Package: telegraf
-Version: 1.23.0-1
+Version: 1.23.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -102698,7 +102721,7 @@ Category: Utilities
 Repository: base
 Title: Telegraf (Small)
 Maintainer: Jonathan Pagel <jonny_tischbein@systemli.org>
-Source: telegraf-1.23.0.tar.gz
+Source: telegraf-1.23.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -102709,7 +102732,7 @@ Jonathan Pagel <jonny_tischbein@systemli.org>
 @@
 
 Package: telegraf-full
-Version: 1.23.0-1
+Version: 1.23.4-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -102720,7 +102743,7 @@ Category: Utilities
 Repository: base
 Title: Telegraf (Full)
 Maintainer: Jonathan Pagel <jonny_tischbein@systemli.org>
-Source: telegraf-1.23.0.tar.gz
+Source: telegraf-1.23.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -102735,7 +102758,7 @@ Source-Makefile: feeds/packages/utils/telldus-core/Makefile
 Build-Depends: argp-standalone
 
 Package: telldus-core
-Version: 2.1.2-7
+Version: 2.1.2-8
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +confuse +libftdi +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -105360,7 +105383,7 @@ Source-Makefile: feeds/packages/utils/tmux/Makefile
 
 Package: tmux
 Submenu: Terminal
-Version: 3.2-0
+Version: 3.3a-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libevent2-core +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -105370,7 +105393,7 @@ Category: Utilities
 Repository: base
 Title: Terminal multiplexer
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: tmux-3.2.tar.gz
+Source: tmux-3.3a.tar.gz
 License: ISC
 LicenseFiles: COPYING
 Type: ipkg
@@ -105425,7 +105448,7 @@ Banglang Huang <banglang.huang@foxmail.com>
 Source-Makefile: feeds/packages/utils/triggerhappy/Makefile
 
 Package: triggerhappy
-Version: 0.5.0-1
+Version: 0.5.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -105521,7 +105544,7 @@ Source-Makefile: feeds/packages/utils/unrar/Makefile
 
 Package: unrar
 Submenu: Compression
-Version: 6.0.6-0
+Version: 6.1.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -105532,7 +105555,7 @@ Category: Utilities
 Repository: base
 Title: UnRAR (application)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>, Ted Hess <thess@kitschensync.net>
-Source: unrarsrc-6.0.6.tar.gz
+Source: unrarsrc-6.1.3.tar.gz
 License: UnRAR
 LicenseFiles: license.txt
 Type: ipkg
@@ -105544,7 +105567,7 @@ https://www.rarlab.com/
 
 Package: libunrar
 Submenu: Compression
-Version: 6.0.6-0
+Version: 6.1.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -105555,7 +105578,7 @@ Category: Libraries
 Repository: base
 Title: UnRAR (library)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>, Ted Hess <thess@kitschensync.net>
-Source: unrarsrc-6.0.6.tar.gz
+Source: unrarsrc-6.1.3.tar.gz
 License: UnRAR
 LicenseFiles: license.txt
 Type: ipkg
@@ -105624,8 +105647,8 @@ Rosen Penev <rosenp@gmail.com>
 Source-Makefile: feeds/packages/utils/usbutils/Makefile
 
 Package: usbutils
-Version: 013-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libudev +usbids +librt +libpthread
+Version: 014-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libudev +librt +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -105634,7 +105657,7 @@ Category: Utilities
 Repository: base
 Title: USB devices listing utilities
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: usbutils-013.tar.xz
+Source: usbutils-014.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -105649,7 +105672,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: uvcdynctrl
 Menu: 1
-Version: 0.2.5-3
+Version: 0.2.5-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -105727,7 +105750,6 @@ Daniel Golle <daniel@makrotopia.org>
 
 
 Source-Makefile: feeds/packages/utils/vim/Makefile
-Build-Depends/host: libiconv/host
 Build-Types: host
 
 Package: vim
@@ -105895,10 +105917,10 @@ Huangbin Zhan <zhanhb88@gmail.com>
 
 
 Source-Makefile: feeds/packages/utils/whois/Makefile
-Build-Depends: perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: perl/host
 
 Package: whois
-Version: 5.5.9-0
+Version: 5.5.10-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -105908,7 +105930,7 @@ Category: Utilities
 Repository: base
 Title: Intelligent WHOIS client
 Maintainer: Paul Spooren <mail@aparcar.org>
-Source: whois_5.5.9.tar.xz
+Source: whois_5.5.10.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -106298,11 +106320,10 @@ Config:
 
 
 Source-Makefile: feeds/packages/utils/ykclient/Makefile
-Build-Depends: curl
 
 Package: ykclient
-Version: 2.15-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread curl
+Version: 2.15-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -106349,7 +106370,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.27.2-0
+Version: 4.29.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -106359,7 +106380,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.27.2.tar.gz
+Source: yq-4.29.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -106399,7 +106420,7 @@ Source-Makefile: feeds/packages/utils/zoneinfo/Makefile
 
 Package: zoneinfo-simple
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106409,7 +106430,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (simple)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (simple)
@@ -106418,7 +106439,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-core
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106428,7 +106449,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (core)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (core)
@@ -106437,7 +106458,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-africa
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106447,7 +106468,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Africa)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Africa)
@@ -106456,7 +106477,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-northamerica
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106466,7 +106487,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (NorthAmerica)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (NorthAmerica)
@@ -106475,7 +106496,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-southamerica
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106485,7 +106506,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (SouthAmerica)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (SouthAmerica)
@@ -106494,7 +106515,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-poles
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106504,7 +106525,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Arctic, Antarctic)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Arctic, Antarctic)
@@ -106513,7 +106534,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-asia
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106523,7 +106544,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Asia)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Asia)
@@ -106532,7 +106553,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-atlantic
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106542,7 +106563,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Atlantic)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Atlantic)
@@ -106551,7 +106572,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-australia-nz
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106561,7 +106582,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Australia-NZ)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Australia-NZ)
@@ -106570,7 +106591,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-pacific
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106580,7 +106601,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Pacific)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Pacific)
@@ -106589,7 +106610,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-europe
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106599,7 +106620,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (Europe)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (Europe)
@@ -106608,7 +106629,7 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-india
 Submenu: Zoneinfo
-Version: 2022c-1
+Version: 2022f-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -106618,7 +106639,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (India)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (India)
@@ -106627,8 +106648,8 @@ Vladimir Ulrich <admin@evl.su>
 
 Package: zoneinfo-all
 Submenu: Zoneinfo
-Version: 2022c-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zoneinfo-simple +zoneinfo-core +zoneinfo-africa +zoneinfo-northamerica +zoneinfo-southamerica +zoneinfo-poles +zoneinfo-asia +zoneinfo-atlantic +zoneinfo-australia-nz +zoneinfo-pacific +zoneinfo-europe +zoneinfo-india
+Version: 2022f-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zoneinfo-core +zoneinfo-africa +zoneinfo-northamerica +zoneinfo-southamerica +zoneinfo-poles +zoneinfo-asia +zoneinfo-atlantic +zoneinfo-australia-nz +zoneinfo-pacific +zoneinfo-europe +zoneinfo-india
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -106637,7 +106658,7 @@ Category: Utilities
 Repository: base
 Title: Zone Information (all zones)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: tzdata2022c.tar.gz
+Source: tzdata2022f.tar.gz
 License: Public Domain
 Type: ipkg
 Description: Zone Information (all zones)
@@ -106649,7 +106670,7 @@ Source-Makefile: feeds/packages/utils/zsh/Makefile
 
 Package: zsh
 Submenu: Shells
-Version: 5.8.1-1
+Version: 5.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libncurses +libncursesw +libpcre +librt
 Conflicts: 
 Menu-Depends: 
@@ -106659,7 +106680,7 @@ Category: Utilities
 Repository: base
 Title: The Z shell
 Maintainer: Vadim A. Misbakh-Soloviov <openwrt-zsh@mva.name>
-Source: zsh-5.8.1.tar.xz
+Source: zsh-5.9.tar.xz
 License: ZSH
 LicenseFiles: LICENCE
 Type: ipkg

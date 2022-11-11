@@ -1,9 +1,8 @@
 Source-Makefile: feeds/packages/utils/ykclient/Makefile
-Build-Depends: curl
 
 Package: ykclient
-Version: 2.15-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread curl
+Version: 2.15-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl
 Conflicts: 
 Menu-Depends: 
 Provides: 

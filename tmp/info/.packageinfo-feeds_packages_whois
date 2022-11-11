@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/whois/Makefile
-Build-Depends: perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: perl/host
 
 Package: whois
-Version: 5.5.9-0
+Version: 5.5.10-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: packages
 Title: Intelligent WHOIS client
 Maintainer: Paul Spooren <mail@aparcar.org>
-Source: whois_5.5.9.tar.xz
+Source: whois_5.5.10.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg

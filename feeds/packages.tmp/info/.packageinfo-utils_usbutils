@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/usbutils/Makefile
 
 Package: usbutils
-Version: 013-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libudev +usbids +librt +libpthread
+Version: 014-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libudev +librt +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: USB devices listing utilities
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: usbutils-013.tar.xz
+Source: usbutils-014.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg

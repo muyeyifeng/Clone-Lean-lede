@@ -8,7 +8,7 @@ Target-Features: gpio squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -25,7 +25,7 @@ Target-Features: dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -1638,7 +1638,7 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs testing-kern
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -3575,20 +3575,6 @@ Build firmware images for XiaoYu XY-C5
 
 @@
 
-Target-Profile: DEVICE_jdcloud_luban
-Target-Profile-Name: jdcloud Luban
-Target-Profile-Packages:  kmod-mt7915e wpad-openssl uboot-envtools iwinfo
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: jdcloud,luban
-
-
-Target-Profile-Description:
-Build firmware images for jdcloud Luban
-
-
-
-@@
-
 Target-Profile: DEVICE_xzwifi_creativebox-v1
 Target-Profile-Name: CreativeBox v1
 Target-Profile-Packages: kmod-ata-ahci kmod-mt7603 kmod-mt76x2 kmod-sdhci-mt7620 kmod-usb3 -wpad-openssl 
@@ -3766,7 +3752,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -4893,7 +4879,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -5022,7 +5008,7 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -6553,7 +6539,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.223
+Linux-Version: 5.4.224
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
