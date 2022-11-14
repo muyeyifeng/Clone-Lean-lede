@@ -925,7 +925,7 @@ Source-Makefile: feeds/passwall_package/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.6.3-0
+Version: 1.6.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -935,7 +935,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.6.3.tar.gz
+Source: Xray-core-1.6.4.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -946,7 +946,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: xray-example
-Version: 1.6.3-0
+Version: 1.6.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
 Conflicts: 
 Menu-Depends: 
@@ -956,7 +956,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.6.3.tar.gz
+Source: Xray-core-1.6.4.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
