@@ -556,11 +556,10 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-ath10k
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
+Depends:  +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: regular
 Section: kernel
 Category: Kernel modules
 Title: Atheros 802.11ac wireless cards support
@@ -568,8 +567,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: backports-5.15.33-1.tar.xz
 Type: ipkg
 Description: This module adds support for wireless adapters based on
-Atheros IEEE 802.11ac family of chipsets. For now only
-PCI is supported.
+Atheros IEEE 802.11ac family of chipsets.
 https://wireless.wiki.kernel.org/en/users/drivers/ath10k
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -581,27 +579,66 @@ Config:
                depends on PACKAGE_kmod-ath10k || PACKAGE_kmod-ath10k-smallbuffers
 
        config ATH10K_THERMAL
-               default y
                bool "Enable thermal sensors and throttling support"
+               default y
                depends on PACKAGE_kmod-ath10k || PACKAGE_kmod-ath10k-smallbuffers
 
+@@
+
+Package: kmod-ath10k-pci
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+5.15.33-1-1
+Depends:  @PCI_SUPPORT kmod-ath10k
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: regular
+Section: kernel
+Category: Kernel modules
+Title: Atheros 802.11ac PCIE wireless cards support
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: backports-5.15.33-1.tar.xz
+Type: ipkg
+Description: This module adds support for wireless adapters based on
+Atheros IEEE 802.11ac family of chipsets with PCIE bus.
+https://wireless.wiki.kernel.org/en/users/drivers/ath10k
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: kmod-ath10k-sdio
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+5.15.33-1-1
+Depends:  kmod-ath10k +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Atheros 802.11ac SDIO wireless cards support
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: backports-5.15.33-1.tar.xz
+Type: ipkg
+Description: This module adds support for wireless adapters based on
+Atheros IEEE 802.11ac family of chipsets with SDIO bus.
+https://wireless.wiki.kernel.org/en/users/drivers/ath10k
+Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: kmod-ath10k-smallbuffers
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
+Depends:  @PCI_SUPPORT kmod-ath10k
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Build-Variant: smallbuffers
 Section: kernel
 Category: Kernel modules
-Title: Atheros 802.11ac wireless cards support (small buffers for low-RAM devices)
+Title: Atheros 802.11ac PCIE wireless cards support (small buffers for low-RAM devices)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: backports-5.15.33-1.tar.xz
 Type: ipkg
-Description: Atheros 802.11ac wireless cards support (small buffers for low-RAM devices)
+Description: Atheros 802.11ac PCIE wireless cards support (small buffers for low-RAM devices)
 https://wireless.wiki.kernel.org/en/users/drivers/ath10k
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -687,6 +724,24 @@ https://wireless.wiki.kernel.org/en/users/drivers/ath11k
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: kmod-ar5523
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+5.15.33-1-1
+Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Driver for Atheros AR5523 USB sticks
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: backports-5.15.33-1.tar.xz
+Type: ipkg
+Description: Driver for Atheros AR5523 USB sticks
+https://wireless.wiki.kernel.org/
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: kmod-carl9170
 Submenu: Wireless Drivers
 Version: <LINUX_VERSION>+5.15.33-1-1
@@ -724,24 +779,6 @@ Description:   Kernel module that helps to initialize certain Qualcomm
   together with the calibration data in the file system.
 
   This is necessary for devices like the Cisco Meraki Z1.
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-ar5523
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Driver for Atheros AR5523 USB sticks
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Driver for Atheros AR5523 USB sticks
 https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
