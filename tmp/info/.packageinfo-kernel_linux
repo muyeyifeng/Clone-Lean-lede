@@ -5565,6 +5565,44 @@ Description:    Supports the Broadcom 84881 PHY.
 
 @@
 
+Package: kmod-phy-marvell
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Gigabit Ethernet PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MARVELL_PHY
+Description:    Supports Marvell Gigabit Ethernet PHYs:
+   * 88E1101
+   * 88E1112
+   * 88E1111 (incl. Finisar variant)
+   * 88E1118
+   * 88E1121R
+   * 88E1145
+   * 88E1149R
+   * 88E1240
+   * 88E1318S
+   * 88E1116R
+   * 88E1510
+   * 88E1540
+   * 88E1545
+   * 88E3016
+   * 88E6341 family
+   * 88E6390 family
+   * 88E6393 family
+   * 88E1340S
+   * 88E1548P
+
+@@
+
 Package: kmod-phy-realtek
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -9421,7 +9459,7 @@ Description: In-kernel DNS Resolver
 Package: kmod-rxrpc
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-crypto-pcbc +kmod-crypto-fcrypt
+Depends: +kmod-crypto-manager +kmod-crypto-pcbc +kmod-crypto-fcrypt +kmod-udptunnel4 +IPV6:kmod-udptunnel6
 Conflicts: 
 Menu-Depends: 
 Provides: 

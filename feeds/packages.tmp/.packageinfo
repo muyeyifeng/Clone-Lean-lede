@@ -62,7 +62,7 @@ Carsten Wolff <carsten@wolffcarsten.de>
 Source-Makefile: feeds/packages/admin/btop/Makefile
 
 Package: btop
-Version: 1.2.12-0
+Version: 1.2.13-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -72,7 +72,7 @@ Category: Administration
 Repository: base
 Title: A monitor of resources
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: btop-1.2.12.tar.gz
+Source: btop-1.2.13.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2218,7 +2218,7 @@ Source-Makefile: feeds/packages/kernel/ovpn-dco/Makefile
 
 Package: kmod-ovpn-dco
 Submenu: Network Support
-Version: <LINUX_VERSION>+2021-10-05-1017d4ada58a4c73f44ef671b6469ae168b6c6b0-0
+Version: <LINUX_VERSION>+2022-10-23-d1d53564e17d807aed2b945ea3d4ec35bdd9f09b-0
 Depends: +kmod-crypto-aead +kmod-udptunnel4 +kmod-udptunnel6
 Conflicts: 
 Menu-Depends: 
@@ -2227,7 +2227,7 @@ Section: kernel
 Category: Kernel modules
 Title: OpenVPN data channel offload
 Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
-Source: ovpn-dco-2021-10-05-1017d4ada58a4c73f44ef671b6469ae168b6c6b0.tar.xz
+Source: ovpn-dco-2022-10-23-d1d53564e17d807aed2b945ea3d4ec35bdd9f09b.tar.xz
 License: GPL-2.0-only
 Type: ipkg
 Description:   This module enhances the performance of the OpenVPN userspace software
@@ -2817,7 +2817,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.18.8-1
+Version: 1.19.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2827,7 +2827,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.8.src.tar.gz
+Source: go1.19.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2853,7 +2853,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.18.8-1
+Version: 1.19.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2863,7 +2863,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.8.src.tar.gz
+Source: go1.19.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2885,7 +2885,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.18.8-1
+Version: 1.19.3-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2895,7 +2895,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.18.8.src.tar.gz
+Source: go1.19.3.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26330,7 +26330,7 @@ Harald Geyer <harald@ccbib.org>
 Source-Makefile: feeds/packages/libs/expat/Makefile
 
 Package: libexpat
-Version: 2.4.9-0
+Version: 2.5.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -26340,7 +26340,7 @@ Category: Libraries
 Repository: base
 Title: An XML parsing library
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: expat-2.4.9.tar.xz
+Source: expat-2.5.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -27938,7 +27938,7 @@ Felix Fietkau <nbd@nbd.name>
 Source-Makefile: feeds/packages/libs/libcups/Makefile
 
 Package: libcups
-Version: 2.2.12-1
+Version: 2.2.12-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +libpng +libjpeg +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -28269,31 +28269,6 @@ Config:
   depends on PACKAGE_libdvbcsa
   source "feeds/packages/libs/libdvbcsa/Config.in"
   endmenu
-@@
-
-
-Source-Makefile: feeds/packages/libs/libebml/Makefile
-
-Package: libebml
-Version: 1.4.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: a C++ libary to parse EBML files
-Maintainer: 
-Source: libebml-1.4.2.tar.gz
-License: LGPL-2.1-or-later
-LicenseFiles: LICENSE.LGPL
-Type: ipkg
-Build-Only: 1
-Description:   a C++ libary to parse EBML files
-  Specifications may be rendered at http://matroska-org.github.io/libebml/
-https://github.com/Matroska-Org/libebml
-
 @@
 
 
@@ -31418,31 +31393,6 @@ This package provides the remote_io plugin.
 
 https://mariadb.org/
 Michal Hrusecky <Michal@Hrusecky.net>
-@@
-
-
-Source-Makefile: feeds/packages/libs/libmatroska/Makefile
-Build-Depends: libebml
-
-Package: libmatroska
-Version: 1.6.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: a C++ libary to parse Matroska files (.mkv and .mka)
-Maintainer: 
-Source: libmatroska-1.6.3.tar.gz
-License: LGPL-2.1-or-later
-LicenseFiles: LICENSE.LGPL
-Type: ipkg
-Build-Only: 1
-Description:   a C++ libary to parse and create Matroska files
-https://github.com/Matroska-Org/libmatroska
-
 @@
 
 
@@ -47026,35 +46976,6 @@ Othmar Truniger <github@truniger.ch>
 @@
 
 
-Source-Makefile: feeds/packages/libs/pugixml/Makefile
-
-Package: pugixml
-Version: 1.12.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: pugixml
-Maintainer: 
-Source: pugixml-1.12.1.tar.gz
-License: MIT
-LicenseFiles: LICENSE
-Type: ipkg
-Build-Only: 1
-Description:   pugixml is a C++ XML processing library, which consists of a DOM-like interface
-  with rich traversal/modification capabilities, an extremely fast XML parser which
-  constructs the DOM tree from an XML file/buffer, and an XPath 1.0 implementation
-  for complex data-driven tree queries. Full Unicode support is also available,
-  with Unicode interface variants and conversions between different Unicode encodings
-  (which happen automatically during parsing/saving).
-https://github.com/zeux/pugixml
-
-@@
-
-
 Source-Makefile: feeds/packages/libs/qrencode/Makefile
 
 Package: libqrencode
@@ -48064,30 +47985,6 @@ Description:   This is a shell which is mostly just a wrapper around the S-Lang 
   which is part of the S-Lang Library.
 https://www.jedsoft.org/slang/slsh.html
 Jeffery To <jeffery.to@gmail.com>
-@@
-
-
-Source-Makefile: feeds/packages/libs/spdlog/Makefile
-
-Package: spdlog
-Version: 1.9.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfmt
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: base
-Title: spdlog
-Maintainer: 
-Source: spdlog-1.9.2.tar.gz
-License: MIT
-LicenseFiles: LICENSE
-Type: ipkg
-Build-Only: 1
-Description:   Very fast, header-only/compiled, C++ logging library.
-https://github.com/gabime/spdlog
-
 @@
 
 
@@ -49979,7 +49876,7 @@ Val Kulkov <val.kulkov@gmail.com>
 Source-Makefile: feeds/packages/multimedia/UnblockNeteaseMusic/Makefile
 
 Package: UnblockNeteaseMusic
-Version: 0.27.0-rc.6-2022-05-20-83e3467dc6b8e9bf1cc0feaabae834972aad3a64-0
+Version: 0.27.0-2022-10-09-253dc89329ebd16ff22175d9d0ab9382ed8aaccc-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
 Conflicts: 
 Menu-Depends: 
@@ -49989,7 +49886,7 @@ Category: Multimedia
 Repository: base
 Title: Revive Netease Cloud Music (NodeJS)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: UnblockNeteaseMusic-0.27.0-rc.6-2022-05-20-83e3467dc6b8e9bf1cc0feaabae834972aad3a64.tar.xz
+Source: UnblockNeteaseMusic-0.27.0-2022-10-09-253dc89329ebd16ff22175d9d0ab9382ed8aaccc.tar.xz
 License: LGPL-3.0-only
 Type: ipkg
 Description: Revive Netease Cloud Music (NodeJS)
@@ -50309,7 +50206,7 @@ source "feeds/packages/multimedia/ffmpeg/Config.in"
 Source-Makefile: feeds/packages/multimedia/fswebcam/Makefile
 
 Package: fswebcam
-Version: 20140113-1
+Version: 20140113-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd
 Conflicts: 
 Menu-Depends: 
@@ -58836,30 +58733,6 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 
-Source-Makefile: feeds/packages/net/dns2socks/Makefile
-
-Package: dns2socks
-Submenu: IP Addresses and Names
-Version: 2.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: DNS to SOCKS or HTTP proxy
-Maintainer: ghostmaker
-Source: SourceCode.zip
-License: BSD-3-Clause
-Type: ipkg
-Description:   This is a command line utility to resolve DNS requests via
-  a SOCKS tunnel like Tor or a HTTP proxy.
-http://dns2socks.sourceforge.net/
-ghostmaker
-@@
-
-
 Source-Makefile: feeds/packages/net/dnscrypt-proxy/Makefile
 
 Package: dnscrypt-proxy
@@ -62844,28 +62717,6 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 
-Source-Makefile: feeds/packages/net/ipt2socks/Makefile
-
-Package: ipt2socks
-Version: 1.1.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Convert iptables to socks5
-Maintainer: 
-Source: ipt2socks-1.1.3.tar.gz
-License: AGPL-3.0
-Type: ipkg
-Description:   Utility for converting iptables (redirect/tproxy) to socks5.
-https://github.com/zfl9/ipt2socks
-
-@@
-
-
 Source-Makefile: feeds/packages/net/iptraf-ng/Makefile
 
 Package: iptraf-ng
@@ -65814,31 +65665,6 @@ Thomas Heil <heil@terminal-consulting.de>
 @@
 
 
-Source-Makefile: feeds/packages/net/microsocks/Makefile
-
-Package: microsocks
-Submenu: Web Servers/Proxies
-Version: 1.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Tiny, portable SOCKS5 server
-Maintainer: lean
-Source: microsocks-1.0.3.tar.gz
-License: MIT
-LicenseFiles: COPYING
-Type: ipkg
-Description:   A SOCKS5 service that you can run on your remote boxes to tunnel connections
-  through them, if for some reason SSH doesn't cut it for you.
-https://github.com/rofl0r/microsocks
-lean
-@@
-
-
 Source-Makefile: feeds/packages/net/mikrotik-btest/Makefile
 
 Package: mikrotik-btest
@@ -66921,7 +66747,7 @@ Source-Makefile: feeds/packages/net/nextdns/Makefile
 Build-Depends: golang/host
 
 Package: nextdns
-Version: 1.33.11-1
+Version: 1.38.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -66931,7 +66757,7 @@ Category: Network
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.33.11.tar.gz
+Source: nextdns-1.38.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -66942,7 +66768,7 @@ Olivier Poitrey <rs@nextdns.io>
 
 Package: golang-github-nextdns-nextdns-dev
 Submenu: Go
-Version: 1.33.11-1
+Version: 1.38.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -66952,7 +66778,7 @@ Category: Languages
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy (source files)
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.33.11.tar.gz
+Source: nextdns-1.38.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -67739,7 +67565,7 @@ Source-Makefile: feeds/packages/net/ntpd/Makefile
 
 Package: ntpd
 Submenu: Time Synchronization
-Version: 4.2.8p15-3
+Version: 4.2.8p15-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +ntp-utils
 Conflicts: 
 Menu-Depends: 
@@ -67765,7 +67591,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntpdate
 Submenu: Time Synchronization
-Version: 4.2.8p15-3
+Version: 4.2.8p15-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap
 Conflicts: 
 Menu-Depends: 
@@ -67790,7 +67616,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntp-utils
 Submenu: Time Synchronization
-Version: 4.2.8p15-3
+Version: 4.2.8p15-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
@@ -67815,7 +67641,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntp-keygen
 Submenu: Time Synchronization
-Version: 4.2.8p15-3
+Version: 4.2.8p15-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-core
 Conflicts: 
 Menu-Depends: 
@@ -71600,7 +71426,7 @@ https://radicale.org/
 Source-Makefile: feeds/packages/net/radsecproxy/Makefile
 
 Package: radsecproxy
-Version: 1.8.1-2
+Version: 1.9.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libnettle
 Conflicts: 
 Menu-Depends: 
@@ -71610,7 +71436,7 @@ Category: Network
 Repository: base
 Title: radsecproxy
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: radsecproxy-1.8.1.tar.gz
+Source: radsecproxy-1.9.1.tar.gz
 License: BSD-3-CLAUSE
 LicenseFiles: LICENSE
 Type: ipkg
@@ -71825,28 +71651,6 @@ Description:  Redsocks is a daemon running on the local system, that will transp
  Also included is a small DNS server returning answers with the "truncated" flag
  set for any UDP query, forcing the resolver to use TCP.
 Johannes Morgenroth <jm@m-network.de>
-@@
-
-
-Source-Makefile: feeds/packages/net/redsocks2/Makefile
-
-Package: redsocks2
-Submenu: Web Servers/Proxies
-Version: 0.67-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libopenssl
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Redirect any TCP connection to a SOCKS or HTTPS proxy server
-Maintainer: semigodking <semigodking@gmail.com>
-Source: redsocks2-0.67-d94c245ea47859cda5b4b7373308589206b97bdc.tar.gz
-Type: ipkg
-Description: This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
-https://github.com/semigodking/redsocks
-semigodking <semigodking@gmail.com>
 @@
 
 
@@ -73209,7 +73013,7 @@ Source-Makefile: feeds/packages/net/speedtest-go/Makefile
 Build-Depends: golang/host
 
 Package: speedtest-go
-Version: 1.1.4-0
+Version: 1.1.5-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -73219,7 +73023,7 @@ Category: Network
 Repository: base
 Title: Test Internet Speed
 Maintainer: 
-Source: speedtest-go-1.1.4.tar.gz
+Source: speedtest-go-1.1.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -77593,8 +77397,8 @@ Stijn Tintel <stijn@linux-ipv6.be>
 Source-Makefile: feeds/packages/net/verysync/Makefile
 
 Package: verysync
-Version: 2.13.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.14.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -77603,7 +77407,7 @@ Category: Network
 Repository: base
 Title: A efficient data transmission tool
 Maintainer: 
-Source: verysync-linux--v2.13.2.tar.gz
+Source: verysync-linux--v2.14.0.tar.gz
 Type: ipkg
 Description: A efficient data transmission tool
 http://www.verysync.com
@@ -77665,7 +77469,7 @@ Source-Makefile: feeds/packages/net/vnstat/Makefile
 Build-Depends: libgd
 
 Package: vnstat
-Version: 1.18-2
+Version: 1.18-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -77686,7 +77490,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: vnstati
-Version: 1.18-2
+Version: 1.18-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread vnstat +libgd
 Conflicts: 
 Menu-Depends: 
@@ -91877,8 +91681,8 @@ Source-Makefile: feeds/packages/utils/mbtools/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mbtools
-Version: 2014-10-29-149e9c69cec180f18cf8781cf5285b97352bf719-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libmodbus +BUILD_NLS:libintl-full
+Version: 2014-10-29-149e9c69cec180f18cf8781cf5285b97352bf719-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libmodbus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -92084,7 +91888,7 @@ Daniel Golle <daniel@makrotopia.org>
 Source-Makefile: feeds/packages/utils/mmc-utils/Makefile
 
 Package: mmc-utils
-Version: 2022-09-20-2a934139cfeef1249e46f50fbec548f11c2dd8ca-1
+Version: 2022-11-03-c62dd8e415b12cc7f9a362db23cd384caf77ff03-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -92094,7 +91898,7 @@ Category: Utilities
 Repository: base
 Title: Userspace tools for MMC/SD devices
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: mmc-utils-2022-09-20-2a934139cfeef1249e46f50fbec548f11c2dd8ca.tar.xz
+Source: mmc-utils-2022-11-03-c62dd8e415b12cc7f9a362db23cd384caf77ff03.tar.xz
 License: GPL-2.0-only
 Type: ipkg
 Description:   This package contains the userspace mmc utils, the userspace
@@ -96028,7 +95832,7 @@ Source-Makefile: feeds/packages/utils/owfs/Makefile
 
 Package: owfs
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libfuse +fuse-utils
 Conflicts: 
 Menu-Depends: 
@@ -96062,7 +95866,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: owshell
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow
 Conflicts: 
 Menu-Depends: 
@@ -96096,7 +95900,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: owserver
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -96130,7 +95934,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: owhttpd
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -96164,7 +95968,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: owftpd
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -96198,7 +96002,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: libow
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +LIBOW_MASTER_USB:libusb-compat +LIBOW_MASTER_W1:kmod-w1
 Conflicts: 
 Menu-Depends: 
@@ -96235,7 +96039,7 @@ Config:
 
 Package: libow-capi
 Submenu: Filesystem
-Version: 3.2p4-1
+Version: 3.2p4-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libow
 Conflicts: 
 Menu-Depends: 
@@ -100731,7 +100535,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Source-Makefile: feeds/packages/utils/sed/Makefile
 
 Package: sed
-Version: 4.8-3
+Version: 4.9-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre
 Conflicts: 
 Menu-Depends: 
@@ -100741,7 +100545,7 @@ Category: Utilities
 Repository: base
 Title: sed stream editor utility - full version
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: sed-4.8.tar.xz
+Source: sed-4.9.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -106343,7 +106147,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.30.1-0
+Version: 4.30.4-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -106353,7 +106157,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.30.1.tar.gz
+Source: yq-4.30.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
