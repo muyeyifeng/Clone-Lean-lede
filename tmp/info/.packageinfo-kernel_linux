@@ -16436,6 +16436,25 @@ Description: Mediatek AUXADC driver
 
 @@
 
+Package: kmod-leds-spi-single-wire
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_mediatek_filogic)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SPI single wire LED support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LEDS_SPI_SINGLE_WIRE
+Description:   LED support for SPI LED controller with a single wire (MOSI)
+
+@@
+
 Package: kmod-camera-bcm2835
 Submenu: Video Support
 Version: <LINUX_VERSION>-

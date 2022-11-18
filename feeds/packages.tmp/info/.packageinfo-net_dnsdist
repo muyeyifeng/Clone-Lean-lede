@@ -3,8 +3,8 @@ Build-Depends: boost
 
 Package: dnsdist
 Submenu: IP Addresses and Names
-Version: 1.6.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DNSDIST_DNS_OVER_HTTPS:libh2o-evloop +DNSDIST_GNUTLS:libgnutls +DNSDIST_OPENSSL:libopenssl +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_RE2:re2 +DNSDIST_DNSTAP:libfstrm +DNSDIST_SODIUM:libsodium +libatomic +libcap +libedit +libstdcpp +lmdb +liblua +tinycdb
+Version: 1.7.3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DNSDIST_DNS_OVER_HTTPS:libh2o-evloop +DNSDIST_DNS_OVER_HTTPS_OUTGOING:libnghttp2 +DNSDIST_GNUTLS:libgnutls +DNSDIST_OPENSSL:libopenssl +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_RE2:re2 +DNSDIST_DNSTAP:libfstrm +DNSDIST_SODIUM:libsodium +libatomic +libcap +libedit +libstdcpp +lmdb +luajit +tinycdb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: dnsdist DNS-, DOS- and abuse-aware loadbalancer
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
-Source: dnsdist-1.6.0.tar.bz2
+Source: dnsdist-1.7.3.tar.bz2
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -52,6 +52,13 @@ menu "Configuration"
 		bool "DNS over HTTPS Support"
 		help
 			"Enables DNS over HTTPS Support for dnsdist"
+		default y
+
+	config DNSDIST_DNS_OVER_HTTPS_OUTGOING
+	depends on !DNSDIST_NOSSL
+		bool "Outgoing DNS over HTTPS Support"
+		help
+			"Enables Outgoing DNS over HTTPS Support for dnsdist"
 		default y
 
 	config DNSDIST_DNS_OVER_TLS

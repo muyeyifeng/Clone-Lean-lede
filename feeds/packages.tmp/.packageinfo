@@ -10797,7 +10797,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: php8-pecl-xdebug
 Submenu: PHP8
-Version: 3.1.5-1
+Version: 3.1.6-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php8
 Conflicts: 
 Menu-Depends: 
@@ -10807,7 +10807,7 @@ Category: Languages
 Repository: base
 Title: Xdebug extension
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: xdebug-3.1.5.tgz
+Source: xdebug-3.1.6.tgz
 License: Xdebug
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56320,7 +56320,7 @@ Source-Makefile: feeds/packages/net/adguardhome/Makefile
 Build-Depends: golang/host node/host node-yarn/host
 
 Package: adguardhome
-Version: 0.107.16-1
+Version: 0.107.18-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56330,7 +56330,7 @@ Category: Network
 Repository: base
 Title: Network-wide ads and trackers blocking DNS server
 Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Source: adguardhome-0.107.16.tar.xz
+Source: adguardhome-0.107.18.tar.xz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -57021,7 +57021,7 @@ Source-Makefile: feeds/packages/net/ariang/Makefile
 
 Package: ariang
 Submenu: Download Manager
-Version: 1.2.4-0
+Version: 1.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +uhttpd
 Conflicts: 
 Menu-Depends: 
@@ -57031,7 +57031,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for uhttpd webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.2.4.zip
+Source: ariang-1.3.2.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -57042,7 +57042,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: ariang-nginx
 Submenu: Download Manager
-Version: 1.2.4-0
+Version: 1.3.2-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +aria2 +nginx
 Conflicts: 
 Menu-Depends: 
@@ -57052,7 +57052,7 @@ Category: Network
 Repository: base
 Title: AriaNg webui for nginx webserver
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: ariang-1.2.4.zip
+Source: ariang-1.3.2.zip
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -57764,7 +57764,7 @@ Source-Makefile: feeds/packages/net/bwm-ng/Makefile
 
 Package: bwm-ng
 Menu: 1
-Version: 0.6.1-1
+Version: 0.6.3-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BWMNG_LIBNCURSES:libncurses
 Conflicts: 
 Menu-Depends: 
@@ -57774,7 +57774,7 @@ Category: Network
 Repository: base
 Title: bwm-ng
 Maintainer: Julen Landa Alustiza <julen@zokormazo.info>
-Source: bwm-ng-0.6.1.tar.gz
+Source: bwm-ng-0.6.3.tar.gz
 License: GPL2-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -58198,10 +58198,11 @@ Luka Perkov <luka@openwrt.org>
 
 
 Source-Makefile: feeds/packages/net/curl/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libcurl
 Menu: 1
-Version: 7.85.0-0
+Version: 7.86.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBCURL_WOLFSSL:libwolfssl +LIBCURL_OPENSSL:libopenssl +LIBCURL_GNUTLS:libgnutls +LIBCURL_MBEDTLS:libmbedtls +LIBCURL_ZLIB:zlib +LIBCURL_ZSTD:libzstd +LIBCURL_THREADED_RESOLVER:libpthread +LIBCURL_LDAP:libopenldap +LIBCURL_LIBIDN2:libidn2 +LIBCURL_SSH2:libssh2 +LIBCURL_NGHTTP2:libnghttp2 +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -58211,7 +58212,7 @@ Category: Libraries
 Repository: base
 Title: A client-side URL transfer library
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.85.0.tar.xz
+Source: curl-7.86.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -58225,7 +58226,7 @@ Config:
 
 Package: curl
 Submenu: File Transfer
-Version: 7.85.0-0
+Version: 7.86.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -58235,7 +58236,7 @@ Category: Network
 Repository: base
 Title: A client-side URL transfer utility
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.85.0.tar.xz
+Source: curl-7.86.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -58862,8 +58863,8 @@ Build-Depends: boost
 
 Package: dnsdist
 Submenu: IP Addresses and Names
-Version: 1.6.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DNSDIST_DNS_OVER_HTTPS:libh2o-evloop +DNSDIST_GNUTLS:libgnutls +DNSDIST_OPENSSL:libopenssl +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_RE2:re2 +DNSDIST_DNSTAP:libfstrm +DNSDIST_SODIUM:libsodium +libatomic +libcap +libedit +libstdcpp +lmdb +liblua +tinycdb
+Version: 1.7.3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DNSDIST_DNS_OVER_HTTPS:libh2o-evloop +DNSDIST_DNS_OVER_HTTPS_OUTGOING:libnghttp2 +DNSDIST_GNUTLS:libgnutls +DNSDIST_OPENSSL:libopenssl +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_RE2:re2 +DNSDIST_DNSTAP:libfstrm +DNSDIST_SODIUM:libsodium +libatomic +libcap +libedit +libstdcpp +lmdb +luajit +tinycdb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -58872,7 +58873,7 @@ Category: Network
 Repository: base
 Title: dnsdist DNS-, DOS- and abuse-aware loadbalancer
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
-Source: dnsdist-1.6.0.tar.bz2
+Source: dnsdist-1.7.3.tar.bz2
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -58911,6 +58912,13 @@ menu "Configuration"
 		bool "DNS over HTTPS Support"
 		help
 			"Enables DNS over HTTPS Support for dnsdist"
+		default y
+
+	config DNSDIST_DNS_OVER_HTTPS_OUTGOING
+	depends on !DNSDIST_NOSSL
+		bool "Outgoing DNS over HTTPS Support"
+		help
+			"Enables Outgoing DNS over HTTPS Support for dnsdist"
 		default y
 
 	config DNSDIST_DNS_OVER_TLS
@@ -60309,7 +60317,7 @@ Build-Depends: golang/host
 
 Package: frpc
 Submenu: Web Servers/Proxies
-Version: 0.44.0-0
+Version: 0.45.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -60319,7 +60327,7 @@ Category: Network
 Repository: base
 Title: A fast reverse proxy (frpc)
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
-Source: frp-0.44.0.tar.gz
+Source: frp-0.45.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -60334,7 +60342,7 @@ Xingwang Liao <kuoruan@gmail.com>
 
 Package: frps
 Submenu: Web Servers/Proxies
-Version: 0.44.0-0
+Version: 0.45.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -60344,7 +60352,7 @@ Category: Network
 Repository: base
 Title: A fast reverse proxy (frps)
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
-Source: frp-0.44.0.tar.gz
+Source: frp-0.45.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -67739,7 +67747,7 @@ Source-Makefile: feeds/packages/net/nut/Makefile
 
 Package: nut
 Menu: 1
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -67749,7 +67757,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67766,8 +67774,8 @@ Config:
 @@
 
 Package: nut-common
-Version: 2.7.4-23
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +NUT_DRIVER_SNMP:libnetsnmp +NUT_DRIVER_USB:libusb-compat +NUT_SSL:libopenssl
+Version: 2.8.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +NUT_DRIVER_SNMP:libnetsnmp +NUT_DRIVER_USB:libusb-compat +NUT_DRIVER_NEON:libneon +NUT_SSL:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67776,7 +67784,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (common)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67791,7 +67799,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-server
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67802,7 +67810,7 @@ Repository: base
 Title: Network UPS Tools (NUT) (server)
 Maintainer: 
 Require-User: nut=113:nut=113
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67821,7 +67829,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upsmon
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67832,7 +67840,7 @@ Repository: base
 Title: Network UPS Tools (NUT) (monitor)
 Maintainer: 
 Require-User: nutmon=114:nutmon=114
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67852,7 +67860,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upsmon-sendmail-notify
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-upsmon
 Conflicts: nut-upssched
 Menu-Depends: 
@@ -67862,7 +67870,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (upsmon with notifications via sendmail)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67877,7 +67885,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upsc
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67887,7 +67895,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (upsc command)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67904,7 +67912,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upscmd
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67914,7 +67922,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (controller)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67933,7 +67941,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upslog
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67943,7 +67951,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (logging client)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67959,7 +67967,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upsrw
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common
 Conflicts: 
 Menu-Depends: 
@@ -67969,7 +67977,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (variable editor)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -67989,7 +67997,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-upssched
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common +nut-upsmon
 Conflicts: 
 Menu-Depends: 
@@ -67999,7 +68007,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (helper for triggering events from upsmon)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68018,7 +68026,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-web-cgi
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-common +PACKAGE_nut-web-cgi:libgd
 Conflicts: 
 Menu-Depends: 
@@ -68028,7 +68036,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) Web CGI interface
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68040,7 +68048,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-avahi-service
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -68050,7 +68058,7 @@ Category: Network
 Repository: base
 Title: Network UPS Tools (NUT) (Avahi service)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68061,7 +68069,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-al175
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68071,7 +68079,7 @@ Category: Network
 Repository: base
 Title: al175 (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68081,7 +68089,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bcmxcp
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68091,7 +68099,7 @@ Category: Network
 Repository: base
 Title: bcmxcp (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68101,7 +68109,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-belkin
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68111,7 +68119,7 @@ Category: Network
 Repository: base
 Title: belkin (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68121,7 +68129,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-belkinunv
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68131,7 +68139,7 @@ Category: Network
 Repository: base
 Title: belkinunv (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68141,7 +68149,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bestfcom
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68151,7 +68159,7 @@ Category: Network
 Repository: base
 Title: bestfcom (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68161,7 +68169,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bestfortress
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68171,7 +68179,7 @@ Category: Network
 Repository: base
 Title: bestfortress (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68181,7 +68189,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bestuferrups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68191,7 +68199,7 @@ Category: Network
 Repository: base
 Title: bestuferrups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68201,7 +68209,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bestups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68211,7 +68219,7 @@ Category: Network
 Repository: base
 Title: bestups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68221,7 +68229,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-dummy-ups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68231,7 +68239,7 @@ Category: Network
 Repository: base
 Title: dummy-ups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68241,7 +68249,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-etapro
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68251,7 +68259,7 @@ Category: Network
 Repository: base
 Title: etapro (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68261,7 +68269,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-everups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68271,7 +68279,7 @@ Category: Network
 Repository: base
 Title: everups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68281,7 +68289,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-gamatronic
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68291,7 +68299,7 @@ Category: Network
 Repository: base
 Title: gamatronic (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68301,7 +68309,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-genericups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68311,7 +68319,7 @@ Category: Network
 Repository: base
 Title: genericups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68321,7 +68329,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-isbmex
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68331,7 +68339,7 @@ Category: Network
 Repository: base
 Title: isbmex (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68341,7 +68349,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-liebert
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68351,7 +68359,7 @@ Category: Network
 Repository: base
 Title: liebert (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68361,7 +68369,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-liebert-esp2
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68371,7 +68379,7 @@ Category: Network
 Repository: base
 Title: liebert-esp2 (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68381,7 +68389,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-masterguard
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68391,7 +68399,7 @@ Category: Network
 Repository: base
 Title: masterguard (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68401,7 +68409,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-metasys
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68411,7 +68419,7 @@ Category: Network
 Repository: base
 Title: metasys (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68420,28 +68428,8 @@ http://www.networkupstools.org/
 
 @@
 
-Package: nut-driver-oldmge-shut
-Version: 2.7.4-23
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: oldmge-shut (NUT serial driver)
-Maintainer: 
-Source: nut-2.7.4.tar.gz
-License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
-LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
-Type: ipkg
-Description: 		 Driver for SHUT Protocol UPS equipment
-http://www.networkupstools.org/
-
-@@
-
 Package: nut-driver-mge-utalk
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68451,7 +68439,7 @@ Category: Network
 Repository: base
 Title: mge-utalk (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68461,7 +68449,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-microdowell
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68471,7 +68459,7 @@ Category: Network
 Repository: base
 Title: microdowell (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68481,7 +68469,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-mge-shut
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68491,7 +68479,7 @@ Category: Network
 Repository: base
 Title: mge-shut (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68501,7 +68489,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-oneac
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68511,7 +68499,7 @@ Category: Network
 Repository: base
 Title: oneac (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68521,7 +68509,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-optiups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68531,7 +68519,7 @@ Category: Network
 Repository: base
 Title: optiups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68541,7 +68529,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-powercom
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68551,7 +68539,7 @@ Category: Network
 Repository: base
 Title: powercom (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68561,7 +68549,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-rhino
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68571,7 +68559,7 @@ Category: Network
 Repository: base
 Title: rhino (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68581,7 +68569,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-safenet
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68591,7 +68579,7 @@ Category: Network
 Repository: base
 Title: safenet (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68601,7 +68589,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-solis
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68611,7 +68599,7 @@ Category: Network
 Repository: base
 Title: solis (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68621,7 +68609,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-tripplite
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68631,7 +68619,7 @@ Category: Network
 Repository: base
 Title: tripplite (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68641,7 +68629,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-tripplitesu
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68651,7 +68639,7 @@ Category: Network
 Repository: base
 Title: tripplitesu (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68661,7 +68649,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-upscode2
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68671,7 +68659,7 @@ Category: Network
 Repository: base
 Title: upscode2 (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68681,7 +68669,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-victronups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68691,7 +68679,7 @@ Category: Network
 Repository: base
 Title: victronups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68701,7 +68689,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-powerpanel
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68711,7 +68699,7 @@ Category: Network
 Repository: base
 Title: powerpanel (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68721,7 +68709,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-blazer_ser
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68731,7 +68719,7 @@ Category: Network
 Repository: base
 Title: blazer_ser (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68741,7 +68729,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-clone
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68751,7 +68739,7 @@ Category: Network
 Repository: base
 Title: clone (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68761,7 +68749,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-ivtscd
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68771,7 +68759,7 @@ Category: Network
 Repository: base
 Title: ivtscd (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68781,7 +68769,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-apcsmart
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68791,7 +68779,7 @@ Category: Network
 Repository: base
 Title: apcsmart (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68801,7 +68789,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-apcsmart-old
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68811,7 +68799,7 @@ Category: Network
 Repository: base
 Title: apcsmart-old (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68821,7 +68809,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-apcupsd-ups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68831,7 +68819,7 @@ Category: Network
 Repository: base
 Title: apcupsd-ups (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68841,7 +68829,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-riello_ser
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SERIAL
 Conflicts: 
 Menu-Depends: 
@@ -68851,7 +68839,7 @@ Category: Network
 Repository: base
 Title: riello_ser (NUT serial driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68861,7 +68849,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-snmp-ups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_SNMP
 Conflicts: 
 Menu-Depends: 
@@ -68871,7 +68859,7 @@ Category: Network
 Repository: base
 Title: snmp-ups (NUT snmp driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68881,7 +68869,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-usbhid-ups
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68891,7 +68879,7 @@ Category: Network
 Repository: base
 Title: usbhid-ups (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68901,7 +68889,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-bcmxcp_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68911,7 +68899,7 @@ Category: Network
 Repository: base
 Title: bcmxcp_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68921,7 +68909,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-tripplite_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68931,7 +68919,7 @@ Category: Network
 Repository: base
 Title: tripplite_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68941,7 +68929,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-blazer_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68951,7 +68939,7 @@ Category: Network
 Repository: base
 Title: blazer_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68961,7 +68949,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-richcomm_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68971,7 +68959,7 @@ Category: Network
 Repository: base
 Title: richcomm_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -68981,7 +68969,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-riello_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -68991,7 +68979,7 @@ Category: Network
 Repository: base
 Title: riello_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -69001,7 +68989,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-nutdrv_atcl_usb
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -69011,7 +68999,7 @@ Category: Network
 Repository: base
 Title: nutdrv_atcl_usb (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
@@ -69021,7 +69009,7 @@ http://www.networkupstools.org/
 @@
 
 Package: nut-driver-nutdrv_qx
-Version: 2.7.4-23
+Version: 2.8.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_USB
 Conflicts: 
 Menu-Depends: 
@@ -69031,11 +69019,31 @@ Category: Network
 Repository: base
 Title: nutdrv_qx (NUT usb driver)
 Maintainer: 
-Source: nut-2.7.4.tar.gz
+Source: nut-2.8.0.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
 Type: ipkg
 Description: 		 Driver for Q* protocol serial and USB based UPS equipment
+http://www.networkupstools.org/
+
+@@
+
+Package: nut-driver-netxml-ups
+Version: 2.8.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nut +nut-server @NUT_DRIVER_NEON
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: netxml-ups (NUT neon driver)
+Maintainer: 
+Source: nut-2.8.0.tar.gz
+License: GPL-2.0-or-later GPL-3.0-or-later GPL-1.0-or-later Artistic-1.0-Perl
+LicenseFiles: LICENSE-GPL2 LICENSE-GPL3 COPYING
+Type: ipkg
+Description: 		 Driver for NetXML based UPS equipment
 http://www.networkupstools.org/
 
 @@
@@ -72686,8 +72694,8 @@ Source-Makefile: feeds/packages/net/snort3/Makefile
 Package: snort3
 Menu: 1
 Submenu: Firewall
-Version: 3.1.4.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libdaq3 +libdnet +libopenssl +libpcap +libpcre +libpthread +libuuid +zlib +libhwloc +libtirpc +luajit
+Version: 3.1.29.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libdaq3 +libdnet +libopenssl +libpcap +libpcre +libpthread +libuuid +zlib +libhwloc +libtirpc +luajit +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72696,7 +72704,7 @@ Category: Network
 Repository: base
 Title: Lightweight Network Intrusion Detection System
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: 3.1.4.0.tar.gz
+Source: 3.1.29.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -73013,7 +73021,7 @@ Source-Makefile: feeds/packages/net/speedtest-go/Makefile
 Build-Depends: golang/host
 
 Package: speedtest-go
-Version: 1.1.5-0
+Version: 1.2.1-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -73023,7 +73031,7 @@ Category: Network
 Repository: base
 Title: Test Internet Speed
 Maintainer: 
-Source: speedtest-go-1.1.5.tar.gz
+Source: speedtest-go-1.2.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -87997,8 +88005,8 @@ Source-Makefile: feeds/packages/utils/fish/Makefile
 
 Package: fish
 Submenu: Shells
-Version: 3.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libstdcpp +libatomic +librt +libpcre2-32 @!USE_UCLIBC
+Version: 3.5.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libstdcpp +libatomic +libpcre2-32
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -88007,7 +88015,7 @@ Category: Utilities
 Repository: base
 Title: A smart and user-friendly command line shell
 Maintainer: Curtis Jiang <jqqqqqqqqqq@gmail.com>, Hao Dong <halbertdong@gmail.com>
-Source: fish-3.3.1.tar.xz
+Source: fish-3.5.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -89557,7 +89565,7 @@ Category: Utilities
 Repository: base
 Title: Lightweight and flexible command-line JSON processor.
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: jq-1.6.tar.gz
+Source: jq-1.6.tar.xz
 License: BSD
 Type: ipkg
 Description: 	Lightweight and flexible command-line JSON processor.
@@ -90873,7 +90881,7 @@ Nicolas Thill <nico@openwrt.org>
 Source-Makefile: feeds/packages/utils/mandoc/Makefile
 
 Package: mandoc
-Version: 1.14.5-0
+Version: 1.14.6-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -90883,7 +90891,7 @@ Category: Utilities
 Repository: base
 Title: mandoc document formatting system
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: mandoc-1.14.5.tar.gz
+Source: mandoc-1.14.6.tar.gz
 License: BSD-3-Clause BSD-2-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -92050,7 +92058,7 @@ Source-Makefile: feeds/packages/utils/nano/Makefile
 
 Package: nano
 Submenu: Editors
-Version: 6.4-0
+Version: 7.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -92062,7 +92070,7 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (minimal features)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-6.4.tar.xz
+Source: nano-7.0.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -92079,7 +92087,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 
 Package: nano-plus
 Submenu: Editors
-Version: 6.4-0
+Version: 7.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -92090,7 +92098,7 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (more features, Unicode)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-6.4.tar.xz
+Source: nano-7.0.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -92110,7 +92118,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 
 Package: nano-full
 Submenu: Editors
-Version: 6.4-0
+Version: 7.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -92121,7 +92129,7 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (all features, Unicode)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-6.4.tar.xz
+Source: nano-7.0.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -97254,7 +97262,7 @@ Build-Depends: spice-protocol !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: virtio-console-helper
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_armvirt||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -97263,8 +97271,8 @@ Section: utils
 Category: Utilities
 Title: Helper script for vportNpn virtio-console devices
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: Helper script for vportNpn virtio-console devices
@@ -97273,8 +97281,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-ga
 Submenu: Virtualization
-Version: 5.0.0-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +libstdcpp @(TARGET_x86_64||TARGET_armvirt||TARGET_malta)
+Version: 6.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +libstdcpp +libudev @(TARGET_x86_64||TARGET_armvirt||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97282,8 +97290,8 @@ Section: utils
 Category: Utilities
 Title: QEMU Guest Agent
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU Guest Agent
@@ -97293,7 +97301,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-bridge-helper
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97302,8 +97310,8 @@ Section: utils
 Category: Utilities
 Title: QEMU bridge helper
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU bridge helper
@@ -97313,7 +97321,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-img
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97322,8 +97330,8 @@ Section: utils
 Category: Utilities
 Title: QEMU Image utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU Image utility
@@ -97333,7 +97341,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-nbd
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +kmod-nbd
 Conflicts: 
 Menu-Depends: 
@@ -97342,8 +97350,8 @@ Section: utils
 Category: Utilities
 Title: QEMU Network Block Device Utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU Network Block Device Utility
@@ -97353,7 +97361,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-keymaps
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97362,8 +97370,8 @@ Section: utils
 Category: Utilities
 Title: QEMU reverse keymaps for use with -k argument
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU reverse keymaps for use with -k argument
@@ -97373,7 +97381,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-seabios
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97382,8 +97390,8 @@ Section: utils
 Category: Utilities
 Title: QEMU build of SeaBIOS for x86 guest
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU build of SeaBIOS for x86 guest
@@ -97393,7 +97401,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-seavgabios
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97402,8 +97410,8 @@ Section: utils
 Category: Utilities
 Title: QEMU build of SeaVGABIOS
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU build of SeaVGABIOS
@@ -97413,7 +97421,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-pxe
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97422,8 +97430,8 @@ Section: utils
 Category: Utilities
 Title: QEMU build of iPXE PXE roms
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU build of iPXE PXE roms
@@ -97433,7 +97441,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-efi
 Submenu: Virtualization
-Version: 5.0.0-5
+Version: 6.2.0-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -97442,8 +97450,8 @@ Section: utils
 Category: Utilities
 Title: QEMU build of iPXE EFI roms
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description: QEMU build of iPXE EFI roms
@@ -97453,8 +97461,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-x86_64-softmmu
 Submenu: Virtualization
-Version: 5.0.0-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Version: 6.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97462,8 +97470,8 @@ Section: utils
 Category: Utilities
 Title: QEMU target x86_64-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description:     This package contains the QEMU target x86_64-softmmu
@@ -97494,13 +97502,24 @@ config QEMU_UI_VNC_SASL
 config QEMU_UI_SPICE
 	bool "QEMU SPICE ui support"
 
+config QEMU_DEV_USB
+	bool "QEMU USB passthrough support"
+	default y
+
+config QEMU_SECCOMP
+	bool "Enable support for seccomp in QEMU"
+	default KERNEL_SECCOMP
+	help
+	  Build QEMU with support for seccomp filters.
+	  Select libseccomp which also pulls-in the needed kernel features.
+
 endif
 @@
 
 Package: qemu-arm-softmmu
 Submenu: Virtualization
-Version: 5.0.0-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +libncurses +libfdt +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Version: 6.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97508,8 +97527,8 @@ Section: utils
 Category: Utilities
 Title: QEMU target arm-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-5.0.0.tar.xz
-License: GPL-2.0
+Source: qemu-6.2.0.tar.xz
+License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description:     This package contains the QEMU target arm-softmmu
@@ -105274,7 +105293,7 @@ Shuanglei Tao <tsl0922@gmail.com>
 Source-Makefile: feeds/packages/utils/uhubctl/Makefile
 
 Package: uhubctl
-Version: 2.4.0-1
+Version: 2.5.0-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -105284,7 +105303,7 @@ Category: Utilities
 Repository: base
 Title: USB hub per-port power control
 Maintainer: Steven Honson <steven@honson.id.au>
-Source: uhubctl-2.4.0.tar.gz
+Source: uhubctl-2.5.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING LICENSE
 Type: ipkg
