@@ -807,7 +807,6 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 
 Source-Makefile: feeds/telephony/libs/sofia-sip/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: sofia-sip
 Submenu: Telephony
@@ -885,7 +884,7 @@ Jiri Slachta <jiri@slachta.eu> Sebastian Kemper <sebastian_ml@gmx.net>
 
 
 Source-Makefile: feeds/telephony/net/asterisk/Makefile
-Build-Depends: libxml2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: libxml2/host
 Build-Types: host
 
 Package: asterisk
@@ -7007,7 +7006,6 @@ Jiri Slachta <jiri@slachta.eu>
 
 
 Source-Makefile: feeds/telephony/net/asterisk-chan-dongle/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: asterisk-chan-dongle
 Submenu: Telephony
@@ -7054,7 +7052,6 @@ Jiri Slachta <jiri@slachta.eu>
 
 
 Source-Makefile: feeds/telephony/net/asterisk-chan-sccp/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: asterisk-chan-sccp
 Submenu: Telephony
@@ -7160,7 +7157,6 @@ Jiri Slachta <jiri@slachta.eu>
 
 
 Source-Makefile: feeds/telephony/net/baresip/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: baresip
 Menu: 1
@@ -8363,11 +8359,10 @@ Jiri Slachta <jiri@slachta.eu>
 
 
 Source-Makefile: feeds/telephony/net/coturn/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: coturn
 Submenu: Telephony
-Version: 4.5.2-4
+Version: 4.5.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libevent2-extra +libevent2-pthreads +libevent2-openssl +libopenssl +COTURN_ENABLE_MYSQL:libmariadb +COTURN_ENABLE_POSTGRESQL:libpq +COTURN_ENABLE_REDIS:libhiredis +COTURN_ENABLE_SQLITE:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -8421,7 +8416,7 @@ Config:
 
 
 Source-Makefile: feeds/telephony/net/freeswitch/Makefile
-Build-Depends: perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: perl/host
 
 Package: freeswitch
 Menu: 1
@@ -12048,7 +12043,6 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 
 Source-Makefile: feeds/telephony/net/kamailio/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: kamailio
 Menu: 1
@@ -16545,7 +16539,7 @@ http://sourceforge.net/projects/pcapsipdump/
 
 
 Source-Makefile: feeds/telephony/net/rtpengine/Makefile
-Build-Depends: gperf/host perl/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: gperf/host perl/host
 
 Package: kmod-ipt-rtpengine
 Submenu: Netfilter Extensions
@@ -17235,7 +17229,7 @@ Config:
 
 
 Source-Makefile: feeds/telephony/net/yate/Makefile
-Build-Depends: HOST_OS_MACOS:fakeuname/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: HOST_OS_MACOS:fakeuname/host
 
 Package: yate
 Menu: 1

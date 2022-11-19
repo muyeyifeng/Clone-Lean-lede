@@ -14,7 +14,7 @@ Linux-Kernel-Arch: arc
 Target-Description:
 	Synopsys DesignWare boards
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd  
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  
 Target: arc770/generic
 Target-Board: arc770
 Target-Name: Generic
@@ -30,7 +30,7 @@ Linux-Kernel-Arch: arc
 Target-Description:
 	Build firmware images for generic ARC 770D based boards.
 @@
-Default-Packages: base-files dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd  
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  
 Target-Profile: Default
 Target-Profile-Name: Default Profile (all drivers)
 Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-ath9k-htc wpad-basic-wolfssl iwinfo

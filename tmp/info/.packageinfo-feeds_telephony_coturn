@@ -1,9 +1,8 @@
 Source-Makefile: package/feeds/telephony/coturn/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: coturn
 Submenu: Telephony
-Version: 4.5.2-4
+Version: 4.5.2-5
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libevent2-extra +libevent2-pthreads +libevent2-openssl +libopenssl +COTURN_ENABLE_MYSQL:libmariadb +COTURN_ENABLE_POSTGRESQL:libpq +COTURN_ENABLE_REDIS:libhiredis +COTURN_ENABLE_SQLITE:libsqlite3
 Conflicts: 
 Menu-Depends: 
