@@ -3267,6 +3267,25 @@ Description:  Kernel module for Sensirion SHT21 and SHT25 temperature and humidi
 
 @@
 
+Package: kmod-hwmon-sht3x
+Submenu: Hardware Monitoring Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-hwmon-core +kmod-i2c-core +kmod-lib-crc8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Sensiron SHT3x and compat. monitoring support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SENSORS_SHT3x
+Description:  Kernel module for Sensirion SHT3x temperature and humidity sensors chip
+
+@@
+
 Package: kmod-hwmon-tmp102
 Submenu: Hardware Monitoring Support
 Version: <LINUX_VERSION>-
