@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/libmad/Makefile
 
 Package: libmad
-Version: 0.16.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 0.16.3-2
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: An high-quality MPEG audio decoding library
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: libmad-0.16.3.tar.gz
+Source: libmad-0.16.3.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

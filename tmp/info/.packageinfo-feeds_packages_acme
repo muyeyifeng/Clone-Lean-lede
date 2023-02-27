@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/acme/Makefile
 
 Package: acme
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget-ssl +ca-bundle +openssl-util +socat
+Depends: +libc +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: acme-dnsapi
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
+Depends: +libc +acme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -41,7 +41,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: acme-notify
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
+Depends: +libc +acme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -60,7 +60,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: acme-deploy
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
+Depends: +libc +acme
 Conflicts: 
 Menu-Depends: 
 Provides: 

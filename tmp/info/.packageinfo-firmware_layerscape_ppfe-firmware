@@ -2,7 +2,7 @@ Source-Makefile: package/firmware/layerscape/ppfe-firmware/Makefile
 
 Package: layerscape-ppfe
 Version: LSDK-20.04-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Depends: +libc @TARGET_layerscape
 Conflicts: 
 Menu-Depends: 
 Provides: 

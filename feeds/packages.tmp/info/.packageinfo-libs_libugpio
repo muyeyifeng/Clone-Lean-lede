@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libugpio/Makefile
 
 Package: libugpio
 Version: 0.0.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @GPIO_SUPPORT
+Depends: +libc @GPIO_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: gpioctl-sysfs
 Version: 0.0.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libugpio
+Depends: +libc +libugpio
 Conflicts: 
 Menu-Depends: 
 Provides: 

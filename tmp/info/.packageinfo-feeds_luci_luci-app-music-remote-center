@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-music-remote-center
 Submenu: 3. Applications
 Version: 1-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-utils +owntone
+Depends: +libc +alsa-utils +owntone
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: Luci for Music Remote Center
 Package: luci-i18n-music-remote-center-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-music-remote-center
+Depends: +libc luci-app-music-remote-center
 Conflicts: 
 Menu-Depends: 
 Provides: 

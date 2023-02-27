@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-uugamebooster
 Submenu: 3. Applications
 Version: 1.0-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uugamebooster
+Depends: +libc +uugamebooster
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for UUgamebooster
 Package: luci-i18n-uugamebooster-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-uugamebooster
+Depends: +libc luci-app-uugamebooster
 Conflicts: 
 Menu-Depends: 
 Provides: 

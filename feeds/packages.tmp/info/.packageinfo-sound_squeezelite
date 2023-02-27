@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/sound/squeezelite/Makefile
 
 Package: squeezelite-mini
 Menu: 1
-Version: 1.9.9-1403-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr
+Version: 1.9.9-1415-1
+Depends: +libc +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr
 Conflicts: 
 Menu-Depends: 
 Provides: squeezelite
@@ -13,7 +13,7 @@ Category: Sound
 Repository: base
 Title: Headless squeezebox emulator (minimal)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: squeezelite-1.9.9-1403.tar.xz
+Source: squeezelite-1.9.9-1415.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -67,8 +67,8 @@ Config:
 
 Package: squeezelite-full
 Menu: 1
-Version: 1.9.9-1403-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr +libflac +libvorbis +libmpg123 +libfaad2 +SQUEEZELITE_OPUS:libopusfile +SQUEEZELITE_SSL:libopenssl +SQUEEZELITE_WMA:libffmpeg-audio-dec
+Version: 1.9.9-1415-1
+Depends: +libc +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr +libflac +libvorbis +libmpg123 +libfaad2 +SQUEEZELITE_OPUS:libopusfile +SQUEEZELITE_SSL:libopenssl +SQUEEZELITE_WMA:libffmpeg-audio-dec
 Conflicts: 
 Menu-Depends: 
 Provides: squeezelite
@@ -78,7 +78,7 @@ Category: Sound
 Repository: base
 Title: Headless squeezebox emulator (full)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: squeezelite-1.9.9-1403.tar.xz
+Source: squeezelite-1.9.9-1415.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE.txt
 Type: ipkg

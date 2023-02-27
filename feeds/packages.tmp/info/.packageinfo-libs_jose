@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/jose/Makefile
 
 Package: libjose
 Version: 11-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +jansson +libopenssl +libpthread
+Depends: +libc +zlib +jansson +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Tibor Dudlák <tibor.dudlak@gmail.com>
 
 Package: jose
 Version: 11-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjose
+Depends: +libc +libjose
 Conflicts: 
 Menu-Depends: 
 Provides: 

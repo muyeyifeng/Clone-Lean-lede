@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/dfu-programmer/Makefile
 
 Package: dfu-programmer
 Submenu: Microcontroller programming
-Version: 0.7.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
+Version: 1.0.0-1
+Depends: +libc +libusb-1.0
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,13 +12,13 @@ Category: Utilities
 Repository: packages
 Title: USB programmer for Atmel microcontrollers
 Maintainer: Stefan Hellermann <stefan@the2masters.de>
-Source: dfu-programmer-0.7.2.tar.gz
+Source: dfu-programmer-1.0.0.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:   dfu-programmer is a Device Firmware Update (DFU) based USB programmer
   for Atmel chips with a USB bootloader.
-http://dfu-programmer.github.io/
+https://github.com/dfu-programmer/dfu-programmer
 Stefan Hellermann <stefan@the2masters.de>
 @@
 

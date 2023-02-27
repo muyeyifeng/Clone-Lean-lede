@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python3-django-etesync-journal/Makefile
 Package: python3-django-etesync-journal
 Submenu: Python
 Version: 1.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +django +python3-django-restframework +python3-light
+Depends: +libc +django +python3-django-restframework +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Peter Stadler <peter.stadler@student.uibk.ac.at>
 Package: python3-django-etesync-journal-src
 Submenu: Python
 Version: 1.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

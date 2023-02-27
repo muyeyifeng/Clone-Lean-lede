@@ -6,7 +6,7 @@ Build-Types: host
 Package: softethervpn-base
 Submenu: VPN
 Version: 4.38-9760-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +zlib
+Depends: +libc +libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Federico Di Marco <fededim@gmail.com>
 Package: softethervpn-server
 Submenu: VPN
 Version: 4.38-9760-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +softethervpn-base
+Depends: +libc +softethervpn-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -58,7 +58,7 @@ Federico Di Marco <fededim@gmail.com>
 Package: softethervpn-client
 Submenu: VPN
 Version: 4.38-9760-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +softethervpn-base
+Depends: +libc +softethervpn-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -84,7 +84,7 @@ Federico Di Marco <fededim@gmail.com>
 Package: softethervpn-bridge
 Submenu: VPN
 Version: 4.38-9760-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +softethervpn-base
+Depends: +libc +softethervpn-base
 Conflicts: 
 Menu-Depends: 
 Provides: 

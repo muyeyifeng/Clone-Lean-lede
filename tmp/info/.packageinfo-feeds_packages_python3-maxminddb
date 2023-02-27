@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python3-maxminddb/Makefile
 Package: python3-maxminddb
 Submenu: Python
 Version: 2.0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libmaxminddb
+Depends: +libc +python3-light +libmaxminddb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: python3-maxminddb-src
 Submenu: Python
 Version: 2.0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

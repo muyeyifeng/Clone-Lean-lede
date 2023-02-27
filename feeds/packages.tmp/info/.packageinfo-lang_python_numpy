@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/numpy/Makefile
 Package: python3-numpy
 Submenu: Python
 Version: 1.23.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!SOFT_FLOAT +INSTALL_GFORTRAN:libgfortran +python3 +NUMPY_OPENBLAS_SUPPORT:openblas
+Depends: +libc @!SOFT_FLOAT +INSTALL_GFORTRAN:libgfortran +python3 +NUMPY_OPENBLAS_SUPPORT:openblas
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -39,7 +39,7 @@ endmenu
 Package: python3-numpy-src
 Submenu: Python
 Version: 1.23.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

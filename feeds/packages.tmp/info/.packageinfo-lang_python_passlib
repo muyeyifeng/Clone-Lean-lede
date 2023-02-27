@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/passlib/Makefile
 Package: python3-passlib
 Submenu: Python
 Version: 1.7.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-dateutil
+Depends: +libc +python3 +python3-dateutil
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ https://bitbucket.org/ecollins/passlib
 Package: python3-passlib-src
 Submenu: Python
 Version: 1.7.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

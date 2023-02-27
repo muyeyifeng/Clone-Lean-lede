@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libjpeg-turbo/Makefile
 
 Package: libjpeg-turbo
 Version: 2.1.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: libjpeg
@@ -23,7 +23,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: libjpeg-turbo-utils
 Submenu: Image Manipulation
 Version: 2.1.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg-turbo
+Depends: +libc +libjpeg-turbo
 Conflicts: 
 Menu-Depends: 
 Provides: jpeg-tools

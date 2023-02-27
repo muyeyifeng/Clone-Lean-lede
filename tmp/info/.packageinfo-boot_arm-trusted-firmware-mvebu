@@ -3,7 +3,7 @@ Source-Makefile: package/boot/arm-trusted-firmware-mvebu/Makefile
 Package: trusted-firmware-a-espressobin-512mb
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-espressobin-v3-v5-1gb-1cs
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-espressobin-v3-v5-1gb-2cs
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-espressobin-v3-v5-2gb
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91,7 +91,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-espressobin-v7-1gb
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7 || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -113,7 +113,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-espressobin-v7-2gb
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7 || TARGET_DEVICE_mvebu_cortexa53_DEVICE_globalscale_espressobin-v7)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-espressobin @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Vladimir Vid <vladimir.vid@sartura.hr>
 Package: trusted-firmware-a-udpu
 Default: y if (TARGET_mvebu_cortexa53_Default || TARGET_mvebu_cortexa53_DEVICE_methode_udpu || TARGET_DEVICE_mvebu_cortexa53_DEVICE_methode_udpu)
 Version: 2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +u-boot-uDPU @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK +u-boot-uDPU @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 

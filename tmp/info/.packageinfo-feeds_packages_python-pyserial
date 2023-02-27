@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-pyserial/Makefile
 Package: python3-pyserial
 Submenu: Python
 Version: 3.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Micke Prag <micke.prag@telldus.se>
 Package: python3-pyserial-src
 Submenu: Python
 Version: 3.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

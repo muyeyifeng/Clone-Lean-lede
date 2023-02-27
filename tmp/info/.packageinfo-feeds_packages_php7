@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/php7/Makefile
 Package: php7
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre2 +zlib +PHP7_LIBXML:libxml2 +PHP7_SYSTEMTZDATA:zoneinfo-core
+Depends: +libc +libpcre2 +zlib +PHP7_LIBXML:libxml2 +PHP7_SYSTEMTZDATA:zoneinfo-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Config:
 Package: php7-cgi
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
+Depends: +libc php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-cli
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
+Depends: +libc php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -90,7 +90,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-fastcgi
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-cgi
+Depends: +libc php7 +php7-cgi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -112,7 +112,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-fpm
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
+Depends: +libc php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-bcmath
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -156,7 +156,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-calendar
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -177,7 +177,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-ctype
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -198,7 +198,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-curl
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-curl:libcurl
+Depends: +libc php7 +PACKAGE_php7-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -219,7 +219,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-dom
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-dom:libxml2
+Depends: +libc php7 +@PHP7_LIBXML +PACKAGE_php7-mod-dom:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -240,7 +240,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-exif
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -261,7 +261,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-fileinfo
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -282,7 +282,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-filter
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -303,7 +303,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-ftp
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-ftp:libopenssl
+Depends: +libc php7 +PACKAGE_php7-mod-ftp:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -324,7 +324,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-gd
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gd:libgd-full
+Depends: +libc php7 +PACKAGE_php7-mod-gd:libgd-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -345,7 +345,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-gettext
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gettext:libintl-full
+Depends: +libc php7 +PACKAGE_php7-mod-gettext:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -366,7 +366,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-gmp
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gmp:libgmp
+Depends: +libc php7 +PACKAGE_php7-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -387,7 +387,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-iconv
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +BUILD_NLS:libiconv-full
+Depends: +libc php7 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -408,7 +408,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-imap
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-imap:libopenssl +PACKAGE_libpam:libpam +PACKAGE_php7-mod-imap:uw-imap
+Depends: +libc php7 +PACKAGE_php7-mod-imap:libopenssl +PACKAGE_libpam:libpam +PACKAGE_php7-mod-imap:uw-imap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -429,7 +429,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-intl
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:icu +PHP7_FULLICUDATA:icu-full-data
+Depends: +libc php7 +PACKAGE_php7-mod-intl:icu +PHP7_FULLICUDATA:icu-full-data
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -461,7 +461,7 @@ Config:
 Package: php7-mod-json
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -482,7 +482,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-ldap
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-ldap:libopenldap +PACKAGE_php7-mod-ldap:libsasl2
+Depends: +libc php7 +PACKAGE_php7-mod-ldap:libopenldap +PACKAGE_php7-mod-ldap:libsasl2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -503,7 +503,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-mbstring
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-mbstring:oniguruma
+Depends: +libc php7 +PACKAGE_php7-mod-mbstring:oniguruma
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -524,7 +524,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-mysqli
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-mysqli:php7-mod-mysqlnd
+Depends: +libc php7 +PACKAGE_php7-mod-mysqli:php7-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -545,7 +545,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-mysqlnd
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-openssl:php7-mod-openssl
+Depends: +libc php7 +PACKAGE_php7-mod-openssl:php7-mod-openssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -566,7 +566,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-opcache
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -587,7 +587,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-openssl
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-openssl:libopenssl
+Depends: +libc php7 +PACKAGE_php7-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -608,7 +608,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pcntl
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -629,7 +629,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pdo
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -650,7 +650,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pdo-mysql
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-mysql:php7-mod-mysqlnd
+Depends: +libc php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-mysql:php7-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -671,7 +671,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pdo-pgsql
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-pgsql:libpq
+Depends: +libc php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -692,7 +692,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pdo-sqlite
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-sqlite:libsqlite3 +PACKAGE_php7-mod-pdo-sqlite:librt
+Depends: +libc php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-sqlite:libsqlite3 +PACKAGE_php7-mod-pdo-sqlite:librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -713,7 +713,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-pgsql
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-pgsql:libpq
+Depends: +libc php7 +PACKAGE_php7-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -734,7 +734,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-phar
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -755,7 +755,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-session
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -776,7 +776,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-shmop
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -797,7 +797,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-simplexml
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-simplexml:libxml2
+Depends: +libc php7 +@PHP7_LIBXML +PACKAGE_php7-mod-simplexml:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -818,7 +818,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-snmp
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-snmp:libnetsnmp +PACKAGE_php7-mod-snmp:libopenssl
+Depends: +libc php7 +PACKAGE_php7-mod-snmp:libnetsnmp +PACKAGE_php7-mod-snmp:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -839,7 +839,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-soap
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-soap:libxml2
+Depends: +libc php7 +@PHP7_LIBXML +PACKAGE_php7-mod-soap:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -860,7 +860,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-sockets
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -881,7 +881,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-sqlite3
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-sqlite3:libsqlite3
+Depends: +libc php7 +PACKAGE_php7-mod-sqlite3:libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -902,7 +902,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-sysvmsg
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -923,7 +923,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-sysvsem
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -944,7 +944,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-sysvshm
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -965,7 +965,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-tokenizer
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7
+Depends: +libc php7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -986,7 +986,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-xml
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PHP7_LIBXML:libxml2 +!PHP7_LIBXML:libexpat
+Depends: +libc php7 +PHP7_LIBXML:libxml2 +!PHP7_LIBXML:libexpat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1007,7 +1007,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-xmlreader
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-dom:php7-mod-dom +PACKAGE_php7-mod-xmlreader:libxml2
+Depends: +libc php7 +@PHP7_LIBXML +PACKAGE_php7-mod-dom:php7-mod-dom +PACKAGE_php7-mod-xmlreader:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1028,7 +1028,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-xmlwriter
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-xmlwriter:libxml2
+Depends: +libc php7 +@PHP7_LIBXML +PACKAGE_php7-mod-xmlwriter:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1049,7 +1049,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: php7-mod-zip
 Submenu: PHP7
 Version: 7.4.30-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-zip:libzip
+Depends: +libc php7 +PACKAGE_php7-mod-zip:libzip
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-lxml/Makefile
 
 Package: python3-lxml
 Submenu: Python
-Version: 4.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libxslt +libexslt +python3-light
+Version: 4.9.2-1
+Depends: +libc +libxml2 +libxslt +libexslt +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: Pythonic XML processing library
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: lxml-4.9.1.tar.gz
+Source: lxml-4.9.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSES.txt
 Type: ipkg
@@ -28,8 +28,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 
 Package: python3-lxml-src
 Submenu: Python
-Version: 4.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 4.9.2-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Category: Languages
 Repository: packages
 Title: Pythonic XML processing library (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: lxml-4.9.1.tar.gz
+Source: lxml-4.9.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSES.txt
 Type: ipkg

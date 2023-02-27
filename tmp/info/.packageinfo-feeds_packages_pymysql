@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/pymysql/Makefile
 Package: python3-pymysql
 Submenu: Python
 Version: 1.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +PYTHON3_PYMYSQL_SHA_PASSWORD_SUPPORT:python3-cryptography
+Depends: +libc +python3 +PYTHON3_PYMYSQL_SHA_PASSWORD_SUPPORT:python3-cryptography
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Config:
 Package: python3-pymysql-src
 Submenu: Python
 Version: 1.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

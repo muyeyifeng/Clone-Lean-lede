@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/ntpd/Makefile
 Package: ntpd
 Submenu: Time Synchronization
 Version: 4.2.8p15-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +ntp-utils
+Depends: +libc +libopenssl +libpthread +libcap +ntp-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Peter Wagner <tripolar@gmx.at>
 Package: ntpdate
 Submenu: Time Synchronization
 Version: 4.2.8p15-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap
+Depends: +libc +libopenssl +libpthread +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Peter Wagner <tripolar@gmx.at>
 Package: ntp-utils
 Submenu: Time Synchronization
 Version: 4.2.8p15-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-pthreads
+Depends: +libc +libopenssl +libpthread +libcap +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ Peter Wagner <tripolar@gmx.at>
 Package: ntp-keygen
 Submenu: Time Synchronization
 Version: 4.2.8p15-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libcap +libevent2-core
+Depends: +libc +libopenssl +libpthread +libcap +libevent2-core
 Conflicts: 
 Menu-Depends: 
 Provides: 

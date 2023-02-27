@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/gnurl/Makefile
 Package: gnurl
 Submenu: File Transfer
 Version: 7.72.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnurl
+Depends: +libc +libgnurl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libgnurl
 Version: 7.72.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +libidn2 +zlib
+Depends: +libc +libgnutls +libidn2 +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/lxc/Makefile
 Package: lxc
 Menu: 1
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc
+Depends: +libc @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 
 Package: lxc-common
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
+Depends: +libc lxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-hooks
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
+Depends: +libc lxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64,7 +64,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-configs
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
+Depends: +libc lxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-templates
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc
+Depends: +libc lxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -102,7 +102,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: liblxc
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +libcap +libpthread +LXC_SECCOMP:libseccomp +libopenssl
+Depends: +libc lxc +libcap +libpthread +LXC_SECCOMP:libseccomp +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -121,7 +121,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-init
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +liblxc
+Depends: +libc lxc +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -140,7 +140,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-auto
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-start +lxc-stop
+Depends: +libc lxc +lxc-start +lxc-stop
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -162,7 +162,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-unprivileged
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +shadow-utils +shadow-newuidmap +shadow-newgidmap
+Depends: +libc lxc +shadow-utils +shadow-newuidmap +shadow-newgidmap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -182,7 +182,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-attach
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -201,7 +201,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-autostart
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -220,7 +220,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-cgroup
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -239,7 +239,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-copy
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -258,7 +258,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-config
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -277,7 +277,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-console
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -296,7 +296,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-create
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc +lxc-configs +lxc-hooks +lxc-templates +flock +getopt
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc +lxc-configs +lxc-hooks +lxc-templates +flock +getopt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -315,7 +315,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-destroy
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -334,7 +334,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-device
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -353,7 +353,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-execute
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -372,7 +372,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-freeze
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -391,7 +391,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-info
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -410,7 +410,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-monitor
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -429,7 +429,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-snapshot
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -448,7 +448,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-start
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -467,7 +467,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-stop
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -486,7 +486,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-unfreeze
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -505,7 +505,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-unshare
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -524,7 +524,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-usernsexec
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -543,7 +543,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-wait
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -562,7 +562,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-top
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -581,7 +581,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-ls
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -600,7 +600,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-monitord
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -619,7 +619,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-user-nic
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common +libpthread +libcap +liblxc
+Depends: +libc lxc +lxc-common +libpthread +libcap +liblxc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -638,7 +638,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: lxc-checkconfig
 Version: 4.0.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lxc +lxc-common
+Depends: +libc lxc +lxc-common
 Conflicts: 
 Menu-Depends: 
 Provides: 

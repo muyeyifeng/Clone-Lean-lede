@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/coreutils/Makefile
 Package: coreutils
 Menu: 1
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-base32
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-base64
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65,7 +65,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-basename
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -85,7 +85,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-basenc
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -105,7 +105,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-b2sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -125,7 +125,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-cat
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -145,7 +145,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-chcon
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -165,7 +165,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-chgrp
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -185,7 +185,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-chmod
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -205,7 +205,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-chown
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -225,7 +225,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-chroot
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -245,7 +245,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-cksum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -265,7 +265,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-comm
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -285,7 +285,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-cp
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
+Depends: +libc coreutils +libacl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -305,7 +305,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-csplit
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -325,7 +325,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-cut
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -345,7 +345,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-date
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -365,7 +365,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-dd
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -385,7 +385,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-df
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -405,7 +405,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-dir
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
+Depends: +libc coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -425,7 +425,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-dircolors
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -445,7 +445,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-dirname
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -465,7 +465,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-du
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -485,7 +485,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-echo
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -505,7 +505,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-env
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -525,7 +525,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-expand
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -545,7 +545,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-expr
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libgmp
+Depends: +libc coreutils +libgmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -565,7 +565,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-factor
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libgmp
+Depends: +libc coreutils +libgmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -585,7 +585,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-false
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -605,7 +605,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-fmt
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -625,7 +625,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-fold
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -645,7 +645,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-groups
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -665,7 +665,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-head
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -685,7 +685,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-hostid
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -705,7 +705,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-id
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -725,7 +725,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-install
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
+Depends: +libc coreutils +libacl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -745,7 +745,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-join
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -765,7 +765,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-kill
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -785,7 +785,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-link
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -805,7 +805,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-ln
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -825,7 +825,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-logname
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -845,7 +845,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-ls
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
+Depends: +libc coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -865,7 +865,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-md5sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -885,7 +885,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-mkdir
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -905,7 +905,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-mkfifo
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -925,7 +925,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-mknod
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -945,7 +945,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-mktemp
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -965,7 +965,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-mv
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
+Depends: +libc coreutils +libacl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -985,7 +985,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-nice
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1005,7 +1005,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-nl
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1025,7 +1025,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-nohup
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1045,7 +1045,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-nproc
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1065,7 +1065,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-numfmt
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1085,7 +1085,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-od
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1105,7 +1105,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-paste
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1125,7 +1125,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-pathchk
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1145,7 +1145,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-pinky
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1165,7 +1165,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-pr
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1185,7 +1185,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-printenv
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1205,7 +1205,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-printf
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1225,7 +1225,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-ptx
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1245,7 +1245,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-pwd
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1265,7 +1265,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-readlink
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1285,7 +1285,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-realpath
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1305,7 +1305,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-rm
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1325,7 +1325,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-rmdir
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1345,7 +1345,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-runcon
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1365,7 +1365,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-seq
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1385,7 +1385,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sha1sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1405,7 +1405,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sha224sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1425,7 +1425,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sha256sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1445,7 +1445,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sha384sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1465,7 +1465,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sha512sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1485,7 +1485,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-shred
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1505,7 +1505,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-shuf
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1525,7 +1525,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sleep
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1545,7 +1545,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sort
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libpthread
+Depends: +libc coreutils +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1565,7 +1565,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-split
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1585,7 +1585,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-stat
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1605,7 +1605,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-stdbuf
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1625,7 +1625,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-stty
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1645,7 +1645,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sum
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1665,7 +1665,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-sync
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1685,7 +1685,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tac
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1705,7 +1705,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tail
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1725,7 +1725,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tee
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1745,7 +1745,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-test
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1765,7 +1765,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-timeout
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +librt
+Depends: +libc coreutils +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1785,7 +1785,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-touch
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1805,7 +1805,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tr
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1825,7 +1825,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-true
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1845,7 +1845,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-truncate
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1865,7 +1865,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tsort
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1885,7 +1885,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-tty
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1905,7 +1905,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-uname
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1925,7 +1925,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-unexpand
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1945,7 +1945,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-uniq
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1965,7 +1965,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-unlink
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1985,7 +1985,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-uptime
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2005,7 +2005,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-users
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2025,7 +2025,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-vdir
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
+Depends: +libc coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2045,7 +2045,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-wc
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2065,7 +2065,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-who
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2085,7 +2085,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-whoami
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2105,7 +2105,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: coreutils-yes
 Version: 9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
+Depends: +libc coreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,10 +1,10 @@
 Source-Makefile: package/libs/libselinux/Makefile
-Build-Depends/host: libsepol/host pcre/host
+Build-Depends/host: libsepol/host musl-fts/host pcre/host
 Build-Types: host
 
 Package: libselinux
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsepol +libpcre +USE_MUSL:musl-fts
+Depends: +libc +libsepol +libpcre +USE_MUSL:musl-fts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +31,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-avcstat
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-compute_av
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -73,7 +73,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-compute_create
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -94,7 +94,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-compute_member
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -115,7 +115,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-compute_relabel
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -136,7 +136,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getconlist
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -157,7 +157,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getdefaultcon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -178,7 +178,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getenforce
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -199,7 +199,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getfilecon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -220,7 +220,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getpidcon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -241,7 +241,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getsebool
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -262,7 +262,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-getseuser
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -283,7 +283,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-matchpathcon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -304,7 +304,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-policyvers
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -325,7 +325,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-sefcontext_compile
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -346,7 +346,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selabel_digest
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -367,7 +367,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selabel_get_digests_all_partial_matches
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -388,7 +388,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selabel_lookup
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -409,7 +409,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selabel_lookup_best_match
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -430,7 +430,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selabel_partial_match
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -451,7 +451,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selinux_check_access
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -472,7 +472,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selinux_check_securetty_context
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -493,7 +493,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selinuxenabled
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -514,7 +514,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-selinuxexeccon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -535,7 +535,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-setenforce
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -556,7 +556,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-setfilecon
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -577,7 +577,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-togglesebool
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -598,7 +598,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Package: libselinux-validatetrans
 Submenu: libselinux tools
 Version: 3.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libselinux
+Depends: +libc +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 

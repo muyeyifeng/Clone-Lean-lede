@@ -4,7 +4,7 @@ Package: rsync
 Menu: 1
 Submenu: File Transfer
 Version: 3.2.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +zlib +RSYNC_xattr:libattr +RSYNC_acl:libacl +RSYNC_zstd:libzstd +BUILD_NLS:libiconv-full
+Depends: +libc +libpopt +zlib +RSYNC_xattr:libattr +RSYNC_acl:libacl +RSYNC_zstd:libzstd +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Config:
 Package: rsyncd
 Submenu: File Transfer
 Version: 3.2.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync
+Depends: +libc +rsync
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -56,7 +56,7 @@ Maxim Storchak <m.storchak@gmail.com>
 Package: rrsync
 Submenu: File Transfer
 Version: 3.2.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync +perlbase-file +perl @(PACKAGE_openssh-server||PACKAGE_openssh-server-pam)
+Depends: +libc +rsync +perlbase-file +perl @(PACKAGE_openssh-server||PACKAGE_openssh-server-pam)
 Conflicts: 
 Menu-Depends: 
 Provides: 

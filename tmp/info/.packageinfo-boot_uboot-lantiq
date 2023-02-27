@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-lantiq/Makefile
 Package: u-boot-arv4519pw_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4519pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4519pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv4519pw_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4519pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4519pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv4519pw_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4519pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4519pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7506pw11_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7506pw11 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7506pw11)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91,7 +91,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7506pw11_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7506pw11 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7506pw11)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -113,7 +113,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7506pw11_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7506pw11 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7506pw11)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4510pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4510pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -157,7 +157,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4510pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4510pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv4510pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv4510pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -201,7 +201,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw22_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7510pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7510pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,7 +223,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw22_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7510pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7510pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -245,7 +245,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7510pw22_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7510pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7510pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -267,7 +267,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7518pw_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7518pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7518pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -289,7 +289,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7518pw_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7518pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7518pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -311,7 +311,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv7518pw_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv7518pw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv7518pw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -333,7 +333,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -355,7 +355,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -377,7 +377,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -399,7 +399,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw22_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -421,7 +421,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw22_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -443,7 +443,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv752dpw22_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv752dpw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv752dpw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -465,7 +465,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv8539pw22_brn
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv8539pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv8539pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -487,7 +487,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv8539pw22_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv8539pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv8539pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -509,7 +509,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-arv8539pw22_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_arcadyan_arv8539pw22 || TARGET_DEVICE_lantiq_xway_DEVICE_arcadyan_arv8539pw22)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -531,7 +531,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-bthomehubv5a_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_bt_homehub-v5a || TARGET_DEVICE_lantiq_xrx200_DEVICE_bt_homehub-v5a)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -553,7 +553,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-gigasx76x_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_siemens_gigaset-sx76x || TARGET_DEVICE_lantiq_xway_DEVICE_siemens_gigaset-sx76x)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -575,7 +575,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-gigasx76x_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_siemens_gigaset-sx76x || TARGET_DEVICE_lantiq_xway_DEVICE_siemens_gigaset-sx76x)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -597,7 +597,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-acmp252_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_audiocodes_mp-252 || TARGET_DEVICE_lantiq_xway_DEVICE_audiocodes_mp-252)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -619,7 +619,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-acmp252_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_audiocodes_mp-252 || TARGET_DEVICE_lantiq_xway_DEVICE_audiocodes_mp-252)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -641,7 +641,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy50712_ram
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_lantiq_easy50712 || TARGET_DEVICE_lantiq_xway_DEVICE_lantiq_easy50712)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -663,7 +663,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy50712_nor
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_lantiq_easy50712 || TARGET_DEVICE_lantiq_xway_DEVICE_lantiq_easy50712)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -685,7 +685,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy50712_norspl
 Default: y if (TARGET_lantiq_xway_Default || TARGET_lantiq_xway_DEVICE_lantiq_easy50712 || TARGET_DEVICE_lantiq_xway_DEVICE_lantiq_easy50712)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @BROKEN @TARGET_lantiq_xway
+Depends: +libc @!IN_SDK @BROKEN @TARGET_lantiq_xway
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -707,7 +707,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy80920_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nand || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nand)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -729,7 +729,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy80920_nor
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nand || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nand)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -751,7 +751,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy80920_norspl
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nand || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nand)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -773,7 +773,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-easy80920_sfspl
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_lantiq_xrx200_DEVICE_lantiq_easy80920-nand || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_lantiq_easy80920-nand)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -795,7 +795,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fb3370_eva
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_avm_fritz3370 || TARGET_DEVICE_lantiq_xrx200_DEVICE_avm_fritz3370)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -817,7 +817,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fb3370_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_avm_fritz3370 || TARGET_DEVICE_lantiq_xrx200_DEVICE_avm_fritz3370)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -839,7 +839,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fb3370_sfspl
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_avm_fritz3370 || TARGET_DEVICE_lantiq_xrx200_DEVICE_avm_fritz3370)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -861,7 +861,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-p2812hnufx_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_zyxel_p-2812hnu-f1 || TARGET_DEVICE_lantiq_xrx200_DEVICE_zyxel_p-2812hnu-f1)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -883,7 +883,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-p2812hnufx_nandspl
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_zyxel_p-2812hnu-f1 || TARGET_DEVICE_lantiq_xrx200_DEVICE_zyxel_p-2812hnu-f1)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @BROKEN @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -905,7 +905,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7510kw22_brn
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -927,7 +927,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7510kw22_nor
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -949,7 +949,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7510kw22_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7510kw22-nor)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -971,7 +971,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7519_brn
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -993,7 +993,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7519_nor
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1015,7 +1015,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-vgv7519_ram
 Default: y if (TARGET_lantiq_xrx200_Default || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-nor || TARGET_DEVICE_lantiq_xrx200_DEVICE_arcadyan_vgv7519-brn)
 Version: 2013.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_lantiq_xrx200
+Depends: +libc @!IN_SDK @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 

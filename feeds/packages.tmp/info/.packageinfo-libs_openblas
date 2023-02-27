@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/openblas/Makefile
 
 Package: openblas
 Version: 0.3.21-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc @!powerpc +INSTALL_GFORTRAN:libgfortran
+Depends: +libc @!arc @!powerpc +INSTALL_GFORTRAN:libgfortran
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/bc/Makefile
 
 Package: bc
 Version: 1.06.95-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Depends: +libc +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Bruno Randolf <br1@einfach.org>
 
 Package: dc
 Version: 1.06.95-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bc
+Depends: +libc bc
 Conflicts: 
 Menu-Depends: 
 Provides: 

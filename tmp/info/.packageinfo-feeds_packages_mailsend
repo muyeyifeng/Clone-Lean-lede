@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mailsend/Makefile
 
 Package: mailsend
 Version: 1.19-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: mailsend-nossl
 Version: 1.19-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -4,7 +4,7 @@ Package: lighttpd
 Menu: 1
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnettle +libpcre2 +libpthread +LIGHTTPD_LOGROTATE:logrotate
+Depends: +libc +libnettle +libpcre2 +libpthread +LIGHTTPD_LOGROTATE:logrotate
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ config LIGHTTPD_LOGROTATE
 Package: lighttpd-mod-redirect
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-redirect:libpcre2
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-redirect:libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-auth
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-auth:libnettle
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-auth:libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97,7 +97,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_dbi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_dbi:libnettle +PACKAGE_lighttpd-mod-authn_dbi:libdbi
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_dbi:libnettle +PACKAGE_lighttpd-mod-authn_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -118,7 +118,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_file
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_file:libnettle
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_file:libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -139,7 +139,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_gssapi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_gssapi:krb5-libs
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -160,7 +160,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_ldap
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_ldap:libopenldap
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -181,7 +181,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_pam
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_pam:libpam
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_pam:libpam
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -202,7 +202,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-authn_sasl
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_sasl:libsasl2
+Depends: +libc lighttpd lighttpd-mod-auth +PACKAGE_lighttpd-mod-authn_sasl:libsasl2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,7 +223,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-access
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -244,7 +244,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-accesslog
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -265,7 +265,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-ajp13
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -286,7 +286,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-alias
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -307,7 +307,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-cgi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -328,7 +328,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-deflate
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-deflate:zlib
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-deflate:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -349,7 +349,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-evasive
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -370,7 +370,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-evhost
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -391,7 +391,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-expire
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -412,7 +412,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-extforward
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -433,7 +433,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-fastcgi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -454,7 +454,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-gnutls
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-gnutls:libgnutls
+Depends: +libc lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-gnutls:libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -475,7 +475,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-magnet
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-magnet:liblua
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-magnet:liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -496,7 +496,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-maxminddb
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-maxminddb:libmaxminddb
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-maxminddb:libmaxminddb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -517,7 +517,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-mbedtls
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-mbedtls:libmbedtls
+Depends: +libc lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -538,7 +538,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-nss
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-nss:libnss
+Depends: +libc lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-nss:libnss
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -559,7 +559,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-openssl
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-openssl:libopenssl
+Depends: +libc lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -580,7 +580,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-proxy
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -601,7 +601,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-rewrite
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-rewrite:libpcre2
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-rewrite:libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -622,7 +622,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-rrdtool
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -643,7 +643,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-scgi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -664,7 +664,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-secdownload
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-secdownload:libnettle
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-secdownload:libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -685,7 +685,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-setenv
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -706,7 +706,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-simple_vhost
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -727,7 +727,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-sockproxy
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -748,7 +748,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-ssi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -769,7 +769,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-staticfile
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -790,7 +790,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-status
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -811,7 +811,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-uploadprogress
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -832,7 +832,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-userdir
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -853,7 +853,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-usertrack
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-usertrack:libnettle
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-usertrack:libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -874,7 +874,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-vhostdb
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Depends: +libc lighttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -895,7 +895,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-vhostdb_dbi
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_dbi:libdbi
+Depends: +libc lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_dbi:libdbi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -916,7 +916,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-vhostdb_ldap
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_ldap:libopenldap
+Depends: +libc lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -937,7 +937,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-vhostdb_mysql
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_mysql:libmariadb
+Depends: +libc lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_mysql:libmariadb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -958,7 +958,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-vhostdb_pgsql
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_pgsql:libpq
+Depends: +libc lighttpd lighttpd-mod-vhostdb +PACKAGE_lighttpd-mod-vhostdb_pgsql:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -979,7 +979,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-webdav
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-webdav:libsqlite3 +PACKAGE_lighttpd-mod-webdav:libuuid +PACKAGE_lighttpd-mod-webdav:libxml2
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-webdav:libsqlite3 +PACKAGE_lighttpd-mod-webdav:libuuid +PACKAGE_lighttpd-mod-webdav:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1000,7 +1000,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-wolfssl
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-wolfssl:libwolfssl
+Depends: +libc lighttpd @LIGHTTPD_SSL +PACKAGE_lighttpd-mod-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1021,7 +1021,7 @@ W. Michael Petullo <mike@flyn.org>
 Package: lighttpd-mod-wstunnel
 Submenu: Web Servers/Proxies
 Version: 1.4.66-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd +PACKAGE_lighttpd-mod-wstunnel:libnettle
+Depends: +libc lighttpd +PACKAGE_lighttpd-mod-wstunnel:libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 

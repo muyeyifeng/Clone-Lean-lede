@@ -4,7 +4,7 @@ Package: libzstd
 Menu: 1
 Submenu: Compression
 Version: 1.5.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Config:
 Package: zstd
 Submenu: Compression
 Version: 1.5.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzstd
+Depends: +libc +libzstd
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/socat/Makefile
 
 Package: socat
-Version: 1.7.4.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +SOCAT_SSL:libopenssl
+Version: 1.7.4.4-1
+Depends: +libc +libpthread +librt +SOCAT_SSL:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: A multipurpose relay (SOcket CAT)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: socat-1.7.4.1.tar.bz2
+Source: socat-1.7.4.4.tar.bz2
 License: GPL-2.0-or-later OpenSSL
 LicenseFiles: COPYING COPYING.OpenSSL
 Type: ipkg

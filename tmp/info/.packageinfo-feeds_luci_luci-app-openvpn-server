@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-openvpn-server
 Submenu: 3. Applications
 Version: 2.0-19
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +openvpn-openssl +openvpn-easy-rsa +kmod-tun
+Depends: +libc +openvpn-openssl +openvpn-easy-rsa +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for OpenVPN Server
 Package: luci-i18n-openvpn-server-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 2.0-19
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-openvpn-server
+Depends: +libc luci-app-openvpn-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

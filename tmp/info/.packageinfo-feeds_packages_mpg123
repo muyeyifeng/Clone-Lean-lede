@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mpg123/Makefile
 
 Package: libmpg123
 Version: 1.31.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
+Depends: +libc +libltdl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: libout123
 Version: 1.31.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
+Depends: +libc +libltdl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: libsyn123
 Version: 1.31.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
+Depends: +libc +libltdl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: mpg123
 Version: 1.31.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpg123 +alsa-lib +libout123 +libsyn123
+Depends: +libc +libmpg123 +alsa-lib +libout123 +libsyn123
 Conflicts: 
 Menu-Depends: 
 Provides: 

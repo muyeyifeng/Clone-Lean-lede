@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ssrserver-python
 Submenu: 3. Applications
 Version: 3.2.0-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
+Depends: +libc +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI for SSR Server Python
 Package: luci-i18n-ssrserver-python-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 3.2.0-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssrserver-python
+Depends: +libc luci-app-ssrserver-python
 Conflicts: 
 Menu-Depends: 
 Provides: 

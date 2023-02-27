@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/pciutils/Makefile
 
 Package: libpci
-Version: 3.7.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 3.8.0-2
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Linux PCI Libraries
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: pciutils-3.7.0.tar.xz
+Source: pciutils-3.8.0.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -21,8 +21,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 @@
 
 Package: pciutils
-Version: 3.7.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libkmod +libpci +pciids
+Version: 3.8.0-2
+Depends: +libc +libkmod +libpci +pciids
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +31,7 @@ Category: Utilities
 Repository: base
 Title: Linux PCI Utilities
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: pciutils-3.7.0.tar.xz
+Source: pciutils-3.8.0.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

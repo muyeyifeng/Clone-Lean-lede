@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-usb-printer
 Submenu: 3. Applications
 Version: 1.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +p910nd +kmod-usb-printer
+Depends: +libc +p910nd +kmod-usb-printer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: USB Printer Share via TCP/IP
 Package: luci-i18n-usb-printer-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-usb-printer
+Depends: +libc luci-app-usb-printer
 Conflicts: 
 Menu-Depends: 
 Provides: 

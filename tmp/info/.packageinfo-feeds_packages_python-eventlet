@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-eventlet/Makefile
 Package: python3-eventlet
 Submenu: Python
 Version: 0.30.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-six +python3-dns +python3-greenlet +python3-distutils +python3-email +python3-logging +python3-openssl +python3-urllib
+Depends: +libc +python3-light +python3-six +python3-dns +python3-greenlet +python3-distutils +python3-email +python3-logging +python3-openssl +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: python3-eventlet-src
 Submenu: Python
 Version: 0.30.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

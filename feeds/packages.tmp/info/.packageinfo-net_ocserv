@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/ocserv/Makefile
 
 Package: ocserv
 Submenu: VPN
-Version: 1.1.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +OCSERV_RADIUS:libradcli +OCSERV_HTTP_PARSER:libhttp-parser +OCSERV_SECCOMP:libseccomp +libgnutls +certtool +libncurses +libreadline +OCSERV_PAM:libpam +OCSERV_PROTOBUF:libprotobuf-c +libev +kmod-tun
+Version: 1.1.6-2
+Depends: +libc +OCSERV_RADIUS:libradcli +OCSERV_HTTP_PARSER:libhttp-parser +OCSERV_SECCOMP:libseccomp +libgnutls +certtool +libncurses +libreadline +OCSERV_PAM:libpam +OCSERV_PROTOBUF:libprotobuf-c +libev +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 

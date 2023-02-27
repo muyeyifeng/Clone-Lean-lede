@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/xmlrpc-c/Makefile
 
 Package: xmlrpc-c
 Version: 1.51.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +xmlrpc-c-internal
+Depends: +libc +xmlrpc-c-internal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: xmlrpc-c-common
 Version: 1.51.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: xmlrpc-c-internal
 Version: 1.51.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +xmlrpc-c-common
+Depends: +libc +xmlrpc-c-common
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: xmlrpc-c-server
 Version: 1.51.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +xmlrpc-c
+Depends: +libc +xmlrpc-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89,7 +89,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: xmlrpc-c-client
 Version: 1.51.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +xmlrpc-c +libcurl
+Depends: +libc +xmlrpc-c +libcurl
 Conflicts: 
 Menu-Depends: 
 Provides: 

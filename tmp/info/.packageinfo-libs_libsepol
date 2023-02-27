@@ -3,7 +3,7 @@ Build-Types: host
 
 Package: libsepol
 Version: 3.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 
 Package: chkcon
 Version: 3.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsepol
+Depends: +libc +libsepol
 Conflicts: 
 Menu-Depends: 
 Provides: 

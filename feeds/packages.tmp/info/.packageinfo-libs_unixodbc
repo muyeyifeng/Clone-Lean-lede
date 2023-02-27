@@ -5,7 +5,7 @@ Build-Types: host
 Package: unixodbc
 Submenu: Database
 Version: 2.3.9-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl +libpthread
+Depends: +libc +libltdl +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: unixodbc-tools
 Submenu: Database
 Version: 2.3.9-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +unixodbc +libncurses +libreadline
+Depends: +libc +unixodbc +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -46,7 +46,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: pgsqlodbc
 Submenu: Database
 Version: 2.3.9-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +unixodbc +libpq
+Depends: +libc +unixodbc +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 

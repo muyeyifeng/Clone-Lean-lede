@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-accesscontrol
 Submenu: 3. Applications
 Version: 1-11
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI Access Control Configuration
 Package: luci-i18n-accesscontrol-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1-11
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-accesscontrol
+Depends: +libc luci-app-accesscontrol
 Conflicts: 
 Menu-Depends: 
 Provides: 

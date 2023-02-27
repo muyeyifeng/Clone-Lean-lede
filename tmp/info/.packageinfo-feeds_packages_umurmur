@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/umurmur/Makefile
 Package: umurmur-openssl
 Submenu: Instant Messaging
 Version: 0.2.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libprotobuf-c +libopenssl
+Depends: +libc +libconfig +libprotobuf-c +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Martin Johansson <martin@fatbob.nu>
 Package: umurmur-mbedtls
 Submenu: Instant Messaging
 Version: 0.2.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libprotobuf-c +libmbedtls
+Depends: +libc +libconfig +libprotobuf-c +libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 

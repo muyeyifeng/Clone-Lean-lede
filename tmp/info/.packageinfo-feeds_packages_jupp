@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/jupp/Makefile
 Package: jupp
 Submenu: Editors
 Version: 3.1.40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_libncurses:libncurses
+Depends: +libc +PACKAGE_libncurses:libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Thorsten Glaser <tg@mirbsd.org>
 Package: jupp-data
 Submenu: Editors
 Version: 3.1.40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread jupp
+Depends: +libc jupp
 Conflicts: joe
 Menu-Depends: 
 Provides: 

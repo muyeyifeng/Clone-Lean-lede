@@ -3,8 +3,8 @@ Source-Makefile: feeds/routing/oonf-olsrd2/Makefile
 Package: oonf-olsrd2
 Menu: 1
 Submenu: OLSR.org network framework
-Version: v0.15.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libnl-tiny +libuci +oonf-init-scripts
+Version: 2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396
+Depends: +libc +librt +libnl-tiny +libuci +oonf-init-scripts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Build Olsrd V2 Routing Agent
 Maintainer: Henning Rogge <hrogge@gmail.com>
-Source: oonf-olsrd2-v0.15.1.tar.bz2
+Source: oonf-olsrd2-2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396.tar.xz
 Type: ipkg
 Description: Build Olsrd V2 Routing Agent
 http://www.olsr.org/

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libftdi1/Makefile
 
 Package: libftdi1
 Version: 1.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
+Depends: +libc +libusb-1.0
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ http://www.intra2net.com/en/developer/libftdi/
 
 Package: ftdi_eeprom
 Version: 1.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +confuse +libftdi1
+Depends: +libc +confuse +libftdi1
 Conflicts: 
 Menu-Depends: 
 Provides: 

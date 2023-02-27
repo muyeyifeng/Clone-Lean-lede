@@ -3,7 +3,7 @@ Source-Makefile: feeds/cups/cups/Makefile
 Package: cups
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libusb-1.0 +libstdcpp
+Depends: +libc +libcups +libusb-1.0 +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ http://www.cups.org/
 Package: libcups
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +libpng +libjpeg
+Depends: +libc +zlib +libpthread +libpng +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -41,7 +41,7 @@ http://www.cups.org/
 Package: libcupsimage
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Depends: +libc +libcups
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -60,7 +60,7 @@ http://www.cups.org/
 Package: cups-bsd
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Depends: +libc +libcups
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ http://www.cups.org/
 Package: cups-client
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage
+Depends: +libc +libcups +libcupsimage
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -98,7 +98,7 @@ http://www.cups.org/
 Package: cups-filters
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcupsimage
+Depends: +libc +libcupsimage
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -117,7 +117,7 @@ http://www.cups.org/
 Package: cups-ppdc
 Submenu: Printing
 Version: 2.3.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +zlib +libpthread +libpng +libjpeg +libstdcpp
+Depends: +libc +libcups +zlib +libpthread +libpng +libjpeg +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -140,7 +140,7 @@ Build-Depends: cups
 Package: cups-bjnp
 Submenu: Printing
 Version: 2.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread cups
+Depends: +libc cups
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -165,7 +165,7 @@ Source-Makefile: feeds/cups/cups-dymo/Makefile
 Package: cups-dymo
 Submenu: Printing
 Version: 1.4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage +libstdcpp
+Depends: +libc +libcups +libcupsimage +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -187,7 +187,7 @@ Source-Makefile: feeds/cups/cups-opfilter/Makefile
 Package: cups-opfilter
 Submenu: Printing
 Version: 1.27.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcups +libcupsimage +libstdcpp +libtiff +libpng +libjpeg +glib2 +libfreetype +fontconfig
+Depends: +libc +cups +libcups +libcupsimage +libstdcpp +libtiff +libpng +libjpeg +glib2 +libfreetype +fontconfig
 Conflicts: 
 Menu-Depends: 
 Provides: 

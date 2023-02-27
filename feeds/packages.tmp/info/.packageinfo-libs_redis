@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/redis/Makefile
 Package: redis-full
 Submenu: Database
 Version: 6.2.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +redis-utils +redis-cli
+Depends: +libc +redis-utils +redis-cli
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: redis-server
 Submenu: Database
 Version: 6.2.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libatomic
+Depends: +libc +libpthread +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -48,7 +48,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: redis-cli
 Submenu: Database
 Version: 6.2.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic
+Depends: +libc +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: redis-utils
 Submenu: Database
 Version: 6.2.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +redis-server
+Depends: +libc +redis-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

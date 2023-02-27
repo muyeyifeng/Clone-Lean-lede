@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: ucert
 Version: 2020-05-24-00b921d80ac0dc47339305d803f865ff43c56d63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +usign +libubox
+Depends: +libc +usign +libubox
 Conflicts: ucert-full
 Menu-Depends: 
 Provides: ucert
@@ -25,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: ucert-full
 Version: 2020-05-24-00b921d80ac0dc47339305d803f865ff43c56d63-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +usign +libubox +libjson-c +libblobmsg-json
+Depends: +libc +usign +libubox +libjson-c +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
 Provides: ucert

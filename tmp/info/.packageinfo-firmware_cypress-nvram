@@ -2,7 +2,7 @@ Source-Makefile: package/firmware/cypress-nvram/Makefile
 
 Package: cypress-nvram-43430-sdio-rpi-3b
 Version: 2019-09-03-e7b78df22f2a0c5f56abb7b5880661611de35e5f-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_bcm27xx
+Depends: +libc @TARGET_bcm27xx
 Conflicts: brcmfmac-firmware-43430-sdio-rpi-3b
 Menu-Depends: 
 Provides: brcmfmac-firmware-43430-sdio-rpi-3b
@@ -19,7 +19,7 @@ https://community.cypress.com/community/linux
 
 Package: cypress-nvram-43430-sdio-rpi-zero-w
 Version: 2019-09-03-e7b78df22f2a0c5f56abb7b5880661611de35e5f-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_bcm27xx
+Depends: +libc @TARGET_bcm27xx
 Conflicts: brcmfmac-firmware-43430-sdio-rpi-zero-w
 Menu-Depends: 
 Provides: brcmfmac-firmware-43430-sdio-rpi-zero-w
@@ -36,7 +36,7 @@ https://community.cypress.com/community/linux
 
 Package: cypress-nvram-43455-sdio-rpi-3b-plus
 Version: 2019-09-03-e7b78df22f2a0c5f56abb7b5880661611de35e5f-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_bcm27xx
+Depends: +libc @TARGET_bcm27xx
 Conflicts: brcmfmac-firmware-43455-sdio-rpi-3b-plus
 Menu-Depends: 
 Provides: brcmfmac-firmware-43455-sdio-rpi-3b-plus
@@ -53,7 +53,7 @@ https://community.cypress.com/community/linux
 
 Package: cypress-nvram-43455-sdio-rpi-4b
 Version: 2019-09-03-e7b78df22f2a0c5f56abb7b5880661611de35e5f-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_bcm27xx
+Depends: +libc @TARGET_bcm27xx
 Conflicts: brcmfmac-firmware-43455-sdio-rpi-4b
 Menu-Depends: 
 Provides: brcmfmac-firmware-43455-sdio-rpi-4b

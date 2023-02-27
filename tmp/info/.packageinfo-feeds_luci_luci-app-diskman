@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-diskman
 Submenu: 3. Applications
 Version: v0.2.11-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +blkid +e2fsprogs +parted +smartmontools +PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs:btrfs-progs +PACKAGE_luci-app-diskman_INCLUDE_lsblk:lsblk +PACKAGE_luci-app-diskman_INCLUDE_mdadm:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456:kmod-md-raid456 +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linears:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linears:kmod-md-linear
+Depends: +libc +blkid +e2fsprogs +parted +smartmontools +PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs:btrfs-progs +PACKAGE_luci-app-diskman_INCLUDE_lsblk:lsblk +PACKAGE_luci-app-diskman_INCLUDE_mdadm:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456:kmod-md-raid456 +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linears:mdadm +PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linears:kmod-md-linear
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -46,7 +46,7 @@ config PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linear
 Package: luci-i18n-diskman-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: v0.2.11-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-diskman
+Depends: +libc luci-app-diskman
 Conflicts: 
 Menu-Depends: 
 Provides: 

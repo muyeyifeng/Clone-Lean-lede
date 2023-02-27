@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-dynapoint
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dynapoint
+Depends: +libc +dynapoint
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -20,30 +20,10 @@ Description: LuCI Support for DynaPoint
 Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 @@
 
-Package: luci-i18n-dynapoint-ru
-Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dynapoint
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: luci
-Title: luci-app-dynapoint - ru translation
-Maintainer: Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
-Source: 
-License: GPL-3.0+
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-dynapoint - Русский (Russian)
-Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
-@@
-
 Package: luci-i18n-dynapoint-de
 Default: LUCI_LANG_de||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dynapoint
+Depends: +libc luci-app-dynapoint
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63,7 +43,7 @@ Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 Package: luci-i18n-dynapoint-ja
 Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dynapoint
+Depends: +libc luci-app-dynapoint
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +63,7 @@ Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 Package: luci-i18n-dynapoint-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dynapoint
+Depends: +libc luci-app-dynapoint
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97,6 +77,26 @@ License: GPL-3.0+
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-dynapoint - Português do Brasil (Brazialian Portuguese)
+Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+@@
+
+Package: luci-i18n-dynapoint-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x-1
+Depends: +libc luci-app-dynapoint
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-dynapoint - ru translation
+Maintainer: Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dynapoint - Русский (Russian)
 Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 @@
 

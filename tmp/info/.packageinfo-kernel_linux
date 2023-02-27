@@ -41,7 +41,7 @@ Description: Serial and Parallel ATA support
 Package: kmod-ata-ahci
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -60,7 +60,7 @@ Description:  Support for AHCI Serial ATA controllers
 Package: kmod-ata-ahci-platform
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_ipq806x||TARGET_layerscape||TARGET_rockchip||TARGET_sunxi
+Depends: +kmod-ata-core @TARGET_ipq806x||TARGET_layerscape||TARGET_rockchip||TARGET_sunxi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ Description:  Platform support for AHCI Serial ATA controllers
 Package: kmod-ata-artop
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -98,7 +98,7 @@ Description:  PATA support for ARTOP 6210/6260 host controllers
 Package: kmod-ata-nvidia-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -117,7 +117,7 @@ Description: Nvidia Serial ATA support
 Package: kmod-ata-pdc202xx-old
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -137,7 +137,7 @@ Description:  This option enables support for the Promise 20246, 20262, 20263,
 Package: kmod-ata-piix
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -157,7 +157,7 @@ Description:  SATA support for Intel ICH5/6/7/8 series host controllers and
 Package: kmod-ata-sil
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -176,7 +176,7 @@ Description:  Support for Silicon Image Serial ATA controllers
 Package: kmod-ata-sil24
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -195,7 +195,7 @@ Description:  Support for Silicon Image 3124/3132 Serial ATA controllers
 Package: kmod-ata-via-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core 
+Depends: +kmod-ata-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -684,7 +684,7 @@ Description:  Kernel module for CAN bus support.
 Package: kmod-can-bcm
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -705,7 +705,7 @@ Description:  The Broadcast Manager offers content filtering, timeout monitoring
 Package: kmod-can-c-can
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -768,7 +768,7 @@ Description:  This driver adds support for the C_CAN/D_CAN chips connected
 Package: kmod-can-flexcan
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can @TARGET_imx
+Depends: kmod-can @TARGET_imx
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -787,7 +787,7 @@ Description:  Freescale FLEXCAN CAN bus controller implementation.
 Package: kmod-can-gw
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -806,7 +806,7 @@ Description:  The CAN Gateway/Router is used to route (and modify) CAN frames.
 Package: kmod-can-mcp251x
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -825,7 +825,7 @@ Description:  Microchip MCP251x SPI CAN controller
 Package: kmod-can-raw
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -845,7 +845,7 @@ Description:  The raw CAN protocol option offers access to the CAN bus via
 Package: kmod-can-slcan
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -866,7 +866,7 @@ Description:  CAN driver for several 'low cost' CAN interfaces that are attached
 Package: kmod-can-usb-8dev
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can +kmod-usb-core
+Depends: kmod-can +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -886,7 +886,7 @@ Description:  This driver supports the USB2CAN interface
 Package: kmod-can-usb-ems
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can +kmod-usb-core
+Depends: kmod-can +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -906,7 +906,7 @@ Description:  This driver is for the one channel CPC-USB/ARM7 CAN/USB interface
 Package: kmod-can-usb-esd
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can +kmod-usb-core
+Depends: kmod-can +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -926,7 +926,7 @@ Description:  This driver supports the CAN-USB/2 interface
 Package: kmod-can-usb-kvaser
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can +kmod-usb-core
+Depends: kmod-can +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -946,7 +946,7 @@ Description:  This driver adds support for Kvaser CAN/USB devices like Kvaser
 Package: kmod-can-usb-peak
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can +kmod-usb-core
+Depends: kmod-can +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -966,7 +966,7 @@ Description:  This driver supports the PCAN-USB and PCAN-USB Pro adapters
 Package: kmod-can-vcan
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can 
+Depends: kmod-can 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -986,7 +986,7 @@ Description:  Similar to the network loopback devices, vcan offers a
 Package: kmod-can-xilinx-can
 Submenu: CAN Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-can @TARGET_zynq
+Depends: kmod-can @TARGET_zynq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1006,7 +1006,7 @@ Description:  Xilinx CAN driver. This driver supports both
 Package: kmod-crypto-acompress
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1026,7 +1026,7 @@ Description: Asynchronous Compression operations
 Package: kmod-crypto-aead
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +kmod-crypto-null
+Depends: +kmod-crypto-null
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1045,7 +1045,7 @@ Description: CryptoAPI AEAD support
 Package: kmod-crypto-arc4
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1064,7 +1064,7 @@ Description: ARC4 cipher CryptoAPI module
 Package: kmod-crypto-authenc
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-crypto-null 
+Depends: +kmod-crypto-manager +kmod-crypto-null
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1083,7 +1083,7 @@ Description: Combined mode wrapper for IPsec
 Package: kmod-crypto-cbc
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1102,7 +1102,7 @@ Description: Cipher Block Chaining CryptoAPI module
 Package: kmod-crypto-ccm
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-ctr +kmod-crypto-aead 
+Depends: +kmod-crypto-ctr +kmod-crypto-aead
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1121,7 +1121,7 @@ Description: Support for Counter with CBC MAC (CCM)
 Package: kmod-crypto-cmac
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1140,7 +1140,7 @@ Description: Support for Cipher-based Message Authentication Code (CMAC)
 Package: kmod-crypto-crc32
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1160,7 +1160,7 @@ Description: CRC32 CRC module
 Package: kmod-crypto-crc32c
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1179,7 +1179,7 @@ Description: CRC32c CRC module
 Package: kmod-crypto-ctr
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-crypto-seqiv 
+Depends: +kmod-crypto-manager +kmod-crypto-seqiv
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1198,7 +1198,7 @@ Description: Counter Mode CryptoAPI module
 Package: kmod-crypto-cts
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1217,7 +1217,7 @@ Description: Cipher Text Stealing CryptoAPI module
 Package: kmod-crypto-deflate
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-lib-zlib-inflate +kmod-lib-zlib-deflate +kmod-crypto-acompress 
+Depends: +kmod-lib-zlib-inflate +kmod-lib-zlib-deflate +kmod-crypto-acompress
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1236,7 +1236,7 @@ Description: Deflate compression CryptoAPI module
 Package: kmod-crypto-des
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1255,7 +1255,7 @@ Description: DES/3DES cipher CryptoAPI module
 Package: kmod-crypto-ecb
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1274,7 +1274,7 @@ Description: Electronic CodeBook CryptoAPI module
 Package: kmod-crypto-ecdh
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-kpp 
+Depends: +kmod-crypto-kpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1293,7 +1293,7 @@ Description: ECDH algorithm
 Package: kmod-crypto-echainiv
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-aead 
+Depends: +kmod-crypto-aead
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1312,7 +1312,7 @@ Description: Encrypted Chain IV Generator
 Package: kmod-crypto-fcrypt
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1331,7 +1331,7 @@ Description: FCRYPT cipher CryptoAPI module
 Package: kmod-crypto-gcm
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-ctr +kmod-crypto-ghash +kmod-crypto-null 
+Depends: +kmod-crypto-ctr +kmod-crypto-ghash +kmod-crypto-null
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1350,7 +1350,7 @@ Description: GCM/GMAC CryptoAPI module
 Package: kmod-crypto-xcbc
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-manager 
+Depends: +kmod-crypto-hash +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1369,7 +1369,7 @@ Description: XCBC CryptoAPI module
 Package: kmod-crypto-gf128
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1388,7 +1388,7 @@ Description: GF(2^128) multiplication functions CryptoAPI module
 Package: kmod-crypto-ghash
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-gf128 +kmod-crypto-hash 
+Depends: +kmod-crypto-gf128 +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1407,7 +1407,7 @@ Description: GHASH digest CryptoAPI module
 Package: kmod-crypto-hash
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1426,7 +1426,7 @@ Description: CryptoAPI hash support
 Package: kmod-crypto-hmac
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-manager 
+Depends: +kmod-crypto-hash +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1445,7 +1445,7 @@ Description: HMAC digest CryptoAPI module
 Package: kmod-crypto-hw-ccp
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-crypto-authenc +kmod-crypto-hash +kmod-crypto-manager +kmod-crypto-rsa +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-random-core 
+Depends: @TARGET_x86 +kmod-crypto-authenc +kmod-crypto-hash +kmod-crypto-manager +kmod-crypto-rsa +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-random-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1464,7 +1464,7 @@ Description: AMD Cryptographic Coprocessor
 Package: kmod-crypto-hw-geode
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_geode +kmod-crypto-manager 
+Depends: @TARGET_x86_geode +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1502,7 +1502,7 @@ Description: HIFN 795x crypto accelerator
 Package: kmod-crypto-hw-padlock
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1521,7 +1521,7 @@ Description: VIA PadLock ACE with AES/SHA hw crypto module
 Package: kmod-crypto-hw-safexcel
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72||TARGET_mediatek_filogic||TARGET_mediatek_mt7623) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-des +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-crypto-sha512 
+Depends: @(TARGET_mvebu_cortexa53||TARGET_mvebu_cortexa72||TARGET_mediatek_filogic||TARGET_mediatek_mt7623) +eip197-mini-firmware +kmod-crypto-authenc +kmod-crypto-des +kmod-crypto-md5 +kmod-crypto-hmac +kmod-crypto-sha1 +kmod-crypto-sha256 +kmod-crypto-sha512
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1548,7 +1548,7 @@ https://extranet.marvell.com.
 Package: kmod-crypto-hw-talitos
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: @(TARGET_mpc85xx||TARGET_layerscape) +kmod-crypto-manager +kmod-crypto-hash +kmod-random-core +kmod-crypto-authenc +kmod-crypto-des 
+Depends: @(TARGET_mpc85xx||TARGET_layerscape) +kmod-crypto-manager +kmod-crypto-hash +kmod-random-core +kmod-crypto-authenc +kmod-crypto-des
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1567,7 +1567,7 @@ Description: Freescale integrated security engine (SEC) driver
 Package: kmod-crypto-kpp
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1586,7 +1586,7 @@ Description: Key-agreement Protocol Primitives
 Package: kmod-crypto-lib-chacha20
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1606,7 +1606,7 @@ Description: ChaCha library interface
 Package: kmod-crypto-lib-chacha20poly1305
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +kmod-crypto-lib-chacha20 +kmod-crypto-lib-poly1305
+Depends: +kmod-crypto-lib-chacha20 +kmod-crypto-lib-poly1305
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1626,7 +1626,7 @@ Description: ChaCha20-Poly1305 AEAD support (8-byte nonce library version)
 Package: kmod-crypto-lib-curve25519
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +PACKAGE_kmod-crypto-kpp:kmod-crypto-kpp
+Depends: +PACKAGE_kmod-crypto-kpp:kmod-crypto-kpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1649,7 +1649,7 @@ Config:
 Package: kmod-crypto-lib-poly1305
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
+Depends: +PACKAGE_kmod-crypto-hash:kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1672,7 +1672,7 @@ Config:
 Package: kmod-crypto-manager
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-aead +kmod-crypto-hash 
+Depends: +kmod-crypto-aead +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1691,7 +1691,7 @@ Description: CryptoAPI algorithm manager
 Package: kmod-crypto-md4
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1710,7 +1710,7 @@ Description: MD4 digest CryptoAPI module
 Package: kmod-crypto-md5
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1729,7 +1729,7 @@ Description: MD5 digest CryptoAPI module
 Package: kmod-crypto-michael-mic
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1748,7 +1748,7 @@ Description: Michael MIC keyed digest CryptoAPI module
 Package: kmod-crypto-misc
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-xts 
+Depends: +kmod-crypto-xts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1767,7 +1767,7 @@ Description: Other CryptoAPI modules
 Package: kmod-crypto-null
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +kmod-crypto-hash
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1786,7 +1786,7 @@ Description: Null CryptoAPI module
 Package: kmod-crypto-pcbc
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager 
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1805,7 +1805,7 @@ Description: Propagating Cipher Block Chaining CryptoAPI module
 Package: kmod-crypto-rsa
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-manager +kmod-asn1-decoder 
+Depends: +kmod-crypto-manager +kmod-asn1-decoder
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1825,7 +1825,7 @@ Description: RSA algorithm
 Package: kmod-crypto-rmd160
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1844,7 +1844,7 @@ Description: RIPEMD160 digest CryptoAPI module
 Package: kmod-crypto-rng
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-hmac +kmod-crypto-sha256 
+Depends: +kmod-crypto-hash +kmod-crypto-hmac +kmod-crypto-sha256
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1863,7 +1863,7 @@ Description: CryptoAPI random number generation
 Package: kmod-crypto-seqiv
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-aead +kmod-crypto-rng 
+Depends: +kmod-crypto-aead +kmod-crypto-rng
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1882,7 +1882,7 @@ Description: CryptoAPI Sequence Number IV Generator
 Package: kmod-crypto-sha1
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1901,7 +1901,7 @@ Description: SHA1 digest CryptoAPI module
 Package: kmod-crypto-sha256
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1920,7 +1920,7 @@ Description: SHA224 SHA256 digest CryptoAPI module
 Package: kmod-crypto-sha512
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash 
+Depends: +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1939,7 +1939,7 @@ Description: SHA512 digest CryptoAPI module
 Package: kmod-crypto-test
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends:  +kmod-crypto-manager
+Depends: +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1958,7 +1958,7 @@ Description: Test CryptoAPI module
 Package: kmod-crypto-user
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-manager 
+Depends: +kmod-crypto-hash +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1977,7 +1977,7 @@ Description: CryptoAPI userspace interface
 Package: kmod-crypto-xts
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-gf128 +kmod-crypto-manager 
+Depends: +kmod-crypto-gf128 +kmod-crypto-manager
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2149,7 +2149,7 @@ Description:  Kernel module for BTRFS support
 Package: kmod-fs-cifs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base  +(LINUX_5_4||LINUX_5_10):kmod-crypto-md4 +(LINUX_5_4||LINUX_5_10):kmod-crypto-arc4 +kmod-crypto-md5 +kmod-crypto-sha256 +kmod-crypto-sha512 +kmod-crypto-cmac +kmod-crypto-hmac +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-ecb +kmod-crypto-des +(LINUX_5_15||LINUX_6_0):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_0):kmod-oid-registry +(LINUX_5_15||LINUX_6_0):kmod-dnsresolver
+Depends: +kmod-nls-base  +(LINUX_5_4||LINUX_5_10):kmod-crypto-md4 +(LINUX_5_4||LINUX_5_10):kmod-crypto-arc4 +kmod-crypto-md5 +kmod-crypto-sha256 +kmod-crypto-sha512 +kmod-crypto-cmac +kmod-crypto-hmac +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-ecb +kmod-crypto-des +(LINUX_5_15||LINUX_6_1):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_1):kmod-oid-registry +(LINUX_5_15||LINUX_6_1):kmod-dnsresolver
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2396,7 +2396,7 @@ Description:  Kernel module for ISO9660 filesystem support
 Package: kmod-fs-jfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2585,7 +2585,7 @@ Description:  Kernel module for NFS kernel server support
 Package: kmod-fs-ntfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2604,7 +2604,7 @@ Description:  Kernel module for NTFS filesystem support
 Package: kmod-fs-ntfs3
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_4||LINUX_5_10||LINUX_5_15||LINUX_6_0) +kmod-nls-base
+Depends: +kmod-nls-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2680,7 +2680,7 @@ Description:  Kernel module for UDF filesystem support
 Package: kmod-fs-vfat
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 +kmod-nls-utf8
+Depends: +kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 +kmod-nls-utf8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3792,7 +3792,7 @@ Description:  The industrial I/O subsystem provides a unified framework for
 Package: kmod-iio-kfifo-buf
 Submenu: Industrial I/O Modules
 Version: <LINUX_VERSION>-
-Depends:  +kmod-iio-core 
+Depends: +kmod-iio-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5094,7 +5094,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_CRYPTO_LZ4 CONFIG_LZ4_COMPRESS CONFIG_LZ4_DECOMPRESS
+Kernel-Config: CONFIG_CRYPTO_LZ4 CONFIG_CRYPTO_LZ4HC CONFIG_LZ4_COMPRESS CONFIG_LZ4_DECOMPRESS
 Description:  Kernel module for LZ4 compression/decompression support
 
 @@
@@ -5469,7 +5469,7 @@ Description:   MII library
 Package: kmod-mdio-devres
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_10||LINUX_5_15||LINUX_6_0) +kmod-libphy +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_tegra):kmod-of-mdio
+Depends: @(LINUX_5_10||LINUX_5_15||LINUX_6_1) +kmod-libphy +(TARGET_armvirt||TARGET_bcm27xx_bcm2708||TARGET_tegra):kmod-of-mdio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5993,7 +5993,7 @@ Description:  Kernel module for RealTek RTL-8139C+ PCI Fast Ethernet adapters
 Package: kmod-r8169
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +kmod-phy-realtek +(LINUX_5_10||LINUX_5_15||LINUX_6_0):kmod-mdio-devres
+Depends: @PCI_SUPPORT +kmod-mii +r8169-firmware +kmod-phy-realtek +(LINUX_5_10||LINUX_5_15||LINUX_6_1):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6126,7 +6126,7 @@ Description:  Kernel modules for Intel(R) 82576 Virtual Function Ethernet adapte
 Package: kmod-ixgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_6_0):kmod-mdio-devres
+Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_6_1):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6670,6 +6670,25 @@ Description:   Supports Mellanox Connect-IB/ConnectX-4 series and later cards
 
 @@
 
+Package: kmod-net-selftests
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Network generic selftest support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NET_SELFTESTS
+Description:   Kernel modules for the generic selftest support
+
+@@
+
 Package: kmod-qlcnic
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -7060,7 +7079,7 @@ Description: Netfilter tproxy support
 Package: kmod-ipt-conntrack
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nf-conntrack
+Depends: +kmod-ipt-core +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7085,7 +7104,7 @@ Description:  Netfilter (IPv4) kernel modules for connection tracking
 Package: kmod-ipt-conntrack-extra
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-ipt-conntrack
+Depends: +kmod-ipt-core +kmod-ipt-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7110,7 +7129,7 @@ Description:  Netfilter (IPv4) extra kernel modules for connection tracking
 Package: kmod-ipt-conntrack-label
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-ipt-conntrack
+Depends: +kmod-ipt-core +kmod-ipt-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7131,7 +7150,7 @@ Description:  Netfilter (IPv4) module for handling connection tracking labels
 Package: kmod-ipt-filter
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-lib-textsearch +kmod-ipt-conntrack
+Depends: +kmod-ipt-core +kmod-lib-textsearch +kmod-ipt-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7153,7 +7172,7 @@ Description:  Netfilter (IPv4) kernel modules for packet content inspection
 Package: kmod-ipt-offload
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nf-flow
+Depends: +kmod-ipt-core +kmod-nf-flow
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7172,7 +7191,7 @@ Description: Netfilter routing/NAT offload support
 Package: kmod-ipt-ipopt
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7203,7 +7222,7 @@ Description:  Netfilter (IPv4) modules for matching/changing IP packet options
 Package: kmod-ipt-ipsec
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7226,7 +7245,7 @@ Description:  Netfilter (IPv4) modules for matching IPSec packets
 Package: kmod-ipt-ipset
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nfnetlink
+Depends: +kmod-ipt-core +kmod-nfnetlink
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7307,7 +7326,7 @@ Description:   Allow persistence based on the SIP Call-ID
 Package: kmod-ipt-nat
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nf-nat
+Depends: +kmod-ipt-core +kmod-nf-nat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7328,7 +7347,7 @@ Description:  Netfilter (IPv4) kernel modules for basic NAT targets
 Package: kmod-ipt-raw
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7385,7 +7404,7 @@ Description:  Netfilter (IPv6) kernel modules for NAT targets
 Package: kmod-ipt-nat-extra
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-ipt-nat
+Depends: +kmod-ipt-core +kmod-ipt-nat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7455,31 +7474,10 @@ Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
 
 @@
 
-Package: kmod-ipt-ulog
-Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Module for user-space packet logging
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_IP_NF_TARGET_ULOG
-Description:  Netfilter (IPv4) module for user-space packet logging
- Includes:
- - ULOG
-
-@@
-
 Package: kmod-ipt-nflog
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nfnetlink-log
+Depends: +kmod-ipt-core +kmod-nfnetlink-log
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7500,7 +7498,7 @@ Description:  Netfilter module for user-space packet logging
 Package: kmod-ipt-nfqueue
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nfnetlink-queue
+Depends: +kmod-ipt-core +kmod-nfnetlink-queue
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7521,7 +7519,7 @@ Description:  Netfilter module for user-space packet queuing
 Package: kmod-ipt-debug
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-ipt-raw +IPV6:kmod-ipt-raw6
+Depends: +kmod-ipt-core +kmod-ipt-raw +IPV6:kmod-ipt-raw6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7542,7 +7540,7 @@ Description:  Netfilter modules for debugging/development of the firewall
 Package: kmod-ipt-led
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7561,7 +7559,7 @@ Description:  Netfilter target to trigger a LED when a network packet is matched
 Package: kmod-ipt-socket
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nf-socket +kmod-nf-conntrack +kmod-ipt-core 
+Depends: +kmod-nf-socket +kmod-nf-conntrack +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7580,7 +7578,7 @@ Description:   Kernel modules for socket matching
 Package: kmod-ipt-tproxy
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nf-tproxy +kmod-nf-conntrack +kmod-ipt-core 
+Depends: +kmod-nf-tproxy +kmod-nf-conntrack +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7618,7 +7616,7 @@ Description:   Kernel modules for TEE
 Package: kmod-ipt-u32
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7637,7 +7635,7 @@ Description:   Kernel modules for U32
 Package: kmod-ipt-checksum
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7656,7 +7654,7 @@ Description:   Kernel modules for CHECKSUM fillin target
 Package: kmod-ipt-iprange
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7677,7 +7675,7 @@ Description:  Netfilter (IPv4) module for matching ip ranges
 Package: kmod-ipt-cluster
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nf-conntrack
+Depends: +kmod-ipt-core +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7709,7 +7707,7 @@ Description:  Netfilter (IPv4/IPv6) module for matching cluster
 Package: kmod-ipt-clusterip
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-nf-conntrack
+Depends: +kmod-ipt-core +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7735,7 +7733,7 @@ Description:  Netfilter (IPv4-only) module for CLUSTERIP
 Package: kmod-ipt-extra
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core 
+Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7759,7 +7757,7 @@ Description:  Other Netfilter (IPv4) kernel modules
 Package: kmod-ipt-physdev
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ipt-core +kmod-br-netfilter
+Depends: +kmod-ipt-core +kmod-br-netfilter
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7875,7 +7873,7 @@ Description:   ebtables is a general, extensible frame/packet identification
 Package: kmod-ebtables-ipv4
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ebtables 
+Depends: +kmod-ebtables 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7915,7 +7913,7 @@ Description:  This option adds the IPv6 support to ebtables, which allows basic
 Package: kmod-ebtables-watchers
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-ebtables 
+Depends: +kmod-ebtables 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7926,7 +7924,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_BRIDGE_EBT_LOG CONFIG_BRIDGE_EBT_ULOG CONFIG_BRIDGE_EBT_NFLOG CONFIG_BRIDGE_EBT_NFQUEUE
+Kernel-Config: CONFIG_BRIDGE_EBT_LOG CONFIG_BRIDGE_EBT_NFLOG CONFIG_BRIDGE_EBT_NFQUEUE
 Description:  This option adds the log watchers, that you can use in any rule
  in any ebtables table.
 
@@ -7954,7 +7952,7 @@ Description:  Kernel modules support for a netlink-based userspace interface
 Package: kmod-nfnetlink-log
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nfnetlink 
+Depends: +kmod-nfnetlink 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7975,7 +7973,7 @@ Description:  Kernel modules support for logging packets via NFNETLINK
 Package: kmod-nfnetlink-queue
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nfnetlink 
+Depends: +kmod-nfnetlink 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7996,7 +7994,7 @@ Description:  Kernel modules support for queueing packets via NFNETLINK
 Package: kmod-nf-conntrack-netlink
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nfnetlink +kmod-nf-conntrack
+Depends: +kmod-nfnetlink +kmod-nf-conntrack
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -8861,6 +8859,26 @@ Description:  This device is a local ethernet tunnel. Devices are created in pai
 
 @@
 
+Package: kmod-vrf
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: @KERNEL_NET_L3_MASTER_DEV
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Virtual Routing and Forwarding (Lite)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NET_VRF
+Description:  This option enables the support for mapping interfaces into VRF's. The
+ support enables VRF devices.
+
+@@
+
 Package: kmod-slhc
 Submenu: Network Support
 Version: <LINUX_VERSION>-
@@ -9677,7 +9695,7 @@ Description:   Network console logging support.
 Package: kmod-qrtr
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_15||LINUX_6_0)
+Depends: @!(LINUX_5_4||LINUX_5_10)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9735,7 +9753,7 @@ Description:  SMD IPC Router channels
 Package: kmod-qrtr-mhi
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-mhi +kmod-qrtr
+Depends: +kmod-mhi-bus +kmod-qrtr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9831,7 +9849,7 @@ Description:  Kernel module for NLS (Native Language Support)
 Package: kmod-nls-cp437
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9850,7 +9868,7 @@ Description:  Kernel module for NLS Codepage 437 (United States, Canada)
 Package: kmod-nls-cp775
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9869,7 +9887,7 @@ Description:  Kernel module for NLS Codepage 775 (Baltic Rim)
 Package: kmod-nls-cp850
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9888,7 +9906,7 @@ Description:  Kernel module for NLS Codepage 850 (Europe)
 Package: kmod-nls-cp852
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9907,7 +9925,7 @@ Description:  Kernel module for NLS Codepage 852 (Europe)
 Package: kmod-nls-cp862
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9926,7 +9944,7 @@ Description:   Kernel module for NLS Codepage 862 (Hebrew)
 Package: kmod-nls-cp864
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9945,7 +9963,7 @@ Description:   Kernel module for NLS Codepage 864 (Arabic)
 Package: kmod-nls-cp866
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9964,7 +9982,7 @@ Description:   Kernel module for NLS Codepage 866 (Cyrillic)
 Package: kmod-nls-cp932
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9983,7 +10001,7 @@ Description:   Kernel module for NLS Codepage 932 (Japanese)
 Package: kmod-nls-cp936
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10002,7 +10020,7 @@ Description:   Kernel module for NLS Codepage 936 (Simplified Chinese)
 Package: kmod-nls-cp950
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10021,7 +10039,7 @@ Description:   Kernel module for NLS Codepage 950 (Traditional Chinese)
 Package: kmod-nls-cp1250
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10040,7 +10058,7 @@ Description:  Kernel module for NLS Codepage 1250 (Eastern Europe)
 Package: kmod-nls-cp1251
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10059,7 +10077,7 @@ Description:  Kernel module for NLS Codepage 1251 (Russian)
 Package: kmod-nls-iso8859-1
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10078,7 +10096,7 @@ Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
 Package: kmod-nls-iso8859-2
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10097,7 +10115,7 @@ Description:  Kernel module for NLS ISO 8859-2 (Latin 2)
 Package: kmod-nls-iso8859-6
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10116,7 +10134,7 @@ Description:  Kernel module for NLS ISO 8859-6 (Arabic)
 Package: kmod-nls-iso8859-8
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10135,7 +10153,7 @@ Description:  Kernel module for Hebrew charsets (ISO-8859-8, CP1255)
 Package: kmod-nls-iso8859-13
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10154,7 +10172,7 @@ Description:  Kernel module for NLS ISO 8859-13 (Latin 7; Baltic)
 Package: kmod-nls-iso8859-15
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10173,7 +10191,7 @@ Description:  Kernel module for NLS ISO 8859-15 (Latin 9)
 Package: kmod-nls-koi8r
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10192,7 +10210,7 @@ Description:  Kernel module for NLS KOI8-R (Russian)
 Package: kmod-nls-utf8
 Submenu: Native Language Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-nls-base 
+Depends: +kmod-nls-base 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10626,7 +10644,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_RFKILL_FULL CONFIG_RFKILL_INPUT=y CONFIG_RFKILL_LEDS=y
+Kernel-Config: CONFIG_RFKILL_FULL CONFIG_RFKILL_GPIO=y CONFIG_RFKILL_INPUT=y CONFIG_RFKILL_LEDS=y
 Description:  Say Y here if you want to have control over RF switches
  found on many WiFi and Bluetooth cards
 
@@ -11160,6 +11178,10 @@ Config:
             bool "lz4"
             select PACKAGE_kmod-lib-lz4
 
+  config ZRAM_DEF_COMP_LZ4HC
+            bool "lz4-hc"
+            select PACKAGE_kmod-lib-lz4hc
+
   config ZRAM_DEF_COMP_ZSTD
             bool "zstd"
             select PACKAGE_kmod-lib-zstd
@@ -11397,7 +11419,7 @@ Description: 	This module provides support for creating, sealing, and unsealing
 Package: kmod-tpm
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-random-core +(LINUX_5_15||LINUX_6_0):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_0):kmod-asn1-encoder +(LINUX_5_15||LINUX_6_0):kmod-oid-registry
+Depends: +kmod-random-core +(LINUX_5_15||LINUX_6_1):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_1):kmod-asn1-encoder +(LINUX_5_15||LINUX_6_1):kmod-oid-registry
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11568,22 +11590,41 @@ Description:   Qualcomm QMI Helpers
 
 @@
 
-Package: kmod-mhi
+Package: kmod-mhi-bus
 Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_15||LINUX_6_0)
+Depends: @(LINUX_5_15||LINUX_6_1)
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Modem Host Interface (MHI) bus
+Title: MHI bus
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_MHI_BUS CONFIG_MHI_BUS_DEBUG=y CONFIG_MHI_BUS_PCI_GENERIC=n CONFIG_MHI_NET=n
-Description:   Bus driver for MHI protocol.
+Kernel-Config: CONFIG_MHI_BUS CONFIG_MHI_BUS_DEBUG=y
+Description:   Kernel module for the Qualcomm MHI bus.
+
+@@
+
+Package: kmod-mhi-pci-generic
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(LINUX_5_15||LINUX_6_1) +kmod-mhi-bus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MHI PCI controller driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MHI_BUS_PCI_GENERIC
+Description:   Kernel module for the MHI PCI controller driver.
 
 @@
 
@@ -11609,7 +11650,7 @@ Description:  Kernel support for PCMCIA/CardBus controllers
 Package: kmod-pcmcia-rsrc
 Submenu: PCMCIA support
 Version: <LINUX_VERSION>-
-Depends:  kmod-pcmcia-core 
+Depends: kmod-pcmcia-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11723,7 +11764,7 @@ Description:  Kernel modules for sound support
 Package: kmod-ac97
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core  @!TARGET_uml
+Depends: kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11742,7 +11783,7 @@ Description:  The ac97 controller
 Package: kmod-sound-mpu401
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core  @!TARGET_uml
+Depends: kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11762,7 +11803,7 @@ Description:  support for MIDI ports compatible with the Roland MPU-401
 Package: kmod-sound-seq
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core  @!TARGET_uml
+Depends: kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11954,7 +11995,7 @@ Description:  This enables sounds (tones) through the pc speaker
 Package: kmod-sound-dummy
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core  @!TARGET_uml
+Depends: kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11992,7 +12033,7 @@ Description:  Kernel modules for HD Audio sound support
 Package: kmod-sound-hda-codec-realtek
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12011,7 +12052,7 @@ Description:  Kernel modules for Intel HDA Realtek codec support
 Package: kmod-sound-hda-codec-cmedia
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12030,7 +12071,7 @@ Description:  Kernel modules for HD Audio C-Media codec support
 Package: kmod-sound-hda-codec-analog
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12049,7 +12090,7 @@ Description:  Kernel modules for HD Audio Analog Devices codec support
 Package: kmod-sound-hda-codec-idt
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12068,7 +12109,7 @@ Description:  Kernel modules for HD Audio Sigmatel IDT codec support
 Package: kmod-sound-hda-codec-si3054
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12087,7 +12128,7 @@ Description:  Kernel modules for HD Audio Silicon Labs 3054 codec support
 Package: kmod-sound-hda-codec-cirrus
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12106,7 +12147,7 @@ Description:  Kernel modules for HD Audio Cirrus Logic codec support
 Package: kmod-sound-hda-codec-ca0110
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12125,7 +12166,7 @@ Description:  Kernel modules for HD Audio Creative CA0110 codec support
 Package: kmod-sound-hda-codec-ca0132
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12144,7 +12185,7 @@ Description:  Kernel modules for HD Audio Creative CA0132 codec support
 Package: kmod-sound-hda-codec-conexant
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12163,7 +12204,7 @@ Description:  Kernel modules for HD Audio Conexant codec support
 Package: kmod-sound-hda-codec-via
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12182,7 +12223,7 @@ Description:  Kernel modules for HD Audio VIA codec support
 Package: kmod-sound-hda-codec-hdmi
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-sound-core kmod-sound-hda-core @!TARGET_uml
+Depends: kmod-sound-core kmod-sound-hda-core @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12315,7 +12356,7 @@ Description:  Kernel support for USB
 Package: kmod-usb-ledtrig-usbport
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12337,7 +12378,7 @@ Description:   This driver allows LEDs to be controlled by USB events. Enabling 
 Package: kmod-usb-phy-nop
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12551,7 +12592,7 @@ Description:   Kernel support for the USB CDC Composite gadget.
 Package: kmod-usb-uhci
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12667,7 +12708,7 @@ Description: Support for SSB USB controllers
 Package: kmod-usb-ehci
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12745,7 +12786,7 @@ Description:  This driver provides USB Device Controller support for the
 Package: kmod-usb-dwc3
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12786,7 +12827,7 @@ Description:  Some Qualcomm SoCs use DesignWare Core IP for USB2/3 functionality
 Package: kmod-usb-acm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12805,7 +12846,7 @@ Description:  Kernel support for USB ACM devices (modems/isdn controllers)
 Package: kmod-usb-wdm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12824,7 +12865,7 @@ Description:  USB Wireless Device Management support
 Package: kmod-usb-audio
 Submenu: Sound Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core  kmod-sound-core  @!TARGET_uml
+Depends: +kmod-usb-core  kmod-sound-core  @!TARGET_uml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12843,7 +12884,7 @@ Description:  Kernel support for USB audio devices
 Package: kmod-usb-printer
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12862,7 +12903,7 @@ Description:  Kernel support for USB printers
 Package: kmod-usb-serial
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12881,7 +12922,7 @@ Description:  Kernel support for USB-to-Serial converters
 Package: kmod-usb-serial-belkin
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12900,7 +12941,7 @@ Description:  Kernel support for Belkin USB-to-Serial converters
 Package: kmod-usb-serial-ch341
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12919,7 +12960,7 @@ Description:  Kernel support for Winchiphead CH341 USB-to-Serial converters
 Package: kmod-usb-serial-edgeport
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial  +edgeport-firmware
+Depends: +kmod-usb-serial  +edgeport-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12954,7 +12995,7 @@ Description:  Kernel support for Inside Out Networks (Digi)
 Package: kmod-usb-serial-ftdi
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12973,7 +13014,7 @@ Description:  Kernel support for FTDI USB-to-Serial converters
 Package: kmod-usb-serial-garmin
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12992,7 +13033,7 @@ Description:  Should work with most Garmin GPS devices which have a native USB p
 Package: kmod-usb-serial-simple
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13024,7 +13065,7 @@ Specifically, it supports:
 Package: kmod-usb-serial-ti-usb
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13043,7 +13084,7 @@ Description:  Kernel support for TI USB 3410/5052 devices
 Package: kmod-usb-serial-ipw
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
+Depends: +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13062,7 +13103,7 @@ Description: Support for IPWireless 3G devices
 Package: kmod-usb-serial-mct
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13081,7 +13122,7 @@ Description:  Kernel support for Magic Control Technology USB-to-Serial converte
 Package: kmod-usb-serial-mos7720
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13100,7 +13141,7 @@ Description:  Kernel support for Moschip MOS7720 USB-to-Serial converters
 Package: kmod-usb-serial-mos7840
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13119,7 +13160,7 @@ Description:  Kernel support for Moschip MOS7840 USB-to-Serial converters
 Package: kmod-usb-serial-pl2303
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13138,7 +13179,7 @@ Description:  Kernel support for Prolific PL2303 USB-to-Serial converters
 Package: kmod-usb-serial-cp210x
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13157,7 +13198,7 @@ Description:  Kernel support for Silicon Labs cp210x USB-to-Serial converters
 Package: kmod-usb-serial-ark3116
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13176,7 +13217,7 @@ Description:  Kernel support for ArkMicroChips ARK3116 USB-to-Serial converters
 Package: kmod-usb-serial-oti6858
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13195,7 +13236,7 @@ Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converter
 Package: kmod-usb-serial-sierrawireless
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13214,7 +13255,7 @@ Description:  Kernel support for Sierra Wireless devices
 Package: kmod-usb-serial-visor
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13233,7 +13274,7 @@ Description:  Kernel support for Handspring Visor PDAs
 Package: kmod-usb-serial-cypress-m8
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13255,7 +13296,7 @@ Description:  Kernel support for devices with Cypress M8 USB to Serial chip
 Package: kmod-usb-serial-keyspan
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13274,7 +13315,7 @@ Description:  Kernel support for Keyspan USB-to-Serial devices
 Package: kmod-usb-serial-wwan
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial 
+Depends: +kmod-usb-serial 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13294,7 +13335,7 @@ Description:  Kernel support for USB GSM and CDMA modems
 Package: kmod-usb-serial-option
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
+Depends: +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13313,7 +13354,7 @@ Description:  Kernel support for Option HSDPA modems
 Package: kmod-usb-serial-qualcomm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-serial +kmod-usb-serial-wwan
+Depends: +kmod-usb-serial +kmod-usb-serial-wwan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13412,7 +13453,7 @@ Description:  Kernel support for USB DSL modems
 Package: kmod-usb-atm-speedtouch
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-atm 
+Depends: kmod-usb-atm 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13431,7 +13472,7 @@ Description:  Kernel support for SpeedTouch USB ADSL modems
 Package: kmod-usb-atm-ueagle
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-atm 
+Depends: kmod-usb-atm 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13450,7 +13491,7 @@ Description:  Kernel support for Eagle 8051 based USB ADSL modems
 Package: kmod-usb-atm-cxacru
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-usb-atm 
+Depends: kmod-usb-atm 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13488,7 +13529,7 @@ Description:  Kernel modules for USB-to-Ethernet convertors
 Package: kmod-usb-net-aqc111
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13507,7 +13548,7 @@ Description:  Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
 Package: kmod-usb-net-asix
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy +(LINUX_5_15||LINUX_6_0):kmod-mdio-devres +kmod-usb-net 
+Depends: +(LINUX_5_4||LINUX_5_10):kmod-libphy +LINUX_6_1:kmod-phylink +(LINUX_5_15||LINUX_6_1):kmod-mdio-devres +(LINUX_5_15||LINUX_6_1):kmod-net-selftests +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13546,7 +13587,7 @@ Description:  Kernel module for USB-to-Ethernet ASIX AX88179 based USB 3.0/2.0
 Package: kmod-usb-net-hso
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net  +USE_RFKILL:kmod-rfkill 
+Depends: +kmod-usb-net  +USE_RFKILL:kmod-rfkill 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13565,7 +13606,7 @@ Description:  Kernel module for Option USB High Speed Mobile Devices
 Package: kmod-usb-net-kaweth
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13584,7 +13625,7 @@ Description:  Kernel module for USB-to-Ethernet Kaweth convertors
 Package: kmod-usb-net-pegasus
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13603,7 +13644,7 @@ Description:  Kernel module for USB-to-Ethernet Pegasus convertors
 Package: kmod-usb-net-mcs7830
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13641,7 +13682,7 @@ Description:  Kernel module for SMSC LAN75XX based devices
 Package: kmod-usb-net-smsc95xx
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_5_4:kmod-libphy +kmod-usb-net  +kmod-lib-crc16
+Depends: +!LINUX_5_4:kmod-libphy +LINUX_6_1:kmod-net-selftests +kmod-usb-net  +kmod-lib-crc16
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13660,7 +13701,7 @@ Description:  Kernel module for SMSC LAN95XX based devices
 Package: kmod-usb-net-dm9601-ether
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13679,7 +13720,7 @@ Description:  Kernel support for USB DM9601 devices
 Package: kmod-usb-net-cdc-ether
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13698,7 +13739,7 @@ Description:  Kernel support for USB CDC Ethernet devices
 Package: kmod-usb-net-cdc-eem
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13717,7 +13758,7 @@ Description:  Kernel support for USB CDC EEM
 Package: kmod-usb-net-cdc-subset
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13736,7 +13777,7 @@ Description:  Kernel support for Simple USB Network Links (CDC Ethernet subset)
 Package: kmod-usb-net-qmi-wwan
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net +kmod-usb-wdm
+Depends: +kmod-usb-net +kmod-usb-wdm
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13755,7 +13796,7 @@ Description:  QMI WWAN driver for Qualcomm MSM based 3G and LTE modems
 Package: kmod-usb-net-rtl8150
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13793,7 +13834,7 @@ Description:  Kernel module for USB-to-Ethernet Realtek 8152 USB2.0/3.0 converto
 Package: kmod-usb-net-sr9700
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13812,7 +13853,7 @@ Description:  Kernel module for CoreChip-sz SR9700 based USB 1.1 10/100 ethernet
 Package: kmod-usb-net-rndis
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net +kmod-usb-net-cdc-ether
+Depends: +kmod-usb-net +kmod-usb-net-cdc-ether
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13831,7 +13872,7 @@ Description:  Kernel support for RNDIS connections
 Package: kmod-usb-net-cdc-mbim
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net +kmod-usb-wdm +kmod-usb-net-cdc-ncm
+Depends: +kmod-usb-net +kmod-usb-wdm +kmod-usb-net-cdc-ncm
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13850,7 +13891,7 @@ Description:  Kernel module for CDC MBIM (Mobile Broadband Interface Model) devi
 Package: kmod-usb-net-cdc-ncm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net +!LINUX_5_4:kmod-usb-net-cdc-ether
+Depends: +kmod-usb-net +!LINUX_5_4:kmod-usb-net-cdc-ether
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13869,7 +13910,7 @@ Description:  Kernel support for CDC NCM connections
 Package: kmod-usb-net-huawei-cdc-ncm
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net +kmod-usb-net-cdc-ncm +kmod-usb-wdm
+Depends: +kmod-usb-net +kmod-usb-net-cdc-ncm +kmod-usb-wdm
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13888,7 +13929,7 @@ Description:  Kernel support for Huawei CDC NCM connections
 Package: kmod-usb-net-sierrawireless
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13907,7 +13948,7 @@ Description:  Kernel support for Sierra Wireless devices
 Package: kmod-usb-net-ipheth
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13926,7 +13967,7 @@ Description:  Kernel support for Apple iPhone USB Ethernet driver
 Package: kmod-usb-net-kalmia
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13945,7 +13986,7 @@ Description:  Kernel support for Samsung Kalmia based LTE USB modem
 Package: kmod-usb-net-pl
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-net 
+Depends: +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14060,7 +14101,7 @@ Description:  Kernel support for testing USB Host Controller software
 Package: kmod-usbip
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14155,7 +14196,7 @@ Description:  Kernel support for USB Chipidea controllers
 Package: kmod-usbmon
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14212,7 +14253,7 @@ Description:   Kernel support for NetChip 228x / PLX USB338x PCI USB peripheral 
 Package: kmod-usb-roles
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14232,7 +14273,7 @@ Description:   Support for USB Role Switch
 Package: kmod-usb-xhci-hcd
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core 
+Depends: +kmod-usb-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14346,6 +14387,26 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_BACKLIGHT_PWM
 Description: 	Kernel module for PWM based Backlight support.
+
+@@
+
+Package: kmod-acpi-video
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86 +kmod-backlight
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ACPI Extensions For Display Adapters
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ACPI_WMI CONFIG_ACPI_VIDEO
+Hidden: 1
+Description:  Kernel support for integrated graphics devices
 
 @@
 
@@ -14523,7 +14584,7 @@ Description:   Enable multimedia input.
 Package: kmod-drm
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-dma-buf +kmod-i2c-core +kmod-i2c-algo-bit +PACKAGE_kmod-backlight:kmod-backlight +(LINUX_5_15||LINUX_6_0):kmod-fb
+Depends: +kmod-dma-buf +kmod-i2c-core +kmod-backlight +(LINUX_5_15||LINUX_6_1):kmod-fb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14534,7 +14595,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_DRM CONFIG_DRM_PANEL_ORIENTATION_QUIRKS=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_HDMI
+Kernel-Config: CONFIG_DRM CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_PANEL_ORIENTATION_QUIRKS=y
 Hidden: 1
 Description:   Direct Rendering Manager (DRM) core support
 
@@ -14543,7 +14604,7 @@ Description:   Direct Rendering Manager (DRM) core support
 Package: kmod-drm-buddy
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-drm @LINUX_6_0
+Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-drm @LINUX_6_1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14601,7 +14662,7 @@ Description:   CRTC helpers for KMS drivers.
 Package: kmod-drm-display-helper
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @DISPLAY_SUPPORT +kmod-drm +TARGET_x86:kmod-drm-buddy @LINUX_6_0
+Depends: @DISPLAY_SUPPORT +kmod-drm +TARGET_x86:kmod-drm-buddy @LINUX_6_1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14620,7 +14681,7 @@ Description:   DRM helpers for display adapters drivers.
 Package: kmod-drm-amdgpu
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-ttm +kmod-drm-kms-helper +kmod-i2c-algo-bit +amdgpu-firmware +LINUX_6_0:kmod-drm-display-helper
+Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-ttm +kmod-drm-kms-helper +kmod-i2c-algo-bit +amdgpu-firmware +LINUX_6_1:kmod-drm-display-helper +LINUX_6_1:kmod-acpi-video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14696,7 +14757,7 @@ Description:   Direct Rendering Manager (DRM) support for Freescale i.MX LVDS
 Package: kmod-drm-radeon
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-kms-helper +kmod-drm-ttm +kmod-i2c-algo-bit +radeon-firmware
+Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-backlight +kmod-drm-kms-helper +kmod-drm-ttm +kmod-i2c-algo-bit +LINUX_6_1:kmod-acpi-video +radeon-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14715,7 +14776,7 @@ Description:   Direct Rendering Manager (DRM) support for Radeon Cards
 Package: kmod-drm-nouveau
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-drm-kms-helper
+Depends: @TARGET_x86 @DISPLAY_SUPPORT +kmod-drm-kms-helper +LINUX_6_1:kmod-acpi-video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14850,7 +14911,7 @@ Description:  Kernel modules for supporting GSPCA based webcam devices. Note thi
 Package: kmod-video-gspca-conex
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14869,7 +14930,7 @@ Description:  The Conexant Camera Driver (conex) kernel module
 Package: kmod-video-gspca-etoms
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14888,7 +14949,7 @@ Description:  The Etoms USB Camera Driver (etoms) kernel module
 Package: kmod-video-gspca-finepix
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14907,7 +14968,7 @@ Description:  The Fujifilm FinePix USB V4L2 driver (finepix) kernel module
 Package: kmod-video-gspca-mars
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14926,7 +14987,7 @@ Description:  The Mars USB Camera Driver (mars) kernel module
 Package: kmod-video-gspca-mr97310a
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14945,7 +15006,7 @@ Description:  The Mars-Semi MR97310A USB Camera Driver (mr97310a) kernel module
 Package: kmod-video-gspca-ov519
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14964,7 +15025,7 @@ Description:  The OV519 USB Camera Driver (ov519) kernel module
 Package: kmod-video-gspca-ov534
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14983,7 +15044,7 @@ Description:  The OV534 USB Camera Driver (ov534) kernel module
 Package: kmod-video-gspca-ov534-9
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15002,7 +15063,7 @@ Description:  The OV534-9 USB Camera Driver (ov534_9) kernel module
 Package: kmod-video-gspca-pac207
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15021,7 +15082,7 @@ Description:  The Pixart PAC207 USB Camera Driver (pac207) kernel module
 Package: kmod-video-gspca-pac7311
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15040,7 +15101,7 @@ Description:  The Pixart PAC7311 USB Camera Driver (pac7311) kernel module
 Package: kmod-video-gspca-se401
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15059,7 +15120,7 @@ Description:  The SE401 USB Camera Driver kernel module
 Package: kmod-video-gspca-sn9c20x
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15078,7 +15139,7 @@ Description:  The SN9C20X USB Camera Driver (sn9c20x) kernel module
 Package: kmod-video-gspca-sonixb
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15097,7 +15158,7 @@ Description:  The SONIX Bayer USB Camera Driver (sonixb) kernel module
 Package: kmod-video-gspca-sonixj
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15116,7 +15177,7 @@ Description:  The SONIX JPEG USB Camera Driver (sonixj) kernel module
 Package: kmod-video-gspca-spca500
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15135,7 +15196,7 @@ Description:  The SPCA500 USB Camera Driver (spca500) kernel module
 Package: kmod-video-gspca-spca501
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15154,7 +15215,7 @@ Description:  The SPCA501 USB Camera Driver (spca501) kernel module
 Package: kmod-video-gspca-spca505
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15173,7 +15234,7 @@ Description:  The SPCA505 USB Camera Driver (spca505) kernel module
 Package: kmod-video-gspca-spca506
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15192,7 +15253,7 @@ Description:  The SPCA506 USB Camera Driver (spca506) kernel module
 Package: kmod-video-gspca-spca508
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15211,7 +15272,7 @@ Description:  The SPCA508 USB Camera Driver (spca508) kernel module
 Package: kmod-video-gspca-spca561
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15230,7 +15291,7 @@ Description:  The SPCA561 USB Camera Driver (spca561) kernel module
 Package: kmod-video-gspca-sq905
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15249,7 +15310,7 @@ Description:  The SQ Technologies SQ905 based USB Camera Driver (sq905) kernel m
 Package: kmod-video-gspca-sq905c
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15268,7 +15329,7 @@ Description:  The SQ Technologies SQ905C based USB Camera Driver (sq905c) kernel
 Package: kmod-video-gspca-sq930x
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15287,7 +15348,7 @@ Description:  The SQ Technologies SQ930X based USB Camera Driver (sq930x) kernel
 Package: kmod-video-gspca-stk014
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15306,7 +15367,7 @@ Description:  The Syntek DV4000 (STK014) USB Camera Driver (stk014) kernel modul
 Package: kmod-video-gspca-sunplus
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15325,7 +15386,7 @@ Description:  The SUNPLUS USB Camera Driver (sunplus) kernel module
 Package: kmod-video-gspca-t613
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15344,7 +15405,7 @@ Description:  The T613 (JPEG Compliance) USB Camera Driver (t613) kernel module
 Package: kmod-video-gspca-tv8532
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15363,7 +15424,7 @@ Description:  The TV8532 USB Camera Driver (tv8532) kernel module
 Package: kmod-video-gspca-vc032x
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15382,7 +15443,7 @@ Description:  The VC032X USB Camera Driver (vc032x) kernel module
 Package: kmod-video-gspca-zc3xx
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15401,7 +15462,7 @@ Description:  The ZC3XX USB Camera Driver (zc3xx) kernel module
 Package: kmod-video-gspca-m5602
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15420,7 +15481,7 @@ Description:  The ALi USB m5602 Camera Driver (m5602) kernel module
 Package: kmod-video-gspca-stv06xx
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15439,7 +15500,7 @@ Description:  The STV06XX USB Camera Driver (stv06xx) kernel module
 Package: kmod-video-gspca-gl860
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15458,7 +15519,7 @@ Description:  The GL860 USB Camera Driver (gl860) kernel module
 Package: kmod-video-gspca-jeilinj
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15477,7 +15538,7 @@ Description:  The JEILINJ USB Camera Driver (jeilinj) kernel module
 Package: kmod-video-gspca-konica
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends:  kmod-video-gspca-core 
+Depends: kmod-video-gspca-core 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15496,7 +15557,7 @@ Description:  The Konica USB Camera Driver (konica) kernel module
 Package: kmod-drm-i915
 Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_x86 +kmod-drm-ttm +kmod-drm-kms-helper +i915-firmware +LINUX_6_0:kmod-drm-display-helper
+Depends: @TARGET_x86 +kmod-drm-ttm +kmod-drm-kms-helper +i915-firmware +LINUX_6_1:kmod-drm-display-helper +LINUX_6_1:kmod-acpi-video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15682,7 +15743,7 @@ Description:  Kernel module for the GPIO 1-wire bus master driver
 Package: kmod-w1-master-ds2482
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 +kmod-i2c-core
+Depends: kmod-w1 +kmod-i2c-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15741,7 +15802,7 @@ Description:  Kernel module for 1-wire Freescale MXC 1-wire busmaster
 Package: kmod-w1-slave-therm
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15760,7 +15821,7 @@ Description:  Kernel module for 1-wire thermal sensors
 Package: kmod-w1-slave-smem
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15779,7 +15840,7 @@ Description:  Kernel module for 1-wire simple 64bit memory rom(ds2401/ds2411/ds1
 Package: kmod-w1-slave-ds2431
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15798,7 +15859,7 @@ Description:  Kernel module for 1-wire 1kb EEPROM (DS2431)
 Package: kmod-w1-slave-ds2433
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15817,7 +15878,7 @@ Description:  Kernel module for 1-wire 4kb EEPROM (DS2433)
 Package: kmod-w1-slave-ds2760
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15836,7 +15897,7 @@ Description:  Kernel module for 1-wire DS2760 battery monitor chip support
 Package: kmod-w1-slave-ds2413
 Submenu: W1 support
 Version: <LINUX_VERSION>-
-Depends:  kmod-w1 
+Depends: kmod-w1 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16053,60 +16114,117 @@ Description:  IPv6 compression over IEEE 802.15.4
 
 @@
 
-Package: kmod-pcmcia-bcm63xx
-Submenu: PCMCIA support
+Package: kmod-mmc-at91
+Submenu: Other modules
 Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm63xx +kmod-pcmcia-rsrc
+Depends: @TARGET_at91 +kmod-mmc
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Broadcom BCM63xx PCMCIA support
+Title: MMC/SD Card Support on AT91
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_PCMCIA_BCM63XX
-Description:   Kernel support for PCMCIA/CardBus controller on the BCM63xx SoC
+Kernel-Config: CONFIG_MMC_AT91
+Description:  Kernel support for MMC/SD cards on the AT91 target
 
 @@
 
-Package: kmod-bcm63xx-udc
+Package: kmod-pwm-atmel
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PWM on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ATMEL_PWM
+Description:  Kernel module to use the PWM channel on ATMEL SoC
+
+@@
+
+Package: kmod-at91-adc
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ADC on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AT91_ADC
+Description:  Kernel module to use the ADC channels of SoC
+
+@@
+
+Package: kmod-at91-udc
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm63xx +kmod-usb-gadget +kmod-usb-core 
+Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Broadcom BCM63xx UDC support
+Title: USB Device Controller on atmel SoC
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_USB_BCM63XX_UDC
-Description:   Kernel support for the USB gadget (device) controller on the BCM63xx SoC
+Kernel-Config: CONFIG_USB_AT91
+Description:  Kernel module to use the USB Device controller for Atmel AT91
 
 @@
 
-Package: kmod-i2c-lantiq
-Submenu: I2C support
+Package: kmod-atmel-usba-udc
+Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Depends: @TARGET_at91 +kmod-usb-gadget
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Lantiq I2C controller
+Title: High-speed USB Device Controller on atmel SoC
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_LANTIQ
-Description:   Kernel support for the Lantiq/Falcon I2C controller
+Kernel-Config: CONFIG_USB_ATMEL_USBA
+Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
+
+@@
+
+Package: kmod-at91-i2c
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: I2C (TWI) master driver for Atmel AT91
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_AT91
+Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
 
 @@
 
@@ -16129,428 +16247,41 @@ Description:  Kernel module for LEDs on reset lines
 
 @@
 
-Package: kmod-bgmac
-Submenu: Network Devices
+Package: kmod-hwmon-raspberrypi
+Submenu: Hardware Monitoring Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm47xx @!TARGET_bcm47xx_legacy
+Depends: +kmod-hwmon-core @TARGET_bcm27xx
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Broadcom bgmac driver
+Title: Raspberry Pi voltage monitor
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
-Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
+Kernel-Config: CONFIG_SENSORS_RASPBERRYPI_HWMON
+Description:   Kernel module for voltage sensor on the Raspberry Pi
 
 @@
 
-Package: kmod-phy-bcm-ns-usb2
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm53xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom Northstar USB 2.0 PHY Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_BCM_NS_USB2
-Description:   Support for Broadcom USB 2.0 PHY connected to the USB controller on Northstar
-  family.
-
-@@
-
-Package: kmod-phy-bcm-ns-usb3
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm53xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom Northstar USB 3.0 PHY Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_BCM_NS_USB3
-Description:   Support for Broadcom USB 3.0 PHY connected to the USB controller on Northstar
-  family.
-
-@@
-
-Package: kmod-i2c-bcm-iproc
+Package: kmod-i2c-bcm2835
 Submenu: I2C support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm53xx +kmod-i2c-core
+Depends: @TARGET_bcm27xx +kmod-i2c-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Broadcom iProc I2C controller
+Title: Broadcom BCM2835 I2C master controller driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_BCM_IPROC
-Description:  Kernel module for the Broadcom iProc I2C controller.
-
-@@
-
-Package: kmod-ahci-qoriq
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core +kmod-ata-ahci-platform @TARGET_layerscape
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Freescale QorIQ AHCI SATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AHCI_QORIQ
-Description:  This option enables support for the Freescale QorIQ AHCI SoC's
- onboard AHCI SATA.
-
-@@
-
-Package: kmod-ppfe
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_layerscape
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Freescale PPFE Driver support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_FSL_PPFE=y CONFIG_FSL_PPFE_UTIL_DISABLED=y
-Description:  Kernel modules for Freescale PPFE Driver support.
-
-@@
-
-Package: kmod-pwm-mediatek-ramips
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628 PWM
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
-Description:   Kernel modules for MediaTek Pulse Width Modulator
-
-@@
-
-Package: kmod-sdhci-mt7620
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 SDCI
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
-Description: MT7620 SDCI
-
-@@
-
-Package: kmod-i2c-ralink
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_RALINK
-Description:  Kernel modules for enable ralink i2c controller.
-
-@@
-
-Package: kmod-i2c-mt7628
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628/88 I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_MT7621
-Description:  Kernel modules for enable mt7621 i2c controller.
-
-@@
-
-Package: kmod-dma-ralink
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink GDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
-Description:  Kernel modules for enable ralink dma engine.
-
-@@
-
-Package: kmod-hsdma-mtk
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips @TARGET_ramips_mt7621
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HSDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
-Description:  Kernel modules for enable MediaTek hsdma engine.
-
-@@
-
-Package: kmod-sound-mt7620
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 PCM/I2S Alsa Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
-Description:  Alsa modules for ralink i2s controller.
-
-@@
-
-Package: kmod-mtk-hnat
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips @TARGET_ramips_mt7621 +kmod-nf-flow
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek MT762x HW NAT driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BRIDGE_NETFILTER=y CONFIG_NET_MEDIATEK_HNAT CONFIG_NETFILTER_FAMILY_BRIDGE=y
-Description: MediaTek MT762x HW NAT driver
-
-@@
-
-Package: kmod-ata-ahci-mtk
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core  @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Mediatek AHCI Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AHCI_MTK
-Description:  Mediatek AHCI Serial ATA host controllers
-
-@@
-
-Package: kmod-btmtkuart
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mediatek_mt7622 +kmod-bluetooth +mt7622bt-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HCI UART driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BT_MTKUART
-Description: MediaTek HCI UART driver
-
-@@
-
-Package: kmod-iio-mt6577-auxadc
-Submenu: Industrial I/O Modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623||TARGET_mediatek_filogic) +kmod-iio-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Mediatek AUXADC driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MEDIATEK_MT6577_AUXADC
-Description: Mediatek AUXADC driver
-
-@@
-
-Package: kmod-leds-spi-single-wire
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_mediatek_filogic)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SPI single wire LED support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_SPI_SINGLE_WIRE
-Description:   LED support for SPI LED controller with a single wire (MOSI)
-
-@@
-
-Package: kmod-camera-bcm2835
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends:  kmod-video-core @TARGET_bcm27xx +kmod-vchiq-mmal-bcm2835 +kmod-video-videobuf2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BCM2835 Camera
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_VIDEO_BCM2835 CONFIG_VIDEO_BCM2835_MMAL CONFIG_VIDEO_BCM2835_UNICAM=n CONFIG_VIDEO_ISP_BCM2835=n
-Description:   Camera host interface devices for Broadcom BCM2835 SoC.
-  This operates over the VCHIQ interface to a service running on VideoCore.
-
-@@
-
-Package: kmod-drm-vc4
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm27xx +kmod-drm +kmod-sound-core +kmod-sound-soc-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom VC4 Graphics
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DRM_VC4 CONFIG_DRM_VC4_HDMI_CEC=y CONFIG_DRM_GUD=n CONFIG_DRM_V3D=n CONFIG_DRM_TVE200=n
-Description:   Direct Rendering Manager (DRM) support for Broadcom VideoCore IV GPU
-  used in BCM2835, BCM2836 and BCM2837 SoCs (e.g. Raspberry Pi).
-
-@@
-
-Package: kmod-vc-sm-cma
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends:  kmod-video-core @TARGET_bcm27xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: VideoCore Shared Memory (CMA) driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BCM_VC_SM_CMA
-Description:   Shared memory interface that supports sharing dmabufs with VideoCore.
-  This operates over the VCHIQ interface to a service running on VideoCore.
-
-@@
-
-Package: kmod-vchiq-mmal-bcm2835
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends:  kmod-video-core @TARGET_bcm27xx +kmod-vc-sm-cma
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BCM2835 MMAL VCHIQ service
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_BCM2835_VCHIQ_MMAL CONFIG_VIDEO_CODEC_BCM2835=n
-Description:   Enables the MMAL API over VCHIQ as used for the
-  majority of the multimedia services on VideoCore.
+Kernel-Config: CONFIG_I2C_BCM2835
+Description:   This package contains the Broadcom 2835 I2C master controller driver
 
 @@
 
@@ -16611,63 +16342,6 @@ Kernel-Config: CONFIG_BCM2835_SMI_DEV
 Description:   This driver provides a character device interface (ioctl + read/write) to
   Broadcom's Secondary Memory interface. The low-level functionality is provided
   by the SMI driver itself.
-
-@@
-
-Package: kmod-hwmon-raspberrypi
-Submenu: Hardware Monitoring Support
-Version: <LINUX_VERSION>-
-Depends: +kmod-hwmon-core @TARGET_bcm27xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Raspberry Pi voltage monitor
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SENSORS_RASPBERRYPI_HWMON
-Description:   Kernel module for voltage sensor on the Raspberry Pi
-
-@@
-
-Package: kmod-spi-bcm2835
-Submenu: SPI Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm27xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BCM2835 SPI controller driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SPI=y CONFIG_SPI_BCM2835 CONFIG_SPI_MASTER=y
-Description:   This package contains the Broadcom 2835 SPI master controller driver
-
-@@
-
-Package: kmod-spi-bcm2835-aux
-Submenu: SPI Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm27xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: BCM2835 Aux SPI controller driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SPI=y CONFIG_SPI_BCM2835AUX CONFIG_SPI_MASTER=y
-Description:   This package contains the Broadcom 2835 Aux SPI master controller driver
 
 @@
 
@@ -17469,136 +17143,680 @@ Description:   This package contains support for RPi-PROTO
 
 @@
 
-Package: kmod-i2c-bcm2835
-Submenu: I2C support
+Package: kmod-spi-bcm2835
+Submenu: SPI Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_bcm27xx +kmod-i2c-core
+Depends: @TARGET_bcm27xx
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Broadcom BCM2835 I2C master controller driver
+Title: BCM2835 SPI controller driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_BCM2835
-Description:   This package contains the Broadcom 2835 I2C master controller driver
+Kernel-Config: CONFIG_SPI=y CONFIG_SPI_BCM2835 CONFIG_SPI_MASTER=y
+Description:   This package contains the Broadcom 2835 SPI master controller driver
 
 @@
 
-Package: kmod-mmc-at91
-Submenu: Other modules
+Package: kmod-spi-bcm2835-aux
+Submenu: SPI Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-mmc
+Depends: @TARGET_bcm27xx
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: MMC/SD Card Support on AT91
+Title: BCM2835 Aux SPI controller driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_MMC_AT91
-Description:  Kernel support for MMC/SD cards on the AT91 target
+Kernel-Config: CONFIG_SPI=y CONFIG_SPI_BCM2835AUX CONFIG_SPI_MASTER=y
+Description:   This package contains the Broadcom 2835 Aux SPI master controller driver
 
 @@
 
-Package: kmod-pwm-atmel
-Submenu: Other modules
+Package: kmod-camera-bcm2835
+Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91
+Depends: kmod-video-core @TARGET_bcm27xx +kmod-vchiq-mmal-bcm2835 +kmod-video-videobuf2
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: PWM on atmel SoC
+Title: BCM2835 Camera
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_ATMEL_PWM
-Description:  Kernel module to use the PWM channel on ATMEL SoC
+Kernel-Config: CONFIG_VIDEO_BCM2835 CONFIG_VIDEO_BCM2835_MMAL CONFIG_VIDEO_BCM2835_UNICAM=n CONFIG_VIDEO_ISP_BCM2835=n
+Description:   Camera host interface devices for Broadcom BCM2835 SoC.
+  This operates over the VCHIQ interface to a service running on VideoCore.
 
 @@
 
-Package: kmod-at91-adc
-Submenu: Other modules
+Package: kmod-drm-vc4
+Submenu: Video Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
+Depends: @TARGET_bcm27xx +kmod-drm +kmod-sound-core +kmod-sound-soc-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: ADC on atmel SoC
+Title: Broadcom VC4 Graphics
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_AT91_ADC
-Description:  Kernel module to use the ADC channels of SoC
+Kernel-Config: CONFIG_DRM_VC4 CONFIG_DRM_VC4_HDMI_CEC=y CONFIG_DRM_GUD=n CONFIG_DRM_V3D=n CONFIG_DRM_TVE200=n
+Description:   Direct Rendering Manager (DRM) support for Broadcom VideoCore IV GPU
+  used in BCM2835, BCM2836 and BCM2837 SoCs (e.g. Raspberry Pi).
 
 @@
 
-Package: kmod-at91-udc
+Package: kmod-vc-sm-cma
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: kmod-video-core @TARGET_bcm27xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: VideoCore Shared Memory (CMA) driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BCM_VC_SM_CMA
+Description:   Shared memory interface that supports sharing dmabufs with VideoCore.
+  This operates over the VCHIQ interface to a service running on VideoCore.
+
+@@
+
+Package: kmod-vchiq-mmal-bcm2835
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: kmod-video-core @TARGET_bcm27xx +kmod-vc-sm-cma
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: BCM2835 MMAL VCHIQ service
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BCM2835_VCHIQ_MMAL CONFIG_VIDEO_CODEC_BCM2835=n
+Description:   Enables the MMAL API over VCHIQ as used for the
+  majority of the multimedia services on VideoCore.
+
+@@
+
+Package: kmod-bgmac
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_bcm47xx @!TARGET_bcm47xx_legacy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom bgmac driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BGMAC CONFIG_BGMAC_BCMA
+Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
+
+@@
+
+Package: kmod-phy-bcm-ns-usb2
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap-core
+Depends: @TARGET_bcm53xx
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: USB Device Controller on atmel SoC
+Title: Broadcom Northstar USB 2.0 PHY Driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_USB_AT91
-Description:  Kernel module to use the USB Device controller for Atmel AT91
+Kernel-Config: CONFIG_PHY_BCM_NS_USB2
+Description:   Support for Broadcom USB 2.0 PHY connected to the USB controller on Northstar
+  family.
 
 @@
 
-Package: kmod-atmel-usba-udc
+Package: kmod-phy-bcm-ns-usb3
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget
+Depends: @TARGET_bcm53xx
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: High-speed USB Device Controller on atmel SoC
+Title: Broadcom Northstar USB 3.0 PHY Driver
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_USB_ATMEL_USBA
-Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
+Kernel-Config: CONFIG_PHY_BCM_NS_USB3
+Description:   Support for Broadcom USB 3.0 PHY connected to the USB controller on Northstar
+  family.
 
 @@
 
-Package: kmod-at91-i2c
+Package: kmod-i2c-bcm-iproc
 Submenu: I2C support
 Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-i2c-core
+Depends: @TARGET_bcm53xx +kmod-i2c-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: I2C (TWI) master driver for Atmel AT91
+Title: Broadcom iProc I2C controller
 Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_I2C_AT91
-Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
+Kernel-Config: CONFIG_I2C_BCM_IPROC
+Description:  Kernel module for the Broadcom iProc I2C controller.
+
+@@
+
+Package: kmod-pcmcia-bcm63xx
+Submenu: PCMCIA support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_bcm63xx +kmod-pcmcia-rsrc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom BCM63xx PCMCIA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCMCIA_BCM63XX
+Description:   Kernel support for PCMCIA/CardBus controller on the BCM63xx SoC
+
+@@
+
+Package: kmod-bcm63xx-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_bcm63xx +kmod-usb-gadget +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom BCM63xx UDC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_BCM63XX_UDC
+Description:   Kernel support for the USB gadget (device) controller on the BCM63xx SoC
+
+@@
+
+Package: kmod-phy-qcom-ipq806x-usb
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ipq806x +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Qualcomm IPQ806x DWC3 USB PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+@@
+
+Package: kmod-ata-marvell-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_kirkwood +kmod-ata-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_MV CONFIG_SATA_PMP=y
+Description:  SATA support for marvell chipsets
+
+@@
+
+Package: kmod-mvsdio
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: +kmod-mmc @TARGET_kirkwood
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell MMC/SD/SDIO host driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MMC_MVSDIO
+Description:  Kernel support for the Marvell SDIO host driver.
+
+@@
+
+Package: kmod-i2c-lantiq
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_lantiq_falcon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Lantiq I2C controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_LANTIQ
+Description:   Kernel support for the Lantiq/Falcon I2C controller
+
+@@
+
+Package: kmod-ahci-qoriq
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-ata-core +kmod-ata-ahci-platform @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Freescale QorIQ AHCI SATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AHCI_QORIQ
+Description:  This option enables support for the Freescale QorIQ AHCI SoC's
+ onboard AHCI SATA.
+
+@@
+
+Package: kmod-ppfe
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Freescale PPFE Driver support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_FSL_PPFE CONFIG_FSL_PPFE_UTIL_DISABLED=y
+Description:  Kernel modules for Freescale PPFE Driver support.
+
+@@
+
+Package: kmod-ata-ahci-mtk
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-ata-core  @(TARGET_mediatek_mt7622||TARGET_mediatek_mt7623)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Mediatek AHCI Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AHCI_MTK
+Description:  Mediatek AHCI Serial ATA host controllers
+
+@@
+
+Package: kmod-btmtkuart
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mediatek_mt7622 +kmod-bluetooth +mt7622bt-firmware
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek HCI UART driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BT_MTKUART
+Description: MediaTek HCI UART driver
+
+@@
+
+Package: kmod-iio-mt6577-auxadc
+Submenu: Industrial I/O Modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_mediatek_mt7622||TARGET_mediatek_filogic) +kmod-iio-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Mediatek AUXADC driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MEDIATEK_MT6577_AUXADC
+Description: Mediatek AUXADC driver
+
+@@
+
+Package: kmod-linkstation-poweroff
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mvebu
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Buffalo LinkStation power off driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_POWER_RESET_LINKSTATION
+Description:   This driver supports turning off some Buffalo LinkStations by
+  setting an output pin at the ethernet PHY to the correct state.
+  It also makes the device compatible with the WoL function.
+  Say Y here if you have a Buffalo LinkStation LS421D/E.
+
+@@
+
+Package: kmod-leds-turris-omnia
+Submenu: LED modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mvebu_cortexa9
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: LED support for CZ.NIC's Turris Omnia
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LEDS_TURRIS_OMNIA
+Description:    This option enables support for the LEDs of the CZ.NIC Turris Omnia.
+
+@@
+
+Package: kmod-ata-oxnas-sata
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-ata-core @TARGET_oxnas
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: oxnas Serial ATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SATA_OXNAS
+Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
+
+@@
+
+Package: kmod-usb2-oxnas
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OX820 EHCI driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_EHCI_OXNAS
+Description:  This driver provides USB Device Controller support for the
+ EHCI USB host built-in to the OX820 SoC.
+
+@@
+
+Package: kmod-pwm-mediatek-ramips
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628 PWM
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
+Description:   Kernel modules for MediaTek Pulse Width Modulator
+
+@@
+
+Package: kmod-sdhci-mt7620
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 SDCI
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
+Description: MT7620 SDCI
+
+@@
+
+Package: kmod-i2c-ralink
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_RALINK
+Description:  Kernel modules for enable ralink i2c controller.
+
+@@
+
+Package: kmod-i2c-mt7628
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: +kmod-i2c-core @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628/88 I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_MT7621
+Description:  Kernel modules for enable mt7621 i2c controller.
+
+@@
+
+Package: kmod-dma-ralink
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink GDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
+Description:  Kernel modules for enable ralink dma engine.
+
+@@
+
+Package: kmod-hsdma-mtk
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek HSDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
+Description:  Kernel modules for enable MediaTek hsdma engine.
+
+@@
+
+Package: kmod-sound-mt7620
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap-i2c +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 PCM/I2S Alsa Driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
+Description:  Alsa modules for ralink i2s controller.
+
+@@
+
+Package: kmod-mtk-hnat
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621 +kmod-nf-flow
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek MT762x HW NAT driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_BRIDGE_NETFILTER=y CONFIG_NET_MEDIATEK_HNAT CONFIG_NETFILTER_FAMILY_BRIDGE=y
+Description: MediaTek MT762x HW NAT driver
+
+@@
+
+Package: kmod-drm-rockchip
+Submenu: Video Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-backlight +kmod-drm-kms-helper +kmod-multimedia-input +LINUX_6_1:kmod-drm-display-helper
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Rockchip DRM support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_ANALOGIX_DP=n CONFIG_ROCKCHIP_CDN_DP=n CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_ROCKCHIP_RGB=n CONFIG_ROCKCHIP_RK3066_HDMI=n CONFIG_ROCKCHIP_VOP=y CONFIG_ROCKCHIP_VOP2=y CONFIG_DRM_GEM_CMA_HELPER@lt6.1 CONFIG_DRM_GEM_DMA_HELPER@ge6.1 CONFIG_DRM_PANEL=y CONFIG_DRM_PANEL_BRIDGE=y CONFIG_DRM_PANEL_SIMPLE
+Description:   Direct Rendering Manager (DRM) support for Rockchip
+
+@@
+
+Package: kmod-saradc-rockchip
+Submenu: Industrial I/O Modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rockchip +kmod-industrialio-triggered-buffer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Rockchip SARADC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_RESET_CONTROLLER=y CONFIG_ROCKCHIP_SARADC
+Description:   Support for the SARADC found in SoCs from Rockchip
 
 @@
 
@@ -17716,141 +17934,6 @@ Description:   Kernel support for Allwinner A10 SPDIF Support
 
 @@
 
-Package: kmod-drm-rockchip
-Submenu: Video Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rockchip +kmod-backlight +kmod-drm-kms-helper +kmod-multimedia-input +LINUX_6_0:kmod-drm-display-helper
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Rockchip DRM support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DRM_ROCKCHIP CONFIG_DRM_LOAD_EDID_FIRMWARE=y CONFIG_DRM_FBDEV_EMULATION=y CONFIG_DRM_FBDEV_OVERALLOC=100 CONFIG_DRM_BRIDGE=y CONFIG_HDMI=y CONFIG_PHY_ROCKCHIP_INNO_HDMI CONFIG_DRM_DW_HDMI CONFIG_DRM_DW_HDMI_CEC CONFIG_ROCKCHIP_ANALOGIX_DP=n CONFIG_ROCKCHIP_CDN_DP=n CONFIG_ROCKCHIP_DW_HDMI=y CONFIG_ROCKCHIP_DW_MIPI_DSI=y CONFIG_ROCKCHIP_INNO_HDMI=y CONFIG_ROCKCHIP_LVDS=y CONFIG_ROCKCHIP_RGB=n CONFIG_ROCKCHIP_RK3066_HDMI=n CONFIG_ROCKCHIP_VOP=y CONFIG_ROCKCHIP_VOP2=y CONFIG_DRM_GEM_CMA_HELPER CONFIG_DRM_PANEL=y CONFIG_DRM_PANEL_BRIDGE=y CONFIG_DRM_PANEL_SIMPLE
-Description:   Direct Rendering Manager (DRM) support for Rockchip
-
-@@
-
-Package: kmod-saradc-rockchip
-Submenu: Industrial I/O Modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rockchip +kmod-industrialio-triggered-buffer
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Rockchip SARADC support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_RESET_CONTROLLER=y CONFIG_ROCKCHIP_SARADC
-Description:   Support for the SARADC found in SoCs from Rockchip
-
-@@
-
-Package: kmod-ata-oxnas-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends:  +kmod-ata-core @TARGET_oxnas
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: oxnas Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_OXNAS
-Description:  SATA support for OX934 core found in the OX8xx/PLX782x SoCs
-
-@@
-
-Package: kmod-usb2-oxnas
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends:  +kmod-usb-core @TARGET_oxnas_ox820 +kmod-usb2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OX820 EHCI driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_EHCI_OXNAS
-Description:  This driver provides USB Device Controller support for the
- EHCI USB host built-in to the OX820 SoC.
-
-@@
-
-Package: kmod-phy-qcom-ipq806x-usb
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ipq806x +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Qualcomm IPQ806x DWC3 USB PHY driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PHY_QCOM_IPQ806X_USB
-Description:  This driver provides support for the integrated DesignWare
- USB3 IP Core within the QCOM SoCs.
-
-@@
-
-Package: kmod-ata-marvell-sata
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_kirkwood +kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell Serial ATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SATA_MV CONFIG_SATA_PMP=y
-Description:  SATA support for marvell chipsets
-
-@@
-
-Package: kmod-mvsdio
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: +kmod-mmc @TARGET_kirkwood
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell MMC/SD/SDIO host driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MMC_MVSDIO
-Description:  Kernel support for the Marvell SDIO host driver.
-
-@@
-
 Package: kmod-amazon-ena
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -17874,7 +17957,7 @@ Description:   This driver supports Elastic Network Adapter (ENA)
 Package: kmod-amd-xgbe
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_6_0):kmod-mdio-devres
+Depends: @PCI_SUPPORT @TARGET_x86_64 +kmod-lib-crc32c +kmod-ptp +kmod-libphy +(LINUX_5_10||LINUX_5_15||LINUX_6_1):kmod-mdio-devres
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -17946,47 +18029,6 @@ Type: ipkg
 Kernel-Config: CONFIG_PCENGINES_APU2
 Description:   This driver provides support for the front button and LEDs on
   PC Engines APUv2/APUv3 board.
-
-@@
-
-Package: kmod-linkstation-poweroff
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mvebu
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Buffalo LinkStation power off driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_POWER_RESET_LINKSTATION
-Description:   This driver supports turning off some Buffalo LinkStations by
-  setting an output pin at the ethernet PHY to the correct state.
-  It also makes the device compatible with the WoL function.
-  Say Y here if you have a Buffalo LinkStation LS421D/E.
-
-@@
-
-Package: kmod-leds-turris-omnia
-Submenu: LED modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mvebu_cortexa9
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: LED support for CZ.NIC's Turris Omnia
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_LEDS_TURRIS_OMNIA
-Description:    This option enables support for the LEDs of the CZ.NIC Turris Omnia.
 
 @@
 

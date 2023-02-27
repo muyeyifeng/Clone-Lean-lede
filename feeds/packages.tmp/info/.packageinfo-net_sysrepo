@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/sysrepo/Makefile
 
 Package: libsysrepo
 Version: 2.0.53-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libatomic +libprotobuf-c +libev +libredblack +librt +libpthread
+Depends: +libc +libyang +libatomic +libprotobuf-c +libev +libredblack +librt +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Jakov Smolic <jakov.smolic@sartura.hr>
 
 Package: sysrepo
 Version: 2.0.53-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Depends: +libc +libsysrepo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ Jakov Smolic <jakov.smolic@sartura.hr>
 
 Package: sysrepoctl
 Version: 2.0.53-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Depends: +libc +libsysrepo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Jakov Smolic <jakov.smolic@sartura.hr>
 
 Package: sysrepocfg
 Version: 2.0.53-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Depends: +libc +libsysrepo
 Conflicts: 
 Menu-Depends: 
 Provides: 

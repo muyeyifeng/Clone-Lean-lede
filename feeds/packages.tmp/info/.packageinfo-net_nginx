@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
 Version: 1.21.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +NGINX_PCRE:libpcre +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c
+Depends: +libc +libopenssl +libpthread +NGINX_PCRE:libpcre +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +NGINX_DAV:libxml2 +NGINX_UBUS:libubus +NGINX_UBUS:libblobmsg-json +NGINX_UBUS:libjson-c
 Conflicts: nginx-all-module
 Menu-Depends: 
 Provides: 
@@ -27,10 +27,10 @@ Config:
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
 Version: 1.21.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +liblua +libxml2 +libubus +libblobmsg-json +libjson-c
+Depends: +libc +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +liblua +libxml2 +libubus +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
-Provides:  nginx-ssl
+Provides: nginx-ssl
 Build-Variant: all-module
 Section: net
 Category: Network
@@ -48,7 +48,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
 Version: 1.21.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi +uwsgi-luci-support +nginx
+Depends: +libc +uwsgi +uwsgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx
 Version: 1.21.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-ssl
+Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -85,7 +85,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci-ssl
 Version: 1.21.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-mod-luci
+Depends: +libc +nginx-mod-luci
 Conflicts: 
 Menu-Depends: 
 Provides: 

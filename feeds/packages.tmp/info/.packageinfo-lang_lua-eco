@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/lua-eco/Makefile
 Package: lua-eco
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Depends: +libc +libev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-log
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Depends: +libc +lua-eco
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-sys
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Depends: +libc +lua-eco
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66,7 +66,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-dns
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Depends: +libc +lua-eco
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -87,7 +87,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-socket
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Depends: +libc +lua-eco
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-ssl
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) LUA_ECO_OPENSSL:libopenssl LUA_ECO_WOLFSSL:libwolfssl LUA_ECO_MBEDTLS:libmbedtls +LUA_ECO_MBEDTLS:zlib
+Depends: +libc +lua-eco @(PACKAGE_libopenssl||PACKAGE_libwolfssl||PACKAGE_libmbedtls) LUA_ECO_OPENSSL:libopenssl LUA_ECO_WOLFSSL:libwolfssl LUA_ECO_MBEDTLS:libmbedtls +LUA_ECO_MBEDTLS:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -158,7 +158,7 @@ Config:
 Package: lua-eco-iw
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
+Depends: +libc +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-ip
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libmnl
+Depends: +libc +lua-eco +libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -200,7 +200,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-file
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco
+Depends: +libc +lua-eco
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -221,7 +221,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: lua-eco-ubus
 Submenu: Lua
 Version: 1.0.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua-eco +libubus
+Depends: +libc +lua-eco +libubus
 Conflicts: 
 Menu-Depends: 
 Provides: 

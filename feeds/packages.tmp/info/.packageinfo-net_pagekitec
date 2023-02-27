@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/pagekitec/Makefile
 
 Package: pagekitec
 Version: 0.91.201110C-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpagekite
+Depends: +libc +libpagekite
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Karl Palsson <karlp@tweak.net.au>
 
 Package: libpagekite
 Version: 0.91.201110C-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libev
+Depends: +libc +libopenssl +libpthread +libev
 Conflicts: 
 Menu-Depends: 
 Provides: 

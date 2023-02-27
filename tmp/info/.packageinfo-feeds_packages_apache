@@ -4,7 +4,7 @@ Build-Depends: openssl
 Package: apache
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libapr +libaprutil +libpcre
+Depends: +libc +libapr +libaprutil +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +31,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-ab
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +libopenssl
+Depends: +libc apache +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,7 +57,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-error
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-icons
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -109,7 +109,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-suexec
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-utils
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -161,7 +161,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-deflate
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-deflate:zlib
+Depends: +libc apache +PACKAGE_apache-mod-deflate:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -182,7 +182,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-http2
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-http2:libnghttp2 +PACKAGE_apache-mod-http2:libopenssl
+Depends: +libc apache +PACKAGE_apache-mod-http2:libnghttp2 +PACKAGE_apache-mod-http2:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -203,7 +203,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-ldap
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-ldap:libaprutil-ldap
+Depends: +libc apache +PACKAGE_apache-mod-ldap:libaprutil-ldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -224,7 +224,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-lua
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-lua:liblua
+Depends: +libc apache +PACKAGE_apache-mod-lua:liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -245,7 +245,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-md
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-md:libcurl +PACKAGE_apache-mod-md:jansson +PACKAGE_apache-mod-md:libopenssl
+Depends: +libc apache +PACKAGE_apache-mod-md:libcurl +PACKAGE_apache-mod-md:jansson +PACKAGE_apache-mod-md:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -266,7 +266,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-proxy
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -287,7 +287,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-proxy-html
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-proxy-html:apache-mod-proxy +PACKAGE_apache-mod-proxy-html:libxml2
+Depends: +libc apache +PACKAGE_apache-mod-proxy-html:apache-mod-proxy +PACKAGE_apache-mod-proxy-html:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -308,7 +308,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-session-crypto
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-session-crypto:libaprutil-crypto-openssl
+Depends: +libc apache +PACKAGE_apache-mod-session-crypto:libaprutil-crypto-openssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -329,7 +329,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-ssl
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-ssl:libopenssl
+Depends: +libc apache +PACKAGE_apache-mod-ssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -350,7 +350,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-suexec
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache +PACKAGE_apache-mod-suexec:apache-suexec
+Depends: +libc apache +PACKAGE_apache-mod-suexec:apache-suexec
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -371,7 +371,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Package: apache-mod-webdav
 Submenu: Web Servers/Proxies
 Version: 2.4.52-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread apache
+Depends: +libc apache
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/pulseaudio/Makefile
 
 Package: pulseaudio-daemon
 Version: 14.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: pulseaudio-daemon-avahi
 Menu-Depends: 
 Provides: pulseaudio
@@ -24,7 +24,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: pulseaudio-daemon-avahi
 Version: 14.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +dbus +libavahi-client +sbc
+Depends: +libc +libsndfile +libltdl +libpthread +librt +alsa-lib +libopenssl +libcap +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +dbus +libavahi-client +sbc
 Conflicts: 
 Menu-Depends: 
 Provides: pulseaudio
@@ -47,7 +47,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: pulseaudio-tools
 Version: 14.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile pulseaudio
+Depends: +libc +libsndfile pulseaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -68,7 +68,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: pulseaudio-profiles
 Version: 14.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread pulseaudio
+Depends: +libc pulseaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 

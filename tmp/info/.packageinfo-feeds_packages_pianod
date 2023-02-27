@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/pianod/Makefile
 
 Package: pianod
 Version: 174.09-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libao +libfaad2 +libmpg123 +libmbedtls +libjson-c +libgcrypt +libpthread
+Depends: +libc +libao +libfaad2 +libmpg123 +libmbedtls +libjson-c +libgcrypt +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: pianod-client
 Version: 174.09-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pianod
+Depends: +libc +pianod
 Conflicts: 
 Menu-Depends: 
 Provides: 

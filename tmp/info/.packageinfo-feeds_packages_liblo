@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/liblo/Makefile
 Package: liblo
 Submenu: Sound
 Version: 0.31-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ http://liblo.sourceforge.net/
 
 Package: liblo-utils
 Version: 0.31-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblo
+Depends: +libc +liblo
 Conflicts: 
 Menu-Depends: 
 Provides: 

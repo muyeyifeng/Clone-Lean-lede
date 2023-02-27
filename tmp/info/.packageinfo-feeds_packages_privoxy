@@ -4,7 +4,7 @@ Package: privoxy
 Menu: 1
 Submenu: Web Servers/Proxies
 Version: 3.0.33-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +!PRIVOXY_no_pcre:libpcre +!PRIVOXY_no_pthread:libpthread +!PRIVOXY_no_zlib:zlib
+Depends: +libc +!PRIVOXY_no_pcre:libpcre +!PRIVOXY_no_pthread:libpthread +!PRIVOXY_no_zlib:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

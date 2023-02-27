@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/grilo-plugins/Makefile
 Package: grilo-plugins
 Menu: 1
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +grilo +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +grilo +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-chromaprint
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins +libgstreamer1
+Depends: +libc grilo-plugins +libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-dleyna
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63,7 +63,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-dmap
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins libdmapsharing
+Depends: +libc grilo-plugins libdmapsharing
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-gravatar
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -103,7 +103,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-magnatune
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -123,7 +123,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-metadata-store
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -143,7 +143,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-opensubtitles
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -163,7 +163,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-raitv
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -183,7 +183,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-shoutcast
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins
+Depends: +libc grilo-plugins
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -203,7 +203,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: grilo-plugins-tmdb
 Version: 0.3.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread grilo-plugins +json-glib
+Depends: +libc grilo-plugins +json-glib
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/hwloc/Makefile
 
 Package: hwloc-utils
-Version: 2.7.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libhwloc +libncurses
+Version: 2.8.0-1
+Depends: +libc +libhwloc +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: packages
 Title: Portable Hardware Locality utilities
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: hwloc-2.7.1.tar.bz2
+Source: hwloc-2.8.0.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -28,8 +28,8 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: libhwloc
-Version: 2.7.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpciaccess
+Version: 2.8.0-1
+Depends: +libc +libpciaccess
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Category: Libraries
 Repository: packages
 Title: Portable Hardware Locality libraries
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: hwloc-2.7.1.tar.bz2
+Source: hwloc-2.8.0.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg

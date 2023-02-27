@@ -4,8 +4,8 @@ Build-Depends: ncurses readline
 Package: bird1-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts:  bird4
+Depends: +libc +libpthread
+Conflicts: bird4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -41,8 +41,8 @@ https://bird.network.cz/
 Package: bird1c-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv4
-Conflicts:  birdc4
+Depends: +libc +libreadline +libncurses +bird1-ipv4
+Conflicts: birdc4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -77,8 +77,8 @@ https://bird.network.cz/
 Package: bird1cl-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4
-Conflicts:  birdcl4
+Depends: +libc +bird1-ipv4
+Conflicts: birdcl4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -110,8 +110,8 @@ https://bird.network.cz/
 Package: bird1-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts:  bird6
+Depends: +libc +libpthread
+Conflicts: bird6
 Menu-Depends: 
 Provides: 
 Section: net
@@ -147,8 +147,8 @@ https://bird.network.cz/
 Package: bird1c-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv6
-Conflicts:  birdc6
+Depends: +libc +libreadline +libncurses +bird1-ipv6
+Conflicts: birdc6
 Menu-Depends: 
 Provides: 
 Section: net
@@ -183,8 +183,8 @@ https://bird.network.cz/
 Package: bird1cl-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6
-Conflicts:  birdcl6
+Depends: +libc +bird1-ipv6
+Conflicts: birdcl6
 Menu-Depends: 
 Provides: 
 Section: net

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-netdisco/Makefile
 Package: python3-netdisco
 Submenu: Python
 Version: 2.6.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-requests +python3-zeroconf
+Depends: +libc +python3-light +python3-requests +python3-zeroconf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 Package: python3-netdisco-src
 Submenu: Python
 Version: 2.6.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

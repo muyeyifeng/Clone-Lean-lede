@@ -5,7 +5,7 @@ Package: uwsgi
 Menu: 1
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libcap +libuuid
+Depends: +libc +libpcre +libcap +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Package: uwsgi-logfile-plugin
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread uwsgi
+Depends: +libc uwsgi
 Conflicts: 
 Menu-Depends: uwsgi
 Provides: 
@@ -46,7 +46,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Package: uwsgi-syslog-plugin
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread uwsgi
+Depends: +libc uwsgi
 Conflicts: 
 Menu-Depends: uwsgi
 Provides: 
@@ -66,7 +66,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Package: uwsgi-cgi-plugin
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread uwsgi
+Depends: +libc uwsgi
 Conflicts: 
 Menu-Depends: uwsgi
 Provides: 
@@ -86,7 +86,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Package: uwsgi-python3-plugin
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread uwsgi +python3-light
+Depends: +libc uwsgi +python3-light
 Conflicts: 
 Menu-Depends: uwsgi
 Provides: 
@@ -106,7 +106,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Package: uwsgi-luci-support
 Submenu: Web Servers/Proxies
 Version: 2.0.20-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread uwsgi +uwsgi-syslog-plugin +uwsgi-cgi-plugin
+Depends: +libc uwsgi +uwsgi-syslog-plugin +uwsgi-cgi-plugin
 Conflicts: 
 Menu-Depends: uwsgi
 Provides: 

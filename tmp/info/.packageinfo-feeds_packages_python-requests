@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-requests/Makefile
 Package: python3-requests
 Submenu: Python
 Version: 2.28.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-chardet +python3-idna +python3-urllib3 +python3-certifi
+Depends: +libc +python3-light +python3-chardet +python3-idna +python3-urllib3 +python3-certifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -17,14 +17,14 @@ License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   Requests is the only Non-GMO HTTP library for Python, safe for human consumption
-https://2.python-requests.org/
+https://requests.readthedocs.io
 Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: python3-requests-src
 Submenu: Python
 Version: 2.28.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ Type: ipkg
 Description:       Requests is the only Non-GMO HTTP library for Python, safe for human consumption
 
     This package contains the Python source files for python3-requests.
-https://2.python-requests.org/
+https://requests.readthedocs.io
 Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 Config:

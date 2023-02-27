@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-pycrate/Makefile
 Package: python3-pycrate
 Submenu: Python
 Version: 0.5.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ David Bauer <mail@david-bauer.net>
 Package: python3-pycrate-src
 Submenu: Python
 Version: 0.5.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

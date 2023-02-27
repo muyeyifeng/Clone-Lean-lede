@@ -8,7 +8,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -34,7 +34,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -63,11 +63,13 @@ Build firmware images for ASUS RT-AC56U
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_asus_rt-ac68u
 Target-Profile-Name: ASUS RT-AC68U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-ac68u
 
@@ -77,11 +79,13 @@ Build firmware images for ASUS RT-AC68U
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_asus_rt-ac87u
 Target-Profile-Name: ASUS RT-AC87U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-ac87u
 
@@ -91,11 +95,13 @@ Build firmware images for ASUS RT-AC87U
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_asus_rt-n18u
 Target-Profile-Name: ASUS RT-N18U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-n18u
 
@@ -105,17 +111,21 @@ Build firmware images for ASUS RT-N18U
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_buffalo_wxr-1900dhp
 Target-Profile-Name: Buffalo WXR-1900DHP
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: buffalo,wxr-1900dhp
 
 
 Target-Profile-Description:
 Build firmware images for Buffalo WXR-1900DHP
+
+
 
 
 
@@ -133,6 +143,8 @@ Build firmware images for Buffalo WZR-600DHP2
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_buffalo_wzr-900dhp
@@ -144,6 +156,8 @@ Target-Profile-SupportedDevices: buffalo,wzr-900dhp
 
 Target-Profile-Description:
 Build firmware images for Buffalo WZR-900DHP
+
+
 
 
 
@@ -161,6 +175,8 @@ Build firmware images for Buffalo WZR-1750DHP
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_dlink_dir-885l
@@ -172,6 +188,8 @@ Target-Profile-SupportedDevices: dlink,dir-885l
 
 Target-Profile-Description:
 Build firmware images for D-Link DIR-885L
+
+
 
 
 
@@ -189,6 +207,8 @@ Build firmware images for Linksys EA6300 v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_ea6500-v2
@@ -200,6 +220,8 @@ Target-Profile-SupportedDevices: linksys,ea6500-v2
 
 Target-Profile-Description:
 Build firmware images for Linksys EA6500 v2
+
+
 
 
 
@@ -217,6 +239,8 @@ Build firmware images for Linksys EA9200 v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_ea9500
@@ -231,17 +255,21 @@ Build firmware images for Linksys EA9500
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_luxul_abr-4500
 Target-Profile-Name: Luxul ABR-4500
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: luxul,abr-4500
 
 
 Target-Profile-Description:
 Build firmware images for Luxul ABR-4500
+
+
 
 
 
@@ -259,17 +287,21 @@ Build firmware images for Luxul XAP-1610
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_luxul_xbr-4500
 Target-Profile-Name: Luxul XBR-4500
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: luxul,xbr-4500
 
 
 Target-Profile-Description:
 Build firmware images for Luxul XBR-4500
+
+
 
 
 
@@ -287,6 +319,8 @@ Build firmware images for Luxul XWR-3150
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_meraki_mr32
@@ -298,6 +332,8 @@ Target-Profile-SupportedDevices: meraki,mr32
 
 Target-Profile-Description:
 Build firmware images for Meraki MR32
+
+
 
 
 
@@ -315,6 +351,8 @@ Build firmware images for NETGEAR R6250
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_r6300-v2
@@ -329,17 +367,21 @@ Build firmware images for NETGEAR R6300 v2
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_r7000
 Target-Profile-Name: NETGEAR R7000
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: netgear,r7000
 
 
 Target-Profile-Description:
 Build firmware images for NETGEAR R7000
+
+
 
 
 
@@ -357,6 +399,8 @@ Build firmware images for NETGEAR R7900
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_r8000
@@ -368,6 +412,8 @@ Target-Profile-SupportedDevices: netgear,r8000
 
 Target-Profile-Description:
 Build firmware images for NETGEAR R8000
+
+
 
 
 
@@ -385,6 +431,8 @@ Build firmware images for NETGEAR R8500
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_smartrg_sr400ac
@@ -399,6 +447,8 @@ Build firmware images for SmartRG SR400ac
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_phicomm_k3
@@ -410,6 +460,8 @@ Target-Profile-SupportedDevices: phicomm,k3
 
 Target-Profile-Description:
 Build firmware images for PHICOMM K3
+
+
 
 
 

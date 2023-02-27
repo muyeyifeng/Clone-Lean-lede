@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/telephony/dahdi-tools/Makefile
 Package: dahdi-cfg
 Submenu: Telephony
 Version: 3.1.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dahdi +libpthread +dahdi-tools-libtonezone
+Depends: +libc +kmod-dahdi +libpthread +dahdi-tools-libtonezone
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 Package: dahdi-monitor
 Submenu: Telephony
 Version: 3.1.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dahdi
+Depends: +libc +kmod-dahdi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ Vittorio Gambaletta <openwrt@vittgam.net>
 Package: dahdi-tools-libtonezone
 Submenu: Telephony
 Version: 3.1.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dahdi
+Depends: +libc +kmod-dahdi
 Conflicts: 
 Menu-Depends: 
 Provides: 

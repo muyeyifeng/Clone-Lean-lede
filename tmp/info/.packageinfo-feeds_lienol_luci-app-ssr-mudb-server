@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ssr-mudb-server
 Submenu: 3. Applications
 Version: 11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium +luci-lib-jsonc +python3
+Depends: +libc +libsodium +luci-lib-jsonc +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for SSR Mudb Server
 Package: luci-i18n-ssr-mudb-server-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-mudb-server
+Depends: +libc luci-app-ssr-mudb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/pcmciautils/Makefile
 
 Package: pcmciautils
 Version: 018-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysfs @PCMCIA_SUPPORT
+Depends: +libc +libsysfs @PCMCIA_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/dmidecode/Makefile
 
 Package: dmidecode
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86||TARGET_x86_64)
+Version: 3.4-1
+Depends: +libc @(TARGET_x86||TARGET_x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: packages
 Title: Displays BIOS informations.
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: dmidecode-3.2.tar.xz
+Source: dmidecode-3.4.tar.xz
 License: GPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

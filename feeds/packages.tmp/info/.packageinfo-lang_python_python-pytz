@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-pytz/Makefile
 
 Package: python3-pytz
 Submenu: Python
-Version: 2022.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Version: 2022.7-1
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: World timezone definitions, modern and historical
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: pytz-2022.5.tar.gz
+Source: pytz-2022.7.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -23,8 +23,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 
 Package: python3-pytz-src
 Submenu: Python
-Version: 2022.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2022.7-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: base
 Title: World timezone definitions, modern and historical (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: pytz-2022.5.tar.gz
+Source: pytz-2022.7.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg

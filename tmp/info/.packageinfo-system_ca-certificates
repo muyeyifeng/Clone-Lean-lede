@@ -1,8 +1,8 @@
 Source-Makefile: package/system/ca-certificates/Makefile
 
 Package: ca-bundle
-Version: 20210119-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 20211016-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: ca-certs
@@ -11,15 +11,15 @@ Category: Base system
 Repository: base
 Title: System CA certificates as a bundle
 Maintainer: 
-Source: ca-certificates_20210119.tar.xz
+Source: ca-certificates_20211016.tar.xz
 Type: ipkg
 Description: System CA certificates as a bundle
 
 @@
 
 Package: ca-certificates
-Version: 20210119-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 20211016-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: ca-certs
@@ -28,7 +28,7 @@ Category: Base system
 Repository: base
 Title: System CA certificates
 Maintainer: 
-Source: ca-certificates_20210119.tar.xz
+Source: ca-certificates_20211016.tar.xz
 Type: ipkg
 Description: System CA certificates
 

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/openconnect/Makefile
 Package: openconnect
 Submenu: VPN
 Version: 9.01-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +kmod-tun +resolveip +vpnc-scripts +OPENCONNECT_OPENSSL:libopenssl +OPENCONNECT_OPENSSL:p11-kit +OPENCONNECT_OPENSSL:libp11 +OPENCONNECT_GNUTLS:libgnutls +OPENCONNECT_GNUTLS:libtasn1 +OPENCONNECT_STOKEN:libstoken +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libxml2 +kmod-tun +resolveip +vpnc-scripts +OPENCONNECT_OPENSSL:libopenssl +OPENCONNECT_OPENSSL:p11-kit +OPENCONNECT_OPENSSL:libp11 +OPENCONNECT_GNUTLS:libgnutls +OPENCONNECT_GNUTLS:libtasn1 +OPENCONNECT_STOKEN:libstoken +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

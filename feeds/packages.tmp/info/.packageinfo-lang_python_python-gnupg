@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-gnupg/Makefile
 Package: python3-gnupg
 Submenu: Python
 Version: 0.4.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +python3-light +python3-logging
+Depends: +libc +gnupg +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: python3-gnupg-src
 Submenu: Python
 Version: 0.4.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

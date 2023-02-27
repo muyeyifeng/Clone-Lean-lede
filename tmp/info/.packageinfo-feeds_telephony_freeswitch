@@ -5,7 +5,7 @@ Package: freeswitch
 Menu: 1
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libstdcpp +!BUSYBOX_DEFAULT_SU:shadow-utils +!BUSYBOX_DEFAULT_SU:shadow-su +@OPENSSL_WITH_DEPRECATED +FS_WITH_FREETYPE:libfreetype +FS_WITH_ODBC:unixodbc +FS_WITH_PNG:libpng +libcurl +libedit +libopenssl +libpcre +libpthread +librt +libspandsp3 +libspeex +libspeexdsp +libsqlite3 +libuuid +sofia-sip +zlib
+Depends: +libc +BUILD_NLS:libiconv-full +libstdcpp +!BUSYBOX_DEFAULT_SU:shadow-utils +!BUSYBOX_DEFAULT_SU:shadow-su +@OPENSSL_WITH_DEPRECATED +FS_WITH_FREETYPE:libfreetype +FS_WITH_ODBC:unixodbc +FS_WITH_PNG:libpng +libcurl +libedit +libopenssl +libpcre +libpthread +librt +libspandsp3 +libspeex +libspeexdsp +libsqlite3 +libuuid +sofia-sip +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Config:
 Package: freeswitch-misc-perl-esl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-perl-esl:perlbase-autoloader +PACKAGE_freeswitch-misc-perl-esl:perlbase-data +PACKAGE_freeswitch-misc-perl-esl:perlbase-dynaloader @PERL_THREADS
+Depends: +libc freeswitch +PACKAGE_freeswitch-misc-perl-esl:perlbase-autoloader +PACKAGE_freeswitch-misc-perl-esl:perlbase-data +PACKAGE_freeswitch-misc-perl-esl:perlbase-dynaloader @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-misc-python3-esl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-misc-python3-esl:python3-light
+Depends: +libc freeswitch +PACKAGE_freeswitch-misc-python3-esl:python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-misc-timezones
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97,7 +97,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-curl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -122,7 +122,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-insideout
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -147,7 +147,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-minimal
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -172,7 +172,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-rayo
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -197,7 +197,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-sbc
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -222,7 +222,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-softphone
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -247,7 +247,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-testing
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -272,7 +272,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-example-vanilla
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -297,7 +297,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-de
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -318,7 +318,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-en
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -339,7 +339,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-es
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -360,7 +360,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-fr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -381,7 +381,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-he
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -402,7 +402,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-pt
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -423,7 +423,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-ru
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -444,7 +444,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-lang-sv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -465,7 +465,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-misc-fonts
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -486,7 +486,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-misc-grammar
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -508,7 +508,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-misc-images
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -529,7 +529,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-abstraction
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -551,7 +551,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-alsa
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-alsa:alsa-lib
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -572,7 +572,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-amr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -593,7 +593,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-amrwb
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -614,7 +614,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-av
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-av:libffmpeg-full @BROKEN @x86_64
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-av:libffmpeg-full @BROKEN @x86_64
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -635,7 +635,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-avmd
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -657,7 +657,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-b64
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -678,7 +678,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-basic
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -699,7 +699,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-bert
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -720,7 +720,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-blacklist
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -741,7 +741,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-callcenter
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -762,7 +762,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cdr-csv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -783,7 +783,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cdr-mongodb
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -804,7 +804,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cdr-pg-csv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cdr-pg-csv:libpq
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-cdr-pg-csv:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -825,7 +825,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cdr-sqlite
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -846,7 +846,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cidlookup
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -868,7 +868,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-clearmode
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -889,7 +889,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-cluechoo
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-cluechoo:libncurses
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-cluechoo:libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -910,7 +910,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-commands
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -931,7 +931,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-conference
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -952,7 +952,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-console
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -973,7 +973,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-curl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -994,7 +994,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-dahdi-codec
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1015,7 +1015,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-db
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1037,7 +1037,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-dialplan-asterisk
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1058,7 +1058,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-dialplan-directory
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1079,7 +1079,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-dialplan-xml
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1100,7 +1100,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-directory
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1121,7 +1121,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-distributor
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1142,7 +1142,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-dptools
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1163,7 +1163,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-easyroute
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1184,7 +1184,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-enum
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-enum:libldns
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-enum:libldns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1205,7 +1205,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-erlang-event
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-erlang-event:erlang
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-erlang-event:erlang
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1226,7 +1226,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-esf
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1247,7 +1247,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-esl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1268,7 +1268,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-event-multicast
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1289,7 +1289,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-event-socket
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1310,7 +1310,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-event-test
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1331,7 +1331,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-event-zmq
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1352,7 +1352,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-expr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1373,7 +1373,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-fail2ban
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1394,7 +1394,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-fifo
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1415,7 +1415,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-format-cdr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1436,7 +1436,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-fsk
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1458,7 +1458,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-fsv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1480,7 +1480,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-g723-1
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1501,7 +1501,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-g729
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1522,7 +1522,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-graylog2
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1543,7 +1543,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-gsmopen
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-gsmopen:gsmlib +PACKAGE_freeswitch-mod-gsmopen:libctb +PACKAGE_freeswitch-mod-gsmopen:libjpeg-turbo +PACKAGE_freeswitch-mod-gsmopen:libtiff
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-gsmopen:gsmlib +PACKAGE_freeswitch-mod-gsmopen:libctb +PACKAGE_freeswitch-mod-gsmopen:libjpeg-turbo +PACKAGE_freeswitch-mod-gsmopen:libtiff
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1565,7 +1565,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-h26x
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1586,7 +1586,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-hash
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1608,7 +1608,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-hiredis
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-hiredis:libhiredis
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-hiredis:libhiredis
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1629,7 +1629,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-httapi
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1651,7 +1651,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-http-cache
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1673,7 +1673,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-isac
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @arm||i386||mips||mips64||mips64el||mipsel||x86_64
+Depends: +libc freeswitch @arm||i386||mips||mips64||mips64el||mipsel||x86_64
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1694,7 +1694,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-json-cdr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1715,7 +1715,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-kazoo
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-kazoo:erlang
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-kazoo:erlang
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1736,7 +1736,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-lcr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1757,7 +1757,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-ldap
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-ldap:libopenldap
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1778,7 +1778,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-local-stream
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1799,7 +1799,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-logfile
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1820,7 +1820,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-loopback
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1841,7 +1841,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-lua
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-lua:liblua
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-lua:liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1862,7 +1862,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-mariadb
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-mariadb:libmariadb
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-mariadb:libmariadb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1883,7 +1883,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-mp4v
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1904,7 +1904,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-native-file
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1925,7 +1925,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-nibblebill
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1947,7 +1947,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-odbc-cdr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1968,7 +1968,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-opus
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opus:libopus
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-opus:libopus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1989,7 +1989,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-opusfile
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-opusfile:libopusenc +PACKAGE_freeswitch-mod-opusfile:libopusfile
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-opusfile:libopusenc +PACKAGE_freeswitch-mod-opusfile:libopusfile
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2010,7 +2010,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-oreka
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2032,7 +2032,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-perl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-perl:libdb47 +PACKAGE_freeswitch-mod-perl:libgdbm +PACKAGE_freeswitch-mod-perl:perlbase-essential @PERL_THREADS
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-perl:libdb47 +PACKAGE_freeswitch-mod-perl:libgdbm +PACKAGE_freeswitch-mod-perl:perlbase-essential @PERL_THREADS
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2053,7 +2053,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-pgsql
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pgsql:libpq
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2074,7 +2074,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-png
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_PNG
+Depends: +libc freeswitch @FS_WITH_PNG
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2095,7 +2095,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-pocketsphinx
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-pocketsphinx:libsamplerate
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-pocketsphinx:libsamplerate
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2117,7 +2117,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-portaudio
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio:portaudio
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-portaudio:portaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2138,7 +2138,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-portaudio-stream
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-portaudio-stream:portaudio
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-portaudio-stream:portaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2159,7 +2159,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-posix-timer
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2180,7 +2180,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-prefix
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2202,7 +2202,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-python3
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-python3:python3-light
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-python3:python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2223,7 +2223,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-radius-cdr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2244,7 +2244,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-random
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2266,7 +2266,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-raven
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2287,7 +2287,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-rayo
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-rayo:freeswitch-mod-ssml
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-rayo:freeswitch-mod-ssml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2308,7 +2308,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-redis
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2330,7 +2330,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-rss
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2351,7 +2351,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-rtc
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2372,7 +2372,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-rtmp
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2393,7 +2393,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-de
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2414,7 +2414,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-en
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2435,7 +2435,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-es
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2456,7 +2456,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-es-ar
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2477,7 +2477,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-fa
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2498,7 +2498,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-fr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2519,7 +2519,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-he
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2540,7 +2540,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-hr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2561,7 +2561,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-hu
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2582,7 +2582,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-it
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2603,7 +2603,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-ja
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2624,7 +2624,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-nl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2645,7 +2645,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-pl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2666,7 +2666,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-pt
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2687,7 +2687,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-ru
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2708,7 +2708,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-sv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2729,7 +2729,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-th
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2750,7 +2750,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-say-zh
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2771,7 +2771,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-shell-stream
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2792,7 +2792,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-shout
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-shout:lame-lib +PACKAGE_freeswitch-mod-shout:libmpg123 +PACKAGE_freeswitch-mod-shout:libshout
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-shout:lame-lib +PACKAGE_freeswitch-mod-shout:libmpg123 +PACKAGE_freeswitch-mod-shout:libshout
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2813,7 +2813,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-signalwire
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-signalwire:signalwire-client-c
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-signalwire:signalwire-client-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2834,7 +2834,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-skinny
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2855,7 +2855,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-sms
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2877,7 +2877,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-snapshot
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2899,7 +2899,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-sndfile
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-sndfile:libsndfile
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-sndfile:libsndfile
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2920,7 +2920,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-snmp
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-snmp:libnetsnmp
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-snmp:libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2941,7 +2941,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-snom
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2962,7 +2962,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-sofia
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2983,7 +2983,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-sonar
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3005,7 +3005,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-spandsp
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-spandsp:libjpeg-turbo +PACKAGE_freeswitch-mod-spandsp:liblzma +PACKAGE_freeswitch-mod-spandsp:libtiff
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-spandsp:libjpeg-turbo +PACKAGE_freeswitch-mod-spandsp:liblzma +PACKAGE_freeswitch-mod-spandsp:libtiff
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3027,7 +3027,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-spy
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3048,7 +3048,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-ssml
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3070,7 +3070,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-stress
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3091,7 +3091,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-syslog
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3112,7 +3112,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-theora
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3133,7 +3133,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-tone-stream
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3154,7 +3154,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-translate
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3175,7 +3175,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-tts-commandline
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3196,7 +3196,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-valet-parking
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3217,7 +3217,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-verto
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-verto:libks
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-verto:libks
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3238,7 +3238,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-video-filter
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3259,7 +3259,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-vmd
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3280,7 +3280,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-voicemail
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3301,7 +3301,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-voicemail-ivr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3322,7 +3322,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-xml-cdr
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3343,7 +3343,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-xml-curl
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3365,7 +3365,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-xml-ldap
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-xml-ldap:libopenldap
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-xml-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3386,7 +3386,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-xml-rpc
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3407,7 +3407,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-xml-scgi
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3428,7 +3428,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-yaml
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-mod-yaml:libyaml
+Depends: +libc freeswitch +PACKAGE_freeswitch-mod-yaml:libyaml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3449,7 +3449,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-mod-yuv
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch @FS_WITH_LIBYUV
+Depends: +libc freeswitch @FS_WITH_LIBYUV
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3470,7 +3470,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-fs-cli
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3493,7 +3493,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-fs-encode
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-native-file +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-sndfile +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-spandsp
+Depends: +libc freeswitch +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-native-file +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-sndfile +PACKAGE_freeswitch-util-fs-encode:freeswitch-mod-spandsp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3515,7 +3515,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-fs-ivrd
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3538,7 +3538,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-fs-tts
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch
+Depends: +libc freeswitch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3559,7 +3559,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-gentls-cert
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-gentls-cert:openssl-util
+Depends: +libc freeswitch +PACKAGE_freeswitch-util-gentls-cert:openssl-util
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3580,7 +3580,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: freeswitch-util-tone2wav
 Submenu: Telephony
 Version: 1.10.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread freeswitch +PACKAGE_freeswitch-util-tone2wav:freeswitch-mod-sndfile
+Depends: +libc freeswitch +PACKAGE_freeswitch-util-tone2wav:freeswitch-mod-sndfile
 Conflicts: 
 Menu-Depends: 
 Provides: 

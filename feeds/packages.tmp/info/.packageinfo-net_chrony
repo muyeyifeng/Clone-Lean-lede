@@ -4,7 +4,7 @@ Build-Depends: pps-tools
 Package: chrony
 Submenu: Time Synchronization
 Version: 4.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread
+Depends: +libc +libcap +libpthread
 Conflicts: chrony-nts
 Menu-Depends: 
 Provides: nts
@@ -29,7 +29,7 @@ Miroslav Lichvar <mlichvar0@gmail.com>
 Package: chrony-nts
 Submenu: Time Synchronization
 Version: 4.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread +PACKAGE_chrony-nts:libgnutls +PACKAGE_chrony-nts:ca-bundle
+Depends: +libc +libcap +libpthread +PACKAGE_chrony-nts:libgnutls +PACKAGE_chrony-nts:ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: nts

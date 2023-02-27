@@ -4,7 +4,7 @@ Build-Depends: glib2
 Package: ksmbd-server
 Submenu: Filesystem
 Version: 3.4.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +kmod-fs-ksmbd +libnl-core +libnl-genl
+Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +kmod-fs-ksmbd +libnl-core +libnl-genl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ Config:
 Package: ksmbd-utils
 Submenu: Filesystem
 Version: 3.4.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Config:
 Package: ksmbd-avahi-service
 Submenu: Filesystem
 Version: 3.4.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +avahi-daemon
+Depends: +libc +avahi-daemon
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/msmtp/Makefile
 
 Package: msmtp
 Version: 1.8.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +libgnutls +ca-bundle
+Depends: +libc +BUILD_NLS:libintl-full +libgnutls +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ https://marlam.de/msmtp
 
 Package: msmtp-nossl
 Version: 1.8.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full
+Depends: +libc +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: msmtp
@@ -55,7 +55,7 @@ https://marlam.de/msmtp
 
 Package: msmtp-queue
 Version: 1.8.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +bash +msmtp
+Depends: +libc +BUILD_NLS:libintl-full +bash +msmtp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -80,7 +80,7 @@ https://marlam.de/msmtp
 
 Package: msmtp-mta
 Version: 1.8.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +msmtp
+Depends: +libc +BUILD_NLS:libintl-full +msmtp
 Conflicts: 
 Menu-Depends: 
 Provides: 

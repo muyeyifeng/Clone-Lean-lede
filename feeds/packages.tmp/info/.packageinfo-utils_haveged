@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/haveged/Makefile
 
 Package: haveged
 Version: 1.9.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libhavege
+Depends: +libc +libhavege
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 
 Package: libhavege
 Version: 1.9.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

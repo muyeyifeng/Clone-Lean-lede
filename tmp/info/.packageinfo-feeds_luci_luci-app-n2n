@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-n2n
 Submenu: 3. Applications
 Version: 3.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +n2n
+Depends: +libc +n2n
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: n2n VPN Configuration module
 Package: luci-i18n-n2n-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 3.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-n2n
+Depends: +libc luci-app-n2n
 Conflicts: 
 Menu-Depends: 
 Provides: 

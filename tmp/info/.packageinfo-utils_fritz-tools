@@ -2,7 +2,7 @@ Source-Makefile: package/utils/fritz-tools/Makefile
 
 Package: fritz-tffs
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -19,7 +19,7 @@ Description:  Utility to partially read the TFFS filesystems.
 
 Package: fritz-tffs-nand
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,7 +36,7 @@ Description:  Utility to partially read the TFFS filesystems on NAND flash.
 
 Package: fritz-caldata
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

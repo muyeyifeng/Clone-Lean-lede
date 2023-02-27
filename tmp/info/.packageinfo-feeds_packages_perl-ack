@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/perl-ack/Makefile
 
 Package: ack
 Version: 3.6.0+perl5.28-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +perl +perl-ack
+Depends: +libc +perl +perl-ack
 Conflicts: 
 Menu-Depends: 
 Provides: ack-grep
@@ -22,7 +22,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 Package: perl-ack
 Submenu: Perl
 Version: 3.6.0+perl5.28-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perl-file-next +perlbase-filetest +perlbase-if +perlbase-list +perlbase-pod +perlbase-test +perlbase-text +perlbase-term
+Depends: +libc perl +perl-file-next +perlbase-filetest +perlbase-if +perlbase-list +perlbase-pod +perlbase-test +perlbase-text +perlbase-term
 Conflicts: 
 Menu-Depends: 
 Provides: 

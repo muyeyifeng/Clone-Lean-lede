@@ -6,7 +6,7 @@ Build-Types: host
 Package: kea-libs
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +log4cplus +boost +boost-system
+Depends: +libc +libopenssl +log4cplus +boost +boost-system
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-ctrl
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +procps-ng +procps-ng-ps +kea-dhcp4 +IPV6:kea-dhcp6 +kea-dhcp-ddns
+Depends: +libc +procps-ng +procps-ng-ps +kea-dhcp4 +IPV6:kea-dhcp6 +kea-dhcp-ddns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -48,7 +48,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-dhcp4
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-dhcp6
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +kea-libs
+Depends: +libc @IPV6 +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -90,7 +90,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-dhcp-ddns
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -113,7 +113,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-admin
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-lfc
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -158,7 +158,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-perfdhcp
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -180,7 +180,7 @@ BangLang Huang<banglang.huang@foxmail.com>, Rosy Song<rosysong@rosinson.com>
 Package: kea-shell
 Submenu: IP Addresses and Names
 Version: 1.8.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kea-libs
+Depends: +libc +kea-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 

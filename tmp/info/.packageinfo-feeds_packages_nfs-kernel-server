@@ -6,7 +6,7 @@ Build-Types: host
 Package: nfs-utils
 Submenu: Filesystem
 Version: 2.5.4-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
+Depends: +libc +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Peter Wagner <tripolar@gmx.at>
 Package: nfs-utils-libs
 Submenu: Filesystem
 Version: 2.5.4-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
+Depends: +libc +libwrap +libblkid +libuuid +libtirpc +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Peter Wagner <tripolar@gmx.at>
 Package: nfs-kernel-server
 Submenu: Filesystem
 Version: 2.5.4-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +kmod-fs-nfsd +kmod-fs-nfs +NFS_KERNEL_SERVER_V4:kmod-fs-nfs-v4 +rpcbind +NFS_KERNEL_SERVER_V4:nfs-utils-libs +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
+Depends: +libc +libwrap +libblkid +libuuid +libtirpc +kmod-fs-nfsd +kmod-fs-nfs +NFS_KERNEL_SERVER_V4:kmod-fs-nfs-v4 +rpcbind +NFS_KERNEL_SERVER_V4:nfs-utils-libs +NFS_KERNEL_SERVER_V4:libkeyutils +NFS_KERNEL_SERVER_V4:libdevmapper
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Config:
 Package: nfs-kernel-server-utils
 Submenu: Filesystem
 Version: 2.5.4-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread nfs-kernel-server
+Depends: +libc nfs-kernel-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

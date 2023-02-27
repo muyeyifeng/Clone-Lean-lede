@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/routing/cjdns/Makefile
 Package: cjdns
 Submenu: Routing and Redirection
 Version: v21.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
+Depends: +libc @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ William Fleurant <meshnet@protonmail.com>
 Package: cjdns-tests
 Submenu: Routing and Redirection
 Version: v21.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt @!arc
+Depends: +libc +libpthread +librt @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 

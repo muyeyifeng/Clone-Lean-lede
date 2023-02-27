@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/faad2/Makefile
 
 Package: faad2
-Version: 2.10.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfaad2
+Version: 2.10.1-1
+Depends: +libc +libfaad2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Sound
 Repository: packages
 Title: Freeware Advanced Audio Decoder player
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: faad2-2.10.0.tar.gz
+Source: faad2-2.10.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,8 +25,8 @@ Ted Hess <thess@kitschensync.net>
 
 Package: libfaad2
 Menu: 1
-Version: 2.10.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.10.1-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -35,7 +35,7 @@ Category: Libraries
 Repository: packages
 Title: Freeware Advanced Audio Decoder library
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: faad2-2.10.0.tar.gz
+Source: faad2-2.10.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

@@ -4,8 +4,8 @@ Build-Depends: libtool
 Package: libwolfssl
 Menu: 1
 Submenu: SSL
-Version: 5.5.1-stable-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +WOLFSSL_HAS_DEVCRYPTO:kmod-cryptodev +WOLFSSL_HAS_AFALG:kmod-crypto-user
+Version: 5.5.4-stable-0
+Depends: +libc +WOLFSSL_HAS_DEVCRYPTO:kmod-cryptodev +WOLFSSL_HAS_AFALG:kmod-crypto-user
 Conflicts: libwolfsslcpu-crypto
 Menu-Depends: 
 Provides: libcyassl
@@ -16,7 +16,7 @@ Category: Libraries
 Repository: base
 Title: wolfSSL library
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.1-stable.tar.gz
+Source: wolfssl-5.5.4-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
 Type: ipkg
@@ -31,8 +31,8 @@ Config:
 
 Package: libwolfsslcpu-crypto
 Submenu: SSL
-Version: 5.5.1-stable-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @((aarch64||x86_64)&&(m||!TARGET_bcm27xx))
+Version: 5.5.4-stable-0
+Depends: +libc @((aarch64||x86_64)&&(m||!TARGET_bcm27xx))
 Conflicts: 
 Menu-Depends: 
 Provides: libwolfssl libcyassl
@@ -42,7 +42,7 @@ Category: Libraries
 Repository: base
 Title: wolfSSL library with AES CPU instructions
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.1-stable.tar.gz
+Source: wolfssl-5.5.4-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
 Type: ipkg
@@ -66,8 +66,8 @@ Config:
 
 Package: libwolfssl-benchmark
 Submenu: SSL
-Version: 5.5.1-stable-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libwolfssl
+Version: 5.5.4-stable-0
+Depends: +libc libwolfssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Category: Libraries
 Repository: base
 Title: wolfSSL Benchmark Utility
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.1-stable.tar.gz
+Source: wolfssl-5.5.4-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
 Type: ipkg

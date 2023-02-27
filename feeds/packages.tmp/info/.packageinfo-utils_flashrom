@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/flashrom/Makefile
 
 Package: flashrom
-Version: 1.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +libftdi1 +libusb-1.0 +pciutils
+Version: 1.2.1-1
+Depends: +libc +(TARGET_x86||TARGET_x86_64):dmidecode +libftdi1 +libusb-1.0 +pciutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (full)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-v1.2.tar.bz2
+Source: flashrom-v1.2.1.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,8 +25,8 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-pci
-Version: 1.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +pciutils
+Version: 1.2.1-1
+Depends: +libc +(TARGET_x86||TARGET_x86_64):dmidecode +pciutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,7 +36,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (pci)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-v1.2.tar.bz2
+Source: flashrom-v1.2.1.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -48,8 +48,8 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-spi
-Version: 1.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.2.1-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -59,7 +59,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (spi)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-v1.2.tar.bz2
+Source: flashrom-v1.2.1.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -71,8 +71,8 @@ https://www.flashrom.org/
 @@
 
 Package: flashrom-usb
-Version: 1.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libftdi1 +libusb-1.0
+Version: 1.2.1-1
+Depends: +libc +libftdi1 +libusb-1.0
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -82,7 +82,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (usb)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-v1.2.tar.bz2
+Source: flashrom-v1.2.1.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

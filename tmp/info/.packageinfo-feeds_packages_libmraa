@@ -4,7 +4,7 @@ Build-Depends: swig/host
 Package: libmraa
 Submenu: IoT
 Version: 2.2.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libjson-c @!arc @!armeb @!powerpc
+Depends: +libc +libstdcpp +libjson-c @!arc @!armeb @!powerpc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +31,7 @@ John Crispin <blogic@openwrt.org>, Hirokazu MORIKAWA <morikw2@gmail.com>
 Package: libmraa-python3
 Submenu: IoT
 Version: 2.2.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmraa +python3-light
+Depends: +libc +libmraa +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 

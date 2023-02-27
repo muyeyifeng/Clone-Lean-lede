@@ -2,7 +2,7 @@ Source-Makefile: package/boot/kexec-tools/Makefile
 
 Package: kexec-tools
 Version: 2.0.21-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kexec
+Depends: +libc +kexec
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ http://kernel.org/pub/linux/kernel/people/horms/kexec-tools/
 
 Package: kexec
 Version: 2.0.21-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(armeb||arm||i386||x86_64||powerpc64||mipsel||mips) +KEXEC_ZLIB:zlib +KEXEC_LZMA:liblzma @KERNEL_KEXEC
+Depends: +libc @(armeb||arm||i386||x86_64||powerpc64||mipsel||mips) +KEXEC_ZLIB:zlib +KEXEC_LZMA:liblzma @KERNEL_KEXEC
 Conflicts: 
 Menu-Depends: 
 Provides: 

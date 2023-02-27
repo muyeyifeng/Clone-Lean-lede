@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/admin/zabbix/Makefile
 Package: zabbix-agentd
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-agentd
@@ -27,7 +27,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-agentd-openssl
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-agentd
@@ -50,7 +50,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-agentd-gnutls
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-agentd
@@ -73,7 +73,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-extra-mac80211
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd @PACKAGE_MAC80211_DEBUGFS @KERNEL_DEBUG_FS
+Depends: +libc +zabbix-agentd @PACKAGE_MAC80211_DEBUGFS @KERNEL_DEBUG_FS
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97,7 +97,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-extra-network
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd +libubus-lua +lua
+Depends: +libc +zabbix-agentd +libubus-lua +lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -121,7 +121,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-extra-wifi
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd +libiwinfo-lua +libubus-lua +lua
+Depends: +libc +zabbix-agentd +libiwinfo-lua +libubus-lua +lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -145,7 +145,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-sender
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-sender
@@ -169,7 +169,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-sender-openssl
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-sender
@@ -192,7 +192,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-sender-gnutls
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-sender
@@ -215,7 +215,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-server
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-server
@@ -239,7 +239,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-server-openssl
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping +libopenssl
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-server
@@ -262,7 +262,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-server-gnutls
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping +libgnutls
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient @(!ZABBIX_SQLITE) +libevent2 +fping +libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-server
@@ -285,7 +285,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-server-frontend
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +php8 +php8-cgi +php8-mod-gd +php8-mod-bcmath +php8-mod-ctype +php8-mod-xmlreader +php8-mod-xmlwriter +php8-mod-session +php8-mod-sockets +php8-mod-mbstring +php8-mod-gettext +ZABBIX_POSTGRESQL:php8-mod-pgsql +ZABBIX_MYSQL:php8-mod-mysqli @(!ZABBIX_SQLITE)
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +php8 +php8-cgi +php8-mod-gd +php8-mod-bcmath +php8-mod-ctype +php8-mod-xmlreader +php8-mod-xmlwriter +php8-mod-session +php8-mod-sockets +php8-mod-mbstring +php8-mod-gettext +ZABBIX_POSTGRESQL:php8-mod-pgsql +ZABBIX_MYSQL:php8-mod-mysqli @(!ZABBIX_SQLITE)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -307,7 +307,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-proxy
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-proxy
@@ -348,7 +348,7 @@ endchoice
 Package: zabbix-proxy-openssl
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping +libopenssl
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-proxy
@@ -371,7 +371,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-proxy-gnutls
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping +libgnutls
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +ZABBIX_POSTGRESQL:libpq +ZABBIX_MYSQL:libmariadbclient +ZABBIX_SQLITE:libsqlite3 +libevent2 +fping +libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-proxy
@@ -394,7 +394,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-get
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-get
@@ -418,7 +418,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-get-openssl
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-get
@@ -441,7 +441,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Package: zabbix-get-gnutls
 Submenu: Zabbix
 Version: 6.2.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
+Depends: +libc +BUILD_NLS:libiconv-full +libpcre +zlib +libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: zabbix-get

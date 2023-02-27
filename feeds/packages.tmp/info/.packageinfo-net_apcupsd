@@ -3,7 +3,7 @@ Build-Depends: libgd
 
 Package: apcupsd
 Version: 3.14.14-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libusb-compat
+Depends: +libc +libpthread +libusb-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Othmar Truniger <github@truniger.ch>
 
 Package: apcupsd-cgi
 Version: 3.14.14-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libgd
+Depends: +libc +libpthread +libgd
 Conflicts: 
 Menu-Depends: 
 Provides: 

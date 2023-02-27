@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-oxnas/Makefile
 Package: u-boot-ox820
 Default: y if (TARGET_oxnas_Default || TARGET_oxnas_DEVICE_Default || TARGET_DEVICE_oxnas_DEVICE_Default)
 Version: 2014.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_oxnas
+Depends: +libc @!IN_SDK @TARGET_oxnas
 Conflicts: 
 Menu-Depends: 
 Provides: 

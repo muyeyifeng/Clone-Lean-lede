@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/httping/Makefile
 
 Package: httping
 Version: 2.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +libopenssl
+Depends: +libc +BUILD_NLS:libintl-full +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Marcin Jurkowski <marcin1j@gmail.com>
 
 Package: httping-nossl
 Version: 2.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full
+Depends: +libc +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

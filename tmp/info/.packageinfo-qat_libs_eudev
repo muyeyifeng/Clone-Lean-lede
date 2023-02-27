@@ -4,7 +4,7 @@ Build-Depends: gperf/host
 Package: eudev
 Menu: 1
 Version: 3.2.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +EUDEV_EXTRA_blkid:libblkid +EUDEV_EXTRA_kmod:libkmod +librt +libeudev
+Depends: +libc +EUDEV_EXTRA_blkid:libblkid +EUDEV_EXTRA_kmod:libkmod +librt +libeudev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Config:
 
 Package: libeudev
 Version: 3.2.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: libudev-zero udev
 Menu-Depends: 
 Provides: libudev

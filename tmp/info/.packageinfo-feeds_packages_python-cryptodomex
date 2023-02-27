@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-cryptodomex/Makefile
 Package: python3-cryptodomex
 Submenu: Python
 Version: 3.10.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgmp +python3
+Depends: +libc +libgmp +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Richard Yu <yurichard3839@gmail.com>
 Package: python3-cryptodomex-src
 Submenu: Python
 Version: 3.10.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

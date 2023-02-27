@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/libuhttpd/Makefile
 Package: libuhttpd-openssl
 Submenu: Networking
 Version: 3.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-openssl:libopenssl
+Depends: +libc +libev +PACKAGE_libuhttpd-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: libuhttpd
@@ -25,7 +25,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: libuhttpd-mbedtls
 Submenu: Networking
 Version: 3.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-mbedtls:libmbedtls +PACKAGE_libuhttpd-mbedtls:zlib
+Depends: +libc +libev +PACKAGE_libuhttpd-mbedtls:libmbedtls +PACKAGE_libuhttpd-mbedtls:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: libuhttpd
@@ -47,7 +47,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: libuhttpd-wolfssl
 Submenu: Networking
 Version: 3.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuhttpd-wolfssl:libwolfssl
+Depends: +libc +libev +PACKAGE_libuhttpd-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
 Provides: libuhttpd
@@ -69,7 +69,7 @@ Jianhui Zhao <zhaojh329@gmail.com>
 Package: libuhttpd-nossl
 Submenu: Networking
 Version: 3.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Depends: +libc +libev
 Conflicts: 
 Menu-Depends: 
 Provides: libuhttpd

@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/libxml2/Makefile
 Build-Types: host
 
 Package: libxml2
-Version: 2.10.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +BUILD_NLS:libiconv-full
+Version: 2.10.3-2
+Depends: +libc +libpthread +zlib +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,8 +23,8 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: libxml2-dev
 Submenu: Libraries
-Version: 2.10.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2
+Version: 2.10.3-2
+Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,8 +45,8 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: libxml2-utils
-Version: 2.10.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2
+Version: 2.10.3-2
+Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,9 +1,9 @@
 Source-Makefile: package/feeds/packages/libarchive/Makefile
 
 Package: libarchive
-Version: 3.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +liblzma +libbz2 +libexpat +libopenssl
-Conflicts: 
+Version: 3.6.2-2
+Depends: +libc +zlib +liblzma +libbz2 +libexpat +libopenssl
+Conflicts: libarchive-noopenssl
 Menu-Depends: 
 Provides: 
 Section: libs
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Multi-format archive and compression library
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.6.1.tar.xz
+Source: libarchive-3.6.2.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -21,8 +21,8 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 @@
 
 Package: libarchive-noopenssl
-Version: 3.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +liblzma +libbz2 +libexpat
+Version: 3.6.2-2
+Depends: +libc +zlib +liblzma +libbz2 +libexpat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Category: Libraries
 Repository: packages
 Title: Multi-format archive and compression library (without OpenSSL dependency)
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.6.1.tar.xz
+Source: libarchive-3.6.2.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -43,8 +43,8 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 
 Package: bsdtar
 Submenu: Compression
-Version: 3.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libarchive
+Version: 3.6.2-2
+Depends: +libc +libarchive
 Conflicts: bsdtar-noopenssl
 Menu-Depends: 
 Provides: 
@@ -53,7 +53,7 @@ Category: Utilities
 Repository: packages
 Title: tar BSD variant
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.6.1.tar.xz
+Source: libarchive-3.6.2.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -67,8 +67,8 @@ Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
 
 Package: bsdtar-noopenssl
 Submenu: Compression
-Version: 3.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libarchive-noopenssl
+Version: 3.6.2-2
+Depends: +libc +libarchive-noopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -78,7 +78,7 @@ Category: Utilities
 Repository: packages
 Title: tar BSD variant (without OpenSSL dependency)
 Maintainer: Johannes Morgenroth <morgenroth@ibr.cs.tu-bs.de>
-Source: libarchive-3.6.1.tar.xz
+Source: libarchive-3.6.2.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg

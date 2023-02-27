@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-pptp-server
 Submenu: 3. Applications
 Version: 1.0-13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pptpd +kmod-mppe +ppp
+Depends: +libc +pptpd +kmod-mppe +ppp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for PPTP VPN Server
 Package: luci-i18n-pptp-server-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pptp-server
+Depends: +libc luci-app-pptp-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

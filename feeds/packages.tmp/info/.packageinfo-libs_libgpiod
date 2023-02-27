@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/libgpiod/Makefile
 
 Package: libgpiod
-Version: 1.6.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @GPIO_SUPPORT
+Version: 1.6.3-2
+Depends: +libc @GPIO_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15,6 +15,7 @@ Source: libgpiod-1.6.3.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
+Kernel-Config: CONFIG_GPIO_CDEV=y CONFIG_GPIO_CDEV_V1=y
 Description:   C library for interacting with the linux GPIO character device
   (gpiod stands for GPIO device).
 https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git
@@ -22,8 +23,8 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: gpiod-tools
-Version: 1.6.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpiod
+Version: 1.6.3-2
+Depends: +libc +libgpiod
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,8 +44,8 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: python3-gpiod
 Submenu: Python
-Version: 1.6.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libgpiod
+Version: 1.6.3-2
+Depends: +libc +python3-light +libgpiod
 Conflicts: 
 Menu-Depends: 
 Provides: 

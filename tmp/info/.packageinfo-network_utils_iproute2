@@ -3,8 +3,8 @@ Build-Depends: iptables
 
 Package: ip-tiny
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: ip
@@ -15,7 +15,7 @@ Category: Network
 Repository: base
 Title: Routing control utility (minimal)
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Routing control utility (minimal)
@@ -25,8 +25,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: ip-full
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +libbpf +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +libbpf +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: ip
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: Routing control utility (full)
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Routing control utility (full)
@@ -46,8 +46,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: tc-mod-iptables
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxtables
+Version: 6.1.0-0
+Depends: +libc +libxtables +libbpf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,7 +57,7 @@ Category: Network
 Repository: base
 Title: Traffic control module - iptables action
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Traffic control module - iptables action
@@ -67,8 +67,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: tc-tiny
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: tc
@@ -79,7 +79,7 @@ Category: Network
 Repository: base
 Title: Traffic control utility (minimal)
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Traffic control utility (minimal)
@@ -89,8 +89,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: tc-bpf
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl +libbpf
+Version: 6.1.0-0
+Depends: +libc +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl +libbpf
 Conflicts: 
 Menu-Depends: 
 Provides: tc
@@ -100,7 +100,7 @@ Category: Network
 Repository: base
 Title: Traffic control utility (bpf)
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Traffic control utility (bpf)
@@ -110,8 +110,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: tc-full
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl +libbpf +libxtables +tc-mod-iptables
+Version: 6.1.0-0
+Depends: +libc +kmod-sched-core +(PACKAGE_devlink||PACKAGE_rdma):libmnl +libbpf +libxtables +tc-mod-iptables
 Conflicts: 
 Menu-Depends: 
 Provides: tc
@@ -121,7 +121,7 @@ Category: Network
 Repository: base
 Title: Traffic control utility (full)
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Traffic control utility (full)
@@ -131,8 +131,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: genl
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -141,7 +141,7 @@ Category: Network
 Repository: base
 Title: General netlink utility frontend
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: General netlink utility frontend
@@ -151,8 +151,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: ip-bridge
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -161,7 +161,7 @@ Category: Network
 Repository: base
 Title: Bridge configuration utility from iproute2
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Bridge configuration utility from iproute2
@@ -171,8 +171,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: ss
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl +kmod-netlink-diag
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl +kmod-netlink-diag
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -181,7 +181,7 @@ Category: Network
 Repository: base
 Title: Socket statistics utility
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Socket statistics utility
@@ -191,8 +191,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: nstat
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
+Version: 6.1.0-0
+Depends: +libc +libnl-tiny +(PACKAGE_devlink||PACKAGE_rdma):libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -201,7 +201,7 @@ Category: Network
 Repository: base
 Title: Network statistics utility
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Network statistics utility
@@ -211,8 +211,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: devlink
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmnl
+Version: 6.1.0-0
+Depends: +libc +libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -221,7 +221,7 @@ Category: Network
 Repository: base
 Title: Network devlink utility
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Network devlink utility
@@ -231,8 +231,8 @@ Russell Senior <russell@personaltelco.net>
 
 Package: rdma
 Submenu: Routing and Redirection
-Version: 5.19.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmnl
+Version: 6.1.0-0
+Depends: +libc +libmnl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -241,7 +241,7 @@ Category: Network
 Repository: base
 Title: Network rdma utility
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: iproute2-5.19.0.tar.xz
+Source: iproute2-6.1.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Network rdma utility

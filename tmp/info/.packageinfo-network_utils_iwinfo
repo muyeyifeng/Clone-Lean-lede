@@ -1,8 +1,8 @@
 Source-Makefile: package/network/utils/iwinfo/Makefile
 
 Package: libiwinfo
-Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libuci +libubus
+Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-5
+Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +libuci +libubus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -20,8 +20,8 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: libiwinfo-lua
 Submenu: Lua
-Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiwinfo +liblua
+Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-5
+Depends: +libc +libiwinfo +liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,8 +38,8 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: iwinfo
-Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiwinfo
+Version: 2021-06-28-c9b1672f5a83c8dcb14fdbaee651f775a7defe52-5
+Depends: +libc +libiwinfo
 Conflicts: 
 Menu-Depends: 
 Provides: 

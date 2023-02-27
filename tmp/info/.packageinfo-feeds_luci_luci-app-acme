@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-acme
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-compat +luci-mod-admin-full +acme
+Depends: +libc +luci-compat +luci-mod-admin-full +acme
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 Package: luci-i18n-acme-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-acme
+Depends: +libc luci-app-acme
 Conflicts: 
 Menu-Depends: 
 Provides: 

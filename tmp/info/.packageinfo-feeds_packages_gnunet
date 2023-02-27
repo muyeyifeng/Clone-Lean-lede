@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/gnunet/Makefile
 Package: gnunet
 Menu: 1
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libgcrypt +libgpg-error +libidn2 +libltdl +libsodium +libunistring +librt +zlib +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libatomic +libgcrypt +libgpg-error +libidn2 +libltdl +libsodium +libunistring +librt +zlib +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-auction
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-reclaim +jansson
+Depends: +libc gnunet +gnunet-reclaim +jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-conversation
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libgst1app +libgst1audio +libgstreamer1 +glib2 +pulseaudio-daemon +libopus +libogg
+Depends: +libc gnunet +gnunet-gns +libgst1app +libgst1audio +libgstreamer1 +glib2 +pulseaudio-daemon +libopus +libogg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -74,7 +74,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-curl
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libgnurl +jansson
+Depends: +libc gnunet +libgnurl +jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -94,7 +94,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-datastore
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns
+Depends: +libc gnunet +gnunet-gns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -114,7 +114,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-dht-cli
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -134,7 +134,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-fs
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore +libextractor
+Depends: +libc gnunet +gnunet-datastore +libextractor
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -155,7 +155,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-gns
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-vpn +iptables-mod-extra
+Depends: +libc gnunet +gnunet-vpn +iptables-mod-extra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -176,7 +176,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-gns-proxy
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-curl +libmicrohttpd-ssl +PACKAGE_libgnutls-dane:libgnutls-dane
+Depends: +libc gnunet +gnunet-gns +gnunet-curl +libmicrohttpd-ssl +PACKAGE_libgnutls-dane:libgnutls-dane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -197,7 +197,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-hostlist
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmicrohttpd-ssl +gnunet-curl +ca-certificates
+Depends: +libc gnunet +libmicrohttpd-ssl +gnunet-curl +ca-certificates
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -217,7 +217,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-messenger
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -237,7 +237,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-reclaim
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-sqlite +libpbc +libgabe +jansson
+Depends: +libc gnunet +gnunet-gns +gnunet-sqlite +libpbc +libgabe +jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -257,7 +257,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-rest
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-reclaim +libmicrohttpd-ssl +jansson
+Depends: +libc gnunet +gnunet-gns +gnunet-reclaim +libmicrohttpd-ssl +jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -278,7 +278,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-rps
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -298,7 +298,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-namestore-fcfsd
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libmicrohttpd-ssl
+Depends: +libc gnunet +gnunet-gns +libmicrohttpd-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -319,7 +319,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-dhtcache-heap
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: gnunet-dhtcache-pgsql gnunet-dhtcache-sqlite
 Menu-Depends: 
 Provides: 
@@ -339,7 +339,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-fs-heap
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore
+Depends: +libc gnunet +gnunet-datastore
 Conflicts: gnunet-fs-mysql gnunet-fs-pgsql gnunet-fs-sqlite
 Menu-Depends: 
 Provides: 
@@ -360,7 +360,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-gns-flat
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns
+Depends: +libc gnunet +gnunet-gns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -380,7 +380,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-peerstore-flat
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -400,7 +400,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-mysql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmysqlclient
+Depends: +libc gnunet +libmysqlclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -420,7 +420,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-fs-mysql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-mysql +gnunet-datastore
+Depends: +libc gnunet +gnunet-mysql +gnunet-datastore
 Conflicts: gnunet-fs-pgsql gnunet-fs-sqlite
 Menu-Depends: 
 Provides: 
@@ -440,7 +440,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-pgsql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libpq
+Depends: +libc gnunet +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -460,7 +460,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-dhtcache-pgsql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql
+Depends: +libc gnunet +gnunet-pgsql
 Conflicts: gnunet-dhtcache-sqlite
 Menu-Depends: 
 Provides: 
@@ -480,7 +480,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-fs-pgsql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql +gnunet-datastore
+Depends: +libc gnunet +gnunet-pgsql +gnunet-datastore
 Conflicts: gnunet-fs-sqlite
 Menu-Depends: 
 Provides: 
@@ -500,7 +500,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-gns-pgsql
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql +gnunet-gns
+Depends: +libc gnunet +gnunet-pgsql +gnunet-gns
 Conflicts: gnunet-gns-sqlite gnunet-gns-flat
 Menu-Depends: 
 Provides: 
@@ -520,7 +520,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-sqlite
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libsqlite3
+Depends: +libc gnunet +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -540,7 +540,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-dhtcache-sqlite
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-sqlite
+Depends: +libc gnunet +gnunet-sqlite
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -560,7 +560,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-fs-sqlite
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore +gnunet-sqlite
+Depends: +libc gnunet +gnunet-datastore +gnunet-sqlite
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -580,7 +580,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-gns-sqlite
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-sqlite
+Depends: +libc gnunet +gnunet-gns +gnunet-sqlite
 Conflicts: gnunet-gns-flat
 Menu-Depends: 
 Provides: 
@@ -600,7 +600,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-peerstore-sqlite
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-sqlite
+Depends: +libc gnunet +gnunet-sqlite
 Conflicts: gnunet-peerstore-flat
 Menu-Depends: 
 Provides: 
@@ -620,7 +620,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-transport-bluetooth
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +bluez-libs
+Depends: +libc gnunet +bluez-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -641,7 +641,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-transport-http_client
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-curl +ca-certificates
+Depends: +libc gnunet +gnunet-curl +ca-certificates
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -661,7 +661,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-transport-http_server
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmicrohttpd-ssl
+Depends: +libc gnunet +libmicrohttpd-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -682,7 +682,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-transport-tcp
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -703,7 +703,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-transport-udp
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -724,7 +724,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-transport-wlan
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
+Depends: +libc gnunet
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -744,7 +744,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-utils
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +certtool +openssl-util
+Depends: +libc gnunet +certtool +openssl-util
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -765,7 +765,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: gnunet-vpn
 Default: y if PACKAGE_gnunet
 Version: 0.14.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +kmod-tun +iptables +firewall
+Depends: +libc gnunet +kmod-tun +iptables +firewall
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/liboping/Makefile
 
 Package: liboping
 Version: 1.10.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: oping
 Version: 1.10.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liboping
+Depends: +libc +liboping
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: noping
 Version: 1.10.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liboping +libncurses
+Depends: +libc +liboping +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 

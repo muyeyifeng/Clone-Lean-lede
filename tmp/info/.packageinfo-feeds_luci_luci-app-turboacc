@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-turboacc
 Submenu: 3. Applications
 Version: x-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_luci-app-turboacc_INCLUDE_PDNSD:pdnsd-alt +PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA:kmod-tcp-bbr +PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER:dnsforwarder +PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY:dnsproxy +PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING:kmod-ipt-offload +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE:kmod-fast-classifier +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM:kmod-shortcut-fe-cm +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV:kmod-shortcut-fe-drv
+Depends: +libc +PACKAGE_luci-app-turboacc_INCLUDE_PDNSD:pdnsd-alt +PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA:kmod-tcp-bbr +PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER:dnsforwarder +PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY:dnsproxy +PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING:kmod-ipt-offload +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE:kmod-fast-classifier +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM:kmod-shortcut-fe-cm +PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV:kmod-shortcut-fe-drv
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -61,7 +61,7 @@ config PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY
 Package: luci-i18n-turboacc-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-turboacc
+Depends: +libc luci-app-turboacc
 Conflicts: 
 Menu-Depends: 
 Provides: 

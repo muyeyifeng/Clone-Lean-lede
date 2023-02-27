@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/findutils/Makefile
 
 Package: findutils
 Version: 4.9.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +findutils-find +findutils-xargs +findutils-locate
+Depends: +libc +findutils-find +findutils-xargs +findutils-locate
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ https://www.gnu.org/software/findutils/
 
 Package: findutils-find
 Version: 4.9.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ https://www.gnu.org/software/findutils/
 
 Package: findutils-locate
 Version: 4.9.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ https://www.gnu.org/software/findutils/
 
 Package: findutils-xargs
 Version: 4.9.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

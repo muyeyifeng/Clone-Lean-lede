@@ -6,8 +6,8 @@ Build-Types: host
 Package: frr
 Menu: 1
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Version: 8.4.1-1
+Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16,7 +16,7 @@ Category: Network
 Repository: base
 Title: The FRRouting (FRR) Software Routing Suite
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description:   FRRouting is free software that implements and manages various IPv4 and IPv6
@@ -31,8 +31,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-libfrr
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr +librt +libatomic +libcap +libjson-c +libyang +FRR_OPENSSL:libopenssl +FRR_SNMP:libnetsnmp
+Version: 8.4.1-1
+Depends: +libc frr +librt +libatomic +libcap +libjson-c +libyang +FRR_OPENSSL:libopenssl +FRR_SNMP:libnetsnmp
 Conflicts: quagga-libzebra
 Menu-Depends: 
 Provides: 
@@ -41,7 +41,7 @@ Category: Network
 Repository: base
 Title: zebra library
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: zebra library
@@ -54,8 +54,8 @@ Config:
 
 Package: frr-pythontools
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr +frr-libfrr +python3-base +python3-light +python3-logging
+Version: 8.4.1-1
+Depends: +libc frr +frr-libfrr +python3-base +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64,7 +64,7 @@ Category: Network
 Repository: base
 Title: Python reload tool
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: Python reload tool
@@ -75,8 +75,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 Package: frr-watchfrr
 Submenu: Routing and Redirection
 Default: y if PACKAGE_frr
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr +frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr +frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -85,7 +85,7 @@ Category: Network
 Repository: base
 Title: frr watchdog
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: frr watchdog
@@ -96,8 +96,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 Package: frr-zebra
 Submenu: Routing and Redirection
 Default: y if PACKAGE_frr
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr +frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr +frr-libfrr
 Conflicts: quagga-zebra
 Menu-Depends: 
 Provides: 
@@ -106,7 +106,7 @@ Category: Network
 Repository: base
 Title: Zebra daemon
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: Zebra daemon
@@ -116,8 +116,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-vtysh
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr +frr-libfrr +libreadline +libncurses +more
+Version: 8.4.1-1
+Depends: +libc frr +frr-libfrr +libreadline +libncurses +more
 Conflicts: quagga-vtysh
 Menu-Depends: 
 Provides: 
@@ -126,7 +126,7 @@ Category: Network
 Repository: base
 Title: integrated shell for frr routing software
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: integrated shell for frr routing software
@@ -136,8 +136,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-babeld
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -146,7 +146,7 @@ Category: Network
 Repository: base
 Title: babeld routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: babeld routing engine
@@ -156,8 +156,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-bfdd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -166,7 +166,7 @@ Category: Network
 Repository: base
 Title: bfdd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: bfdd routing engine
@@ -176,8 +176,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-bgpd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -186,7 +186,7 @@ Category: Network
 Repository: base
 Title: bgpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: bgpd routing engine
@@ -196,8 +196,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-eigrpd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -206,7 +206,7 @@ Category: Network
 Repository: base
 Title: eigrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: eigrpd routing engine
@@ -216,8 +216,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-fabricd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -226,7 +226,7 @@ Category: Network
 Repository: base
 Title: fabricd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: fabricd routing engine
@@ -236,8 +236,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-isisd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -246,7 +246,7 @@ Category: Network
 Repository: base
 Title: isisd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: isisd routing engine
@@ -256,8 +256,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-ldpd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -266,7 +266,7 @@ Category: Network
 Repository: base
 Title: ldpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: ldpd routing engine
@@ -276,8 +276,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-nhrpd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr +libcares
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr +libcares
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -286,7 +286,7 @@ Category: Network
 Repository: base
 Title: nhrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: nhrpd routing engine
@@ -296,8 +296,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-ospfd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -306,7 +306,7 @@ Category: Network
 Repository: base
 Title: ospfd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: ospfd routing engine
@@ -316,8 +316,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-ospf6d
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr @IPV6
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -326,7 +326,7 @@ Category: Network
 Repository: base
 Title: ospf6d routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: ospf6d routing engine
@@ -336,8 +336,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-pathd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -346,7 +346,7 @@ Category: Network
 Repository: base
 Title: pathd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: pathd routing engine
@@ -356,8 +356,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-pbrd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -366,7 +366,7 @@ Category: Network
 Repository: base
 Title: pbrd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: pbrd routing engine
@@ -376,8 +376,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-pimd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -386,7 +386,7 @@ Category: Network
 Repository: base
 Title: pimd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: pimd routing engine
@@ -396,8 +396,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-ripd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -406,7 +406,7 @@ Category: Network
 Repository: base
 Title: ripd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: ripd routing engine
@@ -416,8 +416,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-ripngd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr @IPV6
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -426,7 +426,7 @@ Category: Network
 Repository: base
 Title: ripngd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: ripngd routing engine
@@ -436,8 +436,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-staticd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -446,7 +446,7 @@ Category: Network
 Repository: base
 Title: staticd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: staticd routing engine
@@ -456,8 +456,8 @@ Lucian Cristian <lucian.cristian@gmail.com>
 
 Package: frr-vrrpd
 Submenu: Routing and Redirection
-Version: 8.3.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread frr frr-libfrr
+Version: 8.4.1-1
+Depends: +libc frr frr-libfrr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -466,7 +466,7 @@ Category: Network
 Repository: base
 Title: vrrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: frr-2022-10-14.tar.gz
+Source: frr-2022-11-29.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
 Type: ipkg
 Description: vrrpd routing engine

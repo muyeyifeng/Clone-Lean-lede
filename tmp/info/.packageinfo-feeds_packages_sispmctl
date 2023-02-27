@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/sispmctl/Makefile
 
 Package: libsispmctl
 Version: 4.8-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Depends: +libc +libusb-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ http://sispmctl.sourceforge.net
 
 Package: sispmctl
 Version: 4.8-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsispmctl
+Depends: +libc +libsispmctl
 Conflicts: 
 Menu-Depends: 
 Provides: 

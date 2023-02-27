@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/libiio/Makefile
 Package: libiio
 Menu: 1
 Version: 0.21-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +LIBIIO_USB_BACKEND:libusb-1.0 +LIBIIO_NETWORK_BACKEND:libavahi-client +LIBIIO_XML_BACKEND:libxml2 +BUILD_NLS:libiconv-full
+Depends: +libc +zlib +LIBIIO_USB_BACKEND:libusb-1.0 +LIBIIO_NETWORK_BACKEND:libavahi-client +LIBIIO_XML_BACKEND:libxml2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ config LIBIIO_XML_BACKEND
 
 Package: iiod
 Version: 0.21-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiio
+Depends: +libc +libiio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,7 +75,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: iio-utils
 Version: 0.21-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiio
+Depends: +libc +libiio
 Conflicts: 
 Menu-Depends: 
 Provides: 

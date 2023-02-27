@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/dbus/Makefile
 
 Package: libdbus
 Version: 1.13.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ https://dbus.freedesktop.org/
 
 Package: dbus
 Version: 1.13.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libdbus
+Depends: +libc +libexpat +libdbus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ https://dbus.freedesktop.org/
 
 Package: dbus-utils
 Version: 1.13.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dbus
+Depends: +libc +dbus
 Conflicts: 
 Menu-Depends: 
 Provides: 

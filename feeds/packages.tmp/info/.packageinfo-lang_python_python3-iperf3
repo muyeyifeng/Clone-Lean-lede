@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python3-iperf3/Makefile
 Package: python3-iperf3
 Submenu: Python
 Version: 0.1.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-ctypes +libiperf3
+Depends: +libc +python3-light +python3-ctypes +libiperf3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Nick Hainke <vincent@systemli.org>
 Package: python3-iperf3-src
 Submenu: Python
 Version: 0.1.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

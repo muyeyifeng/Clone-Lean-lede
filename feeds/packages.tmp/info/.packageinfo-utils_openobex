@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/openobex/Makefile
 
 Package: openobex
 Version: 1.7.2-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +openobex-apps +libopenobex
+Depends: +libc +openobex-apps +libopenobex
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ https://www.gitorious.org/openobex
 
 Package: openobex-apps
 Version: 1.7.2-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenobex +bluez-libs
+Depends: +libc +libopenobex +bluez-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ https://www.gitorious.org/openobex
 
 Package: libopenobex
 Version: 1.7.2-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
+Depends: +libc +libusb-1.0
 Conflicts: 
 Menu-Depends: 
 Provides: 

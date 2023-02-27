@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libudev-zero/Makefile
 
 Package: libudev-zero
 Version: 1.0.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevdev
+Depends: +libc +libevdev
 Conflicts: libudev eudev udev
 Menu-Depends: 
 Provides: libudev

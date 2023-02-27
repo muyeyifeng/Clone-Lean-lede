@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-hyperlink/Makefile
 Package: python3-hyperlink
 Submenu: Python
 Version: 21.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-codecs +python3-idna
+Depends: +libc +python3-light +python3-codecs +python3-idna
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Jeffery To <jeffery.to@gmail.com>
 Package: python3-hyperlink-src
 Submenu: Python
 Version: 21.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/file/Makefile
 
 Package: file
 Version: 5.41-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libmagic
+Depends: +libc +libmagic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 
 Package: libmagic
 Version: 5.41-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +liblzma +libbz2
+Depends: +libc +zlib +liblzma +libbz2
 Conflicts: 
 Menu-Depends: 
 Provides: 

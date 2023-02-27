@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-omcproxy
 Submenu: 3. Applications
 Version: 0.1.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +omcproxy
+Depends: +libc +omcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Shun Li <riverscn@gmail.com>
 Package: luci-i18n-omcproxy-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 0.1.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-omcproxy
+Depends: +libc luci-app-omcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -4,7 +4,7 @@ Package: baresip
 Menu: 1
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libre +librem
+Depends: +libc +libre +librem
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-aac
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-aac:fdk-aac
+Depends: +libc baresip +PACKAGE_baresip-mod-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-alsa
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-alsa:alsa-lib
+Depends: +libc baresip +PACKAGE_baresip-mod-alsa:alsa-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -68,7 +68,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-amr
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89,7 +89,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-aubridge
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110,7 +110,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-aufile
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -131,7 +131,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-ausine
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -152,7 +152,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-avcodec
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-avcodec:libffmpeg-full
+Depends: +libc baresip +PACKAGE_baresip-mod-avcodec:libffmpeg-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -173,7 +173,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-avformat
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip baresip-mod-avcodec
+Depends: +libc baresip baresip-mod-avcodec
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -194,7 +194,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-b2bua
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -215,7 +215,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-cons
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -236,7 +236,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-ctrl-dbus
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-ctrl-dbus:glib2
+Depends: +libc baresip +PACKAGE_baresip-mod-ctrl-dbus:glib2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -257,7 +257,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-ctrl-tcp
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -278,7 +278,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-debug-cmd
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -299,7 +299,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-dtls-srtp
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -320,7 +320,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-ebuacip
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -341,7 +341,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-echo
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -362,7 +362,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-evdev
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -383,7 +383,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-fakevideo
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -404,7 +404,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-g711
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -425,7 +425,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-g722
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-g722:libspandsp
+Depends: +libc baresip +PACKAGE_baresip-mod-g722:libspandsp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -446,7 +446,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-g726
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-g726:libspandsp
+Depends: +libc baresip +PACKAGE_baresip-mod-g726:libspandsp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -467,7 +467,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
+Depends: +libc baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst:glib2 +PACKAGE_baresip-mod-gst:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -488,7 +488,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-gst-video
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
+Depends: +libc baresip @AUDIO_SUPPORT +PACKAGE_baresip-mod-gst-video:glib2 +PACKAGE_baresip-mod-gst-video:libgst1app +PACKAGE_baresip-mod-gst-video:libgstreamer1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -509,7 +509,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-httpd
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -530,7 +530,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-httpreq
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -551,7 +551,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-l16
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -572,7 +572,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-mixausrc
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -593,7 +593,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-mqtt
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-mqtt:libmosquitto
+Depends: +libc baresip +PACKAGE_baresip-mod-mqtt:libmosquitto
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -614,7 +614,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-multicast
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -635,7 +635,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-mwi
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -656,7 +656,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-natpmp
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -677,7 +677,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-opus
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-opus:libopus
+Depends: +libc baresip +PACKAGE_baresip-mod-opus:libopus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -698,7 +698,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-opus-multistream
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-opus-multistream:libopus
+Depends: +libc baresip +PACKAGE_baresip-mod-opus-multistream:libopus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -719,7 +719,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-oss
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -740,7 +740,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-plc
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-plc:libspandsp
+Depends: +libc baresip +PACKAGE_baresip-mod-plc:libspandsp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -761,7 +761,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-portaudio
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-portaudio:portaudio
+Depends: +libc baresip +PACKAGE_baresip-mod-portaudio:portaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -782,7 +782,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-presence
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -803,7 +803,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-pulse
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip PACKAGE_baresip-mod-pulse:pulseaudio
+Depends: +libc baresip PACKAGE_baresip-mod-pulse:pulseaudio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -824,7 +824,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-rtcpsummary
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -845,7 +845,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-selfview
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -866,7 +866,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-serreg
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -887,7 +887,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-snapshot
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-snapshot:libpng
+Depends: +libc baresip +PACKAGE_baresip-mod-snapshot:libpng
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -908,7 +908,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-sndfile
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-sndfile:libsndfile
+Depends: +libc baresip +PACKAGE_baresip-mod-sndfile:libsndfile
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -929,7 +929,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-speex-pp
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-speex-pp:libspeexdsp
+Depends: +libc baresip +PACKAGE_baresip-mod-speex-pp:libspeexdsp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -950,7 +950,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-srtp
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -971,7 +971,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-stdio
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -992,7 +992,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-syslog
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1013,7 +1013,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-uuid
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1034,7 +1034,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-v4l2
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-v4l2:libv4l
+Depends: +libc baresip +PACKAGE_baresip-mod-v4l2:libv4l
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1055,7 +1055,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-v4l2-codec
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1076,7 +1076,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vidbridge
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1097,7 +1097,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vidinfo
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1118,7 +1118,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vidloop
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1139,7 +1139,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vumeter
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip
+Depends: +libc baresip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1160,7 +1160,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vp8
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-vp8:libvpx
+Depends: +libc baresip +PACKAGE_baresip-mod-vp8:libvpx
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1181,7 +1181,7 @@ Jiri Slachta <jiri@slachta.eu>
 Package: baresip-mod-vp9
 Submenu: Telephony
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread baresip +PACKAGE_baresip-mod-vp9:libvpx
+Depends: +libc baresip +PACKAGE_baresip-mod-vp9:libvpx
 Conflicts: 
 Menu-Depends: 
 Provides: 

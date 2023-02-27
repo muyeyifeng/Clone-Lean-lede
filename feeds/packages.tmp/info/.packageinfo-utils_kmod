@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/kmod/Makefile
 
 Package: kmod
 Version: 27-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jeff Waugh <jdub@bethesignal.org>
 
 Package: libkmod
 Version: 27-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

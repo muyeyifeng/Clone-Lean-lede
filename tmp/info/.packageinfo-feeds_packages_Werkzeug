@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/Werkzeug/Makefile
 
 Package: python3-werkzeug
 Submenu: Python
-Version: 2.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email
+Version: 2.2.2-1
+Depends: +libc +python3-light +python3-email
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: Werkzeug
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: Werkzeug-2.0.2.tar.gz
+Source: Werkzeug-2.2.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
 Type: ipkg
@@ -23,8 +23,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: python3-werkzeug-src
 Submenu: Python
-Version: 2.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.2.2-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: packages
 Title: Werkzeug (sources)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: Werkzeug-2.0.2.tar.gz
+Source: Werkzeug-2.2.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
 Type: ipkg

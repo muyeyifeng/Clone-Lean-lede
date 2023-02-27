@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/mail/pigeonhole/Makefile
 
 Package: dovecot-pigeonhole
-Version: 2.3.18-0.5.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dovecot
+Version: 2.3.18-0.5.19-1
+Depends: +libc +dovecot
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Mail
 Repository: base
 Title: Mail filtering facilities for Dovecot
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: dovecot-2.3-pigeonhole-0.5.18.tar.gz
+Source: dovecot-2.3-pigeonhole-0.5.19.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg

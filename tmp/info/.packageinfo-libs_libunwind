@@ -1,8 +1,8 @@
 Source-Makefile: package/libs/libunwind/Makefile
 
 Package: libunwind
-Version: 1.5.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @((mips||mipsel||mips64||x86_64||arm||aarch64)||(USE_GLIBC&&(powerpc||i386))) +zlib
+Version: 1.6.2-1
+Depends: +libc @((mips||mipsel||mips64||powerpc64||x86_64||arm||aarch64)||(USE_GLIBC&&(powerpc||i386))) +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: The libunwind project
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: libunwind-1.5.0.tar.gz
+Source: libunwind-1.6.2.tar.gz
 License: X11
 LicenseFiles: LICENSE
 Type: ipkg

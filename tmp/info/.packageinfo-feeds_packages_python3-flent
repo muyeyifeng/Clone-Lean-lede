@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python3-flent/Makefile
 Package: python3-flent
 Submenu: Python
 Version: 2.0.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-email +python3-urllib +python3-uuid +python3-logging +python3-xml +python3-decimal +python3-distutils +netperf +fping
+Depends: +libc +python3-light +python3-email +python3-urllib +python3-uuid +python3-logging +python3-xml +python3-decimal +python3-distutils +netperf +fping
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Nick Hainke <vincent@systemli.org>
 Package: python3-flent-src
 Submenu: Python
 Version: 2.0.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

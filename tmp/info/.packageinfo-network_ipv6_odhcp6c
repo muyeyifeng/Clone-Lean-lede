@@ -2,7 +2,7 @@ Source-Makefile: package/network/ipv6/odhcp6c/Makefile
 
 Package: odhcp6c
 Version: 2021-01-09-53f07e90b7f1da6977143a488dd5cb73a33b233b-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libubox
+Depends: +libc @IPV6 +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 

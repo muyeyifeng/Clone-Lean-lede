@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nft-qos/Makefile
 
 Package: nft-qos
 Version: 1.0.6-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-nft-netdev +kmod-nft-bridge +nftables
+Depends: +libc +kmod-nft-netdev +kmod-nft-bridge +nftables
 Conflicts: 
 Menu-Depends: 
 Provides: 

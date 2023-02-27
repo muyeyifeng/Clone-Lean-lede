@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-flask-seasurf/Makefile
 Package: python3-flask-seasurf
 Submenu: Python
 Version: 0.3.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-flask +python3-light +python3-urllib
+Depends: +libc +python3-flask +python3-light +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 Package: python3-flask-seasurf-src
 Submenu: Python
 Version: 0.3.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

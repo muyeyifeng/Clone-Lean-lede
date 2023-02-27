@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-texttable/Makefile
 
 Package: python3-texttable
 Submenu: Python
-Version: 1.6.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-codecs
+Version: 1.6.7-1
+Depends: +libc +python3-light +python3-codecs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: Module for creating simple ASCII tables
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: texttable-1.6.4.tar.gz
+Source: texttable-1.6.7.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,8 +23,8 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-texttable-src
 Submenu: Python
-Version: 1.6.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.6.7-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: packages
 Title: Module for creating simple ASCII tables (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: texttable-1.6.4.tar.gz
+Source: texttable-1.6.7.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

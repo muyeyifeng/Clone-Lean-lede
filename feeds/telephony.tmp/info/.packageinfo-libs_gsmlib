@@ -4,7 +4,7 @@ Build-Depends: gettext-full/host gettext-full
 Package: gsmlib
 Submenu: Telephony
 Version: 1.10-20140304-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Depends: +libc +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: gsm-utils
 Submenu: Telephony
 Version: 1.10-20140304-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +gsmlib
+Depends: +libc +gsmlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

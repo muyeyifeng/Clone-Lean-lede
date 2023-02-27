@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-uci/Makefile
 Package: python3-uci
 Submenu: Python
 Version: 0.9.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libuci
+Depends: +libc +python3-light +libuci
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 Package: python3-uci-src
 Submenu: Python
 Version: 0.9.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

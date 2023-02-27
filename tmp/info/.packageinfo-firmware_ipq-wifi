@@ -3,7 +3,7 @@ Source-Makefile: package/firmware/ipq-wifi/Makefile
 Package: ipq-wifi-8dev_habanero-dvk
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Do not install it for any other device!
 Package: ipq-wifi-aruba_ap-303
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk
 Menu-Depends: 
 Provides: 
@@ -53,7 +53,7 @@ Do not install it for any other device!
 Package: ipq-wifi-asus_rt-acrh17
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303
 Menu-Depends: 
 Provides: 
@@ -78,7 +78,7 @@ Do not install it for any other device!
 Package: ipq-wifi-avm_fritzrepeater-1200
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17
 Menu-Depends: 
 Provides: 
@@ -103,7 +103,7 @@ Do not install it for any other device!
 Package: ipq-wifi-buffalo_wtr-m2133hp
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200
 Menu-Depends: 
 Provides: 
@@ -128,7 +128,7 @@ Do not install it for any other device!
 Package: ipq-wifi-cellc_rtl30vw
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp
 Menu-Depends: 
 Provides: 
@@ -153,7 +153,7 @@ Do not install it for any other device!
 Package: ipq-wifi-century_wr142ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw
 Menu-Depends: 
 Provides: 
@@ -178,7 +178,7 @@ Do not install it for any other device!
 Package: ipq-wifi-devolo_magic-2-wifi-next
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac
 Menu-Depends: 
 Provides: 
@@ -203,7 +203,7 @@ Do not install it for any other device!
 Package: ipq-wifi-dlink_dap2610
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next
 Menu-Depends: 
 Provides: 
@@ -228,7 +228,7 @@ Do not install it for any other device!
 Package: ipq-wifi-edgecore_ecw5410
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610
 Menu-Depends: 
 Provides: 
@@ -253,7 +253,7 @@ Do not install it for any other device!
 Package: ipq-wifi-edgecore_oap100
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410
 Menu-Depends: 
 Provides: 
@@ -278,7 +278,7 @@ Do not install it for any other device!
 Package: ipq-wifi-engenius_eap2200
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100
 Menu-Depends: 
 Provides: 
@@ -303,7 +303,7 @@ Do not install it for any other device!
 Package: ipq-wifi-engenius_emd1
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200
 Menu-Depends: 
 Provides: 
@@ -328,7 +328,7 @@ Do not install it for any other device!
 Package: ipq-wifi-engenius_emr3500
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1
 Menu-Depends: 
 Provides: 
@@ -353,7 +353,7 @@ Do not install it for any other device!
 Package: ipq-wifi-ezviz_cs-w3-wd1200g-eup
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500
 Menu-Depends: 
 Provides: 
@@ -378,7 +378,7 @@ Do not install it for any other device!
 Package: ipq-wifi-glinet_gl-ap1300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300
 Menu-Depends: 
 Provides: 
@@ -403,7 +403,7 @@ Do not install it for any other device!
 Package: ipq-wifi-glinet_gl-s1300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300
 Menu-Depends: 
 Provides: 
@@ -428,7 +428,7 @@ Do not install it for any other device!
 Package: ipq-wifi-hiwifi_c526a
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300
 Menu-Depends: 
 Provides: 
@@ -453,7 +453,7 @@ Do not install it for any other device!
 Package: ipq-wifi-linksys_ea8300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a
 Menu-Depends: 
 Provides: 
@@ -478,7 +478,7 @@ Do not install it for any other device!
 Package: ipq-wifi-linksys_mr8300-v0
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300
 Menu-Depends: 
 Provides: 
@@ -503,7 +503,7 @@ Do not install it for any other device!
 Package: ipq-wifi-luma_wrtq-329acn
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0
 Menu-Depends: 
 Provides: 
@@ -528,7 +528,7 @@ Do not install it for any other device!
 Package: ipq-wifi-mikrotik_hap-ac2
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn
 Menu-Depends: 
 Provides: 
@@ -553,7 +553,7 @@ Do not install it for any other device!
 Package: ipq-wifi-mikrotik_sxtsq-5-ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2
 Menu-Depends: 
 Provides: 
@@ -578,7 +578,7 @@ Do not install it for any other device!
 Package: ipq-wifi-mobipromo_cm520-79f
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac
 Menu-Depends: 
 Provides: 
@@ -603,7 +603,7 @@ Do not install it for any other device!
 Package: ipq-wifi-nec_wg2600hp3
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f
 Menu-Depends: 
 Provides: 
@@ -628,7 +628,7 @@ Do not install it for any other device!
 Package: ipq-wifi-netgear_sxr80
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3
 Menu-Depends: 
 Provides: 
@@ -653,7 +653,7 @@ Do not install it for any other device!
 Package: ipq-wifi-netgear_wac510
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80
 Menu-Depends: 
 Provides: 
@@ -678,7 +678,7 @@ Do not install it for any other device!
 Package: ipq-wifi-plasmacloud_pa1200
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510
 Menu-Depends: 
 Provides: 
@@ -703,7 +703,7 @@ Do not install it for any other device!
 Package: ipq-wifi-plasmacloud_pa2200
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200
 Menu-Depends: 
 Provides: 
@@ -728,7 +728,7 @@ Do not install it for any other device!
 Package: ipq-wifi-p2w_r619ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200
 Menu-Depends: 
 Provides: 
@@ -753,7 +753,7 @@ Do not install it for any other device!
 Package: ipq-wifi-qnap_301w
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac
 Menu-Depends: 
 Provides: 
@@ -778,7 +778,7 @@ Do not install it for any other device!
 Package: ipq-wifi-qxwlan_e2600ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w
 Menu-Depends: 
 Provides: 
@@ -803,7 +803,7 @@ Do not install it for any other device!
 Package: ipq-wifi-redmi_ax6
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac
 Menu-Depends: 
 Provides: 
@@ -828,7 +828,7 @@ Do not install it for any other device!
 Package: ipq-wifi-xiaomi_ax3600
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6
 Menu-Depends: 
 Provides: 
@@ -853,7 +853,7 @@ Do not install it for any other device!
 Package: ipq-wifi-xiaomi_ax9000
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6 ipq-wifi-xiaomi_ax3600
 Menu-Depends: 
 Provides: 
@@ -878,7 +878,7 @@ Do not install it for any other device!
 Package: ipq-wifi-zte_mf263
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6 ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000
 Menu-Depends: 
 Provides: 
@@ -903,7 +903,7 @@ Do not install it for any other device!
 Package: ipq-wifi-zte_mf269
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6 ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000 ipq-wifi-zte_mf263
 Menu-Depends: 
 Provides: 
@@ -928,7 +928,7 @@ Do not install it for any other device!
 Package: ipq-wifi-tplink_xtr10890
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
 Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-asus_rt-acrh17 ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-century_wr142ac ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-hiwifi_c526a ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mikrotik_hap-ac2 ipq-wifi-mikrotik_sxtsq-5-ac ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-netgear_sxr80 ipq-wifi-netgear_wac510 ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-p2w_r619ac ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac ipq-wifi-redmi_ax6 ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000 ipq-wifi-zte_mf263 ipq-wifi-zte_mf269
 Menu-Depends: 
 Provides: 

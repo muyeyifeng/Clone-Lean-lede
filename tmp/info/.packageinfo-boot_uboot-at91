@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-at91/Makefile
 Package: u-boot-at91sam9m10g45ek_nandflash
 Default: y if (TARGET_at91_sam9x_Default || TARGET_at91_sam9x_DEVICE_atmel_at91sam9m10g45ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9m10g45ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sam9x
+Depends: +libc @!IN_SDK @TARGET_at91_sam9x
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-at91sam9x5ek_nandflash
 Default: y if (TARGET_at91_sam9x_Default || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g15ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g25ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g35ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9x25ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9x35ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g15ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g25ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g35ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9x25ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9x35ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sam9x
+Depends: +libc @!IN_SDK @TARGET_at91_sam9x
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,7 +49,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-at91sam9x5ek_mmc
 Default: y if (TARGET_at91_sam9x_Default || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g15ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g25ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9g35ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9x25ek || TARGET_at91_sam9x_DEVICE_atmel_at91sam9x35ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g15ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g25ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9g35ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9x25ek || TARGET_DEVICE_at91_sam9x_DEVICE_atmel_at91sam9x35ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sam9x
+Depends: +libc @!IN_SDK @TARGET_at91_sam9x
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72,7 +72,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d3_xplained_nandflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d3-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d3-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95,7 +95,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d3_xplained_mmc
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d3-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d3-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -118,7 +118,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d2_xplained_mmc
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d2-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d2-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -141,7 +141,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d2_xplained_spiflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d2-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d2-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -164,7 +164,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d4_xplained_mmc
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d4-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d4-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -187,7 +187,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d4_xplained_spiflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d4-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d4-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -210,7 +210,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d4_xplained_nandflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d3-xplained || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d3-xplained)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -233,7 +233,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d27_som1_ek_mmc1
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d27-som1-ek || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d27-som1-ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -256,7 +256,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d27_som1_ek_qspiflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d27-som1-ek || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d27-som1-ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -279,7 +279,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d2_ptc_ek_nandflash
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d2-ptc-ek || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d2-ptc-ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -302,7 +302,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-sama5d2_ptc_ek_mmc
 Default: y if (TARGET_at91_sama5_Default || TARGET_at91_sama5_DEVICE_microchip_sama5d2-ptc-ek || TARGET_DEVICE_at91_sama5_DEVICE_microchip_sama5d2-ptc-ek)
 Version: linux4sam-2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_sama5
+Depends: +libc @!IN_SDK @TARGET_at91_sama5
 Conflicts: 
 Menu-Depends: 
 Provides: 

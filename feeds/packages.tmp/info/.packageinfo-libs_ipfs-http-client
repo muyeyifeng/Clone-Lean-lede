@@ -3,7 +3,7 @@ Build-Depends: nlohmannjson
 
 Package: libipfs-http-client
 Version: 2021-03-01-27f6439303f7afb5b8b2e4154f4269ba296059c7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libstdcpp +libatomic
+Depends: +libc +libcurl +libstdcpp +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Leonid Esman <leonid.esman@gmail.com>
 
 Package: ipfs-http-client-tests
 Version: 2021-03-01-27f6439303f7afb5b8b2e4154f4269ba296059c7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libipfs-http-client +libcurl
+Depends: +libc +libipfs-http-client +libcurl
 Conflicts: 
 Menu-Depends: 
 Provides: 

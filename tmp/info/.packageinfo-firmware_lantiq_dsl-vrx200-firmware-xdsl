@@ -3,7 +3,7 @@ Build-Depends: bsdiff/host
 
 Package: dsl-vrx200-firmware-xdsl-a
 Version: 05.08.01.08.01.06_05.08.00.0B.01.01_osc-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_lantiq_xrx200
+Depends: +libc @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -20,7 +20,7 @@ http://www.lantiq.com/
 
 Package: dsl-vrx200-firmware-xdsl-b
 Version: 05.08.01.08.01.06_05.08.00.0B.01.01_osc-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_lantiq_xrx200
+Depends: +libc @TARGET_lantiq_xrx200
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -37,7 +37,7 @@ http://www.lantiq.com/
 
 Package: dsl-vrx200-firmware-xdsl-a-patch
 Version: 05.08.01.08.01.06_05.08.00.0B.01.01_osc-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_lantiq_xrx200 +dsl-vrx200-firmware-xdsl-b +bspatch
+Depends: +libc @TARGET_lantiq_xrx200 +dsl-vrx200-firmware-xdsl-b +bspatch
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ http://www.lantiq.com/
 
 Package: dsl-vrx200-firmware-xdsl-b-patch
 Version: 05.08.01.08.01.06_05.08.00.0B.01.01_osc-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_lantiq_xrx200 +dsl-vrx200-firmware-xdsl-a +bspatch
+Depends: +libc @TARGET_lantiq_xrx200 +dsl-vrx200-firmware-xdsl-a +bspatch
 Conflicts: 
 Menu-Depends: 
 Provides: 

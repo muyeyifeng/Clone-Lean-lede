@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/hiredis/Makefile
 
 Package: libhiredis
-Version: 1.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.1.0-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Minimalistic C client for Redis
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: hiredis-1.0.2.tar.gz
+Source: hiredis-1.1.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-pyopenssl/Makefile
 Package: python3-pyopenssl
 Submenu: Python
 Version: 21.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-cryptography +python3-six
+Depends: +libc +python3-light +python3-cryptography +python3-six
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jeffery To <jeffery.to@gmail.com>
 Package: python3-pyopenssl-src
 Submenu: Python
 Version: 21.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

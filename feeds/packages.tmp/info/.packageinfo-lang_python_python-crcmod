@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-crcmod/Makefile
 Package: python3-crcmod
 Submenu: Python
 Version: 1.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ David Bauer <mail@david-bauer.net>
 Package: python3-crcmod-src
 Submenu: Python
 Version: 1.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

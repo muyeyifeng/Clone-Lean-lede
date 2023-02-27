@@ -3,7 +3,7 @@ Build-Depends: libusb
 
 Package: dump1090
 Version: 4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librtlsdr +uhttpd +libncurses
+Depends: +libc +librtlsdr +uhttpd +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ https://github.com/flightaware/dump1090
 
 Package: view1090
 Version: 4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 

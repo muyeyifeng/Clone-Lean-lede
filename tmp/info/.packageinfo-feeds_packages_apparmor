@@ -3,7 +3,7 @@ Build-Depends: swig/host
 
 Package: libapparmor
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 Package: python3-apparmor
 Submenu: Python
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libapparmor +python3
+Depends: +libc +libapparmor +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 Package: apparmor-utils
 Submenu: AppArmor
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +libapparmor +python3-apparmor +python3 +python3-readline +python3-psutil +ss +findutils-xargs
+Depends: +libc +BUILD_NLS:libintl-full +libapparmor +python3-apparmor +python3 +python3-readline +python3-psutil +ss +findutils-xargs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 Package: apparmor-profiles
 Submenu: AppArmor
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

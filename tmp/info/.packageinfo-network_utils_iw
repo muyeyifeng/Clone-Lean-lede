@@ -2,7 +2,7 @@ Source-Makefile: package/network/utils/iw/Makefile
 
 Package: iw
 Version: 5.16-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny
+Depends: +libc +libnl-tiny
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: iw-full
 Version: 5.16-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny
+Depends: +libc +libnl-tiny
 Conflicts: 
 Menu-Depends: 
 Provides: iw

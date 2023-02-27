@@ -2,7 +2,7 @@ Source-Makefile: package/utils/dtc/Makefile
 
 Package: dtc
 Version: 1.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: fdt-utils
 Version: 1.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfdt
+Depends: +libc +libfdt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: libfdt
 Version: 1.6.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

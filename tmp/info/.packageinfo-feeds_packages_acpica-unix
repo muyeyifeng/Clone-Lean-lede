@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/acpica-unix/Makefile
 
 Package: acpica-unix
-Version: 20211217-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86_64
+Version: 20221020-2
+Depends: +libc @TARGET_x86_64
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: packages
 Title: ACPI utilities (currently acpidump) for UNIX
 Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
-Source: acpica-unix-20211217.tar.gz
+Source: acpica-unix-20221020.tar_0.gz
 License: GPL-2.0
 Type: ipkg
 Description: 	Open Source utilities for ACPI including the ACPICA Machine Language

@@ -3,7 +3,7 @@ Build-Depends: ustream-ssl
 
 Package: libuclient
 Version: 2021-05-14-6a6011df3429ffa5958d12b1327eeda4fd9daa47-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: uclient-fetch
 Version: 2021-05-14-6a6011df3429ffa5958d12b1327eeda4fd9daa47-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuclient
+Depends: +libc +libuclient
 Conflicts: 
 Menu-Depends: 
 Provides: wget

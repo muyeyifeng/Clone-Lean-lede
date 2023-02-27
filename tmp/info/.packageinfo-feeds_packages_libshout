@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libshout/Makefile
 
 Package: libshout
 Version: 2.4.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread +libopenssl
+Depends: +libc +libvorbisidec +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: libshout-nossl
 Version: 2.4.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread
+Depends: +libc +libvorbisidec +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -56,7 +56,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: libshout-full
 Version: 2.4.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread +libtheora +libopenssl
+Depends: +libc +libvorbisidec +libpthread +libtheora +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

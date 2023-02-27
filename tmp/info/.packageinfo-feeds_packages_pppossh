@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/pppossh/Makefile
 
 Package: pppossh
 Version: 2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ppp +resolveip @(PACKAGE_dropbear||PACKAGE_openssh-client)
+Depends: +libc +ppp +resolveip @(PACKAGE_dropbear||PACKAGE_openssh-client)
 Conflicts: 
 Menu-Depends: 
 Provides: 

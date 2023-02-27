@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/iputils/Makefile
 
 Package: iputils-ping
 Version: 20211215-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-crypto-md5
+Depends: +libc +kmod-crypto-md5
 Conflicts: 
 Menu-Depends: 
 Provides: iputils-ping6
@@ -25,7 +25,7 @@ Config:
 
 Package: iputils-arping
 Version: 20211215-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: iputils-clockdiff
 Version: 20211215-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65,7 +65,7 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: iputils-tracepath
 Version: 20211215-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

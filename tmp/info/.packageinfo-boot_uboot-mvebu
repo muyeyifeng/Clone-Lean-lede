@@ -4,7 +4,7 @@ Build-Types: host
 Package: u-boot-clearfog
 Default: y if (TARGET_mvebu_cortexa9_Default || TARGET_mvebu_cortexa9_DEVICE_solidrun_clearfog-base-a1 || TARGET_mvebu_cortexa9_DEVICE_solidrun_clearfog-pro-a1 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_solidrun_clearfog-base-a1 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_solidrun_clearfog-pro-a1)
 Version: 2021.01-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mvebu_cortexa9
+Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa9
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Build-Types: host
 Package: u-boot-helios4
 Default: y if (TARGET_mvebu_cortexa9_Default || TARGET_mvebu_cortexa9_DEVICE_kobol_helios4 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_kobol_helios4)
 Version: 2021.01-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mvebu_cortexa9
+Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa9
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +51,7 @@ Build-Types: host
 
 Package: u-boot-espressobin
 Version: 2021.01-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -74,7 +74,7 @@ Build-Types: host
 
 Package: u-boot-uDPU
 Version: 2021.01-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mvebu_cortexa53
+Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-lib-docker
 Submenu: 1. Collections
 Version: v0.3.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||x86_64) +luci-lib-jsonc
+Depends: +libc @(aarch64||arm||x86_64) +luci-lib-jsonc
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Build-Depends/host: 2to3/host
 
 Package: fail2ban
 Version: 0.11.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +python3-light +python3-ctypes +python3-distutils +python3-email +python3-logging +python3-sqlite3 +python3-urllib +python3-pkg-resources
+Depends: +libc +iptables +python3-light +python3-ctypes +python3-distutils +python3-email +python3-logging +python3-sqlite3 +python3-urllib +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Gerald Kerma <gandalf@gk2.net>
 
 Package: fail2ban-src
 Version: 0.11.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

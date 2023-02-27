@@ -3,7 +3,7 @@ Build-Types: host
 
 Package: dpdk
 Version: 21.05
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(x86_64||arm||aarch64) +librt +libpthread +libbpf +libpcap +libopenssl
+Depends: +libc @(x86_64||arm||aarch64) +librt +libpthread +libbpf +libpcap +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

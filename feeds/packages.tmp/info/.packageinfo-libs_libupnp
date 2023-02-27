@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/libupnp/Makefile
 Package: libupnp
 Menu: 1
 Version: 1.14.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: libupnp-sample
 Version: 1.14.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libupnp
+Depends: +libc libupnp
 Conflicts: 
 Menu-Depends: 
 Provides: 

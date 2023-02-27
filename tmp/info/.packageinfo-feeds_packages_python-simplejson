@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-simplejson/Makefile
 Package: python3-simplejson
 Submenu: Python
 Version: 3.17.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-decimal
+Depends: +libc +python3-light +python3-decimal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 Package: python3-simplejson-src
 Submenu: Python
 Version: 3.17.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

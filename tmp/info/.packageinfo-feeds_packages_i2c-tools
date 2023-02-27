@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/i2c-tools/Makefile
 
 Package: libi2c
 Version: 4.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: i2c-tools
 Version: 4.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libi2c
+Depends: +libc +libi2c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: python3-smbus
 Submenu: Python
 Version: 4.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libi2c +python3-light
+Depends: +libc +libi2c +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 

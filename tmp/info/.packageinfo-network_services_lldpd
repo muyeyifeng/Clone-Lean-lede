@@ -3,8 +3,8 @@ Source-Makefile: package/network/services/lldpd/Makefile
 Package: lldpd
 Menu: 1
 Submenu: Routing and Redirection
-Version: 1.0.9-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libevent2 +USE_GLIBC:libbsd +LLDPD_WITH_JSON:libjson-c +LLDPD_WITH_SNMP:libnetsnmp
+Version: 1.0.16-1
+Depends: +libc +libcap +libevent2 +USE_GLIBC:libbsd +LLDPD_WITH_JSON:libjson-c +LLDPD_WITH_SNMP:libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Repository: base
 Title: Link Layer Discovery Protocol daemon
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Require-User: lldp=121:lldp=129
-Source: lldpd-1.0.9.tar.gz
+Source: lldpd-1.0.16.tar.gz
 License: ISC
 Type: ipkg
 Description: 	LLDP (Link Layer Discovery Protocol) is an industry standard protocol designed

@@ -4,7 +4,7 @@ Build-Depends: openssl
 Package: openssl-qat
 Submenu: SSL
 Version: 0.6.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86_64 +libopenssl +(TARGET_x86_64&&QAT_C2XXX):quickassist-c2xxx +(TARGET_x86_64&&QAT_C3XXX):quickassist-c3xxx
+Depends: +libc @TARGET_x86_64 +libopenssl +(TARGET_x86_64&&QAT_C2XXX):quickassist-c2xxx +(TARGET_x86_64&&QAT_C3XXX):quickassist-c3xxx
 Conflicts: 
 Menu-Depends: 
 Provides: 

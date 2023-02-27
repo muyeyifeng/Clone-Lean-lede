@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-filetransfer
 Submenu: 3. Applications
 Version: 1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-fs
+Depends: +libc +luci-lib-fs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI page for IPK upload
 Package: luci-i18n-filetransfer-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-filetransfer
+Depends: +libc luci-app-filetransfer
 Conflicts: 
 Menu-Depends: 
 Provides: 

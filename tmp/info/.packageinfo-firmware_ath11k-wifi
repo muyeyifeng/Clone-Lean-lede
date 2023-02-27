@@ -1,0 +1,103 @@
+Source-Makefile: package/firmware/ath11k-wifi/Makefile
+
+Package: ath11k-wifi-edgecore-eap102
+Submenu: ath11k Board-Specific Overrides
+Version: 1
+Depends: +libc @TARGET_ipq60xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore EAP102
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edgecore EAP102 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore EAP102.
+
+Do not install it for any other device!
+
+@@
+
+Package: ath11k-wifi-gl-ax1800
+Submenu: ath11k Board-Specific Overrides
+Version: 1
+Depends: +libc @TARGET_ipq60xx
+Conflicts: ath11k-wifi-edgecore-eap102
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Gl.iNET AX1800
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Gl.iNET AX1800 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Gl.iNET AX1800.
+
+Do not install it for any other device!
+
+@@
+
+Package: ath11k-wifi-gl-axt1800
+Submenu: ath11k Board-Specific Overrides
+Version: 1
+Depends: +libc @TARGET_ipq60xx
+Conflicts: ath11k-wifi-edgecore-eap102 ath11k-wifi-gl-ax1800
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Gl.iNET AXT1800
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Gl.iNET AXT1800 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Gl.iNET AXT1800.
+
+Do not install it for any other device!
+
+@@
+
+Package: ath11k-wifi-qihoo_v6
+Submenu: ath11k Board-Specific Overrides
+Version: 1
+Depends: +libc @TARGET_ipq60xx
+Conflicts: ath11k-wifi-edgecore-eap102 ath11k-wifi-gl-ax1800 ath11k-wifi-gl-axt1800
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for QIHOO 360V6
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The QIHOO 360V6 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the QIHOO 360V6.
+
+Do not install it for any other device!
+
+@@
+
+

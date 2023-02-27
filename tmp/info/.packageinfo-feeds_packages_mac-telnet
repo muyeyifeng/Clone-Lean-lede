@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mac-telnet/Makefile
 
 Package: mac-telnet-server
 Version: 2015-09-02-37d83cbc9c07266d6c957d27bf75285b305eceab-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +31,7 @@ Config:
 
 Package: mac-telnet-client
 Version: 2015-09-02-37d83cbc9c07266d6c957d27bf75285b305eceab-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +51,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: mac-telnet-ping
 Version: 2015-09-02-37d83cbc9c07266d6c957d27bf75285b305eceab-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71,7 +71,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: mac-telnet-discover
 Version: 2015-09-02-37d83cbc9c07266d6c957d27bf75285b305eceab-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 

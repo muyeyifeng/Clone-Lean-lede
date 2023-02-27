@@ -3,7 +3,7 @@ Build-Depends: protobuf/host
 
 Package: mosh-client
 Version: 1.4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +protobuf
+Depends: +libc +libncursesw +libopenssl +protobuf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Rosen Penev <rosenp@gmail.com>
 
 Package: mosh-server
 Version: 1.4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +protobuf
+Depends: +libc +libncursesw +libopenssl +protobuf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,7 +49,7 @@ Rosen Penev <rosenp@gmail.com>
 
 Package: mosh-full
 Version: 1.4.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +mosh-client +mosh-server +perlbase-autoloader +perlbase-config +perlbase-errno +perlbase-essential +perlbase-fcntl +perlbase-getopt +perlbase-io +perlbase-posix +perlbase-selectsaver +perlbase-socket +perlbase-symbol +perlbase-text +perlbase-tie +perlbase-xsloader
+Depends: +libc +mosh-client +mosh-server +perlbase-autoloader +perlbase-config +perlbase-errno +perlbase-essential +perlbase-fcntl +perlbase-getopt +perlbase-io +perlbase-posix +perlbase-selectsaver +perlbase-socket +perlbase-symbol +perlbase-text +perlbase-tie +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
 Provides: 

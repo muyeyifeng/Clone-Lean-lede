@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/libtins/Makefile
 Package: libtins
 Menu: 1
 Version: 4.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +LIBTINS_ENABLE_PCAP:libpcap +LIBTINS_ENABLE_WPA2:libopenssl
+Depends: +libc +libstdcpp +LIBTINS_ENABLE_PCAP:libpcap +LIBTINS_ENABLE_WPA2:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mosquitto/Makefile
 
 Package: mosquitto-ssl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libopenssl +MOSQUITTO_LWS:libwebsockets-openssl +MOSQUITTO_DYNAMIC_SECURITY:cJSON
+Depends: +libc +librt +libopenssl +MOSQUITTO_LWS:libwebsockets-openssl +MOSQUITTO_DYNAMIC_SECURITY:cJSON
 Conflicts: 
 Menu-Depends: 
 Provides: mosquitto
@@ -33,7 +33,7 @@ Config:
 
 Package: mosquitto-nossl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
 Provides: mosquitto
@@ -60,7 +60,7 @@ Karl Palsson <karlp@etactica.com>
 
 Package: libmosquitto-ssl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +libcares +libopenssl
+Depends: +libc +libpthread +librt +libcares +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: libmosquitto
@@ -88,7 +88,7 @@ Karl Palsson <karlp@etactica.com>
 
 Package: libmosquitto-nossl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +libcares
+Depends: +libc +libpthread +librt +libcares
 Conflicts: 
 Menu-Depends: 
 Provides: libmosquitto
@@ -116,7 +116,7 @@ Karl Palsson <karlp@etactica.com>
 
 Package: libmosquittopp
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libmosquitto +libstdcpp
+Depends: +libc libmosquitto +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Description:  C++ Library wrapper for libmosquitto.
 
 Package: mosquitto-client-ssl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libcares +cJSON +libmosquitto-ssl
+Depends: +libc +librt +libcares +cJSON +libmosquitto-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: mosquitto-client
@@ -160,7 +160,7 @@ Karl Palsson <karlp@etactica.com>
 
 Package: mosquitto-client-nossl
 Version: 2.0.11-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libcares +cJSON +libmosquitto-nossl
+Depends: +libc +librt +libcares +cJSON +libmosquitto-nossl
 Conflicts: 
 Menu-Depends: 
 Provides: mosquitto-client

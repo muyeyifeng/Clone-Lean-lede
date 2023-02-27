@@ -4,7 +4,7 @@ Build-Depends: unixodbc/host protobuf-c/host
 Package: pdns-backend-geoip
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libmaxminddb +libyaml-cpp
+Depends: +libc +libatomic pdns +libmaxminddb +libyaml-cpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-mysql
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libmysqlclient
+Depends: +libc +libatomic pdns +libmysqlclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-odbc
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +unixodbc
+Depends: +libc +libatomic pdns +unixodbc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-pgsql
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libpq
+Depends: +libc +libatomic pdns +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -104,7 +104,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-sqlite3
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libsqlite3
+Depends: +libc +libatomic pdns +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -129,7 +129,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-ldap
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +libopenldap +krb5-libs
+Depends: +libc +libatomic pdns +libopenldap +krb5-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -154,7 +154,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-lua2
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns +lua +liblua
+Depends: +libc +libatomic pdns +lua +liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-pipe
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns
+Depends: +libc +libatomic pdns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -204,7 +204,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-backend-remote
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic pdns
+Depends: +libc +libatomic pdns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -229,7 +229,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libcurl +liblua +libopenssl +libsqlite3 +p11-kit
+Depends: +libc +libatomic +boost +boost-program_options +libcurl +liblua +libopenssl +libsqlite3 +p11-kit
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -290,7 +290,7 @@ Config:
 Package: pdns-tools
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libcurl +libmbedtls +libopenssl +p11-kit +protobuf
+Depends: +libc +libatomic +boost +boost-program_options +libcurl +libmbedtls +libopenssl +p11-kit +protobuf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -326,7 +326,7 @@ Peter van Dijk <peter.van.dijk@powerdns.com>
 Package: pdns-ixfrdist
 Submenu: IP Addresses and Names
 Version: 4.4.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +boost +boost-program_options +libopenssl +libyaml-cpp +p11-kit +protobuf
+Depends: +libc +libatomic +boost +boost-program_options +libopenssl +libyaml-cpp +p11-kit +protobuf
 Conflicts: 
 Menu-Depends: 
 Provides: 

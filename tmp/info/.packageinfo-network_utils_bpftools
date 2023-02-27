@@ -2,7 +2,7 @@ Source-Makefile: package/network/utils/bpftools/Makefile
 
 Package: libbpf
 Version: 2022-03-08-04c465fd1f561f67796dc68bbfe1aa7cfa956c3c-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Depends: +libc +libelf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Tony Ambardar <itugrok@yahoo.com>
 
 Package: bpftool-full
 Version: 2022-03-08-04c465fd1f561f67796dc68bbfe1aa7cfa956c3c-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf +libbfd +libopcodes
+Depends: +libc +libelf +libbfd +libopcodes
 Conflicts: 
 Menu-Depends: 
 Provides: bpftool
@@ -44,7 +44,7 @@ Tony Ambardar <itugrok@yahoo.com>
 
 Package: bpftool-minimal
 Version: 2022-03-08-04c465fd1f561f67796dc68bbfe1aa7cfa956c3c-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Depends: +libc +libelf
 Conflicts: 
 Menu-Depends: 
 Provides: bpftool

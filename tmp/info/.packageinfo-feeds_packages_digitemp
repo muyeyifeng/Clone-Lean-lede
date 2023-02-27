@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/digitemp/Makefile
 
 Package: digitemp
 Version: 3.7.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jasper Scholte <NightNL@outlook.com>
 
 Package: digitemp-usb
 Version: 3.7.2-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Depends: +libc +libusb-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/netperf/Makefile
 
 Package: netperf
-Version: 2.7.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.7.0-3
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,11 +11,11 @@ Category: Network
 Repository: base
 Title: Network performance measurement tool
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: netperf-2.7.0.tar.bz2
+Source: netperf-2.7.0.tar.xz
 License: Custom
 Type: ipkg
 Description: Network performance measurement tool
-http://www.netperf.org/
+https://github.com/HewlettPackard/netperf
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 

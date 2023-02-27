@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-sqlalchemy/Makefile
 Package: python3-sqlalchemy
 Submenu: Python
 Version: 1.4.22-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-urllib +python3-decimal +python3-logging
+Depends: +libc +python3-light +python3-urllib +python3-decimal +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 Package: python3-sqlalchemy-src
 Submenu: Python
 Version: 1.4.22-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

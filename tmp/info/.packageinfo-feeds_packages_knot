@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/knot/Makefile
 
 Package: knot-libs
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libgnutls +lmdb @!arc
+Version: 3.2.4-2
+Depends: +libc +libpthread +libgnutls +lmdb @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Knot DNS common DNS and DNSSEC libraries
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS common DNS and DNSSEC libraries.
@@ -20,8 +20,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 @@
 
 Package: knot-libzscanner
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!arc
+Version: 3.2.4-2
+Depends: +libc +libpthread @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ Category: Libraries
 Repository: packages
 Title: Knot DNS zone parser library
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS zone parser library.
@@ -40,8 +40,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +51,7 @@ Repository: packages
 Title: Knot DNS server with control utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
 Require-User: knot=5353:knot=5353
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	High-performance authoritative-only DNS server.
@@ -61,8 +61,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-dig
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +knot-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71,7 +71,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS advanced DNS lookup utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS advanced DNS lookup utility.
@@ -81,8 +81,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-host
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +knot-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91,7 +91,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS simple DNS lookup utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS simple DNS lookup utility.
@@ -101,8 +101,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-nsupdate
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs +knot-libzscanner
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -111,7 +111,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS dynamic DNS update utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS dynamic DNS update utility.
@@ -121,8 +121,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-zonecheck
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -131,7 +131,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS zonefile check utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS zonefile check utility.
@@ -141,8 +141,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-keymgr
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -151,7 +151,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS DNSSEC key management utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS DNSSEC key management utility.
@@ -161,8 +161,8 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-tests
 Submenu: IP Addresses and Names
-Version: 3.2.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
+Version: 3.2.4-2
+Depends: +libc +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -171,7 +171,7 @@ Category: Network
 Repository: packages
 Title: Knot DNS tests
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-3.2.2.tar.xz
+Source: knot-3.2.4.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD BSD-3-Clause OLDAP-2.8
 Type: ipkg
 Description: 	Unit tests for the Knot DNS server and libraries.

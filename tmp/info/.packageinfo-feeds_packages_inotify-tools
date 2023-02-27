@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/inotify-tools/Makefile
 
 Package: libinotifytools
 Version: 3.20.11.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: inotifywait
 Version: 3.20.11.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
+Depends: +libc +libinotifytools
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -56,7 +56,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: inotifywatch
 Version: 3.20.11.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
+Depends: +libc +libinotifytools
 Conflicts: 
 Menu-Depends: 
 Provides: 

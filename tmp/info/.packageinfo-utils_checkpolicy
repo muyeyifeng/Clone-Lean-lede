@@ -4,8 +4,8 @@ Build-Depends/host: libselinux/host
 Build-Types: host
 
 Package: checkpolicy
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 3.3-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy compiler
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: checkpolicy-3.2.tar.gz
+Source: checkpolicy-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

@@ -1,7 +1,7 @@
 Source-Makefile: package/libs/toolchain/Makefile
 
 Package: libc
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: +libgcc
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Config:
 @@
 
 Package: libgcc
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: 
 Conflicts: 
 Menu-Depends: 
@@ -74,7 +74,7 @@ Config:
 @@
 
 Package: libatomic
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: +libgcc
 Conflicts: 
 Menu-Depends: 
@@ -111,7 +111,7 @@ Config:
 @@
 
 Package: libstdcpp
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: 
 Conflicts: 
 Menu-Depends: 
@@ -148,8 +148,8 @@ Config:
 @@
 
 Package: libasan
-Version: <LIBGCC_VERSION>-3
-Depends: @USE_GLIBC +librt +libstdcpp @!mips @!mipsel @!mips64 @!mips64el @!arc
+Version: <LIBGCC_VERSION>-4
+Depends: @USE_GLIBC +librt +libstdcpp @!mips64 @!mips64el @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -185,7 +185,7 @@ Config:
 @@
 
 Package: libtsan
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: @USE_GLIBC +librt +libstdcpp @!mips @!mipsel @!mips64 @!mips64el @!arc
 Conflicts: 
 Menu-Depends: 
@@ -222,7 +222,7 @@ Config:
 @@
 
 Package: liblsan
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: @USE_GLIBC +librt +libstdcpp @!mips @!mipsel @!mips64 @!mips64el @!arc
 Conflicts: 
 Menu-Depends: 
@@ -259,8 +259,8 @@ Config:
 @@
 
 Package: libubsan
-Version: <LIBGCC_VERSION>-3
-Depends: @USE_GLIBC +librt +libstdcpp @!mips @!mipsel @!mips64 @!mips64el @!arc
+Version: <LIBGCC_VERSION>-4
+Depends: @USE_GLIBC +librt +libstdcpp @!mips64 @!mips64el @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -296,7 +296,7 @@ Config:
 @@
 
 Package: libpthread
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: +libgcc
 Conflicts: 
 Menu-Depends: 
@@ -332,7 +332,7 @@ Config:
 @@
 
 Package: libthread-db
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: @!USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -368,7 +368,7 @@ Config:
 @@
 
 Package: librt
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -404,8 +404,8 @@ Config:
 @@
 
 Package: libgfortran
-Version: <LIBGCC_VERSION>-3
-Depends:  @INSTALL_GFORTRAN
+Version: <LIBGCC_VERSION>-4
+Depends: @INSTALL_GFORTRAN
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -441,7 +441,7 @@ Config:
 @@
 
 Package: libgomp
-Version: <LIBGCC_VERSION>-3
+Version: <LIBGCC_VERSION>-4
 Depends: 
 Conflicts: 
 Menu-Depends: 
@@ -478,7 +478,7 @@ Config:
 @@
 
 Package: ldd
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: @!USE_MUSL
 Conflicts: 
 Menu-Depends: 
@@ -514,7 +514,7 @@ Config:
 @@
 
 Package: ldconfig
-Version: <LIBC_VERSION>-3
+Version: <LIBC_VERSION>-4
 Depends: @!USE_MUSL
 Conflicts: 
 Menu-Depends: 

@@ -3,8 +3,8 @@ Source-Makefile: package/feeds/packages/gnupg/Makefile
 Package: gnupg
 Menu: 1
 Submenu: Encryption
-Version: 1.4.23-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
+Version: 1.4.23-5
+Depends: +libc +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,8 +30,8 @@ http://www.gnupg.org/
 
 Package: gpgv
 Submenu: Encryption
-Version: 1.4.23-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
+Version: 1.4.23-5
+Depends: +libc +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,8 +54,8 @@ http://www.gnupg.org/
 
 Package: gnupg-utils
 Submenu: Encryption
-Version: 1.4.23-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg +libcurl
+Version: 1.4.23-5
+Depends: +libc gnupg +libcurl
 Conflicts: 
 Menu-Depends: 
 Provides: 

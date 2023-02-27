@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/apr-util/Makefile
 
 Package: libaprutil
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libapr +libexpat +libuuid +BUILD_NLS:libiconv-full
+Depends: +libc +libapr +libexpat +libuuid +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-crypto-openssl
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-crypto-openssl:libopenssl
+Depends: +libc libaprutil +PACKAGE_libaprutil-crypto-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-dbd-mysql
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-dbd-mysql:libmariadb
+Depends: +libc libaprutil +PACKAGE_libaprutil-dbd-mysql:libmariadb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-dbd-odbc
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-dbd-odbc:unixodbc
+Depends: +libc libaprutil +PACKAGE_libaprutil-dbd-odbc:unixodbc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -82,7 +82,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-dbd-pgsql
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-dbd-pgsql:libpq
+Depends: +libc libaprutil +PACKAGE_libaprutil-dbd-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -102,7 +102,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-dbd-sqlite3
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-dbd-sqlite3:libsqlite3
+Depends: +libc libaprutil +PACKAGE_libaprutil-dbd-sqlite3:libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -122,7 +122,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-dbm-gdbm
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-dbm-gdbm:libgdbm
+Depends: +libc libaprutil +PACKAGE_libaprutil-dbm-gdbm:libgdbm
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -142,7 +142,7 @@ Thomas Heil <heil@terminal-consulting.de>
 
 Package: libaprutil-ldap
 Version: 1.6.1-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libaprutil +PACKAGE_libaprutil-ldap:libopenldap
+Depends: +libc libaprutil +PACKAGE_libaprutil-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-sunxi/Makefile
 Package: u-boot-a64-olinuxino
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino || TARGET_DEVICE_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-a64-olinuxino-emmc
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino-emmc || TARGET_DEVICE_sunxi_cortexa53_DEVICE_olimex_a64-olinuxino-emmc)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino-emmc:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-olimex_a64-olinuxino-emmc:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,7 +49,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A10-OLinuXino-Lime
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_olimex_a10-olinuxino-lime || TARGET_DEVICE_sunxi_cortexa8_DEVICE_olimex_a10-olinuxino-lime)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72,7 +72,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A13-OLinuXino
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_olimex_a13-olinuxino || TARGET_DEVICE_sunxi_cortexa8_DEVICE_olimex_a13-olinuxino)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95,7 +95,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A20-OLinuXino-Lime
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime || TARGET_DEVICE_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -118,7 +118,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A20-OLinuXino-Lime2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -141,7 +141,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A20-OLinuXino-Lime2-eMMC
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime2-emmc || TARGET_DEVICE_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-lime2-emmc)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -164,7 +164,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-A20-OLinuXino_MICRO
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-micro || TARGET_DEVICE_sunxi_cortexa7_DEVICE_olimex_a20-olinuxino-micro)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -187,7 +187,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-bananapi_m2_plus_h3
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -210,7 +210,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Bananapi
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_lemaker_bananapi || TARGET_DEVICE_sunxi_cortexa7_DEVICE_lemaker_bananapi)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -233,7 +233,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-bananapi_m2_berry
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-berry || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-berry)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -256,7 +256,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Bananapi_M2_Ultra
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-ultra || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sinovoip_bananapi-m2-ultra)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -279,7 +279,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Bananapro
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_lemaker_bananapro || TARGET_DEVICE_sunxi_cortexa7_DEVICE_lemaker_bananapro)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -302,7 +302,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Cubieboard
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_cubietech_a10-cubieboard || TARGET_DEVICE_sunxi_cortexa8_DEVICE_cubietech_a10-cubieboard)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -325,7 +325,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Cubieboard2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_cubietech_cubieboard2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_cubietech_cubieboard2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -348,7 +348,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Cubietruck
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_cubietech_cubietruck || TARGET_DEVICE_sunxi_cortexa7_DEVICE_cubietech_cubietruck)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -370,7 +370,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Hummingbird_A31
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -393,7 +393,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Marsboard_A10
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_marsboard_a10-marsboard || TARGET_DEVICE_sunxi_cortexa8_DEVICE_marsboard_a10-marsboard)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -416,7 +416,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Mele_M9
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_mele_m9 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_mele_m9)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -439,7 +439,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-OLIMEX_A13_SOM
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_olimex_a13-olimex-som || TARGET_DEVICE_sunxi_cortexa8_DEVICE_olimex_a13-olimex-som)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -462,7 +462,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Linksprite_pcDuino
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_linksprite_a10-pcduino || TARGET_DEVICE_sunxi_cortexa8_DEVICE_linksprite_a10-pcduino)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -485,7 +485,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Linksprite_pcDuino3
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_linksprite_pcduino3 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_linksprite_pcduino3)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -508,7 +508,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Linksprite_pcDuino3_Nano
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_linksprite_pcduino3-nano || TARGET_DEVICE_sunxi_cortexa7_DEVICE_linksprite_pcduino3-nano)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -531,7 +531,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-Lamobo_R1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_lamobo_lamobo-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_lamobo_lamobo-r1)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -554,7 +554,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_m1_plus
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-m1-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-m1-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -577,7 +577,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-zeropi
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_friendlyarm_zeropi || TARGET_DEVICE_sunxi_cortexa7_DEVICE_friendlyarm_zeropi)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -600,7 +600,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-neo || TARGET_DEVICE_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-neo)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -623,7 +623,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo_air
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-neo-air || TARGET_DEVICE_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-neo-air)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -646,7 +646,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo_plus2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo-plus2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo-plus2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo_plus2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi_neo_plus2:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -669,7 +669,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_neo2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_friendlyarm_nanopi-neo2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi_neo2:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -692,7 +692,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-nanopi_r1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-r1)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -715,7 +715,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_zero
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-zero || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-zero)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -738,7 +738,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_r1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-r1)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -761,7 +761,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_one
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-one || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-one)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -784,7 +784,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_one_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-one-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-one-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_one_plus:arm-trusted-firmware-sunxi-h6 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-orangepi_one_plus:trusted-firmware-a-sunxi-h6 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -807,7 +807,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_pc
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-pc || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-pc)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -830,7 +830,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_pc_plus
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-pc-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-pc-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -853,7 +853,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_plus
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -876,7 +876,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_xunlong_orangepi-2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -899,7 +899,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_pc2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-pc2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-pc2)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_pc2:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-orangepi_pc2:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -921,7 +921,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-pangolin
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Depends: +libc @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -944,7 +944,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-pine64_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_pine64_pine64-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_pine64_pine64-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-pine64_plus:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-pine64_plus:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -967,7 +967,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-sopine_baseboard
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_pine64_sopine-baseboard || TARGET_DEVICE_sunxi_cortexa53_DEVICE_pine64_sopine-baseboard)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-sopine_baseboard:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-sopine_baseboard:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -990,7 +990,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-orangepi_zero_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-zero-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_xunlong_orangepi-zero-plus)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_zero_plus:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-orangepi_zero_plus:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1013,7 +1013,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 Package: u-boot-libretech_all_h3_cc_h5
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_libretech_all-h3-cc-h5 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_libretech_all-h3-cc-h5)
 Version: 2020.04
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-libretech_all_h3_cc_h5:arm-trusted-firmware-sunxi-a64 @TARGET_sunxi_cortexa53
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-libretech_all_h3_cc_h5:trusted-firmware-a-sunxi-a64 @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
 Provides: 

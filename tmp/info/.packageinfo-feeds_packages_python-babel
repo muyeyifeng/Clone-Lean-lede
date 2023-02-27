@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-babel/Makefile
 Package: python3-babel
 Submenu: Python
 Version: 2.9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-cgi +python3-decimal +python3-distutils +python3-email +python3-light +python3-pytz +python3-urllib
+Depends: +libc +python3-cgi +python3-decimal +python3-distutils +python3-email +python3-light +python3-pytz +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 Package: python3-babel-src
 Submenu: Python
 Version: 2.9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

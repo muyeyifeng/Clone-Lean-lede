@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-pagekitec
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pagekitec
+Depends: +libc +pagekitec
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Karl Palsson <karlp@tweak.net.au>
 Package: luci-i18n-pagekitec-ja
 Default: LUCI_LANG_ja||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pagekitec
+Depends: +libc luci-app-pagekitec
 Conflicts: 
 Menu-Depends: 
 Provides: 

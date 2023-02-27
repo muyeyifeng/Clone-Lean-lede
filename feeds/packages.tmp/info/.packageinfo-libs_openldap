@@ -3,8 +3,8 @@ Source-Makefile: feeds/packages/libs/openldap/Makefile
 Package: libopenldap
 Menu: 1
 Submenu: OpenLDAP
-Version: 2.6.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libsasl2 +libpthread +libuuid +OPENLDAP_DB47:libdb47 +OPENLDAP_ICU:icu
+Version: 2.6.3-1
+Depends: +libc +libopenssl +libsasl2 +libpthread +libuuid +OPENLDAP_DB47:libdb47 +OPENLDAP_ICU:icu
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: LDAP directory suite (libraries)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.6.2.tgz
+Source: openldap-2.6.3.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,8 +24,8 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: openldap-utils
 Submenu: OpenLDAP
-Version: 2.6.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenldap
+Version: 2.6.3-1
+Depends: +libc +libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Network
 Repository: base
 Title: LDAP directory suite (utilities)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.6.2.tgz
+Source: openldap-2.6.3.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg
@@ -45,8 +45,8 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: openldap-server
 Submenu: OpenLDAP
-Version: 2.6.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenldap +libuuid
+Version: 2.6.3-1
+Depends: +libc +libopenldap +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ Category: Network
 Repository: base
 Title: LDAP directory suite (server)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.6.2.tgz
+Source: openldap-2.6.3.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg

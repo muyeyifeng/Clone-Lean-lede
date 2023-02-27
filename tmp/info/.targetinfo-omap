@@ -8,7 +8,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rtc squashfs targz u
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -25,7 +25,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_ti_am335x-evm
 Target-Profile-Name: Texas Instruments AM335x EVM
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ti,am335x-evm
 
@@ -35,11 +35,13 @@ Build firmware images for Texas Instruments AM335x EVM
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ti_am335x-bone-black
 Target-Profile-Name: Texas Instruments AM335x BeagleBone Black
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ti,am335x-bone-black
 
@@ -49,11 +51,13 @@ Build firmware images for Texas Instruments AM335x BeagleBone Black
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ti_omap4-panda
 Target-Profile-Name: PandaBoard.org OMAP4 TI pandaboard
-Target-Profile-Packages: kmod-usb-net-smsc95xx 
+Target-Profile-Packages: kmod-usb-net-smsc95xx
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ti,omap4-panda
 
@@ -63,17 +67,21 @@ Build firmware images for PandaBoard.org OMAP4 TI pandaboard
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ti_omap3-beagle
 Target-Profile-Name: BeagleBoard.org OMAP3 TI beagleboard
-Target-Profile-Packages: kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-hso kmod-usb-net-kaweth kmod-usb-net-pegasus kmod-usb-net-mcs7830 kmod-usb-net-smsc95xx kmod-usb-net-dm9601-ether 
+Target-Profile-Packages: kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-hso kmod-usb-net-kaweth kmod-usb-net-pegasus kmod-usb-net-mcs7830 kmod-usb-net-smsc95xx kmod-usb-net-dm9601-ether
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ti,omap3-beagle
 
 
 Target-Profile-Description:
 Build firmware images for BeagleBoard.org OMAP3 TI beagleboard
+
+
 
 
 

@@ -2,7 +2,7 @@ Source-Makefile: package/network/utils/tcpdump/Makefile
 
 Package: tcpdump
 Version: 4.9.3-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Depends: +libc +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: tcpdump-mini
 Version: 4.9.3-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Depends: +libc +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 

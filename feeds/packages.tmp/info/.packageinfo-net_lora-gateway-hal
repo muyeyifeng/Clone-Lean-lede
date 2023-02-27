@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/lora-gateway-hal/Makefile
 
 Package: libloragw
 Version: 5.0.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-spi-dev @(!PACKAGE_lora-picogw-hal)
+Depends: +libc +kmod-spi-dev @(!PACKAGE_lora-picogw-hal)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 Package: libloragw-tests
 Submenu: LoRaWAN
 Version: 5.0.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libloragw
+Depends: +libc +libloragw
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,7 +45,7 @@ Xue Liu <liuxuenetmail@gmail.com>
 Package: libloragw-utils
 Submenu: LoRaWAN
 Version: 5.0.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libloragw
+Depends: +libc +libloragw
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,11 +1,11 @@
 Source-Makefile: package/boot/uboot-mediatek/Makefile
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7620_mt7530_rfb
 Default: y if (TARGET_ramips_mt7620_Default || TARGET_ramips_mt7620_DEVICE_ralink_mt7620a-mt7530-evb || TARGET_DEVICE_ramips_mt7620_DEVICE_ralink_mt7620a-mt7530-evb)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt7620
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt7620
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7620+MT7530 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -23,13 +23,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7620_rfb
 Default: y if (TARGET_ramips_mt7620_Default || TARGET_ramips_mt7620_DEVICE_ralink_mt7620a-evb || TARGET_DEVICE_ramips_mt7620_DEVICE_ralink_mt7620a-evb)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt7620
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt7620
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7620 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -47,13 +47,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7621_nand_rfb
 Default: y if (TARGET_ramips_mt7621_Default || TARGET_ramips_mt7621_DEVICE_mediatek_mt7621-eval-board || TARGET_DEVICE_ramips_mt7621_DEVICE_mediatek_mt7621-eval-board)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt7621
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt7621
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7621 Reference Board (NAND)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -71,13 +71,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7621_rfb
 Default: y if (TARGET_ramips_mt7621_Default || TARGET_ramips_mt7621_DEVICE_mediatek_mt7621-eval-board || TARGET_DEVICE_ramips_mt7621_DEVICE_mediatek_mt7621-eval-board)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt7621
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt7621
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86,7 +86,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7621 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -95,13 +95,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_bananapi_bpi-r64-emmc
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-emmc-2ddr @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7622-emmc-2ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110,7 +110,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi R64 (eMMC)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -119,13 +119,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_bananapi_bpi-r64-sdmmc
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-sdmmc-2ddr @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7622-sdmmc-2ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -134,7 +134,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi R64 (SDMMC)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -143,13 +143,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_bananapi_bpi-r64-snand
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_bananapi_bpi-r64 || TARGET_DEVICE_mediatek_mt7622_DEVICE_bananapi_bpi-r64)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-snand-2ddr @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7622-snand-2ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -158,7 +158,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi R64 (SNAND)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -167,13 +167,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_linksys_e8450
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_linksys_e8450-ubi || TARGET_DEVICE_mediatek_mt7622_DEVICE_linksys_e8450-ubi)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-snand-1ddr @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7622-snand-1ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -182,7 +182,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Linksys E8450
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -191,13 +191,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_rfb1
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1 || TARGET_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1-ubi || TARGET_DEVICE_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1 || TARGET_DEVICE_mediatek_mt7622_DEVICE_mediatek_mt7622-rfb1-ubi)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -206,7 +206,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7622 Reference Board 1
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -215,13 +215,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7622_ubnt_unifi-6-lr
 Default: y if (TARGET_mediatek_mt7622_Default || TARGET_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-v1-ubootmod || TARGET_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-v2-ubootmod || TARGET_DEVICE_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-v1-ubootmod || TARGET_DEVICE_mediatek_mt7622_DEVICE_ubnt_unifi-6-lr-v2-ubootmod)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7622-nor-2ddr @TARGET_mediatek_mt7622
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7622-nor-2ddr @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -230,7 +230,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Ubiquiti UniFi 6 LR
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -239,13 +239,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7623n_bpir2
 Default: y if (TARGET_mediatek_mt7623_Default || TARGET_mediatek_mt7623_DEVICE_bananapi_bpi-r2 || TARGET_DEVICE_mediatek_mt7623_DEVICE_bananapi_bpi-r2)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7623
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7623
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -254,7 +254,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Banana Pi R2 (mt7623)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -263,13 +263,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7623a_unielec_u7623
 Default: y if (TARGET_mediatek_mt7623_Default || TARGET_mediatek_mt7623_DEVICE_unielec_u7623-02 || TARGET_DEVICE_mediatek_mt7623_DEVICE_unielec_u7623-02)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7623
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7623
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -278,7 +278,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for UniElec U7623 (mt7623)
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -287,13 +287,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7628_rfb
 Default: y if (TARGET_ramips_mt76x8_Default || TARGET_ramips_mt76x8_DEVICE_mediatek_mt7628an-eval-board || TARGET_DEVICE_ramips_mt76x8_DEVICE_mediatek_mt7628an-eval-board)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt76x8
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt76x8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -302,7 +302,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7628 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -311,13 +311,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-ravpower_rp-wd009
 Default: y if (TARGET_ramips_mt76x8_Default || TARGET_ramips_mt76x8_DEVICE_ravpower_rp-wd009 || TARGET_DEVICE_ramips_mt76x8_DEVICE_ravpower_rp-wd009)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_ramips_mt76x8
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_ramips_mt76x8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -326,7 +326,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for RAVPower RP-WD009
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -335,13 +335,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7629_rfb
 Default: y if (TARGET_mediatek_mt7629_Default || TARGET_mediatek_mt7629_DEVICE_mediatek_mt7629-rfb || TARGET_DEVICE_mediatek_mt7629_DEVICE_mediatek_mt7629-rfb)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7629
+Version: 2023.01
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7629
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -350,7 +350,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7629 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -359,13 +359,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7986_bananapi_bpi-r3-emmc
 Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r3 || TARGET_DEVICE_mediatek_filogic_DEVICE_bananapi_bpi-r3)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7986-emmc-ddr4 @TARGET_mediatek_filogic
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-emmc-ddr4 @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -374,7 +374,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi BPi-R3
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -383,13 +383,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7986_bananapi_bpi-r3-sdmmc
 Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r3 || TARGET_DEVICE_mediatek_filogic_DEVICE_bananapi_bpi-r3)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7986-sdmmc-ddr4 @TARGET_mediatek_filogic
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-sdmmc-ddr4 @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -398,7 +398,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi BPi-R3
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -407,13 +407,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7986_bananapi_bpi-r3-snand
 Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r3 || TARGET_DEVICE_mediatek_filogic_DEVICE_bananapi_bpi-r3)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7986-spim-nand-ddr4 @TARGET_mediatek_filogic
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-spim-nand-ddr4 @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -422,7 +422,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi BPi-R3
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -431,13 +431,13 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7986_bananapi_bpi-r3-nor
 Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r3 || TARGET_DEVICE_mediatek_filogic_DEVICE_bananapi_bpi-r3)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7986-nor-ddr4 @TARGET_mediatek_filogic
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-nor-ddr4 @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -446,7 +446,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for BananaPi BPi-R3
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -455,13 +455,37 @@ http://www.denx.de/wiki/U-Boot
 
 @@
 
-Build-Depends: arm-trusted-firmware-tools/host
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
+Build-Types: host
+
+Package: u-boot-mt7986_xiaomi_redmi-router-ax6000
+Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_xiaomi_redmi-router-ax6000-ubootmod || TARGET_DEVICE_mediatek_filogic_DEVICE_xiaomi_redmi-router-ax6000-ubootmod)
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-spim-nand-ddr4 @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986_xiaomi_redmi-router-ax6000
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Xiaomi Redmi AX6000
+Maintainer: 
+Source: u-boot-2023.01.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for Xiaomi Redmi AX6000
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Build-Depends: !(TARGET_ramips||TARGET_mediatek_mt7623):arm-trusted-firmware-tools/host
 Build-Types: host
 
 Package: u-boot-mt7986_rfb
 Default: y if (TARGET_mediatek_filogic_Default || TARGET_mediatek_filogic_DEVICE_mediatek_mt7986-rfb || TARGET_DEVICE_mediatek_filogic_DEVICE_mediatek_mt7986-rfb)
-Version: 2022.10
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +trusted-firmware-a-mt7986-sdmmc-ddr4 @TARGET_mediatek_filogic
+Version: 2023.01
+Depends: +libc @!IN_SDK +trusted-firmware-a-mt7986-sdmmc-ddr4 @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -470,7 +494,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for MT7986 Reference Board
 Maintainer: 
-Source: u-boot-2022.10.tar.bz2
+Source: u-boot-2023.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin

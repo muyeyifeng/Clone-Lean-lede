@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-cffi/Makefile
 Package: python3-cffi
 Submenu: Python
 Version: 1.15.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +python3-light +python3-pycparser
+Depends: +libc +libffi +python3-light +python3-pycparser
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Jeffery To <jeffery.to@gmail.com>
 Package: python3-cffi-src
 Submenu: Python
 Version: 1.15.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

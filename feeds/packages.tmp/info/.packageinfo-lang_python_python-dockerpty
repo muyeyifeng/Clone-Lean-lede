@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-dockerpty/Makefile
 Package: python3-dockerpty
 Submenu: Python
 Version: 0.4.1-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-openssl +python3-six
+Depends: +libc +python3-light +python3-openssl +python3-six
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Javier Marcet <javier@marcet.info>
 Package: python3-dockerpty-src
 Submenu: Python
 Version: 0.4.1-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

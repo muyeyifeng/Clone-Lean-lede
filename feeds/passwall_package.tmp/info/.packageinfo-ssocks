@@ -2,7 +2,7 @@ Source-Makefile: feeds/passwall_package/ssocks/Makefile
 
 Package: ssocks
 Version: 0.0.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: ssocksd
 Version: 0.0.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/luv/Makefile
 Package: luv
 Submenu: Lua
 Version: 1.40.0-0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuv +!LUV_USE_LUAJIT_ENGINE:lua
+Depends: +libc +libuv +!LUV_USE_LUAJIT_ENGINE:lua
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,8 +3,8 @@ Build-Depends: libffi/host
 
 Package: python3-pycares
 Submenu: Python
-Version: 4.2.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-cffi
+Version: 4.3.0-1
+Depends: +libc +python3-light +python3-cffi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: packages
 Title: Python interface for c-ares
 Maintainer: Fabian Lipken <dynasticorpheus@gmail.com>
-Source: pycares-4.2.2.tar.gz
+Source: pycares-4.3.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,8 +24,8 @@ Fabian Lipken <dynasticorpheus@gmail.com>
 
 Package: python3-pycares-src
 Submenu: Python
-Version: 4.2.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 4.3.0-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Languages
 Repository: packages
 Title: Python interface for c-ares (sources)
 Maintainer: Fabian Lipken <dynasticorpheus@gmail.com>
-Source: pycares-4.2.2.tar.gz
+Source: pycares-4.3.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

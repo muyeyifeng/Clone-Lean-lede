@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/sound/lame/Makefile
 
 Package: lame-lib
 Version: 3.100-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 Package: lame
 Menu: 1
 Version: 3.100-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +lame-lib
+Depends: +libc +libncurses +lame-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 

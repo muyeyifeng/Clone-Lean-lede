@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/bandwidthd/Makefile
 
 Package: bandwidthd
 Version: 2.0.1-35-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap
+Depends: +libc +libgd +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 
 Package: bandwidthd-pgsql
 Version: 2.0.1-35-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap +libpq
+Depends: +libc +libgd +libpcap +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 
 Package: bandwidthd-sqlite
 Version: 2.0.1-35-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgd +libpcap +libsqlite3 +php8 +php8-cgi +php8-mod-gd +php8-mod-pdo +php8-mod-pdo-sqlite
+Depends: +libc +libgd +libpcap +libsqlite3 +php8 +php8-cgi +php8-mod-gd +php8-mod-pdo +php8-mod-pdo-sqlite
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64,7 +64,7 @@ Jean-Michel Lacroix <lacroix@lepine-lacroix.info>
 
 Package: bandwidthd-php
 Version: 2.0.1-35-7
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libxml2 +php8 +php8-cgi +php8-mod-pgsql +php8-mod-gd
+Depends: +libc +libpcre +libxml2 +php8 +php8-cgi +php8-mod-pgsql +php8-mod-gd
 Conflicts: 
 Menu-Depends: 
 Provides: 

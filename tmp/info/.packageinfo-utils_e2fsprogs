@@ -3,8 +3,8 @@ Build-Depends: util-linux e2fsprogs/host
 Build-Types: host
 
 Package: libcomerr
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid
+Version: 1.46.5-2
+Depends: +libc +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,8 +24,8 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libss
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcomerr
+Version: 1.46.5-2
+Depends: +libc +libcomerr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -45,8 +45,8 @@ http://e2fsprogs.sourceforge.net/
 @@
 
 Package: libext2fs
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libblkid +libss +libcomerr
+Version: 1.46.5-2
+Depends: +libc +libuuid +libblkid +libss +libcomerr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66,8 +66,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e2fsprogs
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libext2fs
+Version: 1.46.5-2
+Depends: +libc +libuuid +libext2fs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -88,8 +88,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: tune2fs
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -109,8 +109,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: resize2fs
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -130,8 +130,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: badblocks
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -151,8 +151,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: dumpe2fs
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -172,8 +172,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e2freefrag
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -193,8 +193,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: e4crypt
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -214,8 +214,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: filefrag
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -235,8 +235,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: debugfs
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -256,8 +256,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: chattr
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -277,8 +277,8 @@ http://e2fsprogs.sourceforge.net/
 
 Package: lsattr
 Submenu: Filesystem
-Version: 1.46.5-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +e2fsprogs
+Version: 1.46.5-2
+Depends: +libc +e2fsprogs
 Conflicts: 
 Menu-Depends: 
 Provides: 

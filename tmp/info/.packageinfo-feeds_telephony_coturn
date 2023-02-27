@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/telephony/coturn/Makefile
 
 Package: coturn
 Submenu: Telephony
-Version: 4.5.2-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libevent2-extra +libevent2-pthreads +libevent2-openssl +libopenssl +COTURN_ENABLE_MYSQL:libmariadb +COTURN_ENABLE_POSTGRESQL:libpq +COTURN_ENABLE_REDIS:libhiredis +COTURN_ENABLE_SQLITE:libsqlite3
+Version: 4.6.1-1
+Depends: +libc +libevent2 +libevent2-extra +libevent2-pthreads +libevent2-openssl +libopenssl +COTURN_ENABLE_MYSQL:libmariadb +COTURN_ENABLE_POSTGRESQL:libpq +COTURN_ENABLE_REDIS:libhiredis +COTURN_ENABLE_SQLITE:libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Repository: telephony
 Title: coturn TURN and STUN Server
 Maintainer: Jiri Slachta <jiri@slachta.eu>, Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: turnserver=379:turnserver=379
-Source: coturn-4.5.2.tar.gz
+Source: coturn-4.6.1.tar.gz
 License: BSD-COTURN-CITRIX COMBINED-CITRIX-VIVOCHA-BSD MIT-HASH
 LicenseFiles: LICENSE src/apps/relay/dbdrivers/* src/server/ns_turn_khash.h
 Type: ipkg

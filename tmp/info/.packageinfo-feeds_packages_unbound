@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/unbound/Makefile
 Package: unbound-daemon
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +libunbound
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +libunbound
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 Package: libunbound
 Submenu: Networking
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +PACKAGE_libunbound_dnscrypt:libsodium +PACKAGE_libunbound_ipset:libmnl +PACKAGE_libunbound_libevent:libevent2 +PACKAGE_libunbound_libpthread:libpthread +PACKAGE_libunbound_nghttp2:libnghttp2 +PACKAGE_libunbound_pythonmodule:python3-base +PACKAGE_libunbound_dnstap:libprotobuf-c
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +PACKAGE_libunbound_dnscrypt:libsodium +PACKAGE_libunbound_ipset:libmnl +PACKAGE_libunbound_libevent:libevent2 +PACKAGE_libunbound_libpthread:libpthread +PACKAGE_libunbound_nghttp2:libnghttp2 +PACKAGE_libunbound_pythonmodule:python3-base +PACKAGE_libunbound_dnstap:libprotobuf-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -80,7 +80,7 @@ Config:
 Package: unbound-anchor
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon +libexpat
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon +libexpat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -102,7 +102,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 Package: unbound-checkconf
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -124,7 +124,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 Package: unbound-control
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -146,7 +146,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-control +openssl-util
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -168,7 +168,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 Package: unbound-host
 Submenu: IP Addresses and Names
 Version: 1.13.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +libopenssl +@OPENSSL_WITH_EC +libunbound
+Depends: +libc +ca-bundle +libopenssl +@OPENSSL_WITH_EC +libunbound
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-evdev/Makefile
 Package: python3-evdev
 Submenu: Python
 Version: 1.6.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-ctypes
+Depends: +libc +python3-light +python3-ctypes
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Paulo Costa <me@paulo.costa.nom.br>, Alexandru Ardelean <ardeleanalex@gmail.com>
 Package: python3-evdev-src
 Submenu: Python
 Version: 1.6.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

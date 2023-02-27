@@ -3,8 +3,8 @@ Build-Depends: ppp
 
 Package: rp-pppoe-common
 Submenu: Dial-in/up
-Version: 3.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ppp
+Version: 3.15-1
+Depends: +libc ppp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: PPPoE (PPP over Ethernet) common
 Maintainer: 
-Source: rp-pppoe-3.14.tar.gz
+Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -28,8 +28,8 @@ https://dianne.skoll.ca/projects/rp-pppoe/
 Package: rp-pppoe-relay
 Submenu: Dial-in/up
 Default: n
-Version: 3.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rp-pppoe-common
+Version: 3.15-1
+Depends: +libc +rp-pppoe-common
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: PPPoE (PPP over Ethernet) relay
 Maintainer: 
-Source: rp-pppoe-3.14.tar.gz
+Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -52,8 +52,8 @@ https://dianne.skoll.ca/projects/rp-pppoe/
 
 Package: rp-pppoe-server
 Submenu: Dial-in/up
-Version: 3.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rp-pppoe-common +ppp-mod-pppoe
+Version: 3.15-1
+Depends: +libc +rp-pppoe-common +ppp-mod-pppoe
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Category: Network
 Repository: base
 Title: PPPoE (PPP over Ethernet) server
 Maintainer: 
-Source: rp-pppoe-3.14.tar.gz
+Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -76,8 +76,8 @@ https://dianne.skoll.ca/projects/rp-pppoe/
 
 Package: rp-pppoe-sniff
 Submenu: Dial-in/up
-Version: 3.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ppp @BROKEN
+Version: 3.15-1
+Depends: +libc +ppp @BROKEN
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86,7 +86,7 @@ Category: Network
 Repository: base
 Title: PPPoE (PPP over Ethernet) sniffer
 Maintainer: 
-Source: rp-pppoe-3.14.tar.gz
+Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/lmdb/Makefile
 
 Package: lmdb
 Version: 0.9.29-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,9 +23,9 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: lmdb-utils
 Version: 0.9.29-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
-Menu-Depends:  lmdb
+Menu-Depends: lmdb
 Provides: 
 Section: libs
 Category: Libraries
@@ -43,9 +43,9 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: lmdb-test
 Version: 0.9.29-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
-Menu-Depends:  lmdb
+Menu-Depends: lmdb
 Provides: 
 Section: libs
 Category: Libraries

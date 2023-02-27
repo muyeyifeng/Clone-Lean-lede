@@ -4,7 +4,7 @@ Build-Depends: MC_VFS:libtirpc
 Package: mc
 Menu: 1
 Version: 4.8.27-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +BUILD_NLS:libiconv-full
+Depends: +libc +glib2 +libncurses +libmount +MC_VFS:libssh2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ Config:
 
 Package: mc-skins
 Version: 4.8.27-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +mc
+Depends: +libc +mc
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-docutils/Makefile
 Package: python3-docutils
 Submenu: Python
 Version: 0.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
+Depends: +libc +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Daniel Danzberger <daniel@dd-wrt.com>
 Package: python3-docutils-src
 Submenu: Python
 Version: 0.19-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

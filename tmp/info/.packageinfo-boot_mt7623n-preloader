@@ -3,7 +3,7 @@ Source-Makefile: package/boot/mt7623n-preloader/Makefile
 Package: mt7623n-preloader
 Default: y if TARGET_mediatek
 Version: 2020-03-11-b27114e184449a33b5d875fda14198f5e6fee2bb
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_mediatek_mt7623
+Depends: +libc @TARGET_mediatek_mt7623
 Conflicts: 
 Menu-Depends: 
 Provides: 

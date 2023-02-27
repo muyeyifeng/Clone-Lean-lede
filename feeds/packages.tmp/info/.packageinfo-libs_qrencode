@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/qrencode/Makefile
 
 Package: libqrencode
 Version: 4.1.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Jonathan Bennett <JBennett@incomsystems.biz>
 
 Package: qrencode
 Version: 4.1.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libqrencode
+Depends: +libc +libqrencode
 Conflicts: 
 Menu-Depends: 
 Provides: 

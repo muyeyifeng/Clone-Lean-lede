@@ -4,7 +4,7 @@ Package: olsrd
 Menu: 1
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libubus +iptables +IPV6:ip6tables
+Depends: +libc +libpthread +libubus +iptables +IPV6:ip6tables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-arprefresh
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dot-draw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64,7 +64,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-filtergw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -84,7 +84,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-bmf
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +kmod-tun
+Depends: +libc olsrd +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -104,7 +104,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dyn-gw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -124,7 +124,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dyn-gw-plain
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -144,7 +144,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-httpinfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -164,7 +164,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-jsoninfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -184,7 +184,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-netjson
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -204,7 +204,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-mdns
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -224,7 +224,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-nameservice
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -244,7 +244,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-p2pd
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -264,7 +264,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-pgraph
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -284,7 +284,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-pud
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +libgps
+Depends: +libc olsrd +libgps
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -304,7 +304,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-quagga
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -324,7 +324,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-secure
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -344,7 +344,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-sgwdynspeed
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -364,7 +364,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-txtinfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -384,7 +384,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-watchdog
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -404,7 +404,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-utils
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 

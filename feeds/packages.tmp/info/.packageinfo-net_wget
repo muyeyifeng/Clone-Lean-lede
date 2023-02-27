@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/wget/Makefile
 
 Package: wget-ssl
 Submenu: File Transfer
-Version: 1.21.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib +libopenssl +librt
+Version: 1.21.3-1
+Depends: +libc +libpcre +zlib +libopenssl +librt
 Conflicts: 
 Menu-Depends: 
 Provides: gnu-wget wget
@@ -12,8 +12,8 @@ Section: net
 Category: Network
 Repository: base
 Title: Non-interactive network downloader (with SSL support)
-Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.21.2.tar.gz
+Maintainer: 
+Source: wget-1.21.3.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,13 +25,13 @@ Description:  Wget is a network utility to retrieve files from the Web using htt
  archives and home pages or to travel the Web like a WWW robot.
  This package is built with SSL support.
 https://www.gnu.org/software/wget/index.html
-Peter Wagner <tripolar@gmx.at>
+
 @@
 
 Package: wget-nossl
 Submenu: File Transfer
-Version: 1.21.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib
+Version: 1.21.3-1
+Depends: +libc +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: gnu-wget wget
@@ -40,8 +40,8 @@ Section: net
 Category: Network
 Repository: base
 Title: Non-interactive network downloader (without SSL support)
-Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.21.2.tar.gz
+Maintainer: 
+Source: wget-1.21.3.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -53,7 +53,7 @@ Description:  Wget is a network utility to retrieve files from the Web using htt
  archives and home pages or to travel the Web like a WWW robot.
  This package is built without SSL support.
 https://www.gnu.org/software/wget/index.html
-Peter Wagner <tripolar@gmx.at>
+
 @@
 
 

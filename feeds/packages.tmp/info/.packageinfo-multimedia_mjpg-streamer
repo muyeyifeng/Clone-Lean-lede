@@ -3,7 +3,7 @@ Build-Depends: MJPG_STREAMER_V4L2:libv4l zmq protobuf-c/host
 
 Package: mjpg-streamer
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libjpeg +MJPG_STREAMER_V4L2:libv4l
+Depends: +libc +libpthread +libjpeg +MJPG_STREAMER_V4L2:libv4l
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ endif
 
 Package: mjpg-streamer-input-file
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-input-uvc
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-input-http
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -98,7 +98,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-output-rtsp
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -120,7 +120,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-output-file
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -142,7 +142,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-output-http
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -164,7 +164,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-output-zmq
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer +libzmq +libprotobuf-c
+Depends: +libc mjpg-streamer +libzmq +libprotobuf-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -186,7 +186,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-www
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: mjpg-streamer-www-simple
 Menu-Depends: 
 Provides: 
@@ -209,7 +209,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 
 Package: mjpg-streamer-www-simple
 Version: 1.0.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mjpg-streamer
+Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
 Provides: 

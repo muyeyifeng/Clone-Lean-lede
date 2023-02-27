@@ -2,7 +2,7 @@ Source-Makefile: package/network/config/gre/Makefile
 
 Package: gre
 Version: 13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-gre +IPV6:kmod-gre6 +resolveip
+Depends: +libc +kmod-gre +IPV6:kmod-gre6 +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: grev4 grev6

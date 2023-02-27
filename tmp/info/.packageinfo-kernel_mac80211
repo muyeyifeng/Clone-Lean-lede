@@ -1,122 +1,9 @@
 Source-Makefile: package/kernel/mac80211/Makefile
 
-Package: kmod-adm8211
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-mac80211 +kmod-eeprom-93cx6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: ADMTek 8211 support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: ADMTek 8211 support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-hermes
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT||PCMCIA_SUPPORT +kmod-cfg80211 +@DRIVER_WEXT_SUPPORT +kmod-crypto-michael-mic
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Hermes 802.11b chipset support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel support for Hermes 802.11b chipsets
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-hermes-pci
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT +kmod-hermes
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intersil Prism 2.5 PCI support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel modules for Intersil Prism 2.5 PCI support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-hermes-pcmcia
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCMCIA_SUPPORT +kmod-hermes +kmod-pcmcia-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Hermes based PCMCIA adaptors
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel modules for Hermes based PCMCIA adaptors
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-hermes-plx
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT +kmod-hermes
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PLX9052 based PCI adaptor
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel modules for Hermes in PLX9052 based PCI adaptors
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-lib80211
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: +kmod-cfg80211 +kmod-crypto-hash +kmod-crypto-ccm
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: 802.11 Networking stack
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel modules for 802.11 Networking stack
- Includes:
- - lib80211
- - lib80211_crypt_wep
- - lib80211_crypt_tkip
- - lib80211_crytp_ccmp
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-mac80211-hwsim
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mac80211 +@DRIVER_11AX_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -133,8 +20,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mt7601u
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +@DRIVER_11N_SUPPORT @USB_SUPPORT +kmod-usb-core +mt7601u-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mac80211 +@DRIVER_11N_SUPPORT @USB_SUPPORT +kmod-usb-core +mt7601u-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -149,64 +36,10 @@ https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: kmod-p54-common
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +kmod-lib-crc-ccitt
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Prism54 Drivers (COMMON)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Prism54 Drivers (COMMON)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-p54-pci
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-p54-common +p54-pci-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Prism54 Drivers (PCI)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Prism54 Drivers (PCI)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-p54-usb
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-p54-common +p54-usb-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Prism54 Drivers (USB)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Prism54 Drivers (USB)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-rsi91x
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +rs9113-firmware +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mac80211 +rs9113-firmware +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,8 +56,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rsi91x-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211 +kmod-rsi91x +rs9113-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-usb-core +kmod-mac80211 +kmod-rsi91x +rs9113-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -241,8 +74,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rsi91x-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +kmod-mmc +kmod-rsi91x +rs9113-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mac80211 +kmod-mmc +kmod-rsi91x +rs9113-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -259,8 +92,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wlcore
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -277,8 +110,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wl12xx
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-wlcore +wl12xx-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-wlcore +wl12xx-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -295,8 +128,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wl18xx
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-wlcore +wl18xx-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-wlcore +wl18xx-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -311,29 +144,11 @@ https://wireless.wiki.kernel.org/en/users/drivers/wl18xx
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: kmod-zd1211rw
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Zydas ZD1211 support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Zydas ZD1211 support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-ath
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79||TARGET_ath25 +kmod-mac80211
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79||TARGET_ath25 +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -399,8 +214,8 @@ Config:
 
 Package: kmod-ath5k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||TARGET_ath25) +kmod-ath
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT||TARGET_ath25) +kmod-ath
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -418,8 +233,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-ath +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-ath +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -437,8 +252,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mmc +kmod-ath6kl
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mmc +kmod-ath6kl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -456,8 +271,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath6kl-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-ath6kl
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-usb-core +kmod-ath6kl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -475,8 +290,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath9k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT||TARGET_ath79 +kmod-ath9k-common
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT||TARGET_ath79 +kmod-ath9k-common
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -517,8 +332,8 @@ Config:
 
 Package: kmod-ath9k-common
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79 +kmod-ath +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT||USB_SUPPORT||TARGET_ath79 +kmod-ath +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -536,8 +351,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath9k-htc
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-ath9k-common +kmod-usb-core +ath9k-htc-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-ath9k-common +kmod-usb-core +ath9k-htc-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -555,8 +370,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath10k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +ATH10K_THERMAL:kmod-hwmon-core +ATH10K_THERMAL:kmod-thermal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -587,8 +402,8 @@ Config:
 
 Package: kmod-ath10k-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT kmod-ath10k
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT kmod-ath10k
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -607,8 +422,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath10k-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  kmod-ath10k +kmod-mmc
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: kmod-ath10k +kmod-mmc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -626,8 +441,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath10k-smallbuffers
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT kmod-ath10k
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT kmod-ath10k
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -645,8 +460,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath11k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11AX_SUPPORT +kmod-qcom-qmi-helpers +kmod-crypto-michael-mic +ATH11K_THERMAL:kmod-hwmon-core +ATH11K_THERMAL:kmod-thermal
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11AX_SUPPORT +kmod-qcom-qmi-helpers +kmod-crypto-michael-mic +ATH11K_THERMAL:kmod-hwmon-core +ATH11K_THERMAL:kmod-thermal
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -688,8 +503,8 @@ Config:
 
 Package: kmod-ath11k-ahb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(TARGET_ipq60xx||TARGET_ipq807x) +kmod-ath11k +LINUX_5_15:kmod-qrtr-smd
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(TARGET_ipq60xx||TARGET_ipq807x) +kmod-ath11k +(LINUX_5_15||LINUX_6_1):kmod-qrtr-smd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -707,8 +522,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ath11k-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +LINUX_5_15:kmod-qrtr-mhi +kmod-ath11k
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +(LINUX_5_15||LINUX_6_1):kmod-qrtr-mhi +kmod-ath11k
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -726,7 +541,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-ar5523
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
+Version: <LINUX_VERSION>+5.15.33-1-2
 Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core
 Conflicts: 
 Menu-Depends: 
@@ -744,7 +559,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-carl9170
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
+Version: <LINUX_VERSION>+5.15.33-1-2
 Depends: @USB_SUPPORT +kmod-mac80211 +kmod-ath +kmod-usb-core +kmod-input-core +@DRIVER_11N_SUPPORT +carl9170-firmware
 Conflicts: 
 Menu-Depends: 
@@ -762,7 +577,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-owl-loader
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
+Version: <LINUX_VERSION>+5.15.33-1-2
 Depends: @PCI_SUPPORT +kmod-ath9k
 Conflicts: 
 Menu-Depends: 
@@ -785,8 +600,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-wil6210
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-mac80211 +wil6210-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-mac80211 +wil6210-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -804,8 +619,8 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-b43
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-mac80211 +kmod-lib-cordic  
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-mac80211 +kmod-lib-cordic  
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1044,31 +859,11 @@ config PACKAGE_B43_USE_BCMA
   endif
 @@
 
-Package: kmod-b43legacy
-Menu: 1
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +!(TARGET_bcm47xx||TARGET_bcm63xx):kmod-ssb @!TARGET_bcm47xx_mips74k +b43legacy-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom 43xx-legacy wireless support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Kernel-Config: CONFIG_HW_RANDOM=y
-Description: Kernel module for Broadcom 43xx-legacy wireless support (mac80211 stack) new
-https://wireless.wiki.kernel.org/en/users/drivers/b43
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-brcmsmac
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mac80211 +@DRIVER_11N_SUPPORT +!TARGET_bcm47xx:kmod-bcma +kmod-lib-cordic +kmod-lib-crc8 +kmod-brcmutil +!BRCMSMAC_USE_FW_FROM_WL:brcmsmac-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mac80211 +@DRIVER_11N_SUPPORT +!TARGET_bcm47xx:kmod-bcma +kmod-lib-cordic +kmod-lib-crc8 +kmod-brcmutil +!BRCMSMAC_USE_FW_FROM_WL:brcmsmac-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1101,8 +896,8 @@ Config:
 
 Package: kmod-brcmfmac
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-mac80211 +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-mac80211 +kmod-cfg80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +kmod-brcmutil +BRCMFMAC_SDIO:kmod-mmc @!TARGET_uml +BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1154,8 +949,8 @@ Config:
 Package: kmod-brcmutil
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT||USB_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT||USB_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1180,64 +975,10 @@ Config:
   endif
 @@
 
-Package: kmod-iwl-legacy
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: +kmod-mac80211 @PCI_SUPPORT
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel legacy Wireless support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  iwl-legacy kernel module for legacy Intel wireless support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-iwl3945
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: +kmod-mac80211 +kmod-iwl-legacy +iwl3945-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel iwl3945 Wireless support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  iwl3945 kernel module for Intel 3945 support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-iwl4965
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: +kmod-mac80211 +kmod-iwl-legacy +@DRIVER_11N_SUPPORT +iwl4965-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel iwl4965 Wireless support
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  iwl4965 kernel module for Intel 4965 support
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-iwlwifi
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
+Version: <LINUX_VERSION>+5.15.33-1-2
 Depends: +kmod-mac80211 @PCI_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -1307,123 +1048,10 @@ Config:
   endif
 @@
 
-Package: kmod-libipw
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT +kmod-crypto-michael-mic +kmod-crypto-ecb +kmod-lib80211 +kmod-cfg80211 +@DRIVER_WEXT_SUPPORT @!BIG_ENDIAN
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: libipw for ipw2100 and ipw2200
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Hardware independent IEEE 802.11 networking stack for ipw2100 and ipw2200.
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-ipw2100
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT +kmod-libipw
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel IPW2100 driver
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel support for Intel IPW2100
- Includes:
- - ipw2100
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-ipw2200
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends: @PCI_SUPPORT +kmod-libipw
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Intel IPW2200 driver
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description:  Kernel support for Intel IPW2200
- Includes:
- - ipw2200
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-libertas-sdio
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-cfg80211 +kmod-lib80211 +kmod-mmc +@DRIVER_WEXT_SUPPORT @!TARGET_uml +libertas-sdio-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell 88W8686 Wireless Driver
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Marvell 88W8686 Wireless Driver
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-libertas-usb
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-cfg80211 +kmod-usb-core +kmod-lib80211 +@DRIVER_WEXT_SUPPORT +libertas-usb-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell 88W8015 Wireless Driver
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Marvell 88W8015 Wireless Driver
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-libertas-spi
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-cfg80211 +kmod-lib80211 +@DRIVER_WEXT_SUPPORT @!TARGET_uml +libertas-spi-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Marvell 88W8686 SPI Wireless Driver
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Kernel-Config: CONFIG_SPI=y CONFIG_SPI_MASTER=y
-Description: Marvell 88W8686 SPI Wireless Driver
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-mwl8k
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +mwl8k-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +mwl8k-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1440,8 +1068,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mwifiex-pcie
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-pcie-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-pcie-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1458,8 +1086,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-mwifiex-sdio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-sdio-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mmc +kmod-mac80211 +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +mwifiex-sdio-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1477,8 +1105,8 @@ Felix Fietkau <nbd@nbd.name>
 Package: kmod-rt2x00-lib
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-mac80211
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1513,8 +1141,8 @@ Config:
 
 Package: kmod-rt2x00-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rt2x00-mmio +kmod-rt2x00-lib
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-rt2x00-mmio +kmod-rt2x00-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1532,8 +1160,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2x00-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-rt2x00-lib +kmod-usb-core
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-rt2x00-lib +kmod-usb-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1551,8 +1179,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2x00-mmio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1568,64 +1196,10 @@ https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: kmod-rt2400-pci
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink Drivers for RT2x00 cards (RT2400 PCI)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Ralink Drivers for RT2x00 cards (RT2400 PCI)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-rt2500-pci
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink Drivers for RT2x00 cards (RT2500 PCI)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Ralink Drivers for RT2x00 cards (RT2500 PCI)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-rt2500-usb
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-rt2x00-usb
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink Drivers for RT2x00 cards (RT2500 USB)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Ralink Drivers for RT2x00 cards (RT2500 USB)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-rt2800-lib
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib +kmod-lib-crc-ccitt +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT||USB_SUPPORT||TARGET_ramips) +kmod-rt2x00-lib +kmod-lib-crc-ccitt +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1643,8 +1217,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-mmio
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rt2800-lib +kmod-rt2x00-mmio
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rt2800-lib +kmod-rt2x00-mmio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1662,8 +1236,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-rt2800-lib +kmod-rt2800-mmio +kmod-eeprom-93cx6 +rt2800-pci-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-rt2x00-pci +kmod-rt2800-lib +kmod-rt2800-mmio +kmod-eeprom-93cx6 +rt2800-pci-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1680,8 +1254,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-soc
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(TARGET_ramips_rt288x||TARGET_ramips_rt305x||TARGET_ramips_rt3883||TARGET_ramips_mt7620) +kmod-rt2800-mmio +kmod-rt2800-lib
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(TARGET_ramips_rt288x||TARGET_ramips_rt305x||TARGET_ramips_rt3883||TARGET_ramips_mt7620) +kmod-rt2800-mmio +kmod-rt2800-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1698,8 +1272,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rt2800-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-rt2x00-usb +kmod-rt2800-lib +kmod-lib-crc-ccitt +rt2800-usb-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-rt2x00-usb +kmod-rt2800-lib +kmod-lib-crc-ccitt +rt2800-usb-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1714,82 +1288,10 @@ https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: kmod-rt61-pci
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rt2x00-pci +kmod-eeprom-93cx6 +kmod-lib-crc-itu-t +rt61-pci-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink Drivers for RT2x00 cards (RT2x61 PCI)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Ralink Drivers for RT2x00 cards (RT2x61 PCI)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-rt73-usb
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-rt2x00-usb +kmod-lib-crc-itu-t +rt73-usb-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink Drivers for RT2x00 cards (RT73 USB)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Ralink Drivers for RT2x00 cards (RT73 USB)
-https://wireless.wiki.kernel.org/
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-rtl8180
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-eeprom-93cx6 +kmod-mac80211 @PCI_SUPPORT
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Realtek Drivers for RTL818x devices (RTL8180 PCI)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Realtek Drivers for RTL818x devices (RTL8180 PCI)
-https://wireless.wiki.kernel.org/en/users/drivers/rtl8187
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: kmod-rtl8187
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-eeprom-93cx6 +kmod-mac80211 @USB_SUPPORT +kmod-usb-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Realtek Drivers for RTL818x devices (RTL8187 USB)
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: backports-5.15.33-1.tar.xz
-Type: ipkg
-Description: Realtek Drivers for RTL818x devices (RTL8187 USB)
-https://wireless.wiki.kernel.org/en/users/drivers/rtl8187
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: kmod-rtlwifi
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1815,8 +1317,8 @@ Config:
 
 Package: kmod-rtlwifi-pci
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @PCI_SUPPORT +kmod-rtlwifi
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @PCI_SUPPORT +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1834,8 +1336,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtlwifi-btcoexist
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1853,8 +1355,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtlwifi-usb
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-rtlwifi
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-usb-core +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1872,8 +1374,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192c-common
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1891,8 +1393,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192ce
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi-pci +kmod-rtl8192c-common +rtl8192ce-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi-pci +kmod-rtl8192c-common +rtl8192ce-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1909,8 +1411,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192se
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi-pci +rtl8192se-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi-pci +rtl8192se-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1927,8 +1429,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192de
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi-pci +rtl8192de-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi-pci +rtl8192de-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1945,8 +1447,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8192cu
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi-usb +kmod-rtl8192c-common +rtl8192cu-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi-usb +kmod-rtl8192c-common +rtl8192cu-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1963,8 +1465,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8723bs
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-mmc +kmod-mac80211
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-mmc +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1983,8 +1485,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8821ae
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-rtlwifi-btcoexist +kmod-rtlwifi-pci +rtl8821ae-firmware
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-rtlwifi-btcoexist +kmod-rtlwifi-pci +rtl8821ae-firmware
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2001,8 +1503,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtl8xxxu
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @USB_SUPPORT +kmod-usb-core +kmod-mac80211
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @USB_SUPPORT +kmod-usb-core +kmod-mac80211
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2039,18 +1541,18 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: kmod-rtw88
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  @(PCI_SUPPORT||USB_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: @(PCI_SUPPORT) +kmod-mac80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: kernel
 Category: Kernel modules
-Title: Realtek RTL8821CU/RTL8822BE/RTL8822CE/RTL8723DE
+Title: Realtek RTL8822BE/RTL8822CE/RTL8723DE
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: backports-5.15.33-1.tar.xz
 Type: ipkg
-Description: Realtek RTL8821CU/RTL8822BE/RTL8822CE/RTL8723DE
+Description: Realtek RTL8822BE/RTL8822CE/RTL8723DE
 https://wireless.wiki.kernel.org/
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -2072,8 +1574,8 @@ Config:
 
 Package: kmod-cfg80211
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +iw +iwinfo +wireless-regdb +USE_RFKILL:kmod-rfkill
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +iw +iwinfo +wireless-regdb +USE_RFKILL:kmod-rfkill
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2103,8 +1605,8 @@ Config:
 Package: kmod-mac80211
 Menu: 1
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+5.15.33-1-1
-Depends:  +kmod-cfg80211 +kmod-crypto-cmac +kmod-crypto-ccm +kmod-crypto-gcm +hostapd-common
+Version: <LINUX_VERSION>+5.15.33-1-2
+Depends: +kmod-cfg80211 +kmod-crypto-cmac +kmod-crypto-ccm +kmod-crypto-gcm +hostapd-common
 Conflicts: 
 Menu-Depends: 
 Provides: 

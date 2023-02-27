@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/alpine/Makefile
 
 Package: alpine
-Version: 2.25-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libopenssl
+Version: 2.25-2
+Depends: +libc +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,8 +26,8 @@ Antti Seppälä <a.seppala@gmail.com>
 @@
 
 Package: alpine-nossl
-Version: 2.25-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full @BROKEN
+Version: 2.25-2
+Depends: +libc +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full @BROKEN
 Conflicts: 
 Menu-Depends: 
 Provides: 

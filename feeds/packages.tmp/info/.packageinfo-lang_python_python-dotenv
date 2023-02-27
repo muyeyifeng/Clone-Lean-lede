@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-dotenv/Makefile
 Package: python3-dotenv
 Submenu: Python
 Version: 0.21.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-click +python3-light +python3-logging
+Depends: +libc +python3-click +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Javier Marcet <javier@marcet.info>
 Package: python3-dotenv-src
 Submenu: Python
 Version: 0.21.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

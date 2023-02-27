@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/prometheus-node-exporter-lua/Makefile
 
 Package: prometheus-node-exporter-lua
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luasocket +lua
+Depends: +libc +luasocket +lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-bmx6
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua bmx6 +lua-cjson +bmx6-json
+Depends: +libc prometheus-node-exporter-lua bmx6 +lua-cjson +bmx6-json
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-bmx7
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua bmx7 +lua-cjson +bmx7-json
+Depends: +libc prometheus-node-exporter-lua bmx7 +lua-cjson +bmx7-json
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -58,7 +58,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-dawn
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-hostapd_stations
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +hostapd-utils +lua-bit32 +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +hostapd-utils +lua-bit32 +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -94,7 +94,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-hostapd_ubus_stations
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +luabitop +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +luabitop +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -112,7 +112,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-ltq-dsl
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua @(PACKAGE_ltq-adsl-app||PACKAGE_ltq-vdsl-app)
+Depends: +libc prometheus-node-exporter-lua @(PACKAGE_ltq-adsl-app||PACKAGE_ltq-vdsl-app)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -130,7 +130,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-nat_traffic
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua
+Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,7 +148,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-netstat
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua
+Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -166,7 +166,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-openwrt
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -184,7 +184,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-textfile
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +luci-lib-nixio
+Depends: +libc prometheus-node-exporter-lua +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -202,7 +202,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-uci_dhcp_host
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libuci-lua
+Depends: +libc prometheus-node-exporter-lua +libuci-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -220,7 +220,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-wifi
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -238,7 +238,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-wifi_stations
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -256,7 +256,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: prometheus-node-exporter-lua-snmp6
 Version: 2021.02.15-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libubus-lua
+Depends: +libc prometheus-node-exporter-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 

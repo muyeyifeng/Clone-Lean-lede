@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ps3netsrv
 Submenu: 3. Applications
 Version: 1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ps3netsrv
+Depends: +libc +ps3netsrv
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: Luci for PS3NETSRV
 Package: luci-i18n-ps3netsrv-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ps3netsrv
+Depends: +libc luci-app-ps3netsrv
 Conflicts: 
 Menu-Depends: 
 Provides: 

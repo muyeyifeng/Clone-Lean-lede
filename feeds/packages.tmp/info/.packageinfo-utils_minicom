@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/minicom/Makefile
 Package: minicom
 Submenu: Terminal
 Version: 2.8-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libncurses
+Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 

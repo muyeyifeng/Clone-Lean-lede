@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/cyrus-sasl/Makefile
 
 Package: libsasl2
 Version: 2.1.28-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ W. Michael Petullo <mike@flyn.org>
 
 Package: libsasl2-sasldb
 Version: 2.1.28-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsasl2 +libdb47
+Depends: +libc +libsasl2 +libdb47
 Conflicts: 
 Menu-Depends: 
 Provides: 

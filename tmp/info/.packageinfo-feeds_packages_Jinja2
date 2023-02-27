@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/Jinja2/Makefile
 Package: python3-jinja2
 Submenu: Python
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-markupsafe
+Depends: +libc +python3-light +python3-markupsafe
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ https://palletsprojects.com/p/jinja/
 Package: python3-jinja2-src
 Submenu: Python
 Version: 3.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

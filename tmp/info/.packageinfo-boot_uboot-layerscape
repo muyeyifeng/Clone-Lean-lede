@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-layerscape/Makefile
 Package: u-boot-fsl_ls1012a-frdm
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1012a-frdm || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1012a-frdm)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1012a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1012a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1012a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1012a-frwy-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1012a-frwy-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1012a-frwy-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1043a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1043a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1043a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91,7 +91,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1043a-rdb-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1043a-rdb-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1043a-rdb-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -113,7 +113,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1046a-frwy
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1046a-frwy || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1046a-frwy)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1046a-frwy-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1046a-frwy-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1046a-frwy-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -157,7 +157,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1046a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1046a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1046a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1046a-rdb-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1046a-rdb-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1046a-rdb-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -201,7 +201,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1088a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1088a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1088a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,7 +223,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1088a-rdb-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls1088a-rdb-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls1088a-rdb-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -245,7 +245,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls2088a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_ls2088a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_ls2088a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -267,7 +267,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_lx2160a-rdb
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_lx2160a-rdb || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_lx2160a-rdb)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -289,7 +289,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_lx2160a-rdb-sdboot
 Default: y if (TARGET_layerscape_armv8_64b_Default || TARGET_layerscape_armv8_64b_DEVICE_fsl_lx2160a-rdb-sdboot || TARGET_DEVICE_layerscape_armv8_64b_DEVICE_fsl_lx2160a-rdb-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv8_64b
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv8_64b
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -311,7 +311,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1021a-twr
 Default: y if (TARGET_layerscape_armv7_Default || TARGET_layerscape_armv7_DEVICE_fsl_ls1021a-twr || TARGET_DEVICE_layerscape_armv7_DEVICE_fsl_ls1021a-twr)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv7
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -333,7 +333,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1021a-twr-sdboot
 Default: y if (TARGET_layerscape_armv7_Default || TARGET_layerscape_armv7_DEVICE_fsl_ls1021a-twr-sdboot || TARGET_DEVICE_layerscape_armv7_DEVICE_fsl_ls1021a-twr-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv7
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -355,7 +355,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-fsl_ls1021a-iot-sdboot
 Default: y if (TARGET_layerscape_armv7_Default || TARGET_layerscape_armv7_DEVICE_fsl_ls1021a-iot-sdboot || TARGET_DEVICE_layerscape_armv7_DEVICE_fsl_ls1021a-iot-sdboot)
 Version: LSDK-20.04-update-290520-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_layerscape_armv7
+Depends: +libc @!IN_SDK @TARGET_layerscape_armv7
 Conflicts: 
 Menu-Depends: 
 Provides: 

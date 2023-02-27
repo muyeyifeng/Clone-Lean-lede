@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/conmon/Makefile
 Build-Depends: libseccomp
 
 Package: conmon
-Version: 2.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc +glib2 +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
+Version: 2.1.5-1
+Depends: +libc @!arc +glib2 +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Podman conmon
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: conmon-2.1.0.tar.gz
+Source: conmon-2.1.5.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/klish/Makefile
 Package: klish
 Submenu: Shells
 Version: 2.2.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2
+Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Takashi Umeno <umeno.takashi@gmail.com>
 
 Package: klish-xml-files
 Version: 2.2.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread klish
+Depends: +libc klish
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libnet-1.2.x/Makefile
 
 Package: libnet-1.2.x
 Version: 1.2-rc3-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Depends: +libc +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 

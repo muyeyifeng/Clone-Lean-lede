@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.03.16-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid
+Version: 1.02.187
+Depends: +libc +kmod-dm +libpthread +libuuid +librt +libblkid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.16.tgz
+Source: LVM2.2.03.17.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -23,8 +23,8 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libdevmapper-selinux
-Version: 2.03.16-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt +libblkid +libselinux
+Version: 1.02.187
+Depends: +libc +kmod-dm +libpthread +libuuid +librt +libblkid +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: libdevmapper
@@ -34,7 +34,7 @@ Category: Libraries
 Repository: packages
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.16.tgz
+Source: LVM2.2.03.17.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -48,8 +48,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2
 Submenu: Disc
-Version: 2.03.16-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper
+Version: 2.03.17-1
+Depends: +libc +libreadline +libncurses +libaio +libdevmapper
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -59,7 +59,7 @@ Category: Utilities
 Repository: packages
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.16.tgz
+Source: LVM2.2.03.17.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg
@@ -72,8 +72,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2-selinux
 Submenu: Disc
-Version: 2.03.16-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libaio +libdevmapper-selinux
+Version: 2.03.17-1
+Depends: +libc +libreadline +libncurses +libaio +libdevmapper-selinux
 Conflicts: 
 Menu-Depends: 
 Provides: lvm2
@@ -83,7 +83,7 @@ Category: Utilities
 Repository: packages
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.16.tgz
+Source: LVM2.2.03.17.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
 Type: ipkg

@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-websocket-client/Makefile
 
 Package: python3-websocket-client
 Submenu: Python
-Version: 1.4.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-logging +python3-openssl
+Version: 1.4.2-1
+Depends: +libc +python3-light +python3-logging +python3-openssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: WebSocket client for Python. hybi13 is supported
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: websocket-client-1.4.1.tar.gz
+Source: websocket-client-1.4.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,8 +26,8 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-websocket-client-src
 Submenu: Python
-Version: 1.4.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.4.2-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: WebSocket client for Python. hybi13 is supported (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: websocket-client-1.4.1.tar.gz
+Source: websocket-client-1.4.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

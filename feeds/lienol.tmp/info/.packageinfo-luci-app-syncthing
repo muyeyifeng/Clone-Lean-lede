@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-syncthing
 Submenu: 3. Applications
 Version: 1.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +syncthing
+Depends: +libc +syncthing
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for syncthing
 Package: luci-i18n-syncthing-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-syncthing
+Depends: +libc luci-app-syncthing
 Conflicts: 
 Menu-Depends: 
 Provides: 

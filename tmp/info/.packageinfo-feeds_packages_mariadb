@@ -7,7 +7,7 @@ Package: mariadb-client
 Menu: 1
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client-base
+Depends: +libc mariadb-client-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-client-base
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libedit
+Depends: +libc mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libedit
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -59,7 +59,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-client-extra
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
+Depends: +libc mariadb-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -96,7 +96,7 @@ Package: mariadb-server
 Menu: 1
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server-base
+Depends: +libc mariadb-server-base
 Conflicts: 
 Menu-Depends: 
 Provides: mysql-server
@@ -127,7 +127,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-base
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libaio +liblzma +libpcre +resolveip
+Depends: +libc mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libaio +liblzma +libpcre +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -154,7 +154,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-extra
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -206,7 +206,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-auth-ed25519
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -230,7 +230,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-auth-gssapi
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-gssapi:krb5-libs
+Depends: +libc mariadb-server +PACKAGE_mariadb-server-plugin-auth-gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -254,7 +254,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-auth-pam
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam:libpam
+Depends: +libc mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam:libpam
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -278,7 +278,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-auth-pam-v1
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam-v1:libpam
+Depends: +libc mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam-v1:libpam
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -302,7 +302,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-disks
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -326,7 +326,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-feedback
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -350,7 +350,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-file-key-management
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -374,7 +374,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-archive
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -398,7 +398,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-blackhole
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -422,7 +422,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-connect
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
+Depends: +libc mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -446,7 +446,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-federated
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -470,7 +470,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-federatedx
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -494,7 +494,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-sphinx
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -518,7 +518,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-ha-spider
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -542,7 +542,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-handlersocket
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -566,7 +566,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-locales
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -590,7 +590,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-metadata-lock-info
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -614,7 +614,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-query-cache-info
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -638,7 +638,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-query-response-time
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -662,7 +662,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-server-audit
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -686,7 +686,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-simple-password-check
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -710,7 +710,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-sql-errlog
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -734,7 +734,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server-plugin-wsrep-info
 Submenu: Database
 Version: 10.4.18-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Depends: +libc mariadb-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

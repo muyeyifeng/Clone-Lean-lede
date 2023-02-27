@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/nmap/Makefile
 Package: nmap
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libstdcpp +zlib +libpcre
+Depends: +libc +libpcap +libstdcpp +zlib +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: nmap-ssl
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libstdcpp +zlib +libpcre +libopenssl
+Depends: +libc +libpcap +libstdcpp +zlib +libpcre +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: nmap-full
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libstdcpp +zlib +libpcre +libopenssl +liblua5.3 +libssh2
+Depends: +libc +libpcap +libstdcpp +zlib +libpcre +libopenssl +liblua5.3 +libssh2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69,7 +69,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: ncat
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Depends: +libc +libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -91,7 +91,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: ncat-ssl
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libopenssl
+Depends: +libc +libpcap +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -113,7 +113,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: ncat-full
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libopenssl +liblua5.3
+Depends: +libc +libpcap +libopenssl +liblua5.3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: nping
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libpthread +libstdcpp
+Depends: +libc +libpcap +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -157,7 +157,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: nping-ssl
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libpthread +libstdcpp +libopenssl
+Depends: +libc +libpcap +libpthread +libstdcpp +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: ndiff
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-xml
+Depends: +libc +python3-light +python3-xml
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -200,7 +200,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Package: ndiff-src
 Submenu: NMAP Suite
 Version: 7.91-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

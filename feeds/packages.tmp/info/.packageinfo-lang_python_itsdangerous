@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/itsdangerous/Makefile
 
 Package: python3-itsdangerous
 Submenu: Python
-Version: 2.0.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Version: 2.1.2-1
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: ItsDangerous
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: itsdangerous-2.0.1.tar.gz
+Source: itsdangerous-2.1.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,8 +23,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: python3-itsdangerous-src
 Submenu: Python
-Version: 2.0.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.1.2-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: base
 Title: ItsDangerous (sources)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: itsdangerous-2.0.1.tar.gz
+Source: itsdangerous-2.1.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

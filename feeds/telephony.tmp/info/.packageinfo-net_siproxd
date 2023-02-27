@@ -4,7 +4,7 @@ Package: siproxd
 Menu: 1
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl +libpthread +libosip2
+Depends: +libc +libltdl +libpthread +libosip2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Config:
 Package: siproxd-mod-blacklist
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd +libsqlite3
+Depends: +libc siproxd +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-codecfilter
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-defaulttarget
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97,7 +97,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-demo
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -118,7 +118,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-fix-bogus-via
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -139,7 +139,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-fix-DTAG
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -160,7 +160,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-fix-fbox-anoncall
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -181,7 +181,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-logcall
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -202,7 +202,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-prefix
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,7 +223,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-regex
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -244,7 +244,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-shortdial
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -265,7 +265,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-stats
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -286,7 +286,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-stripheader
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -307,7 +307,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-stun
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -328,7 +328,7 @@ http://siproxd.sourceforge.net/
 Package: siproxd-mod-siptrunk
 Submenu: Telephony
 Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
+Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: samba4-libs
 Version: 4.14.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +libreadline +libpopt +libcap +zlib +libgnutls +libtasn1 +libuuid +libopenssl +libpthread +KERNEL_IO_URING:liburing +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python3-cryptodome +SAMBA4_SERVER_AD_DC:python3-markdown +SAMBA4_SERVER_AD_DC:python3-dns +SAMBA4_SERVER_AD_DC:libopenldap +SAMBA4_SERVER_AD_DC:jansson +SAMBA4_SERVER_AD_DC:libarchive +SAMBA4_SERVER_AD_DC:acl +SAMBA4_SERVER_AD_DC:attr
+Depends: +libc +libtirpc +libreadline +libpopt +libcap +zlib +libgnutls +libtasn1 +libuuid +libopenssl +libpthread +KERNEL_IO_URING:liburing +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python3-cryptodome +SAMBA4_SERVER_AD_DC:python3-markdown +SAMBA4_SERVER_AD_DC:python3-dns +SAMBA4_SERVER_AD_DC:libopenldap +SAMBA4_SERVER_AD_DC:jansson +SAMBA4_SERVER_AD_DC:libarchive +SAMBA4_SERVER_AD_DC:acl +SAMBA4_SERVER_AD_DC:attr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ https://www.samba.org/
 
 Package: samba4-server
 Version: 4.14.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
+Depends: +libc +samba4-libs
 Conflicts: samba36-server
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Config:
 
 Package: samba4-client
 Version: 4.14.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
+Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -74,7 +74,7 @@ https://www.samba.org/
 
 Package: samba4-admin
 Version: 4.14.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
+Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -98,7 +98,7 @@ https://www.samba.org/
 
 Package: samba4-utils
 Version: 4.14.14-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
+Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 

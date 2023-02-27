@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libnatpmp/Makefile
 
 Package: libnatpmp
 Version: 20150609-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ https://miniupnp.tuxfamily.org/libnatpmp.html
 Package: natpmpc
 Submenu: Firewall
 Version: 20150609-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnatpmp
+Depends: +libc +libnatpmp
 Conflicts: 
 Menu-Depends: 
 Provides: 

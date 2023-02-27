@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/libusbmuxd/Makefile
 Package: libusbmuxd
 Submenu: libimobiledevice
 Version: 2.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libplist +libpthread +libxml2 +zlib
+Depends: +libc +libplist +libpthread +libxml2 +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: libusbmuxd-utils
 Submenu: libimobiledevice
 Version: 2.0.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusbmuxd
+Depends: +libc +libusbmuxd
 Conflicts: 
 Menu-Depends: 
 Provides: 

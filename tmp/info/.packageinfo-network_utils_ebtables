@@ -3,7 +3,7 @@ Source-Makefile: package/network/utils/ebtables/Makefile
 Package: ebtables
 Submenu: Firewall
 Version: 2018-06-27-48cff25dfea5b37e16ba5dc6601e98ab140f5f99-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ebtables
+Depends: +libc +kmod-ebtables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ http://ebtables.sourceforge.net/
 Package: ebtables-utils
 Submenu: Firewall
 Version: 2018-06-27-48cff25dfea5b37e16ba5dc6601e98ab140f5f99-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ebtables ebtables
+Depends: +libc +kmod-ebtables ebtables
 Conflicts: 
 Menu-Depends: 
 Provides: 

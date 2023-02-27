@@ -1,8 +1,8 @@
 Source-Makefile: package/devel/binutils/Makefile
 
 Package: libbfd
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +BUILD_NLS:libintl-full
+Version: 2.38-1
+Depends: +libc +zlib +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: libbfd
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: libbfd
@@ -19,8 +19,8 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libctf
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libbfd
+Version: 2.38-1
+Depends: +libc +libbfd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Category: Libraries
 Repository: base
 Title: libctf
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: libctf
@@ -37,8 +37,8 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libopcodes
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libbfd
+Version: 2.38-1
+Depends: +libc +libbfd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ Category: Libraries
 Repository: base
 Title: libopcodes
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: libopcodes
@@ -55,8 +55,8 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: binutils
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +objdump +ar
+Version: 2.38-1
+Depends: +libc +objdump +ar
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65,7 +65,7 @@ Category: Development
 Repository: base
 Title: binutils
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description:   The Binutils package contains a linker, an assembler, and other tools for handling object files
@@ -73,8 +73,8 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: objdump
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopcodes +libctf
+Version: 2.38-1
+Depends: +libc +libopcodes +libctf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ Category: Development
 Repository: base
 Title: objdump
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: objdump
@@ -91,8 +91,8 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ar
-Version: 2.35.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libbfd
+Version: 2.38-1
+Depends: +libc +zlib +libbfd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -101,7 +101,7 @@ Category: Development
 Repository: base
 Title: ar
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: binutils-2.35.2.tar.xz
+Source: binutils-2.38.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: ar

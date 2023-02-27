@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: icu
 Version: 72.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
+Depends: +libc +libstdcpp +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Hirokazu MORIKAWA <morikw2@gmail.com>
 
 Package: icu-full-data
 Version: 72.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +icu
+Depends: +libc +icu
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -48,7 +48,7 @@ Hirokazu MORIKAWA <morikw2@gmail.com>
 
 Package: icu-data-tools
 Version: 72.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +icu
+Depends: +libc +icu
 Conflicts: 
 Menu-Depends: 
 Provides: 

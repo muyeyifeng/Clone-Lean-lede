@@ -1,16 +1,17 @@
 Source-Makefile: package/system/uci/Makefile
 
 Package: libuci
-Version: 2021-04-14-4b3db1179747b6a6779029407984bacef851325c-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Version: 2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370-6
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: libs
 Category: Libraries
+Repository: base
 Title: C library for the Unified Configuration Interface (UCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: uci-2021-04-14-4b3db1179747b6a6779029407984bacef851325c.tar.xz
+Source: uci-2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370.tar.xz
 License: LGPL-2.1
 Type: ipkg
 Description: C library for the Unified Configuration Interface (UCI)
@@ -18,16 +19,17 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libuci-lua
-Version: 2021-04-14-4b3db1179747b6a6779029407984bacef851325c-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +liblua
+Version: 2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370-6
+Depends: +libc +libuci +liblua
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: libs
 Category: Libraries
+Repository: base
 Title: Lua plugin for UCI
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: uci-2021-04-14-4b3db1179747b6a6779029407984bacef851325c.tar.xz
+Source: uci-2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370.tar.xz
 License: LGPL-2.1
 Type: ipkg
 Description: Lua plugin for UCI
@@ -35,16 +37,17 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: uci
-Version: 2021-04-14-4b3db1179747b6a6779029407984bacef851325c-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci
+Version: 2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370-6
+Depends: +libc +libuci
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: base
 Category: Base system
+Repository: base
 Title: Utility for the Unified Configuration Interface (UCI)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: uci-2021-04-14-4b3db1179747b6a6779029407984bacef851325c.tar.xz
+Source: uci-2021-10-22-f84f49f00fb70364f58b4cce72f1796a7190d370.tar.xz
 License: LGPL-2.1
 Type: ipkg
 Description: Utility for the Unified Configuration Interface (UCI)

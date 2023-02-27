@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/ngircd/Makefile
 Package: ngircd
 Submenu: Instant Messaging
 Version: 26.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl
+Depends: +libc +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ https://ngircd.barton.de
 Package: ngircd-nossl
 Submenu: Instant Messaging
 Version: 26.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

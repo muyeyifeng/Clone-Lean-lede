@@ -4,7 +4,7 @@ Build-Depends: pcsc-lite libtool
 Package: libopensc
 Menu: 1
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +zlib
+Depends: +libc +libopenssl +libpthread +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-pkcs11
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libpkcs11-spy
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
+Depends: +libc +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -68,7 +68,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: opensc-utils
 Menu: 1
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopensc
+Depends: +libc +libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -88,7 +88,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-cardos-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-cryptoflex-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -128,7 +128,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-dnie-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,7 +148,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-eidenv
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -168,7 +168,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-iasecc-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -188,7 +188,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-netkey-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -208,7 +208,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-openpgp-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -228,7 +228,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-opensc-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -248,7 +248,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-opensc-explorer
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils +libncurses +libreadline
+Depends: +libc opensc-utils +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -268,7 +268,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-piv-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -288,7 +288,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-pkcs11-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -308,7 +308,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-pkcs15-crypt
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -328,7 +328,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-pkcs15-init
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -348,7 +348,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-pkcs15-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -368,7 +368,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-sc-hsm-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -388,7 +388,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: opensc-utils-westcos-tool
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread opensc-utils
+Depends: +libc opensc-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -408,7 +408,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-asepcos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -428,7 +428,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-authentic
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -448,7 +448,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-cardos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -468,7 +468,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-cyberflex
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -488,7 +488,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-entersafe
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -508,7 +508,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-epass2003
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -528,7 +528,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-flex
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -548,7 +548,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-gpk
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -568,7 +568,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-ias-adele-admin1
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -588,7 +588,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-ias-adele-admin2
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -608,7 +608,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-ias-adele-common
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -628,7 +628,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-iasecc-admin-eid
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -648,7 +648,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-iasecc-generic-oberthur
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -668,7 +668,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-iasecc-generic-pki
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -688,7 +688,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-iasecc
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -708,7 +708,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-incrypto34
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -728,7 +728,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-jcop
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -748,7 +748,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-miocos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -768,7 +768,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-muscle
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -788,7 +788,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-myeid
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -808,7 +808,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-oberthur
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -828,7 +828,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-openpgp
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -848,7 +848,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-pkcs15
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -868,7 +868,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-rutoken-ecp
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -888,7 +888,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-rutoken
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -908,7 +908,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-sc-hsm
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -928,7 +928,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-setcos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -948,7 +948,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-starcos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -968,7 +968,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: libopensc-profile-westcos
 Version: 0.22.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopensc
+Depends: +libc libopensc
 Conflicts: 
 Menu-Depends: 
 Provides: 

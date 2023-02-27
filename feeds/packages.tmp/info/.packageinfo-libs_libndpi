@@ -3,7 +3,7 @@ Build-Depends: libpcap
 
 Package: libndpi
 Version: 4.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBNDPI_GCRYPT:libgcrypt +LIBNDPI_PCRE:libpcre +LIBNDPI_MAXMINDDB:libmaxminddb +LIBNDPI_NDPIREADER:libpcap
+Depends: +libc +LIBNDPI_GCRYPT:libgcrypt +LIBNDPI_PCRE:libpcre +LIBNDPI_MAXMINDDB:libmaxminddb +LIBNDPI_NDPIREADER:libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 

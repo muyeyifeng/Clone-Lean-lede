@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-verysync
 Submenu: 3. Applications
 Version: 1.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +verysync
+Depends: +libc +verysync
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for Verysync
 Package: luci-i18n-verysync-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-verysync
+Depends: +libc luci-app-verysync
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/beep/Makefile
 
 Package: beep
 Version: 1.4.12-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +TARGET_x86:kmod-pcspkr @!TARGET_x86:kmod-gpio-beeper
+Depends: +libc +TARGET_x86:kmod-pcspkr @!TARGET_x86:kmod-gpio-beeper
 Conflicts: 
 Menu-Depends: 
 Provides: 

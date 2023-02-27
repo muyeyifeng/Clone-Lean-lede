@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/isc-dhcp/Makefile
 Package: isc-dhcp-relay-ipv4
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-server-ipv4
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-dyndns-ipv4
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib isc-dhcp-server-ipv4 +bind-server +bind-client
+Depends: +libc +zlib isc-dhcp-server-ipv4 +bind-server +bind-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-client-ipv4
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -101,7 +101,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-omshell-ipv4
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +isc-dhcp-server-ipv4
+Depends: +libc +isc-dhcp-server-ipv4
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -125,7 +125,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-relay-ipv6
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -150,7 +150,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-server-ipv6
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -174,7 +174,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-dyndns-ipv6
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib isc-dhcp-server-ipv6 +bind-server +bind-client
+Depends: +libc +zlib isc-dhcp-server-ipv6 +bind-server +bind-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -198,7 +198,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-client-ipv6
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -223,7 +223,7 @@ Philip Prindeville <philipp@redfish-solutions.com>
 Package: isc-dhcp-omshell-ipv6
 Submenu: IP Addresses and Names
 Version: 4.4.1-18
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +isc-dhcp-server-ipv6
+Depends: +libc +isc-dhcp-server-ipv6
 Conflicts: 
 Menu-Depends: 
 Provides: 

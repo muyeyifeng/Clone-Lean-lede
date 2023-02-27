@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/flup/Makefile
 Package: python3-flup
 Submenu: Python
 Version: 1.0.3-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-logging
+Depends: +libc +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>, Josef Schlehofer <pepe.schlehofer@g
 Package: python3-flup-src
 Submenu: Python
 Version: 1.0.3-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

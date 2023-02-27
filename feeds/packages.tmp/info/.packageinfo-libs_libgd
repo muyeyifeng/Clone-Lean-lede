@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/libs/libgd/Makefile
 
 Package: libgd
 Menu: 1
-Version: 2.3.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng +libwebp +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype
+Version: 2.3.3-1
+Depends: +libc +libjpeg +libpng +libwebp +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype
 Conflicts: libgd-full
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: The GD graphics library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libgd-2.3.2.tar.xz
+Source: libgd-2.3.3.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -40,8 +40,8 @@ Config:
 @@
 
 Package: libgd-full
-Version: 2.3.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng +libwebp +libtiff +libfreetype
+Version: 2.3.3-1
+Depends: +libc +libjpeg +libpng +libwebp +libtiff +libfreetype
 Conflicts: 
 Menu-Depends: 
 Provides: libgd
@@ -51,7 +51,7 @@ Category: Libraries
 Repository: base
 Title: The GD graphics library (full)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libgd-2.3.2.tar.xz
+Source: libgd-2.3.3.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg

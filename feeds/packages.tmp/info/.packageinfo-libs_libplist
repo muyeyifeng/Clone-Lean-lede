@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/libplist/Makefile
 Package: libplist
 Submenu: libimobiledevice
 Version: 2.2.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2
+Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: plistutil
 Submenu: libimobiledevice
 Version: 2.2.0-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libplist
+Depends: +libc +libplist
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/boot/arm-trusted-firmware-mediatek/Makefile
 
 Package: trusted-firmware-a-mt7622-nor-1ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-nor-2ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-snand-1ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65,7 +65,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-snand-2ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86,7 +86,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-emmc-1ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -107,7 +107,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-emmc-2ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -128,7 +128,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-sdmmc-1ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -149,7 +149,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7622-sdmmc-2ddr
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_mt7622
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -170,7 +170,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-emmc-ddr3
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -191,7 +191,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-nor-ddr3
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -212,7 +212,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-sdmmc-ddr3
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -233,7 +233,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-snand-ddr3
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -254,7 +254,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-spim-nand-ddr3
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -275,7 +275,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-emmc-ddr4
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -296,7 +296,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-nor-ddr4
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -317,7 +317,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-sdmmc-ddr4
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -338,7 +338,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-snand-ddr4
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -359,7 +359,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: trusted-firmware-a-mt7986-spim-nand-ddr4
 Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_mediatek_filogic
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
 Conflicts: 
 Menu-Depends: 
 Provides: 

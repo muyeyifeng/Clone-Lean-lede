@@ -2,7 +2,7 @@ Source-Makefile: package/firmware/ath10k-ct-firmware/Makefile
 
 Package: ath10k-firmware-qca9887-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9887
+Depends: +libc +ath10k-board-qca9887
 Conflicts: ath10k-firmware-qca9887
 Menu-Depends: 
 Provides: ath10k-firmware-qca9887
@@ -24,7 +24,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca9887-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9887 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca9887 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca9887 ath10k-firmware-qca9887-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca9887 ath10k-firmware-qca9887-ct
@@ -47,7 +47,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca988x-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca988x
+Depends: +libc +ath10k-board-qca988x
 Conflicts: ath10k-firmware-qca988x
 Menu-Depends: 
 Provides: ath10k-firmware-qca988x
@@ -70,7 +70,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca988x-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca988x +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca988x +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca988x ath10k-firmware-qca988x-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca988x ath10k-firmware-qca988x-ct
@@ -93,7 +93,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca99x0-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca99x0
+Depends: +libc +ath10k-board-qca99x0
 Conflicts: ath10k-firmware-qca99x0
 Menu-Depends: 
 Provides: ath10k-firmware-qca99x0
@@ -115,7 +115,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca99x0-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca99x0 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca99x0 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca99x0 ath10k-firmware-qca99x0-ct ath10k-firmware-qca99x0-ct-htt
 Menu-Depends: 
 Provides: ath10k-firmware-qca99x0 ath10k-firmware-qca99x0-ct
@@ -138,7 +138,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca99x0-ct-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca99x0 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca99x0 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca99x0 ath10k-firmware-qca99x0-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca99x0 ath10k-firmware-qca99x0-ct
@@ -162,7 +162,7 @@ This firmware selects and requires the ath10k-ct driver.
 
 Package: ath10k-firmware-qca9984-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9984
+Depends: +libc +ath10k-board-qca9984
 Conflicts: ath10k-firmware-qca9984
 Menu-Depends: 
 Provides: ath10k-firmware-qca9984
@@ -184,7 +184,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca9984-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9984 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca9984 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca9984 ath10k-firmware-qca9984-ct ath10k-firmware-qca9984-ct-htt
 Menu-Depends: 
 Provides: ath10k-firmware-qca9984 ath10k-firmware-qca9984-ct
@@ -207,7 +207,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca9984-ct-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9984 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca9984 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca9984 ath10k-firmware-qca9984-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca9984 ath10k-firmware-qca9984-ct
@@ -231,7 +231,7 @@ This firmware selects and requires the ath10k-ct driver.
 
 Package: ath10k-firmware-qca4019-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca4019
+Depends: +libc +ath10k-board-qca4019
 Conflicts: ath10k-firmware-qca4019
 Menu-Depends: 
 Provides: ath10k-firmware-qca4019
@@ -251,7 +251,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca4019-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca4019 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca4019 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca4019 ath10k-firmware-qca4019-ct ath10k-firmware-qca4019-ct-htt
 Menu-Depends: 
 Provides: ath10k-firmware-qca4019 ath10k-firmware-qca4019-ct
@@ -274,7 +274,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca4019-ct-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca4019 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca4019 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca4019 ath10k-firmware-qca4019-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca4019 ath10k-firmware-qca4019-ct
@@ -298,7 +298,7 @@ This firmware selects and requires the ath10k-ct driver.
 
 Package: ath10k-firmware-qca9888-ct
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9888
+Depends: +libc +ath10k-board-qca9888
 Conflicts: ath10k-firmware-qca9888
 Menu-Depends: 
 Provides: ath10k-firmware-qca9888
@@ -320,7 +320,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca9888-ct-full-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9888 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca9888 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca9888 ath10k-firmware-qca9888-ct ath10k-firmware-qca9888-ct-htt
 Menu-Depends: 
 Provides: ath10k-firmware-qca9888 ath10k-firmware-qca9888-ct
@@ -343,7 +343,7 @@ https://www.candelatech.com/ath10k.php
 
 Package: ath10k-firmware-qca9888-ct-htt
 Version: 2020-11-08-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ath10k-board-qca9888 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
+Depends: +libc +ath10k-board-qca9888 +!PACKAGE_kmod-ath10k-ct-smallbuffers:kmod-ath10k-ct
 Conflicts: ath10k-firmware-qca9888 ath10k-firmware-qca9888-ct
 Menu-Depends: 
 Provides: ath10k-firmware-qca9888 ath10k-firmware-qca9888-ct

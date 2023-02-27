@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/tiff/Makefile
 
 Package: libtiff
-Version: 4.4.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libjpeg
+Version: 4.4.0-2
+Depends: +libc +zlib +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,8 +22,8 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: tiff-utils
 Submenu: Image Manipulation
-Version: 4.4.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtiff
+Version: 4.4.0-2
+Depends: +libc +libtiff
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/joe/Makefile
 Package: joe
 Submenu: Editors
 Version: 4.6-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Vitaly Protsko <villy@sft.ru>
 Package: joe-extras
 Submenu: Editors
 Version: 4.6-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +joe
+Depends: +libc +joe
 Conflicts: 
 Menu-Depends: 
 Provides: 

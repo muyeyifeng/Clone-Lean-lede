@@ -3,8 +3,8 @@ Build-Depends/host: ucl/host
 Build-Types: host
 
 Package: upx
-Version: 2022-01-15-1050de5171f70fd4ba113016e4db994e898c7be3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libucl +libstdcpp +zlib
+Version: 3.96-1
+Depends: +libc +libucl +libstdcpp +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,15 +13,12 @@ Category: Utilities
 Repository: base
 Title: The Ultimate Packer for eXecutables
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
-Source: upx-2022-01-15.tar.gz
+Source: upx-3.96.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING LICENSE
 Type: ipkg
-Description: UPX is a free, portable, extendable, high-performance executable packer for
-several different executable formats. It achieves an excellent compression ratio
-and offers very fast decompression. Your executables suffer no memory overhead
-or other drawbacks for most of the formats supported, because of in-place
-decompression.
+Description: UPX is a free, secure, portable, extendable, high-performance
+executable packer for several executable formats.
 https://upx.github.io/
 Xingwang Liao <kuoruan@gmail.com>
 @@

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/byobu/Makefile
 
 Package: byobu
 Version: 5.133-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-newt
+Depends: +libc +python3-light +python3-newt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: byobu-utils
 Version: 5.133-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

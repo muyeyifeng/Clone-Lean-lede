@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-aiohttp-cors/Makefile
 Package: python3-aiohttp-cors
 Submenu: Python
 Version: 0.7.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-aiohttp +python3-light
+Depends: +libc +python3-aiohttp +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 Package: python3-aiohttp-cors-src
 Submenu: Python
 Version: 0.7.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

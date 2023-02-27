@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-v2ray-server
 Submenu: 3. Applications
 Version: 13-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +unzip
+Depends: +libc +unzip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for V2ray Server
 Package: luci-i18n-v2ray-server-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 13-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-v2ray-server
+Depends: +libc luci-app-v2ray-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

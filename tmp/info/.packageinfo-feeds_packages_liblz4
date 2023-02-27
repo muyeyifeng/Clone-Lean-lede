@@ -4,7 +4,7 @@ Package: liblz4
 Menu: 1
 Submenu: Compression
 Version: 1.9.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Config:
 Package: lz4
 Submenu: Compression
 Version: 1.9.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblz4
+Depends: +libc +liblz4
 Conflicts: 
 Menu-Depends: 
 Provides: 

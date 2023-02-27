@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/mail/dovecot/Makefile
 
 Package: dovecot
 Version: 2.3.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DOVECOT_GSSAPI:krb5-libs +DOVECOT_LDAP:libopenldap +DOVECOT_MYSQL:libmysqlclient +DOVECOT_PGSQL:libpq +DOVECOT_SQLITE:libsqlite3 +libopenssl +librt +zlib +libbz2 +libcap +DOVECOT_ICU:icu +BUILD_NLS:libiconv-full
+Depends: +libc +DOVECOT_GSSAPI:krb5-libs +DOVECOT_LDAP:libopenldap +DOVECOT_MYSQL:libmysqlclient +DOVECOT_PGSQL:libpq +DOVECOT_SQLITE:libsqlite3 +libopenssl +librt +zlib +libbz2 +libcap +DOVECOT_ICU:icu +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 
 Package: dovecot-utils
 Version: 2.3.18-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dovecot
+Depends: +libc +dovecot
 Conflicts: 
 Menu-Depends: 
 Provides: 

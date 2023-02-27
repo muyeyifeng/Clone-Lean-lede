@@ -2,8 +2,8 @@ Source-Makefile: package/utils/busybox/Makefile
 Build-Depends: BUSYBOX_CONFIG_PAM:libpam
 
 Package: busybox
-Version: 1.35.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUSYBOX_CONFIG_PAM:libpam +BUSYBOX_CONFIG_NTPD:jsonfilter
+Version: 1.36.0-1
+Depends: +libc +BUSYBOX_CONFIG_PAM:libpam +BUSYBOX_CONFIG_NTPD:jsonfilter
 Conflicts: busybox-selinux
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Repository: base
 Title: Core utilities for embedded Linux
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: ntp=123:ntp=123
-Source: busybox-1.35.0.tar.bz2
+Source: busybox-1.36.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
 Type: ipkg
@@ -28,8 +28,8 @@ Config:
 @@
 
 Package: busybox-selinux
-Version: 1.35.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUSYBOX_CONFIG_PAM:libpam +BUSYBOX_CONFIG_NTPD:jsonfilter +libselinux
+Version: 1.36.0-1
+Depends: +libc +BUSYBOX_CONFIG_PAM:libpam +BUSYBOX_CONFIG_NTPD:jsonfilter +libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: busybox
@@ -40,7 +40,7 @@ Repository: base
 Title: Core utilities for embedded Linux with SELinux support
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: ntp=123:ntp=123
-Source: busybox-1.35.0.tar.bz2
+Source: busybox-1.36.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
 Type: ipkg

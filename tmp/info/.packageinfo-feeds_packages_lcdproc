@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/lcdproc/Makefile
 
 Package: lcdproc-clients
 Version: 0.5.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 
 Package: lcdproc-server
 Version: 0.5.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,7 +57,7 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 
 Package: lcdproc-drivers
 Version: 0.5.9-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lcdproc-server +libncurses +libusb-1.0 +libusb-compat +libftdi1 +GPIO_SUPPORT:libugpio +serdisplib
+Depends: +libc +lcdproc-server +libncurses +libusb-1.0 +libusb-compat +libftdi1 +GPIO_SUPPORT:libugpio +serdisplib
 Conflicts: 
 Menu-Depends: 
 Provides: 

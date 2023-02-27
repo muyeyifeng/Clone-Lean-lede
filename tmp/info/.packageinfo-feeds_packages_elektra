@@ -4,7 +4,7 @@ Build-Depends: lua
 Package: libelektra-core
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Harald Geyer <harald@ccbib.org>
 
 Package: elektra-kdb
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libstdcpp
+Depends: +libc +libelektra-core +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-resolvers
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libpthread
+Depends: +libc +libelektra-core +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-plugins
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +BUILD_NLS:libiconv-full
+Depends: +libc +libelektra-core +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -109,7 +109,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-cpp
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libstdcpp
+Depends: +libc +libelektra-core +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -135,7 +135,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-curlget
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libcurl +libopenssl
+Depends: +libc +libelektra-core +libcurl +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -159,7 +159,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-crypto
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libgcrypt
+Depends: +libc +libelektra-core +libgcrypt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -183,7 +183,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-dbus
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libdbus
+Depends: +libc +libelektra-core +libdbus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -208,7 +208,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-ev
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libev
+Depends: +libc +libelektra-core +libev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -233,7 +233,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-uv
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libuv
+Depends: +libc +libelektra-core +libuv
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -258,7 +258,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-xerces
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libstdcpp +libxerces-c
+Depends: +libc +libelektra-core +libstdcpp +libxerces-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -285,7 +285,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-xml
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libxml2
+Depends: +libc +libelektra-core +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -309,7 +309,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-yajl
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +yajl
+Depends: +libc +libelektra-core +yajl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -333,7 +333,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-yamlcpp
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libyaml-cpp
+Depends: +libc +libelektra-core +libyaml-cpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -357,7 +357,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-python3
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +python3-light +libstdcpp
+Depends: +libc +libelektra-core +python3-light +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -381,7 +381,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-lua
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +lua5.3 +libstdcpp
+Depends: +libc +libelektra-core +lua5.3 +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -405,7 +405,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-zmq
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libzmq
+Depends: +libc +libelektra-core +libzmq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -426,7 +426,7 @@ Harald Geyer <harald@ccbib.org>
 Package: libelektra-extra
 Submenu: LibElektra
 Version: 0.9.7-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libelektra-core +libstdcpp
+Depends: +libc +libelektra-core +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 

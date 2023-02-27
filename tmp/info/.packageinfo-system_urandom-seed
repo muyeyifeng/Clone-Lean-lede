@@ -2,7 +2,7 @@ Source-Makefile: package/system/urandom-seed/Makefile
 
 Package: urandom-seed
 Version: 3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +getrandom
+Depends: +libc +getrandom
 Conflicts: 
 Menu-Depends: 
 Provides: 

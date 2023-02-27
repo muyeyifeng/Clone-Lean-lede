@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/sqlite3/Makefile
 Package: libsqlite3
 Submenu: Database
 Version: 3400000-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib
+Depends: +libc +libpthread +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Config:
 Package: sqlite3-cli
 Submenu: Database
 Version: 3400000-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +SQLITE3_LIBEDIT:libedit +SQLITE3_READLINE:libreadline +SQLITE3_READLINE:libncursesw
+Depends: +libc +libsqlite3 +SQLITE3_LIBEDIT:libedit +SQLITE3_READLINE:libreadline +SQLITE3_READLINE:libncursesw
 Conflicts: 
 Menu-Depends: 
 Provides: 

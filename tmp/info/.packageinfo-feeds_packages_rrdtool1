@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/rrdtool1/Makefile
 
 Package: librrd1
 Version: 1.0.50-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Jo-Philipp Wich <jo@mein.io>
 Package: rrdcgi1
 Submenu: Database
 Version: 1.0.50-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd1
+Depends: +libc +librrd1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63,7 +63,7 @@ Jo-Philipp Wich <jo@mein.io>
 Package: rrdtool1
 Submenu: Database
 Version: 1.0.50-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd1
+Depends: +libc +librrd1
 Conflicts: 
 Menu-Depends: 
 Provides: 

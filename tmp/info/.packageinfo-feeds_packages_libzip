@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/libzip/Makefile
 Package: libzip-gnutls
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +PACKAGE_libzip-gnutls:libgnutls
+Depends: +libc +zlib +PACKAGE_libzip-gnutls:libgnutls
 Conflicts: 
 Menu-Depends: 
 Provides: libzip
@@ -25,7 +25,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: libzip-mbedtls
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +PACKAGE_libzip-mbedtls:libmbedtls
+Depends: +libc +zlib +PACKAGE_libzip-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: libzip
@@ -47,7 +47,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: libzip-openssl
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +PACKAGE_libzip-openssl:libopenssl
+Depends: +libc +zlib +PACKAGE_libzip-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: libzip
@@ -69,7 +69,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: libzip-nossl
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Depends: +libc +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: libzip
@@ -91,7 +91,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: zipcmp
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzip +USE_MUSL:musl-fts
+Depends: +libc +libzip +USE_MUSL:musl-fts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -112,7 +112,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: zipmerge
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzip
+Depends: +libc +libzip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -133,7 +133,7 @@ Michael Heimpold <mhei@heimpold.de>
 Package: ziptool
 Submenu: Compression
 Version: 1.9.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzip
+Depends: +libc +libzip
 Conflicts: 
 Menu-Depends: 
 Provides: 

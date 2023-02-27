@@ -4,7 +4,7 @@ Package: gnupg2
 Menu: 1
 Submenu: Encryption
 Version: 2.2.39-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ http://www.gnupg.org/
 Package: gpgv2
 Submenu: Encryption
 Version: 2.2.39-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -53,7 +53,7 @@ http://www.gnupg.org/
 Package: gnupg2-dirmngr
 Submenu: Encryption
 Version: 2.2.39-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libgpg-error +libnpth +libassuan +libksba +libgcrypt +zlib +libncurses +libreadline +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79,7 +79,7 @@ http://www.gnupg.org/
 Package: gnupg2-utils
 Submenu: Encryption
 Version: 2.2.39-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg2 +libcurl
+Depends: +libc gnupg2 +libcurl
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,8 +1,9 @@
 Source-Makefile: package/libs/libiconv-full/Makefile
+Build-Types: host
 
 Package: libcharset
-Version: 1.16-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.17-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: Character set conversion library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiconv-1.16.tar.gz
+Source: libiconv-1.17.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -21,8 +22,8 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libiconv-full
-Version: 1.16-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.17-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31,7 +32,7 @@ Category: Libraries
 Repository: base
 Title: Character set conversion library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiconv-1.16.tar.gz
+Source: libiconv-1.17.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg
@@ -41,8 +42,8 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: iconv
-Version: 1.16-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiconv-full +libcharset
+Version: 1.17-1
+Depends: +libc +libiconv-full +libcharset
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +52,7 @@ Category: Utilities
 Repository: base
 Title: Character set conversion utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiconv-1.16.tar.gz
+Source: libiconv-1.17.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg

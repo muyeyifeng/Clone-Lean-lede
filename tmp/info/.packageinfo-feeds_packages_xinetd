@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/xinetd/Makefile
 
 Package: xinetd
-Version: 2.3.15-13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.3.15-15
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: packages
 Title: A powerful and secure super-server
 Maintainer: Florian Eckert <fe@dev.tdt.de>
-Source: xinetd-2.3.15.tar.gz
+Source: xinetd-2.3.15.tar.xz
 License: xinetd
 LicenseFiles: COPYRIGHT
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libcap-ng/Makefile
 
 Package: libcap-ng
 Version: 0.8.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Lucian CRISTIAN <lucian.cristian@gmail.com>
 
 Package: libcap-ng-bin
 Version: 0.8.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libcap-ng
+Depends: +libc libcap-ng
 Conflicts: 
 Menu-Depends: 
 Provides: 

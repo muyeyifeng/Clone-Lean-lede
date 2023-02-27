@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python-distro/Makefile
 Package: python3-distro
 Submenu: Python
 Version: 1.7.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-logging
+Depends: +libc +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Javier Marcet <javier@marcet.info>
 Package: python3-distro-src
 Submenu: Python
 Version: 1.7.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

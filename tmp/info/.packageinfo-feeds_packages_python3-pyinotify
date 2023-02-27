@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python3-pyinotify/Makefile
 Package: python3-pyinotify
 Submenu: Python
 Version: 0.9.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-ctypes +python3-logging
+Depends: +libc +python3-light +python3-ctypes +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Gerald Kerma <gandalf@gk2.net>
 Package: python3-pyinotify-src
 Submenu: Python
 Version: 0.9.6-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

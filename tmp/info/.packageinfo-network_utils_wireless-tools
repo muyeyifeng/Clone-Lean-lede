@@ -2,7 +2,7 @@ Source-Makefile: package/network/utils/wireless-tools/Makefile
 
 Package: libiw
 Version: 29-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wireless-tools
 Version: 29-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

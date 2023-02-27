@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/ifstat/Makefile
 
 Package: ifstat
 Version: 1.1-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +IFSTAT_SNMP:libnetsnmp
+Depends: +libc +IFSTAT_SNMP:libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 

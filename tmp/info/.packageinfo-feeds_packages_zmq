@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/zmq/Makefile
 
 Package: libzmq-nc
 Version: 4.3.4-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libstdcpp +LIBZMQ_NC_WITH_OPENPGM:openpgm
+Depends: +libc +libuuid +libstdcpp +LIBZMQ_NC_WITH_OPENPGM:openpgm
 Conflicts: 
 Menu-Depends: 
 Provides: libzmq
@@ -29,7 +29,7 @@ Config:
 
 Package: libzmq-curve
 Version: 4.3.4-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuuid +libstdcpp +libsodium +LIBZMQ_CURVE_WITH_OPENPGM:openpgm
+Depends: +libc +libuuid +libstdcpp +libsodium +LIBZMQ_CURVE_WITH_OPENPGM:openpgm
 Conflicts: 
 Menu-Depends: 
 Provides: libzmq

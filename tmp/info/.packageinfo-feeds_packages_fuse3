@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/fuse3/Makefile
 Package: libfuse3
 Submenu: Filesystem
 Version: 3.10.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +libpthread
+Depends: +libc +kmod-fuse +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ https://github.com/libfuse/libfuse
 Package: fuse3-utils
 Submenu: Filesystem
 Version: 3.10.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse3
+Depends: +libc +libfuse3
 Conflicts: 
 Menu-Depends: 
 Provides: 

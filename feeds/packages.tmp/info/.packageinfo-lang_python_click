@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/click/Makefile
 
 Package: python3-click
 Submenu: Python
-Version: 8.0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Version: 8.1.3-1
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Click
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: click-8.0.3.tar.gz
+Source: click-8.1.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,8 +23,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: python3-click-src
 Submenu: Python
-Version: 8.0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 8.1.3-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: base
 Title: Click (sources)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: click-8.0.3.tar.gz
+Source: click-8.1.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

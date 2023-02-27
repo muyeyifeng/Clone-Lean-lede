@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libyang/Makefile
 
 Package: libyang
 Version: 2.0.112-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre2 +libpthread
+Depends: +libc +libpcre2 +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Jakov Smolic <jakov.smolic@sartura.hr>
 
 Package: yanglint
 Version: 2.0.112-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang
+Depends: +libc +libyang
 Conflicts: 
 Menu-Depends: 
 Provides: 

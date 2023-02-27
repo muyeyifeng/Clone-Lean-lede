@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/dnscrypt-proxy/Makefile
 Package: dnscrypt-proxy
 Submenu: IP Addresses and Names
 Version: 2019-08-20-07ac3825b5069adc28e2547c16b1d983a8ed8d80-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium +dnscrypt-proxy-resolvers +DNSCRYPT_ENABLE_PLUGINS:libltdl +DNSCRYPT_ENABLE_PLUGINS:libldns
+Depends: +libc +libsodium +dnscrypt-proxy-resolvers +DNSCRYPT_ENABLE_PLUGINS:libltdl +DNSCRYPT_ENABLE_PLUGINS:libldns
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Config:
 Package: dnscrypt-proxy-resolvers
 Submenu: IP Addresses and Names
 Version: 2019-08-20-07ac3825b5069adc28e2547c16b1d983a8ed8d80-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -53,7 +53,7 @@ Damiano Renfer <x9w2n7xnu@relay.firefox.com>
 Package: hostip
 Submenu: IP Addresses and Names
 Version: 2019-08-20-07ac3825b5069adc28e2547c16b1d983a8ed8d80-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium
+Depends: +libc +libsodium
 Conflicts: 
 Menu-Depends: 
 Provides: 

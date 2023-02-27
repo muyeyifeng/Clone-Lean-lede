@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-phtunnel
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cgi-io +curl +luci-compat +luci-lib-json +phtunnel
+Depends: +libc +cgi-io +curl +luci-compat +luci-lib-json +phtunnel
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI Support for the PHTunnel
 Package: luci-i18n-phtunnel-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: x-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-phtunnel
+Depends: +libc luci-app-phtunnel
 Conflicts: 
 Menu-Depends: 
 Provides: 

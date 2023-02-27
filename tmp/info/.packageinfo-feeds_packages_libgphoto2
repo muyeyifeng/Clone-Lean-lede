@@ -2,28 +2,28 @@ Source-Makefile: package/feeds/packages/libgphoto2/Makefile
 
 Package: libgphoto2
 Menu: 1
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libltdl +libusb-compat +libusb-1.0 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Version: 2.5.30-1
+Depends: +libc +libpthread +libltdl +libusb-compat +libusb-1.0 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: libs
 Category: Libraries
 Repository: packages
-Title: The basic library of the gphoto2 program, version 2.5.26.
+Title: The basic library of the gphoto2 program, version 2.5.30.
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
-Description: The basic library of the gphoto2 program, version 2.5.26.
+Description: The basic library of the gphoto2 program, version 2.5.30.
 http://www.gphoto.org/
 Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-port
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libgphoto2 +libusb-1.0 +libusb-compat
+Version: 2.5.30-1
+Depends: +libc libgphoto2 +libusb-1.0 +libusb-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,7 +32,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for connect cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -42,8 +42,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-adc65
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for adc65 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -62,8 +62,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-agfa_cl20
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72,7 +72,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for agfa_cl20 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -82,8 +82,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-aox
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -92,7 +92,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for aox cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -102,8 +102,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ax203
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -112,7 +112,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for ax203 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -122,8 +122,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-barbie
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -132,7 +132,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for barbie cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -142,8 +142,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-canon
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -152,7 +152,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for canon cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -162,8 +162,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-casio_qv
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -172,7 +172,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for casio_qv cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -182,8 +182,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-clicksmart310
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -192,7 +192,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for clicksmart310 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -202,8 +202,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-digigr8
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -212,7 +212,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for digigr8 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -222,8 +222,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-digita
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -232,7 +232,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for digita cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -242,8 +242,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-dimera3500
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -252,7 +252,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for dimera3500 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -262,8 +262,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-directory
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -272,7 +272,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for directory cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -282,8 +282,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-enigma13
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -292,7 +292,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for enigma13 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -302,8 +302,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-fuji
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -312,7 +312,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for fuji cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -322,8 +322,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-gsmart300
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -332,7 +332,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for gsmart300 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -342,8 +342,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-hp215
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -352,7 +352,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for hp215 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -362,8 +362,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-iclick
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -372,7 +372,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for iclick cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -382,8 +382,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jamcam
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -392,7 +392,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for jamcam cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -402,8 +402,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jd11
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -412,7 +412,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for jd11 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -422,8 +422,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jl2005a
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -432,7 +432,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for jl2005a cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -442,8 +442,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jl2005c
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -452,7 +452,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for jl2005c cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -462,8 +462,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc120
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -472,7 +472,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for kodak_dc120 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -482,8 +482,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc210
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -492,7 +492,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for kodak_dc210 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -502,8 +502,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc240
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -512,7 +512,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for kodak_dc240 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -522,8 +522,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc3200
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -532,7 +532,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for kodak_dc3200 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -542,8 +542,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_ez200
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -552,7 +552,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for kodak_ez200 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -562,8 +562,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-konica
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -572,7 +572,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for konica cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -582,8 +582,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-konica_qm150
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -592,7 +592,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for konica_qm150 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -602,8 +602,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-largan
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -612,7 +612,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for largan cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -622,8 +622,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-lg_gsm
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -632,7 +632,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for lg_gsm cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -642,8 +642,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-mars
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -652,7 +652,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for mars cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -662,8 +662,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-dimagev
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -672,7 +672,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for dimagev cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -682,8 +682,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-mustek
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -692,7 +692,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for mustek cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -702,8 +702,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_coolshot
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -712,7 +712,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for panasonic_coolshot cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -722,8 +722,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_l859
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -732,7 +732,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for panasonic_l859 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -742,8 +742,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_dc1000
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -752,7 +752,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for panasonic_dc1000 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -762,8 +762,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_dc1580
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -772,7 +772,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for panasonic_dc1580 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -782,8 +782,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pccam300
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -792,7 +792,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for pccam300 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -802,8 +802,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pccam600
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -812,7 +812,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for pccam600 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -822,8 +822,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pentax
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -832,7 +832,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for pentax cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -842,8 +842,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc320
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -852,7 +852,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for polaroid_pdc320 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -862,8 +862,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc640
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -872,7 +872,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for polaroid_pdc640 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -882,8 +882,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc700
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -892,7 +892,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for polaroid_pdc700 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -902,8 +902,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ptp2
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -912,7 +912,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for ptp2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -922,8 +922,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ricoh
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -932,7 +932,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for ricoh cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -942,8 +942,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ricoh_g3
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -952,7 +952,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for ricoh_g3 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -962,8 +962,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-samsung
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -972,7 +972,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for samsung cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -982,8 +982,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sierra
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -992,7 +992,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sierra cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1002,8 +1002,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sipix_blink2
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1012,7 +1012,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sipix_blink2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1022,8 +1022,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sipix_web2
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1032,7 +1032,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sipix_web2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1042,8 +1042,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-smal
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1052,7 +1052,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for smal cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1062,8 +1062,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sonix
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1072,7 +1072,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sonix cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1082,8 +1082,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sony_dscf1
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1092,7 +1092,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sony_dscf1 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1102,8 +1102,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sony_dscf55
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1112,7 +1112,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sony_dscf55 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1122,8 +1122,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-soundvision
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1132,7 +1132,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for soundvision cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1142,8 +1142,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-spca50x
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1152,7 +1152,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for spca50x cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1162,8 +1162,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sq905
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1172,7 +1172,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sq905 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1182,8 +1182,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-st2205
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1192,7 +1192,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for st2205 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1202,8 +1202,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-stv0674
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1212,7 +1212,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for stv0674 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1222,8 +1222,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-stv0680
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1232,7 +1232,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for stv0680 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1242,8 +1242,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sx330z
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1252,7 +1252,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for sx330z cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1262,8 +1262,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-topfield
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1272,7 +1272,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for topfield cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1282,8 +1282,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-toshiba_pdrm11
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1292,7 +1292,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for toshiba_pdrm11 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1302,8 +1302,8 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-tp6801
-Version: 2.5.26-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
+Version: 2.5.30-1
+Depends: +libc +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1312,7 +1312,7 @@ Category: Libraries
 Repository: packages
 Title: Gphoto2 drivers for tp6801 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.26.tar.bz2
+Source: libgphoto2-2.5.30.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/phtunnel/Makefile
 Package: phtunnel
 Submenu: Web Servers/Proxies
 Version: 1.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(arm||aarch64||mipsel||i386||x86_64) +libpthread +librt
+Depends: +libc @(arm||aarch64||mipsel||i386||x86_64) +libpthread +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 

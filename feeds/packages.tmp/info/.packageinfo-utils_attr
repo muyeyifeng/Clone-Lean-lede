@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/attr/Makefile
 Package: attr
 Submenu: Filesystem
 Version: 2.5.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libattr
+Depends: +libc +libattr
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Maxim Storchak <m.storchak@gmail.com>
 Package: libattr
 Submenu: Filesystem
 Version: 2.5.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

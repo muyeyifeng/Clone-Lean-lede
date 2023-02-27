@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/subversion/Makefile
 Package: subversion-libs
 Submenu: Version Control Systems
 Version: 1.14.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_unixodbc:unixodbc +libaprutil +libmagic +libsqlite3 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +PACKAGE_unixodbc:unixodbc +libaprutil +libmagic +libsqlite3 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Val Kulkov <val.kulkov@gmail.com>
 Package: subversion-client
 Submenu: Version Control Systems
 Version: 1.14.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +subversion-libs
+Depends: +libc +subversion-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ Val Kulkov <val.kulkov@gmail.com>
 Package: subversion-server
 Submenu: Version Control Systems
 Version: 1.14.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +subversion-libs
+Depends: +libc +subversion-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 

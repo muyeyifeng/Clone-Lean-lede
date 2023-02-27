@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/radicale2/Makefile
 Package: radicale2
 Submenu: Web Servers/Proxies
 Version: 2.1.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-dateutil +python3-vobject +python3-setuptools
+Depends: +libc +python3 +python3-dateutil +python3-vobject +python3-setuptools
 Conflicts: radicale
 Menu-Depends: 
 Provides: 
@@ -35,7 +35,7 @@ https://radicale.org/
 Package: radicale2-src
 Submenu: Web Servers/Proxies
 Version: 2.1.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71,7 +71,7 @@ Config:
 Package: radicale2-examples
 Submenu: Web Servers/Proxies
 Version: 2.1.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

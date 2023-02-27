@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/libidn/Makefile
 Package: idn
 Submenu: IP Addresses and Names
 Version: 1.41-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libidn
+Depends: +libc +libidn
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ http://www.gnu.org/software/libidn/
 
 Package: libidn
 Version: 1.41-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

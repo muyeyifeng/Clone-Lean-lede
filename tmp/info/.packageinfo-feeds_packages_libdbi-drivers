@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libdbi-drivers/Makefile
 
 Package: libdbd-mysql
 Version: 0.9.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libdbi +libmysqlclient
+Depends: +libc libdbi +libmysqlclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Nicolas Thill <nico@openwrt.org>
 
 Package: libdbd-pgsql
 Version: 0.9.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libdbi +libpq
+Depends: +libc libdbi +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -42,7 +42,7 @@ Nicolas Thill <nico@openwrt.org>
 
 Package: libdbd-sqlite3
 Version: 0.9.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libdbi +libsqlite3
+Depends: +libc libdbi +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 

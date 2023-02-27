@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/net-snmp/Makefile
 
 Package: libnetsnmp
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +libpci +libpcre
+Depends: +libc +libnl-tiny +libpci +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 
 Package: snmp-mibs
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 
 Package: snmp-utils
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
+Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 
 Package: snmpd
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
+Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 
 Package: snmpd-static
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +snmpd
+Depends: +libc +snmpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -128,7 +128,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 
 Package: snmptrapd
 Version: 5.9.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnetsnmp
+Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
 Provides: 

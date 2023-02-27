@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/tac_plus/Makefile
 
 Package: tac_plus
 Version: 4.0.4.28-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ https://github.com/facebook/tac_plus/
 
 Package: tac_plus-pam
 Version: 4.0.4.28-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpam
+Depends: +libc +libpam
 Conflicts: 
 Menu-Depends: 
 Provides: 

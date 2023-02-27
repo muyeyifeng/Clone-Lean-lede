@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/vnstat2/Makefile
 
 Package: vnstat2
 Version: 2.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3
+Depends: +libc +libsqlite3
 Conflicts: vnstat
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Jan Hoffmann <jan@3e8.eu>
 
 Package: vnstati2
 Version: 2.7-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 vnstat2 +libgd
+Depends: +libc +libsqlite3 vnstat2 +libgd
 Conflicts: vnstat
 Menu-Depends: 
 Provides: 

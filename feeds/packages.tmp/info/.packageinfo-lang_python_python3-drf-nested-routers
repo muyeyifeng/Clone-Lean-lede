@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/lang/python/python3-drf-nested-routers/Makefile
 Package: python3-drf-nested-routers
 Submenu: Python
 Version: 0.93.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-django-restframework +django +python3-light
+Depends: +libc +python3-django-restframework +django +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Peter Stadler <peter.stadler@student.uibk.ac.at>
 Package: python3-drf-nested-routers-src
 Submenu: Python
 Version: 0.93.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

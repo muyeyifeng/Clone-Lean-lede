@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/iperf3/Makefile
 
 Package: iperf3
 Version: 3.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libiperf3
+Depends: +libc +libiperf3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: iperf3-ssl
 Version: 3.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: libiperf3
 Version: 3.12-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

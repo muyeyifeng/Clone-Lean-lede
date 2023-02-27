@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/trafficshaper/Makefile
 
 Package: trafficshaper
 Version: 1.0.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +tc +kmod-sched-core +kmod-sched-connmark +kmod-ifb +iptables +kmod-sched-cake +iptables-mod-conntrack-extra
+Depends: +libc +tc +kmod-sched-core +kmod-sched-connmark +kmod-ifb +iptables +kmod-sched-cake +iptables-mod-conntrack-extra
 Conflicts: 
 Menu-Depends: 
 Provides: 

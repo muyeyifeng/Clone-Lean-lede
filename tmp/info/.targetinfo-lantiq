@@ -8,7 +8,7 @@ Target-Features: dt gpio mips16 squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -25,7 +25,7 @@ Target-Features: atm dt gpio mips16 nand pci pcie ramdisk squashfs testing-kerne
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -53,6 +53,8 @@ Build firmware images for TP-Link TD-W8970 v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_tplink_tdw8980
@@ -64,6 +66,8 @@ Target-Profile-SupportedDevices: tplink,tdw8980 TDW8980
 
 Target-Profile-Description:
 Build firmware images for TP-Link TD-W8980 v1
+
+
 
 
 
@@ -81,6 +85,8 @@ Build firmware images for TP-Link Archer VR200 v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_tplink_vr200v
@@ -95,11 +101,13 @@ Build firmware images for TP-Link Archer VR200v v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_alphanetworks_asl56026
 Target-Profile-Name: BT Openreach ECI VDSL Modem V-2FUb/I (Alpha ASL56026)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: alphanetworks,asl56026
 
@@ -108,13 +116,15 @@ Target-Profile-Description:
 Build firmware images for Alpha ASL56026
 Alternative device titles:
 - BT Openreach ECI VDSL Modem V-2FUb/I
+
+
 
 
 @@
 
 Target-Profile: DEVICE_alphanetworks_asl56026
 Target-Profile-Name: Alpha ASL56026
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: alphanetworks,asl56026
 
@@ -125,11 +135,13 @@ Alternative device titles:
 - BT Openreach ECI VDSL Modem V-2FUb/I
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7519rw22
 Target-Profile-Name: Orange Livebox 2.1 (Arcadyan ARV7519RW22)
-Target-Profile-Packages: kmod-usb-dwc2 
+Target-Profile-Packages: kmod-usb-dwc2
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
 
@@ -139,12 +151,14 @@ Build firmware images for Arcadyan ARV7519RW22
 Alternative device titles:
 - Orange Livebox 2.1
 - Astoria Networks ARV7519RW22
+
+
 
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7519rw22
 Target-Profile-Name: Astoria Networks ARV7519RW22 (Arcadyan ARV7519RW22)
-Target-Profile-Packages: kmod-usb-dwc2 
+Target-Profile-Packages: kmod-usb-dwc2
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
 
@@ -154,12 +168,14 @@ Build firmware images for Arcadyan ARV7519RW22
 Alternative device titles:
 - Orange Livebox 2.1
 - Astoria Networks ARV7519RW22
+
+
 
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7519rw22
 Target-Profile-Name: Arcadyan ARV7519RW22
-Target-Profile-Packages: kmod-usb-dwc2 
+Target-Profile-Packages: kmod-usb-dwc2
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv7519rw22 ARV7519RW22
 
@@ -170,17 +186,21 @@ Alternative device titles:
 - Orange Livebox 2.1
 - Astoria Networks ARV7519RW22
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_vg3503j
 Target-Profile-Name: BT Openreach ECI VDSL Modem V-2FUb/R
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,vg3503j VG3503J
 
 
 Target-Profile-Description:
 Build firmware images for BT Openreach ECI VDSL Modem V-2FUb/R
+
+
 
 
 
@@ -199,6 +219,8 @@ Alternative device titles:
 - o2 Box 6431 BRN
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-brn
@@ -212,6 +234,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 BRN
 Alternative device titles:
 - o2 Box 6431 BRN
+
+
 
 
 @@
@@ -229,6 +253,8 @@ Alternative device titles:
 - o2 Box 6431 NOR
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_vgv7510kw22-nor
@@ -242,6 +268,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan VGV7510KW22 NOR
 Alternative device titles:
 - o2 Box 6431 NOR
+
+
 
 
 @@
@@ -259,6 +287,8 @@ Alternative device titles:
 - KPN Experiabox 8 BRN
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_vgv7519-brn
@@ -272,6 +302,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan VGV7519 BRN
 Alternative device titles:
 - KPN Experiabox 8 BRN
+
+
 
 
 @@
@@ -289,6 +321,8 @@ Alternative device titles:
 - KPN Experiabox 8 NOR
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_vgv7519-nor
@@ -304,6 +338,8 @@ Alternative device titles:
 - KPN Experiabox 8 NOR
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz3370-rev2-hynix
@@ -315,6 +351,8 @@ Target-Profile-SupportedDevices: avm,fritz3370-rev2-hynix
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 3370 Rev. 2 (Hynix NAND)
+
+
 
 
 
@@ -332,6 +370,8 @@ Build firmware images for AVM FRITZ!Box 3370 Rev. 2 (Micron NAND)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz3390
@@ -343,6 +383,8 @@ Target-Profile-SupportedDevices: avm,fritz3390
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 3390
+
+
 
 
 
@@ -360,6 +402,8 @@ Build firmware images for AVM FRITZ!Box 7360 SL
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz7360-v2
@@ -371,6 +415,8 @@ Target-Profile-SupportedDevices: avm,fritz7360-v2
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7360 v2
+
+
 
 
 
@@ -388,6 +434,8 @@ Build firmware images for AVM FRITZ!Box 7362 SL
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz7412
@@ -399,6 +447,8 @@ Target-Profile-SupportedDevices: avm,fritz7412
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7412
+
+
 
 
 
@@ -416,6 +466,8 @@ Build firmware images for AVM FRITZ!Box 7430
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_bt_homehub-v5a
@@ -427,6 +479,8 @@ Target-Profile-SupportedDevices: bt,homehub-v5a BTHOMEHUBV5A
 
 Target-Profile-Description:
 Build firmware images for British Telecom Home Hub 5 Type A
+
+
 
 
 
@@ -444,6 +498,8 @@ Build firmware images for Buffalo WBMR-300HPD
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy80920-nand
@@ -455,6 +511,8 @@ Target-Profile-SupportedDevices: lantiq,easy80920-nand
 
 Target-Profile-Description:
 Build firmware images for Lantiq VR9 EASY80920 NAND
+
+
 
 
 
@@ -472,17 +530,21 @@ Build firmware images for Lantiq VR9 EASY80920 NOR
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_dm200
 Target-Profile-Name: NETGEAR DM200
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dm200
 
 
 Target-Profile-Description:
 Build firmware images for NETGEAR DM200
+
+
 
 
 
@@ -500,6 +562,8 @@ Build firmware images for ZyXEL P-2812HNU F1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_p-2812hnu-f3
@@ -514,6 +578,8 @@ Build firmware images for ZyXEL P-2812HNU F3
 
 
 
+
+
 @@
 
 Target: lantiq/xway
@@ -525,7 +591,7 @@ Target-Features: atm dt gpio mips16 nand pci ramdisk squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -554,6 +620,8 @@ Alternative device titles:
 - Wippies BeWan iBox v1.0
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4510pw
@@ -569,11 +637,13 @@ Alternative device titles:
 - Wippies BeWan iBox v1.0
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4519pw
 Target-Profile-Name: Vodafone NetFasteR IAD 2 (Arcadyan ARV4519PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa 
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
@@ -583,12 +653,14 @@ Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
 - Vodafone NetFasteR IAD 2
 - Pirelli P.RG A4201G
+
+
 
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4519pw
 Target-Profile-Name: Pirelli P.RG A4201G (Arcadyan ARV4519PW)
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa 
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
@@ -598,12 +670,14 @@ Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
 - Vodafone NetFasteR IAD 2
 - Pirelli P.RG A4201G
+
+
 
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4519pw
 Target-Profile-Name: Arcadyan ARV4519PW
-Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa 
+Target-Profile-Packages: kmod-usb-dwc2 kmod-usb-ledtrig-usbport kmod-ltq-adsl-danube-mei kmod-ltq-adsl-danube kmod-ltq-adsl-danube-fw-a kmod-ltq-atm-danube ltq-adsl-app ppp-mod-pppoa
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: arcadyan,arv4519pw ARV4519PW
 
@@ -613,6 +687,8 @@ Build firmware images for Arcadyan ARV4519PW
 Alternative device titles:
 - Vodafone NetFasteR IAD 2
 - Pirelli P.RG A4201G
+
+
 
 @@
 
@@ -627,6 +703,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV7506PW11
 Alternative device titles:
 - Alice/O2 IAD 4421
+
+
 
 
 @@
@@ -644,6 +722,8 @@ Alternative device titles:
 - Alice/O2 IAD 4421
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7510pw22
@@ -657,6 +737,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV7510PW22
 Alternative device titles:
 - Astoria Networks ARV7510PW22
+
+
 
 
 @@
@@ -674,6 +756,8 @@ Alternative device titles:
 - Astoria Networks ARV7510PW22
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7518pw
@@ -687,6 +771,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV7518PW
 Alternative device titles:
 - Astoria Networks ARV7518PW
+
+
 
 
 @@
@@ -704,6 +790,8 @@ Alternative device titles:
 - Astoria Networks ARV7518PW
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7519pw
@@ -717,6 +805,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV7519PW
 Alternative device titles:
 - Astoria Networks ARV7519PW
+
+
 
 
 @@
@@ -734,6 +824,8 @@ Alternative device titles:
 - Astoria Networks ARV7519PW
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv7525pw
@@ -747,6 +839,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV7525PW
 Alternative device titles:
 - Telekom Speedport W303V Typ A
+
+
 
 
 @@
@@ -764,6 +858,8 @@ Alternative device titles:
 - Telekom Speedport W303V Typ A
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv752dpw
@@ -777,6 +873,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW
 Alternative device titles:
 - Vodafone Easybox 802
+
+
 
 
 @@
@@ -794,6 +892,8 @@ Alternative device titles:
 - Vodafone Easybox 802
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv752dpw22
@@ -807,6 +907,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV752DPW22
 Alternative device titles:
 - Vodafone Easybox 803
+
+
 
 
 @@
@@ -824,6 +926,8 @@ Alternative device titles:
 - Vodafone Easybox 803
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv8539pw22
@@ -837,6 +941,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV8539PW22
 Alternative device titles:
 - Telekom Speedport W504V Typ A
+
+
 
 
 @@
@@ -854,6 +960,8 @@ Alternative device titles:
 - Telekom Speedport W504V Typ A
 
 
+
+
 @@
 
 Target-Profile: DEVICE_audiocodes_mp-252
@@ -865,6 +973,8 @@ Target-Profile-SupportedDevices: audiocodes,mp-252 ACMP252
 
 Target-Profile-Description:
 Build firmware images for AudioCodes MediaPack MP-252
+
+
 
 
 
@@ -882,17 +992,21 @@ Build firmware images for British Telecom Home Hub 2 Type B
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy50712
 Target-Profile-Name: Lantiq Danube (EASY50712)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy50712
 
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Lantiq Danube (EASY50712)
+
+
 
 
 
@@ -910,6 +1024,8 @@ Build firmware images for Siemens Gigaset sx76x
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz7312
@@ -921,6 +1037,8 @@ Target-Profile-SupportedDevices: avm,fritz7312
 
 Target-Profile-Description:
 Build firmware images for AVM FRITZ!Box 7312
+
+
 
 
 
@@ -939,6 +1057,8 @@ Alternative device titles:
 - 1&1 HomeServer
 
 
+
+
 @@
 
 Target-Profile: DEVICE_avm_fritz7320
@@ -954,6 +1074,8 @@ Alternative device titles:
 - 1&1 HomeServer
 
 
+
+
 @@
 
 Target-Profile: DEVICE_bt_homehub-v3a
@@ -965,6 +1087,8 @@ Target-Profile-SupportedDevices: bt,homehub-v3a BTHOMEHUBV3A
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for British Telecom Home Hub 3 Type A
+
+
 
 
 
@@ -982,6 +1106,8 @@ Build firmware images for Buffalo WBMR-HP-G300H A
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_buffalo_wbmr-hp-g300h-b
@@ -993,6 +1119,8 @@ Target-Profile-SupportedDevices: WBMR buffalo,wbmr-hp-g300h
 
 Target-Profile-Description:
 Build firmware images for Buffalo WBMR-HP-G300H B
+
+
 
 
 
@@ -1010,6 +1138,8 @@ Build firmware images for NETGEAR DGN3500
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_dgn3500b
@@ -1021,6 +1151,8 @@ Target-Profile-SupportedDevices: netgear,dgn3500b DGN3500B
 
 Target-Profile-Description:
 Build firmware images for NETGEAR DGN3500B
+
+
 
 
 
@@ -1038,6 +1170,8 @@ Build firmware images for ZTE H201L
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_p-2601hn
@@ -1052,6 +1186,8 @@ Build firmware images for ZyXEL P-2601HN F1/F3
 
 
 
+
+
 @@
 
 Target: lantiq/xway_legacy
@@ -1063,7 +1199,7 @@ Target-Features: atm dt gpio mips16 pci ramdisk small_flash squashfs testing-ker
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -1091,6 +1227,8 @@ Build firmware images for Arcadyan ARV4518PWR01
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4518pwr01a
@@ -1102,6 +1240,8 @@ Target-Profile-SupportedDevices: arcadyan,arv4518pwr01a ARV4518PWR01A
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Arcadyan ARV4518PWR01A
+
+
 
 
 
@@ -1120,6 +1260,8 @@ Alternative device titles:
 - Vodafone Easybox 800
 - Airties WAV-281
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4520pw
@@ -1134,6 +1276,8 @@ Build firmware images for Arcadyan ARV4520PW
 Alternative device titles:
 - Vodafone Easybox 800
 - Airties WAV-281
+
+
 
 @@
 
@@ -1150,6 +1294,8 @@ Alternative device titles:
 - Vodafone Easybox 800
 - Airties WAV-281
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv4525pw
@@ -1163,6 +1309,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV4525PW
 Alternative device titles:
 - Telekom Speedport W502V Typ A
+
+
 
 
 @@
@@ -1180,6 +1328,8 @@ Alternative device titles:
 - Telekom Speedport W502V Typ A
 
 
+
+
 @@
 
 Target-Profile: DEVICE_arcadyan_arv452cqw
@@ -1193,6 +1343,8 @@ Target-Profile-Description:
 Build firmware images for Arcadyan ARV452CQW
 Alternative device titles:
 - Vodafone Easybox 801
+
+
 
 
 @@
@@ -1210,6 +1362,8 @@ Alternative device titles:
 - Vodafone Easybox 801
 
 
+
+
 @@
 
 Target: lantiq/falcon
@@ -1221,7 +1375,7 @@ Target-Features: dt gpio mips16 nand source-only squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -1239,7 +1393,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_lantiq_easy88388
 Target-Profile-Name: Lantiq EASY88388 Falcon FTTDP8 Reference Board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy88388
 
@@ -1249,11 +1403,13 @@ Build firmware images for Lantiq EASY88388 Falcon FTTDP8 Reference Board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy88444
 Target-Profile-Name: Lantiq EASY88444 Falcon FTTdp G.FAST Reference Board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy88444
 
@@ -1263,11 +1419,13 @@ Build firmware images for Lantiq EASY88444 Falcon FTTdp G.FAST Reference Board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98020
 Target-Profile-Name: Lantiq Falcon SFU Reference Board (EASY98020) v1.0-v1.7
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98020
 
@@ -1277,11 +1435,13 @@ Build firmware images for Lantiq Falcon SFU Reference Board (EASY98020) v1.0-v1.
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98020-v18
 Target-Profile-Name: Lantiq Falcon SFU Reference Board (EASY98020) v1.8
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98020-v18
 
@@ -1291,11 +1451,13 @@ Build firmware images for Lantiq Falcon SFU Reference Board (EASY98020) v1.8
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98021
 Target-Profile-Name: Lantiq Falcon HGU Reference Board (EASY98021)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98021
 
@@ -1305,11 +1467,13 @@ Build firmware images for Lantiq Falcon HGU Reference Board (EASY98021)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98035synce
 Target-Profile-Name: Lantiq Falcon SFP Stick (EASY98035SYNCE) with Synchronous Ethernet
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98035synce
 
@@ -1319,11 +1483,13 @@ Build firmware images for Lantiq Falcon SFP Stick (EASY98035SYNCE) with Synchron
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98035synce1588
 Target-Profile-Name: Lantiq Falcon SFP Stick (EASY98035SYNCE1588) with SyncE and IEEE1588
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98035synce1588
 
@@ -1333,11 +1499,13 @@ Build firmware images for Lantiq Falcon SFP Stick (EASY98035SYNCE1588) with Sync
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98000-nand
 Target-Profile-Name: Lantiq EASY98000 Falcon Eval Board NAND
-Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24 
+Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-nand
 
@@ -1347,11 +1515,13 @@ Build firmware images for Lantiq EASY98000 Falcon Eval Board NAND
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98000-nor
 Target-Profile-Name: Lantiq EASY98000 Falcon Eval Board NOR
-Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24 
+Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-nor
 
@@ -1361,11 +1531,13 @@ Build firmware images for Lantiq EASY98000 Falcon Eval Board NOR
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_easy98000-sflash
 Target-Profile-Name: Lantiq EASY98000 Falcon Eval Board SFLASH
-Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24 
+Target-Profile-Packages: kmod-dm9000 kmod-i2c-lantiq kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,easy98000-sflash
 
@@ -1375,11 +1547,13 @@ Build firmware images for Lantiq EASY98000 Falcon Eval Board SFLASH
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_falcon-mdu
 Target-Profile-Name: Lantiq Falcon / VINAXdp MDU Board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,falcon-mdu
 
@@ -1389,17 +1563,21 @@ Build firmware images for Lantiq Falcon / VINAXdp MDU Board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_lantiq_falcon-sfp
 Target-Profile-Name: Lantiq Falcon SFP Stick
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: lantiq,falcon-sfp
 
 
 Target-Profile-Description:
 Build firmware images for Lantiq Falcon SFP Stick
+
+
 
 
 
@@ -1414,7 +1592,7 @@ Target-Features: atm dt gpio mips16 small_flash squashfs testing-kernel usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
@@ -1432,7 +1610,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_allnet_all0333cj
 Target-Profile-Name: Allnet ALL0333CJ
-Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe 
+Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: allnet,all0333cj
 
@@ -1442,17 +1620,21 @@ Build firmware images for Allnet ALL0333CJ
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_dgn1000b
 Target-Profile-Name: NETGEAR DGN1000B
-Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe 
+Target-Profile-Packages: kmod-ltq-adsl-ase kmod-ltq-adsl-ase-mei kmod-ltq-adsl-ase-fw-b kmod-ltq-atm-ase ltq-adsl-app ppp-mod-pppoe
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgn1000b DGN1000B
 
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for NETGEAR DGN1000B
+
+
 
 
 

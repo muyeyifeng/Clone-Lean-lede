@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/luasql/Makefile
 Package: luasql-mysql
 Submenu: Lua
 Version: 2.4.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libmysqlclient
+Depends: +libc +lua +libmysqlclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ https://keplerproject.github.io/luasql/
 Package: luasql-pgsql
 Submenu: Lua
 Version: 2.4.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libpq
+Depends: +libc +lua +libpq
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +51,7 @@ https://keplerproject.github.io/luasql/
 Package: luasql-sqlite3
 Submenu: Lua
 Version: 2.4.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libsqlite3
+Depends: +libc +lua +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 

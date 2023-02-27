@@ -8,7 +8,7 @@ Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdis
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.10.155
+Linux-Version: 5.10.168
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -25,7 +25,7 @@ Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdis
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.10.155
+Linux-Version: 5.10.168
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm
@@ -35,7 +35,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_buffalo_ls421de
 Target-Profile-Name: Buffalo LinkStation LS421DE
-Target-Profile-Packages: kmod-rtc-rs5c372a kmod-hwmon-gpiofan kmod-hwmon-drivetemp kmod-usb3 kmod-linkstation-poweroff kmod-md-raid0 kmod-md-raid1 kmod-md-mod kmod-fs-xfs mkf2fs e2fsprogs partx-utils 
+Target-Profile-Packages: kmod-rtc-rs5c372a kmod-hwmon-gpiofan kmod-hwmon-drivetemp kmod-usb3 kmod-linkstation-poweroff kmod-md-raid0 kmod-md-raid1 kmod-md-mod kmod-fs-xfs mkf2fs e2fsprogs partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,ls421de
 
@@ -45,17 +45,21 @@ Build firmware images for Buffalo LinkStation LS421DE
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ctera_c200-v2
 Target-Profile-Name: Ctera C200 V2
-Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-drivetemp kmod-hwmon-nct7802 kmod-rtc-s35390a kmod-usb3 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-drivetemp kmod-hwmon-nct7802 kmod-rtc-s35390a kmod-usb3 kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ctera,c200-v2
 
 
 Target-Profile-Description:
 Build firmware images for Ctera C200 V2
+
+
 
 
 
@@ -73,11 +77,13 @@ Build firmware images for CZ.NIC Turris Omnia
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_mirabox
 Target-Profile-Name: Globalscale Mirabox
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,mirabox mirabox
 
@@ -87,11 +93,13 @@ Build firmware images for Globalscale Mirabox
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_iptime_nas1dual
 Target-Profile-Name: ipTIME NAS1dual
-Target-Profile-Packages: kmod-hwmon-drivetemp kmod-hwmon-gpiofan kmod-usb3 
+Target-Profile-Packages: kmod-hwmon-drivetemp kmod-hwmon-gpiofan kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: iptime,nas1dual
 
@@ -101,17 +109,21 @@ Build firmware images for ipTIME NAS1dual
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_kobol_helios4
 Target-Profile-Name: Kobol Helios4
-Target-Profile-Packages: mkf2fs e2fsprogs partx-utils 
+Target-Profile-Packages: mkf2fs e2fsprogs partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: kobol,helios4
 
 
 Target-Profile-Description:
 Build firmware images for Kobol Helios4
+
+
 
 
 
@@ -130,6 +142,8 @@ Alternative device titles:
 - Linksys Caiman
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt1200ac
@@ -143,6 +157,8 @@ Target-Profile-Description:
 Build firmware images for Linksys WRT1200AC
 Alternative device titles:
 - Linksys Caiman
+
+
 
 
 @@
@@ -160,6 +176,8 @@ Alternative device titles:
 - Linksys WRT1900ACS v2
 - Linksys Shelby
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt1900acs
@@ -174,6 +192,8 @@ Build firmware images for Linksys WRT1900ACS v1
 Alternative device titles:
 - Linksys WRT1900ACS v2
 - Linksys Shelby
+
+
 
 @@
 
@@ -190,6 +210,8 @@ Alternative device titles:
 - Linksys WRT1900ACS v2
 - Linksys Shelby
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v1
@@ -203,6 +225,8 @@ Target-Profile-Description:
 Build firmware images for Linksys WRT1900AC v1
 Alternative device titles:
 - Linksys Mamba
+
+
 
 
 @@
@@ -220,6 +244,8 @@ Alternative device titles:
 - Linksys Mamba
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt1900ac-v2
@@ -233,6 +259,8 @@ Target-Profile-Description:
 Build firmware images for Linksys WRT1900AC v2
 Alternative device titles:
 - Linksys Cobra
+
+
 
 
 @@
@@ -250,6 +278,8 @@ Alternative device titles:
 - Linksys Cobra
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt3200acm
@@ -263,6 +293,8 @@ Target-Profile-Description:
 Build firmware images for Linksys WRT3200ACM
 Alternative device titles:
 - Linksys Rango
+
+
 
 
 @@
@@ -280,6 +312,8 @@ Alternative device titles:
 - Linksys Rango
 
 
+
+
 @@
 
 Target-Profile: DEVICE_linksys_wrt32x
@@ -293,6 +327,8 @@ Target-Profile-Description:
 Build firmware images for Linksys WRT32X
 Alternative device titles:
 - Linksys Venom
+
+
 
 
 @@
@@ -310,11 +346,13 @@ Alternative device titles:
 - Linksys Venom
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_a370-db
 Target-Profile-Name: Marvell Armada 370 Development Board (DB-88F6710-BP-DDR3)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,a370-db armada-370-db
 
@@ -324,11 +362,13 @@ Build firmware images for Marvell Armada 370 Development Board (DB-88F6710-BP-DD
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_a370-rd
 Target-Profile-Name: Marvell Armada 370 RD (RD-88F6710-A1)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,a370-rd armada-370-rd
 
@@ -338,11 +378,13 @@ Build firmware images for Marvell Armada 370 RD (RD-88F6710-A1)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_a385-db-ap
 Target-Profile-Name: Marvell Armada 385 Development Board AP (DB-88F6820-AP)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,a385-db-ap armada-385-db-ap
 
@@ -352,11 +394,13 @@ Build firmware images for Marvell Armada 385 Development Board AP (DB-88F6820-AP
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_a388-rd
 Target-Profile-Name: Marvell Armada 388 RD (RD-88F6820-AP)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: armada-388-rd marvell,a385-rd
 
@@ -366,11 +410,13 @@ Build firmware images for Marvell Armada 388 RD (RD-88F6820-AP)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_axp-db
 Target-Profile-Name: Marvell Armada XP Development Board (DB-78460-BP)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,axp-db armada-xp-db
 
@@ -380,11 +426,13 @@ Build firmware images for Marvell Armada XP Development Board (DB-78460-BP)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_axp-gp
 Target-Profile-Name: Marvell Armada Armada XP GP (DB-MV784MP-GP)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,axp-gp armada-xp-gp
 
@@ -394,11 +442,13 @@ Build firmware images for Marvell Armada Armada XP GP (DB-MV784MP-GP)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_plathome_openblocks-ax3-4
 Target-Profile-Name: Plat'Home OpenBlocks AX3 4 ports
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: plathome,openblocks-ax3-4 openblocks-ax3-4
 
@@ -408,11 +458,13 @@ Build firmware images for Plat'Home OpenBlocks AX3 4 ports
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_solidrun_clearfog-base-a1
 Target-Profile-Name: SolidRun ClearFog Base
-Target-Profile-Packages: mkf2fs e2fsprogs partx-utils 
+Target-Profile-Packages: mkf2fs e2fsprogs partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: solidrun,clearfog-base-a1 armada-388-clearfog-base
 
@@ -422,17 +474,21 @@ Build firmware images for SolidRun ClearFog Base
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_solidrun_clearfog-pro-a1
 Target-Profile-Name: SolidRun ClearFog Pro
-Target-Profile-Packages: mkf2fs e2fsprogs partx-utils 
+Target-Profile-Packages: mkf2fs e2fsprogs partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: solidrun,clearfog-pro-a1 armada-388-clearfog armada-388-clearfog-pro
 
 
 Target-Profile-Description:
 Build firmware images for SolidRun ClearFog Pro
+
+
 
 
 
@@ -447,7 +503,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.10.155
+Linux-Version: 5.10.168
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -457,7 +513,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_glinet_gl-mv1000
 Target-Profile-Name: GL.iNet GL-MV1000
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: glinet,gl-mv1000
 
@@ -467,11 +523,13 @@ Build firmware images for GL.iNet GL-MV1000
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin
 Target-Profile-Name: Marvell Armada 3700 Community Board Non-eMMC (Marvell ESPRESSObin Non-eMMC)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin
 
@@ -480,13 +538,15 @@ Target-Profile-Description:
 Build firmware images for Marvell ESPRESSObin Non-eMMC
 Alternative device titles:
 - Marvell Armada 3700 Community Board Non-eMMC
+
+
 
 
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin
 Target-Profile-Name: Marvell ESPRESSObin Non-eMMC
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin
 
@@ -497,11 +557,13 @@ Alternative device titles:
 - Marvell Armada 3700 Community Board Non-eMMC
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-emmc
 Target-Profile-Name: Marvell Armada 3700 Community Board eMMC (Marvell ESPRESSObin eMMC)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-emmc
 
@@ -510,13 +572,15 @@ Target-Profile-Description:
 Build firmware images for Marvell ESPRESSObin eMMC
 Alternative device titles:
 - Marvell Armada 3700 Community Board eMMC
+
+
 
 
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-emmc
 Target-Profile-Name: Marvell ESPRESSObin eMMC
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-emmc
 
@@ -527,11 +591,13 @@ Alternative device titles:
 - Marvell Armada 3700 Community Board eMMC
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-ultra
 Target-Profile-Name: Marvell ESPRESSObin Ultra
-Target-Profile-Packages:  kmod-i2c-pxa kmod-rtc-pcf8563 
+Target-Profile-Packages: kmod-i2c-pxa kmod-rtc-pcf8563
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-ultra
 
@@ -541,11 +607,13 @@ Build firmware images for Marvell ESPRESSObin Ultra
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-v7
 Target-Profile-Name: Marvell Armada 3700 Community Board V7 Non-eMMC (Marvell ESPRESSObin V7 Non-eMMC)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-v7
 
@@ -554,13 +622,15 @@ Target-Profile-Description:
 Build firmware images for Marvell ESPRESSObin V7 Non-eMMC
 Alternative device titles:
 - Marvell Armada 3700 Community Board V7 Non-eMMC
+
+
 
 
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-v7
 Target-Profile-Name: Marvell ESPRESSObin V7 Non-eMMC
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-v7
 
@@ -571,11 +641,13 @@ Alternative device titles:
 - Marvell Armada 3700 Community Board V7 Non-eMMC
 
 
+
+
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-v7-emmc
 Target-Profile-Name: Marvell Armada 3700 Community Board V7 eMMC (Marvell ESPRESSObin V7 eMMC)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-v7-emmc
 
@@ -584,13 +656,15 @@ Target-Profile-Description:
 Build firmware images for Marvell ESPRESSObin V7 eMMC
 Alternative device titles:
 - Marvell Armada 3700 Community Board V7 eMMC
+
+
 
 
 @@
 
 Target-Profile: DEVICE_globalscale_espressobin-v7-emmc
 Target-Profile-Name: Marvell ESPRESSObin V7 eMMC
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,espressobin-v7-emmc
 
@@ -601,11 +675,13 @@ Alternative device titles:
 - Marvell Armada 3700 Community Board V7 eMMC
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_armada-3720-db
 Target-Profile-Name: Marvell Armada 3720 Development Board (DB-88F3720-DDR3)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada-3720-db
 
@@ -615,11 +691,13 @@ Build firmware images for Marvell Armada 3720 Development Board (DB-88F3720-DDR3
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_methode_udpu
 Target-Profile-Name: Methode micro-DPU (uDPU)
-Target-Profile-Packages:  f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75 
+Target-Profile-Packages: f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: methode,udpu
 
@@ -629,17 +707,21 @@ Build firmware images for Methode micro-DPU (uDPU)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_methode_edpu
 Target-Profile-Name: Methode eDPU
-Target-Profile-Packages:  f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75 
+Target-Profile-Packages: f2fs-tools fdisk kmod-i2c-pxa kmod-hwmon-lm75
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: methode,edpu
 
 
 Target-Profile-Description:
 Build firmware images for Methode eDPU
+
+
 
 
 
@@ -654,7 +736,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie r
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
-Linux-Version: 5.10.155
+Linux-Version: 5.10.168
 Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -664,7 +746,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail e2fsprogs ethtool mkf2fs partx-utils dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_globalscale_mochabin
 Target-Profile-Name: Globalscale MOCHAbin
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: globalscale,mochabin
 
@@ -674,11 +756,13 @@ Build firmware images for Globalscale MOCHAbin
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_armada7040-db
 Target-Profile-Name: Marvell Armada 7040 Development Board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada7040-db
 
@@ -688,11 +772,13 @@ Build firmware images for Marvell Armada 7040 Development Board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_armada8040-db
 Target-Profile-Name: Marvell Armada 8040 Development Board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-db
 
@@ -702,11 +788,13 @@ Build firmware images for Marvell Armada 8040 Development Board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_macchiatobin-doubleshot
 Target-Profile-Name: SolidRun Armada 8040 Community Board Double Shot (SolidRun MACCHIATObin Double Shot)
-Target-Profile-Packages:  kmod-i2c-mux-pca954x 
+Target-Profile-Packages: kmod-i2c-mux-pca954x
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-mcbin-doubleshot marvell,armada8040-mcbin
 
@@ -715,13 +803,15 @@ Target-Profile-Description:
 Build firmware images for SolidRun MACCHIATObin Double Shot
 Alternative device titles:
 - SolidRun Armada 8040 Community Board Double Shot
+
+
 
 
 @@
 
 Target-Profile: DEVICE_marvell_macchiatobin-doubleshot
 Target-Profile-Name: SolidRun MACCHIATObin Double Shot
-Target-Profile-Packages:  kmod-i2c-mux-pca954x 
+Target-Profile-Packages: kmod-i2c-mux-pca954x
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-mcbin-doubleshot marvell,armada8040-mcbin
 
@@ -732,11 +822,13 @@ Alternative device titles:
 - SolidRun Armada 8040 Community Board Double Shot
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_macchiatobin-singleshot
 Target-Profile-Name: SolidRun Armada 8040 Community Board Single Shot (SolidRun MACCHIATObin Single Shot)
-Target-Profile-Packages:  kmod-i2c-mux-pca954x 
+Target-Profile-Packages: kmod-i2c-mux-pca954x
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-mcbin-singleshot
 
@@ -745,13 +837,15 @@ Target-Profile-Description:
 Build firmware images for SolidRun MACCHIATObin Single Shot
 Alternative device titles:
 - SolidRun Armada 8040 Community Board Single Shot
+
+
 
 
 @@
 
 Target-Profile: DEVICE_marvell_macchiatobin-singleshot
 Target-Profile-Name: SolidRun MACCHIATObin Single Shot
-Target-Profile-Packages:  kmod-i2c-mux-pca954x 
+Target-Profile-Packages: kmod-i2c-mux-pca954x
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-mcbin-singleshot
 
@@ -762,11 +856,13 @@ Alternative device titles:
 - SolidRun Armada 8040 Community Board Single Shot
 
 
+
+
 @@
 
 Target-Profile: DEVICE_marvell_clearfog-gt-8k
 Target-Profile-Name: SolidRun Clearfog GT-8K
-Target-Profile-Packages:  kmod-i2c-mux-pca954x kmod-crypto-hw-safexcel 
+Target-Profile-Packages: kmod-i2c-mux-pca954x kmod-crypto-hw-safexcel
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: marvell,armada8040-clearfog-gt-8k
 
@@ -776,11 +872,13 @@ Build firmware images for SolidRun Clearfog GT-8K
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_iei_puzzle-m901
 Target-Profile-Name: iEi Puzzle-M901
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: iei,puzzle-m901
 
@@ -790,17 +888,21 @@ Build firmware images for iEi Puzzle-M901
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_iei_puzzle-m902
 Target-Profile-Name: iEi Puzzle-M902
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: iei,puzzle-m902
 
 
 Target-Profile-Description:
 Build firmware images for iEi Puzzle-M902
+
+
 
 
 

@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-dnsforwarder
 Submenu: 3. Applications
 Version: 3.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsforwarder
+Depends: +libc +dnsforwarder
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Dennis <openwrt@tossp.com>
 Package: luci-i18n-dnsforwarder-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 3.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dnsforwarder
+Depends: +libc luci-app-dnsforwarder
 Conflicts: 
 Menu-Depends: 
 Provides: 

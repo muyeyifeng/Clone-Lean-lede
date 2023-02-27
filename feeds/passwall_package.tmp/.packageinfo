@@ -3,8 +3,8 @@ Build-Depends: golang/host
 
 Package: brook
 Submenu: Web Servers/Proxies
-Version: 20221212-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 20230122-0
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: A cross-platform proxy software
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: brook-20221212.tar.gz
+Source: brook-20230122.tar.gz
 License: GPL-3.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -29,7 +29,7 @@ Source-Makefile: feeds/passwall_package/chinadns-ng/Makefile
 Package: chinadns-ng
 Submenu: IP Addresses and Names
 Version: 1.0-beta.25-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Depends: +libc +ipset
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -53,7 +53,7 @@ Source-Makefile: feeds/passwall_package/dns2socks/Makefile
 Package: dns2socks
 Submenu: IP Addresses and Names
 Version: 2.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -77,7 +77,7 @@ Source-Makefile: feeds/passwall_package/dns2tcp/Makefile
 Package: dns2tcp
 Submenu: IP Addresses and Names
 Version: 1.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100,8 +100,8 @@ Source-Makefile: feeds/passwall_package/hysteria/Makefile
 Build-Depends: golang/host
 
 Package: hysteria
-Version: 1.3.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 1.3.3-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110,7 +110,7 @@ Category: Network
 Repository: base
 Title: A feature-packed network utility optimized for networks of poor quality
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: hysteria-1.3.0.tar.gz
+Source: hysteria-1.3.3.tar.gz
 License: MIT
 Type: ipkg
 Description:   Hysteria is a feature-packed network utility optimized for networks
@@ -126,7 +126,7 @@ Source-Makefile: feeds/passwall_package/ipt2socks/Makefile
 
 Package: ipt2socks
 Version: 1.1.3-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -149,7 +149,7 @@ Source-Makefile: feeds/passwall_package/microsocks/Makefile
 Package: microsocks
 Submenu: Web Servers/Proxies
 Version: 1.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -173,8 +173,8 @@ Source-Makefile: feeds/passwall_package/naiveproxy/Makefile
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 107.0.5304.87-3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
+Version: 110.0.5481.100-1-0
+Depends: +libc @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -183,7 +183,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-107.0.5304.87-3.tar.gz
+Source: naiveproxy-110.0.5481.100-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -200,7 +200,7 @@ Source-Makefile: feeds/passwall_package/pdnsd-alt/Makefile
 Package: pdnsd-alt
 Submenu: IP Addresses and Names
 Version: 1.2.9b-par-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -227,7 +227,7 @@ Build-Depends: golang/host
 
 Package: sagernet-core
 Version: 5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: v2ray-core xray-core
 Menu-Depends: 
 Provides: 
@@ -250,7 +250,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: sagernet-example
 Version: 5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread sagernet-core
+Depends: +libc sagernet-core
 Conflicts: v2ray-example
 Menu-Depends: 
 Provides: 
@@ -273,7 +273,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: sagernet-extra
 Version: 5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread sagernet-core
+Depends: +libc sagernet-core
 Conflicts: v2ray-extra
 Menu-Depends: 
 Provides: 
@@ -299,8 +299,8 @@ Source-Makefile: feeds/passwall_package/shadowsocks-rust/Makefile
 
 Package: shadowsocks-rust-sslocal
 Submenu: Web Servers/Proxies
-Version: 1.15.0-alpha.9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
+Version: 1.15.2-1
+Depends: +libc @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -320,8 +320,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssmanager
 Submenu: Web Servers/Proxies
-Version: 1.15.0-alpha.9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
+Version: 1.15.2-1
+Depends: +libc @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -341,8 +341,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssserver
 Submenu: Web Servers/Proxies
-Version: 1.15.0-alpha.9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
+Version: 1.15.2-1
+Depends: +libc @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -362,8 +362,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssurl
 Submenu: Web Servers/Proxies
-Version: 1.15.0-alpha.9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
+Version: 1.15.2-1
+Depends: +libc @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -383,8 +383,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: shadowsocks-rust-ssservice
 Submenu: Web Servers/Proxies
-Version: 1.15.0-alpha.9-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
+Version: 1.15.2-1
+Depends: +libc @USE_MUSL @(aarch64||arm||i386||mips||mipsel||x86_64) @!(TARGET_x86_geode||TARGET_x86_legacy)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -408,7 +408,7 @@ Source-Makefile: feeds/passwall_package/shadowsocksr-libev/Makefile
 Package: shadowsocksr-libev-ssr-check
 Submenu: Web Servers/Proxies
 Version: 2.5.6-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
+Depends: +libc +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -429,7 +429,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 Package: shadowsocksr-libev-ssr-local
 Submenu: Web Servers/Proxies
 Version: 2.5.6-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
+Depends: +libc +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -450,7 +450,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 Package: shadowsocksr-libev-ssr-nat
 Submenu: Web Servers/Proxies
 Version: 2.5.6-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
+Depends: +libc +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -471,7 +471,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 Package: shadowsocksr-libev-ssr-redir
 Submenu: Web Servers/Proxies
 Version: 2.5.6-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
+Depends: +libc +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -492,7 +492,7 @@ https://github.com/shadowsocksrr/shadowsocksr-libev
 Package: shadowsocksr-libev-ssr-server
 Submenu: Web Servers/Proxies
 Version: 2.5.6-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
+Depends: +libc +libev +libsodium +libopenssl +libpthread +libpcre +libudns +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -516,7 +516,7 @@ Build-Depends: libev
 
 Package: simple-obfs
 Version: 0.0.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Depends: +libc +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -536,7 +536,7 @@ Jian Chang <aa65535@live.com>
 
 Package: simple-obfs-server
 Version: 0.0.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Depends: +libc +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -568,8 +568,8 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.1-beta17-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
+Version: 1.2-beta5-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -578,59 +578,70 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.1-beta17.tar.gz
-License: GPL-3.0
+Source: sing-box-1.2-beta5.tar.gz
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
 Type: ipkg
-Description: The universal proxy platform.
+Description:   Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+  ShadowsocksR, ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 https://sing-box.sagernet.org
 
 @@
 Config:
   menu "Customizing build tags"
+    depends on PACKAGE_sing-box
 
-    config SING_BOX_BUILD_ACME
+    config SING_BOX_WITH_ACME
       bool "Build with ACME TLS certificate issuer support"
       default n
 
-    config SING_BOX_BUILD_CLASH_API
+    config SING_BOX_WITH_CLASH_API
       bool "Build with Clash API support (EXPERIMENTAL!!!)"
       default y
 
-    config SING_BOX_BUILD_ECH
+    config SING_BOX_WITH_DHCP
+      bool "Build with DHCP support"
+      default y
+
+    config SING_BOX_WITH_ECH
       bool "Build with TLS ECH extension support"
       default n
 
-    config SING_BOX_BUILD_GRPC
+    config SING_BOX_WITH_GRPC
       bool "Build with standard gRPC support"
       default n
       help
       sing-box has better performance gun-lite gRPC built-in by default.
       This standard gRPC has better compatibility but poor performance.
 
-    config SING_BOX_BUILD_GVISOR
+    config SING_BOX_WITH_GVISOR
       bool "Build with gVisor support"
       default n
 
-    config SING_BOX_BUILD_QUIC
+    config SING_BOX_WITH_QUIC
       bool "Build with QUIC support"
       default y
       help
         Required by HTTP3 DNS transports, Naive inbound,
         Hysteria inbound / outbound, and v2ray QUIC transport.
 
-    config SING_BOX_BUILD_SHADOWSOCKSR
+    config SING_BOX_WITH_REALITY_SERVER
+      bool "Build with reality TLS server support"
+      default n
+
+    config SING_BOX_WITH_SHADOWSOCKSR
       bool "Build with ShadowsockR support"
       default n
 
-    config SING_BOX_BUILD_UTLS
+    config SING_BOX_WITH_UTLS
       bool "Build with uTLS support"
       default y
 
-    config SING_BOX_BUILD_V2RAY_API
+    config SING_BOX_WITH_V2RAY_API
       bool "Build with V2Ray API support (EXPERIMENTAL!!!)"
       default n
 
-    config SING_BOX_BUILD_WIREGUARD
+    config SING_BOX_WITH_WIREGUARD
       bool "Build with WireGuard support"
       default y
 
@@ -642,7 +653,7 @@ Source-Makefile: feeds/passwall_package/ssocks/Makefile
 
 Package: ssocks
 Version: 0.0.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -664,7 +675,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: ssocksd
 Version: 0.0.14-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -689,7 +700,7 @@ Source-Makefile: feeds/passwall_package/tcping/Makefile
 
 Package: tcping
 Version: 0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -713,7 +724,7 @@ Build-Depends: openssl
 
 Package: trojan
 Version: 1.16.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options +boost-date_time
+Depends: +libc +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options +boost-date_time
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -737,7 +748,7 @@ Build-Depends: golang/host
 Package: trojan-go
 Submenu: Web Servers/Proxies
 Version: 0.10.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -762,7 +773,7 @@ Build-Depends: openssl
 
 Package: trojan-plus
 Version: 10.0.3-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options
+Depends: +libc +libpthread +libstdcpp +libopenssl +boost +boost-system +boost-program_options
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -784,8 +795,8 @@ Source-Makefile: feeds/passwall_package/v2ray-core/Makefile
 Build-Depends: golang/host
 
 Package: v2ray-core
-Version: 5.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 5.4.0-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -794,7 +805,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.1.0.tar.gz
+Source: v2ray-core-5.4.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -805,8 +816,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-example
-Version: 5.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Version: 5.4.0-1
+Depends: +libc v2ray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -815,7 +826,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.1.0.tar.gz
+Source: v2ray-core-5.4.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -828,8 +839,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: v2ray-extra
-Version: 5.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Version: 5.4.0-1
+Depends: +libc v2ray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -838,7 +849,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (extra resources)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2ray-core-5.1.0.tar.gz
+Source: v2ray-core-5.4.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -855,8 +866,8 @@ Source-Makefile: feeds/passwall_package/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202210200105-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 202302090046-0
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -876,8 +887,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20221023064040-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 20230208103804-0
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -901,8 +912,8 @@ Build-Depends: golang/host
 
 Package: v2ray-plugin
 Submenu: Web Servers/Proxies
-Version: 5.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 5.4.0-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -911,7 +922,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for shadowsocks, based on v2ray
 Maintainer: madeye <max.c.lv@gmail.com>
-Source: v2ray-plugin-5.1.0.tar.gz
+Source: v2ray-plugin-5.4.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -925,8 +936,8 @@ Source-Makefile: feeds/passwall_package/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.6.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 1.7.5-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -935,7 +946,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.6.4.tar.gz
+Source: Xray-core-1.7.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -946,8 +957,8 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: xray-example
-Version: 1.6.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread xray-core
+Version: 1.7.5-1
+Depends: +libc xray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -956,7 +967,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.6.4.tar.gz
+Source: Xray-core-1.7.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -974,8 +985,8 @@ Build-Depends: golang/host
 
 Package: xray-plugin
 Submenu: Web Servers/Proxies
-Version: 1.6.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Version: 1.7.5-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -984,7 +995,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-plugin-1.6.4.tar.gz
+Source: xray-plugin-1.7.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

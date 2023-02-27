@@ -2,15 +2,15 @@ Source-Makefile: package/utils/lua5.3/Makefile
 Build-Types: host
 
 Package: liblua5.3
-Version: 5.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 5.3.5-5
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: libs
 Category: Libraries
 Repository: base
-Title:  (libraries)
+Title: (libraries)
 Maintainer: 
 Source: lua-5.3.5.tar.gz
 License: MIT
@@ -23,8 +23,8 @@ Description:
 
 Package: lua5.3
 Submenu: Lua
-Version: 5.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua5.3
+Version: 5.3.5-5
+Depends: +libc +liblua5.3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,8 +47,8 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: luac5.3
 Submenu: Lua
-Version: 5.3.5-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua5.3
+Version: 5.3.5-5
+Depends: +libc +liblua5.3
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/libidn2/Makefile
 Package: idn2
 Submenu: IP Addresses and Names
 Version: 2.3.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libidn2
+Depends: +libc +libidn2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ http://www.gnu.org/software/libidn/
 
 Package: libidn2
 Version: 2.3.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libunistring +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Depends: +libc +libunistring +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

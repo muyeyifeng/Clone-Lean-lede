@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/multimedia/ffmpeg/Makefile
 
 Package: ffmpeg
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
+Depends: +libc +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: ffprobe
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
+Depends: +libc +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -58,7 +58,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: ffmpeg-custom
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
+Depends: +libc +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86,7 +86,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: ffprobe-custom
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @!ALL libffmpeg-custom
+Depends: +libc +libpthread @!ALL libffmpeg-custom
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -114,7 +114,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-audio-dec
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
+Depends: +libc +libpthread +libpthread +zlib +libbz2
 Conflicts: libffmpeg-full
 Menu-Depends: 
 Provides: libffmpeg
@@ -142,7 +142,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-full
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +libgnutls +PACKAGE_libopus:libopus +SOFT_FLOAT:shine +!SOFT_FLOAT:lame-lib +PACKAGE_libx264:libx264 +!PACKAGE_libx264:fdk-aac
+Depends: +libc +libpthread +libpthread +zlib +libbz2 +alsa-lib +libgnutls +PACKAGE_libopus:libopus +SOFT_FLOAT:shine +!SOFT_FLOAT:lame-lib +PACKAGE_libx264:libx264 +!PACKAGE_libx264:fdk-aac
 Conflicts: 
 Menu-Depends: 
 Provides: libffmpeg libffmpeg-mini libffmpeg-audio-dec
@@ -170,7 +170,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-mini
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
+Depends: +libc +libpthread +libpthread +zlib +libbz2
 Conflicts: libffmpeg-full
 Menu-Depends: 
 Provides: libffmpeg
@@ -199,7 +199,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 Package: libffmpeg-custom
 Menu: 1
 Version: 5.1.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
+Depends: +libc +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
 Provides: libffmpeg

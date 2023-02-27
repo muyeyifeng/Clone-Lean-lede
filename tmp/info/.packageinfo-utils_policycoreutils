@@ -5,8 +5,8 @@ Build-Types: host
 
 Package: policycoreutils
 Menu: 1
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 3.3-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15,7 +15,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility common files
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,8 +25,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-restorecon_xattr
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +libsepol +libaudit +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +libsepol +libaudit +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -35,7 +35,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility restorecon_xattr
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -49,8 +49,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-setfiles
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +libsepol +libaudit +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +libsepol +libaudit +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -59,7 +59,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility setfiles
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -73,8 +73,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-newrole
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +libaudit +BUSYBOX_CONFIG_PAM:libpam +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +libaudit +BUSYBOX_CONFIG_PAM:libpam +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83,7 +83,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility newrole
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -97,8 +97,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-secon
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -107,7 +107,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility secon
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -121,8 +121,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-sestatus
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -131,7 +131,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility sestatus
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -145,8 +145,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-fixfiles
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils
+Version: 3.3-1
+Depends: +libc policycoreutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -155,7 +155,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility fixfiles
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -169,8 +169,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-genhomedircon
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libsemanage +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libsemanage +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility genhomedircon
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -193,8 +193,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-open_init_pty
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -203,7 +203,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility open_init_pty
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -217,8 +217,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-run_init
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +libaudit +BUSYBOX_CONFIG_PAM:libpam +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +libaudit +BUSYBOX_CONFIG_PAM:libpam +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -227,7 +227,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility run_init
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -241,8 +241,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-semodule
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libsemanage +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libsemanage +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -251,7 +251,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility semodule
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -265,8 +265,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-load_policy
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libselinux +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libselinux +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -275,7 +275,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility load_policy
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -289,8 +289,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-setsebool
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libsemanage +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libsemanage +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -299,7 +299,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility setsebool
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -313,8 +313,8 @@ Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 @@
 
 Package: policycoreutils-pp
-Version: 3.2-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread policycoreutils +libsepol +BUILD_NLS:libintl-full
+Version: 3.3-1
+Depends: +libc policycoreutils +libsepol +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -323,7 +323,7 @@ Category: Utilities
 Repository: base
 Title: SELinux policy utility pp
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
-Source: policycoreutils-3.2.tar.gz
+Source: policycoreutils-3.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

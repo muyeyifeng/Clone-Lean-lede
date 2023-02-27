@@ -2,7 +2,7 @@ Source-Makefile: feeds/routing/hnetd/Makefile
 
 Package: hnetd-nossl
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +odhcpd +odhcp6c +netifd @IPV6
+Depends: +libc +odhcpd +odhcp6c +netifd @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnetd-openssl
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +odhcpd +odhcp6c +netifd +libopenssl @IPV6
+Depends: +libc +odhcpd +odhcp6c +netifd +libopenssl @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -44,7 +44,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-nossl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-nossl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64,7 +64,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full-secure
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-openssl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-openssl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -84,7 +84,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full-l2tp
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-nossl +luci-app-hnet +ip-full +kmod-l2tp-eth +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-nossl +luci-app-hnet +ip-full +kmod-l2tp-eth +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -105,7 +105,7 @@ Steven Barth <cyrus@openwrt.org>
 Package: luci-app-hnet
 Submenu: 3. Applications
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

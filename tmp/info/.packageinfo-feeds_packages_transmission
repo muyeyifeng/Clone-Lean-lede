@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/transmission/Makefile
 Package: transmission-daemon-openssl
 Submenu: BitTorrent
 Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Depends: +libc +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: transmission-cli-openssl
 Submenu: BitTorrent
 Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Depends: +libc +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -51,7 +51,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: transmission-remote-openssl
 Submenu: BitTorrent
 Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
+Depends: +libc +libcurl +libevent2 +libminiupnpc +libnatpmp +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -73,7 +73,7 @@ Rosen Penev <rosenp@gmail.com>
 Package: transmission-web
 Submenu: BitTorrent
 Version: 2.94-8
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +transmission-daemon-openssl
+Depends: +libc +transmission-daemon-openssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

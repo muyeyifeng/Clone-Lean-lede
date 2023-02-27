@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/nsd/Makefile
 Package: nsd
 Submenu: IP Addresses and Names
 Version: 4.2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: nsd-nossl
 Submenu: IP Addresses and Names
 Version: 4.2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,7 +49,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: nsd-control
 Submenu: IP Addresses and Names
 Version: 4.2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71,7 +71,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: nsd-control-setup
 Submenu: IP Addresses and Names
 Version: 4.2.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +openssl-util
+Depends: +libc +openssl-util
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/chicken-scheme/Makefile
 
 Package: chicken-scheme-interpreter
 Version: 5.2.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: chicken-scheme-full
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Jeronimo Pellegrini <j_p@aleph0.info>
 
 Package: chicken-scheme-full
 Version: 5.2.0-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

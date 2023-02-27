@@ -3,7 +3,7 @@ Build-Depends: gperf/host
 
 Package: libseccomp
 Version: 2.5.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Config:
 
 Package: scmp_sys_resolver
 Version: 2.5.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libseccomp
+Depends: +libc libseccomp
 Conflicts: 
 Menu-Depends: 
 Provides: 

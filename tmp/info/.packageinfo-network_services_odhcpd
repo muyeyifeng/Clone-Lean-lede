@@ -2,7 +2,7 @@ Source-Makefile: package/network/services/odhcpd/Makefile
 
 Package: odhcpd
 Version: 2021-06-19-564d25e53fad925fa3ed56e3004c107d40925fa4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libuci +libubus +libnl-tiny
+Depends: +libc +libubox +libuci +libubus +libnl-tiny
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,7 +38,7 @@ endmenu
 
 Package: odhcpd-ipv6only
 Version: 2021-06-19-564d25e53fad925fa3ed56e3004c107d40925fa4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libuci +libubus +libnl-tiny @IPV6
+Depends: +libc +libubox +libuci +libubus +libnl-tiny @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/bind/Makefile
 Build-Depends: BIND_LIBXML2:libxml2 BIND_LIBJSON:libjson-c
 
 Package: bind-libs
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +libpthread +libatomic +libuv +BIND_ENABLE_DOH:libnghttp2 +BIND_LIBXML2:libxml2 +BIND_LIBJSON:libjson-c
+Version: 9.18.10-3
+Depends: +libc +libopenssl +zlib +libpthread +libatomic +libuv +BIND_ENABLE_DOH:libnghttp2 +BIND_LIBXML2:libxml2 +BIND_LIBJSON:libjson-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: bind shared libraries
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,8 +23,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-server
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC +libcap
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC +libcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33,7 +33,7 @@ Category: Network
 Repository: base
 Title: bind DNS server
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -47,8 +47,8 @@ Config:
 
 Package: bind-server-filter-aaaa
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bind-server
+Version: 9.18.10-3
+Depends: +libc bind-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,7 +57,7 @@ Category: Network
 Repository: base
 Title: bind DNS server filter AAAA plugin
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -68,8 +68,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-client
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -78,7 +78,7 @@ Category: Network
 Repository: base
 Title: bind dynamic DNS client
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -89,8 +89,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-tools
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-check +bind-dig +bind-nslookup +bind-dnssec +bind-host +bind-rndc +bind-ddns-confgen
+Version: 9.18.10-3
+Depends: +libc +bind-check +bind-dig +bind-nslookup +bind-dnssec +bind-host +bind-rndc +bind-ddns-confgen
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -99,7 +99,7 @@ Category: Network
 Repository: base
 Title: bind administration tools (all)
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -110,8 +110,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-rndc
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -120,7 +120,7 @@ Category: Network
 Repository: base
 Title: bind administration tools (rndc and rndc-confgen only)
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -131,8 +131,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-check
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -141,7 +141,7 @@ Category: Network
 Repository: base
 Title: bind administration tools (named-checkconf and named-checkzone only)
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -152,8 +152,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-dnssec
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -162,7 +162,7 @@ Category: Network
 Repository: base
 Title: bind administration tools (dnssec-keygen, dnssec-settime and dnssec-signzone only)
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -173,8 +173,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-host
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -183,7 +183,7 @@ Category: Network
 Repository: base
 Title: bind simple DNS client
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -194,8 +194,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-dig
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -204,7 +204,7 @@ Category: Network
 Repository: base
 Title: bind DNS excavation tool
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -215,8 +215,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-nslookup
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -225,7 +225,7 @@ Category: Network
 Repository: base
 Title: bind nslookup utility
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -236,8 +236,8 @@ Noah Meyerhans <frodo@morgul.net>
 
 Package: bind-ddns-confgen
 Submenu: IP Addresses and Names
-Version: 9.18.7-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bind-libs +@OPENSSL_WITH_EC
+Version: 9.18.10-3
+Depends: +libc +bind-libs +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -246,7 +246,7 @@ Category: Network
 Repository: base
 Title: bind administration tools (ddns-confgen and tsig-keygen only)
 Maintainer: Noah Meyerhans <frodo@morgul.net>
-Source: bind-9.18.7.tar.xz
+Source: bind-9.18.10.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

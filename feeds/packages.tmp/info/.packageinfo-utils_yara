@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/yara/Makefile
 Package: yara
 Menu: 1
 Version: 4.2.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +YARA_module_magic:file +YARA_module_cuckoo:jansson
+Depends: +libc +libopenssl +YARA_module_magic:file +YARA_module_cuckoo:jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/onionshare-cli/Makefile
 
 Package: onionshare-cli
 Version: 2.3.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-psutil +python3-click +python3-flask +python3-flask-httpauth +python3-flask-socketio +python3-pysocks +python3-requests +python3-stem +python3-eventlet +python3-unidecode +python3-cryptodome +python3-urllib3 +tor
+Depends: +libc +python3-light +python3-psutil +python3-click +python3-flask +python3-flask-httpauth +python3-flask-socketio +python3-pysocks +python3-requests +python3-stem +python3-eventlet +python3-unidecode +python3-cryptodome +python3-urllib3 +tor
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: onionshare-cli-src
 Version: 2.3.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

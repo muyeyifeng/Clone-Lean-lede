@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/netopeer2/Makefile
 Package: netopeer2-server
 Menu: 1
 Version: 2.0.35-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libyang +libnetconf2 +libsysrepo +sysrepocfg +sysrepoctl +sysrepo
+Depends: +libc +libcurl +libpthread +libyang +libnetconf2 +libsysrepo +sysrepocfg +sysrepoctl +sysrepo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Jakov Smolic <jakov.smolic@sartura.hr>
 
 Package: netopeer2-cli
 Version: 2.0.35-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libyang +libnetconf2 +libopenssl
+Depends: +libc +libpthread +libyang +libnetconf2 +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

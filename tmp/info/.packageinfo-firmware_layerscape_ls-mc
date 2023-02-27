@@ -2,7 +2,7 @@ Source-Makefile: package/firmware/layerscape/ls-mc/Makefile
 
 Package: layerscape-mc
 Version: LSDK-20.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Depends: +libc @TARGET_layerscape
 Conflicts: 
 Menu-Depends: 
 Provides: 

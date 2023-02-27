@@ -4,8 +4,8 @@ Build-Types: host
 
 Package: libpq
 Submenu: Database
-Version: 14.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Version: 15.1-1
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Category: Libraries
 Repository: base
 Title: PostgreSQL client library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-14.5.tar.bz2
+Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL client library.
@@ -24,8 +24,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli
 Submenu: Database
-Version: 14.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
+Version: 15.1-1
+Depends: +libc +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: Command Line Interface (CLI) to PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-14.5.tar.bz2
+Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line Interface (CLI) to PostgreSQL databases.
@@ -44,8 +44,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli-extra
 Submenu: Database
-Version: 14.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
+Version: 15.1-1
+Depends: +libc +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Category: Utilities
 Repository: base
 Title: Command Line extras for PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-14.5.tar.bz2
+Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line extras for PostgreSQL databases.
@@ -64,8 +64,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-server
 Submenu: Database
-Version: 14.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +pgsql-cli +blockd
+Version: 15.1-1
+Depends: +libc +pgsql-cli +blockd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,7 +75,7 @@ Repository: base
 Title: PostgreSQL databases Server
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Require-User: postgres=5432:postgres=5432
-Source: postgresql-14.5.tar.bz2
+Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL databases Server.

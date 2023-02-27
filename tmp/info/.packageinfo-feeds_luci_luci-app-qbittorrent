@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-qbittorrent
 Submenu: 3. Applications
 Version: 1.0-23
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_luci-app-qbittorrent_static:qBittorrent-static +PACKAGE_luci-app-qbittorrent_dynamic:qbittorrent
+Depends: +libc +PACKAGE_luci-app-qbittorrent_static:qBittorrent-static +PACKAGE_luci-app-qbittorrent_dynamic:qbittorrent
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -37,7 +37,7 @@ Config:
 Package: luci-i18n-qbittorrent-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-23
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-qbittorrent
+Depends: +libc luci-app-qbittorrent
 Conflicts: 
 Menu-Depends: 
 Provides: 

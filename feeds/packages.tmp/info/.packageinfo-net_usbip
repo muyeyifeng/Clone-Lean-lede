@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/usbip/Makefile
 
 Package: usbip
 Version: 13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USB_SUPPORT +libwrap +kmod-usbip +libudev +USE_GLIBC:libbsd +usbids
+Depends: +libc @USB_SUPPORT +libwrap +kmod-usbip +libudev +USE_GLIBC:libbsd +usbids
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -21,7 +21,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: usbip-client
 Version: 13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USB_SUPPORT usbip +kmod-usbip-client
+Depends: +libc @USB_SUPPORT usbip +kmod-usbip-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 
 Package: usbip-server
 Version: 13
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @USB_SUPPORT usbip +kmod-usbip-server
+Depends: +libc @USB_SUPPORT usbip +kmod-usbip-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

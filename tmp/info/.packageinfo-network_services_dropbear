@@ -2,7 +2,7 @@ Source-Makefile: package/network/services/dropbear/Makefile
 
 Package: dropbear
 Version: 2022.82-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DROPBEAR_ZLIB:zlib
+Depends: +libc +DROPBEAR_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Config:
 
 Package: dropbearconvert
 Version: 2022.82-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +DROPBEAR_ZLIB:zlib
+Depends: +libc +DROPBEAR_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

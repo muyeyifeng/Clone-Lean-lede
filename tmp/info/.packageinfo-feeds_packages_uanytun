@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/uanytun/Makefile
 Package: uanytun
 Submenu: VPN
 Version: 0.3.7-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +libgcrypt
+Depends: +libc +kmod-tun +libgcrypt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -35,7 +35,7 @@ Christian Pointner <equinox@spreadspace.org>
 Package: uanytun-nettle
 Submenu: VPN
 Version: 0.3.7-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +libnettle
+Depends: +libc +kmod-tun +libnettle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Christian Pointner <equinox@spreadspace.org>
 Package: uanytun-sslcrypt
 Submenu: VPN
 Version: 0.3.7-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +libopenssl
+Depends: +libc +kmod-tun +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -99,7 +99,7 @@ Christian Pointner <equinox@spreadspace.org>
 Package: uanytun-nocrypt
 Submenu: VPN
 Version: 0.3.7-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun
+Depends: +libc +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 

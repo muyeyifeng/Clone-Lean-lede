@@ -4,7 +4,7 @@ Build-Depends: openssl quickassist-c3xxx
 Package: libqatzip
 Submenu: Compression
 Version: 1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86_64 +zlib +openssl-qat
+Depends: +libc @TARGET_x86_64 +zlib +openssl-qat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ https://github.com/intel/QATzip
 Package: qzip
 Submenu: Compression
 Version: 1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86_64 +libqatzip
+Depends: +libc @TARGET_x86_64 +libqatzip
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-paramiko/Makefile
 
 Package: python3-paramiko
 Submenu: Python
-Version: 2.11.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-logging +python3-bcrypt +python3-cryptography +python3-openssl +python3-pynacl
+Version: 2.12.0-1
+Depends: +libc +python3-light +python3-logging +python3-bcrypt +python3-cryptography +python3-openssl +python3-pynacl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: SSH2 protocol library
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: paramiko-2.11.0.tar.gz
+Source: paramiko-2.12.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,8 +26,8 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-paramiko-src
 Submenu: Python
-Version: 2.11.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 2.12.0-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: packages
 Title: SSH2 protocol library (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: paramiko-2.11.0.tar.gz
+Source: paramiko-2.12.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/wg-installer/Makefile
 Package: wg-installer-server
 Menu: 1
 Version: 0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rpcd +uhttpd +uhttpd-mod-ubus +owipcalc
+Depends: +libc +rpcd +uhttpd +uhttpd-mod-ubus +owipcalc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Nick Hainke <vincent@systemli.org>
 Package: wg-installer-server-hotplug-babeld
 Menu: 1
 Version: 0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread wg-installer-server
+Depends: +libc wg-installer-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40,7 +40,7 @@ Nick Hainke <vincent@systemli.org>
 
 Package: wg-installer-client
 Version: 0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +wireguard-tools
+Depends: +libc +curl +wireguard-tools
 Conflicts: 
 Menu-Depends: 
 Provides: 

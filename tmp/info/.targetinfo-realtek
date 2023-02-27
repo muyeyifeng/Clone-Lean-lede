@@ -8,13 +8,13 @@ Target-Features: dt gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Realtek RTL83xx based boards.
 @@
-Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  uboot-envtools ethtool kmod-gpio-button-hotplug dnsmasq firewall ip6tables iptables odhcp6c odhcpd-ipv6only ip-full ip-bridge tc 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail uboot-envtools ethtool kmod-gpio-button-hotplug dnsmasq firewall ip6tables iptables odhcp6c odhcpd-ipv6only ip-full ip-bridge tc 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -32,13 +32,13 @@ Target-Features: dt gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
 	Build firmware images for Realtek RTL83xx based boards.
 @@
-Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  uboot-envtools ethtool kmod-gpio-button-hotplug dnsmasq firewall ip6tables iptables odhcp6c odhcpd-ipv6only ip-full ip-bridge tc 
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail uboot-envtools ethtool kmod-gpio-button-hotplug dnsmasq firewall ip6tables iptables odhcp6c odhcpd-ipv6only ip-full ip-bridge tc 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -49,7 +49,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_allnet_all-sg8208m
 Target-Profile-Name: ALLNET ALL-SG8208M
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: allnet,all-sg8208m
 
@@ -59,11 +59,13 @@ Build firmware images for ALLNET ALL-SG8208M
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_d-link_dgs-1210-10p
 Target-Profile-Name: D-Link DGS-1210-10P
-Target-Profile-Packages:  lua-rs232 
+Target-Profile-Packages: lua-rs232
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: d-link,dgs-1210-10p
 
@@ -73,11 +75,13 @@ Build firmware images for D-Link DGS-1210-10P
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_d-link_dgs-1210-16
 Target-Profile-Name: D-Link DGS-1210-16
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: d-link,dgs-1210-16
 
@@ -87,11 +91,13 @@ Build firmware images for D-Link DGS-1210-16
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_d-link_dgs-1210-28
 Target-Profile-Name: D-Link DGS-1210-28
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: d-link,dgs-1210-28
 
@@ -101,11 +107,13 @@ Build firmware images for D-Link DGS-1210-28
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_inaba_aml2-17gp
 Target-Profile-Name: INABA Abaniact AML2-17GP
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: inaba,aml2-17gp
 
@@ -115,11 +123,13 @@ Build firmware images for INABA Abaniact AML2-17GP
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_gs108t-v3
 Target-Profile-Name: NETGEAR GS108T v3
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,gs108t-v3
 
@@ -129,11 +139,13 @@ Build firmware images for NETGEAR GS108T v3
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_gs110tpp-v1
 Target-Profile-Name: NETGEAR GS110TPP v1
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,gs110tpp-v1
 
@@ -143,11 +155,13 @@ Build firmware images for NETGEAR GS110TPP v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_gs308t-v1
 Target-Profile-Name: NETGEAR GS308T v1
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,gs308t-v1
 
@@ -157,11 +171,13 @@ Build firmware images for NETGEAR GS308T v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_netgear_gs310tp-v1
 Target-Profile-Name: NETGEAR GS310TP v1
-Target-Profile-Packages:  lua-rs232 
+Target-Profile-Packages: lua-rs232
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,gs310tp-v1
 
@@ -171,11 +187,13 @@ Build firmware images for NETGEAR GS310TP v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_gs1900-10hp
 Target-Profile-Name: ZyXEL GS1900-10HP
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,gs1900-10hp
 
@@ -185,11 +203,13 @@ Build firmware images for ZyXEL GS1900-10HP
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_gs1900-8
 Target-Profile-Name: ZyXEL GS1900-8
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,gs1900-8
 
@@ -199,11 +219,13 @@ Build firmware images for ZyXEL GS1900-8
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_gs1900-8hp-v1
 Target-Profile-Name: ZyXEL GS1900-8HP v1
-Target-Profile-Packages:  lua-rs232 
+Target-Profile-Packages: lua-rs232
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,gs1900-8hp-v1
 
@@ -213,17 +235,21 @@ Build firmware images for ZyXEL GS1900-8HP v1
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_zyxel_gs1900-8hp-v2
 Target-Profile-Name: ZyXEL GS1900-8HP v2
-Target-Profile-Packages:  lua-rs232 
+Target-Profile-Packages: lua-rs232
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zyxel,gs1900-8hp-v2
 
 
 Target-Profile-Description:
 Build firmware images for ZyXEL GS1900-8HP v2
+
+
 
 
 

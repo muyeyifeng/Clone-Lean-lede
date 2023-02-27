@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/multimedia/gst1-plugins-base/Makefile
 
 Package: libgst1allocators
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer allocators library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -24,8 +24,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1app
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer app library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -47,8 +47,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1audio
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1tag
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1tag
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,7 +57,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -70,8 +70,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1fft
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -80,7 +80,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer FFT library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -93,8 +93,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1pbutils
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -103,7 +103,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer utils library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -116,8 +116,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1riff
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -126,7 +126,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer RIFF media library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -139,8 +139,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1rtp
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -149,7 +149,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer RTP library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -162,8 +162,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1rtsp
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -172,7 +172,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer RTSP library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -185,8 +185,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1sdp
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1rtp
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1rtp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -195,7 +195,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer SDP library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -208,8 +208,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1tag
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -218,7 +218,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer tag support library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -231,8 +231,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1video
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -241,7 +241,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer video library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -254,8 +254,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-adder
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -264,7 +264,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer adder plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -277,8 +277,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-app
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1app
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1app
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -287,7 +287,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer app plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -300,8 +300,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-audioconvert
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -310,7 +310,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio format conversion plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -323,8 +323,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-audiomixer
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -333,7 +333,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio mixing plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -346,8 +346,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-audiorate
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -356,7 +356,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio rate adjusting plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -369,8 +369,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-audioresample
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -379,7 +379,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio resampling plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -392,8 +392,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-audiotestsrc
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libgst1controller
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libgst1controller
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -402,7 +402,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer audio test plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -415,8 +415,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-compositor
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -425,7 +425,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer video compositor plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -438,8 +438,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-encoding
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -448,7 +448,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer encoding plugin plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -461,8 +461,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-gio
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -471,7 +471,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer GIO plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -484,8 +484,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-overlaycomposition
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -494,7 +494,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer overlay composition plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -507,8 +507,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-pbtypes
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -517,7 +517,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer pbtypes plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -530,8 +530,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-playback
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -540,7 +540,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer playback plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -553,8 +553,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-subparse
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -563,7 +563,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer subparse plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -576,8 +576,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-rawparse
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -586,7 +586,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer parse raw media plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -599,8 +599,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-tcp
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1net
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1net
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -609,7 +609,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer TCP plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -622,8 +622,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-typefindfunctions
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1pbutils +libgst1tag +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1pbutils +libgst1tag +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -632,7 +632,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer 'typefind' functions plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -645,8 +645,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-videoconvert
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -655,7 +655,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer video format conversion plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -668,8 +668,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-videorate
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -678,7 +678,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer Adjusts video frames plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -691,8 +691,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-videoscale
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -701,7 +701,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer Resizes video plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -714,8 +714,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-videotestsrc
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -724,7 +724,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer video test plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -737,8 +737,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-volume
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1controller
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1controller
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -747,7 +747,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer volume plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -760,8 +760,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-alsa
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +alsa-lib
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +alsa-lib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -770,7 +770,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer ALSA audio source/sink plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -783,8 +783,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-ivorbisdec
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libvorbisidec
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +libvorbisidec
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -793,7 +793,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer Integer Vorbis decoder plugin for devices without floating point plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -806,8 +806,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-ogg
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1riff +libgst1tag +libgst1pbutils +libgst1video +libogg
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1riff +libgst1tag +libgst1pbutils +libgst1video +libogg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -816,7 +816,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer ogg parser muxer demuxer plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -829,8 +829,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-opus
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1video +libopus
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1video +libopus
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -839,7 +839,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer OPUS audio codec plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -852,8 +852,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-theora
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1tag +libgst1video +libogg +libtheora
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1tag +libgst1video +libogg +libtheora
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -862,7 +862,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer Theora plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -875,8 +875,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-vorbis
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +gst1-mod-ogg +libvorbis
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag +gst1-mod-ogg +libvorbis
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -885,7 +885,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer Vorbis plugin (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -898,8 +898,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gstreamer1-plugins-base
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:gst1-plugins-base +gstreamer1-libs
+Version: 1.20.4-1
+Depends: +libc +ALL:gst1-plugins-base +gstreamer1-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -908,7 +908,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer plugins collection (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -1055,8 +1055,8 @@ Config:
 @@
 
 Package: gst1-plugins-base
-Version: 1.20.2-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1allocators +libgst1app +libgst1audio +libgst1fft +libgst1pbutils +libgst1riff +libgst1rtp +libgst1rtsp +libgst1sdp +libgst1tag +libgst1video +gst1-mod-adder +gst1-mod-app +gst1-mod-audioconvert +gst1-mod-audiomixer +gst1-mod-audiorate +gst1-mod-audioresample +gst1-mod-audiotestsrc +gst1-mod-compositor +gst1-mod-encoding +gst1-mod-gio +gst1-mod-overlaycomposition +gst1-mod-pbtypes +gst1-mod-playback +gst1-mod-subparse +gst1-mod-rawparse +gst1-mod-tcp +gst1-mod-typefindfunctions +gst1-mod-videoconvert +gst1-mod-videorate +gst1-mod-videoscale +gst1-mod-videotestsrc +gst1-mod-volume +gst1-mod-alsa +gst1-mod-ivorbisdec +gst1-mod-ogg +gst1-mod-opus +gst1-mod-theora +gst1-mod-vorbis
+Version: 1.20.4-1
+Depends: +libc +libgstreamer1 +BUILD_NLS:libiconv-full +libgst1allocators +libgst1app +libgst1audio +libgst1fft +libgst1pbutils +libgst1riff +libgst1rtp +libgst1rtsp +libgst1sdp +libgst1tag +libgst1video +gst1-mod-adder +gst1-mod-app +gst1-mod-audioconvert +gst1-mod-audiomixer +gst1-mod-audiorate +gst1-mod-audioresample +gst1-mod-audiotestsrc +gst1-mod-compositor +gst1-mod-encoding +gst1-mod-gio +gst1-mod-overlaycomposition +gst1-mod-pbtypes +gst1-mod-playback +gst1-mod-subparse +gst1-mod-rawparse +gst1-mod-tcp +gst1-mod-typefindfunctions +gst1-mod-videoconvert +gst1-mod-videorate +gst1-mod-videoscale +gst1-mod-videotestsrc +gst1-mod-volume +gst1-mod-alsa +gst1-mod-ivorbisdec +gst1-mod-ogg +gst1-mod-opus +gst1-mod-theora +gst1-mod-vorbis
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1065,7 +1065,7 @@ Category: Multimedia
 Repository: base
 Title: GStreamer plugins collection (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-base-1.20.2.tar.xz
+Source: gst-plugins-base-1.20.4.tar.xz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg

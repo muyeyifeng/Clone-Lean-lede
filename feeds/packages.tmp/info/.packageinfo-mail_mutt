@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/mail/mutt/Makefile
 Package: mutt
 Menu: 1
 Version: 2.1.5-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +MUTT_HCACHE:libgdbm +MUTT_GNUTLS:libgnutls +MUTT_OPENSSL:libopenssl +libncursesw +MUTT_SASL:libsasl2 +terminfo +zlib
+Depends: +libc +MUTT_HCACHE:libgdbm +MUTT_GNUTLS:libgnutls +MUTT_OPENSSL:libopenssl +libncursesw +MUTT_SASL:libsasl2 +terminfo +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

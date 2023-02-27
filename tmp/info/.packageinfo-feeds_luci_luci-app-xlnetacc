@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-xlnetacc
 Submenu: 3. Applications
 Version: 1.0.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +curl +openssl-util
+Depends: +libc +jshn +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Sense <sensec@gmail.com>
 Package: luci-i18n-xlnetacc-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-xlnetacc
+Depends: +libc luci-app-xlnetacc
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -3,7 +3,7 @@ Source-Makefile: package/boot/uboot-imx/Makefile
 Package: u-boot-apalis_imx6
 Default: y if (TARGET_imx_cortexa9_Default || TARGET_imx_cortexa9_DEVICE_toradex_apalis || TARGET_DEVICE_imx_cortexa9_DEVICE_toradex_apalis)
 Version: 2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx_cortexa9
+Depends: +libc @!IN_SDK @TARGET_imx_cortexa9
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-mx6cuboxi
 Default: y if (TARGET_imx_cortexa9_Default || TARGET_imx_cortexa9_DEVICE_solidrun_cubox-i || TARGET_DEVICE_imx_cortexa9_DEVICE_solidrun_cubox-i)
 Version: 2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx_cortexa9
+Depends: +libc @!IN_SDK @TARGET_imx_cortexa9
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47,7 +47,7 @@ http://www.denx.de/wiki/U-Boot
 Package: u-boot-wandboard
 Default: y if (TARGET_imx_cortexa9_Default || TARGET_imx_cortexa9_DEVICE_wandboard_dual || TARGET_DEVICE_imx_cortexa9_DEVICE_wandboard_dual)
 Version: 2020.04-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_imx_cortexa9
+Depends: +libc @!IN_SDK @TARGET_imx_cortexa9
 Conflicts: 
 Menu-Depends: 
 Provides: 

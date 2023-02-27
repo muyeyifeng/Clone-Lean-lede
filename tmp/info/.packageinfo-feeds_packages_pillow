@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/pillow/Makefile
 Package: python3-pillow
 Submenu: Python
 Version: 9.3.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfreetype +libjpeg +libtiff +zlib +libwebp +python3
+Depends: +libc +libfreetype +libjpeg +libtiff +zlib +libwebp +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 Package: python3-pillow-src
 Submenu: Python
 Version: 9.3.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

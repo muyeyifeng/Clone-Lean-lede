@@ -4,7 +4,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-mrkaio-m68s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-mrkaio-m68s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-mrkaio-m68s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,9 +26,9 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-opc-h68k-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h68k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h68k)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h66k || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h68k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h66k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h68k)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,10 +49,58 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-photonicat-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ariaboard_photonicat || TARGET_DEVICE_rockchip_armv8_DEVICE_ariaboard_photonicat)
+Version: 2022.07-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-photonicat-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: photonicat-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Ariaboard Photonicat
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Ariaboard Photonicat
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-radxa-e25-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_e25 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e25)
+Version: 2022.07-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-radxa-e25-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: radxa-e25-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Radxa E25
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Radxa E25
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-rock-3a-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-3a || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-3a)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -73,34 +121,10 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
-Package: u-boot-rock-pi-e25-rk3568
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-pi-e25 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-pi-e25)
-Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-pi-e25-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: rock-pi-e25-rk3568
-Section: boot
-Category: Boot Loaders
-Title: U-Boot for ROCK Pi E25
-Maintainer: Tobias Maedel <openwrt@tbspace.de>
-Source: u-boot-2022.07.tar.bz2
-License: GPL-2.0 GPL-2.0+
-LicenseFiles: Licenses/README
-Type: bin
-Hidden: 1
-Description: U-Boot for ROCK Pi E25
-http://www.denx.de/wiki/U-Boot
-Tobias Maedel <openwrt@tbspace.de>
-@@
-
-Build-Depends: arm-trusted-firmware-rockchip-vendor
-
 Package: u-boot-r66s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_rockchip_armv8_DEVICE_fastrhino_r68s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r68s)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-r66s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-r66s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -124,7 +148,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-station-p2-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_firefly_station-p2 || TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-p2)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,7 +172,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-guangmiao-g4c-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -172,7 +196,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-nanopi-r4s-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r4s-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r4s-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -196,7 +220,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-nanopi-r4se-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r4se-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r4se-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -220,7 +244,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-nanopi-r5s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r5s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r5s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -244,7 +268,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rock-pi-4-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-pi-4 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-pi-4)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rock-pi-4-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-pi-4-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -268,7 +292,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rockpro64-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_pine64_rockpro64 || TARGET_DEVICE_rockchip_armv8_DEVICE_pine64_rockpro64)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rockpro64-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rockpro64-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -292,7 +316,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rongpin-king3399-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_rongpin_king3399 || TARGET_DEVICE_rockchip_armv8_DEVICE_rongpin_king3399)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-rongpin-king3399-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rongpin-king3399-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -313,10 +337,34 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-rocktech-mpc1903-rk3399
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_rocktech_mpc1903 || TARGET_DEVICE_rockchip_armv8_DEVICE_rocktech_mpc1903)
+Version: 2022.07-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rocktech-mpc1903-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: rocktech-mpc1903-rk3399
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Rocktech MPC1903
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Rocktech MPC1903
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-nanopi-r2c-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2c)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2c-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r2c-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -340,7 +388,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-nanopi-r2s-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3 || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-neo3)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r2s-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -364,7 +412,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-orangepi-r1-plus-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -388,7 +436,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-orangepi-r1-plus-lts-rk3328
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts || TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts)
 Version: 2022.07-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-lts-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-orangepi-r1-plus-lts-rk3328:arm-trusted-firmware-rk3328 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 

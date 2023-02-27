@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-control-timewol
 Submenu: 3. Applications
 Version: 1.0-3-20220406
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +etherwake
+Depends: +libc +etherwake
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Description: LuCI support for Timewol From Koolshare
 Package: luci-i18n-control-timewol-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
 Version: 1.0-3-20220406
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-control-timewol
+Depends: +libc luci-app-control-timewol
 Conflicts: 
 Menu-Depends: 
 Provides: 

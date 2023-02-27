@@ -3,7 +3,7 @@ Build-Depends: gperf/host perl/host
 
 Package: kmod-ipt-rtpengine
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+10.5.2.6-0
+Version: <LINUX_VERSION>+10.5.2.6-3
 Depends: +PACKAGE_kmod-ipt-rtpengine:kmod-crypto-aead +PACKAGE_kmod-ipt-rtpengine:kmod-crypto-hash +PACKAGE_kmod-ipt-rtpengine:kmod-ipt-core
 Conflicts: 
 Menu-Depends: 
@@ -25,8 +25,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine-no-transcode
 Submenu: Telephony
-Version: 10.5.2.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine-no-transcode:glib2 +PACKAGE_rtpengine-no-transcode:json-glib +PACKAGE_rtpengine-no-transcode:libevent2 +PACKAGE_rtpengine-no-transcode:libevent2-pthreads +PACKAGE_rtpengine-no-transcode:libhiredis +PACKAGE_rtpengine-no-transcode:libip4tc +PACKAGE_rtpengine-no-transcode:libmosquitto +PACKAGE_rtpengine-no-transcode:libopenssl +PACKAGE_rtpengine-no-transcode:libpcap +PACKAGE_rtpengine-no-transcode:libpcre +PACKAGE_rtpengine-no-transcode:libwebsockets +PACKAGE_rtpengine-no-transcode:xmlrpc-c-client +PACKAGE_rtpengine-no-transcode:zlib +IPV6:libip6tc
+Version: 10.5.2.6-3
+Depends: +libc +PACKAGE_rtpengine-no-transcode:glib2 +PACKAGE_rtpengine-no-transcode:json-glib +PACKAGE_rtpengine-no-transcode:libevent2 +PACKAGE_rtpengine-no-transcode:libevent2-pthreads +PACKAGE_rtpengine-no-transcode:libhiredis +PACKAGE_rtpengine-no-transcode:libip4tc +PACKAGE_rtpengine-no-transcode:libmosquitto +PACKAGE_rtpengine-no-transcode:libopenssl +PACKAGE_rtpengine-no-transcode:libpcap +PACKAGE_rtpengine-no-transcode:libpcre +PACKAGE_rtpengine-no-transcode:libwebsockets-openssl +PACKAGE_rtpengine-no-transcode:xmlrpc-c-client +PACKAGE_rtpengine-no-transcode:zlib +IPV6:libip6tc
 Conflicts: rtpengine
 Menu-Depends: 
 Provides: 
@@ -56,8 +56,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: iptables-mod-rtpengine
 Submenu: Firewall
-Version: 10.5.2.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_iptables-mod-rtpengine:libxtables
+Version: 10.5.2.6-3
+Depends: +libc +PACKAGE_iptables-mod-rtpengine:libxtables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -77,8 +77,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine
 Submenu: Telephony
-Version: 10.5.2.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine:glib2 +PACKAGE_rtpengine:json-glib +PACKAGE_rtpengine:libevent2 +PACKAGE_rtpengine:libevent2-pthreads +PACKAGE_rtpengine:libhiredis +PACKAGE_rtpengine:libip4tc +PACKAGE_rtpengine:libmosquitto +PACKAGE_rtpengine:libopenssl +PACKAGE_rtpengine:libpcap +PACKAGE_rtpengine:libpcre +PACKAGE_rtpengine:libwebsockets +PACKAGE_rtpengine:xmlrpc-c-client +PACKAGE_rtpengine:zlib +PACKAGE_rtpengine:bcg729 +PACKAGE_rtpengine:libffmpeg-full +PACKAGE_rtpengine:libmariadb +PACKAGE_rtpengine:libspandsp3 +IPV6:libip6tc
+Version: 10.5.2.6-3
+Depends: +libc +PACKAGE_rtpengine:glib2 +PACKAGE_rtpengine:json-glib +PACKAGE_rtpengine:libevent2 +PACKAGE_rtpengine:libevent2-pthreads +PACKAGE_rtpengine:libhiredis +PACKAGE_rtpengine:libip4tc +PACKAGE_rtpengine:libmosquitto +PACKAGE_rtpengine:libopenssl +PACKAGE_rtpengine:libpcap +PACKAGE_rtpengine:libpcre +PACKAGE_rtpengine:libwebsockets-openssl +PACKAGE_rtpengine:xmlrpc-c-client +PACKAGE_rtpengine:zlib +PACKAGE_rtpengine:bcg729 +PACKAGE_rtpengine:libffmpeg-full +PACKAGE_rtpengine:libmariadb +PACKAGE_rtpengine:libspandsp3 +IPV6:libip6tc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -106,8 +106,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: rtpengine-recording
 Submenu: Telephony
-Version: 10.5.2.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_rtpengine-recording:bcg729 +PACKAGE_rtpengine-recording:glib2 +PACKAGE_rtpengine-recording:libffmpeg-full +PACKAGE_rtpengine-recording:libmariadb +PACKAGE_rtpengine-recording:libopenssl
+Version: 10.5.2.6-3
+Depends: +libc +PACKAGE_rtpengine-recording:bcg729 +PACKAGE_rtpengine-recording:glib2 +PACKAGE_rtpengine-recording:libffmpeg-full +PACKAGE_rtpengine-recording:libmariadb +PACKAGE_rtpengine-recording:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 

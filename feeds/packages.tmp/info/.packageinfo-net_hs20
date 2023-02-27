@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/hs20/Makefile
 Package: hs20-common
 Submenu: WirelessAPD
 Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: hs20-client
 Submenu: WirelessAPD
 Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hs20-common +libopenssl +libcurl +libxml2
+Depends: +libc +hs20-common +libopenssl +libcurl +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -46,7 +46,7 @@ Daniel Golle <daniel@makrotopia.org>
 Package: hs20-server
 Submenu: WirelessAPD
 Version: 2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hs20-common +libopenssl +libsqlite3 +libxml2 +php8 +php8-cgi +php8-mod-xml +php8-mod-pdo-sqlite +openssl-util +sqlite3-cli +uhttpd +xxd
+Depends: +libc +hs20-common +libopenssl +libsqlite3 +libxml2 +php8 +php8-cgi +php8-mod-xml +php8-mod-pdo-sqlite +openssl-util +sqlite3-cli +uhttpd +xxd
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,9 +1,9 @@
 Source-Makefile: package/feeds/packages/nps/Makefile
-Build-Depends: golang/host
+Build-Depends: golang/host upx/host
 
 Package: npc
 Version: 0.26.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -29,7 +29,7 @@ Config:
 
 Package: nps
 Version: 0.26.10-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 

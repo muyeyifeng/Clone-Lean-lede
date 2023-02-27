@@ -3,7 +3,7 @@ Build-Depends: libpcap
 
 Package: ppp
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ppp +libpthread +shellsync +kmod-mppe
+Depends: +libc +kmod-ppp +libpthread +shellsync +kmod-mppe
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-multilink
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ppp
+Depends: +libc +kmod-ppp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,7 +43,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-pppoa
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink) +linux-atm +kmod-pppoa
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink) +linux-atm +kmod-pppoa
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-pppoe
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pppoe
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pppoe
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -81,7 +81,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-radius
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink)
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -101,7 +101,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-pppol2tp
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pppol2tp
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pppol2tp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -120,7 +120,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-pptp
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pptp +kmod-mppe +resolveip
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink) +kmod-pptp +kmod-mppe +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -139,7 +139,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: ppp-mod-passwordfd
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink)
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -159,7 +159,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: chat
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -179,7 +179,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: pppdump
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink)
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -198,7 +198,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: pppstats
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink)
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -217,7 +217,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: pppoe-discovery
 Version: 2.4.9.git-2021-01-04-6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_ppp||PACKAGE_ppp-multilink) +ppp-mod-pppoe
+Depends: +libc @(PACKAGE_ppp||PACKAGE_ppp-multilink) +ppp-mod-pppoe
 Conflicts: 
 Menu-Depends: 
 Provides: 

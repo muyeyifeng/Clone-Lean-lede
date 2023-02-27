@@ -1,8 +1,8 @@
 Source-Makefile: package/kernel/bpf-headers/Makefile
 
 Package: bpf-headers
-Version: 5.15.79
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 5.15.94
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Kernel
 Repository: base
 Title: eBPF kernel headers
 Maintainer: 
-Source: linux-5.15.79.tar.xz
+Source: linux-5.15.94.tar.xz
 Type: ipkg
 Build-Only: 1
 Hidden: 1

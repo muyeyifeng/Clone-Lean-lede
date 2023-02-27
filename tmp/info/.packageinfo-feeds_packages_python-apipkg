@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-apipkg/Makefile
 Package: python3-apipkg
 Submenu: Python
 Version: 1.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -25,7 +25,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Package: python3-apipkg-src
 Submenu: Python
 Version: 1.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

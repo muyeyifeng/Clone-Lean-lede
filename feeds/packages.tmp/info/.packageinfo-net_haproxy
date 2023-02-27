@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 Package: haproxy
 Submenu: Web Servers/Proxies
 Version: 2.6.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
+Depends: +libc +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,7 +27,7 @@ Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
 Version: 2.6.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
+Depends: +libc haproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -49,7 +49,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
 Version: 2.6.6-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
+Depends: +libc +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 

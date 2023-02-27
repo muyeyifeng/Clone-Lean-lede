@@ -8,7 +8,7 @@ Target-Features: gpio low_mem pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.224
+Linux-Version: 5.4.232
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -25,7 +25,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Atheros Generic AR2xxx board
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: generic
 
@@ -35,11 +35,13 @@ Build firmware images for Atheros Generic AR2xxx board
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ubnt_picostation-2
 Target-Profile-Name: Ubiquiti Picostation 2 (XS2-8)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,picostation-2
 
@@ -49,11 +51,13 @@ Build firmware images for Ubiquiti Picostation 2 (XS2-8)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ubnt_nanostation-2
 Target-Profile-Name: Ubiquiti Nanostation 2 (XS2)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,nanostation-2
 
@@ -63,11 +67,13 @@ Build firmware images for Ubiquiti Nanostation 2 (XS2)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_ubnt_nanostation-5
 Target-Profile-Name: Ubiquiti Nanostation 5 (XS5)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: ubnt,nanostation-5
 
@@ -77,11 +83,13 @@ Build firmware images for Ubiquiti Nanostation 5 (XS5)
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_compex_np25g
 Target-Profile-Name: Compex NP25G
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: compex,np25g
 Target-Profile-Broken: y
@@ -91,17 +99,21 @@ Build firmware images for Compex NP25G
 
 
 
+
+
 @@
 
 Target-Profile: DEVICE_compex_wpe53g
 Target-Profile-Name: Compex WPE53G
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: compex,wpe53g
 Target-Profile-Broken: y
 
 Target-Profile-Description:
 Build firmware images for Compex WPE53G
+
+
 
 
 

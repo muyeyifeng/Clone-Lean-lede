@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/libuwsc/Makefile
 Package: libuwsc-openssl
 Submenu: Networking
 Version: 3.3.5-0.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-openssl:libopenssl
+Depends: +libc +libev +PACKAGE_libuwsc-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: libuwsc
@@ -35,7 +35,7 @@ endmenu
 Package: libuwsc-wolfssl
 Submenu: Networking
 Version: 3.3.5-0.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-wolfssl:libwolfssl
+Depends: +libc +libev +PACKAGE_libuwsc-wolfssl:libwolfssl
 Conflicts: 
 Menu-Depends: 
 Provides: libuwsc
@@ -67,7 +67,7 @@ endmenu
 Package: libuwsc-mbedtls
 Submenu: Networking
 Version: 3.3.5-0.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev +PACKAGE_libuwsc-mbedtls:libmbedtls
+Depends: +libc +libev +PACKAGE_libuwsc-mbedtls:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: libuwsc
@@ -99,7 +99,7 @@ endmenu
 Package: libuwsc-nossl
 Submenu: Networking
 Version: 3.3.5-0.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Depends: +libc +libev
 Conflicts: 
 Menu-Depends: 
 Provides: libuwsc

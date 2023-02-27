@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libssh2/Makefile
 
 Package: libssh2
 Version: 1.10.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBSSH2_MBEDTLS:libmbedtls +!LIBSSH2_MBEDTLS:libopenssl +zlib
+Depends: +libc +LIBSSH2_MBEDTLS:libmbedtls +!LIBSSH2_MBEDTLS:libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

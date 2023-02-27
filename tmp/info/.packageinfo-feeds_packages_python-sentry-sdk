@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-sentry-sdk/Makefile
 Package: python3-sentry-sdk
 Submenu: Python
 Version: 1.5.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-certifi +python3-light +python3-logging +python3-urllib3
+Depends: +libc +python3-certifi +python3-light +python3-logging +python3-urllib3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 Package: python3-sentry-sdk-src
 Submenu: Python
 Version: 1.5.4-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 

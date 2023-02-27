@@ -3,7 +3,7 @@ Source-Makefile: package/network/services/e2guardian/Makefile
 Package: e2guardian
 Submenu: Web Servers/Proxies
 Version: 3.2.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +zlib +libpcre
+Depends: +libc +libstdcpp +libpthread +zlib +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 

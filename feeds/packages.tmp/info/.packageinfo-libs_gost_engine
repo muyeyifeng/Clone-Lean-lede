@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/gost_engine/Makefile
 Package: libopenssl-gost_engine
 Submenu: SSL
 Version: 1.1.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopenssl @OPENSSL_ENGINE +libopenssl-conf
+Depends: +libc libopenssl @OPENSSL_ENGINE +libopenssl-conf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Artur Petrov <github@phpchain.ru>
 Package: gost_engine-util
 Submenu: SSL
 Version: 1.1.0.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread libopenssl-gost_engine
+Depends: +libc libopenssl-gost_engine
 Conflicts: 
 Menu-Depends: 
 Provides: 

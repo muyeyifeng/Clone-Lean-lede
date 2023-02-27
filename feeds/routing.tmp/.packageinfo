@@ -2,7 +2,7 @@ Source-Makefile: feeds/routing/ahcpd/Makefile
 
 Package: ahcpd
 Version: 0.53-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +ip +librt
+Depends: +libc @IPV6 +ip +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -27,8 +27,8 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2022.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
+Version: 2023.0-0
+Depends: +libc @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -37,7 +37,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: alfred-2022.3.tar.gz
+Source: alfred-2023.0.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -67,7 +67,7 @@ Source-Makefile: feeds/routing/babel-pinger/Makefile
 Package: babel-pinger
 Submenu: Routing and Redirection
 Version: 0.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -90,8 +90,8 @@ Source-Makefile: feeds/routing/babeld/Makefile
 
 Package: babeld
 Submenu: Routing and Redirection
-Version: 1.12.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libubus +libubox
+Version: 1.12.2-1
+Depends: +libc @IPV6 +libubus +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100,7 +100,7 @@ Category: Network
 Repository: base
 Title: A loop-avoiding distance-vector routing protocol
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetworks.org>, Nick Hainke <vincent@systemli.org>
-Source: babeld-1.12.1.tar.gz
+Source: babeld-1.12.2.tar.gz
 License: MIT
 LicenseFiles: LICENCE
 Type: ipkg
@@ -117,8 +117,8 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2022.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
+Version: 2023.0-0
+Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
 Provides: batctl
@@ -128,22 +128,22 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Default)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2022.3.tar.gz
+Source: batctl-2023.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2022.3 of the user space utility.
+  version 2023.0 of the user space utility.
   Standard subcommands for configuration and online debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2022.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
+Version: 2023.0-0
+Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
 Provides: batctl
@@ -153,22 +153,22 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Minimal)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2022.3.tar.gz
+Source: batctl-2023.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2022.3 of the user space utility.
+  version 2023.0 of the user space utility.
   Only configuration relevant subcommands are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2022.3-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl-tiny +librt
+Version: 2023.0-0
+Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
 Provides: batctl
@@ -178,14 +178,14 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool (Full)
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2022.3.tar.gz
+Source: batctl-2023.0.tar.gz
 License: GPL-2.0-only ISC MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
 Type: ipkg
 Description:   batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
   It is an easier method for configuring batman-adv and provides some
   additional tools for debugging as well. This package builds
-  version 2022.3 of the user space utility.
+  version 2023.0 of the user space utility.
   Subcommands for configuration, online and offline debugging are enabled.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2022.3-0
+Version: <LINUX_VERSION>+2023.0-0
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -205,7 +205,7 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2022.3.tar.gz
+Source: batman-adv-2023.0.tar.gz
 License: GPL-2.0-only MIT
 LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
 Type: ipkg
@@ -213,7 +213,7 @@ Description:   B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
   a routing protocol for multi-hop ad-hoc mesh networks. The
   networks may be wired or wireless. See
   https://www.open-mesh.org/ for more information and user space
-  tools. This package builds version 2022.3 of the kernel
+  tools. This package builds version 2023.0 of the kernel
   module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
@@ -228,7 +228,7 @@ Source-Makefile: feeds/routing/batmand/Makefile
 Package: batmand
 Submenu: Routing and Redirection
 Version: 1440-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +kmod-tun
+Depends: +libc +libpthread +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -252,8 +252,8 @@ Build-Depends: ncurses readline
 Package: bird1-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts:  bird4
+Depends: +libc +libpthread
+Conflicts: bird4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -289,8 +289,8 @@ https://bird.network.cz/
 Package: bird1c-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv4
-Conflicts:  birdc4
+Depends: +libc +libreadline +libncurses +bird1-ipv4
+Conflicts: birdc4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -325,8 +325,8 @@ https://bird.network.cz/
 Package: bird1cl-ipv4
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4
-Conflicts:  birdcl4
+Depends: +libc +bird1-ipv4
+Conflicts: birdcl4
 Menu-Depends: 
 Provides: 
 Section: net
@@ -358,8 +358,8 @@ https://bird.network.cz/
 Package: bird1-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts:  bird6
+Depends: +libc +libpthread
+Conflicts: bird6
 Menu-Depends: 
 Provides: 
 Section: net
@@ -395,8 +395,8 @@ https://bird.network.cz/
 Package: bird1c-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv6
-Conflicts:  birdc6
+Depends: +libc +libreadline +libncurses +bird1-ipv6
+Conflicts: birdc6
 Menu-Depends: 
 Provides: 
 Section: net
@@ -431,8 +431,8 @@ https://bird.network.cz/
 Package: bird1cl-ipv6
 Submenu: Routing and Redirection
 Version: 1.6.8-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6
-Conflicts:  birdcl6
+Depends: +libc +bird1-ipv6
+Conflicts: birdcl6
 Menu-Depends: 
 Provides: 
 Section: net
@@ -462,12 +462,12 @@ https://bird.network.cz/
 @@
 
 
-Source-Makefile: feeds/routing/bird1-openwrt/bird1-ipv4-openwrt/Makefile
+Source-Makefile: feeds/routing/bird1-openwrt/Makefile
 
 Package: bird1-ipv4-uci
 Submenu: Routing and Redirection
-Version: 0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4 +libuci +uci
+Version: 0.3-2
+Depends: +libc +libuci +uci +bird1-ipv4
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -475,42 +475,19 @@ Section: net
 Category: Network
 Repository: base
 Title: The BIRD UCI module (v1.6) (IPv4)
-Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Maintainer: Roger Pueyo Centelles <roger.pueyo@guifi.net>
 Source: 
 License: GPL-3.0+
 Type: ipkg
-Description: bird1-ipv4 UCI integration module
-https://github.com/eloicaso/bird-openwrt/
-Eloi Carbo <eloicaso@openmailbox.org>
+Description: The BIRD UCI module (v1.6) (IPv4)
+https://github.com/openwrt/bird1-openwrt/
+Roger Pueyo Centelles <roger.pueyo@guifi.net>
 @@
-
-Package: luci-app-bird1-ipv4
-Submenu: 3. Applications
-Version: 0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4-uci +luci-base
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: LuCI support for bird1-ipv4
-Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
-Source: 
-License: GPL-3.0+
-Type: ipkg
-Description: bird4 application for LuCI
-https://github.com/eloicaso/bird-openwrt/
-Eloi Carbo <eloicaso@openmailbox.org>
-@@
-
-
-Source-Makefile: feeds/routing/bird1-openwrt/bird1-ipv6-openwrt/Makefile
 
 Package: bird1-ipv6-uci
 Submenu: Routing and Redirection
-Version: 0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6 +libuci +uci
+Version: 0.3-2
+Depends: +libc +libuci +uci +bird1-ipv6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -518,33 +495,53 @@ Section: net
 Category: Network
 Repository: base
 Title: The BIRD UCI module (v1.6) (IPv6)
-Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Maintainer: Roger Pueyo Centelles <roger.pueyo@guifi.net>
 Source: 
 License: GPL-3.0+
 Type: ipkg
-Description: bird1-ipv6 UCI integration module
-https://github.com/eloicaso/bird-openwrt/
-Eloi Carbo <eloicaso@openmailbox.org>
+Description: The BIRD UCI module (v1.6) (IPv6)
+https://github.com/openwrt/bird1-openwrt/
+Roger Pueyo Centelles <roger.pueyo@guifi.net>
 @@
 
-Package: luci-app-bird1-ipv6
+Package: luci-app-bird1-ipv4
 Submenu: 3. Applications
-Version: 0.3-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6-uci +luci-base
+Version: 0.3-2
+Depends: +libc +luci-base +luci-compat +bird1-ipv4-uci
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: luci
 Category: LuCI
 Repository: base
-Title: LuCI support for bird1-ipv6
-Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Title: LuCI support for BIRD (v1.6) (IPv4)
+Maintainer: Roger Pueyo Centelles <roger.pueyo@guifi.net>
 Source: 
 License: GPL-3.0+
 Type: ipkg
-Description: bird6 application for LuCI
-https://github.com/eloicaso/bird-openwrt/
-Eloi Carbo <eloicaso@openmailbox.org>
+Description: LuCI support for BIRD (v1.6) (IPv4)
+https://github.com/openwrt/bird1-openwrt/
+Roger Pueyo Centelles <roger.pueyo@guifi.net>
+@@
+
+Package: luci-app-bird1-ipv6
+Submenu: 3. Applications
+Version: 0.3-2
+Depends: +libc +luci-base +luci-compat +bird1-ipv6-uci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for BIRD (v1.6) (IPv6)
+Maintainer: Roger Pueyo Centelles <roger.pueyo@guifi.net>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Description: LuCI support for BIRD (v1.6) (IPv6)
+https://github.com/openwrt/bird1-openwrt/
+Roger Pueyo Centelles <roger.pueyo@guifi.net>
 @@
 
 
@@ -553,8 +550,8 @@ Build-Depends: ncurses readline
 
 Package: bird2
 Submenu: Routing and Redirection
-Version: 2.0.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Version: 2.0.12-1
+Depends: +libc +libpthread
 Conflicts: bird1-ipv4 bird1-ipv6 bird4 bird6
 Menu-Depends: 
 Provides: 
@@ -563,7 +560,7 @@ Category: Network
 Repository: base
 Title: The BIRD Internet Routing Daemon (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.0.10.tar.gz
+Source: bird-2.0.12.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -589,8 +586,8 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2c
 Submenu: Routing and Redirection
-Version: 2.0.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird2 +libreadline +libncurses
+Version: 2.0.12-1
+Depends: +libc +bird2 +libreadline +libncurses
 Conflicts: bird1c-ipv4 bird1c-ipv6 birdc4 birdc6
 Menu-Depends: 
 Provides: 
@@ -599,7 +596,7 @@ Category: Network
 Repository: base
 Title: The BIRD command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.0.10.tar.gz
+Source: bird-2.0.12.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -621,8 +618,8 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2cl
 Submenu: Routing and Redirection
-Version: 2.0.10-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +bird2
+Version: 2.0.12-1
+Depends: +libc +bird2
 Conflicts: bird1cl-ipv4 bird1cl-ipv6 birdcl4 birdcl6
 Menu-Depends: 
 Provides: 
@@ -631,7 +628,7 @@ Category: Network
 Repository: base
 Title: The BIRD lightweight command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.0.10.tar.gz
+Source: bird-2.0.12.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -655,7 +652,7 @@ Package: bmx6
 Menu: 1
 Submenu: Routing and Redirection
 Version: 0.1-alpha-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
+Depends: +libc +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -675,7 +672,7 @@ Axel Neumann <neumann@cgws.de>
 Package: bmx6-uci-config
 Submenu: Routing and Redirection
 Version: 0.1-alpha-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6 +libuci
+Depends: +libc bmx6 +libuci
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -695,7 +692,7 @@ Axel Neumann <neumann@cgws.de>
 Package: bmx6-json
 Submenu: Routing and Redirection
 Version: 0.1-alpha-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6 +libjson-c
+Depends: +libc bmx6 +libjson-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -715,7 +712,7 @@ Axel Neumann <neumann@cgws.de>
 Package: bmx6-sms
 Submenu: Routing and Redirection
 Version: 0.1-alpha-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6
+Depends: +libc bmx6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -735,7 +732,7 @@ Axel Neumann <neumann@cgws.de>
 Package: bmx6-table
 Submenu: Routing and Redirection
 Version: 0.1-alpha-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx6
+Depends: +libc bmx6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -758,8 +755,8 @@ Source-Makefile: feeds/routing/bmx7/Makefile
 Package: bmx7
 Menu: 1
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libmbedtls +libiwinfo
+Version: 7.1.1-5
+Depends: +libc +zlib +libmbedtls +libiwinfo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -779,8 +776,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-uci-config
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libuci
+Version: 7.1.1-5
+Depends: +libc bmx7 +libuci
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -800,8 +797,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-iwinfo
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libiwinfo
+Version: 7.1.1-5
+Depends: +libc bmx7 +libiwinfo
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -821,8 +818,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-topology
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
+Version: 7.1.1-5
+Depends: +libc bmx7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -842,8 +839,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-json
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libjson-c
+Version: 7.1.1-5
+Depends: +libc bmx7 +libjson-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -863,8 +860,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-sms
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
+Version: 7.1.1-5
+Depends: +libc bmx7
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -884,8 +881,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-table
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +bmx7-tun
+Version: 7.1.1-5
+Depends: +libc bmx7 +bmx7-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -905,8 +902,8 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-tun
 Submenu: Routing and Redirection
-Version: 7.1.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
+Version: 7.1.1-5
+Depends: +libc bmx7 +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -930,7 +927,7 @@ Source-Makefile: feeds/routing/cjdns/Makefile
 Package: cjdns
 Submenu: Routing and Redirection
 Version: v21.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
+Depends: +libc @!arc @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -951,7 +948,7 @@ William Fleurant <meshnet@protonmail.com>
 Package: cjdns-tests
 Submenu: Routing and Redirection
 Version: v21.1-4
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt @!arc
+Depends: +libc +libpthread +librt @!arc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -974,7 +971,7 @@ Source-Makefile: feeds/routing/hnetd/Makefile
 
 Package: hnetd-nossl
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +odhcpd +odhcp6c +netifd @IPV6
+Depends: +libc +odhcpd +odhcp6c +netifd @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -995,7 +992,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnetd-openssl
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +odhcpd +odhcp6c +netifd +libopenssl @IPV6
+Depends: +libc +odhcpd +odhcp6c +netifd +libopenssl @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1016,7 +1013,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-nossl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-nossl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1036,7 +1033,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full-secure
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-openssl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-openssl +luci-app-hnet +ip +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1056,7 +1053,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: hnet-full-l2tp
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +hnetd-nossl +luci-app-hnet +ip-full +kmod-l2tp-eth +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
+Depends: +libc +hnetd-nossl +luci-app-hnet +ip-full +kmod-l2tp-eth +babeld +ohybridproxy +zonestitcher +miniupnpd +minimalist-pcproxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1077,7 +1074,7 @@ Steven Barth <cyrus@openwrt.org>
 Package: luci-app-hnet
 Submenu: 3. Applications
 Version: 2018-12-21-c43766610ed30194b048bc070a3c433aec731c40-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1100,7 +1097,7 @@ Source-Makefile: feeds/routing/luci-app-bmx6/Makefile
 Package: luci-app-bmx6
 Submenu: 3. Applications
 Version: 6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-json +luci-base +luci-lib-httpclient +bmx6 +luci-lib-jquery-1-4 +luci-lib-dracula
+Depends: +libc +luci-lib-json +luci-base +luci-lib-httpclient +bmx6 +luci-lib-jquery-1-4 +luci-lib-dracula
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1119,7 +1116,7 @@ Pau Escrich <p4u@dabax.net>
 Package: luci-lib-jquery-1-4
 Submenu: 6. Libraries
 Version: 6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1138,7 +1135,7 @@ Gui Iribarren <gui@altermundi.net>
 Package: luci-lib-dracula
 Submenu: 6. Libraries
 Version: 6
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1160,7 +1157,7 @@ Source-Makefile: feeds/routing/luci-app-cjdns/Makefile
 Package: luci-app-cjdns
 Submenu: 3. Applications
 Version: 1.3-9
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +cjdns +luci-compat +luci-base
+Depends: +libc +cjdns +luci-compat +luci-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1178,12 +1175,33 @@ William Fleurant <meshnet@protonmail.com>
 @@
 
 
+Source-Makefile: feeds/routing/luci-app-olsrd2/Makefile
+
+Package: luci-app-olsrd2
+Submenu: 3. Applications
+Version: 0.2.6-14
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: OLSR2 configuration and status module
+Maintainer: Patrick Grimm <patrick@lunatiki.de>
+Source: 
+Type: ipkg
+Description: OLSR2 configuration and status module
+Patrick Grimm <patrick@lunatiki.de>
+@@
+
+
 Source-Makefile: feeds/routing/mcproxy/Makefile
 
 Package: mcproxy
 Submenu: Routing and Redirection
 Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp @(!GCC_VERSION_4_4&&!GCC_VERSION_4_6)
+Depends: +libc +libpthread +libstdcpp @(!GCC_VERSION_4_4&&!GCC_VERSION_4_6)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1209,7 +1227,7 @@ Source-Makefile: feeds/routing/mesh11sd/Makefile
 Package: mesh11sd
 Submenu: Captive Portals
 Version: 1.2.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1241,7 +1259,7 @@ Source-Makefile: feeds/routing/minimalist-pcproxy/Makefile
 
 Package: minimalist-pcproxy
 Version: 2014-12-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox @IPV6
+Depends: +libc +libubox @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1269,7 +1287,7 @@ Source-Makefile: feeds/routing/naywatch/Makefile
 
 Package: naywatch
 Version: 1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +owipcalc
+Depends: +libc @IPV6 +owipcalc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1295,7 +1313,7 @@ Source-Makefile: feeds/routing/ndppd/Makefile
 
 Package: ndppd
 Version: 0.2.5-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libstdcpp
+Depends: +libc @IPV6 +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1325,7 +1343,7 @@ Source-Makefile: feeds/routing/nodogsplash/Makefile
 Package: nodogsplash
 Submenu: Captive Portals
 Version: 5.0.0-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
+Depends: +libc +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
 Conflicts: nodogsplash2
 Menu-Depends: 
 Provides: 
@@ -1353,7 +1371,7 @@ Source-Makefile: feeds/routing/ohybridproxy/Makefile
 Package: ohybridproxy
 Submenu: IP Addresses and Names
 Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +mdnsd
+Depends: +libc +libubox +mdnsd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1375,7 +1393,7 @@ Steven Barth <cyrus@openwrt.org>
 Package: zonestitcher
 Submenu: IP Addresses and Names
 Version: 2020-05-22-0dfef1eb5f067250a5f24a899536879ea4fdc4c5-3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1401,7 +1419,7 @@ Package: olsrd
 Menu: 1
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libubus +iptables +IPV6:ip6tables
+Depends: +libc +libpthread +libubus +iptables +IPV6:ip6tables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1421,7 +1439,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-arprefresh
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1441,7 +1459,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dot-draw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1461,7 +1479,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-filtergw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1481,7 +1499,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-bmf
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +kmod-tun
+Depends: +libc olsrd +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1501,7 +1519,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dyn-gw
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1521,7 +1539,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-dyn-gw-plain
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1541,7 +1559,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-httpinfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1561,7 +1579,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-jsoninfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1581,7 +1599,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-netjson
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1601,7 +1619,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-mdns
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1621,7 +1639,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-nameservice
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1641,7 +1659,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-p2pd
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1661,7 +1679,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-pgraph
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1681,7 +1699,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-pud
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd +libgps
+Depends: +libc olsrd +libgps
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1701,7 +1719,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-quagga
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1721,7 +1739,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-secure
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1741,7 +1759,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-sgwdynspeed
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1761,7 +1779,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-txtinfo
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1781,7 +1799,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-mod-watchdog
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1801,7 +1819,7 @@ Saverio Proto <zioproto@gmail.com>
 Package: olsrd-utils
 Submenu: Routing and Redirection
 Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread olsrd
+Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1823,8 +1841,8 @@ Source-Makefile: feeds/routing/oonf-dlep-proxy/Makefile
 
 Package: oonf-dlep-proxy
 Submenu: OLSR.org network framework
-Version: v0.15.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libnl-tiny +libuci +oonf-init-scripts
+Version: 2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396
+Depends: +libc +librt +libnl-tiny +libuci +oonf-init-scripts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1833,7 +1851,7 @@ Category: Network
 Repository: base
 Title: Build DLEP Radio+Router Agent
 Maintainer: Henning Rogge <hrogge@gmail.com>
-Source: oonf-dlep-proxy-v0.15.1.tar.bz2
+Source: oonf-dlep-proxy-2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396.tar.xz
 Type: ipkg
 Description: Build DLEP Radio+Router Agent
 http://www.olsr.org/
@@ -1845,8 +1863,8 @@ Source-Makefile: feeds/routing/oonf-dlep-radio/Makefile
 
 Package: oonf-dlep-radio
 Submenu: OLSR.org network framework
-Version: 0.15.1-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libnl-tiny +libuci +oonf-init-scripts
+Version: 2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396
+Depends: +libc +librt +libnl-tiny +libuci +oonf-init-scripts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1855,7 +1873,7 @@ Category: Network
 Repository: base
 Title: Build DLEP Radio Agent
 Maintainer: Henning Rogge <hrogge@gmail.com>
-Source: oonf-dlep-radio-0.15.1.tar.xz
+Source: oonf-dlep-radio-2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396.tar.xz
 Type: ipkg
 Description: Build DLEP Radio Agent
 http://www.olsr.org/
@@ -1868,7 +1886,7 @@ Source-Makefile: feeds/routing/oonf-init-scripts/Makefile
 Package: oonf-init-scripts
 Submenu: OLSR.org network framework
 Version: 0.9.1-r3
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1890,8 +1908,8 @@ Source-Makefile: feeds/routing/oonf-olsrd2/Makefile
 Package: oonf-olsrd2
 Menu: 1
 Submenu: OLSR.org network framework
-Version: v0.15.1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libnl-tiny +libuci +oonf-init-scripts
+Version: 2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396
+Depends: +libc +librt +libnl-tiny +libuci +oonf-init-scripts
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1900,7 +1918,7 @@ Category: Network
 Repository: base
 Title: Build Olsrd V2 Routing Agent
 Maintainer: Henning Rogge <hrogge@gmail.com>
-Source: oonf-olsrd2-v0.15.1.tar.bz2
+Source: oonf-olsrd2-2022-08-25-fb15d54d6a7a087cb0c5ec37c49804f6ce432396.tar.xz
 Type: ipkg
 Description: Build Olsrd V2 Routing Agent
 http://www.olsr.org/
@@ -1915,8 +1933,8 @@ Source-Makefile: feeds/routing/opennds/Makefile
 
 Package: opennds
 Submenu: Captive Portals
-Version: 9.9.1-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
+Version: 9.10.0-1
+Depends: +libc +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
 Conflicts: nodogsplash
 Menu-Depends: 
 Provides: 
@@ -1925,7 +1943,7 @@ Category: Network
 Repository: base
 Title: Open public network gateway daemon
 Maintainer: Rob White <rob@blue-wave.net>
-Source: opennds-9.9.1.tar.gz
+Source: opennds-9.10.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1943,7 +1961,7 @@ Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
 Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 netifd
+Depends: +libc @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1969,7 +1987,7 @@ Source-Makefile: feeds/routing/prince/Makefile
 Package: prince
 Submenu: Routing and Redirection
 Version: 0.4-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson-c +libpthread
+Depends: +libc +libjson-c +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2000,7 +2018,7 @@ Package: quagga
 Menu: 1
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2022,7 +2040,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-libzebra
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga
+Depends: +libc quagga
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2042,7 +2060,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-libospf
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2063,7 +2081,7 @@ Package: quagga-watchquagga
 Submenu: Routing and Redirection
 Default: y if PACKAGE_quagga
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2084,7 +2102,7 @@ Package: quagga-zebra
 Submenu: Routing and Redirection
 Default: y if PACKAGE_quagga
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2104,7 +2122,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-bgpd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2124,7 +2142,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-isisd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2144,7 +2162,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ospfd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libospf
+Depends: +libc quagga +quagga-libospf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2164,7 +2182,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ospf6d
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libospf @IPV6
+Depends: +libc quagga +quagga-libospf @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2184,7 +2202,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ripd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2204,7 +2222,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ripngd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra @IPV6
+Depends: +libc quagga +quagga-libzebra @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2224,7 +2242,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-vtysh
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra +libreadline +libncurses
+Depends: +libc quagga +quagga-libzebra +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2247,7 +2265,7 @@ Source-Makefile: feeds/routing/vis/Makefile
 Package: vis
 Submenu: Routing and Redirection
 Version: 2013-04-07-7710cce42e8d63ea114056a4a140835d4a452933-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 

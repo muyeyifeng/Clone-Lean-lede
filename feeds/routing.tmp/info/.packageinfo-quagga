@@ -4,7 +4,7 @@ Package: quagga
 Menu: 1
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26,7 +26,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-libzebra
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga
+Depends: +libc quagga
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -46,7 +46,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-libospf
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Package: quagga-watchquagga
 Submenu: Routing and Redirection
 Default: y if PACKAGE_quagga
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -88,7 +88,7 @@ Package: quagga-zebra
 Submenu: Routing and Redirection
 Default: y if PACKAGE_quagga
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-bgpd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -128,7 +128,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-isisd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,7 +148,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ospfd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libospf
+Depends: +libc quagga +quagga-libospf
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -168,7 +168,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ospf6d
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libospf @IPV6
+Depends: +libc quagga +quagga-libospf @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -188,7 +188,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ripd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra
+Depends: +libc quagga +quagga-libzebra
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -208,7 +208,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-ripngd
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra @IPV6
+Depends: +libc quagga +quagga-libzebra @IPV6
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -228,7 +228,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 Package: quagga-vtysh
 Submenu: Routing and Redirection
 Version: 1.2.4-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread quagga +quagga-libzebra +libreadline +libncurses
+Depends: +libc quagga +quagga-libzebra +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 

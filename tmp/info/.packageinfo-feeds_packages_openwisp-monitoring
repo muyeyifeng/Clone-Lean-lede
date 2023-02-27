@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/openwisp-monitoring/Makefile
 Package: openwisp-monitoring
 Submenu: openwisp
 Version: 0.1.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +netjson-monitoring +openwisp-config
+Depends: +libc +netjson-monitoring +openwisp-config
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Federico Capoano <support@openwisp.io>
 Package: netjson-monitoring
 Submenu: openwisp
 Version: 0.1.1-2
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus-lua +lua-cjson +rpcd +rpcd-mod-iwinfo
+Depends: +libc +libubus-lua +lua-cjson +rpcd +rpcd-mod-iwinfo
 Conflicts: 
 Menu-Depends: 
 Provides: 

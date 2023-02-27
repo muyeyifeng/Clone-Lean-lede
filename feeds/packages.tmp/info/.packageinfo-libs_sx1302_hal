@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/libs/sx1302_hal/Makefile
 Package: sx1302_hal-tests
 Submenu: IoT
 Version: 2.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-usb-acm
+Depends: +libc +kmod-usb-acm
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +23,7 @@ Marcus Schref <mschref@tdt.de>
 Package: sx1302_hal-utils
 Submenu: IoT
 Version: 2.1.0-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-usb-acm
+Depends: +libc +kmod-usb-acm
 Conflicts: 
 Menu-Depends: 
 Provides: 

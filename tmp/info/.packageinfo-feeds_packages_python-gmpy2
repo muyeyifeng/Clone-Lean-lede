@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/python-gmpy2/Makefile
 Package: python3-gmpy2
 Submenu: Python
 Version: 2.0.8-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgmp +python3-light
+Depends: +libc +libgmp +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -30,7 +30,7 @@ Jeffery To <jeffery.to@gmail.com>
 Package: python3-gmpy2-src
 Submenu: Python
 Version: 2.0.8-5
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
