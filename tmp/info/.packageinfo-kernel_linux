@@ -6767,6 +6767,25 @@ Description:   Kernel modules for Intel(R) Ethernet Controller I225 Series
 
 @@
 
+Package: kmod-ice
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-ptp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Controller E810 Series support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ICE
+Description:   Kernel modules for Intel(R) Ethernet Controller E810 Series
+
+@@
+
 Package: kmod-sfc
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
