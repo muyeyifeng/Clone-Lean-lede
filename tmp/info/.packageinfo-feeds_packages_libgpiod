@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libgpiod/Makefile
 
 Package: libgpiod
-Version: 1.6.3-2
+Version: 1.6.4-1
 Depends: +libc @GPIO_SUPPORT
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Library for interacting with Linux's GPIO character device
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libgpiod-1.6.3.tar.xz
+Source: libgpiod-1.6.4.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +23,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: gpiod-tools
-Version: 1.6.3-2
+Version: 1.6.4-1
 Depends: +libc +libgpiod
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Utilities
 Repository: packages
 Title: Tools for interacting with GPIO pins
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libgpiod-1.6.3.tar.xz
+Source: libgpiod-1.6.4.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -44,7 +44,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: python3-gpiod
 Submenu: Python
-Version: 1.6.3-2
+Version: 1.6.4-1
 Depends: +libc +python3-light +libgpiod
 Conflicts: 
 Menu-Depends: 
@@ -54,7 +54,7 @@ Category: Languages
 Repository: packages
 Title: Python bindings for libgpiod
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libgpiod-1.6.3.tar.xz
+Source: libgpiod-1.6.4.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

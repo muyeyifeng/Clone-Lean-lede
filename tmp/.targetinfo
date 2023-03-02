@@ -22938,22 +22938,6 @@ Build firmware images for D-Link DIR-882 R1
 
 @@
 
-Target-Profile: DEVICE_d-team_newifi-d2
-Target-Profile-Name: Newifi D2
-Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: d-team,newifi-d2
-
-
-Target-Profile-Description:
-Build firmware images for Newifi D2
-
-
-
-
-
-@@
-
 Target-Profile: DEVICE_d-team_pbr-m1
 Target-Profile-Name: PandoraBox PBR-M1
 Target-Profile-Packages: kmod-ata-ahci kmod-mt7603 kmod-mt76x2 kmod-sdhci-mt7620 kmod-usb3 kmod-usb-ledtrig-usbport
@@ -23566,22 +23550,6 @@ Build firmware images for JDCloud RE-SP-01B
 
 @@
 
-Target-Profile: DEVICE_lenovo_newifi-d1
-Target-Profile-Name: Newifi D1
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: lenovo,newifi-d1 newifi-d1
-
-
-Target-Profile-Description:
-Build firmware images for Newifi D1
-
-
-
-
-
-@@
-
 Target-Profile: DEVICE_linksys_e5600
 Target-Profile-Name: Linksys E5600
 Target-Profile-Packages: kmod-mt7603 kmod-mt7663-firmware-ap kmod-mt7663-firmware-sta uboot-envtools
@@ -24033,9 +24001,41 @@ Build firmware images for NETIS WF2881
 
 @@
 
+Target-Profile: DEVICE_lenovo_newifi-d1
+Target-Profile-Name: Newifi D1
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: lenovo,newifi-d1 newifi-d1
+
+
+Target-Profile-Description:
+Build firmware images for Newifi D1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-team_newifi-d2
+Target-Profile-Name: Newifi D2
+Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-team,newifi-d2
+
+
+Target-Profile-Description:
+Build firmware images for Newifi D2
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_oraybox_x3a
 Target-Profile-Name: OrayBox X3A
-Target-Profile-Packages: kmod-mt7615-firmware
+Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc wireless-tools
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: oraybox,x3a
 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/php8/Makefile
 
 Package: php8
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc +libpcre2 +zlib +PHP8_LIBXML:libxml2 +PHP8_SYSTEMTZDATA:zoneinfo-core
 Conflicts: php7
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -43,7 +43,7 @@ Config:
 
 Package: php8-cgi
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (CGI & FastCGI)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -66,7 +66,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-cli
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -76,7 +76,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (CLI)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -89,7 +89,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-fastcgi
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +php8-cgi
 Conflicts: 
 Menu-Depends: 
@@ -99,7 +99,7 @@ Category: Languages
 Repository: base
 Title: FastCGI startup script
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -111,7 +111,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-fpm
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -121,7 +121,7 @@ Category: Languages
 Repository: base
 Title: PHP8 Hypertext preprocessor (FPM)
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -134,7 +134,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: apache-mod-php8
 Submenu: Web Servers/Proxies
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 PACKAGE_apache-mod-php8:apache +PACKAGE_php8-mod-intl:libstdcpp +libpcre2 +zlib
 Conflicts: 
 Menu-Depends: 
@@ -144,7 +144,7 @@ Category: Network
 Repository: base
 Title: PHP8 module for Apache Web Server
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -157,7 +157,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-bcmath
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -167,7 +167,7 @@ Category: Languages
 Repository: base
 Title: Bcmath shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -178,7 +178,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-calendar
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -188,7 +188,7 @@ Category: Languages
 Repository: base
 Title: Calendar shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -199,7 +199,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-ctype
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -209,7 +209,7 @@ Category: Languages
 Repository: base
 Title: Ctype shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -220,7 +220,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-curl
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -230,7 +230,7 @@ Category: Languages
 Repository: base
 Title: cURL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -241,7 +241,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-dom
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +@PHP8_LIBXML +PACKAGE_php8-mod-dom:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -251,7 +251,7 @@ Category: Languages
 Repository: base
 Title: DOM shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -262,7 +262,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-exif
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -272,7 +272,7 @@ Category: Languages
 Repository: base
 Title: EXIF shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -283,7 +283,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-fileinfo
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -293,7 +293,7 @@ Category: Languages
 Repository: base
 Title: Fileinfo shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -304,7 +304,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-filter
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -314,7 +314,7 @@ Category: Languages
 Repository: base
 Title: Filter shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -325,7 +325,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-ftp
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-ftp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -335,7 +335,7 @@ Category: Languages
 Repository: base
 Title: FTP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -346,7 +346,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gd
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-gd:libgd-full
 Conflicts: 
 Menu-Depends: 
@@ -356,7 +356,7 @@ Category: Languages
 Repository: base
 Title: GD graphics shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -367,7 +367,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gettext
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-gettext:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -377,7 +377,7 @@ Category: Languages
 Repository: base
 Title: Gettext shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -388,7 +388,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-gmp
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -398,7 +398,7 @@ Category: Languages
 Repository: base
 Title: GMP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -409,7 +409,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-iconv
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -419,7 +419,7 @@ Category: Languages
 Repository: base
 Title: iConv shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -430,7 +430,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-imap
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-imap:libopenssl +PACKAGE_libpam:libpam +PACKAGE_php8-mod-imap:uw-imap
 Conflicts: 
 Menu-Depends: 
@@ -440,7 +440,7 @@ Category: Languages
 Repository: base
 Title: IMAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -451,7 +451,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-intl
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-intl:icu +PHP8_FULLICUDATA:icu-full-data
 Conflicts: 
 Menu-Depends: 
@@ -461,7 +461,7 @@ Category: Languages
 Repository: base
 Title: Internationalization Functions shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -483,7 +483,7 @@ Config:
 
 Package: php8-mod-ldap
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-ldap:libopenldap +PACKAGE_php8-mod-ldap:libsasl2
 Conflicts: 
 Menu-Depends: 
@@ -493,7 +493,7 @@ Category: Languages
 Repository: base
 Title: LDAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -504,7 +504,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mbstring
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-mbstring:oniguruma
 Conflicts: 
 Menu-Depends: 
@@ -514,7 +514,7 @@ Category: Languages
 Repository: base
 Title: MBString shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -525,7 +525,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mysqli
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-mysqli:php8-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
@@ -535,7 +535,7 @@ Category: Languages
 Repository: base
 Title: MySQL Improved Extension shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -546,7 +546,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-mysqlnd
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-openssl:php8-mod-openssl
 Conflicts: 
 Menu-Depends: 
@@ -556,7 +556,7 @@ Category: Languages
 Repository: base
 Title: MySQL Native Driver shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -567,7 +567,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-opcache
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -577,7 +577,7 @@ Category: Languages
 Repository: base
 Title: OPcache shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -588,7 +588,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-openssl
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -598,7 +598,7 @@ Category: Languages
 Repository: base
 Title: OpenSSL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -609,7 +609,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pcntl
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -619,7 +619,7 @@ Category: Languages
 Repository: base
 Title: PCNTL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -630,7 +630,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -640,7 +640,7 @@ Category: Languages
 Repository: base
 Title: PHP Data Objects shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -651,7 +651,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-mysql
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-mysql:php8-mod-mysqlnd
 Conflicts: 
 Menu-Depends: 
@@ -661,7 +661,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for MySQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -672,7 +672,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-pgsql
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -682,7 +682,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for PostgreSQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -693,7 +693,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pdo-sqlite
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +php8-mod-pdo +PACKAGE_php8-mod-pdo-sqlite:libsqlite3 +PACKAGE_php8-mod-pdo-sqlite:librt
 Conflicts: 
 Menu-Depends: 
@@ -703,7 +703,7 @@ Category: Languages
 Repository: base
 Title: PDO driver for SQLite 3.x shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -714,7 +714,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-pgsql
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -724,7 +724,7 @@ Category: Languages
 Repository: base
 Title: PostgreSQL shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -735,7 +735,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-phar
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -745,7 +745,7 @@ Category: Languages
 Repository: base
 Title: Phar Archives shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -756,7 +756,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-session
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -766,7 +766,7 @@ Category: Languages
 Repository: base
 Title: Session shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -777,7 +777,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-shmop
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -787,7 +787,7 @@ Category: Languages
 Repository: base
 Title: Shared Memory shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -798,7 +798,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-simplexml
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +@PHP8_LIBXML +PACKAGE_php8-mod-simplexml:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -808,7 +808,7 @@ Category: Languages
 Repository: base
 Title: SimpleXML shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -819,7 +819,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-snmp
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-snmp:libnetsnmp +PACKAGE_php8-mod-snmp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -829,7 +829,7 @@ Category: Languages
 Repository: base
 Title: SNMP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -840,7 +840,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-soap
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +@PHP8_LIBXML +PACKAGE_php8-mod-soap:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -850,7 +850,7 @@ Category: Languages
 Repository: base
 Title: SOAP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -861,7 +861,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sockets
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -871,7 +871,7 @@ Category: Languages
 Repository: base
 Title: Sockets shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -882,7 +882,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sodium
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-sodium:libsodium
 Conflicts: 
 Menu-Depends: 
@@ -892,7 +892,7 @@ Category: Languages
 Repository: base
 Title: Sodium shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -903,7 +903,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sqlite3
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-sqlite3:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -913,7 +913,7 @@ Category: Languages
 Repository: base
 Title: SQLite3 shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -924,7 +924,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvmsg
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -934,7 +934,7 @@ Category: Languages
 Repository: base
 Title: System V messages shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -945,7 +945,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvsem
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -955,7 +955,7 @@ Category: Languages
 Repository: base
 Title: System V shared memory shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -966,7 +966,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-sysvshm
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -976,7 +976,7 @@ Category: Languages
 Repository: base
 Title: System V semaphore shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -987,7 +987,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-tokenizer
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8
 Conflicts: 
 Menu-Depends: 
@@ -997,7 +997,7 @@ Category: Languages
 Repository: base
 Title: Tokenizer shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1008,7 +1008,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xml
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PHP8_LIBXML:libxml2 +!PHP8_LIBXML:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -1018,7 +1018,7 @@ Category: Languages
 Repository: base
 Title: XML shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1029,7 +1029,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xmlreader
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +@PHP8_LIBXML +PACKAGE_php8-mod-dom:php8-mod-dom +PACKAGE_php8-mod-xmlreader:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -1039,7 +1039,7 @@ Category: Languages
 Repository: base
 Title: XMLReader shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1050,7 +1050,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-xmlwriter
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +@PHP8_LIBXML +PACKAGE_php8-mod-xmlwriter:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -1060,7 +1060,7 @@ Category: Languages
 Repository: base
 Title: XMLWriter shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1071,7 +1071,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php8-mod-zip
 Submenu: PHP8
-Version: 8.2.1-1
+Version: 8.2.2-1
 Depends: +libc php8 +PACKAGE_php8-mod-zip:libzip
 Conflicts: 
 Menu-Depends: 
@@ -1081,7 +1081,7 @@ Category: Languages
 Repository: base
 Title: ZIP shared module
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: php-8.2.1.tar.xz
+Source: php-8.2.2.tar.xz
 License: PHP-3.01
 LicenseFiles: LICENSE
 Type: ipkg

@@ -3,7 +3,7 @@ Build-Depends: spice-protocol
 
 Package: virtio-console-helper
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_armvirt||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Section: utils
 Category: Utilities
 Title: Helper script for vportNpn virtio-console devices
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -22,7 +22,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-ga
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc +glib2 +virtio-console-helper +libstdcpp +libudev @(TARGET_x86_64||TARGET_armvirt||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Section: utils
 Category: Utilities
 Title: QEMU Guest Agent
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -42,7 +42,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-bridge-helper
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -51,7 +51,7 @@ Section: utils
 Category: Utilities
 Title: QEMU bridge helper
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -62,7 +62,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-img
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -71,7 +71,7 @@ Section: utils
 Category: Utilities
 Title: QEMU Image utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -82,7 +82,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-nbd
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc +glib2 @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +kmod-nbd
 Conflicts: 
 Menu-Depends: 
@@ -91,7 +91,7 @@ Section: utils
 Category: Utilities
 Title: QEMU Network Block Device Utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -102,7 +102,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-keymaps
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -111,7 +111,7 @@ Section: utils
 Category: Utilities
 Title: QEMU reverse keymaps for use with -k argument
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -122,7 +122,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-seabios
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -131,7 +131,7 @@ Section: utils
 Category: Utilities
 Title: QEMU build of SeaBIOS for x86 guest
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -142,7 +142,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-seavgabios
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -151,7 +151,7 @@ Section: utils
 Category: Utilities
 Title: QEMU build of SeaVGABIOS
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -162,7 +162,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-pxe
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -171,7 +171,7 @@ Section: utils
 Category: Utilities
 Title: QEMU build of iPXE PXE roms
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -182,7 +182,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-firmware-efi
 Submenu: Virtualization
-Version: 6.2.0-0
+Version: 7.2.0-1
 Depends: +libc @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -191,7 +191,7 @@ Section: utils
 Category: Utilities
 Title: QEMU build of iPXE EFI roms
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -202,8 +202,8 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-x86_64-softmmu
 Submenu: Virtualization
-Version: 6.2.0-0
-Depends: +libc +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Version: 7.2.0-1
+Depends: +libc +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +qemu-firmware-pxe +qemu-firmware-seabios +qemu-firmware-seavgabios +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC:libpng +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -211,7 +211,7 @@ Section: utils
 Category: Utilities
 Title: QEMU target x86_64-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -227,11 +227,6 @@ config QEMU_UI_VNC
 
 config QEMU_UI_VNC_JPEG
 	bool "QEMU VNC jpeg tight encoding support"
-	default n
-	depends on QEMU_UI_VNC
-
-config QEMU_UI_VNC_PNG
-	bool "QEMU VNC png tight encoding support"
 	default n
 	depends on QEMU_UI_VNC
 
@@ -259,8 +254,8 @@ endif
 
 Package: qemu-arm-softmmu
 Submenu: Virtualization
-Version: 6.2.0-0
-Depends: +libc +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_PNG:libpng +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
+Version: 7.2.0-1
+Depends: +libc +glib2 +libpthread +zlib +libbpf @(TARGET_x86_64||TARGET_sunxi) +libstdcpp +BUILD_NLS:libiconv-full +QEMU_UI_VNC:qemu-keymaps +QEMU_UI_VNC:libpng +QEMU_UI_VNC_JPEG:libjpeg +QEMU_UI_VNC_SASL:libsasl2 +QEMU_UI_SPICE:libspice-server +QEMU_DEV_USB:libusb-1.0 +QEMU_SECCOMP:libseccomp +libncurses +libfdt +libslirp +libudev +pixman +qemu-firmware-efi +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -268,7 +263,7 @@ Section: utils
 Category: Utilities
 Title: QEMU target arm-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-6.2.0.tar.xz
+Source: qemu-7.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg

@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/openocd/Makefile
 
 Package: openocd
-Version: v0.11.0-0
-Depends: +libc +libusb-1.0 +libusb-compat +libftdi1 +hidapi +libgpiod
+Version: v0.12.0-2
+Depends: +libc +libusb-1.0 +libftdi1 +hidapi +libgpiod +libjaylink
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: packages
 Title: OpenOCD Utility
 Maintainer: Paul Fertser <fercerpav@gmail.com>
-Source: openocd-v0.11.0.tar.xz
+Source: openocd-v0.12.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Type: ipkg
