@@ -575,7 +575,6 @@ $(eval $(call PackageDir,feeds_packages_alsa-ucm-conf,feeds/packages/alsa-ucm-co
 $(eval $(call PackageDir,feeds_packages_alsa-utils,feeds/packages/alsa-utils,))
 $(eval $(call PackageDir,feeds_packages_amule,feeds/packages/amule,))
 $(eval $(call PackageDir,feeds_packages_announce,feeds/packages/announce,))
-$(eval $(call PackageDir,feeds_packages_antfs-mount,feeds/packages/antfs-mount,))
 $(eval $(call PackageDir,feeds_packages_antileech,feeds/packages/antileech,))
 $(eval $(call PackageDir,feeds_packages_ap51-flash,feeds/packages/ap51-flash,))
 $(eval $(call PackageDir,feeds_packages_apache,feeds/packages/apache,))
