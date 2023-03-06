@@ -21255,6 +21255,22 @@ Build firmware images for HiWiFi HC5861
 
 @@
 
+Target-Profile: DEVICE_hiwifi_r33
+Target-Profile-Name: HiWiFi R33
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-switch-rtl8366-smi kmod-switch-rtl8367b kmod-mt76x2
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hiwifi,r33
+
+
+Target-Profile-Description:
+Build firmware images for HiWiFi R33
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_hnet_c108
 Target-Profile-Name: HNET C108
 Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
@@ -22439,22 +22455,6 @@ Build firmware images for ZyXEL Keenetic Viva
 
 @@
 
-Target-Profile: DEVICE_hiwifi_r33
-Target-Profile-Name: HiWiFi R33
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-switch-rtl8366-smi kmod-switch-rtl8367b kmod-mt76x2
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: hiwifi,r33 r33
-
-
-Target-Profile-Description:
-Build firmware images for HiWiFi R33
-
-
-
-
-
-@@
-
 Target: ramips/mt7621
 Target-Board: ramips
 Target-Name: MT7621 based boards
@@ -22931,6 +22931,22 @@ Target-Profile-SupportedDevices: dlink,dir-882-r1
 
 Target-Profile-Description:
 Build firmware images for D-Link DIR-882 R1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-team_newifi-d2
+Target-Profile-Name: Newifi D2
+Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-team,newifi-d2
+
+
+Target-Profile-Description:
+Build firmware images for Newifi D2
 
 
 
@@ -23550,6 +23566,22 @@ Build firmware images for JDCloud RE-SP-01B
 
 @@
 
+Target-Profile: DEVICE_lenovo_newifi-d1
+Target-Profile-Name: Newifi D1
+Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: lenovo,newifi-d1 newifi-d1
+
+
+Target-Profile-Description:
+Build firmware images for Newifi D1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_linksys_e5600
 Target-Profile-Name: Linksys E5600
 Target-Profile-Packages: kmod-mt7603 kmod-mt7663-firmware-ap kmod-mt7663-firmware-sta uboot-envtools
@@ -24001,41 +24033,9 @@ Build firmware images for NETIS WF2881
 
 @@
 
-Target-Profile: DEVICE_lenovo_newifi-d1
-Target-Profile-Name: Newifi D1
-Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: lenovo,newifi-d1 newifi-d1
-
-
-Target-Profile-Description:
-Build firmware images for Newifi D1
-
-
-
-
-
-@@
-
-Target-Profile: DEVICE_d-team_newifi-d2
-Target-Profile-Name: Newifi D2
-Target-Profile-Packages: kmod-mt7603e kmod-mt76x2e kmod-usb3 kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: d-team,newifi-d2
-
-
-Target-Profile-Description:
-Build firmware images for Newifi D2
-
-
-
-
-
-@@
-
 Target-Profile: DEVICE_oraybox_x3a
 Target-Profile-Name: OrayBox X3A
-Target-Profile-Packages: -luci-newapi -wpad-openssl kmod-mt7615d_dbdc wireless-tools
+Target-Profile-Packages: kmod-mt7615-firmware
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: oraybox,x3a
 
