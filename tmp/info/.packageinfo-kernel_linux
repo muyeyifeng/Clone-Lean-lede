@@ -2867,6 +2867,26 @@ Description:  Kernel module for Hard disk drives with temperature sensor
 
 @@
 
+Package: kmod-hwmon-gsc
+Submenu: Hardware Monitoring Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-hwmon-core @!LINUX_5_4 +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Gateworks System Controller support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MFD_GATEWORKS_GSC CONFIG_SENSORS_GSC
+Description:  Kernel module for Gateworks System Controller with temperature sensor,
+ADCs, and FAN controller
+
+@@
+
 Package: kmod-hwmon-gpiofan
 Submenu: Hardware Monitoring Support
 Version: <LINUX_VERSION>-
@@ -3111,6 +3131,25 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SENSORS_LTC4151
 Description:  Kernel module for Linear Technology LTC4151 current and voltage monitor chip
+
+@@
+
+Package: kmod-hwmon-max6642
+Submenu: Hardware Monitoring Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-hwmon-core +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MAX6642 monitoring support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SENSORS_MAX6642
+Description:  Kernel module for Maxim MAX6642 temperature monitor
 
 @@
 
