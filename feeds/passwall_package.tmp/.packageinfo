@@ -28,7 +28,7 @@ Source-Makefile: feeds/passwall_package/chinadns-ng/Makefile
 
 Package: chinadns-ng
 Submenu: IP Addresses and Names
-Version: 2023.03.02-1
+Version: 2023.03.06-1
 Depends: +libc +ipset
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: ChinaDNS next generation, refactoring with epoll and ipset.
 Maintainer: pexcn <i@pexcn.me>
-Source: chinadns-ng-2023.03.02.tar.gz
+Source: chinadns-ng-2023.03.06.tar.gz
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -568,7 +568,7 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.2-beta6-1
+Version: 1.2-beta7-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -578,7 +578,7 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.2-beta6.tar.gz
+Source: sing-box-1.2-beta7.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
