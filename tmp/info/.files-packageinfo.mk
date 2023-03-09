@@ -398,6 +398,7 @@ $(eval $(call PackageDir,feeds_luci_luci-app-cpufreq,feeds/luci/luci-app-cpufreq
 $(eval $(call PackageDir,feeds_luci_luci-app-cshark,feeds/luci/luci-app-cshark,))
 $(eval $(call PackageDir,feeds_luci_luci-app-dawn,feeds/luci/luci-app-dawn,))
 $(eval $(call PackageDir,feeds_luci_luci-app-ddns,feeds/luci/luci-app-ddns,))
+$(eval $(call PackageDir,feeds_luci_luci-app-design-config,feeds/luci/luci-app-design-config,))
 $(eval $(call PackageDir,feeds_luci_luci-app-diag-core,feeds/luci/luci-app-diag-core,))
 $(eval $(call PackageDir,feeds_luci_luci-app-diskman,feeds/luci/luci-app-diskman,))
 $(eval $(call PackageDir,feeds_luci_luci-app-dnscrypt-proxy,feeds/luci/luci-app-dnscrypt-proxy,))

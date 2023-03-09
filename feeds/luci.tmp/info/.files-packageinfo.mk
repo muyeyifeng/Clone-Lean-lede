@@ -25,6 +25,7 @@ $(eval $(call PackageDir,applications_luci-app-cpufreq,applications/luci-app-cpu
 $(eval $(call PackageDir,applications_luci-app-cshark,applications/luci-app-cshark,))
 $(eval $(call PackageDir,applications_luci-app-dawn,applications/luci-app-dawn,))
 $(eval $(call PackageDir,applications_luci-app-ddns,applications/luci-app-ddns,))
+$(eval $(call PackageDir,applications_luci-app-design-config,applications/luci-app-design-config,))
 $(eval $(call PackageDir,applications_luci-app-diag-core,applications/luci-app-diag-core,))
 $(eval $(call PackageDir,applications_luci-app-diskman,applications/luci-app-diskman,))
 $(eval $(call PackageDir,applications_luci-app-dnscrypt-proxy,applications/luci-app-dnscrypt-proxy,))

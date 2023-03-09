@@ -5680,6 +5680,44 @@ Description:    Supports the Realtek 821x PHY.
 
 @@
 
+Package: kmod-phy-smsc
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SMSC PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SMSC_PHY
+Description:    Currently supports the LAN83C185, LAN8187 and LAN8700 PHYs
+
+@@
+
+Package: kmod-phy-aquantia
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy +kmod-hwmon-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Aquantia Ethernet PHYs
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AQUANTIA_PHY
+Description:   Kernel modules for Aquantia Ethernet PHYs
+
+@@
+
 Package: kmod-swconfig
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -13759,7 +13797,7 @@ Description:  Kernel module for SMSC LAN75XX based devices
 Package: kmod-usb-net-smsc95xx
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +!LINUX_5_4:kmod-libphy +LINUX_6_1:kmod-net-selftests +kmod-usb-net  +kmod-lib-crc16
+Depends: +kmod-phy-smsc +LINUX_6_1:kmod-net-selftests +kmod-usb-net  +kmod-lib-crc16
 Conflicts: 
 Menu-Depends: 
 Provides: 
