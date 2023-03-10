@@ -6902,6 +6902,44 @@ Description:   Solarflare SFC4000 support
 
 @@
 
+Package: kmod-atlantic
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-ptp +kmod-hwmon-core +kmod-macsec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Aquantia AQtion 10Gbps Ethernet NIC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AQTION
+Description:   Kernel modules for Aquantia AQtion 10Gbps Ethernet NIC
+
+@@
+
+Package: kmod-lan743x
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-ptp +kmod-mdio-devres
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Microchip LAN743x PCI Express Gigabit Ethernet NIC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_LAN743X
+Description:   Kernel module for Microchip LAN743x PCI Express Gigabit Ethernet NIC
+
+@@
+
 Package: kmod-nf-reject
 Submenu: Netfilter Extensions
 Version: <LINUX_VERSION>-
