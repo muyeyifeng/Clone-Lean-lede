@@ -4390,7 +4390,7 @@ Build-Types: host
 Package: node
 Submenu: Node.js
 Version: v12.22.1-4
-Depends: +libc @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +libopenssl +zlib +libnghttp2 +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
+Depends: +libc @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +NODEJS_18:libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24274,6 +24274,64 @@ Description:  This metapackage currently install all ruby-* packages,
 
 http://www.ruby-lang.org/
 Luiz Angelo Daros de Luca <luizluca@gmail.com>
+@@
+
+
+Source-Makefile: feeds/packages/lang/rust/Makefile
+Build-Depends/host: python3/host
+Build-Types: host
+
+Package: rust
+Version: 1.67.1-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64) +pkg-config +libunwind +libopenssl +liblzma
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Rust Programming Language Compiler
+Maintainer: Luca Barbato <lu_zero@luminem.org>
+Source: rustc-1.67.1-src.tar.gz
+License: Apache-2.0 MIT
+LicenseFiles: LICENSE-APACHE LICENSE-MIT
+Type: ipkg
+Description:   Rust is a multi-paradigm, general-purpose programming language designed for performance
+  and safety, especially safe concurrency. Rust is syntactically similar to C++, but can
+  guarantee memory safety by using a borrow checker to validate references.
+https://www.rust-lang.org/
+Luca Barbato <lu_zero@luminem.org>
+@@
+Config:
+	source "feeds/packages/lang/rust/Config.in"
+@@
+
+
+Source-Makefile: feeds/packages/lang/rust/maturin/Makefile
+Build-Depends: rust/host
+Build-Depends/host: rust/host
+Build-Types: host
+
+Package: maturin
+Submenu: Rust
+Version: 0.14.10-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Build and publish crates as python packages
+Maintainer: Luca Barbato <lu_zero@luminem.org>
+Source: maturin-0.14.10.tar.gz
+License: Apache-2.0 MIT
+LicenseFiles: license-apache license-mit
+Type: ipkg
+Description:   Build and publish crates with pyo3, rust-cpython, cffi and uniffi
+  bindings as well as rust binaries as python packages.
+https://maturin.rs
+Luca Barbato <lu_zero@luminem.org>
 @@
 
 
@@ -56859,7 +56917,7 @@ Source-Makefile: feeds/packages/net/adguardhome/Makefile
 Build-Depends: golang/host node/host node-yarn/host
 
 Package: adguardhome
-Version: 0.107.24-1
+Version: 0.107.25-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -56869,7 +56927,7 @@ Category: Network
 Repository: base
 Title: Network-wide ads and trackers blocking DNS server
 Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Source: adguardhome-0.107.24.tar.xz
+Source: adguardhome-0.107.25.tar.xz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -64534,7 +64592,7 @@ Build-Depends: glib2
 
 Package: ksmbd-server
 Submenu: Filesystem
-Version: 3.4.5-0
+Version: 3.4.7-1
 Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +kmod-fs-ksmbd +libnl-core +libnl-genl
 Conflicts: 
 Menu-Depends: 
@@ -64544,7 +64602,7 @@ Category: Network
 Repository: base
 Title: Kernel SMB server
 Maintainer: 
-Source: ksmbd-tools-3.4.5.tar.gz
+Source: ksmbd-tools-3.4.7.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -64558,41 +64616,9 @@ Config:
   select PACKAGE_wsdd2
 @@
 
-Package: ksmbd-utils
-Submenu: Filesystem
-Version: 3.4.5-0
-Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Kernel SMB user management-util
-Maintainer: 
-Source: ksmbd-tools-3.4.5.tar.gz
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   installs: ksmbd.adduser (ksmbd.addshare)
-
-  Tool needed to create the ksmbdpwd.db, to manage per user share passwords.
-  NOTE: Not needed for 'guest only' shares.
-https://github.com/cifsd-team/ksmbd-tools
-
-@@
-Config:
-	config KSMBD_UTILS_SHAREADD
-		bool "Add ksmbd.addshare util"
-		depends on PACKAGE_ksmbd-utils
-		help
-			Add the ksmbd.addshare tool, to directly manipulate the /etc/ksmbd/smb.conf.
-		default n
-@@
-
 Package: ksmbd-avahi-service
 Submenu: Filesystem
-Version: 3.4.5-0
+Version: 3.4.7-1
 Depends: +libc +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -64602,7 +64628,7 @@ Category: Network
 Repository: base
 Title: Kernel SMB (Avahi service)
 Maintainer: 
-Source: ksmbd-tools-3.4.5.tar.gz
+Source: ksmbd-tools-3.4.7.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -64610,6 +64636,27 @@ Description:   installs: smb.service
 
   This package contains the service definition for announcing the
   Ksmbd (smb/445) Daemon service via mDNS/DNS-SD.
+https://github.com/cifsd-team/ksmbd-tools
+
+@@
+
+Package: ksmbd-hotplug
+Submenu: Filesystem
+Version: 3.4.7-1
+Depends: +libc +blockd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Kernel SMB hotplug script for auto sharing
+Maintainer: 
+Source: ksmbd-tools-3.4.7.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description: Kernel SMB hotplug script for auto sharing
 https://github.com/cifsd-team/ksmbd-tools
 
 @@
@@ -98814,6 +98861,31 @@ three major operating systems (Linux, macOS, Windows) and a few smaller ones
 (FreeBSD, OpenBSD).
 http://github.com/restic/restic
 Tom Stöveken <tom@naaa.de>
+@@
+
+
+Source-Makefile: feeds/packages/utils/ripgrep/Makefile
+Build-Depends: rust/host
+
+Package: ripgrep
+Version: 13.0.0-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64) +libpcre2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: ripgrep (rg) regex grep
+Maintainer: Luca Barbato <lu_zero@luminem.org>
+Source: ripgrep-13.0.0.tar.gz
+License: MIT Unlicense
+LicenseFiles: LICENSE-MIT UNLICENSE
+Type: ipkg
+Description:   ripgrep (rg) recursively searches directories for a regex pattern
+  while respecting your gitignore
+https://github.com/BurntSushi/ripgrep
+Luca Barbato <lu_zero@luminem.org>
 @@
 
 

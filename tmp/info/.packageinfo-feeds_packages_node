@@ -6,7 +6,7 @@ Build-Types: host
 Package: node
 Submenu: Node.js
 Version: v12.22.1-4
-Depends: +libc @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +libopenssl +zlib +libnghttp2 +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
+Depends: +libc @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +NODEJS_18:libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
 Provides: 
