@@ -5564,6 +5564,25 @@ http://sourceforge.net/projects/et131x
 
 @@
 
+Package: kmod-phy-microchip
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Microchip Ethernet PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MICROCHIP_PHY
+Description:    Supports the LAN88XX PHYs.
+
+@@
+
 Package: kmod-phylib-broadcom
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -6557,10 +6576,30 @@ Description:  Kernel driver for Nvidia Ethernet support
 
 @@
 
+Package: kmod-fixed-phy
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MDIO Bus/PHY emulation with fixed speed/link PHYs
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_FIXED_PHY
+Description:  Kernel driver for "fixed" MDIO Bus to cover the boards
+ and devices that use PHYs that are not connected to the real MDIO bus.
+
+@@
+
 Package: kmod-of-mdio
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: +kmod-libphy @!TARGET_x86
+Depends: +kmod-libphy +kmod-fixed-phy @!TARGET_x86
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13772,6 +13811,26 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_USB_KAWETH
 Description:  Kernel module for USB-to-Ethernet Kaweth convertors
+
+@@
+
+Package: kmod-usb-net-lan78xx
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: +kmod-fixed-phy +kmod-phy-microchip +PACKAGE_kmod-of-mdio:kmod-of-mdio +kmod-usb-net 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: USB-To-Ethernet Microchip LAN78XX convertors
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_LAN78XX
+Description:  Kernel module for Microchip LAN78XX based USB 2 & USB 3
+ 10/100/1000 Ethernet adapters.
 
 @@
 
