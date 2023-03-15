@@ -5603,6 +5603,26 @@ Description: Broadcom Ethernet PHY library
 
 @@
 
+Package: kmod-phy-ax88796b
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Asix PHY driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AX88796B_PHY
+Description:    Currently supports the Asix Electronics PHY found in the X-Surf 100
+   AX88796B package.
+
+@@
+
 Package: kmod-phy-broadcom
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -6938,6 +6958,84 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SFC_FALCON CONFIG_SFC_FALCON_MTD=y
 Description:   Solarflare SFC4000 support
+
+@@
+
+Package: kmod-wwan
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(LINUX_5_15||LINUX_6_1)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: WWAN Driver Core
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_WWAN
+Description:  his driver provides a common framework for WWAN drivers.
+
+@@
+
+Package: kmod-mhi-net
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(LINUX_5_15||LINUX_6_1) @PCI_SUPPORT +kmod-mhi-bus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MHI Network Device
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MHI_NET
+Description:  Driver for MHI network interface
+
+@@
+
+Package: kmod-mhi-wwan-ctrl
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-mhi-bus +kmod-wwan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MHI WWAN Control
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MHI_WWAN_CTRL
+Description:  Driver for MHI WWAN Control
+ This exposes all modem control ports like AT, MBIM, QMI, DIAG, ..
+
+@@
+
+Package: kmod-mhi-wwan-mbim
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-mhi-bus +kmod-wwan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MHI MBIM
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MHI_WWAN_MBIM
+Description:  Driver for MHI MBIM
+ This implements MBIM over MHI
 
 @@
 
@@ -12969,9 +13067,29 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_USB_PCI=y CONFIG_USB_DWC2 CONFIG_USB_DWC2_PCI CONFIG_USB_DWC2_PLATFORM CONFIG_USB_DWC2_DEBUG=n CONFIG_USB_DWC2_VERBOSE=n CONFIG_USB_DWC2_TRACK_MISSED_SOFS=n CONFIG_USB_DWC2_DEBUG_PERIODIC=n
+Kernel-Config: CONFIG_USB_DWC2 CONFIG_USB_DWC2_DEBUG=n CONFIG_USB_DWC2_VERBOSE=n CONFIG_USB_DWC2_TRACK_MISSED_SOFS=n CONFIG_USB_DWC2_DEBUG_PERIODIC=n
 Description:  This driver provides USB Device Controller support for the
  Synopsys DesignWare USB OTG Core
+
+@@
+
+Package: kmod-usb-dwc2-pci
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT +kmod-usb-dwc2 +kmod-usb-phy-nop +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: DWC2 USB controller driver (PCI)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_PCI=y CONFIG_USB_DWC2_PCI
+Description:   The Designware USB2.0 PCI interface module for controllers
+  connected to a PCI bus.
 
 @@
 
@@ -13740,7 +13858,7 @@ Description:  Support for USB-to-Ethernet Aquantia AQtion 5/2.5GbE
 Package: kmod-usb-net-asix
 Submenu: USB Support
 Version: <LINUX_VERSION>-
-Depends: +(LINUX_5_4||LINUX_5_10):kmod-libphy +LINUX_6_1:kmod-phylink +(LINUX_5_15||LINUX_6_1):kmod-mdio-devres +(LINUX_5_15||LINUX_6_1):kmod-net-selftests +kmod-usb-net 
+Depends: +kmod-phy-ax88796b +LINUX_6_1:kmod-phylink +(LINUX_5_15||LINUX_6_1):kmod-mdio-devres +(LINUX_5_15||LINUX_6_1):kmod-net-selftests +kmod-usb-net 
 Conflicts: 
 Menu-Depends: 
 Provides: 
