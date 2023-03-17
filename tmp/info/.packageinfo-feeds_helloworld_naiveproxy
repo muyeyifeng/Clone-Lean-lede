@@ -1,8 +1,9 @@
 Source-Makefile: package/feeds/helloworld/naiveproxy/Makefile
+Build-Depends: gn/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 110.0.5481.100-1-1
+Version: 111.0.5563.64-1-1
 Depends: +libc @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +13,7 @@ Category: Network
 Repository: helloworld
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-110.0.5481.100-1.tar.gz
+Source: naiveproxy-111.0.5563.64-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

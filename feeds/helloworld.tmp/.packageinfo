@@ -70,6 +70,32 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 
+Source-Makefile: feeds/helloworld/gn/Makefile
+Build-Types: host
+
+Package: gn
+Version: 2023-01-29-84c8431f3e03cc6226c59dd49637c15ea31169a1-2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: A meta-build system that generates build files for Ninja
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gn-2023-01-29-84c8431f3e03cc6226c59dd49637c15ea31169a1.tar.xz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:   GN can generate Ninja build files for C, C++, Rust, Objective C,
+  and Swift source on most popular platforms.
+https://gn.googlesource.com/gn/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
 Source-Makefile: feeds/helloworld/hysteria/Makefile
 Build-Depends: golang/host
 
@@ -330,10 +356,11 @@ lean
 
 
 Source-Makefile: feeds/helloworld/naiveproxy/Makefile
+Build-Depends: gn/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 110.0.5481.100-1-1
+Version: 111.0.5563.64-1-1
 Depends: +libc @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -343,7 +370,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-110.0.5481.100-1.tar.gz
+Source: naiveproxy-111.0.5563.64-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
