@@ -128,17 +128,3 @@ jobs:
           fi
           echo "============ git push ============"
           git push
-
-      - name: Tar Artifact
-        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
-        run: |
-          mkdir tmptar
-          tar -czvf Clone-Lean-lede.tar Clone-Lean-lede
-          mv Clone-Lean-lede.tar tmptar/
-
-      - name: Upload artifact
-        if: ${{ env.action_state == 'run' ||  github.event_name == 'push' }}
-        uses: actions/upload-artifact@main
-        with:
-          name: Lede-Sources-With-Feeds-And-DL
-          path: ./tmptar
