@@ -1332,6 +1332,42 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: ath10k-board-qca9377-sdio
+Version: 20230310-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: ath10k qca9377 board sdio firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230310.tar.xz
+Type: ipkg
+Description: ath10k qca9377 board sdio firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ath10k-firmware-qca9377-sdio
+Version: 20230310-1
+Depends: +libc +ath10k-board-qca9377-sdio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: ath10k qca9377 sdio firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230310.tar.xz
+Type: ipkg
+Description: ath10k qca9377 sdio firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: ath10k-board-qca9887
 Version: 20230310-1
 Depends: +libc 
@@ -1872,7 +1908,7 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: rtw89-firmware
+Package: rtl8852ae-firmware
 Version: 20230310-1
 Depends: +libc 
 Conflicts: 
@@ -1881,11 +1917,47 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: RealTek RTW89 firmware
+Title: RealTek RTL8852AE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20230310.tar.xz
 Type: ipkg
-Description: RealTek RTW89 firmware
+Description: RealTek RTL8852AE firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rtl8852be-firmware
+Version: 20230310-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: RealTek RTL8852BE firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230310.tar.xz
+Type: ipkg
+Description: RealTek RTL8852BE firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rtl8852ce-firmware
+Version: 20230310-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: RealTek RTL8852CE firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230310.tar.xz
+Type: ipkg
+Description: RealTek RTL8852CE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
