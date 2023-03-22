@@ -174,7 +174,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
 Version: 186-8
-Depends: +libc @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +@PACKAGE_dnsmasq_full_ipset +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +lua-neturl +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core:sagernet-core +PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan
+Depends: +libc @(PACKAGE_libustream-mbedtls||PACKAGE_libustream-openssl||PACKAGE_libustream-wolfssl) +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +@PACKAGE_dnsmasq_full_ipset +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +lua-neturl +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -239,9 +239,6 @@ choice
 
 	config PACKAGE_luci-app-ssr-plus_INCLUDE_Xray
 	bool "Xray-core"
-
-	config PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core
-	bool "SagerNet-core (An enhanced edition of v2ray-core)"
 endchoice
 
 config PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG
@@ -401,56 +398,6 @@ Type: ipkg
 Description: This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
 https://github.com/semigodking/redsocks
 semigodking <semigodking@gmail.com>
-@@
-
-
-Source-Makefile: feeds/helloworld/sagernet-core/Makefile
-Build-Depends: golang/host
-
-Package: sagernet-core
-Version: 5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842-1
-Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
-Conflicts: v2ray-core xray-core
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: An enhanced v2ray edition for SagerNet
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: sagernet-core-5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: LICENSE
-Type: ipkg
-Description:     Project V is a set of network tools that help you to build your own computer network.
-  It secures your network connections and thus protects your privacy.
-
-  This is a v2ray-core fork for SagerNet.
-https://sagernet.org
-Tianling Shen <cnsztl@immortalwrt.org>
-@@
-
-Package: sagernet-extra
-Version: 5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842-1
-Depends: +libc sagernet-core
-Conflicts: v2ray-extra
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: An enhanced v2ray edition for SagerNet (extra resources)
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: sagernet-core-5.0.17-2022-07-30-26e36b1cb46f387cacd65c1a5900be592913f842.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: LICENSE
-Type: ipkg
-Description:     Project V is a set of network tools that help you to build your own computer network.
-  It secures your network connections and thus protects your privacy.
-
-  This includes extra resources for sagernet-core.
-https://sagernet.org
-Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 
