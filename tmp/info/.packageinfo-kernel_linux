@@ -16243,25 +16243,6 @@ Description:  Kernel module for 1-wire DS2413 Dual Channel Addressable Switch su
 
 @@
 
-Package: kmod-net-rtl8192su
-Submenu: Wireless Drivers
-Version: <LINUX_VERSION>-
-Depends: @USB_SUPPORT +@DRIVER_WEXT_SUPPORT +kmod-usb-core +rtl8192su-firmware
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RTL8192SU support (staging)
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_STAGING=y CONFIG_R8712U
-Description:  Kernel modules for RealTek RTL8712 and RTL81XXSU fullmac support.
-
-@@
-
 Package: kmod-ieee802154
 Submenu: WPAN 802.15.4 Support
 Version: <LINUX_VERSION>-
