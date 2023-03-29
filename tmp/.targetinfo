@@ -20606,8 +20606,8 @@ Target-Features: boot-part gpio rootfs-part squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20623,8 +20623,8 @@ Target-Features: boot-part dt gpio mips16 nand pci ramdisk rootfs-part squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22480,8 +22480,8 @@ Target-Features: boot-part dt gpio minor mips16 nand pci ramdisk rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24908,8 +24908,8 @@ Target-Features: boot-part dt gpio mips16 pci ramdisk rootfs-part squashfs testi
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -26209,8 +26209,8 @@ Target-Features: boot-part dt gpio mips16 pci rootfs-part small_flash squashfs t
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -26354,8 +26354,8 @@ Target-Features: boot-part dt gpio mips16 ramdisk rootfs-part small_flash squash
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -28101,8 +28101,8 @@ Target-Features: boot-part dt gpio mips16 pci rootfs-part small_flash squashfs t
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.4.238
-Linux-Testing-Version: 5.10
+Linux-Version: 5.10.176
+Linux-Testing-Version: 5.4
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -28781,6 +28781,22 @@ Target-Profile-SupportedDevices: friendlyarm,nanopi-r4se
 
 Target-Profile-Description:
 Build firmware images for FriendlyARM NanoPi R4SE
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-r5c
+Target-Profile-Name: FriendlyARM NanoPi R5C
+Target-Profile-Packages: kmod-r8125 kmod-nvme kmod-scsi-core
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-r5c
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi R5C
 
 
 
