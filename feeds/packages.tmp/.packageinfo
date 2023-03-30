@@ -562,7 +562,7 @@ Config:
 Source-Makefile: feeds/packages/admin/sudo/Makefile
 
 Package: sudo
-Version: 1.9.12p2-1
+Version: 1.9.13p3-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -572,7 +572,7 @@ Category: Administration
 Repository: base
 Title: Delegate authority to run commands
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: sudo-1.9.12p2.tar.gz
+Source: sudo-1.9.13p3.tar.gz
 License: ISC
 LicenseFiles: doc/LICENSE
 Type: ipkg
@@ -2834,7 +2834,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.19.7-1
+Version: 1.20.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -2844,7 +2844,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.19.7.src.tar.gz
+Source: go1.20.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2870,7 +2870,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.19.7-1
+Version: 1.20.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2880,7 +2880,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.19.7.src.tar.gz
+Source: go1.20.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2902,7 +2902,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.19.7-1
+Version: 1.20.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -2912,7 +2912,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.19.7.src.tar.gz
+Source: go1.20.2.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -4379,6 +4379,33 @@ Type: ipkg
 Description:  LZMQ is a Lua binding to ZeroMQ.
 https://github.com/zeromq/lzmq
 Dirk Chang <dirk@kooiot.com>
+@@
+
+
+Source-Makefile: feeds/packages/lang/maturin/Makefile
+Build-Depends/host: rust/host
+Build-Types: host
+
+Package: maturin
+Submenu: Rust
+Version: 0.14.15-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Build and publish crates as python packages
+Maintainer: Luca Barbato <lu_zero@luminem.org>
+Source: maturin-0.14.15.tar.gz
+License: Apache-2.0 MIT
+LicenseFiles: license-apache license-mit
+Type: ipkg
+Description:   Build and publish crates with pyo3, rust-cpython, cffi and uniffi
+  bindings as well as rust binaries as python packages.
+https://maturin.rs
+Luca Barbato <lu_zero@luminem.org>
 @@
 
 
@@ -24282,8 +24309,9 @@ Build-Depends/host: python3/host
 Build-Types: host
 
 Package: rust
-Version: 1.67.1-1
-Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64) +pkg-config +libunwind +libopenssl +liblzma
+Submenu: Rust
+Version: 1.68.0-1
+Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24292,7 +24320,7 @@ Category: Languages
 Repository: base
 Title: Rust Programming Language Compiler
 Maintainer: Luca Barbato <lu_zero@luminem.org>
-Source: rustc-1.67.1-src.tar.gz
+Source: rustc-1.68.0-src.tar.gz
 License: Apache-2.0 MIT
 LicenseFiles: LICENSE-APACHE LICENSE-MIT
 Type: ipkg
@@ -24300,37 +24328,6 @@ Description:   Rust is a multi-paradigm, general-purpose programming language de
   and safety, especially safe concurrency. Rust is syntactically similar to C++, but can
   guarantee memory safety by using a borrow checker to validate references.
 https://www.rust-lang.org/
-Luca Barbato <lu_zero@luminem.org>
-@@
-Config:
-	source "feeds/packages/lang/rust/Config.in"
-@@
-
-
-Source-Makefile: feeds/packages/lang/rust/maturin/Makefile
-Build-Depends: rust/host
-Build-Depends/host: rust/host
-Build-Types: host
-
-Package: maturin
-Submenu: Rust
-Version: 0.14.10-1
-Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Build and publish crates as python packages
-Maintainer: Luca Barbato <lu_zero@luminem.org>
-Source: maturin-0.14.10.tar.gz
-License: Apache-2.0 MIT
-LicenseFiles: license-apache license-mit
-Type: ipkg
-Description:   Build and publish crates with pyo3, rust-cpython, cffi and uniffi
-  bindings as well as rust binaries as python packages.
-https://maturin.rs
 Luca Barbato <lu_zero@luminem.org>
 @@
 
@@ -58849,7 +58846,7 @@ Source-Makefile: feeds/packages/net/curl/Makefile
 
 Package: libcurl
 Menu: 1
-Version: 7.85.0-0.1
+Version: 8.0.1-1
 Depends: +libc +LIBCURL_WOLFSSL:libwolfssl +LIBCURL_OPENSSL:libopenssl +LIBCURL_GNUTLS:libgnutls +LIBCURL_MBEDTLS:libmbedtls +LIBCURL_ZLIB:zlib +LIBCURL_ZSTD:libzstd +LIBCURL_THREADED_RESOLVER:libpthread +LIBCURL_LDAP:libopenldap +LIBCURL_LIBIDN2:libidn2 +LIBCURL_SSH2:libssh2 +LIBCURL_NGHTTP2:libnghttp2 +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -58859,7 +58856,7 @@ Category: Libraries
 Repository: base
 Title: A client-side URL transfer library
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.85.0.tar.xz
+Source: curl-8.0.1.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -58873,7 +58870,7 @@ Config:
 
 Package: curl
 Submenu: File Transfer
-Version: 7.85.0-0.1
+Version: 8.0.1-1
 Depends: +libc +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -58883,7 +58880,7 @@ Category: Network
 Repository: base
 Title: A client-side URL transfer utility
 Maintainer: Stan Grishin <stangri@melmac.ca>
-Source: curl-7.85.0.tar.xz
+Source: curl-8.0.1.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -59655,7 +59652,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.48.0-1
+Version: 0.48.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -59666,7 +59663,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.48.0.tar.gz
+Source: dnsproxy-0.48.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -70087,7 +70084,7 @@ Build-Depends: OPENSSH_LIBFIDO2:libfido2
 
 Package: openssh-client
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -70097,7 +70094,7 @@ Category: Network
 Repository: base
 Title: OpenSSH client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70108,7 +70105,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-moduli
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -70118,7 +70115,7 @@ Category: Network
 Repository: base
 Title: OpenSSH moduli file
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70129,7 +70126,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-client-utils
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib +openssh-client +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -70139,7 +70136,7 @@ Category: Network
 Repository: base
 Title: OpenSSH client utilities
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70150,7 +70147,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-keygen
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -70160,7 +70157,7 @@ Category: Network
 Repository: base
 Title: OpenSSH keygen
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70171,7 +70168,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-server
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib +openssh-keygen +OPENSSH_LIBFIDO2:libfido2
 Conflicts: 
 Menu-Depends: 
@@ -70183,7 +70180,7 @@ Repository: base
 Title: OpenSSH server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70197,7 +70194,7 @@ Config:
 
 Package: openssh-server-pam
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib +libpthread +openssh-keygen +libpam
 Conflicts: 
 Menu-Depends: 
@@ -70209,7 +70206,7 @@ Repository: base
 Title: OpenSSH server (with PAM support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70220,7 +70217,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-client
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -70230,7 +70227,7 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70241,7 +70238,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-server
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -70251,7 +70248,7 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP server
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -70262,7 +70259,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-avahi-service
 Submenu: SSH
-Version: 9.2p1-1
+Version: 9.3p1-1
 Depends: +libc +openssh-sftp-server +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -70272,7 +70269,7 @@ Category: Network
 Repository: base
 Title: OpenSSH (SFTP Avahi service)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.2p1.tar.gz
+Source: openssh-9.3p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
 Type: ipkg
@@ -98868,7 +98865,7 @@ Source-Makefile: feeds/packages/utils/ripgrep/Makefile
 Build-Depends: rust/host
 
 Package: ripgrep
-Version: 13.0.0-1
+Version: 13.0.0-2
 Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||x86_64) +libpcre2
 Conflicts: 
 Menu-Depends: 
@@ -103529,7 +103526,7 @@ Source-Makefile: feeds/packages/utils/syncthing/Makefile
 Build-Depends: golang/host
 
 Package: syncthing
-Version: 1.23.0-1
+Version: 1.23.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -103540,7 +103537,7 @@ Repository: base
 Title: Continuous file synchronization program
 Maintainer: Paul Spooren <mail@aparcar.org>
 Require-User: syncthing=499:syncthing=499
-Source: syncthing-source-v1.23.0.tar.gz
+Source: syncthing-source-v1.23.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -103553,7 +103550,7 @@ Paul Spooren <mail@aparcar.org>
 @@
 
 Package: stdiscosrv
-Version: 1.23.0-1
+Version: 1.23.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -103563,7 +103560,7 @@ Category: Utilities
 Repository: base
 Title: Discovery server for syncthing
 Maintainer: Paul Spooren <mail@aparcar.org>
-Source: syncthing-source-v1.23.0.tar.gz
+Source: syncthing-source-v1.23.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -103573,7 +103570,7 @@ Paul Spooren <mail@aparcar.org>
 @@
 
 Package: strelaysrv
-Version: 1.23.0-1
+Version: 1.23.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -103583,7 +103580,7 @@ Category: Utilities
 Repository: base
 Title: Relay server for syncthing
 Maintainer: Paul Spooren <mail@aparcar.org>
-Source: syncthing-source-v1.23.0.tar.gz
+Source: syncthing-source-v1.23.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -107515,7 +107512,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.31.2-1
+Version: 4.33.1-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -107525,7 +107522,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.31.2.tar.gz
+Source: yq-4.33.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
