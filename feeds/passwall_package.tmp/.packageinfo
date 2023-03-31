@@ -96,6 +96,32 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 
+Source-Makefile: feeds/passwall_package/gn/Makefile
+Build-Types: host
+
+Package: gn
+Version: 2023-02-17-b25a2f8c2d33f02082f0f258350f5e22c0973108-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: A meta-build system that generates build files for Ninja
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gn-2023-02-17-b25a2f8c2d33f02082f0f258350f5e22c0973108.tar.xz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:   GN can generate Ninja build files for C, C++, Rust, Objective C,
+  and Swift source on most popular platforms.
+https://gn.googlesource.com/gn/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
 Source-Makefile: feeds/passwall_package/hysteria/Makefile
 Build-Depends: golang/host
 
@@ -170,10 +196,11 @@ lean
 
 
 Source-Makefile: feeds/passwall_package/naiveproxy/Makefile
+Build-Depends: gn/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 110.0.5481.100-1-0
+Version: 111.0.5563.64-1-1
 Depends: +libc @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -183,7 +210,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-110.0.5481.100-1.tar.gz
+Source: naiveproxy-111.0.5563.64-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -495,7 +522,7 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.2.1-1
+Version: 1.2.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -505,7 +532,7 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.2.1.tar.gz
+Source: sing-box-1.2.2.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
