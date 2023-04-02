@@ -169,6 +169,30 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-sharevdi-h3399pc-rk3399
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_h3399pc || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_h3399pc)
+Version: 2022.07-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-sharevdi-h3399pc-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: sharevdi-h3399pc-rk3399
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for SHAREVDI H3399PC
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2022.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for SHAREVDI H3399PC
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-guangmiao-g4c-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
 Version: 2022.07-0

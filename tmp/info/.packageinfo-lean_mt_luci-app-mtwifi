@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-mtwifi
 Submenu: 3. Applications
 Version: 1-8
-Depends: +libc @TARGET_ramips +mt_wifi
+Depends: +libc @TARGET_ramips @!PACKAGE_kmod-mt7615d_dbdc +mt_wifi
 Conflicts: 
 Menu-Depends: 
 Provides: 
