@@ -20606,8 +20606,8 @@ Target-Features: boot-part gpio rootfs-part squashfs testing-kernel
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20623,8 +20623,8 @@ Target-Features: boot-part dt gpio mips16 nand pci ramdisk rootfs-part squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20784,6 +20784,22 @@ Target-Profile-SupportedDevices: bdcom,wap2100-sk
 
 Target-Profile-Description:
 Build firmware images for BDCOM WAP2100-SK (ZTE ZXECS EBG3130)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_bolt_bl201
+Target-Profile-Name: Bolt BL201
+Target-Profile-Packages: kmod-mt76x2
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: bolt,bl201 bolt_bl201
+
+
+Target-Profile-Description:
+Build firmware images for Bolt BL201
 
 
 
@@ -22480,8 +22496,8 @@ Target-Features: boot-part dt gpio minor mips16 nand pci ramdisk rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24908,8 +24924,8 @@ Target-Features: boot-part dt gpio mips16 pci ramdisk rootfs-part squashfs testi
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -26209,8 +26225,8 @@ Target-Features: boot-part dt gpio mips16 pci rootfs-part small_flash squashfs t
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -26354,8 +26370,8 @@ Target-Features: boot-part dt gpio mips16 ramdisk rootfs-part small_flash squash
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -28101,8 +28117,8 @@ Target-Features: boot-part dt gpio mips16 pci rootfs-part small_flash squashfs t
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.10.176
-Linux-Testing-Version: 5.4
+Linux-Version: 5.4.238
+Linux-Testing-Version: 5.10
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

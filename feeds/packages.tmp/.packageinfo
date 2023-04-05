@@ -4416,7 +4416,7 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v12.22.1-4
+Version: v12.22.12-2
 Depends: +libc @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR||SOFT_FLOAT) @!arc @!armeb @!powerpc +libstdcpp +NODEJS_18:libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
@@ -4426,7 +4426,7 @@ Category: Languages
 Repository: base
 Title: Node.js is a platform built on Chrome's JavaScript runtime
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: node-v12.22.1.tar.xz
+Source: node-v12.22.12.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -4452,9 +4452,6 @@ Config:
 		help
 		 Select node.js version.
 		 The host package version is also the same.
-
-		config NODEJS_10
-			bool "10.x End-of-life : NO LONGER SUPPORTED"
 
 		config NODEJS_12
 			bool "12.x Maintenance LTS"
@@ -4497,7 +4494,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v12.22.1-4
+Version: v12.22.12-2
 Depends: +libc +node
 Conflicts: 
 Menu-Depends: 
@@ -4507,7 +4504,7 @@ Category: Languages
 Repository: base
 Title: NPM stands for Node Package Manager
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: node-v12.22.1.tar.xz
+Source: node-v12.22.12.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
