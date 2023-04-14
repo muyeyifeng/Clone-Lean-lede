@@ -4,7 +4,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-mrkaio-m68s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s-plus)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-mrkaio-m68s-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-mrkaio-m68s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -28,7 +28,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-opc-h68k-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h66k || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h68k || TARGET_rockchip_armv8_DEVICE_hinlink_opc-h69k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h66k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h68k || TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h69k)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -52,7 +52,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-photonicat-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ariaboard_photonicat || TARGET_DEVICE_rockchip_armv8_DEVICE_ariaboard_photonicat)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-photonicat-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-photonicat-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-radxa-e25-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_e25 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e25)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-radxa-e25-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-radxa-e25-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100,7 +100,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rock-3a-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-3a || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-3a)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-3a-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -124,7 +124,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-r66s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_rockchip_armv8_DEVICE_fastrhino_r68s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r66s || TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r68s)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-r66s-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-r66s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -148,7 +148,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-station-p2-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_firefly_station-p2 || TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-p2)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-station-p2-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -196,7 +196,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-guangmiao-g4c-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_guangmiao-g4c)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:trusted-firmware-a-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-guangmiao-g4c-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -268,7 +268,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-nanopi-r5s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5c || TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5c || TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r5s-rk3568:trusted-firmware-a-rk3568 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-nanopi-r5s-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -292,7 +292,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rock-pi-4-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_radxa_rock-pi-4 || TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-pi-4)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-pi-4-rk3399:trusted-firmware-a-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rock-pi-4-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -316,7 +316,7 @@ Build-Depends: arm-trusted-firmware-rockchip-vendor
 Package: u-boot-rockpro64-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_pine64_rockpro64 || TARGET_DEVICE_rockchip_armv8_DEVICE_pine64_rockpro64)
 Version: 2023.04-0
-Depends: +libc @!IN_SDK +PACKAGE_u-boot-rockpro64-rk3399:trusted-firmware-a-rk3399 @TARGET_rockchip_armv8
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-rockpro64-rk3399:arm-trusted-firmware-rockchip @TARGET_rockchip_armv8
 Conflicts: 
 Menu-Depends: 
 Provides: 
