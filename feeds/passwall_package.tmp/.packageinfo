@@ -28,7 +28,7 @@ Source-Makefile: feeds/passwall_package/chinadns-ng/Makefile
 
 Package: chinadns-ng
 Submenu: IP Addresses and Names
-Version: 2023.04.11-2-1
+Version: 2023.04.17-1
 Depends: +libc +ipset
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: ChinaDNS next generation, refactoring with epoll and ipset.
 Maintainer: pexcn <i@pexcn.me>
-Source: chinadns-ng-2023.04.11-2.tar.gz
+Source: chinadns-ng-2023.04.17.tar.gz
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -100,7 +100,7 @@ Source-Makefile: feeds/passwall_package/gn/Makefile
 Build-Types: host
 
 Package: gn
-Version: 2023-02-17-b25a2f8c2d33f02082f0f258350f5e22c0973108-1
+Version: 2023-04-05-28b7b6c507eb808567e3aea446cd259f7691fddc-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +110,7 @@ Category: Development
 Repository: base
 Title: A meta-build system that generates build files for Ninja
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: gn-2023-02-17-b25a2f8c2d33f02082f0f258350f5e22c0973108.tar.xz
+Source: gn-2023-04-05-28b7b6c507eb808567e3aea446cd259f7691fddc.tar.xz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -200,7 +200,7 @@ Build-Depends: gn/host
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 111.0.5563.64-1-1
+Version: 112.0.5615.49-1-1
 Depends: +libc @!(arc||armeb||mips||mips64||powerpc||TARGET_gemini) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -210,7 +210,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: naiveproxy-111.0.5563.64-1.tar.gz
+Source: naiveproxy-112.0.5615.49-1.tar.gz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -890,7 +890,7 @@ Source-Makefile: feeds/passwall_package/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 1.8.0-1
+Version: 1.8.1-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -900,7 +900,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.8.0.tar.gz
+Source: Xray-core-1.8.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -911,7 +911,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: xray-example
-Version: 1.8.0-1
+Version: 1.8.1-1
 Depends: +libc xray-core
 Conflicts: 
 Menu-Depends: 
@@ -921,7 +921,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions (example configs)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: Xray-core-1.8.0.tar.gz
+Source: Xray-core-1.8.1.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -939,7 +939,7 @@ Build-Depends: golang/host
 
 Package: xray-plugin
 Submenu: Web Servers/Proxies
-Version: 1.8.0-1
+Version: 1.8.1-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -949,7 +949,7 @@ Category: Network
 Repository: base
 Title: SIP003 plugin for Shadowsocks, based on Xray
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-plugin-1.8.0.tar.gz
+Source: xray-plugin-1.8.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
