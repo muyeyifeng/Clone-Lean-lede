@@ -8,7 +8,7 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.104
+Linux-Version: 5.15.105
 Linux-Testing-Version: 6.1
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -25,7 +25,7 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.104
+Linux-Version: 5.15.105
 Linux-Testing-Version: 6.1
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
@@ -43,6 +43,22 @@ Target-Profile-SupportedDevices: ariaboard,photonicat
 
 Target-Profile-Description:
 Build firmware images for Ariaboard Photonicat
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dilusense_dlfr100
+Target-Profile-Name: Dilusense DLFR100
+Target-Profile-Packages: kmod-r8168 -urngd
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dilusense,dlfr100
+
+
+Target-Profile-Description:
+Build firmware images for Dilusense DLFR100
 
 
 
