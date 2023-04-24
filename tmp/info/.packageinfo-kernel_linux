@@ -7058,6 +7058,26 @@ Description:   Kernel modules for Aquantia AQtion 10Gbps Ethernet NIC
 
 @@
 
+Package: kmod-amazon-ena
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_64||TARGET_armvirt_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Elastic Network Adapter (for Amazon AWS)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ENA_ETHERNET
+Description:   This driver supports Elastic Network Adapter (ENA)
+  used by Amazon AWS T3 (2018) and later instances.
+
+@@
+
 Package: kmod-lan743x
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
@@ -16425,6 +16445,272 @@ Description:  IPv6 compression over IEEE 802.15.4
 
 @@
 
+Package: kmod-acpi-mdio
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-libphy +kmod-mdio-devres
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ACPI MDIO support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ACPI_MDIO
+Description:  Kernel driver for ACPI MDIO support
+
+@@
+
+Package: kmod-pcs-xpcs
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Synopsis DesignWare PCS driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCS_XPCS
+Description: Synopsis DesignWare PCS driver
+
+@@
+
+Package: kmod-fsl-fec
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-libphy +kmod-of-mdio +kmod-ptp +kmod-net-selftests
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP (Freescale) FEC Ethernet controller (i.MX)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_FEC
+Description: NXP (Freescale) FEC Ethernet controller (i.MX)
+
+@@
+
+Package: kmod-fsl-xgmac-mdio
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-libphy +kmod-of-mdio +kmod-acpi-mdio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP (Freescale) MDIO bus
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_FSL_XGMAC_MDIO
+Description: NXP (Freescale) MDIO bus
+
+@@
+
+Package: kmod-fsl-dpaa2-net
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-fsl-xgmac-mdio +kmod-phylink
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP DPAA2 Ethernet
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_FSL_MC_BUS=y CONFIG_FSL_MC_DPIO CONFIG_FSL_MC_UAPI_SUPPORT=y CONFIG_FSL_DPAA2_ETH
+Description: NXP DPAA2 Ethernet
+
+@@
+
+Package: kmod-fsl-dpaa2-console
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP DPAA2 Debug console
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DPAA2_CONSOLE
+Description:   Kernel modules for the NXP DPAA2 debug consoles
+  (Management Complex and AIOP).
+
+@@
+
+Package: kmod-marvell-mdio
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-libphy +kmod-of-mdio +kmod-acpi-mdio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Armada platform MDIO driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MVMDIO
+Description: Marvell Armada platform MDIO driver
+
+@@
+
+Package: kmod-mvneta
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-marvell-mdio +kmod-phylink
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Armada 370/38x/XP/37xx network driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MVNETA
+Description: Marvell Armada 370/38x/XP/37xx network driver
+
+@@
+
+Package: kmod-mvpp2
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-marvell-mdio +kmod-phylink
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell Armada 375/7K/8K network driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MVPP2 CONFIG_MVPP2_PTP=n
+Description: Marvell Armada 375/7K/8K network driver
+
+@@
+
+Package: kmod-imx2-wdt
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP (Freescale) i.MX2+ and Layerscape watchdog driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IMX2_WDT
+Description: NXP (Freescale) i.MX2+ and Layerscape watchdog driver
+
+@@
+
+Package: kmod-imx7-ulp-wdt
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP (Freescale) i.MX7ULP and later watchdog
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_IMX7ULP_WDT
+Description: NXP (Freescale) i.MX7ULP and later watchdog
+
+@@
+
+Package: kmod-stmmac-core
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-phylink +kmod-pcs-xpcs +kmod-ptp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Synopsis Ethernet Controller core (NXP,STMMicro,others)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_STMMAC_ETH CONFIG_STMMAC_SELFTESTS=n CONFIG_STMMAC_PLATFORM CONFIG_CONFIG_DWMAC_DWC_QOS_ETH=n CONFIG_DWMAC_GENERIC
+Description: Synopsis Ethernet Controller core (NXP,STMMicro,others)
+
+@@
+
+Package: kmod-dwmac-imx
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: +kmod-stmmac-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: NXP i.MX8 Ethernet controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DWMAC_IMX8
+Description: NXP i.MX8 Ethernet controller
+
+@@
+
+Package: kmod-thunderx-net
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_armvirt_64) +kmod-phylink
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Marvell (Cavium) ThunderX/2 network drivers
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_NET_VENDOR_CAVIUM CONFIG_THUNDER_NIC_PF CONFIG_THUNDER_NIC_VF CONFIG_THUNDER_NIC_BGX CONFIG_THUNDER_NIC_RGX
+Description: Marvell (Cavium) ThunderX/2 network drivers
+
+@@
+
 Package: kmod-mmc-at91
 Submenu: Other modules
 Version: <LINUX_VERSION>-
@@ -18242,26 +18528,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_SND_SUN4I_SPDIF
 Description:   Kernel support for Allwinner A10 SPDIF Support
-
-@@
-
-Package: kmod-amazon-ena
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_64
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Elastic Network Adapter (for Amazon AWS T3)
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ENA_ETHERNET
-Description:   This driver supports Elastic Network Adapter (ENA)
-  used by Amazon AWS T3 instances.
 
 @@
 

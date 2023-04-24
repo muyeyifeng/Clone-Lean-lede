@@ -40,6 +40,25 @@ http://www.gnu.org/software/grub/
 
 @@
 
+Package: grub2-efi-arm
+Version: 2.06-0
+Depends: +libc @TARGET_armvirt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: efi
+Section: boot
+Category: Boot Loaders
+Title: GRand Unified Bootloader (efi)
+Maintainer: 
+Source: grub-2.06.tar.xz
+License: GPL-3.0-or-later
+Type: ipkg
+Description: GRand Unified Bootloader (efi)
+http://www.gnu.org/software/grub/
+
+@@
+
 Package: grub2-editenv
 Submenu: Boot Loaders
 Version: 2.06-0
