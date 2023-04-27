@@ -27,7 +27,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2023.0-0
+Version: 2023.0-1
 Depends: +libc @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -117,7 +117,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2023.0-0
+Version: 2023.0-1
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -142,7 +142,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2023.0-0
+Version: 2023.0-1
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -167,7 +167,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2023.0-0
+Version: 2023.0-1
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2023.0-0
+Version: <LINUX_VERSION>+2023.0-1
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -651,7 +651,7 @@ Source-Makefile: feeds/routing/bmx6/Makefile
 Package: bmx6
 Menu: 1
 Submenu: Routing and Redirection
-Version: 0.1-alpha-0
+Version: 0.1-alpha-1
 Depends: +libc +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -671,7 +671,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx6-uci-config
 Submenu: Routing and Redirection
-Version: 0.1-alpha-0
+Version: 0.1-alpha-1
 Depends: +libc bmx6 +libuci
 Conflicts: 
 Menu-Depends: 
@@ -691,7 +691,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx6-json
 Submenu: Routing and Redirection
-Version: 0.1-alpha-0
+Version: 0.1-alpha-1
 Depends: +libc bmx6 +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -711,7 +711,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx6-sms
 Submenu: Routing and Redirection
-Version: 0.1-alpha-0
+Version: 0.1-alpha-1
 Depends: +libc bmx6
 Conflicts: 
 Menu-Depends: 
@@ -731,7 +731,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx6-table
 Submenu: Routing and Redirection
-Version: 0.1-alpha-0
+Version: 0.1-alpha-1
 Depends: +libc bmx6
 Conflicts: 
 Menu-Depends: 
@@ -1200,7 +1200,7 @@ Source-Makefile: feeds/routing/mcproxy/Makefile
 
 Package: mcproxy
 Submenu: Routing and Redirection
-Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-0
+Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-9
 Depends: +libc +libpthread +libstdcpp @(!GCC_VERSION_4_4&&!GCC_VERSION_4_6)
 Conflicts: 
 Menu-Depends: 
@@ -1226,7 +1226,7 @@ Source-Makefile: feeds/routing/mesh11sd/Makefile
 
 Package: mesh11sd
 Submenu: Captive Portals
-Version: 1.2.0-0
+Version: 1.2.0-3
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1258,7 +1258,7 @@ Rob White <rob@blue-wave.net>
 Source-Makefile: feeds/routing/minimalist-pcproxy/Makefile
 
 Package: minimalist-pcproxy
-Version: 2014-12-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-0
+Version: 2014-12-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-7
 Depends: +libc +libubox @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -1286,7 +1286,7 @@ Markus Stenberg <fingon@iki.fi>
 Source-Makefile: feeds/routing/naywatch/Makefile
 
 Package: naywatch
-Version: 1-0
+Version: 1-7
 Depends: +libc @IPV6 +owipcalc
 Conflicts: 
 Menu-Depends: 
@@ -1418,7 +1418,7 @@ Source-Makefile: feeds/routing/olsrd/Makefile
 Package: olsrd
 Menu: 1
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc +libpthread +libubus +iptables +IPV6:ip6tables
 Conflicts: 
 Menu-Depends: 
@@ -1438,7 +1438,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-arprefresh
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1458,7 +1458,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dot-draw
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1478,7 +1478,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-filtergw
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1498,7 +1498,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-bmf
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -1518,7 +1518,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dyn-gw
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1538,7 +1538,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-dyn-gw-plain
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1558,7 +1558,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-httpinfo
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1578,7 +1578,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-jsoninfo
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1598,7 +1598,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-netjson
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1618,7 +1618,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-mdns
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1638,7 +1638,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-nameservice
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1658,7 +1658,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-p2pd
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1678,7 +1678,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-pgraph
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1698,7 +1698,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-pud
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd +libgps
 Conflicts: 
 Menu-Depends: 
@@ -1718,7 +1718,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-quagga
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1738,7 +1738,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-secure
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1758,7 +1758,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-sgwdynspeed
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1778,7 +1778,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-txtinfo
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1798,7 +1798,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-mod-watchdog
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1818,7 +1818,7 @@ Saverio Proto <zioproto@gmail.com>
 
 Package: olsrd-utils
 Submenu: Routing and Redirection
-Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-0
+Version: 2022-03-18-1e771b4d31e36f9ffd0a04c3f8f83abb803ec309-5
 Depends: +libc olsrd
 Conflicts: 
 Menu-Depends: 
@@ -1960,7 +1960,7 @@ Rob White <rob@blue-wave.net>
 Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
-Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-0
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-4
 Depends: +libc @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
@@ -1986,7 +1986,7 @@ Source-Makefile: feeds/routing/prince/Makefile
 
 Package: prince
 Submenu: Routing and Redirection
-Version: 0.4-0
+Version: 0.4-3
 Depends: +libc +libjson-c +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -2264,7 +2264,7 @@ Source-Makefile: feeds/routing/vis/Makefile
 
 Package: vis
 Submenu: Routing and Redirection
-Version: 2013-04-07-7710cce42e8d63ea114056a4a140835d4a452933-0
+Version: 2013-04-07-7710cce42e8d63ea114056a4a140835d4a452933-9
 Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
