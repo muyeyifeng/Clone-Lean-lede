@@ -28643,7 +28643,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq-full firewall iptables ppp ppp-mod-pppoe block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug automount autocore-arm e2fsprogs ethtool haveged htop usb-modeswitch 
 Target-Profile: DEVICE_ariaboard_photonicat
 Target-Profile-Name: Ariaboard Photonicat
-Target-Profile-Packages: ath10k-firmware-qca9377-sdio kmod-ath10k kmod-ath10k-sdio pcat-manager
+Target-Profile-Packages: ath10k-firmware-qca9377-sdio kmod-ath10k kmod-ath10k-sdio pcat-manager wpad iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ariaboard,photonicat
 
@@ -28707,7 +28707,7 @@ Build firmware images for EZPRO Mrkaio M68S PLUS
 
 Target-Profile: DEVICE_hinlink_opc-h66k
 Target-Profile-Name: HINLINK OPC-H66K
-Target-Profile-Packages: kmod-ata-ahci-platform kmod-mt7921e kmod-r8125 kmod-usb-serial-cp210x wpad-openssl iwinfo
+Target-Profile-Packages: kmod-ata-ahci-platform kmod-hwmon-pwmfan kmod-mt7921e kmod-r8125 wpad-openssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hinlink,opc-h66k
 
@@ -28723,7 +28723,7 @@ Build firmware images for HINLINK OPC-H66K
 
 Target-Profile: DEVICE_hinlink_opc-h68k
 Target-Profile-Name: HINLINK OPC-H68K
-Target-Profile-Packages: kmod-ata-ahci-platform kmod-mt7921e kmod-r8125 kmod-usb-serial-cp210x wpad-openssl iwinfo
+Target-Profile-Packages: kmod-ata-ahci-platform kmod-hwmon-pwmfan kmod-mt7921e kmod-r8125 wpad-openssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hinlink,opc-h68k
 
@@ -28739,7 +28739,7 @@ Build firmware images for HINLINK OPC-H68K
 
 Target-Profile: DEVICE_hinlink_opc-h69k
 Target-Profile-Name: HINLINK OPC-H69K
-Target-Profile-Packages: kmod-ata-ahci-platform kmod-mt7921e kmod-r8125 kmod-usb-serial-cp210x wpad-openssl kmod-usb-serial-option uqmi iwinfo
+Target-Profile-Packages: kmod-ata-ahci-platform kmod-hwmon-pwmfan kmod-mt7921e kmod-r8125 wpad-openssl kmod-usb-serial-option uqmi iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hinlink,opc-h69k
 
