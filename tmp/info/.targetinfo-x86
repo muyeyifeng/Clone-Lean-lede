@@ -4,12 +4,12 @@ Target-Board: x86
 Target-Name: x86
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium-mmx
-Target-Features: boot-part display fpu pci pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vhdx vmdk
+Target-Features: boot-part display fpu gpio pci pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vhdx vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.110
-Linux-Testing-Version: 6.1
+Linux-Version: 6.1.28
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -25,8 +25,8 @@ Target-Features: boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.110
-Linux-Testing-Version: 6.1
+Linux-Version: 6.1.28
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -58,8 +58,8 @@ Target-Features: audio boot-part display fpu gpio pci pcie pcmcia rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium4
 CPU-Type: pentium4
-Linux-Version: 5.15.110
-Linux-Testing-Version: 6.1
+Linux-Version: 6.1.28
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -89,12 +89,12 @@ Target-Board: x86
 Target-Name: Legacy
 Target-Arch: i386
 Target-Arch-Packages: i386_pentium-mmx
-Target-Features: boot-part display fpu pci pcie pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vhdx vmdk
+Target-Features: boot-part display fpu gpio pci pcie pcmcia rootfs-part rtc squashfs testing-kernel usb vdi vhdx vmdk
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.110
-Linux-Testing-Version: 6.1
+Linux-Version: 6.1.28
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -127,8 +127,8 @@ Target-Features: boot-part display fpu gpio pci pcmcia rootfs-part rtc squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.110
-Linux-Testing-Version: 6.1
+Linux-Version: 6.1.28
+Linux-Testing-Version: 5.15
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
