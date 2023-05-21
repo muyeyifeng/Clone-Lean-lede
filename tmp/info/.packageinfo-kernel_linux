@@ -8627,7 +8627,7 @@ Description:  Kernel module for ATM over TCP support
 Package: kmod-bonding
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: 
+Depends: PACKAGE_kmod-tls:kmod-tls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -9588,6 +9588,28 @@ Kernel-Config: CONFIG_TCP_CONG_BBR
 Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
  control. It requires the fq ("Fair Queue") pacing packet scheduler.
  For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+@@
+
+Package: kmod-tls
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: @(LINUX_5_15||LINUX_6_1)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: In-kernel TLS Support with HW Offload
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_TLS CONFIG_TLS_DEVICE=y
+Description:  Kernel module for in-kernel TLS protocol support and hw offload
+ (to supported interfaces).
+ This allows symmetric encryption handling of the TLS protocol to
+ be done in-kernel and it's HW offload when available.
 
 @@
 
