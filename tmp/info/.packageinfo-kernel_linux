@@ -16034,6 +16034,66 @@ Description:   Provides support for KVM on AMD processors equipped with the AMD-
 
 @@
 
+Package: kmod-vfio
+Submenu: Virtualization
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: VFIO Non-Privileged userspace driver framework
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_VFIO CONFIG_VFIO_NOIOMMU=n CONFIG_VFIO_MDEV=n
+Description:   VFIO provides a framework for secure userspace device drivers.
+
+@@
+
+Package: kmod-vfio-pci
+Submenu: Virtualization
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_64 @PCI_SUPPORT +kmod-vfio +kmod-irqbypass
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Generic VFIO support for any PCI device
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_VFIO_PCI CONFIG_VFIO_PCI_IGD=n
+Description:   Support for the generic PCI VFIO bus driver which can connect any PCI
+  device to the VFIO framework.
+
+@@
+
+Package: kmod-iommu_v2
+Submenu: Virtualization
+Version: <LINUX_VERSION>-
+Depends: @PCI_SUPPORT @TARGET_x86_64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: IOMMU Version 2 driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_UACCE=n CONFIG_IOMMU_DEBUGFS=n CONFIG_INTEL_IOMMU=y CONFIG_INTEL_IOMMU_SVM=n CONFIG_INTEL_IOMMU_DEFAULT_ON=n CONFIG_INTEL_IOMMU_SCALABLE_MODE_DEFAULT_ON=n CONFIG_INTEL_TXT=n CONFIG_HYPERV_IOMMU=n CONFIG_IOMMU_SUPPORT=y CONFIG_IOMMU_DEFAULT_PASSTHROUGH=y CONFIG_AMD_IOMMU=y CONFIG_IRQ_REMAP=y CONFIG_AMD_IOMMU_V2=m
+Description:   This option enables support for the AMD/INTEL IOMMUv2 features
+  of the IOMMU hardware. Select this option if you want
+  to use devices that support the PCI PRI and PASID interface.
+
+@@
+
 Package: kmod-vfio-mdev
 Submenu: Virtualization
 Version: <LINUX_VERSION>-
