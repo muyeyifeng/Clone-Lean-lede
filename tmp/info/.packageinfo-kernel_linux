@@ -1882,7 +1882,7 @@ Description: RIPEMD160 digest CryptoAPI module
 Package: kmod-crypto-rng
 Submenu: Cryptographic API modules
 Version: <LINUX_VERSION>-
-Depends: +kmod-crypto-hash +kmod-crypto-hmac +kmod-crypto-sha512
+Depends: +kmod-crypto-hash +kmod-crypto-hmac +(LINUX_5_4||LINUX_5_10):kmod-crypto-sha256 +(LINUX_5_15||LINUX_6_1):kmod-crypto-sha512
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2472,7 +2472,7 @@ Description:  Kernel module for MSDOS filesystem support
 Package: kmod-fs-netfs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: 
+Depends: @(LINUX_5_15||LINUX_6_1)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4719,7 +4719,7 @@ Description:  This driver implements support for buttons connected
 Package: kmod-input-gpio-keys-polled
 Submenu: Input modules
 Version: <LINUX_VERSION>-
-Depends: @GPIO_SUPPORT +kmod-input-core
+Depends: @GPIO_SUPPORT +kmod-input-core +(LINUX_5_4||LINUX_5_10):kmod-input-polldev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -4776,6 +4776,25 @@ Description:  Kernel module for joystick support
 
 @@
 
+Package: kmod-input-polldev
+Submenu: Input modules
+Version: <LINUX_VERSION>-
+Depends: +kmod-input-core @(LINUX_5_4||LINUX_5_10)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Polled Input device support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INPUT_POLLDEV
+Description:  Kernel module for support of polled input devices
+
+@@
+
 Package: kmod-input-matrixkmap
 Submenu: Input modules
 Version: <LINUX_VERSION>-
@@ -4828,7 +4847,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_INPUT_TOUCHSCREEN=y CONFIG_TOUCHSCREEN_EDT_FT5X06
+Kernel-Config: CONFIG_INPUT_TOUCHSCREEN=y CONFIG_TOUCHSCREEN_PROPERTIES=y@lt5.13 CONFIG_TOUCHSCREEN_EDT_FT5X06
 Description:   Kernel module for EDT FT5206, FT5306, FT5406, FT5506, Evervision FT5726 and Focaltech FT6236 based touchscreens
 
 @@
@@ -5010,7 +5029,7 @@ Description:  This allows LEDs to be controlled by a software or hardware patter
 Package: kmod-ledtrig-tty
 Submenu: LED modules
 Version: <LINUX_VERSION>-
-Depends: 
+Depends: @(LINUX_5_15||LINUX_6_1)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10051,7 +10070,7 @@ Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestio
 Package: kmod-tls
 Submenu: Network Support
 Version: <LINUX_VERSION>-
-Depends: @(LINUX_5_15||LINUX_6_1)
+Depends: 
 Conflicts: 
 Menu-Depends: 
 Provides: 
