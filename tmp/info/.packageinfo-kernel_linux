@@ -7160,7 +7160,7 @@ Description:   This driver supports QLogic QLE8240 and QLE8242 Converged Etherne
 Package: kmod-qede
 Submenu: Network Devices
 Version: <LINUX_VERSION>-
-Depends: @PCI_SUPPORT +kmod-ptp
+Depends: @PCI_SUPPORT +kmod-ptp +kmod-lib-crc8 +kmod-lib-zlib-inflate
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7171,7 +7171,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_NET_VENDOR_QLOGIC CONFIG_QED=y CONFIG_QED_SRIOV=y CONFIG_QEDE=y
+Kernel-Config: CONFIG_QED CONFIG_QED_SRIOV=y CONFIG_QEDE CONFIG_QEDF=n CONFIG_QEDI=n
 Description:   This driver supports QLogic FastLinQ 25/40/100Gb Ethernet NIC
   devices.
 
