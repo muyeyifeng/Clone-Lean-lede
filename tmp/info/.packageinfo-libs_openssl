@@ -3,7 +3,7 @@ Source-Makefile: package/libs/openssl/Makefile
 Package: libopenssl
 Menu: 1
 Submenu: SSL
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc +OPENSSL_WITH_COMPRESSION:zlib +OPENSSL_ENGINE_BUILTIN_AFALG:kmod-crypto-user +OPENSSL_ENGINE_BUILTIN_DEVCRYPTO:kmod-cryptodev +OPENSSL_ENGINE_BUILTIN_PADLOCK:kmod-crypto-hw-padlock
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: Open source SSL toolkit (libraries)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
@@ -31,7 +31,7 @@ source "package/libs/openssl/Config.in"
 
 Package: libopenssl-conf
 Submenu: SSL
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ Category: Libraries
 Repository: base
 Title: /etc/ssl/openssl.cnf config file
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
@@ -56,7 +56,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-afalg
 Submenu: SSL
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc libopenssl @OPENSSL_ENGINE +libopenssl-conf @KERNEL_AIO +PACKAGE_libopenssl-afalg:kmod-crypto-user @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Category: Libraries
 Repository: base
 Title: AFALG hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
@@ -81,7 +81,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-devcrypto
 Submenu: SSL
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc libopenssl @OPENSSL_ENGINE +libopenssl-conf +PACKAGE_libopenssl-devcrypto:kmod-cryptodev @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -91,7 +91,7 @@ Category: Libraries
 Repository: base
 Title: /dev/crypto hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
@@ -106,7 +106,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-padlock
 Submenu: SSL
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc libopenssl @OPENSSL_ENGINE +libopenssl-conf @TARGET_x86 +PACKAGE_libopenssl-padlock:kmod-crypto-hw-padlock @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -116,7 +116,7 @@ Category: Libraries
 Repository: base
 Title: VIA Padlock hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
@@ -129,7 +129,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 
 Package: openssl-util
-Version: 1.1.1t-2
+Version: 1.1.1u-1
 Depends: +libc +libopenssl +libopenssl-conf
 Conflicts: 
 Menu-Depends: 
@@ -139,7 +139,7 @@ Category: Utilities
 Repository: base
 Title: Open source SSL toolkit (utility)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-1.1.1t.tar.gz
+Source: openssl-1.1.1u.tar.gz
 License: OpenSSL
 LicenseFiles: LICENSE
 Type: ipkg
