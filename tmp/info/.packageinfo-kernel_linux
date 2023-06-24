@@ -10480,6 +10480,26 @@ native Linux tools such as ss.
 
 @@
 
+Package: kmod-inet-mptcp-diag
+Submenu: Network Support
+Version: <LINUX_VERSION>-
+Depends: +@KERNEL_MPTCP +@KERNEL_MPTCP_IPV6 +kmod-inet-diag
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: INET diag support for MultiPath TCP
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INET_MPTCP_DIAG@ge5.6
+Description: Support for INET (MultiPath TCP) socket monitoring interface used by
+native Linux tools such as ss.
+
+@@
+
 Package: kmod-wireguard
 Submenu: Network Support
 Version: <LINUX_VERSION>-
