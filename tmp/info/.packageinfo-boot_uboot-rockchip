@@ -1,6 +1,30 @@
 Source-Makefile: package/boot/uboot-rockchip/Makefile
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-lyt-t68m-rk3568
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_lyt_t68m || TARGET_DEVICE_rockchip_armv8_DEVICE_lyt_t68m)
+Version: 2023.04-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-lyt-t68m-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: lyt-t68m-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for LYT T68M
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2023.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for LYT T68M
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-mrkaio-m68s-rk3568
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s-plus || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s || TARGET_DEVICE_rockchip_armv8_DEVICE_ezpro_mrkaio-m68s-plus)
 Version: 2023.04-0
