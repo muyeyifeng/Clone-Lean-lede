@@ -1,0 +1,41 @@
+Source-Makefile: feeds/lienol/luci-app-openvpn-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-openvpn-server
+Submenu: 3. Applications
+Version: 20211229-1
+Depends: +libc +openvpn-easy-rsa +openvpn-openssl +kmod-tun +@OPENVPN_openssl_ENABLE_MANAGEMENT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for OpenVPN Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for OpenVPN Server
+
+@@
+
+Package: luci-i18n-openvpn-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 20211229-1
+Depends: +libc luci-app-openvpn-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openvpn-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openvpn-server - 简体中文 (Simplified Chinese)
+
+@@
+
+

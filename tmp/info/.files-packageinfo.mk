@@ -368,6 +368,7 @@ $(eval $(call PackageDir,feeds_lienol_luci-app-control-weburl,feeds/lienol/luci-
 $(eval $(call PackageDir,feeds_lienol_luci-app-fileassistant,feeds/lienol/luci-app-fileassistant,))
 $(eval $(call PackageDir,feeds_lienol_luci-app-filebrowser,feeds/lienol/luci-app-filebrowser,))
 $(eval $(call PackageDir,feeds_lienol_luci-app-nginx-pingos,feeds/lienol/luci-app-nginx-pingos,))
+$(eval $(call PackageDir,feeds_lienol_luci-app-openvpn-client,feeds/lienol/luci-app-openvpn-client,))
 $(eval $(call PackageDir,feeds_lienol_luci-app-pppoe-server,feeds/lienol/luci-app-pppoe-server,))
 $(eval $(call PackageDir,feeds_lienol_luci-app-ssr-mudb-server,feeds/lienol/luci-app-ssr-mudb-server,))
 $(eval $(call PackageDir,feeds_lienol_luci-app-syncthing,feeds/lienol/luci-app-syncthing,))
