@@ -2184,10 +2184,30 @@ Description:  Kernel module for BTRFS support
 
 @@
 
+Package: kmod-fs-smbfs-common
+Submenu: Filesystems
+Version: <LINUX_VERSION>-
+Depends: +(LINUX_5_4||LINUX_5_10):kmod-crypto-arc4 +(LINUX_5_4||LINUX_5_10):kmod-crypto-md4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SMBFS common dependencies support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SMBFS_COMMON@lt6.1 CONFIG_SMBFS@ge6.1
+Hidden: 1
+Description:  Kernel module dependency for CIFS or SMB_SERVER support
+
+@@
+
 Package: kmod-fs-cifs
 Submenu: Filesystems
 Version: <LINUX_VERSION>-
-Depends: +kmod-nls-base  +(LINUX_5_4||LINUX_5_10):kmod-crypto-md4 +(LINUX_5_4||LINUX_5_10):kmod-crypto-arc4 +kmod-crypto-md5 +kmod-crypto-sha256 +kmod-crypto-sha512 +kmod-crypto-cmac +kmod-crypto-hmac +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-ecb +kmod-crypto-des +(LINUX_5_15||LINUX_6_1):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_1):kmod-oid-registry +(LINUX_5_15||LINUX_6_1):kmod-dnsresolver
+Depends: +kmod-nls-base  +kmod-fs-smbfs-common +kmod-crypto-md5 +kmod-crypto-sha256 +kmod-crypto-sha512 +kmod-crypto-cmac +kmod-crypto-hmac +kmod-crypto-aead +kmod-crypto-ccm +kmod-crypto-ecb +kmod-crypto-des +(LINUX_5_15||LINUX_6_1):kmod-asn1-decoder +(LINUX_5_15||LINUX_6_1):kmod-oid-registry +(LINUX_5_15||LINUX_6_1):kmod-dnsresolver
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2198,7 +2218,7 @@ Maintainer:
 Source: 
 License: GPL-2.0
 Type: ipkg
-Kernel-Config: CONFIG_SMBFS_COMMON@ge5.15 CONFIG_CIFS CONFIG_CIFS_DFS_UPCALL=n CONFIG_CIFS_UPCALL=n
+Kernel-Config: CONFIG_CIFS CONFIG_CIFS_DFS_UPCALL=n CONFIG_CIFS_UPCALL=n
 Description:  Kernel module for CIFS support
 
 @@
