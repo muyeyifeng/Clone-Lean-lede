@@ -50,6 +50,22 @@ Build firmware images for Ariaboard Photonicat
 
 @@
 
+Target-Profile: DEVICE_codinge_xiaobao-nas-v1
+Target-Profile-Name: Codinge XiaoBao NAS-I
+Target-Profile-Packages: kmod-ata-ahci
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: codinge,xiaobao-nas-v1
+
+
+Target-Profile-Description:
+Build firmware images for Codinge XiaoBao NAS-I
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_dilusense_dlfr100
 Target-Profile-Name: Dilusense DLFR100
 Target-Profile-Packages: kmod-r8168 -urngd
@@ -315,6 +331,22 @@ Target-Profile-SupportedDevices: lyt,t68m
 
 Target-Profile-Description:
 Build firmware images for LYT T68M
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_panther_x2
+Target-Profile-Name: Panther Panther X2
+Target-Profile-Packages: kmod-brcmfmac kmod-ikconfig panther-x2-firmware wpad-openssl iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: panther,x2
+
+
+Target-Profile-Description:
+Build firmware images for Panther Panther X2
 
 
 

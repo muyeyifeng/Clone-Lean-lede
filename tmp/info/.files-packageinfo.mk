@@ -357,6 +357,7 @@ $(eval $(call PackageDir,feeds_helloworld_shadowsocksr-libev,feeds/helloworld/sh
 $(eval $(call PackageDir,feeds_helloworld_simple-obfs,feeds/helloworld/simple-obfs,))
 $(eval $(call PackageDir,feeds_helloworld_tcping,feeds/helloworld/tcping,))
 $(eval $(call PackageDir,feeds_helloworld_trojan,feeds/helloworld/trojan,))
+$(eval $(call PackageDir,feeds_helloworld_tuic-client,feeds/helloworld/tuic-client,))
 $(eval $(call PackageDir,feeds_helloworld_v2ray-core,feeds/helloworld/v2ray-core,))
 $(eval $(call PackageDir,feeds_helloworld_v2ray-plugin,feeds/helloworld/v2ray-plugin,))
 $(eval $(call PackageDir,feeds_helloworld_v2raya,feeds/helloworld/v2raya,))

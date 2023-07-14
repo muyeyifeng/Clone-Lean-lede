@@ -193,6 +193,30 @@ Tobias Maedel <openwrt@tbspace.de>
 
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
+Package: u-boot-panther-x2-rk3566
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_panther-x2 || TARGET_DEVICE_rockchip_armv8_DEVICE_panther-x2)
+Version: 2023.04-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-panther-x2-rk3566:arm-trusted-firmware-rk3566 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: panther-x2-rk3566
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Panther X2
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2023.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Panther X2
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
 Package: u-boot-sharevdi-h3399pc-rk3399
 Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_sharevdi_h3399pc || TARGET_DEVICE_rockchip_armv8_DEVICE_sharevdi_h3399pc)
 Version: 2023.04-0
@@ -427,6 +451,30 @@ LicenseFiles: Licenses/README
 Type: bin
 Hidden: 1
 Description: U-Boot for Dilusense DLFR100
+http://www.denx.de/wiki/U-Boot
+Tobias Maedel <openwrt@tbspace.de>
+@@
+
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-xiaobao-nas-v1-rk3399
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_codinge_xiaobao-nas-v1 || TARGET_DEVICE_rockchip_armv8_DEVICE_codinge_xiaobao-nas-v1)
+Version: 2023.04-0
+Depends: +libc @!IN_SDK +PACKAGE_u-boot-xiaobao-nas-v1-rk3399:arm-trusted-firmware-rk3399 @TARGET_rockchip_armv8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: xiaobao-nas-v1-rk3399
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Codinge Xiaobao NAS-I
+Maintainer: Tobias Maedel <openwrt@tbspace.de>
+Source: u-boot-2023.04.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Codinge Xiaobao NAS-I
 http://www.denx.de/wiki/U-Boot
 Tobias Maedel <openwrt@tbspace.de>
 @@
