@@ -194,7 +194,7 @@ Tobias Maedel <openwrt@tbspace.de>
 Build-Depends: arm-trusted-firmware-rockchip-vendor
 
 Package: u-boot-panther-x2-rk3566
-Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_panther-x2 || TARGET_DEVICE_rockchip_armv8_DEVICE_panther-x2)
+Default: y if (TARGET_rockchip_armv8_Default || TARGET_rockchip_armv8_DEVICE_panther_x2 || TARGET_DEVICE_rockchip_armv8_DEVICE_panther_x2)
 Version: 2023.04-0
 Depends: +libc @!IN_SDK +PACKAGE_u-boot-panther-x2-rk3566:arm-trusted-firmware-rk3566 @TARGET_rockchip_armv8
 Conflicts: 
