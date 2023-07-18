@@ -472,7 +472,7 @@ Source-Makefile: feeds/telephony/libs/libosip2/Makefile
 
 Package: libosip2
 Submenu: Telephony
-Version: 5.3.0-0
+Version: 5.3.0-1
 Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
@@ -520,7 +520,7 @@ Source-Makefile: feeds/telephony/libs/libsrtp/Makefile
 
 Package: libsrtp2
 Submenu: Telephony
-Version: 2.4.2-0
+Version: 2.4.2-2
 Depends: +libc +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -738,7 +738,7 @@ Source-Makefile: feeds/telephony/libs/re/Makefile
 
 Package: libre
 Submenu: Telephony
-Version: 2.0.1-0
+Version: 2.0.1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -762,7 +762,7 @@ Source-Makefile: feeds/telephony/libs/rem/Makefile
 
 Package: librem
 Submenu: Telephony
-Version: 1.0.0-0
+Version: 1.0.0-1
 Depends: +libc +libre
 Conflicts: 
 Menu-Depends: 
@@ -7135,7 +7135,7 @@ Source-Makefile: feeds/telephony/net/asterisk-chan-dongle/Makefile
 
 Package: asterisk-chan-dongle
 Submenu: Telephony
-Version: 2021-10-06-3d046f7d6842298c6838b5ce5b51d495d383b158-0
+Version: 2021-10-06-3d046f7d6842298c6838b5ce5b51d495d383b158-2
 Depends: +libc asterisk +BUILD_NLS:libiconv-full +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -7232,7 +7232,7 @@ Source-Makefile: feeds/telephony/net/asterisk-opus/Makefile
 
 Package: asterisk-codec-opus
 Submenu: Telephony
-Version: 2021-11-01-20522fbcd3fdf6f0adb20602d096d14cd69055e8-0
+Version: 2021-11-01-20522fbcd3fdf6f0adb20602d096d14cd69055e8-2
 Depends: +libc asterisk +libopus
 Conflicts: 
 Menu-Depends: 
@@ -7263,7 +7263,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk-format-ogg-opus
 Submenu: Telephony
-Version: 2021-11-01-20522fbcd3fdf6f0adb20602d096d14cd69055e8-0
+Version: 2021-11-01-20522fbcd3fdf6f0adb20602d096d14cd69055e8-2
 Depends: +libc asterisk +libopus +libopusfile +libopusenc
 Conflicts: 
 Menu-Depends: 
@@ -16799,7 +16799,7 @@ Source-Makefile: feeds/telephony/net/rtpproxy/Makefile
 Package: rtpproxy
 Menu: 1
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-4
 Depends: +libc +libatomic +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -16820,7 +16820,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-mod-acct-csv
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-4
 Depends: +libc rtpproxy
 Conflicts: 
 Menu-Depends: 
@@ -16841,7 +16841,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-mod-acct-rtcp-hep
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-4
 Depends: +libc rtpproxy
 Conflicts: 
 Menu-Depends: 
@@ -16862,7 +16862,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-util-extractaudio
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-4
 Depends: +libc rtpproxy +PACKAGE_rtpproxy-util-extractaudio:bcg729 +PACKAGE_rtpproxy-util-extractaudio:libsndfile +PACKAGE_rtpproxy-util-extractaudio:libsrtp2
 Conflicts: 
 Menu-Depends: 
@@ -16883,7 +16883,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: rtpproxy-util-makeann
 Submenu: Telephony
-Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-0
+Version: 2019-10-02-aa1f179e09097f467bc4726e3300014c1e35246f-4
 Depends: +libc rtpproxy +PACKAGE_rtpproxy-util-makeann:bcg729
 Conflicts: 
 Menu-Depends: 
@@ -16961,7 +16961,7 @@ Source-Makefile: feeds/telephony/net/siproxd/Makefile
 Package: siproxd
 Menu: 1
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc +libltdl +libpthread +libosip2
 Conflicts: 
 Menu-Depends: 
@@ -16991,7 +16991,7 @@ Config:
 
 Package: siproxd-mod-blacklist
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -17012,7 +17012,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-codecfilter
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17033,7 +17033,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-defaulttarget
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17054,7 +17054,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-demo
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17075,7 +17075,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-bogus-via
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17096,7 +17096,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-DTAG
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17117,7 +17117,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-fbox-anoncall
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17138,7 +17138,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-logcall
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17159,7 +17159,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-prefix
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17180,7 +17180,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-regex
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17201,7 +17201,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-shortdial
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17222,7 +17222,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stats
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17243,7 +17243,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stripheader
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17264,7 +17264,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stun
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
@@ -17285,7 +17285,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-siptrunk
 Submenu: Telephony
-Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-0
+Version: 2022-02-18-4750bea4ffedb4543a404dafc979c2b16b53e523-1
 Depends: +libc siproxd
 Conflicts: 
 Menu-Depends: 
